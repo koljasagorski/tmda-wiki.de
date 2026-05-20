@@ -48,16 +48,30 @@ Solange die Keys leer sind, läuft alles ohne Captcha (graceful degradation).
 
 ### 🥚 Easter Eggs
 
-Versteckt im Frontend (`public/easter-eggs.js`):
-- Logo **2× klicken** → „Talahons im Weltall" mit Starfield-Overlay
-- Tippen **`kalle`** → Kalle-Schwensen-Quote-Toast
-- Tippen **`papst`** → Maya-Kalender-Countdown bis 2033 (Folge-1-Reference)
-- Tippen **`fanta`** → 🐐-Regen + „Fanta Gnu schmeckt nach Ziege"
-- Tippen **`flutschi`** oder **Konami-Code** (↑↑↓↓←→←→BA) → „Trockener Flutschi"-Modus (Tilt + Ice-Filter)
-- **Triple-Click** auf den `TMDA Wiki`-Footer-Titel → Credits-Toast
-- Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
+Alles in `public/easter-eggs.js`. Drück <kbd>?</kbd> auf der Seite für das komplette Cheatsheet als Overlay.
 
-Dazu kommt nach **jeder Chat-Antwort** automatisch ein kleiner Hint zu einem zufälligen Easter Egg (kleine kursive Notiz unter der AI-Antwort, `.msg-hint`).
+**Tipp-Trigger** (auf der Wiki-Seite, ohne fokussiertes Input):
+- `kalle` → Schwensen-Quote · `papst` → Maya-2033-Countdown · `fanta` → 🐐-Regen
+- `flutschi` / Konami-Code → Flutschi-Modus · `crazy` → Pele-Beckenbauer
+- `thelen` → 🥕-Regen „Karsten ist Gemüse" · `tabletten` / `matrjoschka` → 💊-Pop
+- `marsalek` → Wanted-Poster · `hartz4` → 🐛 Cursor-Trail · `iris` → Werbungs-Blitz
+- `windrad` → Hologramm · `bosse` → fiktives Album-Cover · `lindemann` → Krisen-PR-Quote
+- `aaron` → 🌴-Regen
+
+**Klick/Maus-Trigger**:
+- Logo 2× klicken → Starfield „Talahons im Weltall"
+- 3× Klick auf eine Score-Badge → Konfetti
+- 5× Klick auf einen Stat-Counter → Achievement
+- Maus in alle 4 Bildschirmecken → Cornerologe
+- Long-Press auf Chat-FAB → „Kalle Direct Line"
+- Triple-Click „TMDA Wiki" im Footer → Credits
+
+**Zeit/Kontext**:
+- Dienstag → Folgentag-Banner · 3am–7am → „Mucki ist tot, ne" · Tab unfocused → Titel rotiert TMDA-Quotes
+- Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
+- <kbd>?</kbd> → Help-Overlay mit allen Eggs
+
+Dazu hängt der **Chat-Bot** nach jeder AI-Antwort eine kleine kursive Hint-Bubble (`.msg-hint`) mit einem zufälligen Egg-Hint an. Die Hint-Texte erklären explizit, dass das Trigger-Wort **auf der Seite** (nicht im Chat-Input) getippt werden muss.
 
 ---
 

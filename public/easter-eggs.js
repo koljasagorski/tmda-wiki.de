@@ -1,14 +1,34 @@
-// 🥚 Easter Eggs — komplett optional, brechen nichts wenn sie failen.
-// Aktive Easter Eggs:
-//   1. Logo 7× klicken          → "Achievement unlocked: Talahons im Weltall"
-//   2. Tippen "kalle"            → Kalles-Corner-Quote-Overlay
-//   3. Tippen "papst"            → Maya-2033-Countdown-Toast (Folge 1)
-//   4. Tippen "fanta"            → Goat-Emoji-Regen
-//   5. Konami-Code (↑↑↓↓←→←→BA) → "Trockener Flutschi"-Modus (Tilt + Ice-Filter, 6s)
-//   6. Triple-Click auf Footer-Repo-Link → Credits-Toast
+// 🥚 Easter Eggs — alle scope-isoliert, fail-silent.
+//
+// Übersicht:
+//   Logo 2× klick                        → Starfield (Folge 47)
+//   Tipp "kalle"                          → Schwensen-Quote
+//   Tipp "papst"                          → Maya-2033-Countdown (Folge 1)
+//   Tipp "fanta"                          → Ziegen-Regen (Folge 1)
+//   Tipp "flutschi" / Konami              → Flutschi-Modus (Folge 42)
+//   Tipp "crazy"                          → Pele-Beckenbauer (Folge 37)
+//   Tipp "thelen"                         → Karsten ist Gemüse + 🥕-Regen
+//   Tipp "tabletten" / "matrjoschka"      → Pillen-Matrjoschka (Folge 32)
+//   Tipp "marsalek"                       → Wanted-Poster (Folge 31)
+//   Tipp "hartz4"                         → 🐛 Cursor-Trail (Folge 26)
+//   Tipp "iris"                           → Werbungs-Blitz (Folge 41)
+//   Tipp "windrad"                        → Hologramm (Folge 44)
+//   Tipp "bosse"                          → Album-Cover (Folge 42)
+//   Tipp "lindemann"                      → Krisen-PR-Quote
+//   Tipp "aaron"                          → Palmen-Regen (Folge 3)
+//   3× Klick Score-Badge                  → Konfetti
+//   5× Klick Stat-Counter                 → Achievement
+//   Maus in alle 4 Ecken                  → Cornerologe
+//   Long-Press Chat-FAB                   → Kalle Direct Line
+//   Triple-Click Footer-Titel             → Credits
+//   Dienstag                              → Folgentag-Banner
+//   3am–7am                               → Nacht-Toast
+//   Tab unfocused                         → TMDA-Titel-Rotation
+//   ?-Taste                               → Help-Overlay aller Eggs
+//   Browser-Konsole                       → Branded-Greeting
 
 (function () {
-  // ---------- Toast Helper ----------
+  // =============== Helpers ===============
   function toast(html, ms = 4000) {
     const t = document.createElement('div');
     t.className = 'easter-toast';
@@ -21,7 +41,35 @@
     }, ms);
   }
 
-  // ---------- 1. Logo 2× klicken ----------
+  function emojiRain(emoji, count = 20) {
+    for (let i = 0; i < count; i++) {
+      setTimeout(() => {
+        const g = document.createElement('div');
+        g.className = 'easter-goat';
+        g.style.left = Math.random() * 100 + 'vw';
+        g.textContent = emoji;
+        document.body.appendChild(g);
+        setTimeout(() => g.remove(), 5000);
+      }, i * 80);
+    }
+  }
+
+  function confettiBurst(originX, originY) {
+    const colors = ['#ff8a3d', '#ffd60a', '#4ade80', '#60a5fa', '#f472b6', '#ffffff'];
+    for (let i = 0; i < 35; i++) {
+      const c = document.createElement('span');
+      c.className = 'easter-confetti';
+      c.style.left = originX + 'px';
+      c.style.top = originY + 'px';
+      c.style.setProperty('--dx', (Math.random() - 0.5) * 500 + 'px');
+      c.style.setProperty('--dy', -(Math.random() * 250 + 120) + 'px');
+      c.style.background = colors[Math.floor(Math.random() * colors.length)];
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 2200);
+    }
+  }
+
+  // =============== 1. Logo 2× klicken ===============
   const logo = document.querySelector('.logo');
   let logoClicks = 0;
   let logoResetTimer = null;
@@ -52,17 +100,119 @@
     setTimeout(() => overlay.remove(), 7000);
   }
 
-  // ---------- 2-4. Key-Sequence Tracker ----------
+  // =============== Effekte für Tipp-Trigger ===============
+  function pillMatrjoschka() {
+    const wrap = document.createElement('div');
+    wrap.className = 'easter-matrjoschka';
+    const pills = ['💊', '🟠', '🟡', '🟢', '🔵', '🟣'];
+    pills.forEach((p, i) => {
+      const s = document.createElement('span');
+      s.style.animationDelay = (i * 0.15) + 's';
+      s.style.fontSize = (3 - i * 0.35) + 'rem';
+      s.textContent = p;
+      wrap.appendChild(s);
+    });
+    document.body.appendChild(wrap);
+    setTimeout(() => wrap.remove(), 4500);
+    toast('💊 <strong>Tabletten-Matrjoschka</strong> (Folge 32) — Pillen in Pillen in Pillen.', 4000);
+  }
+
+  function wantedPoster() {
+    const wrap = document.createElement('div');
+    wrap.className = 'easter-wanted';
+    wrap.innerHTML = `
+      <div class="easter-wanted-inner">
+        <div class="wanted-header">★ WANTED ★</div>
+        <div class="wanted-photo">👤</div>
+        <div class="wanted-name">JAN MARSALEK</div>
+        <div class="wanted-meta">Wirecard · last seen Russia<br>blinde Waisenkinder?</div>
+      </div>
+    `;
+    document.body.appendChild(wrap);
+    setTimeout(() => wrap.classList.add('show'));
+    setTimeout(() => {
+      wrap.classList.remove('show');
+      setTimeout(() => wrap.remove(), 400);
+    }, 4500);
+  }
+
+  let trailActive = false;
+  function caterpillarTrail() {
+    if (trailActive) return;
+    trailActive = true;
+    toast('🐛 <strong>Hartz-4-Raupe-Modus</strong> (Folge 26) — folgt dir 8 Sekunden lang.', 3000);
+    const move = (e) => {
+      const t = document.createElement('span');
+      t.className = 'easter-trail';
+      t.textContent = '🐛';
+      t.style.left = e.clientX + 'px';
+      t.style.top = e.clientY + 'px';
+      document.body.appendChild(t);
+      setTimeout(() => t.remove(), 1200);
+    };
+    document.addEventListener('mousemove', move);
+    setTimeout(() => {
+      document.removeEventListener('mousemove', move);
+      trailActive = false;
+    }, 8000);
+  }
+
+  function irisFlash() {
+    const overlay = document.createElement('div');
+    overlay.className = 'easter-iris-flash';
+    document.body.appendChild(overlay);
+    setTimeout(() => overlay.remove(), 1300);
+    setTimeout(() => toast('👁️ <strong>Werbung in die IRIS gebrannt</strong> (Folge 41) — das letzte was du siehst.', 4000), 1100);
+  }
+
+  function windradHologramm() {
+    const w = document.createElement('div');
+    w.className = 'easter-windrad';
+    w.textContent = '🌀';
+    document.body.appendChild(w);
+    setTimeout(() => w.remove(), 5000);
+    toast('🌀 <strong>windradhologramm.de</strong> (Folge 44) — wenn die Letzte Generation klebt, holst du das Windrad weg.', 4500);
+  }
+
+  function bosseAlbumPopup() {
+    const wrap = document.createElement('div');
+    wrap.className = 'easter-album';
+    wrap.innerHTML = `
+      <div class="album-cover">
+        <div class="album-title">Trockener Flutschi</div>
+        <div class="album-subtitle">in Moskau</div>
+        <div class="album-artist">— Bosse (fiktiv, Folge 42)</div>
+      </div>
+    `;
+    document.body.appendChild(wrap);
+    setTimeout(() => wrap.classList.add('show'));
+    setTimeout(() => {
+      wrap.classList.remove('show');
+      setTimeout(() => wrap.remove(), 400);
+    }, 4500);
+  }
+
+  // =============== Tipp-Sequence-Tracker ===============
   let buffer = '';
   const TRIGGERS = {
-    'kalle': () => toast('🪑 <strong>Kalle:</strong> „Ich habe dir mein Wort gegeben und hier ist der Koffer."', 5000),
-    'papst': () => toast('⏳ Maya-Kalender sagt: <strong>2033 ist Schluss.</strong> Bleiben noch ' + (2033 - new Date().getFullYear()) + ' Jahre.', 5000),
-    'fanta': () => goatRain(),
-    'flutschi': () => trockenerFlutschiMode(),
+    'kalle':       () => toast('🪑 <strong>Kalle:</strong> „Ich habe dir mein Wort gegeben und hier ist der Koffer." (Folge 37)', 5000),
+    'papst':       () => toast('⏳ Maya-Kalender sagt: <strong>2033 ist Schluss.</strong> Bleiben noch ' + (2033 - new Date().getFullYear()) + ' Jahre. (Folge 1)', 5000),
+    'fanta':       () => { emojiRain('🐐', 22); toast('🐐 <strong>Fanta Gnu</strong> schmeckt nach Ziege. (Folge 1)', 4000); },
+    'flutschi':    () => trockenerFlutschiMode(),
+    'crazy':       () => toast('🤪 <strong>„crazy crazy, gut gut"</strong> — Pele über Beckenbauer (Folge 37)', 4500),
+    'thelen':      () => { emojiRain('🥕', 25); toast('🥕 <strong>„Karsten ist Gemüse"</strong> — Frank Thelens fiktive HdL-Reaktion auf Carsten Maschmeyer (Folge 37)', 5000); },
+    'matrjoschka': () => pillMatrjoschka(),
+    'tabletten':   () => pillMatrjoschka(),
+    'marsalek':    () => wantedPoster(),
+    'hartz4':      () => caterpillarTrail(),
+    'iris':        () => irisFlash(),
+    'windrad':     () => windradHologramm(),
+    'bosse':       () => bosseAlbumPopup(),
+    'lindemann':   () => toast('🎤 <strong>„Ich erkenne an, dass euch etwas aufgefallen ist."</strong> — der Til-Lindemann-Krisen-PR-Move (Folge 37)', 5000),
+    'aaron':       () => { emojiRain('🌴', 30); toast('🌴 <strong>Aaron Carter im Tropical Island</strong> (Folge 3)', 4000); },
   };
 
   document.addEventListener('keydown', (e) => {
-    // Nicht in input/textarea triggern
     const tag = (e.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) return;
     if (e.key.length !== 1) {
@@ -79,21 +229,7 @@
     }
   });
 
-  function goatRain() {
-    toast('🐐 <strong>Fanta Gnu</strong> schmeckt nach Ziege.', 4000);
-    for (let i = 0; i < 20; i++) {
-      setTimeout(() => {
-        const g = document.createElement('div');
-        g.className = 'easter-goat';
-        g.style.left = Math.random() * 100 + 'vw';
-        g.textContent = '🐐';
-        document.body.appendChild(g);
-        setTimeout(() => g.remove(), 5000);
-      }, i * 100);
-    }
-  }
-
-  // ---------- 5. Konami-Code → Trockener Flutschi ----------
+  // =============== Konami-Code ===============
   const konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
   let konamiIdx = 0;
   document.addEventListener('keydown', (e) => {
@@ -110,12 +246,11 @@
 
   function trockenerFlutschiMode() {
     document.body.classList.add('flutschi-mode');
-    toast('🥶 <strong>Trockener Flutschi in Moskau</strong> aktiviert.', 5000);
+    toast('🥶 <strong>Trockener Flutschi in Moskau</strong> aktiviert. (Folge 42)', 5000);
     setTimeout(() => document.body.classList.remove('flutschi-mode'), 6000);
   }
 
-  // ---------- 6. Triple-Click auf Footer-Titel → Credits ----------
-  // Bindet auf das <strong>-Element (kein Link), damit es nicht mit Navigation kollidiert
+  // =============== Triple-Click auf Footer-Titel ===============
   const footerTitle = document.getElementById('footerTmdaTitle');
   let footerClicks = 0, footerClickTimer = null;
   footerTitle?.addEventListener('click', () => {
@@ -129,11 +264,198 @@
   });
   if (footerTitle) footerTitle.style.cursor = 'default';
 
-  // ---------- Konsolen-Easter-Egg für Devs ----------
-  // eslint-disable-next-line no-console
+  // =============== Score-Badge: 3× Klick → Konfetti ===============
+  document.addEventListener('click', (e) => {
+    const score = e.target.closest('.score-large');
+    if (!score) return;
+    const now = Date.now();
+    if (now - (score._lastClick || 0) > 600) score._clicks = 0;
+    score._clicks = (score._clicks || 0) + 1;
+    score._lastClick = now;
+    if (score._clicks >= 3) {
+      score._clicks = 0;
+      const r = score.getBoundingClientRect();
+      confettiBurst(r.left + r.width / 2, r.top + r.height / 2);
+    }
+  });
+
+  // =============== Stat-Counter: 5× Klick → Achievement ===============
+  document.addEventListener('click', (e) => {
+    const stat = e.target.closest('.stat-num');
+    if (!stat) return;
+    const now = Date.now();
+    if (now - (stat._lastClick || 0) > 1000) stat._clicks = 0;
+    stat._clicks = (stat._clicks || 0) + 1;
+    stat._lastClick = now;
+    if (stat._clicks >= 5) {
+      stat._clicks = 0;
+      toast('📊 <strong>Achievement:</strong> Statistiker — du klickst Zahlen.', 4000);
+    }
+  });
+
+  // =============== Cursor in alle 4 Ecken → Cornerologe ===============
+  const corners = { tl: false, tr: false, bl: false, br: false };
+  let cornerResetTimer = null;
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX, y = e.clientY;
+    const w = window.innerWidth, h = window.innerHeight;
+    const m = 30;
+    let touched = false;
+    if (x < m && y < m) { corners.tl = true; touched = true; }
+    else if (x > w - m && y < m) { corners.tr = true; touched = true; }
+    else if (x < m && y > h - m) { corners.bl = true; touched = true; }
+    else if (x > w - m && y > h - m) { corners.br = true; touched = true; }
+    if (!touched) return;
+    clearTimeout(cornerResetTimer);
+    cornerResetTimer = setTimeout(() => {
+      Object.keys(corners).forEach(k => corners[k] = false);
+    }, 10000);
+    if (Object.values(corners).every(v => v)) {
+      Object.keys(corners).forEach(k => corners[k] = false);
+      toast('🗺️ <strong>Achievement:</strong> Cornerologe — alle vier Bildschirmecken berührt.', 5000);
+    }
+  });
+
+  // =============== Long-Press auf Chat-FAB → Kalle Direct Line ===============
+  const fab = document.getElementById('chatFab');
+  let fabTimer = null;
+  const fabStart = () => {
+    fabTimer = setTimeout(() => {
+      toast('☎️ <strong>Kalle Direct Line</strong> — leider gerade in Hamburg unterwegs. Versuch\'s mit der normalen Wiki.', 5000);
+    }, 1500);
+  };
+  const fabEnd = () => clearTimeout(fabTimer);
+  fab?.addEventListener('mousedown', fabStart);
+  fab?.addEventListener('mouseup', fabEnd);
+  fab?.addEventListener('mouseleave', fabEnd);
+  fab?.addEventListener('touchstart', fabStart, { passive: true });
+  fab?.addEventListener('touchend', fabEnd);
+
+  // =============== Dienstag-Banner ===============
+  if (new Date().getDay() === 2 && !sessionStorage.getItem('tmda-tuesday-shown')) {
+    sessionStorage.setItem('tmda-tuesday-shown', '1');
+    setTimeout(() => {
+      const banner = document.createElement('div');
+      banner.className = 'tmda-tuesday-banner';
+      banner.innerHTML = '📡 Heute ist Dienstag — Folgentag.';
+      document.body.appendChild(banner);
+      requestAnimationFrame(() => banner.classList.add('show'));
+      setTimeout(() => {
+        banner.classList.remove('show');
+        setTimeout(() => banner.remove(), 500);
+      }, 6000);
+    }, 1500);
+  }
+
+  // =============== 3am–7am Nacht-Toast ===============
+  const hour = new Date().getHours();
+  if (hour >= 3 && hour < 7 && !sessionStorage.getItem('tmda-night-shown')) {
+    sessionStorage.setItem('tmda-night-shown', '1');
+    setTimeout(() => {
+      toast('🌙 Spät noch wach? <strong>Mucki ist tot, ne.</strong> (Folge 38)', 5500);
+    }, 3000);
+  }
+
+  // =============== Tab unfocused → Titel rotiert TMDA-Quotes ===============
+  const TAB_QUOTES = [
+    '🎙️ Komm zurück, du Talahon',
+    '🪑 Kalle wartet',
+    '🥶 Trockener Flutschi in Moskau',
+    '⏳ 2033 ist nah',
+    '🥕 Karsten ist Gemüse',
+    '🐐 Fanta Gnu schmeckt nach Ziege',
+  ];
+  let titleInterval = null;
+  const originalTitle = document.title;
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      let i = 0;
+      titleInterval = setInterval(() => {
+        document.title = TAB_QUOTES[i % TAB_QUOTES.length];
+        i++;
+      }, 2200);
+    } else {
+      clearInterval(titleInterval);
+      titleInterval = null;
+      document.title = originalTitle;
+    }
+  });
+
+  // =============== ?-Taste → Help-Overlay ===============
+  document.addEventListener('keydown', (e) => {
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || e.target.isContentEditable) return;
+    if (e.key === '?') {
+      e.preventDefault();
+      const existing = document.getElementById('eggHelp');
+      if (existing) { existing.remove(); return; }
+      showHelpOverlay();
+    }
+  });
+
+  function showHelpOverlay() {
+    const overlay = document.createElement('div');
+    overlay.id = 'eggHelp';
+    overlay.className = 'egg-help-overlay';
+    overlay.innerHTML = `
+      <div class="egg-help-inner">
+        <button class="egg-help-close" aria-label="Schließen">×</button>
+        <h2>🥚 Easter-Egg-Cheatsheet</h2>
+        <p class="meta">Alle versteckten Trigger im Wiki. (Drück <kbd>?</kbd> nochmal oder <kbd>Esc</kbd> zum Schließen.)</p>
+        <div class="egg-help-grid">
+          <ul>
+            <li><kbd>Doppelklick Logo</kbd> → Talahons im Weltall</li>
+            <li><kbd>kalle</kbd> → Schwensen-Quote</li>
+            <li><kbd>papst</kbd> → Maya-2033-Countdown</li>
+            <li><kbd>fanta</kbd> → Ziegen-Regen</li>
+            <li><kbd>flutschi</kbd> / Konami → Flutschi-Modus</li>
+            <li><kbd>crazy</kbd> → Pele-Beckenbauer</li>
+            <li><kbd>thelen</kbd> → Karsten ist Gemüse</li>
+            <li><kbd>tabletten</kbd> → Matrjoschka</li>
+            <li><kbd>marsalek</kbd> → Wanted-Poster</li>
+            <li><kbd>hartz4</kbd> → Raupe-Cursor</li>
+            <li><kbd>iris</kbd> → Werbungs-Blitz</li>
+            <li><kbd>windrad</kbd> → Hologramm</li>
+            <li><kbd>bosse</kbd> → Album-Cover</li>
+          </ul>
+          <ul>
+            <li><kbd>lindemann</kbd> → Krisen-PR-Quote</li>
+            <li><kbd>aaron</kbd> → Palmen-Regen</li>
+            <li><kbd>3× Klick Score-Badge</kbd> → Konfetti</li>
+            <li><kbd>5× Klick Stat-Counter</kbd> → Achievement</li>
+            <li><kbd>Maus alle 4 Ecken</kbd> → Cornerologe</li>
+            <li><kbd>Long-Press Chat-FAB</kbd> → Kalle Direct Line</li>
+            <li><kbd>3× Klick „TMDA Wiki" im Footer</kbd> → Credits</li>
+            <li><kbd>Konsole öffnen</kbd> → Nisse-Quote</li>
+            <li><kbd>Dienstag</kbd> → Folgentag-Banner</li>
+            <li><kbd>3am–7am</kbd> → Nacht-Toast</li>
+            <li><kbd>Tab unfocused</kbd> → Titel rotiert</li>
+            <li><kbd>?</kbd> → diese Seite</li>
+          </ul>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    const close = () => {
+      overlay.classList.remove('show');
+      setTimeout(() => overlay.remove(), 300);
+    };
+    overlay.querySelector('.egg-help-close').addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+    const onKey = (e) => {
+      if (e.key === 'Escape' || e.key === '?') {
+        close();
+        document.removeEventListener('keydown', onKey);
+      }
+    };
+    setTimeout(() => document.addEventListener('keydown', onKey), 50);
+  }
+
+  // =============== Konsolen-Greeting ===============
   console.log(
     '%c TMDA Wiki ',
     'background:linear-gradient(135deg,#ff8a3d,#ffd60a);color:#0b0b0f;padding:6px 12px;border-radius:6px;font-weight:bold;font-size:14px',
-    '\n„You must not become the most likely version of yourself." — Nisse\n\nTipp: probier mal die Konami-Sequenz, oder tipp „kalle", „papst" oder „fanta".'
+    '\n„You must not become the most likely version of yourself." — Nisse\n\nTipp: drück „?" für die komplette Easter-Egg-Liste.'
   );
 })();

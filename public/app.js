@@ -605,16 +605,34 @@ const DONATION_THRESHOLD = 3;
 const QUESTION_COUNT_KEY = 'tmda-chat-questions-session';
 const DONATION_SHOWN_KEY = 'tmda-donate-shown-session';
 
-// Easter-Egg-Hints, die nach jeder AI-Antwort kommen
+// Easter-Egg-Hints — kommen nach jeder AI-Antwort.
+// Wichtig: Hint sagt klar, dass es OUTSIDE der Chat-Box getriggert wird.
 const EASTER_HINTS = [
-  '🛸 Tipp: Klick das TMDA-Logo oben links zweimal hintereinander.',
-  '🪑 Tipp: Tipp irgendwo auf der Seite „kalle" (außerhalb von Inputs).',
-  '⏳ Tipp: Probier mal „papst" zu tippen.',
-  '🐐 Tipp: Geheimwort der Folge 1 — „fanta".',
-  '🥶 Tipp: Konami-Code (↑ ↑ ↓ ↓ ← → ← → B A) macht was Eisiges.',
-  '❄️ Tipp: Tipp „flutschi" und beobachte die Seite.',
-  '🎙️ Tipp: Triple-Click auf das fette „TMDA Wiki" im Footer.',
-  '🤓 Tipp: Öffne mal die Browser-Konsole (F12 / Cmd+Opt+J).',
+  '🥚 Easter Egg (NICHT hier im Chat — auf der Wiki-Seite ausprobieren): Klick das TMDA-Logo oben links zweimal schnell.',
+  '🥚 Easter Egg: Schließ den Chat, dann tipp auf der Wiki-Seite das Wort kalle (irgendwo, ohne Eingabefeld zu fokussieren).',
+  '🥚 Easter Egg: Auf der Wiki-Seite (nicht im Chat) das Wort papst tippen — siehst du was?',
+  '🥚 Easter Egg: Außerhalb des Chats das Wort fanta auf der Tastatur tippen.',
+  '🥚 Easter Egg: Drück auf der Wiki-Seite den Konami-Code: ↑ ↑ ↓ ↓ ← → ← → B A',
+  '🥚 Easter Egg: Tipp auf der Seite (Chat zu) das Wort flutschi — die Seite reagiert.',
+  '🥚 Easter Egg: Scroll ans Footer-Ende und mach Triple-Click auf das fette „TMDA Wiki".',
+  '🥚 Easter Egg: Öffne mal die Browser-Konsole (F12 oder Cmd+Opt+J) — dort wartet was.',
+  '🥚 Easter Egg: Tipp auf der Wiki-Seite das Wort crazy (Pele-Beckenbauer-Reference).',
+  '🥚 Easter Egg: Tipp das Wort thelen außerhalb des Chats — pass auf, was vom Himmel fällt.',
+  '🥚 Easter Egg: Tipp das Wort tabletten oder matrjoschka auf der Seite.',
+  '🥚 Easter Egg: Tipp das Wort marsalek auf der Seite — kurz schauen, weg.',
+  '🥚 Easter Egg: Tipp das Wort hartz4 — und beweg dann die Maus.',
+  '🥚 Easter Egg: Tipp das Wort iris auf der Seite — schließ kurz die Augen nicht.',
+  '🥚 Easter Egg: Tipp das Wort windrad — Hologramm-Mode.',
+  '🥚 Easter Egg: Tipp das Wort bosse auf der Seite (Folge 42).',
+  '🥚 Easter Egg: Tipp das Wort lindemann — Krisen-PR-Quote.',
+  '🥚 Easter Egg: Tipp das Wort aaron — Folge 3.',
+  '🥚 Easter Egg: 3-mal hintereinander auf eine Score-Badge klicken (z.B. „22/24").',
+  '🥚 Easter Egg: 5-mal eine Stat-Zahl auf der Startseite klicken (z.B. „45 Folgen").',
+  '🥚 Easter Egg: Beweg den Mauszeiger nacheinander in alle 4 Bildschirmecken.',
+  '🥚 Easter Egg: Halte den Chat-Button (unten rechts) länger als 1,5 Sekunden gedrückt.',
+  '🥚 Easter Egg: Drück die ? -Taste auf der Seite (Chat geschlossen) — Cheatsheet aller Eggs.',
+  '🥚 Easter Egg: Wechsel kurz den Tab — der Titel oben verrät dir was.',
+  '🥚 Easter Egg: Schau Dienstags oder zwischen 3 und 7 Uhr morgens vorbei.',
 ];
 function pickEasterHint() {
   return EASTER_HINTS[Math.floor(Math.random() * EASTER_HINTS.length)];
