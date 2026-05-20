@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-05-20",
+  "items": [
+    {
+      "name": "Fynn Kliemann",
+      "rolle": "Heimwerkerking · Musiker · Unternehmer · YouTuber",
+      "geboren": "1. Mai 1988",
+      "geburtsort": "Zeven, Niedersachsen",
+      "bio": "Aufgewachsen in Heeslingen mit zwei Brüdern und mehreren Pflegegeschwistern. 2008–2010 Ausbildung zum Mediengestalter an der Wilhelm-Wagenfeld-Schule in Bremen. Bekannt für seine Mischung aus Heimwerker-DIY, schnellem Schnitt, Dilettantismus und ständig neuen Projekten. 2017 Webvideopreis und Studio-Hamburg-Nachwuchspreis für Kliemannsland. Sein Label twoFinger Records gründete er, nachdem er einen Plattenvertrag bei Four Music ablehnte. Album TOD (2025) erreichte Platz 1 der deutschen Album-Charts. Im Mai 2022 deckte das ZDF Magazin Royale Betrugsvorwürfe rund um in Bangladesch/Vietnam produzierte Masken auf — ein Einschnitt, von dem er sich erst Schritt für Schritt erholte.",
+      "projekte": [
+        { "name": "Kliemannsland", "url": "https://www.kliemannsland.de", "beschreibung": "Kreativ-Hof in Rüspel — Zentrum für Kreative, samstags/sonntags geöffnet." },
+        { "name": "twoFinger Records", "url": "https://twofingerrecords.com", "beschreibung": "Sein unabhängiges Plattenlabel, gegründet mit Niklas Tietjen." },
+        { "name": "oderso", "url": "https://oderso.cool", "beschreibung": "Merch- und Projekt-Hub, dort auch die TMDA-Podcast-Seite." }
+      ],
+      "social": [
+        { "platform": "Instagram", "handle": "@fimbim", "url": "https://www.instagram.com/fimbim/" },
+        { "platform": "Instagram (Kliemannsland)", "handle": "@kliemannsland", "url": "https://www.instagram.com/kliemannsland/" },
+        { "platform": "YouTube (Hauptkanal)", "handle": "Fynn Kliemann", "url": "https://www.youtube.com/@fynnkliemann" },
+        { "platform": "YouTube (Kliemannsland)", "handle": "Das Kliemannsland", "url": "https://www.youtube.com/@kliemannsland" },
+        { "platform": "Wikipedia", "handle": "Fynn Kliemann", "url": "https://de.wikipedia.org/wiki/Fynn_Kliemann" }
+      ]
+    },
+    {
+      "name": "Nisse Ingwersen",
+      "rolle": "Sänger · Songwriter · Produzent",
+      "geboren": "Hamburg",
+      "geburtsort": "Hamburg-Harburg",
+      "bio": "Hamburger Singer-Songwriter, Künstlername Nisse. Verbrachte als Teenager ein Jahr in Großbritannien — dort entdeckte er den Rap für sich, fing nach der Rückkehr mit 17 Jahren in Hamburg an, eigene Texte zu schreiben. Eine erste HipHop-Band mit Freunden löste sich schnell wieder auf; nachdem er Demos rumgeschickt hatte, holte ihn das Berliner Label Four Music unter Vertrag. Debütalbum August erschien 2015, gefolgt von Wie ein Mann (2017) und Ciao (2018). Schreibt als Songwriter für Künstler:innen wie Peter Maffay, Matthias Schweighöfer, Sido und Kontra K — quer durch alle Genres von Rap bis Pop.",
+      "projekte": [
+        { "name": "Diskografie auf Spotify", "url": "https://open.spotify.com/artist/4KnUDY0asYB0Eb7vtNWIK7", "beschreibung": "Alle Alben & Singles — u.a. August, Wie ein Mann, Ciao." },
+        { "name": "Songwriting", "url": "https://de.wikipedia.org/wiki/Nisse_(Musiker)", "beschreibung": "Schreibt für Peter Maffay, Schweighöfer, Sido, Kontra K u.v.m." }
+      ],
+      "social": [
+        { "platform": "Instagram", "handle": "@nissemusik", "url": "https://www.instagram.com/nissemusik/" },
+        { "platform": "Spotify", "handle": "Nisse", "url": "https://open.spotify.com/artist/4KnUDY0asYB0Eb7vtNWIK7" },
+        { "platform": "Wikipedia", "handle": "Nisse (Musiker)", "url": "https://de.wikipedia.org/wiki/Nisse_(Musiker)" }
+      ]
+    },
+    {
+      "name": "Kalle Schwensen",
+      "rolle": "Hamburger Kaufmann · St. Pauli · namensgebender Gast in Kalles Corner",
+      "geboren": null,
+      "geburtsort": "Hamburg",
+      "bio": "Hamburger Persönlichkeit von St. Pauli, bekannt aus der 5-Sterne-Lux-Doku über Zuhälter. Er ist die namensgebende Figur der wiederkehrenden TMDA-Rubrik Kalles Corner ab Folge 37 — kurze, oft erstaunliche Anekdoten über ihn (Geldrückgabe per Bargeld-Koffer, Doppelgänger-Trick im Gericht, das Mucki-Pinzner-Attentat). In TMDA-Transkripten wird sein Name häufig als Kale oder Kales auto-transkribiert.",
+      "projekte": [],
+      "social": []
+    }
+  ]
+}

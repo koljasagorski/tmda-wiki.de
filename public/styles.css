@@ -399,6 +399,85 @@ tr:hover td { background: var(--bg-elev-2); }
 .filter-bar a:hover { color: var(--fg); }
 .filter-bar a.active { background: var(--bg-elev-2); color: var(--fg); }
 
+/* ---------- Hosts ---------- */
+.host-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .host-grid { grid-template-columns: 1fr 1fr; }
+  .host-card:nth-last-child(1):nth-child(odd) { grid-column: 1 / -1; }
+}
+.host-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.host-head {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.host-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: var(--accent-fg);
+  flex-shrink: 0;
+}
+.host-card h2 { margin: 0; font-size: 1.4rem; letter-spacing: -0.01em; }
+.host-role { color: var(--fg-muted); font-size: 0.95rem; margin-top: 2px; }
+.host-bio { color: var(--fg); line-height: 1.6; margin: 0 0 16px; }
+.host-section-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-muted);
+  margin: 16px 0 8px;
+}
+.host-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+.host-list li {
+  padding: 8px 12px;
+  background: var(--bg-elev-2);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+}
+.social-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.social-chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.social-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ---------- Misc ---------- */
 .kbd {
   font-family: var(--font-mono);

@@ -19,6 +19,7 @@ const dataFiles = [
   'gaeste',
   'zitate',
   'fun-facts',
+  'hosts',
 ];
 
 for (const name of dataFiles) {

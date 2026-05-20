@@ -72,6 +72,7 @@ const views = {
   '/glossar': renderGlossar,
   '/zitate': renderZitate,
   '/personen': renderPersonen,
+  '/hosts': renderHosts,
   '/chat': renderChat,
 };
 
@@ -160,6 +161,7 @@ async function renderHome() {
     { href: '#/glossar', title: 'Glossar & Inside-Jokes', desc: 'Running gags und Slang.', tag: 'Lexikon', emoji: '📖' },
     { href: '#/zitate', title: 'Zitate', desc: 'Die besten Sätze aller Folgen.', tag: 'Best-of', emoji: '💬' },
     { href: '#/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
+    { href: '#/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
     { href: '#/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
   ];
   const grid = document.getElementById('rubrikenGrid');
@@ -467,6 +469,47 @@ async function renderPersonen() {
     </tr>`));
   }
   app.appendChild(tbl);
+}
+
+// ---------- Hosts ----------
+async function renderHosts() {
+  const data = await getData('hosts');
+  const items = data.items || [];
+  app.innerHTML = `
+    <h1 class="section-title">🎙️ Hosts & Cast</h1>
+    <p class="section-sub">Wer hinter dem Mikrofon sitzt — und wer den Mythos „Kalles Corner" trägt.</p>
+    ${items.length === 0 ? emptyState('Hosts') : ''}
+  `;
+  if (items.length === 0) return;
+
+  const wrap = el('<div class="host-grid"></div>');
+  for (const h of items) {
+    const initials = (h.name || '?').split(/\s+/).map((p) => p[0]).join('').slice(0, 2).toUpperCase();
+    const projekte = (h.projekte || []).map((p) => `
+      <li>
+        <a href="${esc(p.url)}" target="_blank" rel="noopener"><strong>${esc(p.name)}</strong></a>
+        ${p.beschreibung ? ` — <span class="meta">${esc(p.beschreibung)}</span>` : ''}
+      </li>`).join('');
+    const social = (h.social || []).map((s) => `
+      <a class="social-chip" href="${esc(s.url)}" target="_blank" rel="noopener">
+        ${esc(s.platform)} <span class="meta">${esc(s.handle)}</span>
+      </a>`).join('');
+
+    wrap.appendChild(el(`<article class="host-card">
+      <header class="host-head">
+        <div class="host-avatar">${esc(initials)}</div>
+        <div>
+          <h2>${esc(h.name)}</h2>
+          <div class="host-role">${esc(h.rolle)}</div>
+          ${h.geboren ? `<div class="meta">Geboren: ${esc(h.geboren)}${h.geburtsort ? ' · ' + esc(h.geburtsort) : ''}</div>` : (h.geburtsort ? `<div class="meta">${esc(h.geburtsort)}</div>` : '')}
+        </div>
+      </header>
+      <p class="host-bio">${esc(h.bio)}</p>
+      ${projekte ? `<section><h3 class="host-section-title">Projekte</h3><ul class="host-list">${projekte}</ul></section>` : ''}
+      ${social ? `<section><h3 class="host-section-title">Social & Web</h3><div class="social-chips">${social}</div></section>` : ''}
+    </article>`));
+  }
+  app.appendChild(wrap);
 }
 
 // ---------- Chat ----------
