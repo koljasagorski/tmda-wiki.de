@@ -13,7 +13,7 @@
     banner.id = 'cookieBanner';
     banner.innerHTML = `
       <div class="cookie-image">
-        <img src="/fynn-cookie.jpg" alt="Fynn Kliemann (Foto ggf. noch hochzuladen)"
+        <img src="/cookies.png" alt="Cookies?"
              onerror="this.style.display='none';this.parentElement.querySelector('.cookie-fallback').hidden=false;" />
         <div class="cookie-fallback" hidden>🍟<br/><span style="font-size:0.5em;opacity:0.5">platzhalter</span></div>
       </div>
