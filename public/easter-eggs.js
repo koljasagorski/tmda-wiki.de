@@ -463,6 +463,21 @@
   const HIELSCHER_THRESHOLD = 6;
   const HIELSCHER_URL = 'https://hotelmatze.de';
 
+  // Test-Hooks:
+  //   ?joker=reset → setzt Counter + Shown-Flag zurück, Karte kommt nach 6 weiteren Klicks
+  //   ?joker=show  → zeigt die Karte sofort
+  try {
+    const hUrl = new URL(location.href);
+    const joker = hUrl.searchParams.get('joker');
+    if (joker === 'reset' || joker === 'show') {
+      sessionStorage.removeItem(HIELSCHER_VISITS_KEY);
+      sessionStorage.removeItem(HIELSCHER_SHOWN_KEY);
+      hUrl.searchParams.delete('joker');
+      history.replaceState(null, '', hUrl.pathname + (hUrl.search ? '?' + hUrl.searchParams : '') + hUrl.hash);
+      if (joker === 'show') setTimeout(() => showHielscherCard(), 300);
+    }
+  } catch (e) { /* fail-silent */ }
+
   function trackHielscherVisit() {
     if (sessionStorage.getItem(HIELSCHER_SHOWN_KEY)) return;
     const path = location.pathname.replace(/\/+$/, '') || '/';
