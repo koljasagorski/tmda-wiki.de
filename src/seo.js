@@ -84,12 +84,6 @@ export const STATIC_ROUTES = {
     priority: 0.5,
     changefreq: 'monthly',
   },
-  '/eggs': {
-    title: '🥚 Easter Eggs | TMDA Wiki',
-    description: 'Du hast die versteckte Seite gefunden — hier die Liste aller Easter Eggs im TMDA Wiki.',
-    priority: 0.1,
-    robots: 'noindex,nofollow',
-  },
 };
 
 // Dynamische Routen — handled via metaForDynamic

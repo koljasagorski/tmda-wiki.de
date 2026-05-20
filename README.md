@@ -56,7 +56,8 @@ Versteckt im Frontend (`public/easter-eggs.js`):
 - Tippen **`flutschi`** oder **Konami-Code** (↑↑↓↓←→←→BA) → „Trockener Flutschi"-Modus (Tilt + Ice-Filter)
 - **Triple-Click** auf den `TMDA Wiki`-Footer-Titel → Credits-Toast
 - Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
-- **Geheime Übersichtsseite** `/eggs` → über einen sehr unscheinbaren Punkt irgendwo im Footer erreichbar (noindex, nicht in der Sitemap)
+
+Dazu kommt nach **jeder Chat-Antwort** automatisch ein kleiner Hint zu einem zufälligen Easter Egg (kleine kursive Notiz unter der AI-Antwort, `.msg-hint`).
 
 ---
 
