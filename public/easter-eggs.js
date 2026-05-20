@@ -21,15 +21,15 @@
     }, ms);
   }
 
-  // ---------- 1. Logo 7× klicken ----------
+  // ---------- 1. Logo 2× klicken ----------
   const logo = document.querySelector('.logo');
   let logoClicks = 0;
   let logoResetTimer = null;
   logo?.addEventListener('click', () => {
     logoClicks++;
     clearTimeout(logoResetTimer);
-    logoResetTimer = setTimeout(() => { logoClicks = 0; }, 2000);
-    if (logoClicks === 7) {
+    logoResetTimer = setTimeout(() => { logoClicks = 0; }, 800);
+    if (logoClicks === 2) {
       logoClicks = 0;
       toast('🛸 <strong>Achievement unlocked:</strong> Talahons im Weltall', 5000);
       starfield();
