@@ -40,6 +40,11 @@ Wenn du **bestehende Inhalte** veränderst, prüfe ob die Beschreibung in `src/s
   - [ ] Neuer Trigger in `public/easter-eggs.js` → `TRIGGERS`
   - [ ] Neuer Hint in `public/app.js` → `EASTER_HINTS`
   - [ ] Cheatsheet-Eintrag in `public/easter-eggs.js` → `showHelpOverlay`
+- [ ] **Startup-Page**: hat die Folge eine Startup-Idee mit Punkten ≥ 16? Wenn ja:
+  - [ ] Eintrag in `STARTUPS_ROADMAP.md` (Status-Checklist)
+  - [ ] Neue Page unter `public/startup/<slug>/index.html` mit komplett individuellem Design
+  - [ ] Mapping in `public/data/startup-pages.json` (folge, ideeMatch, slug, domain, tagline, punkte)
+  - [ ] SEO-Meta in der Page (title, description, OG, JSON-LD)
 - [ ] **Chat-Kontext** (`src/index.js` → `buildWikiContext`): nur aktiv werden wenn die Folge eine **komplett neue Rubrik** einführt (sonst läuft alles über die Aggregations-JSONs automatisch)
 - [ ] **SEO** (`src/seo.js`): bei starkem neuen Thema die Home-/Folgen-`description` ergänzen — pro-Folge-Meta ist automatisch via `metaForFolge`
 

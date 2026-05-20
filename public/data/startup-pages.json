@@ -1,0 +1,21 @@
+{
+  "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
+  "items": [
+    {
+      "folge": 45,
+      "ideeMatch": "HATS",
+      "slug": "hats",
+      "domain": "h-a-c-s.de",
+      "tagline": "Hot Air to Sock Adapter — der Universal-Belüftungsschlauch fürs Auto",
+      "punkte": 22
+    },
+    {
+      "folge": 44,
+      "ideeMatch": "windradhologramm",
+      "slug": "windradhologramm",
+      "domain": "windradhologramm.de",
+      "tagline": "Das Hologramm-Windrad gegen das Hologramm-Problem",
+      "punkte": 22
+    }
+  ]
+}

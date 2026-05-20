@@ -73,6 +73,15 @@ Alles in `public/easter-eggs.js`. Drück <kbd>?</kbd> auf der Seite für das kom
 
 Dazu hängt der **Chat-Bot** nach jeder AI-Antwort eine kleine kursive Hint-Bubble (`.msg-hint`) mit einem zufälligen Egg-Hint an. Die Hint-Texte erklären explizit, dass das Trigger-Wort **auf der Seite** (nicht im Chat-Input) getippt werden muss.
 
+### 🚀 Startup-Pages
+
+Jede Startup-Idee aus dem Podcast kann eine eigene **One-Pager-Seite** bekommen — komplett individuell gestaltet, als wäre es ein echtes Produkt. Roadmap und Workflow: [`STARTUPS_ROADMAP.md`](./STARTUPS_ROADMAP.md).
+
+- **Path**: `/startup/<slug>` → serves `public/startup/<slug>/index.html`
+- **Mapping**: `public/data/startup-pages.json` verbindet Idee mit Slug; auf `/startup-ideen` werden Links automatisch eingeblendet
+- **Worker**: catch-all in `src/index.js` lässt `/startup/*` durch zu ASSETS (keine SEO-Injection, jede Page bringt ihre eigenen Meta-Tags mit)
+- **Diversity-Brief**: jede Page MUSS sich optisch komplett von den bestehenden unterscheiden. Style-Pool siehe Roadmap.
+
 ### 🍪 Cookie-Banner
 
 Pure Witz-Compliance — wir setzen keine Tracking-Cookies, nur funktionale localStorage-Keys. Banner erscheint einmal pro Browser (`tmda-cookie-acknowledged`-Flag), schreibt ironisch was wir wirklich speichern, und linkt auf nichts. Das Bild im Banner-Slot lädt aus `/cookies.png` — falls die Datei fehlt, fällt der Banner auf 🍟-Emoji zurück.

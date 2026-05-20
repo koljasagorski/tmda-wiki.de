@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>windradhologramm.de — Das Hologramm-Windrad gegen das Hologramm-Problem</title>
+<meta name="description" content="Wenn die Letzte Generation klebt, holst du das Windrad weg und projizierst stattdessen ein Hologramm. Energiewende ohne Drama. Ab 2026 in Pilotregionen." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/windradhologramm" />
+<meta property="og:title" content="windradhologramm.de — Das Hologramm-Windrad" />
+<meta property="og:description" content="Energiewende ohne Drama. Hologramm statt Rotor." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/windradhologramm" />
+<meta property="og:site_name" content="windradhologramm" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"windradhologramm.de","description":"Hologramm-Windrad als Wahrnehmungs-Lösung für die Energiewende","brand":{"@type":"Brand","name":"windradhologramm.de"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sky: #d6f1ff;
+  --sky-2: #a3e0ff;
+  --green: #16a34a;
+  --green-dark: #15803d;
+  --green-light: #dcfce7;
+  --grass: #4ade80;
+  --ink: #0a1a14;
+  --ink-soft: #2d4a3e;
+  --cream: #fefefb;
+  --warning: #f59e0b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--sky); color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: var(--green-dark); }
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 32px 28px 80px;
+  background: linear-gradient(180deg, var(--sky) 0%, var(--sky-2) 60%, var(--green-light) 100%);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  font-weight: 700;
+}
+.nav .logo {
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.nav .logo .dot { color: var(--green); }
+.nav-eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 5.5vw, 4.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.hero h1 .accent {
+  color: var(--green-dark);
+  position: relative;
+  display: inline-block;
+}
+.hero h1 .accent::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 4px;
+  height: 14px;
+  background: var(--grass);
+  z-index: -1;
+  opacity: 0.4;
+  border-radius: 6px;
+}
+.hero p.lead {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  margin-bottom: 32px;
+  max-width: 52ch;
+  font-weight: 300;
+}
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--green);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background .15s, transform .15s;
+}
+.btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+.btn-ghost {
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+.btn-ghost:hover { background: var(--ink); color: var(--cream); }
+
+/* Hero illustration */
+.hero-art {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+}
+.hero-art svg {
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+}
+
+/* Stats */
+.stats {
+  background: var(--cream);
+  padding: 80px 28px;
+}
+.stats-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+.stat-num {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--green);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.stat-label {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+/* How */
+.how {
+  padding: 100px 28px;
+  background: var(--green-light);
+}
+.how-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.how-eyebrow {
+  color: var(--green-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.how h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 48px;
+  max-width: 16ch;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.step {
+  background: var(--cream);
+  padding: 36px 28px;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid color-mix(in oklab, var(--green) 18%, var(--cream));
+}
+.step .step-num {
+  position: absolute;
+  top: -18px;
+  left: 28px;
+  width: 36px;
+  height: 36px;
+  background: var(--green);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+.step h3 {
+  margin: 12px 0 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.step p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* Quote */
+.quote {
+  padding: 100px 28px;
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+}
+.quote-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.quote q {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 24px;
+}
+.quote q::before { content: '„'; color: var(--grass); }
+.quote q::after { content: '"'; color: var(--grass); }
+.quote cite {
+  font-style: normal;
+  color: var(--grass);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Compare */
+.compare {
+  padding: 100px 28px;
+  background: var(--cream);
+}
+.compare-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.compare h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.compare-col {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  border: 2px solid #e5e7eb;
+}
+.compare-col.bad { border-color: #fecaca; background: #fff5f5; }
+.compare-col.good { border-color: var(--green); background: var(--green-light); }
+.compare-col h3 {
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.compare-col ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.compare-col li {
+  padding-left: 28px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.compare-col li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 900;
+}
+.compare-col.bad li::before { content: '✕'; color: #ef4444; }
+.compare-col.good li::before { content: '✓'; color: var(--green); }
+
+/* CTA */
+.cta {
+  padding: 100px 28px;
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: white;
+  text-align: center;
+}
+.cta h2 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta p {
+  max-width: 50ch;
+  margin: 0 auto 32px;
+  font-weight: 300;
+  opacity: 0.95;
+  font-size: 1.1rem;
+}
+.cta .btn-primary {
+  background: white;
+  color: var(--green-dark);
+}
+.cta .btn-primary:hover { background: var(--cream); transform: translateY(-2px); }
+
+footer {
+  background: var(--ink);
+  color: var(--sky);
+  padding: 50px 28px;
+  text-align: center;
+  font-size: 0.88rem;
+}
+footer a { color: var(--grass); }
+
+@media (max-width: 760px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+/* Animation: rotor */
+.rotor { animation: spin 6s linear infinite; transform-origin: 160px 160px; }
+.rotor.slow { animation-duration: 12s; }
+@keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+.hologram { animation: pulse 3s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 0.95; } }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <nav class="nav">
+    <div class="logo">windradhologramm<span class="dot">.</span>de</div>
+    <div class="nav-eyebrow">B2G · Pilot 2026</div>
+  </nav>
+
+  <div class="hero-inner">
+    <div>
+      <h1>Energiewende.<br>Ohne <span class="accent">Drama</span>.</h1>
+      <p class="lead">
+        Wenn die Letzte Generation klebt und Bürgerinitiativen kreischen, holst du das Windrad weg
+        und projizierst stattdessen ein Hologramm. Der Strom kommt aus dem Hologramm-Backup.
+        Die Klage geht durch das Gericht. Beide gewinnen.
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#how">So funktioniert's →</a>
+        <a class="btn-ghost" href="#kontakt">Pilotprojekt anfragen</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="holo" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#16a34a" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#4ade80" stop-opacity="0.3"/>
+          </linearGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- Wiese -->
+        <ellipse cx="160" cy="290" rx="140" ry="14" fill="#4ade80" opacity="0.6"/>
+        <!-- Holo-Strahlen unten -->
+        <polygon points="120,280 200,280 175,160 145,160" fill="url(#holo)" opacity="0.35" filter="url(#glow)" class="hologram"/>
+        <!-- Mast -->
+        <rect x="156" y="160" width="8" height="120" fill="#16a34a" opacity="0.7"/>
+        <!-- Rotor-Gehäuse -->
+        <ellipse cx="160" cy="160" rx="22" ry="12" fill="#15803d" opacity="0.8"/>
+        <!-- Rotor (drei Flügel, animiert) -->
+        <g class="rotor" filter="url(#glow)">
+          <ellipse cx="160" cy="80" rx="9" ry="80" fill="url(#holo)" opacity="0.85"/>
+          <ellipse cx="160" cy="160" rx="9" ry="80" fill="url(#holo)" opacity="0.85" transform="rotate(120 160 160)"/>
+          <ellipse cx="160" cy="160" rx="9" ry="80" fill="url(#holo)" opacity="0.85" transform="rotate(240 160 160)"/>
+        </g>
+        <!-- Nabe -->
+        <circle cx="160" cy="160" r="10" fill="#15803d"/>
+        <circle cx="160" cy="160" r="4" fill="#4ade80"/>
+        <!-- Scan-Linien -->
+        <g stroke="#4ade80" stroke-width="0.5" opacity="0.4">
+          <line x1="80" y1="100" x2="240" y2="100"/>
+          <line x1="80" y1="120" x2="240" y2="120"/>
+          <line x1="80" y1="200" x2="240" y2="200"/>
+          <line x1="80" y1="220" x2="240" y2="220"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">0</div>
+      <div class="stat-label">Vogelschlag-Opfer</div>
+    </div>
+    <div>
+      <div class="stat-num">−97%</div>
+      <div class="stat-label">Bürgerproteste</div>
+    </div>
+    <div>
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Ausrede für Strompreise</div>
+    </div>
+    <div>
+      <div class="stat-num">1</div>
+      <div class="stat-label">Ausschalter im Notfall</div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="how-eyebrow">So funktioniert's</div>
+    <h2>In drei Schritten zur sichtbaren Energiewende.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Holo-Mast montieren</h3>
+        <p>20-Meter-Projektor wird wie ein normaler Windrad-Sockel aufgestellt. Komplett ohne Rotor. Sieht nach 2 Wochen aus wie ein Windrad.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Hologramm aktivieren</h3>
+        <p>Volumetrisches Display zeigt rotierende Rotorblätter über 80 m Höhe. Vom Boden aus nicht von echtem Windrad zu unterscheiden.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Letzte Generation klebt</h3>
+        <p>Aktivisten kleben sich am Hologramm fest und merken's nicht. Bürgerinitiative klagt gegen das Hologramm und blamiert sich.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="quote-inner">
+    <q>Erst seid ihr für Windräder, jetzt seid ihr gegen Windräder.</q>
+    <cite>— Fynn Kliemann · TMDA Folge 44</cite>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="compare-inner">
+    <h2>Hologramm vs. echtes Windrad</h2>
+    <div class="compare-grid">
+      <div class="compare-col bad">
+        <h3>⚙️ Klassisches Windrad</h3>
+        <ul>
+          <li>Vogelschlag, Schlagschatten, „Disco-Effekt"</li>
+          <li>5–10 Jahre Bauantrag</li>
+          <li>Bürgerinitiative gründet sich vor Bauantrag-Eingang</li>
+          <li>Letzte Generation klebt sich an die Nabe</li>
+          <li>Wartungskosten ab 80.000 €/Jahr</li>
+        </ul>
+      </div>
+      <div class="compare-col good">
+        <h3>🌿 Hologramm-Windrad</h3>
+        <ul>
+          <li>Keine Tiere, keine Schatten, kein Geräusch</li>
+          <li>Genehmigung als „Werbeanlage" in 4 Wochen</li>
+          <li>Letzte Generation klebt sich daran fest und merkt's nicht</li>
+          <li>Wartungskosten: Projektor-Lampe alle 5 Jahre</li>
+          <li>Stromproduktion: aus Solar im Mast oder einfach Trick</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="kontakt">
+  <h2>Pilotregion gesucht.</h2>
+  <p>Wir bauen die ersten zehn Hologramm-Windräder als Pilot. Schicke uns deine Kommune — wir machen den Termin mit dem Bürgermeister.</p>
+  <a class="btn-primary" href="mailto:tmda@sagorski.org?subject=Pilotregion%20windradhologramm.de">Kontakt aufnehmen</a>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #44 · Bewertung 22/24<br>
+  <a href="/folge/44">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+</footer>
+
+</body>
+</html>

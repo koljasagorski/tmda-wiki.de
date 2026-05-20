@@ -373,7 +373,13 @@ async function renderPage(c) {
 app.all('*', async (c) => {
   const url = new URL(c.req.url);
   const path = url.pathname;
+  // Statische Files mit Extension → direkt aus ASSETS
   if (/\.[a-zA-Z0-9]+$/.test(path)) {
+    return c.env.ASSETS.fetch(c.req.raw);
+  }
+  // Startup-One-Pager: passthrough zu ASSETS (jede Page bringt ihr eigenes
+  // HTML/CSS/JS und ihre eigenen SEO-Meta mit — keine Wiki-Injection)
+  if (path.startsWith('/startup/')) {
     return c.env.ASSETS.fetch(c.req.raw);
   }
   return renderPage(c);
