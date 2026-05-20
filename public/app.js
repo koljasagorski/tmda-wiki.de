@@ -168,6 +168,28 @@ async function renderHome() {
       <a class="stat" href="/glossar"><div class="stat-num">${glo.count || 0}</div><div class="stat-label">Glossar</div></a>
     </section>
 
+    <section class="podcast-links">
+      <h2 class="podcast-links-title">🎧 Hör den Podcast</h2>
+      <div class="podcast-links-row">
+        <a class="podcast-link spotify" href="https://open.spotify.com/show/1U68QUHMUz360Ft1NCK9Ur" target="_blank" rel="noopener" aria-label="TMDA auf Spotify hören">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.3c-.2.4-.7.5-1 .3-2.7-1.6-6-2-10-1.1-.4.1-.8-.2-.9-.6-.1-.4.2-.8.6-.9 4.3-1 8-.6 10.9 1.2.4.2.5.6.4.9zm1.5-3.3c-.3.4-.8.6-1.2.4-3.1-1.9-7.8-2.5-11.5-1.3-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.2-1.3 9.4-.7 12.9 1.5.4.2.5.7.3 1.1zm.1-3.4C15.4 8.5 8.9 8.3 5.3 9.4c-.6.2-1.2-.2-1.4-.7-.2-.6.2-1.2.7-1.4 4.2-1.3 11.4-1 15.6 1.5.5.3.7 1 .4 1.5-.3.6-1 .7-1.5.4z"/></svg>
+          <span>Spotify</span>
+        </a>
+        <a class="podcast-link apple" href="https://podcasts.apple.com/de/podcast/teenager-mit-deutschem-akzent-tmda/id1825080928" target="_blank" rel="noopener" aria-label="TMDA auf Apple Podcasts hören">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 4.5a3.5 3.5 0 0 1 3.5 3.5v4a3.5 3.5 0 1 1-7 0V8A3.5 3.5 0 0 1 12 4.5zm-6 8h2a4 4 0 0 0 8 0h2a6 6 0 0 1-5 5.9V21h-2v-2.6a6 6 0 0 1-5-5.9z"/></svg>
+          <span>Apple Podcasts</span>
+        </a>
+        <a class="podcast-link youtube" href="https://www.youtube.com/@tmda-podcast" target="_blank" rel="noopener" aria-label="TMDA auf YouTube">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5c-.3-1-1-1.8-2-2C19.5 4 12 4 12 4s-7.5 0-9.5.5c-1 .3-1.8 1-2 2C0 8.5 0 12 0 12s0 3.5.5 5.5c.3 1 1 1.8 2 2C4.5 20 12 20 12 20s7.5 0 9.5-.5c1-.3 1.8-1 2-2 .5-2 .5-5.5.5-5.5s0-3.5-.5-5.5zM9.5 15.5v-7L16 12l-6.5 3.5z"/></svg>
+          <span>YouTube</span>
+        </a>
+        <a class="podcast-link generic" href="https://www.podcast.de/podcast/3624277/teenager-mit-deutschem-akzent-tmda" target="_blank" rel="noopener" aria-label="TMDA auf podcast.de">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12a10 10 0 1 0 10-10"/><path d="M5.6 12a6.4 6.4 0 1 0 6.4-6.4"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/></svg>
+          <span>podcast.de</span>
+        </a>
+      </div>
+    </section>
+
     ${topIdee ? `
     <section class="home-highlight">
       <h2 class="section-title">🏆 Best-bewertete Startup-Idee</h2>
