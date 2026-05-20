@@ -11,12 +11,18 @@ if (location.hash.startsWith('#/')) {
 }
 
 // ---------- Theme ----------
-const savedTheme = localStorage.getItem('tmda-theme');
-if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+// Initiales Setzen passiert per Inline-Script im <head>, um Flash-of-Wrong-Theme
+// zu vermeiden. Hier nur: Toggle + Live-Reaktion auf OS-Wechsel (solange kein
+// manueller Override in localStorage steht).
 themeToggle?.addEventListener('click', () => {
   const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', cur);
   localStorage.setItem('tmda-theme', cur);
+});
+const _osThemeQuery = window.matchMedia?.('(prefers-color-scheme: dark)');
+_osThemeQuery?.addEventListener?.('change', (e) => {
+  if (localStorage.getItem('tmda-theme')) return;
+  document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
 });
 
 // ---------- Helpers ----------
