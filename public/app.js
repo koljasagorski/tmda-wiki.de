@@ -139,21 +139,25 @@ async function renderHome() {
     .sort((a, b) => b.punkte - a.punkte)[0];
 
   app.innerHTML = `
-    <section class="hero">
-      <div>
-        <h1>Das inoffizielle <span class="accent">TMDA</span> Wiki.</h1>
-        <p>Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong> — Startup-Ideen mit Punkten, Kalles Corner, Gerüchte, Inside-Jokes, alles automatisch aus den Folgen-Transkripten.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen ansehen →</a>
-          <a class="btn" href="/chat">AI-Chat</a>
+    <section class="home-top">
+      <div class="hero">
+        <div>
+          <h1>Das inoffizielle <span class="accent">TMDA</span> Wiki.</h1>
+          <p>Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong> — Startup-Ideen mit Punkten, Kalles Corner, Gerüchte, Inside-Jokes, alles automatisch aus den Folgen-Transkripten.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen ansehen →</a>
+            <a class="btn" href="/chat">AI-Chat</a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="latestVideo" class="latest-video" hidden>
-      <h2 class="section-title">🎬 Aktuelle Folge auf YouTube</h2>
-      <p class="section-sub" id="latestVideoMeta"></p>
-      <div class="yt-embed" id="latestVideoEmbed"></div>
+      <aside id="latestVideo" class="latest-video-aside" hidden>
+        <div class="latest-video-head">
+          <span class="tag tag-accent">🎬 Aktuelle Folge</span>
+          <a href="https://www.youtube.com/playlist?list=PLMftwspHv5RgVDn9rePz3EuLlTJfrC9Hd" target="_blank" rel="noopener" class="meta">Playlist ↗</a>
+        </div>
+        <div class="yt-embed" id="latestVideoEmbed"></div>
+        <div class="meta" id="latestVideoMeta"></div>
+      </aside>
     </section>
 
     <section class="stats">

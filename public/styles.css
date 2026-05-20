@@ -470,20 +470,57 @@ tr:hover td { background: var(--bg-elev-2); }
 }
 .nav-mini:hover { opacity: 1; }
 
-/* ---------- Latest YouTube video ---------- */
-.latest-video {
-  margin-top: 32px;
-  margin-bottom: 32px;
+/* ---------- Home top: Hero + Latest Video Aside ---------- */
+.home-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+@media (min-width: 880px) {
+  .home-top {
+    grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+    gap: 36px;
+  }
+  .home-top .hero { padding: 32px 0 24px; border-bottom: none; margin-bottom: 0; }
+}
+.latest-video-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  position: sticky;
+  top: 80px;
+}
+.latest-video-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.latest-video-aside .meta {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.latest-video-aside a.meta {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--accent) 50%, transparent);
+}
+.latest-video-aside a.meta:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 .yt-embed {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
 }
 .yt-embed iframe {
   position: absolute;

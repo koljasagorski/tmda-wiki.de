@@ -159,7 +159,8 @@ Voraussetzungen:
 |---|---|---|
 | `SITE_URL` | Canonical-URL für Sitemap/OG | `https://tmda-wiki.de` |
 | `REPO_URL` | Repo-Link für Footer | `https://github.com/koljasagorski/tmda-wiki.de` |
-| `YOUTUBE_CHANNEL_ID` | YouTube-Channel-ID für den Latest-Video-Embed (`UC...`). Wenn leer, wird der Embed nicht angezeigt. | `""` |
+| `YOUTUBE_CHANNEL_ID` | YouTube-Channel-ID (`UC...`) als Fallback für den Latest-Video-Embed. | `""` |
+| `YOUTUBE_PLAYLIST_ID` | YouTube-Playlist-ID (`PL...`) wird **bevorzugt** für den Latest-Video-Embed — saubere Folgenliste ohne Shorts/Random-Videos. | `""` |
 | `TURNSTILE_SITE_KEY` | Public Site-Key (vom Cloudflare-Dashboard). Wenn leer, kein Captcha. | `""` |
 | `TURNSTILE_QUESTION_THRESHOLD` | Ab welcher Nutzerfrage Turnstile triggert | `"5"` |
 

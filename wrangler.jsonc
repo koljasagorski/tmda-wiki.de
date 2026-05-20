@@ -7,7 +7,8 @@
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
   },
   "ai": {
     "binding": "AI"
@@ -19,9 +20,8 @@
     "REPO_URL": "https://github.com/koljasagorski/tmda-wiki.de",
     "SITE_URL": "https://tmda-wiki.de",
     "YOUTUBE_CHANNEL_ID": "UCElrxY9HukZ3ip483BarIqQ",
-
+    "YOUTUBE_PLAYLIST_ID": "PLMftwspHv5RgVDn9rePz3EuLlTJfrC9Hd",
     "TURNSTILE_SITE_KEY": "0x4AAAAAADS-GOj6875TWcqb",
-
     "TURNSTILE_QUESTION_THRESHOLD": "5"
   }
 }

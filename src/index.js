@@ -54,23 +54,25 @@ app.get('/api/config', (c) => {
   });
 });
 
-// ---------- Latest YouTube video (cached) ----------
+// ---------- Latest YouTube video (cached, prefer playlist over channel) ----------
 let latestVideoCache = { at: 0, data: null };
 app.get('/api/latest-video', async (c) => {
+  const playlistId = c.env.YOUTUBE_PLAYLIST_ID;
   const channelId = c.env.YOUTUBE_CHANNEL_ID;
-  if (!channelId) {
-    return c.json({ ok: false, reason: 'YOUTUBE_CHANNEL_ID nicht gesetzt' }, 200);
+  if (!playlistId && !channelId) {
+    return c.json({ ok: false, reason: 'weder YOUTUBE_PLAYLIST_ID noch YOUTUBE_CHANNEL_ID gesetzt' }, 200);
   }
-  // 30-Minuten-Cache (per-isolate, best effort)
   if (latestVideoCache.data && Date.now() - latestVideoCache.at < 30 * 60 * 1000) {
     return c.json(latestVideoCache.data);
   }
+  const feedUrl = playlistId
+    ? `https://www.youtube.com/feeds/videos.xml?playlist_id=${encodeURIComponent(playlistId)}`
+    : `https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(channelId)}`;
   try {
-    const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(channelId)}`;
-    const r = await fetch(url, { cf: { cacheTtl: 1800 } });
+    const r = await fetch(feedUrl, { cf: { cacheTtl: 1800 } });
     if (!r.ok) throw new Error('feed fetch failed: ' + r.status);
     const xml = await r.text();
-    const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].slice(0, 5).map((m) => {
+    const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].slice(0, 10).map((m) => {
       const block = m[1];
       const pick = (rx) => (block.match(rx) || [, ''])[1];
       return {
@@ -81,7 +83,14 @@ app.get('/api/latest-video', async (c) => {
         author: pick(/<name>([^<]+)<\/name>/),
       };
     }).filter((v) => v.id);
-    const data = { ok: true, videos: entries, fetchedAt: new Date().toISOString() };
+    // Bei Playlist: newest published first (Playlists sind oft chronologisch)
+    entries.sort((a, b) => (b.published || '').localeCompare(a.published || ''));
+    const data = {
+      ok: true,
+      source: playlistId ? 'playlist' : 'channel',
+      videos: entries,
+      fetchedAt: new Date().toISOString(),
+    };
     latestVideoCache = { at: Date.now(), data };
     return c.json(data);
   } catch (err) {
