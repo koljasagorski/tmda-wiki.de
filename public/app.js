@@ -96,6 +96,10 @@ function navigate(path) {
   router();
 }
 
+// Pfade die NICHT durch den SPA-Router laufen sollen — der Browser navigiert
+// hierhin direkt (eigene HTML-Files, statische Assets, API).
+const NON_SPA_PREFIXES = ['/startup/', '/transcripts/', '/api/', '/data/'];
+
 // Intercept clicks on internal links and route via pushState
 document.addEventListener('click', (e) => {
   if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
@@ -106,6 +110,11 @@ document.addEventListener('click', (e) => {
   if (a.target === '_blank' || a.hasAttribute('download')) return;
   if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
   if (!href.startsWith('/')) return;
+  // Datei mit Endung (.txt, .png, .xml, .jpg, ...) → echte Browser-Navigation
+  const pathOnly = href.split('?')[0].split('#')[0];
+  if (/\.[a-zA-Z0-9]+$/.test(pathOnly)) return;
+  // Worker-handled / Eigen-HTML-Routen → echte Browser-Navigation
+  if (NON_SPA_PREFIXES.some((p) => pathOnly.startsWith(p))) return;
   e.preventDefault();
   navigate(href);
 });
