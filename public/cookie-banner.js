@@ -57,5 +57,5 @@
     };
     banner.querySelector('[data-cookie-accept]').addEventListener('click', () => dismiss('accepted'));
     banner.querySelector('[data-cookie-decline]').addEventListener('click', () => dismiss('declined'));
-  }, 1500);
+  }, delay);
 })();
