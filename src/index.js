@@ -38,7 +38,13 @@ for (const name of dataFiles) {
       const res = await c.env.ASSETS.fetch(new URL(`/data/${name}.json`, c.req.url));
       const ct = res.headers.get('content-type') || '';
       if (!ct.includes('json')) throw new Error('not json');
-      return c.json(await res.json());
+      const body = await res.json();
+      return new Response(JSON.stringify(body), {
+        headers: {
+          'content-type': 'application/json; charset=utf-8',
+          'cache-control': 'public, max-age=300, s-maxage=3600, stale-while-revalidate=86400',
+        },
+      });
     } catch {
       return c.json({ items: [], count: 0, note: 'noch keine Daten — bitte Transkripte hochladen' }, 200);
     }
