@@ -150,9 +150,27 @@ tmda-wiki.de/
 
 1. **Transkript holen** (z.B. YouTube-Untertitel als Text) → in `transcripts/folge-XX.txt` ablegen.
    Format: Frontmatter (folge/titel/laufzeit) + Plain Text mit `[MM:SS] Inhalt` Markern.
-2. **AI-Extraktion**: Ein LLM (Claude/GPT) liest das Transkript und schreibt eine JSON nach `/tmp/tmda-extracts/folge-XX.json` gemäß dem Schema in `scripts/aggregate.js`.
-3. **Aggregieren**: `npm run aggregate` — überschreibt `public/data/*.json`.
+2. **AI-Extraktion**: Ein LLM (Claude/GPT) liest das Transkript und schreibt eine JSON nach `/tmp/tmda-extracts/folge-XX.json` (oder `scripts/extracts/folge-XX.json`) gemäß dem Schema in `scripts/aggregate.js`.
+3. **Aggregieren**: `npm run aggregate` — überschreibt `public/data/*.json` und die Transkript-Kopie unter `public/transcripts/`.
 4. **Deployen**: `npm run deploy`.
+
+#### ⚠️ Wenn eine neue Folge dazukommt — IMMER checken
+
+Eine neue Folge betrifft mehr als nur die JSON-Daten. Bei jeder neuen Folge prüfen:
+
+| Bereich | Was prüfen |
+|---|---|
+| **`public/data/*.json`** | Wird automatisch durch `npm run aggregate` aktualisiert. |
+| **`public/data/hosts.json`** | Hat Kalle/Fynn/Nisse was Neues über sich erzählt? Neue Projekte / Alben / Aussagen, die ins Bio gehören? |
+| **Chat-Kontext** (`src/index.js` → `buildWikiContext`) | Lädt alles automatisch aus den Aggregations-JSONs — keine manuelle Aktion nötig, AUSSER die Folge führt eine neue Rubrik ein. |
+| **Easter Eggs** (`public/easter-eggs.js`) | Hat die Folge ein **memorable Wort/Zitat**, das ein neues Egg verdient? (Beispiele bisher: „flutschi" → Folge 42, „papst" → Folge 1, „crazy" → Folge 37.) Wenn ja: neuer Eintrag in `TRIGGERS` + Hint in `EASTER_HINTS` in `public/app.js` + Cheatsheet-Eintrag in `easter-eggs.js` → `showHelpOverlay`. |
+| **Chat-Hints** (`public/app.js` → `EASTER_HINTS`) | Bei neuem Egg: auch einen Hint hier ergänzen. |
+| **SEO** (`src/seo.js`) | Wenn die Folge ein wirklich starkes Thema hat (z.B. neue Diskografie, neuer Skandal), evtl. die `description` der Home/`/folgen`-Route updaten. Pro-Folge-Meta läuft automatisch über `metaForFolge`. |
+| **Folgen-Datum-Backfill** | `scripts/aggregate.js` → `KNOWN_DATES`: neue Folge mit Release-Datum eintragen (für sitemap `lastmod` + UI). |
+| **YouTube-Embed** | Wird via Playlist-RSS automatisch aktualisiert (30-Min-Cache). Keine Aktion nötig. |
+| **Sitemap** | Wird im Worker dynamisch aus `episodes.json` generiert. Automatisch. |
+
+Diese Checkliste ist auch in `.github/PULL_REQUEST_TEMPLATE.md` als Pflicht-Abschnitt, sobald ein PR Files unter `transcripts/` oder `scripts/extracts/` ändert.
 
 ---
 
