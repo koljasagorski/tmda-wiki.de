@@ -69,6 +69,7 @@ Alles in `public/easter-eggs.js`. Drück <kbd>?</kbd> auf der Seite für das kom
 **Zeit/Kontext**:
 - Dienstag → Folgentag-Banner · 3am–7am → „Mucki ist tot, ne" · Tab unfocused → Titel rotiert TMDA-Quotes
 - Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
+- 6 verschiedene Seiten besucht (pro Session) → Pokerkarte unten links: „Willst du lieber den Hielscher ziehen?" → Hotel Matze
 - <kbd>?</kbd> → Help-Overlay mit allen Eggs
 
 Dazu hängt der **Chat-Bot** nach jeder AI-Antwort eine kleine kursive Hint-Bubble (`.msg-hint`) mit einem zufälligen Egg-Hint an. Die Hint-Texte erklären explizit, dass das Trigger-Wort **auf der Seite** (nicht im Chat-Input) getippt werden muss.
