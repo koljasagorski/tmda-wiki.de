@@ -19,7 +19,9 @@
     "REPO_URL": "https://github.com/koljasagorski/tmda-wiki.de",
     "SITE_URL": "https://tmda-wiki.de",
     "YOUTUBE_CHANNEL_ID": "UCElrxY9HukZ3ip483BarIqQ",
-    "TURNSTILE_SITE_KEY": "",
+
+    "TURNSTILE_SITE_KEY": "0x4AAAAAADS-GOj6875TWcqb",
+
     "TURNSTILE_QUESTION_THRESHOLD": "5"
   }
 }
