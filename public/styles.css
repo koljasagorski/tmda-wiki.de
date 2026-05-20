@@ -399,6 +399,43 @@ tr:hover td { background: var(--bg-elev-2); }
 .filter-bar a:hover { color: var(--fg); }
 .filter-bar a.active { background: var(--bg-elev-2); color: var(--fg); }
 
+/* ---------- Donation Callout ---------- */
+.donate-callout {
+  align-self: stretch;
+  margin: 8px 0;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, var(--bg-elev)) 0%, var(--bg-elev) 100%);
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, var(--border));
+}
+.donate-callout h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+.donate-callout p {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--fg);
+}
+.donate-callout .meta {
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+  margin-top: 4px;
+}
+.donate-btn {
+  display: inline-block;
+  margin: 8px 0 4px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: var(--accent-fg);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.donate-btn:hover { filter: brightness(1.05); color: var(--accent-fg); }
+
 /* ---------- Hosts ---------- */
 .host-grid {
   display: grid;
