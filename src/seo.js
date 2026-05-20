@@ -74,6 +74,12 @@ export const STATIC_ROUTES = {
     priority: 0.4,
     robots: 'noindex,follow',
   },
+  '/transkripte-gesucht': {
+    title: 'Transkripte mit Sprecher-Zuordnung gesucht | TMDA Wiki',
+    description: 'Wir suchen Folgen-Transkripte mit eindeutiger Sprecher-Zuordnung (Fynn / Nisse / Kalle). Falls du das machen kannst — meld dich gerne per Mail.',
+    priority: 0.5,
+    changefreq: 'monthly',
+  },
 };
 
 // Dynamische Routen — handled via metaForDynamic

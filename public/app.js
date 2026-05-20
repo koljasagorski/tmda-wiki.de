@@ -80,6 +80,7 @@ const views = {
   '/personen': renderPersonen,
   '/hosts': renderHosts,
   '/chat': renderChat,
+  '/transkripte-gesucht': renderTranskripteGesucht,
 };
 
 function setActive(path) {
@@ -149,6 +150,12 @@ async function renderHome() {
       </div>
     </section>
 
+    <section id="latestVideo" class="latest-video" hidden>
+      <h2 class="section-title">🎬 Aktuelle Folge auf YouTube</h2>
+      <p class="section-sub" id="latestVideoMeta"></p>
+      <div class="yt-embed" id="latestVideoEmbed"></div>
+    </section>
+
     <section class="stats">
       <a class="stat" href="/folgen"><div class="stat-num">${eps.count || 0}</div><div class="stat-label">Folgen</div></a>
       <a class="stat" href="/startup-ideen"><div class="stat-num">${ideen.count || 0}</div><div class="stat-label">Startup-Ideen</div></a>
@@ -190,6 +197,7 @@ async function renderHome() {
     { href: '/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
     { href: '/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
     { href: '/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
+    { href: '/transkripte-gesucht', title: 'Transkripte gesucht', desc: 'Du kannst Audio nach Sprecher zuordnen? Meld dich!', tag: 'Mithelfen', emoji: '🎤' },
   ];
   const grid = document.getElementById('rubrikenGrid');
   for (const r of rubriken) {
@@ -199,6 +207,29 @@ async function renderHome() {
       <div class="desc">${r.desc}</div>
     </a>`));
   }
+
+  // Latest YouTube video — lädt asynchron, blendet sich ein wenn verfügbar
+  loadLatestVideo();
+}
+
+async function loadLatestVideo() {
+  const section = document.getElementById('latestVideo');
+  const embed = document.getElementById('latestVideoEmbed');
+  const meta = document.getElementById('latestVideoMeta');
+  if (!section || !embed) return;
+  try {
+    const r = await fetch('/api/latest-video');
+    const data = await r.json();
+    if (!data.ok || !data.videos?.length) return;
+    const v = data.videos[0];
+    embed.innerHTML = `<iframe loading="lazy"
+      src="https://www.youtube-nocookie.com/embed/${esc(v.id)}?rel=0"
+      title="${esc(v.title)}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>`;
+    meta.textContent = `${v.title}${v.published ? ' · ' + fmtDate(v.published.slice(0, 10)) : ''}`;
+    section.hidden = false;
+  } catch {}
 }
 
 // ---------- Folgen ----------
@@ -539,29 +570,71 @@ async function renderHosts() {
   app.appendChild(wrap);
 }
 
-// ---------- Chat ----------
+// ---------- Transkripte gesucht ----------
+function renderTranskripteGesucht() {
+  app.innerHTML = `
+    <h1 class="section-title">🎤 Transkripte mit Sprecher-Zuordnung gesucht</h1>
+    <p class="section-sub">Du kannst Audio nach Sprecher zuordnen? Wir suchen Hilfe.</p>
+
+    <article class="card" style="padding:24px;line-height:1.6">
+      <p>Aktuell sind alle Transkripte hier <strong>YouTube-Auto-Captions</strong> ohne Sprecher-Labels. Das macht das Wiki, den Chat und die Suche weniger präzise — und Rubriken wie „Kalles Corner" lassen sich nur über Heuristiken erkennen.</p>
+      <p>Wir suchen Menschen, die helfen können, die Folgen mit eindeutiger Sprecher-Zuordnung (<strong>Fynn / Nisse / Kalle / Gast</strong>) zu transkribieren — entweder per Tool (z.B. WhisperX, pyannote, AssemblyAI mit Speaker Diarization) oder von Hand.</p>
+      <h3 style="margin-top:20px">Was wir brauchen</h3>
+      <ul class="host-list" style="margin-bottom:16px">
+        <li>Klares Sprecher-Label pro Zeile (z.B. <code>Fynn:</code>, <code>Nisse:</code>)</li>
+        <li>Format Markdown oder Plain Text — Hauptsache lesbar</li>
+        <li>Folgen-Nummer im Dateinamen (<code>folge-XX.md</code>)</li>
+      </ul>
+      <h3>Was du davon hast</h3>
+      <ul class="host-list" style="margin-bottom:20px">
+        <li>Credits auf der Wiki-Hosts-Seite (falls gewünscht)</li>
+        <li>Mein ewig dankbares Danke 🙏</li>
+        <li>Ein Hobby-Fan-Projekt, das endlich „richtig" wird</li>
+      </ul>
+      <a class="btn btn-primary" href="mailto:tmda@sagorski.org?subject=Sprecher-Transkripte%20helfen&body=Hi%20Kolja%2C%0A%0Aich%20w%C3%BCrde%20gerne%20bei%20den%20Transkripten%20mit%20Sprecher-Zuordnung%20helfen.%0A%0A">
+        ✉️ Schreib uns an tmda@sagorski.org
+      </a>
+    </article>
+  `;
+}
+
+// ---------- Chat (refactored: shared zwischen Seite und Modal) ----------
 const DONATION_THRESHOLD = 3;
 const DONATION_KEY = 'tmda-chat-questions';
 const DONATION_SHOWN_KEY = 'tmda-donate-shown';
 
-async function renderChat() {
-  app.innerHTML = `
-    <h1 class="section-title">🤖 Chat</h1>
-    <p class="section-sub">Frag das Wiki — läuft auf Cloudflare Workers AI (Llama 3.1).</p>
-    <div class="chat">
-      <div class="chat-log" id="chatLog">
+let chatConfig = null;
+async function getChatConfig() {
+  if (chatConfig) return chatConfig;
+  try {
+    const r = await fetch('/api/config');
+    chatConfig = await r.json();
+  } catch {
+    chatConfig = { turnstileSiteKey: '', turnstileThreshold: 5 };
+  }
+  return chatConfig;
+}
+
+function setupChat(container, opts = {}) {
+  container.innerHTML = `
+    <div class="chat ${opts.compact ? 'chat-compact' : ''}">
+      <div class="chat-log" data-chat-log>
         <div class="msg system">Tipp: Frag z.B. „Was war Fynns dümmste Startup-Idee?", „Was passiert in Kalles Corner?" oder „Welche Promis kamen am häufigsten vor?"</div>
       </div>
-      <form class="chat-input" id="chatForm">
-        <input id="chatInput" type="text" placeholder="Schreib was..." autocomplete="off" />
+      <div class="chat-turnstile" data-chat-turnstile hidden></div>
+      <form class="chat-input" data-chat-form>
+        <input data-chat-input type="text" placeholder="Schreib was..." autocomplete="off" />
         <button class="btn btn-primary" type="submit">Senden</button>
       </form>
     </div>
   `;
-  const log = document.getElementById('chatLog');
-  const form = document.getElementById('chatForm');
-  const input = document.getElementById('chatInput');
+  const log = container.querySelector('[data-chat-log]');
+  const form = container.querySelector('[data-chat-form]');
+  const input = container.querySelector('[data-chat-input]');
+  const tsBox = container.querySelector('[data-chat-turnstile]');
   const history = [];
+  let turnstileToken = null;
+  let turnstileWidgetId = null;
 
   function addMsg(role, content) {
     const m = el(`<div class="msg ${role}"></div>`);
@@ -585,25 +658,89 @@ async function renderChat() {
     log.scrollTop = log.scrollHeight;
   }
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const text = input.value.trim();
-    if (!text) return;
-    input.value = '';
+  async function ensureTurnstileScript() {
+    if (window.turnstile) return;
+    await new Promise((resolve) => {
+      const i = setInterval(() => {
+        if (window.turnstile) { clearInterval(i); resolve(); }
+      }, 100);
+      setTimeout(() => { clearInterval(i); resolve(); }, 5000);
+    });
+  }
+
+  async function showTurnstileChallenge(siteKey) {
+    await ensureTurnstileScript();
+    if (!window.turnstile) return null;
+    tsBox.hidden = false;
+    tsBox.innerHTML = '<div class="msg system">Kurz beweisen, dass du kein Bot bist — danke! 🤖❌</div><div data-ts-widget></div>';
+    const widgetTarget = tsBox.querySelector('[data-ts-widget]');
+    return new Promise((resolve) => {
+      turnstileWidgetId = window.turnstile.render(widgetTarget, {
+        sitekey: siteKey,
+        theme: 'auto',
+        callback: (token) => {
+          turnstileToken = token;
+          tsBox.querySelector('.msg').textContent = '✅ Danke! Sende deine Nachricht…';
+          resolve(token);
+        },
+        'error-callback': () => resolve(null),
+      });
+    });
+  }
+
+  async function send(text) {
     addMsg('user', text);
     history.push({ role: 'user', content: text });
     const pending = addMsg('assistant', '…');
+
+    const cfg = await getChatConfig();
+    const count = Number(localStorage.getItem(DONATION_KEY) || '0') + 1;
+
+    // Turnstile-Schwelle erreicht und noch kein Token → challenge
+    if (cfg.turnstileSiteKey && count >= (cfg.turnstileThreshold || 5) && !turnstileToken) {
+      const t = await showTurnstileChallenge(cfg.turnstileSiteKey);
+      if (!t) {
+        pending.textContent = 'Konnte CAPTCHA nicht laden. Versuch es nochmal.';
+        return;
+      }
+    }
+
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ messages: history }),
+        body: JSON.stringify({
+          messages: history,
+          turnstileToken,
+          userQuestionCount: count,
+        }),
       });
       const data = await res.json();
-      if (data.reply) {
+      if (res.status === 401 && data.error === 'turnstile-required') {
+        // Token abgelaufen oder fehlt — neu challengen
+        turnstileToken = null;
+        pending.textContent = 'Schnell durch das Captcha — danach geht\'s weiter.';
+        const t = await showTurnstileChallenge(cfg.turnstileSiteKey);
+        if (t) {
+          // Retry mit neuem Token
+          const retry = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ messages: history, turnstileToken, userQuestionCount: count }),
+          });
+          const retryData = await retry.json();
+          if (retryData.reply) {
+            pending.textContent = retryData.reply;
+            history.push({ role: 'assistant', content: retryData.reply });
+            tsBox.hidden = true;
+          } else {
+            pending.textContent = retryData.error || 'Keine Antwort.';
+          }
+        }
+      } else if (data.reply) {
         pending.textContent = data.reply;
         history.push({ role: 'assistant', content: data.reply });
-        const count = Number(localStorage.getItem(DONATION_KEY) || '0') + 1;
+        tsBox.hidden = true;
         localStorage.setItem(DONATION_KEY, String(count));
         if (count >= DONATION_THRESHOLD && !localStorage.getItem(DONATION_SHOWN_KEY)) {
           localStorage.setItem(DONATION_SHOWN_KEY, '1');
@@ -615,7 +752,51 @@ async function renderChat() {
     } catch (err) {
       pending.textContent = 'Fehler: ' + err.message;
     }
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    send(text);
   });
 }
+
+async function renderChat() {
+  app.innerHTML = `
+    <h1 class="section-title">🤖 Chat</h1>
+    <p class="section-sub">Frag das Wiki — läuft auf Cloudflare Workers AI (Llama 3.1) mit Volltext-Kontext aus allen Folgen.</p>
+    <div id="chatPageContainer"></div>
+  `;
+  setupChat(document.getElementById('chatPageContainer'));
+}
+
+// ---------- Floating Chat Modal ----------
+let modalChatMounted = false;
+function openChatModal() {
+  const modal = document.getElementById('chatModal');
+  const body = document.getElementById('chatModalBody');
+  if (!modal || !body) return;
+  if (!modalChatMounted) {
+    setupChat(body, { compact: true });
+    modalChatMounted = true;
+  }
+  modal.setAttribute('aria-hidden', 'false');
+  modal.classList.add('open');
+  const input = body.querySelector('[data-chat-input]');
+  setTimeout(() => input?.focus(), 100);
+}
+function closeChatModal() {
+  const modal = document.getElementById('chatModal');
+  if (!modal) return;
+  modal.setAttribute('aria-hidden', 'true');
+  modal.classList.remove('open');
+}
+document.getElementById('chatFab')?.addEventListener('click', openChatModal);
+document.querySelectorAll('[data-chat-close]').forEach((el) => el.addEventListener('click', closeChatModal));
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeChatModal();
+});
 
 router();

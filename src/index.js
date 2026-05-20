@@ -45,7 +45,51 @@ for (const name of dataFiles) {
   });
 }
 
-// ---------- AI Chat (with wiki context) ----------
+// ---------- Public config (Turnstile site key etc.) ----------
+app.get('/api/config', (c) => {
+  return c.json({
+    turnstileSiteKey: c.env.TURNSTILE_SITE_KEY || '',
+    turnstileThreshold: Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 5),
+    youtubeChannel: !!c.env.YOUTUBE_CHANNEL_ID,
+  });
+});
+
+// ---------- Latest YouTube video (cached) ----------
+let latestVideoCache = { at: 0, data: null };
+app.get('/api/latest-video', async (c) => {
+  const channelId = c.env.YOUTUBE_CHANNEL_ID;
+  if (!channelId) {
+    return c.json({ ok: false, reason: 'YOUTUBE_CHANNEL_ID nicht gesetzt' }, 200);
+  }
+  // 30-Minuten-Cache (per-isolate, best effort)
+  if (latestVideoCache.data && Date.now() - latestVideoCache.at < 30 * 60 * 1000) {
+    return c.json(latestVideoCache.data);
+  }
+  try {
+    const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${encodeURIComponent(channelId)}`;
+    const r = await fetch(url, { cf: { cacheTtl: 1800 } });
+    if (!r.ok) throw new Error('feed fetch failed: ' + r.status);
+    const xml = await r.text();
+    const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].slice(0, 5).map((m) => {
+      const block = m[1];
+      const pick = (rx) => (block.match(rx) || [, ''])[1];
+      return {
+        id: pick(/<yt:videoId>([^<]+)<\/yt:videoId>/),
+        title: pick(/<title>([^<]+)<\/title>/),
+        published: pick(/<published>([^<]+)<\/published>/),
+        link: pick(/<link[^>]+href="([^"]+)"/),
+        author: pick(/<name>([^<]+)<\/name>/),
+      };
+    }).filter((v) => v.id);
+    const data = { ok: true, videos: entries, fetchedAt: new Date().toISOString() };
+    latestVideoCache = { at: Date.now(), data };
+    return c.json(data);
+  } catch (err) {
+    return c.json({ ok: false, reason: String(err) }, 502);
+  }
+});
+
+// ---------- Wiki context for AI ----------
 async function buildWikiContext(assets, baseUrl) {
   const out = [];
   const load = async (name) => {
@@ -57,9 +101,35 @@ async function buildWikiContext(assets, baseUrl) {
     }
   };
 
-  const [eps, ideen, corner, ger, glo] = await Promise.all([
-    load('episodes'), load('startup-ideen'), load('kalles-corner'), load('geruechte'), load('glossar'),
+  const [eps, ideen, corner, ger, glo, hosts] = await Promise.all([
+    load('episodes'), load('startup-ideen'), load('kalles-corner'),
+    load('geruechte'), load('glossar'), load('hosts'),
   ]);
+
+  if (hosts.items?.length) {
+    out.push('HOSTS UND CAST:');
+    for (const h of hosts.items) {
+      out.push(`\n${h.name} — ${h.rolle}`);
+      if (h.geboren) out.push(`Geboren: ${h.geboren}${h.geburtsort ? ' in ' + h.geburtsort : ''}`);
+      if (h.bio) out.push(h.bio);
+      if (h.musik) {
+        out.push(`Label: ${h.musik.label}`);
+        if (h.musik.alben?.length) {
+          out.push('Alben: ' + h.musik.alben.map((a) => `${a.titel} (${a.jahr})${a.anmerkung ? ' — ' + a.anmerkung : ''}`).join('; '));
+        }
+        if (h.musik.highlights?.length) {
+          out.push('Highlights: ' + h.musik.highlights.join('; '));
+        }
+      }
+      if (h.projekte?.length) {
+        out.push('Projekte: ' + h.projekte.map((p) => `${p.name} (${p.url})`).join(', '));
+      }
+      if (h.social?.length) {
+        out.push('Social: ' + h.social.map((s) => `${s.platform} ${s.handle}`).join(', '));
+      }
+    }
+    out.push('');
+  }
 
   if (eps.items?.length) {
     out.push('FOLGEN-INDEX:');
@@ -91,13 +161,52 @@ async function buildWikiContext(assets, baseUrl) {
       out.push(`${g.begriff}: ${g.bedeutung}`);
     }
   }
-  return out.join('\n').slice(0, 16000);
+  return out.join('\n').slice(0, 20000);
 }
 
+// ---------- Turnstile verification ----------
+async function verifyTurnstile(secret, token, ip) {
+  if (!secret) return { ok: true, skipped: true };
+  if (!token) return { ok: false, reason: 'no-token' };
+  try {
+    const body = new FormData();
+    body.append('secret', secret);
+    body.append('response', token);
+    if (ip) body.append('remoteip', ip);
+    const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body,
+    });
+    const data = await r.json();
+    return { ok: !!data.success, reason: data['error-codes']?.join(',') || null };
+  } catch (err) {
+    return { ok: false, reason: 'verify-error: ' + String(err) };
+  }
+}
+
+// ---------- AI Chat ----------
 app.post('/api/chat', async (c) => {
-  const { messages = [], folge } = await c.req.json().catch(() => ({}));
+  const body = await c.req.json().catch(() => ({}));
+  const { messages = [], folge, turnstileToken, userQuestionCount } = body;
+
   if (!Array.isArray(messages) || messages.length === 0) {
     return c.json({ error: 'messages[] erforderlich' }, 400);
+  }
+
+  // Turnstile-Schwelle: ab der N-ten Frage muss ein gültiges Token mitkommen
+  const threshold = Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 5);
+  const secret = c.env.TURNSTILE_SECRET_KEY;
+  const qCount = Number(userQuestionCount || 0);
+  if (secret && qCount >= threshold) {
+    const ip = c.req.header('cf-connecting-ip') || '';
+    const verified = await verifyTurnstile(secret, turnstileToken, ip);
+    if (!verified.ok) {
+      return c.json({
+        error: 'turnstile-required',
+        reason: verified.reason,
+        threshold,
+      }, 401);
+    }
   }
 
   let folgeContext = '';
@@ -109,9 +218,9 @@ app.post('/api/chat', async (c) => {
   }
 
   const wikiContext = await buildWikiContext(c.env.ASSETS, c.req.url);
-  const systemPrompt = `Du bist der TMDA-Wiki-Assistent. TMDA = "Teenager mit deutschem Akzent", ein wöchentlicher Podcast von Fynn Kliemann und Nisse Ingwersen. Kalle (in Transkripten oft "Kales") ist der Dritte im Bunde, hat seit ca. Folge 37 seine eigene Rubrik "Kalles Corner".
+  const systemPrompt = `Du bist der TMDA-Wiki-Assistent. TMDA = "Teenager mit deutschem Akzent", ein wöchentlicher Podcast von Fynn Kliemann und Nisse Ingwersen. Kalle (in Transkripten oft "Kales") ist der Dritte im Bunde, hat seit Folge 37 seine eigene Rubrik "Kalles Corner".
 
-Antworte locker, kurz und auf Deutsch. Halluziniere keine Folgen-Inhalte. Wenn du etwas im Wiki-Kontext nicht findest, sag das ehrlich.
+Antworte locker, kurz und auf Deutsch. Halluziniere keine Folgen-Inhalte. Wenn du etwas im Wiki-Kontext nicht findest, sag das ehrlich. Du darfst auf die Hosts-Bios, Diskografie und Projekte verweisen.
 
 WIKI-KONTEXT:
 ${wikiContext}
@@ -221,6 +330,7 @@ async function renderPage(c) {
   // </script>-safe JSON-LD-Serialisierung
   const jsonld = JSON.stringify(buildJsonLd(path, meta, base, fullUrl, extra))
     .replace(/<\/(script)/gi, '<\\/$1');
+
   const baseResp = await c.env.ASSETS.fetch(new URL('/', c.req.url));
 
   return new HTMLRewriter()
@@ -244,12 +354,9 @@ async function renderPage(c) {
 app.all('*', async (c) => {
   const url = new URL(c.req.url);
   const path = url.pathname;
-
-  // Static assets: anything with an extension (except trailing slash)
   if (/\.[a-zA-Z0-9]+$/.test(path)) {
     return c.env.ASSETS.fetch(c.req.raw);
   }
-  // Otherwise render HTML with SEO meta
   return renderPage(c);
 });
 

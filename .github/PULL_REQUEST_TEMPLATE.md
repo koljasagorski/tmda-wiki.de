@@ -25,6 +25,10 @@ Wenn du eine **neue Route** in `public/app.js` ergänzt:
 
 Wenn du **bestehende Inhalte** veränderst, prüfe ob die Beschreibung in `src/seo.js` noch passt.
 
+## 📚 README-Pflicht (bei Änderungen)
+
+- [ ] **README ist auf dem aktuellen Stand**, wenn der PR Routes, UI-Komponenten, Env-Variablen, Pipelines oder API-Endpunkte betrifft
+
 ## Andere Hinweise
 
 <!-- Optional: Screenshots, Breaking Changes, Migrations-Notizen -->
