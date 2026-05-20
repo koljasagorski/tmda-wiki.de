@@ -16,6 +16,30 @@
       "domain": "windradhologramm.de",
       "tagline": "Das Hologramm-Windrad gegen das Hologramm-Problem",
       "punkte": 22
+    },
+    {
+      "folge": 41,
+      "ideeMatch": "Das letzte was ich sehe",
+      "slug": "das-letzte-was-ich-sehe",
+      "domain": "das-letzte-was-ich-sehe.de",
+      "tagline": "Werbung. In deine Iris. Eingebrannt.",
+      "punkte": 22
+    },
+    {
+      "folge": 32,
+      "ideeMatch": "Matruschka",
+      "slug": "tabletten-matrjoschka",
+      "domain": null,
+      "tagline": "Eine Tablette. Viele Tabletten. Dieselbe Tablette.",
+      "punkte": 22
+    },
+    {
+      "folge": 8,
+      "ideeMatch": "Kinderstimme",
+      "slug": "kinderstimme-navi",
+      "domain": null,
+      "tagline": "Endlich hält Papa sich an die Verkehrsregeln.",
+      "punkte": 22
     }
   ]
 }
