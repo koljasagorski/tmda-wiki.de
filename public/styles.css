@@ -902,6 +902,246 @@ body.flutschi-mode::after {
   100% { opacity: 0; }
 }
 
+/* ---------- Konfetti ---------- */
+.easter-confetti {
+  position: fixed;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 200;
+  animation: confetti-fly 2s cubic-bezier(.25,.1,.25,1) forwards;
+}
+@keyframes confetti-fly {
+  0%   { transform: translate(0, 0) rotate(0); opacity: 1; }
+  20%  { transform: translate(calc(var(--dx) * 0.35), var(--dy)) rotate(180deg); opacity: 1; }
+  100% { transform: translate(var(--dx), 100vh) rotate(720deg); opacity: 0; }
+}
+
+/* ---------- Cursor-Trail (Hartz-4-Raupe) ---------- */
+.easter-trail {
+  position: fixed;
+  font-size: 22px;
+  pointer-events: none;
+  z-index: 95;
+  transform: translate(-50%, -50%);
+  animation: trail-fade 1.2s ease-out forwards;
+}
+@keyframes trail-fade {
+  0%   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(0.6); }
+}
+
+/* ---------- Tabletten-Matrjoschka ---------- */
+.easter-matrjoschka {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+}
+.easter-matrjoschka span {
+  position: absolute;
+  animation: pill-pop 4s ease-out forwards;
+}
+@keyframes pill-pop {
+  0%   { transform: scale(0); opacity: 0; }
+  20%  { transform: scale(1.4); opacity: 1; }
+  80%  { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.2); opacity: 0; }
+}
+
+/* ---------- Wanted-Poster (Marsalek) ---------- */
+.easter-wanted {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.easter-wanted.show { opacity: 1; }
+.easter-wanted-inner {
+  background: #f7e9c3;
+  color: #2a1c0a;
+  border: 4px solid #2a1c0a;
+  padding: 28px 36px;
+  font-family: ui-monospace, monospace;
+  text-align: center;
+  transform: rotate(-2deg);
+  max-width: 90vw;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+.wanted-header { font-size: 1.6rem; font-weight: 900; letter-spacing: 0.2em; margin-bottom: 12px; }
+.wanted-photo  { font-size: 4rem; line-height: 1; margin: 10px 0; }
+.wanted-name   { font-size: 1.8rem; font-weight: 900; margin: 8px 0; letter-spacing: 0.05em; }
+.wanted-meta   { font-size: 0.85rem; opacity: 0.8; }
+
+/* ---------- Iris-Flash (Werbung in die Iris) ---------- */
+.easter-iris-flash {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,200,0,0.95) 0%, rgba(255,80,0,0.6) 40%, transparent 70%);
+  pointer-events: none;
+  z-index: 200;
+  animation: iris-burn 1.3s ease-out forwards;
+}
+@keyframes iris-burn {
+  0%   { opacity: 0; transform: scale(0.2); }
+  15%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.4); }
+}
+
+/* ---------- Windrad-Hologramm ---------- */
+.easter-windrad {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  pointer-events: none;
+  z-index: 150;
+  animation: windrad-spin 1.5s linear infinite, windrad-fade 5s ease-out forwards;
+  filter: drop-shadow(0 0 20px cyan) hue-rotate(0deg);
+}
+@keyframes windrad-spin {
+  from { transform: translate(-50%, -50%) rotate(0); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes windrad-fade {
+  0%   { opacity: 0; }
+  15%  { opacity: 0.7; }
+  85%  { opacity: 0.7; }
+  100% { opacity: 0; }
+}
+
+/* ---------- Bosse-Album-Cover ---------- */
+.easter-album {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.easter-album.show { opacity: 1; }
+.album-cover {
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #4a90e2 0%, #b3d1f0 50%, #e8f4fc 100%);
+  color: #0b1f3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.album-title    { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.02em; }
+.album-subtitle { font-size: 1.2rem; opacity: 0.8; margin-top: 4px; }
+.album-artist   { font-size: 0.9rem; opacity: 0.7; margin-top: 18px; }
+
+/* ---------- Dienstag-Banner ---------- */
+.tmda-tuesday-banner {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--accent-fg);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 99;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  transition: transform .5s cubic-bezier(.34,1.56,.64,1);
+}
+.tmda-tuesday-banner.show { transform: translateX(-50%) translateY(0); }
+
+/* ---------- Egg Help Overlay (? Taste) ---------- */
+.egg-help-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 250;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.egg-help-overlay.show { opacity: 1; }
+.egg-help-inner {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  max-width: 760px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+.egg-help-inner h2 { margin: 0 0 4px; font-size: 1.4rem; letter-spacing: -0.01em; }
+.egg-help-inner .meta { color: var(--fg-muted); margin-bottom: 18px; }
+.egg-help-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 32px;
+}
+@media (min-width: 600px) {
+  .egg-help-grid { grid-template-columns: 1fr 1fr; }
+}
+.egg-help-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.egg-help-grid li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.egg-help-grid li:last-child { border-bottom: none; }
+.egg-help-grid kbd {
+  font-family: var(--font-mono);
+  background: var(--bg-elev-2);
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  font-size: 0.85em;
+  margin-right: 6px;
+}
+.egg-help-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: var(--fg-muted);
+  font-size: 1.8rem;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+}
+.egg-help-close:hover { background: var(--bg-elev-2); color: var(--fg); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
   .site-header { gap: 8px; padding: 12px 16px; }
