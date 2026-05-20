@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Unicorn ImmoScan — Halte dein Handy auf ein Haus.</title>
+<meta name="description" content="AR-App: Kamera auf Gebäude richten, Verkaufsstatus + Preis sehen. Sofort kontaktieren via Affiliate. Provision von Immoscout."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/immo-scan"/>
+<meta property="og:title" content="Unicorn ImmoScan"/>
+<meta property="og:description" content="AR-Immobilien-Discovery."/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6f3;--paper:#ffffff;--ink:#0f1b1a;--ink-soft:#4a5c5a;--brand:#0f4a4a;--brand-d:#072e2e;--accent:#e8b647;--gray:#d4d6d2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+.serif{font-family:'DM Serif Display',serif}
+a{color:var(--brand-d)}
+.nav{max-width:1280px;margin:0 auto;padding:24px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--gray)}
+.brand{font-family:'DM Serif Display',serif;font-size:1.8rem;letter-spacing:-.01em}
+.brand .a{color:var(--accent)}
+.hero{padding:80px 32px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.25em;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(2.8rem,7vw,5.6rem);letter-spacing:-.02em;line-height:1;margin-bottom:24px}
+h1 em{font-style:italic;color:var(--brand)}
+.lead{font-size:1.2rem;color:var(--ink-soft);max-width:50ch;margin-bottom:32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;font-weight:700;text-decoration:none;border-radius:8px;border:2px solid var(--brand);font-size:.95rem;transition:all .15s}
+.btn-brand{background:var(--brand);color:white}.btn-brand:hover{background:var(--brand-d)}
+.btn-out{color:var(--brand)}.btn-out:hover{background:var(--brand);color:white}
+.phone-stage{display:grid;place-items:center}
+.phone{width:280px;height:560px;background:var(--ink);border-radius:38px;padding:14px;box-shadow:0 30px 80px rgba(15,27,26,.25);position:relative}
+.phone-screen{width:100%;height:100%;background:linear-gradient(180deg,#9ec5c2 0%,#f0e6c8 100%);border-radius:26px;padding:18px;position:relative;overflow:hidden}
+.phone-time{text-align:center;font-size:.78rem;font-weight:700;color:var(--ink);margin-bottom:10px}
+.phone-house{width:80%;margin:30px auto 20px;display:block}
+.phone-card{background:white;border-radius:16px;padding:14px;box-shadow:0 4px 12px rgba(0,0,0,.06);position:absolute;bottom:80px;left:18px;right:18px}
+.phone-card .price{font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--brand);line-height:1}
+.phone-card .addr{font-size:.78rem;color:var(--ink-soft);margin-top:2px}
+.phone-card .badge{display:inline-block;background:var(--accent);color:var(--ink);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;padding:2px 8px;border-radius:99px;font-weight:700;margin-top:8px}
+.phone-cta{position:absolute;bottom:18px;left:18px;right:18px;background:var(--brand);color:white;padding:12px;border-radius:14px;text-align:center;font-weight:700;font-size:.85rem}
+.usecases{padding:90px 32px;max-width:1280px;margin:0 auto}
+.h2{font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.02em;margin-bottom:36px}
+.h2 em{font-style:italic;color:var(--brand)}
+.uc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.uc{background:white;border-radius:16px;padding:26px;border:1px solid var(--gray)}
+.uc h3{font-family:'DM Serif Display',serif;font-size:1.3rem;margin-bottom:8px}
+.uc p{color:var(--ink-soft);font-size:.95rem}
+.uc-img{font-size:2rem;margin-bottom:10px}
+.numbers{padding:60px 32px;background:var(--brand-d);color:white}
+.num-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:30px;text-align:center}
+.num{font-family:'DM Serif Display',serif;font-size:3rem;color:var(--accent);line-height:1}
+.num-l{font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;opacity:.7;margin-top:6px}
+footer{padding:30px;text-align:center;color:var(--ink-soft);font-size:.88rem;border-top:1px solid var(--gray)}
+footer a{color:var(--brand-d)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="brand">unicorn<span class="a"> · </span>ImmoScan</div><a class="btn btn-brand" href="#">Im App Store</a></nav>
+<section class="hero">
+  <div>
+    <div class="eyebrow">▸ AR-App · iOS & Android</div>
+    <h1>Halte dein Handy auf <em>ein Haus.</em></h1>
+    <p class="lead">Du bist in Lissabon. Du gehst durch die Altstadt. Du siehst ein Haus, das dir gefällt. Du hältst die Kamera drauf. Du siehst den Verkaufsstatus, den Preis und drei vergleichbare Objekte. In 0,8 Sekunden.</p>
+    <div class="cta"><a class="btn btn-brand" href="#">App holen</a><a class="btn btn-out" href="#cases">Use Cases</a></div>
+  </div>
+  <div class="phone-stage">
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="phone-time">09:41 · ⚡</div>
+        <svg class="phone-house" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20,60 100,15 180,60" fill="#a83c3c"/>
+          <rect x="40" y="60" width="120" height="50" fill="#f5e4c8" stroke="#0f1b1a" stroke-width="2"/>
+          <rect x="85" y="76" width="30" height="34" fill="#0f4a4a"/>
+          <rect x="55" y="72" width="18" height="18" fill="#9ec5c2" stroke="#0f1b1a"/>
+          <rect x="127" y="72" width="18" height="18" fill="#9ec5c2" stroke="#0f1b1a"/>
+        </svg>
+        <div class="phone-card">
+          <div class="price">€ 1.890.000</div>
+          <div class="addr">Av. Almirante Reis 84 · 1100-001 Lisboa</div>
+          <span class="badge">★ Zu verkaufen</span>
+        </div>
+        <div class="phone-cta">Kontakt via Immoscout24 →</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="usecases" id="cases">
+  <div class="eyebrow">▸ Wer's nutzt</div>
+  <h2 class="h2">Drei Gruppen, <em>ein Tool.</em></h2>
+  <div class="uc-grid">
+    <div class="uc"><div class="uc-img">🌴</div><h3>Der Urlauber</h3><p>"Verdammt, in dieser Straße will ich nochmal leben." Hält Handy hoch. Sieht: 12 Objekte, alle Preise.</p></div>
+    <div class="uc"><div class="uc-img">💼</div><h3>Der Investor</h3><p>Geht durch Lissabon, Barcelona, Athen. Sieht jedes Verkaufsschild, kann sofort Affiliate-Anbieter erreichen.</p></div>
+    <div class="uc"><div class="uc-img">👤</div><h3>Der Neugierige</h3><p>"Wie viel kostet eigentlich das Haus von Tante Brigitte?" Hält drauf. Findet's raus.</p></div>
+  </div>
+</section>
+<section class="numbers">
+  <div class="num-grid">
+    <div><div class="num">98 %</div><div class="num-l">Erkennungs-Rate</div></div>
+    <div><div class="num">0,8 s</div><div class="num-l">Lookup-Zeit</div></div>
+    <div><div class="num">12</div><div class="num-l">Affiliate-Quellen</div></div>
+    <div><div class="num">2,8 %</div><div class="num-l">Provision Avg</div></div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #4 · 16/24 · <a href="/folge/4">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

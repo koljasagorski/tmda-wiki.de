@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TUBSUIT — Die mobile Badewanne, die du anziehst</title>
+<meta name="description" content="Umgedrehter Wetsuit. Mit warmem Wasser gefüllt. Du gehst, du badest. Halsmanschette dicht. Wasserhahn-Adapter."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/tubsuit"/>
+<meta property="og:title" content="TUBSUIT"/>
+<meta property="og:description" content="Die Badewanne, die du anziehst."/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--aqua:#5fc9d9;--aqua-d:#2a8a9b;--aqua-l:#c8edf2;--sand:#fff0d0;--sand-d:#e8d9a6;--ink:#0c2e36;--coral:#ff7a6b;--cream:#fff9eb}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:linear-gradient(180deg,var(--aqua-l) 0%,var(--sand) 100%);min-height:100vh;color:var(--ink);font-family:Fredoka,system-ui,sans-serif;line-height:1.5;font-weight:500}
+a{color:var(--aqua-d)}
+.nav{padding:24px 32px;display:flex;justify-content:space-between;align-items:center;max-width:1280px;margin:0 auto}
+.brand{font-weight:700;font-size:1.6rem;letter-spacing:.04em}
+.brand span{color:var(--coral)}
+.hero{padding:60px 32px;max-width:1200px;margin:0 auto;text-align:center}
+h1{font-weight:700;font-size:clamp(3.2rem,9vw,6.6rem);letter-spacing:-.02em;line-height:.96;margin-bottom:24px}
+h1 .coral{color:var(--coral)}
+h1 .water{background:linear-gradient(180deg,var(--aqua) 0%,var(--aqua-d) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.3rem;color:var(--ink);max-width:46ch;margin:0 auto 30px;font-weight:500;opacity:.85}
+.suit-vis{margin:50px auto;width:min(420px,80vw)}
+.btn{display:inline-block;padding:16px 32px;font-weight:700;font-family:Fredoka,sans-serif;text-decoration:none;border-radius:999px;transition:all .15s}
+.btn-aqua{background:var(--aqua-d);color:white}.btn-aqua:hover{background:var(--ink)}
+.btn-coral{background:var(--coral);color:white}.btn-coral:hover{background:var(--ink)}
+.features{padding:80px 32px;max-width:1100px;margin:0 auto}
+.eyebrow{color:var(--coral);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.85rem;margin-bottom:12px;text-align:center}
+.h2{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-.02em;text-align:center;margin-bottom:50px}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.f-card{background:white;border-radius:30px;padding:32px 24px;text-align:center;border:3px solid var(--aqua-l)}
+.f-card:nth-child(2){border-color:var(--sand-d)}
+.f-card:nth-child(3){border-color:var(--coral)}
+.f-emoji{font-size:3rem;margin-bottom:14px}
+.f-card h3{font-weight:700;font-size:1.2rem;margin-bottom:6px}
+.f-card p{color:var(--ink);opacity:.7;font-size:.92rem}
+.usage{background:var(--aqua-d);color:white;padding:80px 32px;border-radius:60px 60px 0 0}
+.usage-inner{max-width:1100px;margin:0 auto;text-align:center}
+.usage h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;margin-bottom:14px}
+.usage-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.u{background:rgba(255,255,255,.15);padding:20px 14px;border-radius:20px;font-weight:700;font-size:.95rem}
+.u-emoji{font-size:2.2rem;display:block;margin-bottom:8px}
+.price-card{background:var(--cream);padding:60px 32px;text-align:center}
+.price-num{font-weight:700;font-size:6rem;color:var(--coral);letter-spacing:-.04em;line-height:1}
+.price-info{font-size:1.1rem;opacity:.7;margin-top:8px}
+footer{padding:30px;text-align:center;color:var(--ink);opacity:.6;font-size:.88rem}
+footer a{color:var(--aqua-d)}
+@media(max-width:680px){.usage-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="brand">tub<span>·</span>suit</div><a class="btn btn-coral" href="#price">59 € pre-order</a></nav>
+<section class="hero">
+  <h1>Die <span class="water">Badewanne,</span><br>die du <span class="coral">anziehst.</span></h1>
+  <p class="lead">Du füllst dich. Du gehst los. Du badest, während du Wäsche aufhängst. Halsmanschette wasserdicht. Wasserhahn-Adapter inkl.</p>
+  <svg class="suit-vis" viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="suit-grad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5fc9d9"/><stop offset="100%" stop-color="#2a8a9b"/></linearGradient></defs>
+    <path d="M 110 60 Q 110 40 160 40 Q 210 40 210 60 L 240 110 L 250 200 L 260 320 L 220 350 L 200 280 L 200 200 L 120 200 L 120 280 L 100 350 L 60 320 L 70 200 L 80 110 Z" fill="url(#suit-grad)" stroke="#0c2e36" stroke-width="3"/>
+    <ellipse cx="160" cy="40" rx="44" ry="14" fill="#ff7a6b" stroke="#0c2e36" stroke-width="3"/>
+    <text x="160" y="46" text-anchor="middle" font-family="Fredoka,sans-serif" font-weight="700" font-size="11" fill="white">DICHTMANSCHETTE</text>
+    <g fill="#fff" opacity=".4"><circle cx="140" cy="160" r="6"/><circle cx="180" cy="200" r="4"/><circle cx="100" cy="240" r="5"/><circle cx="220" cy="260" r="6"/><circle cx="160" cy="300" r="4"/></g>
+    <rect x="240" y="140" width="40" height="14" fill="#fff0d0" stroke="#0c2e36" stroke-width="2" rx="3"/>
+    <text x="260" y="135" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="9" fill="#0c2e36" font-weight="700">→ Wasserhahn</text>
+  </svg>
+  <a class="btn btn-aqua" href="#features">So funktioniert's</a>
+</section>
+<section class="features" id="features">
+  <div class="eyebrow">▴ Features</div>
+  <h2 class="h2">Drei Sachen, die du gleichzeitig kannst.</h2>
+  <div class="f-grid">
+    <div class="f-card"><div class="f-emoji">🛁</div><h3>Baden</h3><p>Warmes Wasser, optional mit Schaum. 38–42°C konstant über 2 Stunden.</p></div>
+    <div class="f-card"><div class="f-emoji">🧺</div><h3>Wäsche aufhängen</h3><p>Hände frei. Volle Bewegungsfreiheit. Tropft nicht.</p></div>
+    <div class="f-card"><div class="f-emoji">📺</div><h3>Netflix gucken</h3><p>Mit Snacks. Auf der Couch. Während du badest.</p></div>
+  </div>
+</section>
+<section class="usage">
+  <div class="usage-inner">
+    <h2>🌊 In vier Schritten zum Vollbad.</h2>
+    <div class="usage-grid">
+      <div class="u"><span class="u-emoji">👕</span>Anziehen</div>
+      <div class="u"><span class="u-emoji">🚿</span>Wasserhahn anschließen</div>
+      <div class="u"><span class="u-emoji">🔥</span>Auf 40°C füllen</div>
+      <div class="u"><span class="u-emoji">🧴</span>Badezusatz</div>
+    </div>
+  </div>
+</section>
+<section class="price-card" id="price">
+  <div class="eyebrow">▴ Pre-Order</div>
+  <div class="price-num">59 €</div>
+  <p class="price-info">Inkl. Wasserhahn-Adapter · 4 Größen · Lieferung Q4 2026</p>
+</section>
+<footer>Fiktives Konzept · TMDA #21 · 16/24 · <a href="/folge/21">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

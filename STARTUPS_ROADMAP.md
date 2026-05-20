@@ -19,63 +19,76 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 39 Startup-Ideen mit Punkten
+## Status — 30/30 LIVE ✅
 
-### ✅ Live
+Alle Startup-Ideen mit Bewertung aus den Folgen 1-47 haben jetzt eine eigene Page. Jede mit komplett individuellem Design-Stil.
 
-- [x] **HATS — Hot Air to Sock Adapter** · Folge 45 · 22/24 · industrial engineering style
-- [x] **windradhologramm.de** · Folge 44 · 22/24 · eco-tech with cynical twist
-- [x] **Das letzte was ich sehe.de** · Folge 41 · 22/24 · dystopian medical (Playfair Display + black/red)
-- [x] **Tabletten-Matrjoschka** · Folge 32 · 22/24 · pharma luxury serif (Cormorant + russian-red/gold)
-- [x] **Kinderstimme Navi** · Folge 8 · 22/24 · friendly pastel app-store (Nunito + Caveat)
-- [x] **Zusammenfuehren.de** · Folge 28 · 21/24 · brutalist mono (Space Mono + black/white/yellow/magenta)
-- [x] **THE 500** · Folge 39 · 20/24 · performance-athletic neon (Archivo Black + dark + neon green)
-- [x] **LEVEL Wohnmobil-Levelling** · Folge 26 · 20/24 · outdoor premium magazine (Fraunces + moss/sand/terra)
-- [x] **F·P·G Fingerabdruck-Handschuhe** · Folge 34 · 20/24 · classified dossier (Special Elite + paper/red-stamp)
-- [x] **LIKE MIKE** · Folge 10 · 20/24 · travel-influencer luxury (Bricolage Grotesque + hotpink/teal-gradients)
-- [x] **LKW-plane-kostenlos.de** · Folge 2 · 19/24 · highway brutalism (Anton + warning-yellow/orange/asphalt)
+### 22/24 — Top-Tier
 
-### 📋 18/24 — Priorität 4
+- [x] **HATS — Hot Air to Sock Adapter** · Folge 45 · industrial engineering
+- [x] **windradhologramm.de** · Folge 44 · eco-tech cynical
+- [x] **Das letzte was ich sehe.de** · Folge 41 · dystopian medical
+- [x] **Tabletten-Matrjoschka** · Folge 32 · pharma luxury serif
+- [x] **Kinderstimme Navi** · Folge 8 · friendly pastel app-store
 
-- [ ] **Hello Flowers** · Folge 38 · 18/24
-- [ ] **rapidnews.com — KI Fake-News-Generator** · Folge 35 · 18/24
-- [ ] **Body-Tracking-Anzug zur Rückenschmerz-Rekonstruktion** · Folge 27 · 18/24
-- [ ] **Silikonfinger** · Folge 16 · 18/24
-- [ ] **Reborn.de — Zeugenschutz für alle** · Folge 14 · 18/24
+### 21/24
 
-### 📋 17/24
+- [x] **Zusammenfuehren.de** · Folge 28 · brutalist mono
 
-- [ ] **neuhier.de (mitg.de / dgf.de)** · Folge 46 · 17/24
-- [ ] **Google Maps Premium für Reiche** · Folge 22 · 17/24
-- [ ] **My Most Private Bag — Designer-Blutbeutel** · Folge 19 · 17/24
+### 20/24
 
-### 📋 16/24 und tiefer
+- [x] **THE 500** · Folge 39 · performance-athletic neon
+- [x] **LEVEL Wohnmobil-Levelling** · Folge 26 · outdoor premium magazine
+- [x] **F·P·G Fingerabdruck-Handschuhe** · Folge 34 · classified dossier
+- [x] **LIKE MIKE** · Folge 10 · travel-influencer luxury
 
-Liste der restlichen ~20 Startups wird beim Erstellen befüllt. Siehe `public/data/startup-ideen.json` für die volle Liste.
+### 19/24
 
-## Design-Diversity-Briefing
+- [x] **LKW-plane-kostenlos.de** · Folge 2 · highway brutalism
 
-Damit jede Page komplett anders aussieht, hier die Style-Ideen pro Tier (keine darf doppelt vorkommen):
+### 18/24
 
-- Industrial Engineering / Schwarz-Gelb-Warning · ✓ HATS
-- Eco-Tech mit Green-Sky · ✓ windradhologramm
-- Dystopian Medical / Schwarz + Medical Red
-- Pharma + Russian Aesthetic / White + Red
-- Friendly App-Store / Pastel
-- Brutalist Mono
-- Y2K Retro
-- Luxury Black (für rich/exclusive Startups)
-- Y-Combinator-Clean
-- Webbrutalismus / Comic Sans
-- Cyberpunk Neon
-- Eco-Brand-Warm
-- 90er-IT-Beige
-- Premium-Tech-Glass-Morphism
-- Conspiracy-Theorist (für die absurden)
+- [x] **Hello Flowers** · Folge 38 · minimalist Aesop-apothecary (Cormorant + sage/clay)
+- [x] **rapidnews.com** · Folge 35 · tabloid Boomer-press (Anton + red/yellow blink)
+- [x] **AURA Body-Tracking-Anzug** · Folge 27 · medical sports-tech (IBM Plex + cyan/white)
+- [x] **FITS Silikonfinger** · Folge 16 · surgical minimal (Manrope thin/bold)
+- [x] **Reborn.gov** · Folge 14 · government passport (Source Serif + cream/seal-red)
+
+### 17/24
+
+- [x] **neuhier.de** · Folge 46 · audio-podcast warm pastel (Outfit + orange)
+- [x] **ROAD FREE — Google Maps Rich** · Folge 22 · gold luxury exclusive (Marcellus + black/gold)
+- [x] **MY MOST PRIVATE BAG** · Folge 19 · fashion editorial (Playfair Display + black/cream)
+
+### 16/24
+
+- [x] **TUBSUIT** · Folge 21 · beach/surfer pastel (Fredoka + aqua/coral)
+- [x] **Unicorn ImmoScan** · Folge 4 · proptech editorial (DM Serif Display)
+
+### 14/24
+
+- [x] **Zero You Go** · Folge 37 · bathroom-hygiene pastel (Outfit + soap-green)
+- [x] **Hör auf — Habit Detector** · Folge 3 · health-app dark green (Plus Jakarta + neon)
+
+### 13/24
+
+- [x] **Schwabenpresse** · Folge 18 · schwäbisch traditional (Yeseva One + kraft paper)
+- [x] **Tinklies®** · Folge 15 · whimsical bathroom-tile (Pacifico + tile blue/pink)
+- [x] **KNARSCH** · Folge 12 · y2k cyberpunk (Major Mono + purple/cyan)
+
+### 12/24
+
+- [x] **Bitter Sleeve™** · Folge 43 · energy-drink lime (Bebas Neue + lime/black)
+- [x] **DRIVEMARKT** · Folge 20 · arcade pixel-art (Press Start 2P + neon)
+
+### 11/24
+
+- [x] **Hundeschule der anderen Art** · Folge 11 · xerox flyer (Special Elite + Patrick Hand)
+- [x] **WHAT LIFE WEIGHTS** · Folge 9 · contemplative magazine (Cardo + olive/cream)
 
 ## Konvention bei NEUEN Folgen
 
-Wenn eine neue Folge kommt und eine Startup-Idee mit Punkten ≥ 16 enthält:
+Wenn eine neue Folge kommt und eine Startup-Idee mit Punkten ≥ 10 enthält:
 1. Roadmap-Eintrag in dieser Datei ergänzen
 2. PR-Template-Checklist hat dafür eine eigene Checkbox (siehe `.github/PULL_REQUEST_TEMPLATE.md`)
-3. Page in den nächsten 1-2 PRs nachreichen
+3. Page mit komplett neuem Style (siehe Liste oben — keinen Stil doppelt)

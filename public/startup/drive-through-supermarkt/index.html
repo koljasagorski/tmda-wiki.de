@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DRIVEMARKT — Du fährst durch, du kaufst ein, du zahlst per Nummernschild</title>
+<meta name="description" content="Supermarkt für Autos. Nummernschild-Scan, Mikrochip-Tracking, Power-Ups, Jongleure. Parallel-Straßen für beliebte Produkte."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/drive-through-supermarkt"/>
+<meta property="og:title" content="DRIVEMARKT"/>
+<meta property="og:description" content="Supermarkt zum Durchfahren."/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--neon-pink:#ff2bd6;--neon-cyan:#00f0ff;--neon-yel:#fff200;--neon-purp:#9d4edd;--bg:#0a0014;--bg2:#1a0030;--cream:#fffceb;--ink:#000}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--cream);font-family:VT323,monospace;line-height:1.4;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--neon-cyan)}
+.pixel{font-family:'Press Start 2P',monospace;letter-spacing:.02em}
+.scanlines{position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.02) 3px 6px);z-index:1}
+.nav{position:relative;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--neon-pink);z-index:2}
+.brand{font-family:'Press Start 2P';font-size:1rem;color:var(--neon-yel);letter-spacing:.04em;text-shadow:0 0 14px var(--neon-yel)}
+.brand .pink{color:var(--neon-pink)}
+.score{font-family:'Press Start 2P';font-size:.75rem;color:var(--neon-cyan)}
+.hero{padding:60px 24px 80px;text-align:center;max-width:1280px;margin:0 auto;position:relative;z-index:2}
+.coin{display:inline-block;background:var(--neon-yel);color:var(--ink);padding:5px 12px;font-family:'Press Start 2P';font-size:.7rem;margin-bottom:24px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--neon-pink)}
+h1{font-family:'Press Start 2P';font-size:clamp(1.8rem,6vw,4.4rem);line-height:1.2;letter-spacing:.02em;margin-bottom:30px;text-shadow:5px 5px 0 var(--neon-pink),10px 10px 0 var(--neon-purp)}
+h1 .cy{color:var(--neon-cyan)}
+h1 .yel{color:var(--neon-yel)}
+.lead{font-size:1.6rem;line-height:1.5;color:var(--cream);max-width:50ch;margin:0 auto 36px}
+.car-stage{margin:50px auto;width:100%;max-width:600px}
+.car-stage svg{width:100%;height:auto}
+.btn{display:inline-block;padding:16px 30px;font-family:'Press Start 2P';font-size:.85rem;text-decoration:none;border:4px solid;letter-spacing:.04em;transition:all .15s}
+.btn-yel{background:var(--neon-yel);color:var(--ink);border-color:var(--ink);box-shadow:6px 6px 0 var(--neon-pink)}
+.btn-yel:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--neon-pink)}
+.btn-cy{background:var(--neon-cyan);color:var(--ink);border-color:var(--ink);box-shadow:6px 6px 0 var(--neon-purp)}
+.btn-cy:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--neon-purp)}
+.section{padding:80px 24px;max-width:1280px;margin:0 auto;position:relative;z-index:2}
+.h2{font-family:'Press Start 2P';font-size:clamp(1.4rem,4vw,2.6rem);text-align:center;line-height:1.3;letter-spacing:.04em;margin-bottom:40px;text-shadow:4px 4px 0 var(--neon-pink)}
+.h2 .pk{color:var(--neon-pink)}
+.h2 .cy{color:var(--neon-cyan)}
+.powerups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.pu{background:var(--bg2);border:3px solid var(--neon-cyan);padding:24px;text-align:center;box-shadow:6px 6px 0 var(--neon-pink)}
+.pu .icon{font-size:3rem;margin-bottom:14px;display:block}
+.pu h3{font-family:'Press Start 2P';font-size:.85rem;letter-spacing:.04em;margin-bottom:8px;line-height:1.4;text-transform:uppercase;color:var(--neon-yel)}
+.pu p{font-size:1.1rem}
+.process{padding:80px 24px;background:var(--bg2);border-top:3px solid var(--neon-pink);border-bottom:3px solid var(--neon-pink)}
+.proc-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2}
+.proc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:30px}
+.proc{background:var(--bg);border:2px solid var(--neon-yel);padding:20px;text-align:center}
+.proc-num{font-family:'Press Start 2P';font-size:1.6rem;color:var(--neon-yel);text-shadow:2px 2px 0 var(--neon-pink);margin-bottom:10px}
+.proc h3{font-family:'Press Start 2P';font-size:.7rem;letter-spacing:.04em;color:var(--cream);text-transform:uppercase;margin-bottom:6px}
+.proc p{font-size:.95rem;color:var(--neon-cyan)}
+footer{padding:30px;text-align:center;font-size:1rem;color:var(--neon-cyan);border-top:2px solid var(--neon-pink);position:relative;z-index:2}
+footer a{color:var(--neon-yel)}
+</style>
+</head>
+<body>
+<div class="scanlines"></div>
+<nav class="nav"><div class="brand">DRIVE<span class="pink">·</span>MARKT</div><div class="score">★ HIGH SCORE: 4'891</div></nav>
+<section class="hero">
+  <span class="coin">★ 1 UP ★ PRESS START</span>
+  <h1>FAHR <span class="cy">DURCH.</span><br>KAUF EIN.<br><span class="yel">ZAHL ZULETZT.</span></h1>
+  <p class="lead">Du parkst gar nicht. Du fährst rein, am Regal vorbei, am Käse-Track vorbei, am Bier-Loop. Nummernschild-Scan. Mikrochips in den Produkten. Auto verlässt → Karte gebucht.</p>
+  <svg class="car-stage" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="220" fill="#1a0030"/>
+    <path d="M 0 160 L 600 160" stroke="#ff2bd6" stroke-width="4"/>
+    <path d="M 0 60 L 600 60" stroke="#00f0ff" stroke-width="2" stroke-dasharray="20 12"/>
+    <g stroke="#fff200" stroke-width="2"><line x1="50" y1="200" x2="100" y2="200"/><line x1="150" y1="200" x2="200" y2="200"/><line x1="250" y1="200" x2="300" y2="200"/><line x1="350" y1="200" x2="400" y2="200"/><line x1="450" y1="200" x2="500" y2="200"/></g>
+    <g transform="translate(220 90)">
+      <rect width="160" height="60" rx="14" fill="#9d4edd" stroke="#000" stroke-width="3"/>
+      <rect x="20" y="-6" width="120" height="20" fill="#9d4edd" stroke="#000" stroke-width="3" rx="6"/>
+      <circle cx="40" cy="60" r="14" fill="#000"/>
+      <circle cx="120" cy="60" r="14" fill="#000"/>
+      <rect x="30" y="40" width="100" height="10" fill="#fff200" stroke="#000" stroke-width="2"/>
+      <text x="80" y="49" text-anchor="middle" font-family="Press Start 2P,monospace" font-size="6" fill="#000">B-MK 1337</text>
+    </g>
+    <g transform="translate(80 30)"><rect width="80" height="40" fill="#fff200" stroke="#000" stroke-width="2"/><text x="40" y="26" text-anchor="middle" font-family="Press Start 2P,monospace" font-size="8" fill="#000">KÄSE</text></g>
+    <g transform="translate(420 30)"><rect width="80" height="40" fill="#ff2bd6" stroke="#000" stroke-width="2"/><text x="40" y="26" text-anchor="middle" font-family="Press Start 2P,monospace" font-size="8" fill="#000">PIZZA</text></g>
+  </svg>
+  <a class="btn btn-yel" href="#powerups">★ POWER-UPS</a> &nbsp; <a class="btn btn-cy" href="#process">▶ HOW TO PLAY</a>
+</section>
+<section class="section" id="powerups">
+  <h2 class="h2">★ <span class="cy">POWER</span>-<span class="pk">UPS</span></h2>
+  <div class="powerups">
+    <div class="pu"><span class="icon">🍌</span><h3>Bananen-Boost</h3><p>Banane drücken → 10% Rabatt auf Bio-Obst</p></div>
+    <div class="pu"><span class="icon">⭐</span><h3>VIP-Spur</h3><p>Express-Spur. Doppelter Preis, halbe Zeit.</p></div>
+    <div class="pu"><span class="icon">🎭</span><h3>Jongleure</h3><p>Bei Stau: Live-Show vor der Windschutzscheibe.</p></div>
+    <div class="pu"><span class="icon">🔥</span><h3>Feuershow</h3><p>Premium-Wartezeit-Bonus. Donnerstags ab 18 Uhr.</p></div>
+  </div>
+</section>
+<section class="process" id="process">
+  <div class="proc-inner">
+    <h2 class="h2">▶ <span class="pk">HOW</span> TO <span class="cy">PLAY</span></h2>
+    <div class="proc-grid">
+      <div class="proc"><div class="proc-num">01</div><h3>Einfahrt</h3><p>Nummernschild-Scan, Auto-Größe vermessen</p></div>
+      <div class="proc"><div class="proc-num">02</div><h3>Strecke wählen</h3><p>Käse-Track, Pizza-Loop, Bier-Bogen</p></div>
+      <div class="proc"><div class="proc-num">03</div><h3>Greifen</h3><p>Aus dem Auto in den Korb am Wagen</p></div>
+      <div class="proc"><div class="proc-num">04</div><h3>Ausfahrt</h3><p>Mikrochips erfasst, PayPal gebucht</p></div>
+    </div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #20 · 12/24 · <a href="/folge/20">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

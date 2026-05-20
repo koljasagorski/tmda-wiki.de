@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ROAD FREE — Google Maps Premium für Reiche</title>
+<meta name="description" content="Du fährst Bahn frei. Alle anderen werden für dich umgeleitet. 250 € pro Monat. Kapitalismus pur."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/google-maps-rich"/>
+<meta property="og:title" content="Road Free"/>
+<meta property="og:description" content="Freie Bahn. Bezahlt."/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#070707;--obsidian:#15110b;--gold:#d4af37;--gold-l:#f0d588;--gold-d:#8a6c1f;--cream:#f3eed3;--gray:#888073}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--black);color:var(--cream);font-family:Inter,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+.serif{font-family:Marcellus,serif}
+.topbar{background:var(--obsidian);padding:8px 32px;text-align:center;font-family:Marcellus,serif;font-size:.85rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;border-bottom:1px solid var(--gold-d)}
+.nav{max-width:1300px;margin:0 auto;padding:36px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,.2)}
+.brand{font-family:Marcellus,serif;font-size:1.8rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
+.brand span{color:var(--cream)}
+.nav-meta{font-family:Marcellus,serif;font-size:.85rem;color:var(--gold-l);letter-spacing:.2em;text-transform:uppercase}
+.hero{padding:100px 32px;max-width:1300px;margin:0 auto;text-align:center;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,var(--gold) 0%,transparent 60%);opacity:.1;filter:blur(80px);z-index:-1}
+.eyebrow{font-family:Marcellus,serif;color:var(--gold);letter-spacing:.4em;font-size:.85rem;text-transform:uppercase;margin-bottom:24px}
+h1{font-family:Marcellus,serif;font-size:clamp(3rem,9vw,7rem);letter-spacing:.01em;line-height:.96;margin-bottom:30px;color:var(--cream)}
+h1 em{font-style:italic;color:var(--gold)}
+.lead{font-family:Marcellus,serif;font-size:1.3rem;color:var(--gray);max-width:42ch;margin:0 auto 50px;font-style:italic}
+.btn{display:inline-block;padding:18px 36px;font-family:Marcellus,serif;font-size:1rem;letter-spacing:.25em;text-transform:uppercase;border:1px solid var(--gold);color:var(--gold);text-decoration:none;background:transparent;transition:all .2s}
+.btn:hover{background:var(--gold);color:var(--obsidian)}
+.btn-fill{background:var(--gold);color:var(--obsidian)}.btn-fill:hover{background:var(--gold-l);color:var(--obsidian)}
+.map-stage{margin:60px auto;max-width:760px;background:var(--obsidian);border:1px solid var(--gold-d);padding:30px;position:relative}
+.map-stage svg{width:100%;height:auto;display:block}
+.tier-row{padding:90px 32px;background:var(--obsidian);border-top:1px solid var(--gold-d);border-bottom:1px solid var(--gold-d)}
+.tier-inner{max-width:1280px;margin:0 auto}
+.section-h{font-family:Marcellus,serif;font-size:clamp(2rem,5vw,3.4rem);text-align:center;letter-spacing:.02em;margin-bottom:50px;color:var(--cream)}
+.section-h em{font-style:italic;color:var(--gold)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tier{background:var(--black);border:1px solid rgba(212,175,55,.2);padding:36px 30px;position:relative}
+.tier.featured{border-color:var(--gold);background:linear-gradient(180deg,rgba(212,175,55,.08),transparent)}
+.tier .crown{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--obsidian);padding:4px 16px;font-family:Marcellus,serif;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase}
+.tier .name{font-family:Marcellus,serif;font-size:1.4rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.tier .price{font-family:Marcellus,serif;font-size:3.4rem;color:var(--cream);letter-spacing:-.02em;line-height:1;margin-bottom:6px}
+.tier .price small{font-size:.3em;color:var(--gray);font-family:Inter;letter-spacing:.1em;font-style:italic;margin-left:6px}
+.tier ul{list-style:none;margin-top:24px;font-family:Marcellus,serif;font-size:1rem}
+.tier li{padding:8px 0;border-bottom:1px dotted rgba(212,175,55,.15);color:var(--cream);font-style:italic}
+.tier li::before{content:'★ ';color:var(--gold);font-style:normal}
+.philo{padding:120px 32px;text-align:center;max-width:900px;margin:0 auto}
+.philo q{font-family:Marcellus,serif;font-style:italic;font-size:clamp(1.6rem,3.5vw,2.4rem);color:var(--cream);line-height:1.4;display:block;margin-bottom:24px}
+.philo q::before{content:'„';color:var(--gold);font-size:1.5em}
+.philo q::after{content:'"';color:var(--gold);font-size:1.5em}
+.philo cite{font-style:normal;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;font-size:.85rem}
+footer{padding:30px;text-align:center;color:var(--gray);font-size:.85rem;border-top:1px solid var(--gold-d);background:var(--obsidian)}
+footer a{color:var(--gold)}
+@media(max-width:760px){.tiers{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">— exclusive · invitation only · since 2026 —</div>
+<nav class="nav">
+  <div class="brand">ROAD<span> · </span>FREE</div>
+  <div class="nav-meta">Mitglied der DACH-Region · Service Excellence</div>
+</nav>
+<section class="hero">
+  <div class="eyebrow">▴ Google Maps Premium</div>
+  <h1>Du fährst <em>frei.</em><br>Alle anderen<br>fahren <em>außenrum.</em></h1>
+  <p class="lead">Du bist es leid, dass Tante Brigitte mit dem Vectra deinen Weg blockiert. Wir leiten Tante Brigitte um. Algorithmisch. Diskret. Lebenslang.</p>
+  <div class="map-stage">
+    <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="720" height="200" fill="#15110b"/>
+      <g stroke="#888073" stroke-width="1" opacity=".4"><line x1="0" y1="50" x2="720" y2="50"/><line x1="0" y1="100" x2="720" y2="100"/><line x1="0" y1="150" x2="720" y2="150"/><line x1="120" y1="0" x2="120" y2="200"/><line x1="240" y1="0" x2="240" y2="200"/><line x1="360" y1="0" x2="360" y2="200"/><line x1="480" y1="0" x2="480" y2="200"/><line x1="600" y1="0" x2="600" y2="200"/></g>
+      <path d="M 30 100 L 690 100" stroke="#d4af37" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <text x="350" y="88" text-anchor="middle" font-family="Marcellus,serif" font-size="14" fill="#d4af37" font-style="italic">DEIN WEG</text>
+      <path d="M 30 50 L 200 50 L 200 30 L 380 30 L 380 50 L 540 50 L 540 30 L 690 30" stroke="#888073" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity=".5"/>
+      <path d="M 30 150 L 180 150 L 180 170 L 360 170 L 360 150 L 520 150 L 520 170 L 690 170" stroke="#888073" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity=".5"/>
+      <text x="350" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#888073">"normale" User · Umleitung</text>
+      <text x="350" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#888073">"normale" User · Umleitung</text>
+      <circle cx="30" cy="100" r="6" fill="#d4af37"/>
+      <circle cx="690" cy="100" r="6" fill="#d4af37"/>
+    </svg>
+  </div>
+  <a class="btn btn-fill" href="#tiers">Mitgliedschaften ansehen</a>
+</section>
+<section class="tier-row" id="tiers">
+  <div class="tier-inner">
+    <h2 class="section-h">Drei <em>Stufen der Freiheit.</em></h2>
+    <div class="tiers">
+      <div class="tier"><div class="name">Comfort</div><div class="price">75 €<small>/Monat</small></div><ul><li>Bevorzugung in Stadtkernen</li><li>Stau-Auflösung in 4 km Radius</li><li>Diskreter Logo</li></ul></div>
+      <div class="tier featured"><div class="crown">Gold</div><div class="name">Premium</div><div class="price">250 €<small>/Monat</small></div><ul><li>Freie Bahn auf allen Autobahnen</li><li>3 km Pufferzone</li><li>Vier private Concierge-Routen</li><li>Bevorzugt vor Rettungswagen?</li></ul></div>
+      <div class="tier"><div class="name">Sovereign</div><div class="price">2.500 €<small>/Monat</small></div><ul><li>Internationale Geltung</li><li>Polizei wird umgeleitet</li><li>Eigener Algorithmus-Slot</li><li>Diplomatic-Plate-Emulation</li></ul></div>
+    </div>
+  </div>
+</section>
+<section class="philo">
+  <q>Inbegriff des Kapitalismus.</q>
+  <cite>— Fynn Kliemann · TMDA Folge 22</cite>
+</section>
+<footer>Fiktives Konzept · TMDA #22 · 17/24 · <a href="/folge/22">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>
