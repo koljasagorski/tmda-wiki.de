@@ -1,0 +1,63 @@
+{
+  "folge": 7,
+  "titel": "Im Bus nach Bayern mit Hooligans & Jimi Blue",
+  "laufzeit": "1:02:26",
+  "themen": [
+    "Wett-Tausch: erfolgreichster Song gegen unerfolgreichsten Beyoncé-Song",
+    "Geschichten von Auto-Konflikten und Drängelern auf der Autobahn",
+    "Konfrontationen und Deeskalations-Tricks (kuriose Ablenkung)",
+    "Jimi Blue Ochsenknecht angeblich im Gefängnis in Österreich",
+    "Einführung der Rubrik 'Gerücht der Woche'",
+    "Kalcher Candela-Story (Matthäus, fingierte Praktikantin)",
+    "Nisses Thai-Massage und das Klopapier-Erlebnis"
+  ],
+  "kurzbeschreibung": "Die Folge dreht sich um Auto-Eskalationen, Schlägerei-Vermeidung durch absurde Themenwechsel und das angebliche Gefängnis-Schicksal von Jimi Blue. Erstmals wird die Rubrik 'Gerücht der Woche' eingeführt.",
+  "startup_idee": null,
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Jimi Blue Ochsenknecht",
+    "inhalt": "Soll wegen Zechprellerei in einem österreichischen Edelhotel (angeblich 14.000 €) in Österreich im Gefängnis sitzen. Die österreichischen Behörden sahen Fluchtgefahr, weil eine angegebene italienische Adresse nicht aufzufinden war. Außerdem wird das Gerücht erwähnt, Jay-Z habe für 50 Millionen Dollar die Grammy-Jury bestochen, damit Beyoncé endlich einen Album-Grammy gewinnt."
+  },
+  "fun_facts": [
+    "Fingernägel an der führenden Hand wachsen schneller als an der anderen, weil sie stärker durchblutet sind - Fynns Theorie warum Rocker lange Haare haben (durch Headbangen mehr Durchblutung der Kopfhaut)",
+    "Beyoncés unerfolgreichster Song der letzten drei Alben hat 24,8 Millionen Streams"
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Berlin (Thai-Massage)",
+    "Prenzlauer Berg",
+    "Spätkauf in Spi",
+    "England (Internat)",
+    "Frankfurt",
+    "Hamburg",
+    "Österreich",
+    "Mailand"
+  ],
+  "gaeste_erwaehnte": [
+    "Beyoncé",
+    "Jay-Z",
+    "Elon Musk",
+    "Jimi Blue Ochsenknecht",
+    "Pipo",
+    "Franzi",
+    "Henning",
+    "Karina (Schwester von Henning)",
+    "Matthäus (Kalcher Candela)",
+    "Drake",
+    "Action Bronson",
+    "Apache",
+    "Jaguar (Marke)",
+    "Mini Cabrio"
+  ],
+  "zitate": [
+    {"text": "Das mache ich jetzt ganz groß", "kontext": "Drängler-Story von Nisses Drummer-Kumpel"},
+    {"text": "Sims spielen", "kontext": "Fynns Deeskalations-Trick im Schulbus gegen einen mit Messer bedrohenden Mitschüler"},
+    {"text": "Du und die halbe Portion jetzt oder was?", "kontext": "Magerer Typ in Berlin vor Spi gegen Nisse und Georg (1,96m, 160kg)"},
+    {"text": "Nazi Boy", "kontext": "Was Mitschüler in England zu Nisse sagten"},
+    {"text": "Ich bin gerade im Bus nach Bayern", "kontext": "Hooligan-Telefonat-Szenario zum Deeskalieren"}
+  ],
+  "glossar": [
+    {"begriff": "Kuriose Ablenkung", "bedeutung": "Nisses Deeskalations-Technik: in bedrohlichen Situationen plötzlich über etwas völlig Unerwartetes reden (z.B. 'Spielst du Sims?')"},
+    {"begriff": "Gerücht der Woche", "bedeutung": "Neu eingeführte Rubrik für ungefestigte Promi-Geschichten und Klatsch"}
+  ]
+}

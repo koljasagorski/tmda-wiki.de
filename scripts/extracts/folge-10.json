@@ -1,0 +1,103 @@
+{
+  "folge": 10,
+  "titel": "Kannibale & Hellodanane im Pff in Dubai",
+  "laufzeit": "1:09:39",
+  "themen": [
+    "Kannibalismus-Hypothese: Menschen haben 110.000 Kalorien",
+    "Sterbehilfe und Selbstbestimmung",
+    "Nikola Jokić weint mehr über sein Pferd als über NBA-Titel",
+    "Mondlandung und Apollo 13 als angeblich geskriptetes PR-Theater",
+    "Evolutionstheorie angeblich widerlegt durch Hühner-Kropf",
+    "Fahrräder gehören auf Fußgängerwege",
+    "Shopify Kundenservice-Hölle",
+    "Bushido vs. Shindy, Backstreet Boys und Lou Pearlman",
+    "Jesus P (Sido) Doku auf Amazon"
+  ],
+  "kurzbeschreibung": "Die Folge startet provokant mit Fynns Kannibalismus-Theorie und mündet in eine ausführliche Plattform-Startup-Idee (Holiday like X). Außerdem wird die Mondlandung als PR-Coup gedeutet und der Rap-Stammbaum von Bushido bis Backstreet Boys aufgedröselt.",
+  "startup_idee": {
+    "idee": "Like Mike / Holiday in a life with",
+    "beschreibung": "Asset-light Plattform mit kuratierten Urlaubslisten von Influencern. Wo macht Survival Mahin/Brian/Caro Daur Urlaub? Influencer wie Sami Slimani, Simon Desue und Bushido (alle im selben Puff in Dubai) listen ihre Lieblings-Locations. Kooperationspartner oder ungefragt (basierend auf öffentlichen Instagram-Posts). Mit exklusiven YouTube-Videos vor Ort, die nur bei Buchung anschaubar sind. Provision-basiertes Geschäftsmodell.",
+    "punkte": 20,
+    "max_punkte": 24,
+    "begruendung": "Asset-light, gut skalierbar, Reichweite über Influencer, ungefragte Listen rechtlich möglich, mit zusätzlichem exklusiven Video-Content vor Ort als Hook."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Ein durchschnittlicher Mensch hat ca. 110.000 Kalorien - genug um 40-50 Menschen satt zu machen",
+    "Die Mondlandung (Apollo 11) hatte die höchste Einschaltquote aller Zeiten, Apollo 13 nur 50.000 Zuschauer",
+    "Das Huhn ist der direkte Nachfahre des T-Rex - Fynn nutzt das als Argument gegen Darwins Evolutionstheorie",
+    "Die Kirche ist die Institution mit dem meisten Landbesitz der Welt",
+    "Nicola Jokić weinte mehr über den Sieg seines Pferdes als über den NBA-Titel",
+    "Lou Pearlman zahlte den Backstreet Boys angeblich nur 3000$, verdiente selbst 300 Millionen mit ihnen",
+    "EO bekam für ein ganzes Album bei Bushido angeblich nur ca. 10.000 € (ca. 1000 € pro Song)"
+  ],
+  "erfindungen": [
+    {"name": "Eckengucker-Helm", "beschreibung": "Helm der gleichzeitig nach vorne und hinten gucken lässt, damit Fußgänger auf Fußgängerwegen Fahrradfahrer von hinten sehen können - klingt 'wie ein Schnapsausguss aus Kiel'"}
+  ],
+  "orte": [
+    "Klimansland",
+    "Schweiz (Sterbehilfe)",
+    "Denver (NBA)",
+    "Schweden (Survival Mahin)",
+    "New Mexico (Touchma-haltempel)",
+    "Dubai (der eine Puff)",
+    "Mallorca (Milliardär)",
+    "Hamburg (Color-Line/Allianz Arena)",
+    "Garmisch-Partenkirchen",
+    "Baden-Baden",
+    "Bispingen (Skihalle)"
+  ],
+  "gaeste_erwaehnte": [
+    "Nikola Jokić",
+    "Christiano Comedian / Crystal",
+    "Survival Mahin",
+    "Caro Daur",
+    "Sami Slimani",
+    "Simon Desue",
+    "Bushido",
+    "Shirin David",
+    "Flying Uwe",
+    "Mark Eggers",
+    "Hans Zimmer",
+    "Cool Savas",
+    "Eko Fresh",
+    "Sido / Jesus P",
+    "Anastacia Ferati",
+    "Lars (Unlimited)",
+    "Lou Pearlman",
+    "Backstreet Boys",
+    "AJ McLean",
+    "Hollywood Hank",
+    "PMA",
+    "Figub Brazlevic",
+    "Kollegah",
+    "Farid Bang",
+    "Haftbefehl",
+    "Capital Bra (Ad)",
+    "Brian (Klimansland)",
+    "Joko Winterscheidt",
+    "Paul Ripke",
+    "Nina Chuba",
+    "Anthony Kiedis",
+    "Erik Zabel",
+    "Rick Zabel",
+    "Nina Hagen",
+    "Kosma Shiva Hagen",
+    "Philip Westermeyer"
+  ],
+  "zitate": [
+    {"text": "Warum essen wir eigentlich keine Menschen?", "kontext": "Fynns provokante Eröffnungsfrage"},
+    {"text": "Das Huhn hat sich sogar zurückentwickelt", "kontext": "Fynn 'widerlegt' Darwin"},
+    {"text": "Wer weiß?", "kontext": "Sidos Tochter Malina als Antwort darauf, ob Papa nochmal in den Knast geht"},
+    {"text": "Ihr haltet uns am Scheißen", "kontext": "Fynn als Spruch eines Handwerkers für Bezahlung - an die Fake-Sponsoren Amazon, Netflix etc."},
+    {"text": "Ich fahr von Garmisch-Partenkirchen nach Baden-Baden würfeln, Pagen fragen, ob sie meinen Wagen parken dürfen", "kontext": "Shindy-Reim, den Nisse zitiert"},
+    {"text": "Ich glaube, ich habe die Evolutionstheorie widerlegt", "kontext": "Fynn"}
+  ],
+  "glossar": [
+    {"begriff": "Prepper Teens machen Sachen", "bedeutung": "Nisses neue Rubrik für Themen, in denen sie über Wissenschaftliches/Verschwörerisches spekulieren"},
+    {"begriff": "Like Mike", "bedeutung": "Spitzname eines Typen namens Mike, der das bei sich selbst sagte, wenn er etwas in seinem eigenen Stil tat (Bier exen) - als möglicher Plattform-Name"},
+    {"begriff": "Eckengucker", "bedeutung": "Hypothetisches Hilfsmittel und gleichzeitig 'wie ein Schnapsausguss aus Kiel' klingender Begriff für jemanden mit schielenden Augen ('immer ein Auge aufs Geschäft')"},
+    {"begriff": "Holiday in a life with", "bedeutung": "Arbeitstitel für die Influencer-Urlaubsplattform-Startup-Idee"}
+  ]
+}

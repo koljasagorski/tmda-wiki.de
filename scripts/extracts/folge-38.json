@@ -1,0 +1,138 @@
+{
+  "folge": 38,
+  "titel": "TMDA #38",
+  "laufzeit": "1:08:49",
+  "themen": [
+    "Mark Jacobs designt Outfits fuer Frauen mit Gerichtsverhandlungen",
+    "Doku von Sofia Coppola ueber Mark Jacobs",
+    "OMR-Podcast ueber Taco-Laden und Amortisierung",
+    "Mucki Pinzner / Kalle Schwensen Anekdote",
+    "Timothy Chalamet Film Bob Dylan",
+    "Schwimmstil Kliman Backstroke",
+    "Brian Jakubowski als Bademeister im Centerparcs",
+    "Erloeserinnen im Altersheim",
+    "Algorithmus-Idee: Podcast vorschneiden",
+    "Diskussion ueber Serienkiller-Definition",
+    "Mucki Pinzner per Jumanji-Brett kontaktieren",
+    "Hello Flowers Plastikblumen-Laden",
+    "ESC Sarah Engels Wette"
+  ],
+  "kurzbeschreibung": "Finn und Nisse reden ueber Mark Jacobs als Gerichtsoutfit-Designer, eine grosse Kalles Corner Folge ueber Mucki Pinzner und Kalle Schwensens Doppelgaenger-Tricks, sowie Finns Startup Hello Flowers (Plastikblumen).",
+  "startup_idee": {
+    "idee": "Hello Flowers",
+    "beschreibung": "Erster Plastikblumen-Laden Deutschlands mit Teambuilding-Massnahmen, Influencer-Editionen (z.B. Riccardo Simonetti), Verleih fuer Filmsets und Abo-Modell. Filialen in Klimansland und Hamburg.",
+    "punkte": 18,
+    "max_punkte": 24,
+    "begruendung": "Alles ab 15 ist gut. Es hat absoluten Realitaetsbezug, da Finn selbst die Plastikblumen sammelt und in seinem Studio verwendet. Nisse muss sich davon trennen, dass es bereits real ist, mag aber den Vorteil fuer Leute ohne gruenen Daumen."
+  },
+  "kalles_corner": {
+    "titel": "Mucki Pinzner und Kalle Schwensens Attentat",
+    "inhalt": "Anekdote ueber den kleinwuechsigen Auftragskiller Werner Mucki Pinzner (faelschlich Pitzner genannt) in den spaeten 80ern/fruehen 90ern. Hat zwei Zuhaelter erschossen. In einer Verhoersituation hat ihm seine Anwaeltin eine Waffe reingeschmuggelt, mit der er erst sie und dann sich selbst erschossen hat. Zweite Geschichte: Kalle Schwensen wurde angeschossen, lag auf der Trage, wollte seine Sonnenbrille nicht abnehmen lassen und hat den Sanitaeter mit eisernem Griff bedroht: 'Wenn du mir die Brille abnimmst, bringe ich dich um.' - waehrend er am Sterben war. Marketing-Move wie Trumps 'Fight Fight Fight'."
+  },
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Modedesigner Mark Jacobs hat fuer mehrere Frauen mit Gerichtsverfahren (Courtney Love, Lil Kim) Outfits designt, damit sie 'fresh' aussehen",
+    "Hugo Boss hat die SS-Uniform designt",
+    "Tacos in Mexiko unter spanischer Kolonialisierung entstanden, daher spanisch",
+    "Sofia Coppola spielte als Kind in Paten Teil 3 die Tochter von Michael Corleone"
+  ],
+  "erfindungen": [
+    {
+      "name": "Algorithmus-Vorschneider fuer Podcasts",
+      "beschreibung": "Algorithmus soll aus jedem Podcast genau die Themen herausschneiden, die einen interessieren (Kaesebrot, Verschwoerungstheorien, Unfaelle). Bei voller Halluzinations-Stufe wird sogar die Stimme geklont und Themen erfunden."
+    },
+    {
+      "name": "Mucki Pinzner Jumanji-Seance",
+      "beschreibung": "Live-Event in der Uber-Arena Berlin, Pay-per-View bei Joyn fuer 6 Millionen Euro: Palina als Medium kontaktiert per Jumanji-Brett Mucki Pinzner im Jenseits. Mit grossem Setup, roten Teppich, Mark Jacobs Anzug fuer Nisse."
+    }
+  ],
+  "orte": [
+    "Klimansland",
+    "Hamburg",
+    "Berlin",
+    "Frankreich",
+    "St. Peter-Ording",
+    "Uber-Arena Berlin",
+    "Centerparcs"
+  ],
+  "gaeste_erwaehnte": [
+    "Mark Jacobs",
+    "Courtney Love",
+    "Lil Kim",
+    "Sofia Coppola",
+    "Francis Ford Coppola",
+    "Al Pacino",
+    "Philipp Plein",
+    "Timothy Chalamet",
+    "Sarah Kuttner",
+    "Kim Kardashian (Mutter)",
+    "Kalle Schwensen",
+    "Mucki Pinzner",
+    "Materia",
+    "Mickie Krause / Beisenherz",
+    "Donald Trump",
+    "Frederick Lau",
+    "Brian Jakubowski",
+    "Joel",
+    "Frederik Elfor",
+    "Konrad S.",
+    "Stefan Raab",
+    "Lena Meyer-Landrut",
+    "Sarah Engels",
+    "Deichkind",
+    "Riccardo Simonetti",
+    "Caro Daur",
+    "Sarakta",
+    "Tiark",
+    "Ole und Henriette",
+    "Paul Ronzheimer",
+    "Balbina",
+    "Joel",
+    "Gilo Farin",
+    "Olli Schulz"
+  ],
+  "zitate": [
+    {
+      "text": "Wenn du mir die Brille abnimmst, bringe ich dich um.",
+      "kontext": "Kalle Schwensen waehrend er angeschossen auf der Trage zum Krankenhaus liegt"
+    },
+    {
+      "text": "Ich heisse Mucki und dann Zeit um Kontakt verloren.",
+      "kontext": "Imaginierte Jumanji-Seance mit Mucki Pinzner"
+    },
+    {
+      "text": "Wer diese Folge teilt, koennt ihr einen Two Finger Records Hoodie gewinnen.",
+      "kontext": "Werbung am Ende der Folge"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Kalles Corner",
+      "bedeutung": "Wiederkehrende Rubrik mit Geschichten ueber Kalle Schwensen, eine Reeperbahn-Legende, von dem Nisse persoenlich Geschichten kennt"
+    },
+    {
+      "begriff": "Amortisieren",
+      "bedeutung": "Wenn die Investition wieder eingespielt ist und der erste Euro in die Tasche geht"
+    },
+    {
+      "begriff": "Kliman Backstroke",
+      "bedeutung": "Selbst erfundener Schwimmstil von Finn in Rueckenlage, mit Brustschwimm-Beinen, Butterfly-Armen und Kopf-Untertauchen beim Schwungholen"
+    },
+    {
+      "begriff": "Erloeserin",
+      "bedeutung": "Pflegerin im Altersheim, die alte Maenner sexuell 'erloest' fuer kleines Taschengeld"
+    },
+    {
+      "begriff": "Trockener Flutschi",
+      "bedeutung": "Spiel von zwei Kindern, bei dem man sich gegenseitig den Finger in den Arsch zu schieben versucht"
+    },
+    {
+      "begriff": "CG / Hilcher",
+      "bedeutung": "Selbst gezogener Hilcher als Markierung wenn etwas problematisch ist"
+    },
+    {
+      "begriff": "RFs",
+      "bedeutung": "Random anonymous Facts von Nisse"
+    }
+  ]
+}

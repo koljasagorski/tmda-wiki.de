@@ -1,0 +1,148 @@
+{
+  "folge": 35,
+  "titel": "Clowns stuermen Kinderheim rapidnews.com",
+  "laufzeit": "1:03:10",
+  "themen": [
+    "Zeitzonen am Pol als Ausrede",
+    "Aufnahme bei Catalyst (Musikschule Funkhaus Berlin)",
+    "David Blaine Experiment / obdachlose Studenten",
+    "Sting, Will.i.am und Fergie",
+    "Dr. Dre vs. Jay-Z Billionaer-Status",
+    "Juju aus Vertrag - Klaus & Guy",
+    "Melania Trump Doku (38 Mio Dollar)",
+    "Inauguration Outfit Melania (Hut wie Clouseau)",
+    "Outdoor Crossfit / Litfasssaeule",
+    "Berliner Salon Mode-Ausstellung",
+    "Toupee-Kissen Idee",
+    "Mufuti (Multifunktionstisch DDR)",
+    "Dieter Rams (nicht Apple)",
+    "Mega Churches Sub-Bass Manipulation",
+    "rapidnews.com (Fake News KI Generator)",
+    "BKA 1 Million Belohnung Brandanschlag",
+    "Felix Baumgartner gestorben",
+    "Alex Honnold Free Solo Kletterer",
+    "Upgrade der Woche: Kondome",
+    "Was wuerdest du mit 100.000 EUR in 24h machen?",
+    "Clowns stuermen Kinderheime (Party-Aktion)",
+    "Contergan-Kinder"
+  ],
+  "kurzbeschreibung": "Aufnahme im Funkhaus Berlin/Catalyst - Fynn stellt rapidnews.com vor (KI-Fake-News-Generator). Plus: Alex Honnold als 'krassester Athlet der Welt', Upgrade fuer Kondome und die wilde Idee, Kinderheime mit Clowns-Party zu stuermen.",
+  "startup_idee": {
+    "idee": "rapidnews.com - KI Fake-News Generator",
+    "beschreibung": "Web-App mit Power-Account, in die man Personen/Themen eingibt und in Sekunden einen Fake-Newsartikel inkl. Werbung und aehnliche Artikel generiert bekommt. Fuer 'kleine Tricks' wie Oma erschrecken oder Freunde verarschen.",
+    "punkte": 18,
+    "max_punkte": 24,
+    "begruendung": "Nisse hatte zunaechst Sorge, aber dann viel Spass damit. 18 Punkte 'wie geil'."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Russland-Flughafen Hack",
+    "inhalt": "In Russland wirst du innerhalb der ersten 10 Minuten nach Ankunft am Flughafen gehackt (via WLAN Spoofing). Im Kontext der Surfshark VPN-Werbung. Nebenfacts: Felix Baumgartner soll Rechtsaussen-Verbindungen gehabt haben (mit Kite gegen Hindernis geflogen)."
+  },
+  "fun_facts": [
+    "An den Polen gibt es keine Zeitzone - alle Laengengrade laufen dort zusammen",
+    "Mega Churches benutzen Sub-Bass Frequenzen (10-30 Hz) unter der Buehne, die unbewusst Panik ausloesen (wie bei Erdbeben/Vulkanausbruch), bis der Pfarrer Erloesung durch Jesus verkuendet",
+    "Dr. Dre verlor 100 Mio Dollar vom Apple-Deal, weil er die Uebernahme verfrueht ankuendigte"
+  ],
+  "erfindungen": [
+    {
+      "name": "Toupee-Kissen",
+      "beschreibung": "Perueckenartiges Toupee mit eingenaehten Haarverlaengerungen, die hinten ein eigenes Kissen formen - inkl. Handy- und Laptophalterung, statt Rucksack"
+    },
+    {
+      "name": "Litfasssaeule Lit (Litfit)",
+      "beschreibung": "Klettersaeulen im Stadtbild als Crossover aus Alpen- und Urban-Lifestyle, an 6 Stationen in Berlin"
+    },
+    {
+      "name": "Kondom-Upgrade",
+      "beschreibung": "Mehrere zusaetzliche Ringe fuer den Sack, plus verlaengernde Schnur die in einem Analplug endet (Anhaengerkupplung)"
+    },
+    {
+      "name": "Clowns stuermen Weisenhaeuser",
+      "beschreibung": "Mit 50 Clowns und Bluetooth-Headsets binnen 5 Minuten Kinderheime mit Zuckerwatte, M&M-Geschuetzen und Mattenwaenden stuermen - aufgehaengt am gleichzeitigen Zeitpunkt deutschlandweit"
+    }
+  ],
+  "orte": [
+    "Funkhaus Berlin",
+    "Catalyst (Musikschule)",
+    "Lidl",
+    "Berlin",
+    "Bottrop",
+    "Mykonos",
+    "Zakynthos",
+    "Griechenland",
+    "Brandenburg (Tesla-Anschlag)"
+  ],
+  "gaeste_erwaehnte": [
+    "Sting",
+    "Will.i.am",
+    "Fergie",
+    "Dr. Dre",
+    "Jay-Z",
+    "Tim Cook",
+    "Eminem",
+    "Kendrick Lamar",
+    "Snoop Dogg",
+    "Ice Cube",
+    "Juju",
+    "Klaus & Guy",
+    "Donald Trump",
+    "Melania Trump",
+    "Mark Zuckerberg",
+    "Elon Musk",
+    "Felix Baumgartner",
+    "Alex Honnold",
+    "Michael Phelps",
+    "LeBron James",
+    "Mufuti / Mustafa",
+    "Dieter Rams",
+    "Henry Ford",
+    "Mercedes (Daimler)",
+    "Lloyd-Brueder (Wright Brothers / 'Rebrueder')",
+    "Bushido",
+    "Sherin David",
+    "Pip Klockner",
+    "Oma Irmgard (fiktiv)",
+    "Onkel Erwin (fiktiv)"
+  ],
+  "zitate": [
+    {
+      "text": "Wir polen hier gerade nur unser Ei und wir warten darauf, dass er uns antwortet darauf",
+      "kontext": "Boris Brand-Antwort kommt aus letzter Folge"
+    },
+    {
+      "text": "Litter Fit",
+      "kontext": "Wortspiel mit 'Litter' und 'fit' bei der Litfasssaeulen-Klettersaeule"
+    },
+    {
+      "text": "Hier guck mal, ich muss den Krieg ziehen",
+      "kontext": "Telefon-Streich-Geschichte mit Oma Irmgard und der Brand-Anschlag"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Mufuti",
+      "bedeutung": "Multifunktionstisch aus der DDR - klappbar, vielseitig nutzbar"
+    },
+    {
+      "begriff": "Pay-perview / 'Payperware'",
+      "bedeutung": "Pay-per-view - Bezahlung pro Anschauen"
+    },
+    {
+      "begriff": "Free Solo",
+      "bedeutung": "Klettern ohne Sicherung - Alex Honnolds Disziplin, wo Verlieren gleich Sterben bedeutet"
+    },
+    {
+      "begriff": "31er",
+      "bedeutung": "Person, die jemanden bei der Polizei verpfeift (von Paragraph 31 BtMG)"
+    },
+    {
+      "begriff": "Contergan",
+      "bedeutung": "Medikament, das Geburtsschaeden verursacht hat ('Contergan-Kinder')"
+    },
+    {
+      "begriff": "Catalyst (Ketterlist)",
+      "bedeutung": "Musikschule im Berliner Funkhaus fuer wohlhabende suedeuropaeische Studierende"
+    }
+  ]
+}

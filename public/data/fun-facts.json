@@ -1,4 +1,846 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 210,
+  "items": [
+    {
+      "folge": 47,
+      "text": "Der Eiffelturm schrumpft bei Kaelte um 15 cm."
+    },
+    {
+      "folge": 47,
+      "text": "Der Eiffelturm besteht aus Puddeleisen."
+    },
+    {
+      "folge": 47,
+      "text": "Materie zieht sich bei Kaelte zusammen (thermische Kontraktion)."
+    },
+    {
+      "folge": 47,
+      "text": "Der aelteste Kaugummi der Welt ist 9000 Jahre alt."
+    },
+    {
+      "folge": 47,
+      "text": "Guerteltiere gelten als kugelsicher."
+    },
+    {
+      "folge": 47,
+      "text": "Bei IKEA sind Stuehle und Schreibtische nach Maennern benannt, Stoff und Gardinen nach Frauen."
+    },
+    {
+      "folge": 46,
+      "text": "Magensaeure ist stark genug, um Metall aufzuloesen."
+    },
+    {
+      "folge": 46,
+      "text": "Nilpferde furzen durch ihren Mund."
+    },
+    {
+      "folge": 46,
+      "text": "Der laengste Ortsname ist ein Huegel in Neuseeland mit 85 Buchstaben (Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu)."
+    },
+    {
+      "folge": 46,
+      "text": "Beyonces Vater Matthew Knowles war Beyonces Manager und wurde nicht zur Hochzeit von Beyonce und Jay-Z eingeladen."
+    },
+    {
+      "folge": 46,
+      "text": "Pokemon Go hat heimlich 3D-Scans der Welt erstellt - 30 Milliarden Bilder. Pokemon spawnten gezielt an Orten, die gescannt werden sollten."
+    },
+    {
+      "folge": 46,
+      "text": "Die Beatles haben den Genesis-World-Record fuer die meisten goldenen/Platin-Schallplatten gegen Ulli Jonas (europaweit) gewonnen, weil sie auch auf den Fidschi-Inseln Auszeichnungen erhalten haben."
+    },
+    {
+      "folge": 45,
+      "text": "Alle Menschen der Welt wuerden flaechentechnisch in Berlin (oder Los Angeles) reinpassen, wenn jeder 1 m2 haette."
+    },
+    {
+      "folge": 45,
+      "text": "1% der Weltflaeche ist von Menschen bebaut, 40% landwirtschaftlich, 35-40% Natur, 20% Wuesten und Eis."
+    },
+    {
+      "folge": 45,
+      "text": "Frueher waren 80% der Menschen Bauern, heute 1,4%."
+    },
+    {
+      "folge": 45,
+      "text": "Der aelteste Staat der Welt ist San Marino, gegruendet 301 nach Christus."
+    },
+    {
+      "folge": 45,
+      "text": "Es gibt in Deutschland ueber 3200 Brotsorten."
+    },
+    {
+      "folge": 45,
+      "text": "Termiten fressen sich doppelt so schnell durch Holz, wenn sie Rockmusik hoeren."
+    },
+    {
+      "folge": 45,
+      "text": "Ein Reetdach kostet ungefaehr 200.000 Euro."
+    },
+    {
+      "folge": 44,
+      "text": "Affenbabys werden teils in 30 m Hoehe in Baumkronen geboren und muessen sich sofort festhalten - der Greifreflex bei Menschenbabys stammt daher."
+    },
+    {
+      "folge": 44,
+      "text": "Babys haben eine Fontanelle, ein Loch oben am Kopf, wo die Schaedelplatten noch nicht zusammengewachsen sind."
+    },
+    {
+      "folge": 44,
+      "text": "In Sri Lanka brechen manche Eltern ihren Kindern absichtlich Arme/Beine, damit sie als Bettler mehr Geld verdienen (wie bei Slumdog Millionaire)."
+    },
+    {
+      "folge": 44,
+      "text": "2030 sollen 50% aller Berufe von KI uebernommen werden."
+    },
+    {
+      "folge": 43,
+      "text": "Amerikaner geben im Schnitt 412 Dollar pro Jahr und Haushalt fuer Lotterie aus, mehr als fuer Musik, Filme, Spiele und Spielzeug zusammen."
+    },
+    {
+      "folge": 43,
+      "text": "GTA V ist der meistverkaufte Medienartikel aller Zeiten (mehr als Thriller von MJ, mehr als Titanic-DVD)."
+    },
+    {
+      "folge": 43,
+      "text": "Pablo Escobar hat ueber Gummibaender ausgegeben, mit denen er Geld zusammengewickelt hat. Er ist der einzige Grund, dass es Nilpferde in Kolumbien gibt."
+    },
+    {
+      "folge": 43,
+      "text": "Schnecken haben vier Nasen."
+    },
+    {
+      "folge": 43,
+      "text": "Meta hat ca. 44 Milliarden Dollar in das Metaverse versenkt."
+    },
+    {
+      "folge": 42,
+      "text": "Piloten und Copiloten essen niemals das gleiche an Bord, falls einer vergiftet wird"
+    },
+    {
+      "folge": 42,
+      "text": "Hummeln koennen statistisch nicht fliegen - die Fluegel sind zu klein fuer ihr Gewicht"
+    },
+    {
+      "folge": 42,
+      "text": "Kraehen sind mit die intelligentesten Tiere der Welt"
+    },
+    {
+      "folge": 42,
+      "text": "Wenn eine Kraehe stirbt, kommen hunderte andere und inspizieren das Feld (Kroko-Sondereinheit)"
+    },
+    {
+      "folge": 42,
+      "text": "Kraehen geben ihre Erinnerung an Personen ueber 2 Generationen weiter (per DNA / generationales Trauma)"
+    },
+    {
+      "folge": 42,
+      "text": "Mucki Pinzner, nicht Pitzner (Korrektur aus Folge 38, wiederholt aus Folge 40)"
+    },
+    {
+      "folge": 42,
+      "text": "Spotify hatte 'Spotlight Artist' Programm, Nisse war der allererste in Deutschland"
+    },
+    {
+      "folge": 42,
+      "text": "Bei Tomorrowland werden in mehreren Staedten gleichzeitig Spiele/Bands gestreamt"
+    },
+    {
+      "folge": 42,
+      "text": "Im Casino sind die Roulettetische zentral, werden gefilmt und an 50 weiteren Tischen uebertragen"
+    },
+    {
+      "folge": 41,
+      "text": "Frueher pflanzte man Baeume direkt am Haus, damit naechste Generation Material zum Hausbauen hatte"
+    },
+    {
+      "folge": 41,
+      "text": "Eichen waren fuer Hausbau gedacht - daher stehen so fette Eichen so nah an Haeusern"
+    },
+    {
+      "folge": 41,
+      "text": "Varroa Milbe wurde von einem Kumpel von Bjoern Beton (Fettes Brot) nach Europa eingeschleppt"
+    },
+    {
+      "folge": 41,
+      "text": "Dunlop hat den Tennisball erfunden - Groesse, Druck, alles standardisiert von Dunlop"
+    },
+    {
+      "folge": 41,
+      "text": "Hape Kerkeling reagierte auf Spott, indem er sein Versagen zur Show machte (Filmszene mit ruekwaerts reitendem Pferd)"
+    },
+    {
+      "folge": 41,
+      "text": "Jamie Oliver, Cassie Rebel, JK Rowling sind die drei erfolgreichsten Autoren der letzten 100 Jahre in England"
+    },
+    {
+      "folge": 41,
+      "text": "Texas ist etwa 80% so gross wie ganz Europa"
+    },
+    {
+      "folge": 41,
+      "text": "Amerika ist ca. 500-550 Jahre alt seit Kolumbus es erreichte"
+    },
+    {
+      "folge": 41,
+      "text": "Floyd Mayweather hat 49 Kaempfe und keinen verloren"
+    },
+    {
+      "folge": 41,
+      "text": "Joerg von Dunlop ist Nisses Kontakt fuer die Padel-Story"
+    },
+    {
+      "folge": 40,
+      "text": "Es gibt drei Arten von Traenen: basale (zum Feuchthalten), reflektorische (bei Reizung) und emotionale (bei Gefuehlen)"
+    },
+    {
+      "folge": 40,
+      "text": "Krokodilstraenen sind die vierte Art"
+    },
+    {
+      "folge": 40,
+      "text": "Es wurde lange behauptet (aber widerlegt), dass man am Auge erkennen kann, ob Traene aus Freude oder Schmerz"
+    },
+    {
+      "folge": 40,
+      "text": "Muttermilch ist heilend / entzuendungshemmend"
+    },
+    {
+      "folge": 40,
+      "text": "Die Versace Badehose mit Pferden hat ein NFC-Chip-Etikett zur Echtheits-Verifikation"
+    },
+    {
+      "folge": 40,
+      "text": "Kalle Schwensen ist der Pate (im wahrsten Sinne des Wortes) von Nisses bester Freundin"
+    },
+    {
+      "folge": 40,
+      "text": "In aegyptischer Hochkultur hat man Katzen 'Mau' genannt (Mau-Dynastie)"
+    },
+    {
+      "folge": 39,
+      "text": "Man hat nie wirklich etwas beruehrt - Atome stossen sich durch elektromagnetische Wirkung am Ende ab"
+    },
+    {
+      "folge": 39,
+      "text": "Ole Jonas hat Euro Dance/Euro Trash erfunden (Mr. President, Dr. Alban, Haddaway, The Weeknd Blinded Lights klingt nach diesem Sound)"
+    },
+    {
+      "folge": 39,
+      "text": "Ole Jonas und Paul McCartney haben die meisten Gold- und Platinschallplatten als Europaeer"
+    },
+    {
+      "folge": 39,
+      "text": "Aelteste bekannte Land der Welt: Aegypten mit 3100 vor Christus"
+    },
+    {
+      "folge": 39,
+      "text": "In Alaska/Kanada bei Eisbaeren sollen alle Tueren offen bleiben, damit man im Notfall rein kann"
+    },
+    {
+      "folge": 39,
+      "text": "Eine Band heisst 'I am the World Trade Center', Album kam Juli 2001 raus, Track 11 heisst September"
+    },
+    {
+      "folge": 38,
+      "text": "Modedesigner Mark Jacobs hat fuer mehrere Frauen mit Gerichtsverfahren (Courtney Love, Lil Kim) Outfits designt, damit sie 'fresh' aussehen"
+    },
+    {
+      "folge": 38,
+      "text": "Hugo Boss hat die SS-Uniform designt"
+    },
+    {
+      "folge": 38,
+      "text": "Tacos in Mexiko unter spanischer Kolonialisierung entstanden, daher spanisch"
+    },
+    {
+      "folge": 38,
+      "text": "Sofia Coppola spielte als Kind in Paten Teil 3 die Tochter von Michael Corleone"
+    },
+    {
+      "folge": 37,
+      "text": "Bei der Amiga 1000 Praesentation hat Frank Elstner in Deutschland die Funktionen des Computers mit Publikum als 'menschlicher Computer' nachgespielt"
+    },
+    {
+      "folge": 37,
+      "text": "Andy Warhol hat den Amiga 1000 in den USA praesentiert"
+    },
+    {
+      "folge": 37,
+      "text": "Einhorn ist das Nationaltier von Schottland"
+    },
+    {
+      "folge": 37,
+      "text": "Koalabaeren haben fast identische Fingerabdruecke wie Menschen, von Forensikern kaum zu unterscheiden"
+    },
+    {
+      "folge": 37,
+      "text": "Heute war 'World Cleanup Day'"
+    },
+    {
+      "folge": 36,
+      "text": "Peter Lustig war vor Loewenzahn Tontechniker und hat die Aufnahme von JFKs 'Ich bin ein Berliner' Rede gemacht"
+    },
+    {
+      "folge": 36,
+      "text": "Die Asbest-Staubwolke nach 9/11 hat angeblich mehr Leute getoetet als am Tag selbst gestorben sind"
+    },
+    {
+      "folge": 36,
+      "text": "Asbest wurde frueher sogar in Zigarettenfilter eingebaut"
+    },
+    {
+      "folge": 35,
+      "text": "An den Polen gibt es keine Zeitzone - alle Laengengrade laufen dort zusammen"
+    },
+    {
+      "folge": 35,
+      "text": "Mega Churches benutzen Sub-Bass Frequenzen (10-30 Hz) unter der Buehne, die unbewusst Panik ausloesen (wie bei Erdbeben/Vulkanausbruch), bis der Pfarrer Erloesung durch Jesus verkuendet"
+    },
+    {
+      "folge": 35,
+      "text": "Dr. Dre verlor 100 Mio Dollar vom Apple-Deal, weil er die Uebernahme verfrueht ankuendigte"
+    },
+    {
+      "folge": 34,
+      "text": "Donald Trumps Name wird in den Epstein Files oefter erwaehnt als Jesus in der Bibel oder Harry Potter in allen Buechern zusammen"
+    },
+    {
+      "folge": 34,
+      "text": "Jay war der erste Billionaer im Rap-Game (Dr. Dre verlor 100 Mio Dollar wegen verfruehter Ankuendigung des Apple-Deals)"
+    },
+    {
+      "folge": 33,
+      "text": "James Blunt war im Kosovokrieg Oberhauptmann, verweigerte Befehl am Flughafen Pristina und verhinderte so Konflikt zwischen Russland und NATO"
+    },
+    {
+      "folge": 33,
+      "text": "Mutant Hero Turtles heissen in Deutschland 'Hero' statt 'Ninja' weil Ninja uebersetzt 'Killer/Moerder' bedeutet"
+    },
+    {
+      "folge": 33,
+      "text": "Paul McCartney soll let it be und Yesterday im Traum geschrieben haben"
+    },
+    {
+      "folge": 32,
+      "text": "Wenn man Salzwasser ueber den After konsumiert (z.B. mit Schlauch und Gravitation), kann man auf hoher See ueberleben, weil der Darm das anders verarbeitet als der Magen"
+    },
+    {
+      "folge": 32,
+      "text": "Man sagt 'Locks' statt 'Dreadlocks' - das Wort 'Dread' (dreckig) ist abwertend"
+    },
+    {
+      "folge": 32,
+      "text": "Til Schweiger hatte in 'Bang Boom Bang' Dreadlocks als Fussballspieler"
+    },
+    {
+      "folge": 32,
+      "text": "Native Instruments ist insolvent"
+    },
+    {
+      "folge": 32,
+      "text": "Saide hat 8,5 Millionen Follower auf TikTok"
+    },
+    {
+      "folge": 31,
+      "text": "Die Umrandung des Standard-Profilbilds in Microsoft Outlook 2010 ist der Mugshot von Bill Gates von 1977, als er besoffen Auto gefahren ist"
+    },
+    {
+      "folge": 31,
+      "text": "In Apple-Files sind alte Daten von Privatpersonen offengelegt - inklusive eines Microsoft-Lizenzschluessels, der heute noch fuer Windows 2002 funktioniert"
+    },
+    {
+      "folge": 31,
+      "text": "In Deutschland werden 15.000 Blutkonserven pro Tag verbraucht - eine Erkaeltungswelle leert die Vorraete in 3-5 Tagen"
+    },
+    {
+      "folge": 31,
+      "text": "Samuel L. Jackson hat ungefaehr 300 Millionen Dollar in seiner Karriere verdient. Etwa 1% (ca. 1,4 Mio.) entfaellt auf das Wort 'Motherfucker' (alleine in Pulp Fiction 48 Mal gesagt)"
+    },
+    {
+      "folge": 29,
+      "text": "Das Chupa Chups Logo wurde von Salvador Dali entworfen und darf nur mittig auf dem Produkt verwendet werden"
+    },
+    {
+      "folge": 29,
+      "text": "Salvador Dali hat angeblich einen Ameisenhuegel quer durch New York im Winter geschleift und Katzen in Wasser getunkt"
+    },
+    {
+      "folge": 28,
+      "text": "Wenn im Herbst die Blaetter fallen, kommt die Masse naeher zum Erdkern, wodurch die Erde minimal schneller rotiert (wie Eiskunstlaeuferin, die die Arme zusammenzieht) - laut Anselm Kiefer, aber von Finn nach Recherche als nicht stimmend erkannt"
+    },
+    {
+      "folge": 28,
+      "text": "Spotify Wrapped wurde von einer Praktikantin 2019 erfunden, die danach gefeuert wurde"
+    },
+    {
+      "folge": 27,
+      "text": "Karotten waren urspruenglich weiss/hell und wurden von niederlaendischen Gemuesezuechtern zu Ehren des Hauses Oranje orange gezuechtet"
+    },
+    {
+      "folge": 26,
+      "text": "Bei einer Schwangerschaft werden Frauenfuesse um eine halbe bis ganze Schuhgroesse platt gedrueckt"
+    },
+    {
+      "folge": 26,
+      "text": "Bei einer Vanity-Fair-Fotostrecke wurden Trump-Administration-Mitglieder absichtlich schlecht (zu nah, falsche Stuhl-Ausrichtung, Vasen am Kopf) fotografiert"
+    },
+    {
+      "folge": 26,
+      "text": "Die aelteste Frau der Welt wurde 122 Jahre alt, rauchte ab 16, hoerte mit 117 auf, fing mit 118 wieder an, ass jeden Tag Schokolade und Kuchen"
+    },
+    {
+      "folge": 26,
+      "text": "Im Film 'Kevin allein zu Haus' soll der Nachbar Old Man Marley angeblich Jesus symbolisieren (Geld auf Tresen wie Naegel, Verbaende, Auferstehung als Narben weg)"
+    },
+    {
+      "folge": 26,
+      "text": "Macaulay Culkins Sohn weiss nicht, dass sein Vater 'der Junge' aus dem Film ist"
+    },
+    {
+      "folge": 25,
+      "text": "Eine durchschnittliche Wolke wiegt 500.000 kg"
+    },
+    {
+      "folge": 25,
+      "text": "Im Funkhaus Berlin wurden zu DDR-Zeiten alle Aufnahmen vor Sendung in Stasi-Raeumen abgehoert"
+    },
+    {
+      "folge": 25,
+      "text": "Werner von Braun erfand die Rakete, auf der SpaceX und Starlink heute basieren"
+    },
+    {
+      "folge": 25,
+      "text": "Felix Klimanns Klimansland-Geburtstag fuer 75.000 Euro musste komplett ueber Mitarbeiter-Sozialversicherung nachversteuert werden"
+    },
+    {
+      "folge": 25,
+      "text": "Ein Mitarbeiter eines US-CD-Presswerks soll innerhalb von 3 Jahren ca. 8000 Alben (30% von Warner US-Verlust) vor Release geleakt haben"
+    },
+    {
+      "folge": 25,
+      "text": "Der groesste 16-jaehrige laut Guinness Buch der Rekorde ist 2,45 m gross"
+    },
+    {
+      "folge": 25,
+      "text": "Wenn man 'flip really sorry' (Skateboard-Video) damals downloadete, kam oft ein schwuler Porno"
+    },
+    {
+      "folge": 24,
+      "text": "Es gibt die Webseite Human Meat Project, wo Leute sich selbst zum Verzehr donaten koennen"
+    },
+    {
+      "folge": 24,
+      "text": "Felix Baumgartner ist gestorben (laut Podcast vor zwei Monaten, evtl. bei Kite-Unfall)"
+    },
+    {
+      "folge": 24,
+      "text": "Mariah Carey hat in ihrer Hochphase ein Grunge-Album aufgenommen"
+    },
+    {
+      "folge": 24,
+      "text": "Bei einer kurdischen Hochzeit ist 50 Euro pro Paar absolutes No-Go"
+    },
+    {
+      "folge": 22,
+      "text": "Es gibt 'Gas Pumping Weltmeisterschaften', bei denen man punktgenau auf eine bestimmte Tankzahl tanken muss"
+    },
+    {
+      "folge": 22,
+      "text": "Beim Beruf-Verlieren kotzen viele wegen Panik (Entleerung um schneller fliehen zu koennen vor Saebelzahntiger)"
+    },
+    {
+      "folge": 22,
+      "text": "Trumps Oval-Office-Goldverzierung stammt anscheinend aus dem Baumarkt Home Depot (gold angesprueht)"
+    },
+    {
+      "folge": 22,
+      "text": "Der angebliche IQ-Test, mit dem Trump prahlte, ist eigentlich ein Demenz-Screening (Tiger-Elefant-Giraffe)"
+    },
+    {
+      "folge": 21,
+      "text": "Alle Armbanduhren in Werbeanzeigen zeigen 10 nach 10, damit das Firmenlogo in der Mitte zwischen den Zeigern ist; KI generiert Uhren ebenfalls so, weil sie nur reproduziert"
+    },
+    {
+      "folge": 21,
+      "text": "WD-40 heisst so, weil es der 40. Versuch war, die Formel fuer Korrosionsschutz fuer Kampfjets zu finden"
+    },
+    {
+      "folge": 21,
+      "text": "Der Begriff 'MILF' wurde angeblich von den Drehbuchautoren von American Pie erfunden"
+    },
+    {
+      "folge": 20,
+      "text": "Seekuehe steuern ihr Tauchen und Auftauchen durch Verdauungsgase (Pupse als Antrieb)."
+    },
+    {
+      "folge": 20,
+      "text": "Bolivien gewann gegen Brasilien, weil Balljungs und Polizei Baelle versteckten, um Zeit zu schinden (insgesamt sollen 20 Minuten Ball weg gewesen sein)."
+    },
+    {
+      "folge": 20,
+      "text": "Tschernobyl-Halbwertszeit ist deutlich kuerzer als oft gedacht - heute findet wieder Tourismus statt."
+    },
+    {
+      "folge": 20,
+      "text": "Bill Gates investiert massiv in Atomkraft als Loesung des Energieproblems; Microsoft und OpenAI bauen eigene AKWs."
+    },
+    {
+      "folge": 20,
+      "text": "Wissenschaftler haben eine Symbolsprache fuer Atommuell-Endlager entwickelt, die noch in 1 Million Jahren verstaendlich sein soll (auch von Aliens oder zukuenftigen Menschen)."
+    },
+    {
+      "folge": 20,
+      "text": "Beim Tutanchamun-Grab starben die meisten Ausgraeber nicht durch Fluch, sondern durch Schimmelsporen, die sich ueber Jahrhunderte angesammelt hatten."
+    },
+    {
+      "folge": 19,
+      "text": "Atemfakt von Dominique: Mit fast jedem Atemzug atmet man statistisch mindestens ein Atom ein, das schon einmal in Julius Caesar war."
+    },
+    {
+      "folge": 19,
+      "text": "Bei einer Bergrettung in Phoenix wurde eine 74-jaehrige Frau im Rettungssarkophag 174 Mal in 40 Sekunden um die eigene Achse geschleudert (Rotor-Effekt)."
+    },
+    {
+      "folge": 19,
+      "text": "Henry Ford war eine wichtige Inspiration fuer Hitlers Gedankengut; er schrieb antisemitische Pamphlete."
+    },
+    {
+      "folge": 19,
+      "text": "Two-Finger-Salut: stammt von englischen Bogenschuetzen im Krieg gegen Frankreich - Gefangenen wurden Zeige- und Mittelfinger abgeschnitten, die noch intakten zeigten sie der anderen Seite."
+    },
+    {
+      "folge": 18,
+      "text": "Killdozer-Geschichte: Marvin Heemeyer baute aus einem Bulldozer einen gepanzerten Vergeltungs-Bulldozer (40 Tonnen Stahl, Schiess-Schaerten, Kameras)."
+    },
+    {
+      "folge": 18,
+      "text": "In Deutschland werden nur 7 von 10 Banküberfaellen aufgeklaert (30% bleiben ungeklaert)."
+    },
+    {
+      "folge": 18,
+      "text": "Richard Branson fuhr in New York mit einem Panzer durch eine Coca-Cola-Dosen-Pyramide, woraufhin Virgin Cola binnen einer Woche bei Walmart aus dem Sortiment flog."
+    },
+    {
+      "folge": 18,
+      "text": "Der Pokemon-Erfinder liess sich angeblich von der Vielfalt der Kaefer inspirieren."
+    },
+    {
+      "folge": 17,
+      "text": "In der Londoner U-Bahn werden jedes Jahr 80.000 Regenschirme zurueckgelassen."
+    },
+    {
+      "folge": 17,
+      "text": "Wenn GTA 6 erscheint, gehen die US-Behoerden von bis zu 10 Milliarden Dollar Wirtschaftsverlust durch Krankmeldungen aus."
+    },
+    {
+      "folge": 17,
+      "text": "Andre 3000 von Outkast hielt mit einem schlichten 'Thank you' eine der kuerzesten Dankesreden der Award-Geschichte."
+    },
+    {
+      "folge": 16,
+      "text": "Jamie Oliver ist nach Shakespeare und JK Rowling einer der erfolgreichsten englischen Autoren mit ueber 50 Millionen verkauften Buechern, obwohl er Legasthenie hat."
+    },
+    {
+      "folge": 16,
+      "text": "Beim Mandela-Effekt erinnern sich Leute faelschlich, dass Pikachu eine schwarze Schwanzspitze hat oder der Monopoly-Mann ein Monokel traegt."
+    },
+    {
+      "folge": 16,
+      "text": "Andre Agassi hat in seiner Karriere Crystal Meth geraucht und Tennis abgrundtief gehasst."
+    },
+    {
+      "folge": 16,
+      "text": "Die US-Marktwirtschaft soll beim Start von Star Wars Episode 1 (1999) 2 Milliarden Dollar verloren haben; bei GTA 6 werden bis zu 10 Milliarden erwartet."
+    },
+    {
+      "folge": 16,
+      "text": "Als die letzte Folge Seinfeld lief, ging die Crime Rate in Amerika um 30% zurueck."
+    },
+    {
+      "folge": 15,
+      "text": "Im Studley Castle wurde 1885 das erste Kondom aus dem frühen 17. Jahrhundert entdeckt - aus Tier- und Fisch-Innereien gefertigt"
+    },
+    {
+      "folge": 15,
+      "text": "Akon hat 'Lonely' speziell so produziert, dass es perfekt über Poly-Klingelton klingt, weil Klingeltöne damals 4,99 EUR kosteten gegenüber 99 Cent für einen Song"
+    },
+    {
+      "folge": 15,
+      "text": "Akon hat ca. 8 Kinder mit unterschiedlichen Aufgaben in seinem Business (Marketing, Finanz, Militär)"
+    },
+    {
+      "folge": 15,
+      "text": "Englischer Wortschatz: 650.000 Wörter laut Oxford Lexikon, aktiv genutzt 250.000-300.000"
+    },
+    {
+      "folge": 15,
+      "text": "Deutscher Wortschatz aktiv: 350.000-600.000 Wörter"
+    },
+    {
+      "folge": 15,
+      "text": "Französischer Wortschatz aktiv: 150.000 Wörter"
+    },
+    {
+      "folge": 15,
+      "text": "Stefan Effenberg argumentierte vor Gericht, er habe nicht 'blödes Arschloch' gesagt, sondern 'schönen Tag noch' - ein Reim. Kam damit aber nicht durch, weil zwei Polizisten gegen ihn aussagten"
+    },
+    {
+      "folge": 15,
+      "text": "Charlie Sheens Dealer hat das Crack über 1,5 Jahre von 95% auf 10% verdünnt, bis Sheen aufhörte, weil 'es nicht mehr ballerte'"
+    },
+    {
+      "folge": 15,
+      "text": "Charlie Sheen verdiente bei 'Two and a Half Men' 2 Millionen pro Folge - bestbezahlter TV-Darsteller aller Zeiten"
+    },
+    {
+      "folge": 15,
+      "text": "John Cryer hat Charlie Sheen mit Sandwiches gefüttert und ihn aus dem Bett mit Sexarbeiterinnen geholt, um eine Folge zu drehen"
+    },
+    {
+      "folge": 14,
+      "text": "Drei Paranüsse können bereits zu einer Selenvergiftung führen - in Studentenfutter sind oft mehr drin"
+    },
+    {
+      "folge": 14,
+      "text": "Symptome einer Selenvergiftung: Morgenkrämpfe, Müdigkeit, Haarausfall"
+    },
+    {
+      "folge": 14,
+      "text": "Pro Bienenstock arbeiten ca. 40.000 bis 60.000 Bienen"
+    },
+    {
+      "folge": 14,
+      "text": "Ostdeutsche brauchen wissenschaftlich nachgewiesen ca. 20 Millisekunden länger zum Antworten als Westdeutsche"
+    },
+    {
+      "folge": 14,
+      "text": "Es gibt eine Gemütlichkeitsformel für Treppenstufen - kleine Unterschiede lassen Leute stolpern"
+    },
+    {
+      "folge": 14,
+      "text": "Ben Affleck sagt im DVD-Kommentar von Armageddon selbst, der Film mache keinen Sinn (warum Ölbohrer zu Astronauten ausbilden?)"
+    },
+    {
+      "folge": 13,
+      "text": "Ein Basketballspieler hat statt eines höheren Convers-Angebots Nike-Aktien (100.000) genommen, die später 5,2 Milliarden EUR wert wurden"
+    },
+    {
+      "folge": 13,
+      "text": "Mark Zuckerberg gab dem Facebook-Graffiti-Künstler Aktien statt Geld - die später 50 Millionen wert wurden"
+    },
+    {
+      "folge": 13,
+      "text": "Die Maßeinheit Meile basiert auf einem Doppelschritt der römischen Armee (1000 Doppelschritte)"
+    },
+    {
+      "folge": 13,
+      "text": "Über 2000 Jahre lang glaubte man, die Vier-Minuten-Meile sei unmöglich - bis Roger Bannister sie 1954 in 3:59,7 lief"
+    },
+    {
+      "folge": 13,
+      "text": "Es gibt einen Ort in China, wo eine ganze Straße aus Läden besteht, in denen man Bilder von Großmeistern nachmalen lassen kann"
+    },
+    {
+      "folge": 12,
+      "text": "Die menschliche Magenschleimhaut erneuert sich alle zwei bis drei Tage, damit der Magen sich nicht selbst auffrisst"
+    },
+    {
+      "folge": 12,
+      "text": "Bei Nagetieren wachsen die Zähne unendlich lang weiter, weshalb sie nagen müssen"
+    },
+    {
+      "folge": 12,
+      "text": "September heißt eigentlich '7' (sept), Oktober '8' (octa) - Monatszählung ist verschoben"
+    },
+    {
+      "folge": 11,
+      "text": "Eine Folge Baywatch ist eigentlich nur ca. 15 Minuten Story; der Rest sind 2-Minuten-Intro und Slowmos, weil sie keine Kohle und keine Story für mehr hatten"
+    },
+    {
+      "folge": 11,
+      "text": "Eine Nebenwirkung von Aspirin sind Kopfschmerzen"
+    },
+    {
+      "folge": 11,
+      "text": "Proteine verbrennen beim Essen sich selbst schon wieder"
+    },
+    {
+      "folge": 10,
+      "text": "Ein durchschnittlicher Mensch hat ca. 110.000 Kalorien - genug um 40-50 Menschen satt zu machen"
+    },
+    {
+      "folge": 10,
+      "text": "Die Mondlandung (Apollo 11) hatte die höchste Einschaltquote aller Zeiten, Apollo 13 nur 50.000 Zuschauer"
+    },
+    {
+      "folge": 10,
+      "text": "Das Huhn ist der direkte Nachfahre des T-Rex - Fynn nutzt das als Argument gegen Darwins Evolutionstheorie"
+    },
+    {
+      "folge": 10,
+      "text": "Die Kirche ist die Institution mit dem meisten Landbesitz der Welt"
+    },
+    {
+      "folge": 10,
+      "text": "Nicola Jokić weinte mehr über den Sieg seines Pferdes als über den NBA-Titel"
+    },
+    {
+      "folge": 10,
+      "text": "Lou Pearlman zahlte den Backstreet Boys angeblich nur 3000$, verdiente selbst 300 Millionen mit ihnen"
+    },
+    {
+      "folge": 10,
+      "text": "EO bekam für ein ganzes Album bei Bushido angeblich nur ca. 10.000 € (ca. 1000 € pro Song)"
+    },
+    {
+      "folge": 9,
+      "text": "Wenn man sein T-Shirt auf links trägt, trägt 'das ganze Universum' es richtig herum und nur man selbst ist 'draußen'"
+    },
+    {
+      "folge": 9,
+      "text": "Flohsamenschalen funktionieren wie ein Spreizer im Darm (Feuerwehr-Werkzeug-Vergleich)"
+    },
+    {
+      "folge": 9,
+      "text": "Folge 5 und 6 von TMDA wurden zu 60% komplett durchgehört"
+    },
+    {
+      "folge": 9,
+      "text": "Eine Seele wiegt 21 Gramm (im Kontext der Hauswaagen-Idee)"
+    },
+    {
+      "folge": 8,
+      "text": "Der B2 Tarnkappenbomber hat einen Radarabdruck so groß wie eine Maus (4x2 cm)"
+    },
+    {
+      "folge": 8,
+      "text": "B2 Bomber kostet 2 Milliarden Dollar in der Produktion und muss alle 2 Jahre mit Spezialfarbe gestrichen werden, deren Zusammensetzung geheim ist"
+    },
+    {
+      "folge": 8,
+      "text": "Akons Bruder hat sich als Akon ausgegeben und parallel Shows gespielt, sogar einen dritten Bruder als Ersatz geschickt"
+    },
+    {
+      "folge": 8,
+      "text": "Ein Kind ist wie keins, zwei sind wie 1000 (Spruch über Elternschaft)"
+    },
+    {
+      "folge": 8,
+      "text": "Action Bronson kam in Köln 30 Minuten zu spät und sein Cousin spielte 25 von 30 Minuten"
+    },
+    {
+      "folge": 7,
+      "text": "Fingernägel an der führenden Hand wachsen schneller als an der anderen, weil sie stärker durchblutet sind - Fynns Theorie warum Rocker lange Haare haben (durch Headbangen mehr Durchblutung der Kopfhaut)"
+    },
+    {
+      "folge": 7,
+      "text": "Beyoncés unerfolgreichster Song der letzten drei Alben hat 24,8 Millionen Streams"
+    },
+    {
+      "folge": 6,
+      "text": "Es kostet den US-Staat ca. 16.000 $ pro Jahr pro Obdachlosem (durch Polizeieinsätze, Shelter etc.), während eine Wohnung plus Essen nur 11.000 $ kosten würde (laut 'Utopien für Realisten' von Rutger Bregmann)"
+    },
+    {
+      "folge": 6,
+      "text": "Die Spirio-Technik von Steinway hat 1000 (bzw. 10.000/100.000) Abtastungsstufen statt der üblichen 127 MIDI-Stufen"
+    },
+    {
+      "folge": 6,
+      "text": "Steinway Spirio-Flügel ab 350.000 € können live Konzerte von Pianisten wie Lang Lang in Echtzeit nachspielen"
+    },
+    {
+      "folge": 5,
+      "text": "Liam Gallagher dachte, dass A$AP Rocky 'What's Ricky' heisst"
+    },
+    {
+      "folge": 5,
+      "text": "Steve Jobs' Krebs koennte laut Verschwoerung von den elektromagnetischen Stroemen seines MacBooks auf dem Schoss gekommen sein"
+    },
+    {
+      "folge": 5,
+      "text": "EU-Haushalte haben durchschnittlich 32 Lampen, US-Haushalte 50-67, australische 48"
+    },
+    {
+      "folge": 5,
+      "text": "Es gibt 2,4 Milliarden Haushalte auf der Welt mit 80-120 Milliarden Lampen"
+    },
+    {
+      "folge": 5,
+      "text": "Trick zur Stimmen-Tieferlegung: Adamsapfel hochziehen mit zwei Fingern - aber dabei nicht reden, sonst feuchte Augen"
+    },
+    {
+      "folge": 4,
+      "text": "Man legt mit dem Daumen pro Monat zwischen 30 und 100 Kilometer beim Scrollen zurueck"
+    },
+    {
+      "folge": 4,
+      "text": "Nisses Nasen-OP wurde mit kokainhaltigem Betaeubungsmittel gemacht, das man tief einatmen muss"
+    },
+    {
+      "folge": 4,
+      "text": "Snoop Dogg's Producer hatte einen Native-Instruments-Account mit 20% Rabatt, ueber den Nisse heimlich eine MK1-Machine bestellte"
+    },
+    {
+      "folge": 4,
+      "text": "Der Rihanna-Song eines Songwriting-Teams wurde nie veroeffentlicht, weil Chris Brown sie zwei Wochen vor Release im Lamborghini verpruegelte"
+    },
+    {
+      "folge": 3,
+      "text": "Die erste Festplatte der Welt (IBM 1950) wog eine Tonne und hatte 5 MB Speicher"
+    },
+    {
+      "folge": 3,
+      "text": "Beim Tod verlassen angeblich 21 Gramm den Koerper (Film: 21 Gramm)"
+    },
+    {
+      "folge": 3,
+      "text": "Russen sollen Krebs durch heisses Baden (50 Grad mit Thermometer im Anus) ueberlebt haben, weil Eiweiss/Krebszellen zersetzt werden"
+    },
+    {
+      "folge": 3,
+      "text": "0 Kelvin entspricht -278 Grad (eigentlich -273,15) - bei dieser Temperatur leiten Materialien sehr gut Strom"
+    },
+    {
+      "folge": 3,
+      "text": "Macaulay Culkin hat sich selbst den Mittelnamen 'Macaulay Culkin' gegeben"
+    },
+    {
+      "folge": 3,
+      "text": "Die letzten 10.000 Segways wurden weltweit verkauft - Steve Jobs hatte das Produkt gebackt"
+    },
+    {
+      "folge": 3,
+      "text": "Es brauchte Jahrzehnte Forschung, bis die blaue LED erfunden wurde - rot und gruen gab es vorher"
+    },
+    {
+      "folge": 2,
+      "text": "Wenn man sich den ganzen Arm schwarz taetowieren laesst, zieht man mehr Hitze an und kann nicht mehr in die Sonne"
+    },
+    {
+      "folge": 2,
+      "text": "Der ganze Sack/die Hoden sind aus Designer-Sicht ueberfluessig laut Fynn"
+    },
+    {
+      "folge": 2,
+      "text": "Bei Damm-Lauf (Mueltransportbetrieb 'Fair Edelhoff') findet ein Mitarbeiter einen Ring fuer 15.000 EUR im Sperrmuell - die Besitzerin schenkt ihn ihm"
+    },
+    {
+      "folge": 1,
+      "text": "In einer Kapelle gibt es angeblich nur Plaetze fuer 24 Papst-Abbilder; der aktuelle amerikanische Papst sei der letzte"
+    },
+    {
+      "folge": 1,
+      "text": "Der Maya-Kalender soll fuer das Jahr 2033 den Weltuntergang vorhergesagt haben (2000 Jahre nach Jesu Tod)"
+    },
+    {
+      "folge": 1,
+      "text": "Brian Johnson forscht in den USA daran, fuer immer zu leben"
+    },
+    {
+      "folge": 1,
+      "text": "Nur 10.000 Segways wurden weltweit verkauft (kommt in spaeterer Folge zur Sprache, hier nicht)"
+    }
+  ]
 }

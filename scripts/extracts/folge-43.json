@@ -1,0 +1,129 @@
+{
+  "folge": 43,
+  "titel": "Zartmann & Berq im GTA6-Stripclub",
+  "laufzeit": "1:08:42",
+  "themen": [
+    "Amerikaner und Lotterie-Ausgaben",
+    "Gaming in ARC Raiders mit Cliso, Thor (Zartmann), Sharakta",
+    "GTA 6 und virtuelle Werbung/Real Estate",
+    "Snoop Dogs Metaverse-Investition",
+    "Startup-Idee: Bittersüß / Bitter Sleeve (Zungensocke)",
+    "Coldplay-Plagiat (Every Teardrop is a Waterfall) und Alex Christensen",
+    "Aus von Kalles Corner wegen Colin Fernandes / Impfpflicht",
+    "Polyton Musikpreis und Berq",
+    "Reise nach Innsbruck zum AI-Apocalypse-Vortrag",
+    "Therapie und KI als Therapeut",
+    "Missgeburt-Wort als Beleidigung (Schulzeit)",
+    "Sexarbeit / Buch 12 Minuten von Paulo Coelho",
+    "Random Anonymous Facts (RAFs)"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse reden ueber Gaming-Plaene fuer GTA 6 und ARC Raiders, eine Startup-Idee fuer einen Zungensleeve namens Bitter Sleeve und das vorzeitige Ende von Kalles Corner. Ausserdem geht es um Plagiatsvorwuerfe gegen Coldplay und Nisses Vortrag in Innsbruck.",
+  "startup_idee": {
+    "idee": "Bitter Sleeve (urspruenglich Bittersuess)",
+    "beschreibung": "Eine Art Socke/Kondom fuer die Zunge, die die hinten gelegenen Bitterstoff-Rezeptoren abdeckt, sodass Bitterstoffe heruntergeschluckt aber nicht geschmeckt werden. Kann gestaltet werden wie ein Grill, mit Logos, in Farben, mit Mentol-Frischeeffekt. Preis ca. 2,40 EUR.",
+    "punkte": 12,
+    "max_punkte": 24,
+    "begruendung": "Zu viele Ebenen, ausbaufaehig. Nisse sagt es seien zu viele Argumente, einige davon nur 'kann man auch machen'. Wenn man auf den Kern (Geschmack ueberdecken) pivotet, koennte es funktionieren."
+  },
+  "kalles_corner": {
+    "titel": "Kalles Corner ist Geschichte / Goodbye Connor",
+    "inhalt": "Kalles Corner wird in dieser Folge eingestellt. Grund: Kalle Schwensen hat sich auf Instagram in einem Beitrag ueber Colin Fernandes geaeussert und dabei das Klarnamengesetz, Corona-Impfpflicht und Bundesregierung kritisiert in einer Form, die Fynn und Nisse zu Distanzierung bewegt. Sie betrauern den 'Kalle der 80er, 90er und fruehen 2000er' und beenden das Format."
+  },
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Amerikaner geben im Schnitt 412 Dollar pro Jahr und Haushalt fuer Lotterie aus, mehr als fuer Musik, Filme, Spiele und Spielzeug zusammen.",
+    "GTA V ist der meistverkaufte Medienartikel aller Zeiten (mehr als Thriller von MJ, mehr als Titanic-DVD).",
+    "Pablo Escobar hat ueber Gummibaender ausgegeben, mit denen er Geld zusammengewickelt hat. Er ist der einzige Grund, dass es Nilpferde in Kolumbien gibt.",
+    "Schnecken haben vier Nasen.",
+    "Meta hat ca. 44 Milliarden Dollar in das Metaverse versenkt."
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Berlin",
+    "Hamburg",
+    "Innsbruck",
+    "Muenchen",
+    "Miami (in GTA 6 nachgebaut)",
+    "Hong Kong",
+    "St. Pauli",
+    "Reeperbahn",
+    "Dollhaus (Strip Club)"
+  ],
+  "gaeste_erwaehnte": [
+    "Cliso (Cloo)",
+    "Zartmann / Thor",
+    "Sharakta",
+    "Tag",
+    "Berq",
+    "Frederik",
+    "Snoop Dog",
+    "Travis Scott",
+    "Lil Nas X",
+    "Billie Eilish",
+    "Alex Christensen",
+    "Verona Feldbusch",
+    "Coldplay",
+    "Bosser",
+    "Sido",
+    "Ades",
+    "Jesus",
+    "Kalle Schwensen",
+    "Colin Fernandes",
+    "Sven Bensmann (Sweener)",
+    "Herbert Groenemeyer",
+    "Moses Schneider",
+    "Apache",
+    "Friedrich Merz",
+    "Lara (LinkedIn-Star aus Hamburg)",
+    "Jensen Huang (Nvidia)",
+    "Elon Musk",
+    "Jeff Bezos",
+    "Mark Zuckerberg",
+    "Sigmund Freud",
+    "Platon",
+    "Kant",
+    "Ryan Gosling",
+    "Dominic Fike",
+    "Jan Woehlmoeller",
+    "Mikaela Schaefer",
+    "Klaus Klaus",
+    "Coolio",
+    "Lil MB",
+    "Brian (Klimaanlage)",
+    "Stuckrad Barre",
+    "Julius (Elevator Boys)",
+    "Ramon"
+  ],
+  "zitate": [
+    {
+      "text": "Raus aus der Wohnung, ran an den Koerper.",
+      "kontext": "Fynns Mantra fuer die Startup-Idee-Suche, das im Laufe der Folge mehrfach wiederholt wird."
+    },
+    {
+      "text": "Du musst nicht die wahrscheinlichste Version von dir selbst werden.",
+      "kontext": "Nisse zitiert aus seinem Vortrag in Innsbruck (you must not become the most likely version of yourself)."
+    },
+    {
+      "text": "Kannst du mal ins Maul machen, wenn du Bock auf Steifen hast.",
+      "kontext": "Werbung fuer das Buch 12 Minuten von Paulo Coelho mit Stuckrad-Barre und Elevator Boys als Testimonials."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "ARC Raiders",
+      "bedeutung": "Online-Game, das Nisse mit Cliso, Thor und Sharakta spielt. In den Auto-Captions falsch als 'Arschraiders', 'Arc Riders' oder 'Raders' transkribiert."
+    },
+    {
+      "begriff": "Knippe",
+      "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat."
+    },
+    {
+      "begriff": "DACH",
+      "bedeutung": "Deutschland, Austria, Switzerland (CH = Schweiz, Confoederatio Helvetica)."
+    },
+    {
+      "begriff": "Sleeve",
+      "bedeutung": "Aermel-Tattoo, im Kontext der Startup-Idee uebertragen auf die Zungenhuelle."
+    }
+  ]
+}

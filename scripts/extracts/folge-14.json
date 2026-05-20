@@ -1,0 +1,126 @@
+{
+  "folge": 14,
+  "titel": "Zeugenschutz für Alle - 3 Paranüsse für Ben Affleck",
+  "laufzeit": "1:02:48",
+  "themen": [
+    "Selenvergiftung durch Paranüsse",
+    "Haarpulver got2be (als Sponsor-Witz)",
+    "Nutri Score und Kennzeichnung von Lebensmitteln",
+    "Tierhaltungsformen und freiwillige Ausweisung",
+    "Bienenstöcke als 'Mitarbeiter' im Klimaland Honig (24h Twitch-Stream)",
+    "Ostdeutsche reden langsamer (wissenschaftliche These)",
+    "Gemütlichkeitsformel für Treppenstufen",
+    "Content Generator für Treppen-Stolperfallen",
+    "Nachnamen und ihre Herkunft (Müller=Brot)",
+    "Reborn.de - Zeugenschutz für alle (Startup-Idee)",
+    "Pornotitel-Twitter-Account von Fynn",
+    "Wikinger nahmen heiße Frauen aus England (Comedian-These)",
+    "Schönheitsstandards und Normschönheit",
+    "WeWork-Dokumentation und Softbank",
+    "Rich Dad Poor Dad (Buch)",
+    "Schulsystem und Steuer-/Finanzbildung",
+    "Amalgan / Armageddon und Ben Afflecks DVD-Kommentar",
+    "City of God als bester Film",
+    "Harmony Korine (Kids-Regisseur)",
+    "Kim Dotcom und Mega Upload",
+    "Konzerte in Ostdeutschland",
+    "Eine Welt - eine Sprache - keine Grenzen (kontroverse Diskussion)",
+    "Französische Sprache und Aïsha",
+    "Urs (Bodybuilder, Open Class) und Identitätswechsel"
+  ],
+  "kurzbeschreibung": "Fynn präsentiert reborn.de - eine Plattform, die jedem ermöglicht, seinen Nachnamen über Zeugenschutz-Schlupflöcher zu ändern. Außerdem reden sie über Nutri-Score, Wikinger-Genpools, das Schulsystem und geraten in eine kontroverse Diskussion über Weltgrenzen und einheitliche Sprache.",
+  "startup_idee": {
+    "idee": "Reborn.de - Zeugenschutz für alle",
+    "beschreibung": "Plattform, die für 29,90 EUR über Gesetzeslücken (Adoption, Missbrauchsfälle, Zeugenschutz) jedem die Namensänderung ermöglicht. Mit AI und Agents werden die Dokumente für dich ausgefüllt, sodass du jeden Wunschnachnamen bekommen kannst. Expansion auf .com und .gov - 'Reborn.gov' soll wirken wie Neustart-Suchergebnis bei Google.",
+    "punkte": 18,
+    "max_punkte": 24,
+    "begruendung": "Erst 17 Punkte. Große Nummer, einfach umzusetzen, demokratisiert Nachnamen. 18 Punkte nach Erweiterung auf .gov-Domain. Juristisch wird es Probleme geben, kriminelle Machenschaften möglich."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Drei Paranüsse können bereits zu einer Selenvergiftung führen - in Studentenfutter sind oft mehr drin",
+    "Symptome einer Selenvergiftung: Morgenkrämpfe, Müdigkeit, Haarausfall",
+    "Pro Bienenstock arbeiten ca. 40.000 bis 60.000 Bienen",
+    "Ostdeutsche brauchen wissenschaftlich nachgewiesen ca. 20 Millisekunden länger zum Antworten als Westdeutsche",
+    "Es gibt eine Gemütlichkeitsformel für Treppenstufen - kleine Unterschiede lassen Leute stolpern",
+    "Ben Affleck sagt im DVD-Kommentar von Armageddon selbst, der Film mache keinen Sinn (warum Ölbohrer zu Astronauten ausbilden?)"
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Klimaland (Fynns Anwesen)",
+    "Frankreich",
+    "Hamburg",
+    "Berlin",
+    "Brandenburg",
+    "England",
+    "Skandinavien",
+    "Bayern",
+    "Italien",
+    "Bolivien",
+    "Chile",
+    "Asien"
+  ],
+  "gaeste_erwaehnte": [
+    "Jesus",
+    "Marin Luther",
+    "Helene Fischer",
+    "Ben Affleck",
+    "Bruce Willis",
+    "Annenmaykantereit / Annaise (?)",
+    "Joel",
+    "Urs (Bodybuilder)",
+    "Martin Rühl (?)",
+    "Helene Fischer",
+    "Mr. Beast (implizit)",
+    "Elon Musk",
+    "Peter Thiel",
+    "Adam Neumann (WeWork)",
+    "Jared Leto (im WeWork-Film)",
+    "Hitler (implizit als 'verrückter Deutscher')",
+    "Harmony Korine",
+    "Letterman",
+    "Kim Dotcom",
+    "Kim Schmitz",
+    "Olli Pocher",
+    "Mola Adebisi",
+    "Lemmerman",
+    "Niddo (Marcus Niedo - Sprecher City of God)"
+  ],
+  "zitate": [
+    {
+      "text": "Zeugenschutz für alle",
+      "kontext": "Subline von Reborn.de - Slogan der Startup-Idee"
+    },
+    {
+      "text": "Splash Master X / Kane Wall / Sky Crusher",
+      "kontext": "Beispielnamen die man sich bei Reborn.de aussuchen könnte"
+    },
+    {
+      "text": "Just shut the f*ck up",
+      "kontext": "Englisches Zitat aus dem Ben Affleck DVD-Kommentar zu Armageddon - Antwort des Regisseurs Michael Bay auf seine Skript-Fragen"
+    },
+    {
+      "text": "Schnellfickerhose",
+      "kontext": "Bezeichnung für die alten Adidas-Hosen mit Magnet/Druckknöpfen seitlich"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Nutri Score",
+      "bedeutung": "Freiwillige Lebensmittel-Kennzeichnung von A (beste) bis E (schlechteste)"
+    },
+    {
+      "begriff": "Reborn.de",
+      "bedeutung": "Fiktive Plattform zur Nachnamenänderung - 'Zeugenschutz für alle'"
+    },
+    {
+      "begriff": "Pornotitel",
+      "bedeutung": "Twitter-Account, den Fynn als Jugendlicher hatte, wo er sich täglich Pornotitel ausgedacht hat"
+    },
+    {
+      "begriff": "Schnellfickerhose",
+      "bedeutung": "Alte Adidas-Reißverschluss-Hose mit Druckknöpfen / Magneten seitlich"
+    }
+  ]
+}

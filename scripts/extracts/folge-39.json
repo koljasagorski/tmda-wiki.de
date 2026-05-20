@@ -1,0 +1,138 @@
+{
+  "folge": 39,
+  "titel": "Maenner geht zur Therapie!",
+  "laufzeit": "1:11:10",
+  "themen": [
+    "Atome - man beruehrt nichts wirklich",
+    "Coke-Spiegel und Star-Produzent Ole Jonas",
+    "Sandra Bullock-Anekdote",
+    "Sandra Beauty Eurodance-Erfinder",
+    "Schneegrizzly/Eisbaer und offene Tueren in Alaska",
+    "Cosima Fernandes Sache - Maenner geht zur Therapie",
+    "Nisses Panikattacken-Geschichten",
+    "Schlechte Therapeuten (Zwangsjacke, Strohhalm)",
+    "Englischer Professor in der Pandemie",
+    "Escitalopram / Tabletten",
+    "Frederick Lau - Geruecht der Woche-Anspielung",
+    "Therapie-Uebung mit Stuehlen",
+    "The 500 Fitness-Programm",
+    "Cleverfit Sponsoring",
+    "Streak-System im Fitnessstudio",
+    "Trockener Flutschi - Kinderspiel-Geschichte",
+    "Zwei Scheine fuer einen - Bruedertrick",
+    "Verschwoerungstheorie I am the World Trade Center"
+  ],
+  "kurzbeschreibung": "Sehr persoenliche Folge ueber Therapie, Panikattacken und Antidepressiva. Beide reden offen ueber ihre Erfahrungen und plaedieren dafuer, dass Maenner zur Therapie gehen. Dazu Finns Fitness-Idee The 500.",
+  "startup_idee": {
+    "idee": "The 500",
+    "beschreibung": "Fitness-Programm mit 500 Bewegungsablaeufen pro Tag mit einer Kettlebell. Aufgeteilt in 5 Uebungen mit je 100 Wiederholungen (oder 50 bei schweren Uebungen) fuer 20-30 Minuten. Plus Kreatin-Produkt und The 500 Sunday Club am Frankfurter Bahnhof.",
+    "punkte": 20,
+    "max_punkte": 24,
+    "begruendung": "Erst eine Punktzahl noch nicht angesprochen, aber Nisse sagt 'fuer mich eine 20 von 24 mit Streak mit dem Begriff' - das bezieht sich auf eine andere Startup-Idee von einem Hoerer (soundbasiertes Streak System im Fitnessstudio), bewertet mit zunaechst 14 Punkten, dann auf 20 hochgesetzt nach Streak-Begriff."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Frederik Lau",
+    "inhalt": "Spielerische Andeutung: Finn hat seit Jahren nichts mehr von Frederik Lau gehoert, was satirisch als 'Gerucht der Woche' eingeordnet wird. Theorie: Er hat 'dirt on everyone else' - eine 'Giftschublade' ueber alle, deswegen kommt nichts mehr raus, was er treibt. Nicht abschliessend gesagt - es ist alles 'satirisch gemeint'."
+  },
+  "fun_facts": [
+    "Man hat nie wirklich etwas beruehrt - Atome stossen sich durch elektromagnetische Wirkung am Ende ab",
+    "Ole Jonas hat Euro Dance/Euro Trash erfunden (Mr. President, Dr. Alban, Haddaway, The Weeknd Blinded Lights klingt nach diesem Sound)",
+    "Ole Jonas und Paul McCartney haben die meisten Gold- und Platinschallplatten als Europaeer",
+    "Aelteste bekannte Land der Welt: Aegypten mit 3100 vor Christus",
+    "In Alaska/Kanada bei Eisbaeren sollen alle Tueren offen bleiben, damit man im Notfall rein kann",
+    "Eine Band heisst 'I am the World Trade Center', Album kam Juli 2001 raus, Track 11 heisst September"
+  ],
+  "erfindungen": [
+    {
+      "name": "Soundbasiertes Streak System im Fitnessstudio",
+      "beschreibung": "Hoereridee: Wenn man im Gym am Eingang die Karte ranhaelt, wird der Sound epischer je laenger man konsistent ins Gym geht. Gamification mit Treadmill-Sperren und Pyrotechnik bei Streak-Brechung."
+    }
+  ],
+  "orte": [
+    "Hamburg",
+    "Berlin",
+    "Sylt",
+    "Hawaii",
+    "LA",
+    "San Diego",
+    "Koeln",
+    "Dover/Sued-England",
+    "Alaska/Kanada",
+    "Frankreich",
+    "Cleverfit (Finns Fitnessstudio)",
+    "MTP Meers Tanzpalast"
+  ],
+  "gaeste_erwaehnte": [
+    "Cosima/Colin Fernandes (wegen Fake-Porn Sache)",
+    "Mr. President (Band)",
+    "Dr. Alban",
+    "Haddaway",
+    "The Weeknd",
+    "Snap, 2 Unlimited",
+    "Ikkimel",
+    "Ole Jonas (Produzent)",
+    "Sandra Bullock",
+    "Keanu Reeves",
+    "Julia Roberts",
+    "Madonna",
+    "Rolling Stones",
+    "Lil Wayne",
+    "Eminem",
+    "Frederik Lau",
+    "Tani (Producer)",
+    "Jakob (Leoniden)",
+    "Josi Miller",
+    "Toura (Rapper)",
+    "Donald Trump",
+    "Oliver Pocher",
+    "Till Reiners",
+    "Olli Kahlhof / Kalkofe",
+    "Shelly (Bandkollegin)",
+    "Soenke (Drummer)",
+    "Brian Jakubowski",
+    "KitschKrieg / KK-Brueder",
+    "KIZ",
+    "Materia",
+    "Casper",
+    "Sara Engels",
+    "Frederik Lau",
+    "Lord Helmchen"
+  ],
+  "zitate": [
+    {
+      "text": "Maenner muessen in Therapie, Maenner muessen zuhoeren, dass wir halt einfach die Schnauze halten und es besser machen sollten.",
+      "kontext": "Nisses Statement zur Cosima Fernandes Sache"
+    },
+    {
+      "text": "Ich gehe jetzt einfach von einem Therapeuten zum naechsten und macht das alle.",
+      "kontext": "Appell, Therapie als Normalitaet zu sehen"
+    },
+    {
+      "text": "Spermer und Urin kommt auch aus dem gleichen Loch.",
+      "kontext": "Folge 40 Vorgriff - bzw. Vergleich zu Traenen und Lachen"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Escitalopram / Citalopram",
+      "bedeutung": "Antidepressivum, das Finn 2 Jahre lang genommen hat gegen Panikattacken/Angststoerung"
+    },
+    {
+      "begriff": "Depersonalisation",
+      "bedeutung": "Gefuehl der Trennung von eigenem Koerper, eine Form der Dissoziation"
+    },
+    {
+      "begriff": "The 500",
+      "bedeutung": "Finns Fitness-Programm mit 500 Kettlebell-Bewegungen pro Tag"
+    },
+    {
+      "begriff": "Streak System",
+      "bedeutung": "Gamification-Konzept wie bei Duolingo, mit zunehmenden Belohnungen je konstanter etwas getan wird"
+    },
+    {
+      "begriff": "Fight or Flight",
+      "bedeutung": "Steinzeit-Reaktion, die bei Angststoerung dauerhaft aktiv ist"
+    }
+  ]
+}

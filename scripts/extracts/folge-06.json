@@ -1,0 +1,67 @@
+{
+  "folge": 6,
+  "titel": "Matjes Brötchen für Elon Musk. Warum ist der amerikanische Traum in Amerika am schwersten",
+  "laufzeit": "1:17:03",
+  "themen": [
+    "Amerikanischer Traum und Obdachlosigkeit in den USA",
+    "Coolness von früher vs. heute (Will Smith, Justin Timberlake)",
+    "Fynns Auftritt bei Steinway & Sons mit Spirio-Flügel",
+    "Khaen (thailändisches Blasinstrument)",
+    "Schweigekloster, Navy Seals, Titan-U-Boot Vergleich",
+    "Historische Großereignisse und 9/11"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse sprechen über soziale Ungleichheit in den USA, die Frage was heute uncool ist, und Fynns Erlebnisse als Pianist bei Steinway. Außerdem entscheiden sie, welche Extremsituation am ehesten überlebbar wäre.",
+  "startup_idee": {
+    "idee": "Ad Music / Add Music",
+    "beschreibung": "Plattform, auf der Musikerinnen und Werbekunden zusammenfinden, damit Künstler in ihren Songs Markennamen/Domains einbauen und dafür bezahlt werden (z.B. Holzbring24.de oder Edika Mareike). Abrechnung nach Listens, ähnlich wie Spotify-Streams.",
+    "punkte": 9,
+    "max_punkte": 24,
+    "begruendung": "Nisse glaubt, dass nur sehr wenige Künstlerinnen so etwas mitmachen würden, weil sie keine Lust haben, noch jemanden an ihren Einnahmen zu beteiligen."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Es kostet den US-Staat ca. 16.000 $ pro Jahr pro Obdachlosem (durch Polizeieinsätze, Shelter etc.), während eine Wohnung plus Essen nur 11.000 $ kosten würde (laut 'Utopien für Realisten' von Rutger Bregmann)",
+    "Die Spirio-Technik von Steinway hat 1000 (bzw. 10.000/100.000) Abtastungsstufen statt der üblichen 127 MIDI-Stufen",
+    "Steinway Spirio-Flügel ab 350.000 € können live Konzerte von Pianisten wie Lang Lang in Echtzeit nachspielen"
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Los Angeles (Skid Row)",
+    "New York (Billionaires Row am Central Park)",
+    "Frankfurter Bahnhofsviertel",
+    "Hisling",
+    "Klimansland",
+    "Steinway Showroom",
+    "Thailand"
+  ],
+  "gaeste_erwaehnte": [
+    "Rutger Bregmann",
+    "Will Smith",
+    "Justin Timberlake",
+    "Stefan Raab",
+    "Ricardo Simonetti",
+    "Tom Kaulitz",
+    "Bill Kaulitz",
+    "Elton John",
+    "Lang Lang",
+    "Andre 3000",
+    "Olli (Hausboot)",
+    "Jasper (OMR)",
+    "Birkenstock-Erbe",
+    "Snoop Dogg",
+    "Rihanna",
+    "Kanye West"
+  ],
+  "zitate": [
+    {"text": "Bei dir ist egal", "kontext": "Steinway-Mitarbeiter zu Fynn nach dessen verspielter Klavier-Performance"},
+    {"text": "Phase 1 Unterhosen sammeln, Phase 2 ???, Phase 3 Profit", "kontext": "Fynn über sein South-Park-inspiriertes Geschäftsmodell"},
+    {"text": "Tennisball und ein Klavier", "kontext": "Fynn über das Minimum, das er für ein Schweigekloster bräuchte"},
+    {"text": "Die Matruschka der Macht", "kontext": "Nisse, später als guter Buchtitel bezeichnet"}
+  ],
+  "glossar": [
+    {"begriff": "Unterhosenprinzip", "bedeutung": "Aus South Park: Geschäftsmodell mit Phase 1, Phase ??? und Phase 3 Profit - Fynns Bauchentscheidungs-Strategie"},
+    {"begriff": "Kranzfrisur", "bedeutung": "Frisur, bei der nur die Seiten und der Vordergrund gestylt werden, oben aber nicht - laut Fynn früher cool"},
+    {"begriff": "Khaen", "bedeutung": "Thailändisches Blasinstrument das Fynn importiert hat"}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "folge": 11,
+  "titel": "LegoLars89 schockt Fans mit Gesichts-OP",
+  "laufzeit": "0:51:25",
+  "themen": [
+    "Baywatch Slowmos und kurze Storylines",
+    "Fynn isst sehr schnell (2 Minuten pro Mahlzeit)",
+    "Fynn verliert Schauspielrolle in Christian Ulmen Film",
+    "Sich selbst googeln",
+    "Echter Warhol als 1000er-Lotterie/Print-Auflage",
+    "Hundeschule der anderen Art (Startup Idee)",
+    "Ordnungsamt ausblenden wie in Black Mirror",
+    "Drei Russen Doku (Großmeister-Kopien)",
+    "Kinoleinwand-Perspektive auf das eigene Leben",
+    "Rick Rubens Geschmack als wichtigste Kompetenz",
+    "Würfeln als Lebensentscheidung (Big Bang Theory / Sheldon)",
+    "Passport-Bild vs. Charakterbeschreibung",
+    "Restaurant Fake-Date-Scam in den USA",
+    "Tom Cruise und Mission Impossible 6 während Lockdown"
+  ],
+  "kurzbeschreibung": "Fynn erzählt von seinem verlorenen Schauspieljob bei einem Christian Ulmen Film und präsentiert die Startup-Idee einer 'Hundeschule der anderen Art', die Hunde auf nützliche Alltagsfähigkeiten trainiert. Außerdem geht es um Warhol-Lotterien, Mobbing-Pädagogik und Scam-Geschichten.",
+  "startup_idee": {
+    "idee": "Hundeschule der anderen Art",
+    "beschreibung": "Hunde werden auf nützliche Alltagsfähigkeiten trainiert: 'Tachonase' (Hund niest bei 60 km/h, dient als Tachometer-Ersatz), Frühwarnsystem ab 125 km/h, Fleischersatz-Test (vegane Burger erkennen), Warnung vor Ordnungsamt-Personal. Auch erweitert auf andere Tiere wie Affen oder Regenwurm-Cluster zur Anlageberatung.",
+    "punkte": 11,
+    "max_punkte": 24,
+    "begruendung": "Lustig, hat ein zwei gute catchy Names, aber Umsetzung und Aufwand schwierig. Nach kleinem Referat eine Punkt mehr (von 10 auf 11)."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Eine Folge Baywatch ist eigentlich nur ca. 15 Minuten Story; der Rest sind 2-Minuten-Intro und Slowmos, weil sie keine Kohle und keine Story für mehr hatten",
+    "Eine Nebenwirkung von Aspirin sind Kopfschmerzen",
+    "Proteine verbrennen beim Essen sich selbst schon wieder"
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Berlin",
+    "Hamburg",
+    "Mallorca",
+    "China",
+    "Südkorea",
+    "Seoul Flughafen",
+    "Sao Paulo"
+  ],
+  "gaeste_erwaehnte": [
+    "David Hasselhoff",
+    "Pamela Anderson",
+    "Drake",
+    "Mozart",
+    "Jesus",
+    "Christian Ulmen",
+    "Andy Warhol",
+    "Philipp Westermeyer",
+    "Bernt Oppermann",
+    "die Ludolfs",
+    "Prince Harry",
+    "Stefan Raab",
+    "Peter Maffay",
+    "Rudi Carrell",
+    "Rick Rubin",
+    "Russ",
+    "Tom Cruise",
+    "Steven Spielberg",
+    "Jan & Olli",
+    "Tommy Schmidt",
+    "Felix Lobrecht",
+    "Sophie Passmann"
+  ],
+  "zitate": [
+    {
+      "text": "Stumpf ist Trumpf",
+      "kontext": "Was Jesus in seiner Dokumentation gesagt haben soll, als Erfolgsrezept für simple aber effektive Inhalte"
+    },
+    {
+      "text": "Tachonase",
+      "kontext": "Spitzname des Hundes, weil er ab 60 km/h niest"
+    },
+    {
+      "text": "Gib auf, lass es. Ich habe Hunger und du hast genug",
+      "kontext": "Was die Kino-Zuschauer dem eigenen Leben zurufen würden"
+    },
+    {
+      "text": "Ich bin's Drake. Ich bin Drake",
+      "kontext": "Gag-Passport-Identifikation am Flughafen mit Sixpack"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Tachonase",
+      "bedeutung": "Spitzname für einen Hund, der ab 60 km/h niest - dient als Tachometer-Ersatz"
+    },
+    {
+      "begriff": "Two Angels",
+      "bedeutung": "Warhol-Zeichnung, die 30.000 EUR gekostet hat und in einer 1000er-Auflage als Print verkauft wurde, mit dem Original irgendwo darin versteckt"
+    },
+    {
+      "begriff": "Improfilm",
+      "bedeutung": "Improvisations-Film - bei dem Casting bei Christian Ulmen war es Improvisation, keine fest geschriebenen Dialoge"
+    }
+  ]
+}

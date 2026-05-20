@@ -1,0 +1,164 @@
+{
+  "folge": 20,
+  "titel": "Nico Mentos - Was bleibt, wenn man seine Seele verkauft",
+  "laufzeit": "1:10:57",
+  "themen": [
+    "Seekuehe steuern Auftrieb durch Verdauungsgase",
+    "Cancel-Culture und Selbstreflexion (Josi Miller, dünnes Eis)",
+    "AfG-Shirts mit Pride-Farben",
+    "Verschwoerungstheorien: Avril Lavigne, Britney Spears, Trump-Doubles",
+    "Bolivien-Brasilien Fussballspiel mit Ball-Versteck-Taktik",
+    "Formel 1 als Icon-League mit Powerups und Behinderungen",
+    "Drive-Through Supermarkt (Startup-Idee)",
+    "Travis-Scott-Konzert mit Avataren (Fortnite)",
+    "Nico Santos und Fanta-Kampagne",
+    "Bradley Cooper, Ryan Gosling und Mann-Transformationen",
+    "Trumps Bodyfat-Statistik und Schwarzenegger-Aestethik",
+    "Atomkraftwerke: Tschernobyl-Tourismus, Bill Gates, Microsoft",
+    "Endlager fuer Atommuell: Symbolsprache fuer 1 Mio Jahre",
+    "Pyramidenfluch und Schimmelsporen (Tutanchamun-Magazin)",
+    "Pergamon-Museum nach Naidoo als Tor zur Hoelle",
+    "L. Ron Hubbard und Scientology als Subscription Model",
+    "Schroedingers Katze und Tesla-Friedhof-Geister",
+    "Nico Mentos: Idee, Nico Santos Nachnamen an Mentos verkaufen",
+    "Schokoladenpiraten von der Reeperbahn",
+    "Joey Kelly und Till Lindemann Bergsteig-Witz",
+    "AWFNR Podcast-Werbung (Joko-Klaas-Anspielung)",
+    "Palina-Horoskop"
+  ],
+  "kurzbeschreibung": "Eine Folge ueber Selbstreflexion nach 'duennen Aussagen' der Vorwochen, ein Drive-Through-Supermarkt als Startup-Idee, Nico Santos der seine Seele an Fanta verkauft, und den naheliegenden naechsten Schritt: Nico Mentos.",
+  "startup_idee": {
+    "idee": "Drive-Through Supermarkt",
+    "beschreibung": "Ein Supermarkt, durch den man mit dem eigenen (Elektro-)Auto fahren kann. Nummernschild wird gescannt und mit PayPal/Kreditkarte verbunden. Mikrochip-Tracking erkennt entnommene Ware, die automatisch abgerechnet wird. Parallel-Strassen fuer beliebte Produkte, Powerups (z.B. Mario-Kart-artig), Jongleure und Feuershows zur Wartezeit-Ueberbrueckung.",
+    "punkte": 12,
+    "max_punkte": 24,
+    "begruendung": "Nisses Bewertung: Fun-Faktor 24, Praktikabilitaet 0 - Mittel ergibt 12 bis 13 Punkte. Die Idee schwankt zu sehr in die unpraktische Richtung."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Kevin Spacy (Erwaehnung)",
+    "inhalt": "Kurz erwaehnt: Kevin Spacy wurde freigesprochen, weil der Hauptanklaeger seine Aussage zurueckgenommen habe. Wird aber direkt als 'wir glauben den Opfern immer' wieder relativiert."
+  },
+  "fun_facts": [
+    "Seekuehe steuern ihr Tauchen und Auftauchen durch Verdauungsgase (Pupse als Antrieb).",
+    "Bolivien gewann gegen Brasilien, weil Balljungs und Polizei Baelle versteckten, um Zeit zu schinden (insgesamt sollen 20 Minuten Ball weg gewesen sein).",
+    "Tschernobyl-Halbwertszeit ist deutlich kuerzer als oft gedacht - heute findet wieder Tourismus statt.",
+    "Bill Gates investiert massiv in Atomkraft als Loesung des Energieproblems; Microsoft und OpenAI bauen eigene AKWs.",
+    "Wissenschaftler haben eine Symbolsprache fuer Atommuell-Endlager entwickelt, die noch in 1 Million Jahren verstaendlich sein soll (auch von Aliens oder zukuenftigen Menschen).",
+    "Beim Tutanchamun-Grab starben die meisten Ausgraeber nicht durch Fluch, sondern durch Schimmelsporen, die sich ueber Jahrhunderte angesammelt hatten."
+  ],
+  "erfindungen": [
+    {
+      "name": "Drive-Through Supermarkt",
+      "beschreibung": "Komplett befahrbarer Supermarkt mit Auto, Tracking ueber Nummernschild und Mikrochips."
+    },
+    {
+      "name": "Formel 1 mit Twitch-Powerups",
+      "beschreibung": "Funksprueche faelschen, Bilder vom Vater einblenden, Sponsoren-Sonderregeln, Mario-Kart-Bananenschalen."
+    },
+    {
+      "name": "Nico Mentos",
+      "beschreibung": "Marketing-Idee: Nico Santos verkauft seinen Nachnamen an Mentos und heisst dann Nico Mentos. 4,6-6,4 Millionen Euro wert."
+    },
+    {
+      "name": "Monster Beckham",
+      "beschreibung": "Promis bekommen wie Stadien einen Sponsorennamen (Victoria Beckham wird Victoria Monster Energy / Monster Beckham)."
+    }
+  ],
+  "orte": [
+    "Berlin (Funkhaus, Matze Hirschmann Studio)",
+    "Frankfurt (Zoom Club, Travis Scott Konzert 2015)",
+    "Tschernobyl",
+    "Fukushima",
+    "Bolivien",
+    "Dubai (Palm-Insel)",
+    "Hamburg Reeperbahn"
+  ],
+  "gaeste_erwaehnte": [
+    "Martin Fischer (Fun-Fact Einsender)",
+    "Nicolas Sarkozy",
+    "Carla Bruni",
+    "Josi Miller",
+    "Avril Lavigne",
+    "Britney Spears",
+    "Donald Trump",
+    "Bradley Cooper",
+    "Ryan Gosling",
+    "Tom Brady",
+    "Max Verstappen",
+    "Lewis Hamilton",
+    "Eminem",
+    "Travis Scott",
+    "Nico Santos",
+    "Doki (Produzent Nina Chuba)",
+    "Adem",
+    "Elif",
+    "Bill Gates",
+    "Tutanchamun",
+    "Xavier Naidoo",
+    "L. Ron Hubbard",
+    "Tom Cruise",
+    "Oprah Winfrey",
+    "DJ Bobo",
+    "Mark Forster",
+    "Sido",
+    "Dicker (Renoos)",
+    "Knossi",
+    "Lil Uzi Vert",
+    "Victoria Beckham",
+    "Joey Kelly",
+    "Till Lindemann",
+    "Money Boy",
+    "Hustensaftjuengling",
+    "Klaas Heufer-Umlauf",
+    "Joko Winterscheidt",
+    "Christian (Chris von Aufwachen Podcast/AWFNR)",
+    "Michael Schumacher",
+    "Mario Basler",
+    "Matze Hirschmann"
+  ],
+  "zitate": [
+    {
+      "text": "Finn, du hast aber ganz schoen viel Duennes geredet.",
+      "kontext": "Josi Miller zu Fynn nach Anhoeren der Podcast-Clips."
+    },
+    {
+      "text": "Ihr seid immer kurz davor, gecancelt zu werden.",
+      "kontext": "Aussage einer Bekannten, die die beiden auf die Reichweite ihrer Aussagen hinweist."
+    },
+    {
+      "text": "Ihr haltet uns am Scheissen.",
+      "kontext": "Running-Gag-Werbespruch fuer Sponsoren wie Skoda, Berentzen, Netflix, Kinder Milchschnitte, Fanta."
+    },
+    {
+      "text": "This guy fucks.",
+      "kontext": "Silicon-Valley-Zitat ueber den groessten Loser der Truppe; Inspiration fuer den Charaker Sakofuckx."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Drive-To-Survive",
+      "bedeutung": "Netflix-Dokuserie ueber die Formel 1, die Fynn und Nisse als reine Hollywood-Zusammenfassung der F1 sehen."
+    },
+    {
+      "begriff": "Halbwertszeit",
+      "bedeutung": "Zeit, in der sich radioaktive Strahlung auf die Haelfte reduziert. Hier im Kontext von Tschernobyl thematisiert."
+    },
+    {
+      "begriff": "Schroedingers Katze",
+      "bedeutung": "Gedankenexperiment: Katze in einer Box mit Giftampulle ist gleichzeitig tot und lebendig, solange die Box nicht geoeffnet wird."
+    },
+    {
+      "begriff": "Nico Mentos",
+      "bedeutung": "Witziger Hypothetischer Promo-Deal: Nico Santos verkauft seinen Namen an Mentos."
+    },
+    {
+      "begriff": "Sakofuckx",
+      "bedeutung": "Erfundener Spitzname fuer einen Reeperbahn-Typen, der wie der schoene Micha aussieht, immer ein Sakko traegt und viel Geschlechtsverkehr hat."
+    },
+    {
+      "begriff": "Jay Bobo",
+      "bedeutung": "Fiktiver Manifestations-Agent: DJ Bobo, der sich in Milchschnitten anderer Menschen manifestiert."
+    }
+  ]
+}

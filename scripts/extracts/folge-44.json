@@ -1,0 +1,100 @@
+{
+  "folge": 44,
+  "titel": "Drogen, Dreadlocks, Dr. Sommer und die Bullen",
+  "laufzeit": "1:08:03",
+  "themen": [
+    "Babys Greifreflex und Affen-Vorfahren",
+    "Fontanelle (offene Schaedelplatten bei Babys)",
+    "Nisses Reise nach Sri Lanka mit 9/10 Jahren",
+    "Bravo-Magazin und Dr. Sommer im Flugzeug",
+    "Splitter-Verletzungen und Kaesehobel-Unfall am Abitur",
+    "Geschichte vom korrupten Arzt (Vater einer besten Freundin)",
+    "Tropenarzt aus dem Wald (Heligoland)",
+    "Schussverletzungen versorgen (Gedankenspiel)",
+    "Startup-Idee: windradhologramm.de",
+    "Zeitarbeit / Vladimir bei Pampers",
+    "Gaskraftwerk-Job mit Manfred-Lehrvideo",
+    "Silvester-Story mit Dreadlocks und Folienwickelmaschine",
+    "Nisse als Hardcore-Kiffer / Polizei-Story",
+    "KI ersetzt Berufe, bedingungsloses Grundeinkommen"
+  ],
+  "kurzbeschreibung": "Nisse erzaehlt von seiner Sri-Lanka-Reise als Zehnjaehriger und seiner Vergangenheit als hartnaeckiger Kiffer mit beinahe-Polizeibesuch. Fynn praesentiert die Idee windradhologramm.de und Nisse berichtet von einer korrupten Aerztepraxis.",
+  "startup_idee": {
+    "idee": "windradhologramm.de",
+    "beschreibung": "Stillstehende Windraeder werden mit LED-Streifen praepariert und mit 30.000 Rotationen extrem schnell gedreht, sodass riesige Hologramme an Autobahnen erscheinen, die Werbung anzeigen (z.B. McDonalds-Burger, Paula Hartmann-Album, Mikaela Schaefer, Coladose). Finanziert von Werbetreibenden wie Bitpanda, AfD etc. Mit Drohnen kann ein 'Ball' zwischen den Windraedern hin- und hergeworfen werden.",
+    "punkte": 22,
+    "max_punkte": 24,
+    "begruendung": "Erst 17, dann 20 ('hoeher noch unterwegs'), schliesslich 22 nachdem Fynn mehrere Erweiterungen einbaut: Drohnen-Ball zwischen Windraedern, Trademark-Sound, Promi-Hologramme. Nisse mag den Cyberpunk/Blade Runner-Vibe und die Werbeleistung."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Persischer Arzt aus dem Heimatort von Nisses bester Freundin",
+    "inhalt": "Der Vater einer Kindheitsfreundin von Nisse, ein Arzt mit persischem Hintergrund, hat angeblich illegal mit gestapelten Geldbuendeln gearbeitet, die mit Gummibaendern gebuendelt waren ('Pablo Escobar-Style'). Er liess die kleinen Maedchen (~11 Jahre) Skalpelle desinfizieren, Tropfen halten und Rezeptformulare mit gefaelschter Unterschrift auf Vorrat ausfuellen und stempeln - vermutlich fuer Opiate, die er unter der Hand verkaufte. Den Kindern hat er als Belohnung Geldscheine mit Gaffer-Tape an den Koerper geklebt."
+  },
+  "fun_facts": [
+    "Affenbabys werden teils in 30 m Hoehe in Baumkronen geboren und muessen sich sofort festhalten - der Greifreflex bei Menschenbabys stammt daher.",
+    "Babys haben eine Fontanelle, ein Loch oben am Kopf, wo die Schaedelplatten noch nicht zusammengewachsen sind.",
+    "In Sri Lanka brechen manche Eltern ihren Kindern absichtlich Arme/Beine, damit sie als Bettler mehr Geld verdienen (wie bei Slumdog Millionaire).",
+    "2030 sollen 50% aller Berufe von KI uebernommen werden."
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Sri Lanka",
+    "Helgoland (deutsche Insel mit weisser Klippe)",
+    "Hamburg (Gaskraftwerk, BGS)",
+    "Suedfrankreich",
+    "Berlin",
+    "Niedersachsen (Nisses Heimatort)",
+    "Hauselingen / Haeslingen"
+  ],
+  "gaeste_erwaehnte": [
+    "Amra (Freundin in Sri Lanka, studierte spaeter in Oxford)",
+    "Moritz (Nisses Kindheitsfreund, dessen Vater Chirurg war)",
+    "Franzi (Nisses Freundin/Frau)",
+    "Lisa Strunk (Kindheitsfreundin)",
+    "Malte (Junge mit Nagel-Unfall durch Onkel)",
+    "Brian (vom Klimaanlage-Video)",
+    "Jonas von Schwan",
+    "Vladimir (Arbeitskollege bei Pampers-Job)",
+    "Johannes",
+    "Greta Thunberg",
+    "Friedrich Merz",
+    "Sabine (Kofferreisen-Mitarbeiterin)",
+    "Paula Hartmann",
+    "Mikaela Schaefer",
+    "Alice Weidel",
+    "Peter Maffay"
+  ],
+  "zitate": [
+    {
+      "text": "Halt deine Fresse, du Arschloch.",
+      "kontext": "Was ein 12-jaehriger sagt, wenn der ekelige Onkel ihm an der bereits geschlossenen Fontanelle herumdrueckt."
+    },
+    {
+      "text": "Erst seid ihr fuer Windraeder, jetzt seid ihr gegen Windraeder.",
+      "kontext": "Fynn ueber die Reaktion der letzten Generation / Fridays for Future / Naturschutzverbaende auf seine Windrad-Hologramm-Idee."
+    },
+    {
+      "text": "Freiheit ist nicht das tun zu koennen, was man will. Freiheit ist das nicht machen zu muessen, was man nicht machen moechte.",
+      "kontext": "Zitat, das Nisses Therapeut zu ihm gesagt hat."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Fontanelle",
+      "bedeutung": "Die noch nicht zusammengewachsenen Schaedelknochen-Stellen bei Babys, im Podcast humorvoll als 'Anus vom Kopf' bezeichnet."
+    },
+    {
+      "begriff": "BGS",
+      "bedeutung": "Bundesgrenzschutz, im Kontext der Drogenhunde am Bahnhof Hamburg."
+    },
+    {
+      "begriff": "Zeitarbeit",
+      "bedeutung": "Anstellung bei einer Agentur, die Arbeiter zeitlich begrenzt an andere Firmen verleiht - laut Nisse damals der niedrigste legale Lohn."
+    },
+    {
+      "begriff": "Kaimarane",
+      "bedeutung": "Kleine Krokodile, mit denen Nisse in Sri Lanka konfrontiert war (Caymane)."
+    }
+  ]
+}

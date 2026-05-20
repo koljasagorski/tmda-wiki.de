@@ -1,0 +1,151 @@
+{
+  "folge": 40,
+  "titel": "Murmelmann und die eine von den Pfefferkoernern",
+  "laufzeit": "1:06:07",
+  "themen": [
+    "Drei Arten von Traenen (basale, reflektorische, emotionale)",
+    "Versace Badehose von Zalando",
+    "Bandtour-Story mit Soundmann Matz und Berlin-Ortschild",
+    "MMA-Kaempfer rettet Aktivistin im Zirkus Krone",
+    "Mummel/Murmel-Awards von Lieben Gruss Podcast",
+    "Kofferreisen.de - Reiseidee",
+    "Schulpflicht-Diskussion",
+    "Simon und Familie ohne Schulpflicht",
+    "Alpine Divorce - Mord-Methode in den Bergen",
+    "Take Me Spy von Sarah-Christin",
+    "Young Saulver",
+    "Lieben Gruss Podcast Zeitabschaetzung",
+    "Schiff von Theseus Philosophie",
+    "Beam-Technologie und Schiff von Theseus",
+    "Kalle Schwensen Doppelganger-Trick im Gericht",
+    "Stoecker - skandinavische Holzstoecker fuer Kindergaerten",
+    "Fliegenpilz im Freibad - Christian-Anekdote",
+    "Aegypten/Kairo-Museum und Mau-Dynastie",
+    "Mr. Beast Vergnuegungspark in Dubai",
+    "Ferrari Vergnuegungspark in Dubai",
+    "Jennifer Lopez und Fliegengitter-Story"
+  ],
+  "kurzbeschreibung": "Folge mit Finns absurdem Kofferreisen-Startup, einer Kalle-Corner ueber den Doppelganger-Trick im Gericht und Diskussion ueber Take Me Spy, Murmel-Awards und Alpine Divorce.",
+  "startup_idee": {
+    "idee": "Kofferreisen.de",
+    "beschreibung": "Praeparierte Koffer (Sarkophak-aehnlich) mit Beluefftung, Druckausgleich, kleinem Stuhl, Display und Akku - um Personen (Kinder, Erwachsene) als Gepaeck mitzunehmen und Reisekosten zu sparen. Matching-Plattform fuer Reisende. Spaeter erweitert mit Idee 'Beamen' und Schulpflicht-Abschaffung damit Kinder umsonst reisen koennen.",
+    "punkte": 8,
+    "max_punkte": 24,
+    "begruendung": "'Du bist der Teufel wieder mal.' Eine 8 plus, weil irgendwie diese Beamen-Scheisse mit drin steckt - aber sonst dunkel und problematisch (Human Trafficking)."
+  },
+  "kalles_corner": {
+    "titel": "Kalle Schwensens Doppelgaenger-Trick im Gericht",
+    "inhalt": "Vor ca. 7 Jahren wurde Kalle Schwensen geblitzt/von Polizisten angehalten. Im Gerichtssaal sagen die Polizisten als Augenzeugen, das war Kalle Schwensen in seinem Mercedes ('Der ist einmalig'). In dem Moment springt Kalle Schwensen hinten als Zuschauer auf, weil er einen Doppelgaenger mit seiner Frisur und Sonnenbrille auf den Angeklagtenplatz gesetzt hat. Er ruft: 'Ihr wisst nicht mal, wie ich aussehe!' Er hat es nicht gewonnen, aber alle Zeitungen haben drueber berichtet. Korrekturen aus letzter Folge: Mucki PINZNER (nicht Pitzner), hat seine Frau erschossen (nicht Anwaeltin), und es war im Verhoer auf dem Revier (nicht im Gerichtssaal). Kalle war Auftraggeber fuer Mucki Pinzner."
+  },
+  "gerucht_der_woche": {
+    "ueber": "Zirkus Krone / Stefan Pitz",
+    "inhalt": "Eine Aktivistin (vermutlich von PETA) ist beim Zirkus Krone in die Manege gelaufen mit Banner gegen Tierquaelerei und wurde sehr radikal an den Haaren rausgezogen, getreten und in den Kopf geschlagen. Ein MMA-Profi namens Stefan Pitz (oder aehnlich) hat sich dazwischen geworfen und sie gerettet."
+  },
+  "fun_facts": [
+    "Es gibt drei Arten von Traenen: basale (zum Feuchthalten), reflektorische (bei Reizung) und emotionale (bei Gefuehlen)",
+    "Krokodilstraenen sind die vierte Art",
+    "Es wurde lange behauptet (aber widerlegt), dass man am Auge erkennen kann, ob Traene aus Freude oder Schmerz",
+    "Muttermilch ist heilend / entzuendungshemmend",
+    "Die Versace Badehose mit Pferden hat ein NFC-Chip-Etikett zur Echtheits-Verifikation",
+    "Kalle Schwensen ist der Pate (im wahrsten Sinne des Wortes) von Nisses bester Freundin",
+    "In aegyptischer Hochkultur hat man Katzen 'Mau' genannt (Mau-Dynastie)"
+  ],
+  "erfindungen": [
+    {
+      "name": "Stoecker",
+      "beschreibung": "Skandinavisch klingender Holzstoecker mit Umlaut. Alte Baeume kaufen, entrindeten Holzstoecker mit Steinen aufrauen und fuer 2400 Euro an Kindergaerten verkaufen, wo Kinder darauf klettern."
+    },
+    {
+      "name": "Mr. Beast Vergnuegungspark mit Kinderkoffern",
+      "beschreibung": "Mit 30 praeparierten Koffern aus Hamburg nach Dubai fliegen zu Mr. Beast's Park - Vorgriff auf die Beam-Technologie"
+    }
+  ],
+  "orte": [
+    "Mallorca",
+    "Hamburg",
+    "Klimansland",
+    "Berlin",
+    "Erfurt",
+    "Koeln",
+    "Frankreich",
+    "Las Vegas",
+    "Puerto Rico (Jennifer Lopez Villa)",
+    "Dubai",
+    "Kairo (neues Museum)",
+    "England",
+    "Cape Canaveral"
+  ],
+  "gaeste_erwaehnte": [
+    "Versace",
+    "Matz (Soundmann)",
+    "Mia",
+    "Lena Meyer-Landrut",
+    "Soenke",
+    "Stefan Pitz (MMA-Kaempfer)",
+    "Martin Lacy (Zirkusdirektor)",
+    "Falk",
+    "Theresa und Kati (Lieben Gruss Podcast)",
+    "Mummel und Sarah (Pfefferkoerner-Podcast)",
+    "Joel",
+    "Simon (Schulpflicht-befreit)",
+    "Bill und Tom Kaulitz",
+    "Sarah-Christin (Take Me Spy)",
+    "Young Saulver",
+    "Drake",
+    "Klaus und Klaus",
+    "102 Boys",
+    "Bosse",
+    "Michael Jackson",
+    "Kim Kardashian",
+    "Kanye West",
+    "Ray J",
+    "Kylie Jenner",
+    "Kalle Schwensen",
+    "Mucki Pinzner",
+    "Donald Trump",
+    "Brian Jakubowski",
+    "Mr. Beast",
+    "Markus Prinz",
+    "Fiona Erdmann",
+    "Christian (Kinder-Kumpel)",
+    "Nuri und Serkan",
+    "Jennifer Lopez",
+    "Andre Agassi"
+  ],
+  "zitate": [
+    {
+      "text": "Du bist der Teufel wieder mal.",
+      "kontext": "Nisse zu Finn nach der Kofferreisen-Idee mit Kindern"
+    },
+    {
+      "text": "Ihr wisst nicht mal, wie ich aussehe!",
+      "kontext": "Kalle Schwensen springt im Gerichtssaal auf nach dem Doppelgaenger-Trick"
+    },
+    {
+      "text": "Gib mir mal so eine richtige Drohenvorstellung der Zukunft.",
+      "kontext": "Finn ueber sein neues Plastikblumen-Geschaeft"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Alpine Divorce",
+      "bedeutung": "Wenn Maenner ihre Partnerinnen heimlich auf einem Berg im Stich lassen, statt sich offen zu trennen, damit sie unter Umstaenden verungluecken"
+    },
+    {
+      "begriff": "Schiff von Theseus",
+      "bedeutung": "Philosophische Frage: Wenn man jedes Brett eines Schiffes austauscht, ist es noch das gleiche Schiff?"
+    },
+    {
+      "begriff": "Mau-Dynastie",
+      "bedeutung": "Imaginierte ehemalige aegyptische Dynastie (weil Katzen 'Mau' hiessen)"
+    },
+    {
+      "begriff": "Murmelmann/Mummel",
+      "bedeutung": "Spitzname fuer den Pfefferkoerner-Podcast-Moderator"
+    },
+    {
+      "begriff": "Krokodilstraenen / Boss Traenen",
+      "bedeutung": "Vierte Traenen-Art - bei Boss (kleinwuechsiger Reeperbahn-Typ) werden Krokodilstraenen so genannt, weil sie 'Kleinwuechsigkeit heilen'"
+    }
+  ]
+}

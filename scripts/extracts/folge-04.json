@@ -1,0 +1,110 @@
+{
+  "folge": 4,
+  "titel": "Fynns ARD-Doku & Rihannas Handynummer",
+  "laufzeit": "1:02:35",
+  "themen": [
+    "Nasen-OP und 'Doktor ohne Doktortitel'",
+    "Songwriter-Camps und der nicht erschienene Rihanna-Song",
+    "Fake it till you make it im Musikbusiness",
+    "Finchs Bier-Pisse auf der Buehne",
+    "Fynns ZDF-Doku Erfahrung",
+    "Bedeutung von Anerkennung: Emotionen vs. Zahlen",
+    "Buggy-Projekt und 200.000 EUR Verlust"
+  ],
+  "kurzbeschreibung": "Nisse erzaehlt, wie er sich als Schwede getarnt ins internationale Songwriting eingeschummelt hat und einen Song fuer Rihanna verlor, weil Chris Brown sie verpruegelte. Fynn reflektiert ueber seine misslungene ZDF/ARD-Doku und das Scheitern seines Buggy-Projekts.",
+  "startup_idee": {
+    "idee": "Immo Scan / Unicorn Immoscan",
+    "beschreibung": "AR-App, mit der man im Urlaub das Handy auf Gebaeude haelt und sofort sieht, welche Immobilien zum Verkauf stehen und was sie kosten - mit Affiliate-Links zu Immobilien-Plattformen",
+    "punkte": 16,
+    "max_punkte": 24,
+    "begruendung": "Idee an sich waere eine 20, aber Datenschutz-Bedenken und unklare juristische Lage ziehen 4 Punkte ab; durch Fynns schlechten Joko-Winterscheidt-Pitch wandert sie zwischen 16 und 18"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Man legt mit dem Daumen pro Monat zwischen 30 und 100 Kilometer beim Scrollen zurueck",
+    "Nisses Nasen-OP wurde mit kokainhaltigem Betaeubungsmittel gemacht, das man tief einatmen muss",
+    "Snoop Dogg's Producer hatte einen Native-Instruments-Account mit 20% Rabatt, ueber den Nisse heimlich eine MK1-Machine bestellte",
+    "Der Rihanna-Song eines Songwriting-Teams wurde nie veroeffentlicht, weil Chris Brown sie zwei Wochen vor Release im Lamborghini verpruegelte"
+  ],
+  "erfindungen": [
+    {
+      "name": "Immo Scan",
+      "beschreibung": "AR-Immobilien-Scanner-App fuer Urlauber"
+    }
+  ],
+  "orte": [
+    "Klein Machnow (Berlin Umland)",
+    "Frankreich",
+    "London",
+    "Bolivien",
+    "Klimasand",
+    "Griechische Insel (Hochzeit)",
+    "Berlin Funkhaus"
+  ],
+  "gaeste_erwaehnte": [
+    "Rihanna",
+    "Chris Brown",
+    "Beyonce",
+    "Snoop Dogg",
+    "Helene Fischer",
+    "Max Martin",
+    "Dr. Luke",
+    "Stargate",
+    "Ludwig Gørenson",
+    "Kylie Minogue",
+    "Finch",
+    "Joko Winterscheidt",
+    "Tina Turner",
+    "Jeremy Clarkson",
+    "Bushido / Arafat Abou-Chaker",
+    "Die Ochsenknechts (Wilson, Jimi, Natascha)",
+    "Cheyenne Ochsenknecht",
+    "Sebastian Vettel",
+    "Peter Maffay"
+  ],
+  "zitate": [
+    {
+      "text": "Wusstest du, dass man jeden Monat mit seinem Daumen zwischen 30 und 100 km beim Scrollen zurueck legt?",
+      "kontext": "Fynns Eroeffnungs-Fun-Fact"
+    },
+    {
+      "text": "Erste Session nur am Heulen",
+      "kontext": "Nisse ueber misslungene Producer-Session"
+    },
+    {
+      "text": "Brot mit Kaese auf die eins",
+      "kontext": "Nisse beim Pitch fuer Habit-Detector"
+    },
+    {
+      "text": "Genauso wie sie das wollen. Genauso wird es",
+      "kontext": "Fynn als verzweifelter Startup-Gruender im Joko-Winterscheidt-Rollenspiel"
+    },
+    {
+      "text": "Wir nennen uns Unicorn Immoscan",
+      "kontext": "Fynn ueber seine Pitching-Strategie"
+    },
+    {
+      "text": "Es zaehlt nur, was du jetzt machst",
+      "kontext": "Fynns Reflexion ueber die ZDF-Doku"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Track Guy",
+      "bedeutung": "Person in der Songwriting-Session, die alles aufnimmt, arrangiert und produziert"
+    },
+    {
+      "begriff": "Topline",
+      "bedeutung": "Die Gesangslinie, die ueber dem Beat liegt"
+    },
+    {
+      "begriff": "Hassler",
+      "bedeutung": "Jemand, der staendig pusht und vorankommt - Selbstbeschreibung von Fynn und Nisse"
+    },
+    {
+      "begriff": "CE-Pruefung",
+      "bedeutung": "EU-Zertifizierung fuer elektrische Geraete, die das Buggy-Projekt zum Erliegen brachte"
+    }
+  ]
+}

@@ -1,4 +1,402 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 44,
+  "items": [
+    {
+      "folge": 47,
+      "datum": "2026-05-19",
+      "idee": "Das schwarze Weltkleid / Kleid fuer die Welt",
+      "beschreibung": "Ein einziges Kleid, das jedem Menschen passt - One Size Fits All. Aus dehnbarem Stoff wie eine Jalousie, mit Schnueren kann man es enger/weiter machen wie ein Dirndl. Immer schwarz. Soll fuer 6 Milliarden Menschen produziert werden, 398 EUR pro Stueck. Spaeter erweitert auf 'das Kleid fuer das Sonnensystem', das ueber Astronautenanzuege gezogen werden kann.",
+      "punkte": 5,
+      "max_punkte": 24,
+      "begruendung": "Die Idee und die Geschichte findet Nisse mega, die Umsetzung komplett unrealistisch. Deshalb nur eine 5."
+    },
+    {
+      "folge": 46,
+      "datum": "2026-05-12",
+      "idee": "neuhier.de (mitg.de oder dgf.de)",
+      "beschreibung": "Eine Audio-Stadtfuehrer-App, bei der man im Auto einfach auf Play drueckt und Locals einem User-Generated Geschichten ueber die Stadt erzaehlen, an der man gerade vorbeifaehrt. Man kann durch Channels switchen, Karte mit eingezeichneten Bereichen wie Bolt-Parking. Andre Joseliny als idealer Sprecher fuer Berlin. Koppelung mit Pokemon Go 3D-Scan moeglich.",
+      "punkte": 17,
+      "max_punkte": 24,
+      "begruendung": "Gradlinige, sehr gute Idee, eckt nicht an die Nummer (24). Nisse mag den Ansatz mit User Generated Content und Lokal-Bezug."
+    },
+    {
+      "folge": 45,
+      "datum": "2026-05-05",
+      "idee": "HATS - Hot Air to Sock Adapter (h-a-c-s)",
+      "beschreibung": "Ein Universaladapter-Schlauch, der an die Lueftung im Auto angeschlossen wird und Warm-/Kaltluft an gewuenschte Stellen transportiert (Fuesse, Unterhose, Goldener Retriever auf der Ruecksitzbank, Pizzakarton fuer Lieferdienste, Motorkuehlung). Trademark-Sound ('Plop' wie Flensburger). Vom Centbereich-Schlauch fuer 9,90 EUR bei Obi bis 200m Industrie-Version.",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "Ist gerade noch eine 22, koennte aber mit einem besseren Namen (Heads klingt strange) eine 23 werden. Hoerer wurden gebeten, Namensvorschlaege in die Kommentare zu schreiben. So nah war es noch nie an der 24."
+    },
+    {
+      "folge": 44,
+      "datum": "2026-04-28",
+      "idee": "windradhologramm.de",
+      "beschreibung": "Stillstehende Windraeder werden mit LED-Streifen praepariert und mit 30.000 Rotationen extrem schnell gedreht, sodass riesige Hologramme an Autobahnen erscheinen, die Werbung anzeigen (z.B. McDonalds-Burger, Paula Hartmann-Album, Mikaela Schaefer, Coladose). Finanziert von Werbetreibenden wie Bitpanda, AfD etc. Mit Drohnen kann ein 'Ball' zwischen den Windraedern hin- und hergeworfen werden.",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "Erst 17, dann 20 ('hoeher noch unterwegs'), schliesslich 22 nachdem Fynn mehrere Erweiterungen einbaut: Drohnen-Ball zwischen Windraedern, Trademark-Sound, Promi-Hologramme. Nisse mag den Cyberpunk/Blade Runner-Vibe und die Werbeleistung."
+    },
+    {
+      "folge": 43,
+      "datum": "2026-04-21",
+      "idee": "Bitter Sleeve (urspruenglich Bittersuess)",
+      "beschreibung": "Eine Art Socke/Kondom fuer die Zunge, die die hinten gelegenen Bitterstoff-Rezeptoren abdeckt, sodass Bitterstoffe heruntergeschluckt aber nicht geschmeckt werden. Kann gestaltet werden wie ein Grill, mit Logos, in Farben, mit Mentol-Frischeeffekt. Preis ca. 2,40 EUR.",
+      "punkte": 12,
+      "max_punkte": 24,
+      "begruendung": "Zu viele Ebenen, ausbaufaehig. Nisse sagt es seien zu viele Argumente, einige davon nur 'kann man auch machen'. Wenn man auf den Kern (Geschmack ueberdecken) pivotet, koennte es funktionieren."
+    },
+    {
+      "folge": 42,
+      "datum": "2026-04-14",
+      "idee": "Blinkerhand",
+      "beschreibung": "Erweiterung des Autoblinkers: Drueckt man den Blinker, faehrt aus der entsprechenden Seite eine Metallhand 2,5 Meter raus, um anderen Autofahrern unmissverstaendlich zu zeigen, dass man die Spur wechseln will. Kann auch zum Abdraengen oder zum Anschuppsen langsamer Autos genutzt werden. Auch fuer McDrive-Cola-Entgegennahme und Parkhaus-Tickets fuer kleine Leute geeignet.",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Keine explizite Punktzahl vergeben. Diskussion ueber DIN-Norm, McDrive-Anpassung und Welt-Optimierung. Wird ueber 'Optimer von Deutschland' diskutiert."
+    },
+    {
+      "folge": 41,
+      "datum": "2026-04-07",
+      "idee": "Das letzte was ich sehe.de - Werbung in die Iris brennen",
+      "beschreibung": "Solarpanels an der Autobahn werden so platziert, dass sie Logos in die Augen der Fahrer reflektieren und in die Netzhaut einbrennen. Erweiterungen: Blitzer mit Logo-Reflexion (RTL uebernimmt Blitzer fuer Werbung auf der Iris), Reflektoren-Satelliten im All um Sonne auf Flecken der Erde zu buchen, Schatten-Logos aus dem All. Kombiniert mit Bild und Logo von Jan Koeppen und Mocki Ziegler.",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "'Es ist wirklich genial. Win win win win.' RTL spart, der Fahrer spart Geld, der Staat verdient Geld - alle gewinnen. Eine der hoechsten Bewertungen aller Zeiten."
+    },
+    {
+      "folge": 40,
+      "datum": "2026-03-31",
+      "idee": "Kofferreisen.de",
+      "beschreibung": "Praeparierte Koffer (Sarkophak-aehnlich) mit Beluefftung, Druckausgleich, kleinem Stuhl, Display und Akku - um Personen (Kinder, Erwachsene) als Gepaeck mitzunehmen und Reisekosten zu sparen. Matching-Plattform fuer Reisende. Spaeter erweitert mit Idee 'Beamen' und Schulpflicht-Abschaffung damit Kinder umsonst reisen koennen.",
+      "punkte": 8,
+      "max_punkte": 24,
+      "begruendung": "'Du bist der Teufel wieder mal.' Eine 8 plus, weil irgendwie diese Beamen-Scheisse mit drin steckt - aber sonst dunkel und problematisch (Human Trafficking)."
+    },
+    {
+      "folge": 39,
+      "datum": null,
+      "idee": "The 500",
+      "beschreibung": "Fitness-Programm mit 500 Bewegungsablaeufen pro Tag mit einer Kettlebell. Aufgeteilt in 5 Uebungen mit je 100 Wiederholungen (oder 50 bei schweren Uebungen) fuer 20-30 Minuten. Plus Kreatin-Produkt und The 500 Sunday Club am Frankfurter Bahnhof.",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Erst eine Punktzahl noch nicht angesprochen, aber Nisse sagt 'fuer mich eine 20 von 24 mit Streak mit dem Begriff' - das bezieht sich auf eine andere Startup-Idee von einem Hoerer (soundbasiertes Streak System im Fitnessstudio), bewertet m…"
+    },
+    {
+      "folge": 38,
+      "datum": null,
+      "idee": "Hello Flowers",
+      "beschreibung": "Erster Plastikblumen-Laden Deutschlands mit Teambuilding-Massnahmen, Influencer-Editionen (z.B. Riccardo Simonetti), Verleih fuer Filmsets und Abo-Modell. Filialen in Klimansland und Hamburg.",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Alles ab 15 ist gut. Es hat absoluten Realitaetsbezug, da Finn selbst die Plastikblumen sammelt und in seinem Studio verwendet. Nisse muss sich davon trennen, dass es bereits real ist, mag aber den Vorteil fuer Leute ohne gruenen Daumen."
+    },
+    {
+      "folge": 37,
+      "datum": null,
+      "idee": "Zero You Go / W Tissue Company (Feuchttuecher-Neuerfindung)",
+      "beschreibung": "Komprimierte Trockentuecher in Bananenhund-Geraet (wie Waterdrops), die erst beim Herausziehen durch eine Oese mit Seifenlauge und Wasser befeuchtet werden - leichter Transport, immer frisch, keine ausgetrockneten Tuecher mehr. Geplante Ausrichtung auch fuer Frauen-Hygieneprodukte, vom Staat finanziert.",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Nach Visualisierung mit 'Bananenhund' aufgewertet von ursprueglicher Skepsis - 'das ist doch cool, die 14'"
+    },
+    {
+      "folge": 36,
+      "datum": null,
+      "idee": "Garbage Pro 360 (G60) - Vision Pro im Muelleimer-Format / Koala raubt Louvre aus",
+      "beschreibung": "Vision Pro / VR-Brille so gross gebaut wie ein DB-Muelleimer, der auf den Schultern ruht statt am Kopf - 2 Monate Akku, Mensch komplett versteckt. Ergaenzt durch Rock statt Hose (Richtung nicht erkennbar). Plus: Koalabaer mit Neuralink-Implantat raubt ueber Knotenpunkte (Emilio Sakrayya) den Louvre aus.",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Wird nicht bewertet - 'die Zukunft zu bewerten ist nicht einfach' - sie wollen es erst in 5-10 Jahren rueckwirkend ansehen"
+    },
+    {
+      "folge": 35,
+      "datum": null,
+      "idee": "rapidnews.com - KI Fake-News Generator",
+      "beschreibung": "Web-App mit Power-Account, in die man Personen/Themen eingibt und in Sekunden einen Fake-Newsartikel inkl. Werbung und aehnliche Artikel generiert bekommt. Fuer 'kleine Tricks' wie Oma erschrecken oder Freunde verarschen.",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Nisse hatte zunaechst Sorge, aber dann viel Spass damit. 18 Punkte 'wie geil'."
+    },
+    {
+      "folge": 34,
+      "datum": null,
+      "idee": "Fingerabdruck-Handschuhe (von Hoerer Jonas Tiele eingesendet) / Upgrade: Steuerquartett fuer Europa",
+      "beschreibung": "Handschuhe mit individuellen Fingerabdruecken, mit denen man Sachen klauen kann und jemand anderen in Schwierigkeiten bringt. Als Upgrade auf europaeische Steuern erweitert.",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Idee gibt Europa Freiheit zurueck und ist als Upgrade der Woche eine 20 wert"
+    },
+    {
+      "folge": 33,
+      "datum": null,
+      "idee": "Schwan-Export nach Indien (Jonas von Schwan)",
+      "beschreibung": "Schwaene aus Deutschland als Luxusprodukt nach Indien exportieren - inkl. Cry Technology (Tiefkuehlung der Eier), Schwanbeinverwendung als neues Elfenbein fuer Klaviere und Buehnenbau",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Beide einig dass sie es probieren wollen, keine konkrete Punktzahl genannt"
+    },
+    {
+      "folge": 32,
+      "datum": null,
+      "idee": "Tabletten-Matruschka",
+      "beschreibung": "Eine Pille in einer Pille in einer Pille (7 Schichten / 7 Tage), umhuellt von Gelatine, die sich pro Tag jeweils eine Schicht aufloest. Idee uebernommen vom Ozempic-Prinzip (eine Einnahme pro Woche). Geht hin und her zwischen verschluckbarer Form und Zaepfchen-Form. Inklusive 'Pillen-Power-Anker (PPA)' - ein 3D-gedruckter Wiederhaken zur Verankerung in der Magenschleimhaut, falls die Pille rausru…",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Ich war so selten ueber 20, dass ich immer mehr weiss, wie das wie wie der Rahmen 24 Punkte ... du hast schon paar mal dran gekratzt.' Sehr nahe an der vollen Punktzahl."
+    },
+    {
+      "folge": 31,
+      "datum": null,
+      "idee": "Steuerquartett",
+      "beschreibung": "Ein Kartenspiel im Quartett-Stil mit deutschen Steuersaetzen als Karten (Mehrwertsteuer 19%, Einkommensteuer, Erbschaftssteuer 7%, Koerperschaftssteuer 15%, Gewerbesteuer mit Hebelsatz, Solidaritaetszuschlag, Kfz-Steuer, Hundesteuer als regionalen Ableger). Karten konkurrieren ueber Prozentsatz und jaehrlichen Beitrag zum Bundeshaushalt. Soll vom Staat zwangsweise per Post an alle Haushalte verte…",
+      "punkte": 0,
+      "max_punkte": 24,
+      "begruendung": "Nisse startet bei 3, geht hoch auf 7 (wegen 'Steuerquartettsteuer'-Joker), dann runter auf 3, und schliesslich auf 0 Punkte: 'Die letzte Kackscheisse... egal, das flattert hier sowieso rein bei dir.'"
+    },
+    {
+      "folge": 29,
+      "datum": null,
+      "idee": "Was-Verdient.de / Musiker-Gehalts-Rechner",
+      "beschreibung": "Eine App/Webseite, die automatisch hochrechnet, wie viel jeder Musiker verdient - basierend auf Spotify/Apple/Tidal Streams, Songwriting-Credits und ueblichen Labelvertraegen. Auf Partys koennen Leute schnell nachschauen: 'Was hat Drake/Bruno Mars/Shirin David letzten Monat verdient?'",
+      "punkte": 6,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Es ist sehr spezifisch spannend.' Nisse findet die Idee als jemand, der eigentlich Zielgruppe sein muesste, langweilig. Bewertet zwischen 2 (fuer sich selbst) und 11 (fuer den mitteldeutschen Hoerer), Median wird zu 6."
+    },
+    {
+      "folge": 28,
+      "datum": null,
+      "idee": "Zusammenfuehren.de / Zusammenpunktfuehren - Navigationsapp mit Personality",
+      "beschreibung": "App, die zwei Personen automatisch zueinander fuehrt, wenn beide unterwegs sind (Kuerzester Weg, der sich live anpasst). Erweitert um eine Interessen-basierte Routenplanung mit Notifications fuer Dinge, die einen interessieren (Magic-Karten-Turnier, Kaffee, Kaese vom Tuer). Ersetzt Google Maps.",
+      "punkte": 21,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Manchmal denkst du dir Sachen aus wie hier, du kannst dein Haus wiegen ... wo ich denke, selbst wenn es das gaebe, ich will es nicht haben.' Aber 21 Punkte als Toppergebnis fuer eine umsetzbare Idee."
+    },
+    {
+      "folge": 27,
+      "datum": null,
+      "idee": "Body-Tracking-Anzug zur Rueckenschmerz-Rekonstruktion",
+      "beschreibung": "Ein Ganzkoerper-Anzug mit Sensoren/Trackern an allen Gelenken, der Bewegungen aufzeichnet. Bei Schmerzen drueckt man einen 'Aua'-Button und die App rekonstruiert die Ursache der Bewegung. Spaeter Idee: Aura-Ringe an 21 Stellen ueber den Koerper verteilen.",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Nisse bewertet zwischen 3 (mit Aura-Ringen) und 18 (mit Ganzkoerper-Anzug). Finn nimmt die 18."
+    },
+    {
+      "folge": 26,
+      "datum": null,
+      "idee": "Wohnmobil-Levelling per Luftfahrwerk statt Holzdreiecke",
+      "beschreibung": "Wohnmobile haben bereits Luftfahrwerke. Anstatt nervige Dreiecke unter die Reifen zu schieben, damit das Mobil eben steht, sollte das eingebaute Luftfahrwerk per Sensorik / Waage automatisch fuer gerade Ausrichtung sorgen.",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet die Idee unmittelbar einleuchtend - es liegt auf der Hand. Einziger Kritikpunkt: Die Knastinsassen, die heute die Dreiecke produzieren, waeren arbeitslos."
+    },
+    {
+      "folge": 25,
+      "datum": null,
+      "idee": "Auto-Hupen als globales Alarm- und Synchronsystem",
+      "beschreibung": "Da alle modernen Autos eine SIM-Karte haben, koennten alle Hupen ferngesteuert werden. Damit liesse sich Bevoelkerung warnen (Bombenangriff, Katastrophe), aber auch synchronisierte Hupwellen oder gar Lieder spielen. Erweiterung: evangelische Kirche kauft Zeit-Slots fuer halbstuendliches Hupen, VW finanziert sich. Auch fuer Fussball-WM-Tore.",
+      "punkte": 2,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet das furchtbar nervig und 'so wack'. Es bleibt bei 2 Punkten - er kriegt schon vom eigenen Handy Herzinfarkt-Gefuehle bei Warntoenen."
+    },
+    {
+      "folge": 24,
+      "datum": null,
+      "idee": "Fahrbares Hotel / Mobile Hotels auf Tesla Cybertrucks",
+      "beschreibung": "Tieflader mit Containern, die jeweils 6-10 Wohneinheiten beherbergen, werden mit autonomen Tesla-Trucks an Events wie OMR, Wacken oder Hurricane gefahren. So entsteht je nach Bedarf temporaer ein Hotel mit 5000 Betten, das danach weiterzieht.",
+      "punkte": 4,
+      "max_punkte": 24,
+      "begruendung": "Nisse haelt das Konzept fuer unrealistisch: Du braeuchtest 200.000 Cybertrucks, die erst in 18 Jahren produziert werden. Nur weil sie Freunde sind, gibt's 4 Punkte."
+    },
+    {
+      "folge": 22,
+      "datum": null,
+      "idee": "Google Maps Premium fuer Reiche",
+      "beschreibung": "Bezahltes Abo bei Google Maps, das fuer den Premium-Nutzer freie Bahn schafft und alle anderen Verkehrsteilnehmer um ihn herum umleitet. Bei Bedarf hoeher tarifiert (250 Euro Road Free Account), als 'Inbegriff des Kapitalismus'.",
+      "punkte": 17,
+      "max_punkte": 24,
+      "begruendung": "Funktioniert in der Theorie und ist verfuehrerisch - 'Black Magic'. Finn waere selbst wegen Berliner Baustellen versucht, es zu nutzen."
+    },
+    {
+      "folge": 21,
+      "datum": null,
+      "idee": "Wetsuit / Tubsuit - wassergefuellter Taucheranzug fuer zu Hause",
+      "beschreibung": "Umgedrehter Wetsuit: Ein Anzug, der von innen mit warmem Wasser geflutet wird, sodass man wie in einer mobilen Badewanne ueberall hin kann. Wenig Wassereinsatz, mit Adapter an den Wasserhahn anschliessbar, Manschette am Hals.",
+      "punkte": 16,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet die Idee geil, vor allem den Namen 'Tubsuit'. Ab 12 Punkten waren die geil."
+    },
+    {
+      "folge": 20,
+      "datum": null,
+      "idee": "Drive-Through Supermarkt",
+      "beschreibung": "Ein Supermarkt, durch den man mit dem eigenen (Elektro-)Auto fahren kann. Nummernschild wird gescannt und mit PayPal/Kreditkarte verbunden. Mikrochip-Tracking erkennt entnommene Ware, die automatisch abgerechnet wird. Parallel-Strassen fuer beliebte Produkte, Powerups (z.B. Mario-Kart-artig), Jongleure und Feuershows zur Wartezeit-Ueberbrueckung.",
+      "punkte": 12,
+      "max_punkte": 24,
+      "begruendung": "Nisses Bewertung: Fun-Faktor 24, Praktikabilitaet 0 - Mittel ergibt 12 bis 13 Punkte. Die Idee schwankt zu sehr in die unpraktische Richtung."
+    },
+    {
+      "folge": 19,
+      "datum": null,
+      "idee": "My Most Private Bag - Designer Blutbeutel und Windeln",
+      "beschreibung": "Hochwertige Designer-Versionen von medizinischen Hilfsmitteln wie Katheter-Blutbeuteln (Louis Vuitton oder Captain & Sons Branding) und Windeln (Nike mit Swoosh, Slogan 'Just shit in me'). Idee: medizinische Notwendigkeiten als Mode-Statement nach aussen tragen statt verstecken.",
+      "punkte": 17,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet die Idee 'starke 17' - es ist gut die Stigmatisierung zu durchbrechen, in der Tuerkei produzieren und vermarkten wuerde funktionieren."
+    },
+    {
+      "folge": 18,
+      "datum": null,
+      "idee": "Schwabenpresse",
+      "beschreibung": "Verpackungssystem nach French-Press-Prinzip: Marmelade, Nutella, Zahnpasta o.ae. werden in einem zylindrischen Glas mit einem Stempel-Boden untergebracht. Beim Verbrauch zieht man den Deckel hoch und schiebt damit den Inhalt nach oben - kein Rest bleibt zurueck. Verwendung mit Refill-Shops vorgesehen.",
+      "punkte": 13,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet, dass die letzten 6% Rest auch mit normalem Gummischaber leerzubekommen sind und Zahnpasta-Tuben sich aufschneiden lassen. Trotzdem ein solider mittlerer Score."
+    },
+    {
+      "folge": 17,
+      "datum": null,
+      "idee": "Hogwarts Big Brother / AI-Harry-Potter-Spinoff",
+      "beschreibung": "Mit AI einen Harry-Potter-Spinoff bauen, in dem die Charaktere (Harry, Hermine, Ron, Malfoy) mit dem Publikum mitaltern. Jeder Tag eine neue Folge, jederzeit reinguckbar wie Big Brother. Im Disney Abo als endlos-laufende Serie.",
+      "punkte": 6,
+      "max_punkte": 24,
+      "begruendung": "Nisse haelt das Konzept fuer zu komplex, schwer umsetzbar und sieht viele 'Critical Errors'. Erst 4 Punkte, nach der Spinoff-Klarstellung Aufstockung auf 6."
+    },
+    {
+      "folge": 16,
+      "datum": null,
+      "idee": "Silikonfinger",
+      "beschreibung": "Ein kleiner flexibler Silikon-Unterring, der ueber den Finger gezogen wird, damit zu grosse Ringe (z.B. Siegelringe vom Troedel) passend gemacht und fixiert werden koennen.",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet die Idee simpel, knackig und fair bepreist; loest ein konkretes Problem, das Fynn mit seinen ungewoehnlich geformten Fingern hat."
+    },
+    {
+      "folge": 15,
+      "datum": null,
+      "idee": "Tinklies (Pinkel-Massage-Hilfe für die Toilette)",
+      "beschreibung": "Toiletten-Extension, bei der zwei kleine Wischmop-artige Bürsten aus dem Spülkasten herauskommen und sanft über die rechte und linke Pobacke streichen, um beim Pinkeln zu helfen. Zielgruppe: Männer 60+, die Probleme beim Wasserlassen haben. Beworben in Apothekenumschau zwischen den Treppenlift-Anzeigen.",
+      "punkte": 13,
+      "max_punkte": 24,
+      "begruendung": "Nisse hat keinen Bezug zur Zielgruppe, zieht ein Drittel ab (8 Punkte weg von 24). Steigt bei 13 ein, da er glaubt es ist in Ordnung, aber Installation und Optik fraglich. Bittet Hörer um Punktzahlen - bei Durchschnitt über 18 würde er inv…"
+    },
+    {
+      "folge": 14,
+      "datum": null,
+      "idee": "Reborn.de - Zeugenschutz für alle",
+      "beschreibung": "Plattform, die für 29,90 EUR über Gesetzeslücken (Adoption, Missbrauchsfälle, Zeugenschutz) jedem die Namensänderung ermöglicht. Mit AI und Agents werden die Dokumente für dich ausgefüllt, sodass du jeden Wunschnachnamen bekommen kannst. Expansion auf .com und .gov - 'Reborn.gov' soll wirken wie Neustart-Suchergebnis bei Google.",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Erst 17 Punkte. Große Nummer, einfach umzusetzen, demokratisiert Nachnamen. 18 Punkte nach Erweiterung auf .gov-Domain. Juristisch wird es Probleme geben, kriminelle Machenschaften möglich."
+    },
+    {
+      "folge": 13,
+      "datum": null,
+      "idee": "Schugon (Schuhanzieh-Roboter)",
+      "beschreibung": "Ein Dreischienensystem an der Haustür, in das man mit Schuhen reinsteigt. Der Schugon hält die Schuhe fest, wenn man rausgehen will - hinten fährt ein Greifer in den Hacken, vorne werden die Schuhe automatisch zugeschnürt. Beim Reinkommen dreht sich die Plattform, sodass man wieder einsteigen kann. Macht das Bücken überflüssig. Ideal für ältere Leute und alle, die nicht 'auf der Falz' (faul) sind.",
+      "punkte": 6,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet das Konzept nicht so schlecht, aber das Risiko sich zu verletzen und der Scheißhaufen Geld den man vermutlich braucht sind Minuspunkte. Letztes Mal waren es 13 Punkte. Die einfachen ausfahrenden Roboterarme klingen unsicher."
+    },
+    {
+      "folge": 12,
+      "datum": null,
+      "idee": "Knarschimulator (Casim Burani Edition)",
+      "beschreibung": "Ein Simulator-System für Neubauwohnungen, das das Knarschen alter Holzböden imitiert. Mit Beamer-Extension an der Decke kann man Bodenmuster (Holz, Fischgrät, Teppich) projizieren und 3D-Welten erschaffen (Lava, Motorräder, Mario Kart). Verbindbar mit Sonos für Sumpf-Geräusche. Basisversion 16-26 EUR, Vollausstattung 12.000 EUR (Burani-Money-Paket).",
+      "punkte": 13,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet 13 Punkte 'solide'. Knarschimulator klingt nach deutschem Engineering, deutscher Klang bricht aber globalen Markt-Trichter. Kürzel KaSim wird besser bewertet. Vollausstattung wirkt teuer für was es macht."
+    },
+    {
+      "folge": 11,
+      "datum": null,
+      "idee": "Hundeschule der anderen Art",
+      "beschreibung": "Hunde werden auf nützliche Alltagsfähigkeiten trainiert: 'Tachonase' (Hund niest bei 60 km/h, dient als Tachometer-Ersatz), Frühwarnsystem ab 125 km/h, Fleischersatz-Test (vegane Burger erkennen), Warnung vor Ordnungsamt-Personal. Auch erweitert auf andere Tiere wie Affen oder Regenwurm-Cluster zur Anlageberatung.",
+      "punkte": 11,
+      "max_punkte": 24,
+      "begruendung": "Lustig, hat ein zwei gute catchy Names, aber Umsetzung und Aufwand schwierig. Nach kleinem Referat eine Punkt mehr (von 10 auf 11)."
+    },
+    {
+      "folge": 10,
+      "datum": null,
+      "idee": "Like Mike / Holiday in a life with",
+      "beschreibung": "Asset-light Plattform mit kuratierten Urlaubslisten von Influencern. Wo macht Survival Mahin/Brian/Caro Daur Urlaub? Influencer wie Sami Slimani, Simon Desue und Bushido (alle im selben Puff in Dubai) listen ihre Lieblings-Locations. Kooperationspartner oder ungefragt (basierend auf öffentlichen Instagram-Posts). Mit exklusiven YouTube-Videos vor Ort, die nur bei Buchung anschaubar sind. Provisio…",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Asset-light, gut skalierbar, Reichweite über Influencer, ungefragte Listen rechtlich möglich, mit zusätzlichem exklusiven Video-Content vor Ort als Hook."
+    },
+    {
+      "folge": 9,
+      "datum": null,
+      "idee": "Uwe seine Waage / What Life Weights",
+      "beschreibung": "Jedes Haus steht auf einer Waage. Damit kann man bei Einbruch sofort sagen wieviel Kilogramm fehlen, hat eine Bandwurmdetection, sieht beim Sterben den 21-Gramm-Seelen-Verlust, kann den Umzugswagen passend buchen und weiß genau, was man besitzt. Beworben von Flying Uwe (Uwe ist im Haus). Kooperation mit Versicherung (Gothaer) und Techniker Krankenkasse.",
+      "punkte": 11,
+      "max_punkte": 24,
+      "begruendung": "Startete bei 2 Punkten, weil Umsetzung extrem schwer. Stieg auf 6 wegen Versicherungs-Co-Op, dann auf 10 wegen Seelen-Gramm-Idee, dann auf 11 wegen Flying-Uwe-Marketing-Hook."
+    },
+    {
+      "folge": 8,
+      "datum": null,
+      "idee": "Navi-Plugin mit Kinderstimme",
+      "beschreibung": "Ein Plugin für Google Maps oder TomTom, das ein Navi mit Warnhinweisen ergänzt, gesprochen von der eigenen Tochter: 'Papi, fahr nicht so schnell', 'Wir freuen uns auf dich zu Hause'. Soll verhindern, dass der Vater zu schnell fährt oder die Mutter hintergeht. Bestimmte Sektoren (z.B. Hamburger Hafen-Industriegebiet) lösen spezifische Sätze aus.",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "Super easy umzusetzen, kaufstarke Zielgruppe (Mütter), erste Idee mit gesellschaftlichem Impact, verkauft Angst und Sicherheit."
+    },
+    {
+      "folge": 6,
+      "datum": null,
+      "idee": "Ad Music / Add Music",
+      "beschreibung": "Plattform, auf der Musikerinnen und Werbekunden zusammenfinden, damit Künstler in ihren Songs Markennamen/Domains einbauen und dafür bezahlt werden (z.B. Holzbring24.de oder Edika Mareike). Abrechnung nach Listens, ähnlich wie Spotify-Streams.",
+      "punkte": 9,
+      "max_punkte": 24,
+      "begruendung": "Nisse glaubt, dass nur sehr wenige Künstlerinnen so etwas mitmachen würden, weil sie keine Lust haben, noch jemanden an ihren Einnahmen zu beteiligen."
+    },
+    {
+      "folge": 5,
+      "datum": null,
+      "idee": "Punching Bulb / Lightning Ball",
+      "beschreibung": "Lampe in Form eines Punching Balls an einer Feder, gegen die man im Vorbeigehen schlagen kann - 49,90 EUR pro Stueck, Mutterfirma 'könnte könnte' aus Schweden, Vertrieb primaer ueber IKEA",
+      "punkte": 2,
+      "max_punkte": 24,
+      "begruendung": "Nisse startet bei 3 von 24 ('voll das so noch nett'), faellt nach Fynns endlosem Pitch auf 2 - 'manche Ideen gehen umso laenger du redest eher nach unten'"
+    },
+    {
+      "folge": 4,
+      "datum": null,
+      "idee": "Immo Scan / Unicorn Immoscan",
+      "beschreibung": "AR-App, mit der man im Urlaub das Handy auf Gebaeude haelt und sofort sieht, welche Immobilien zum Verkauf stehen und was sie kosten - mit Affiliate-Links zu Immobilien-Plattformen",
+      "punkte": 16,
+      "max_punkte": 24,
+      "begruendung": "Idee an sich waere eine 20, aber Datenschutz-Bedenken und unklare juristische Lage ziehen 4 Punkte ab; durch Fynns schlechten Joko-Winterscheidt-Pitch wandert sie zwischen 16 und 18"
+    },
+    {
+      "folge": 3,
+      "datum": null,
+      "idee": "Habit Detector / Hoer auf",
+      "beschreibung": "App in Kombination mit der Apple Watch, die Gesten lernt (Naegelkauen, Rauchen) und ueber Vibration/Piepen/Sound 'Hoer auf' meldet, wenn der Nutzer die schlechte Angewohnheit ausfuehrt",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Nisse startet bei 6 von 24, weil das Schwert-Detail fehlt; durch den Namen 'Hoer auf' und Erweiterungs-Plugins (z.B. Fap-Filter) klettert sie auf 13-14"
+    },
+    {
+      "folge": 2,
+      "datum": null,
+      "idee": "LKW-plane-kostenlos.de",
+      "beschreibung": "Plattform, die Speditionen mit beschaedigten LKW-Planen und Werbetreibende verbindet: Werbetreibender bezahlt neue Plane mit Branding, LKW-Fahrer faehrt weiter - aufgepeppt durch ein Samuraischwert, mit dem man Planen anschneidet, um Akquise zu betreiben",
+      "punkte": 19,
+      "max_punkte": 24,
+      "begruendung": "Nisse: Mit dem Schwert eine 19, ohne nur eine 6 - das Detail (Schwert) bringt den Sprung wie eine gelbe Tennisball-Faerbung"
+    },
+    {
+      "folge": 1,
+      "datum": null,
+      "idee": "Fanta Gnu",
+      "beschreibung": "Eine neue Fanta-Sorte, die nach Ziege/Fell schmeckt, mit Sahara-Werbespot wo ein durstiges Gnu durch eine Fata-Morgana an Fanta Gnu gelangt und probiert.",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Keine explizite Bewertung in Punkten"
+    }
+  ]
 }

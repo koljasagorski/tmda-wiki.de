@@ -1,0 +1,158 @@
+{
+  "folge": 36,
+  "titel": "Koala auf Segway im Louvre",
+  "laufzeit": "1:05:40",
+  "themen": [
+    "Peter Lustig war Tontechniker bei JFKs Berlin-Rede",
+    "Benjamin Bluemchen / Bibi Blocksberg Erfinderin Sekte",
+    "Rolls-Royce Diskussion (1 vs 100)",
+    "Wild Wild Country Sekte (Oregon)",
+    "Bergmann Anhaenger Werbung",
+    "Retro Pop Hotel Hamburg (Eigenwerbung)",
+    "Sektenvorwurf an Fynn (Klimaland)",
+    "Komm naeher (Max Herre / Joy Denalane)",
+    "1X Roboter (schwarz/weiss Diskussion)",
+    "Peter Fox Aneignung",
+    "Vincent Kompany / Vinicius Junior Rassismus",
+    "Reziproke Versoehnung",
+    "Iran/Nahost Solidaritaet",
+    "Hoerer mit Depressionen lacht erstmals wieder",
+    "Felix Lobrechts Mutter Fettnaepfchen",
+    "Vision Pro Idee: Garbage Pro 360",
+    "Island Boys aus Sin Island Story",
+    "CG Hilcher (rueckwirkend bereuen)",
+    "9/11 Asbest Verschwoerung",
+    "Mondlandung fake?",
+    "Area 51 Facebook Event",
+    "Steuerfluechtlings-Konferenz in Schloss",
+    "Liquid Death + Spotify Cooperation",
+    "Logan Pauls Pokemon Karte Investment",
+    "Melanie vs Melania Trump",
+    "Melan = schwarz / schwarzer Milan (Vogel)",
+    "Koala Fingerabdruecke (TMDA-Hoerer-Tip)",
+    "Koala auf Segway im Louvre Raub"
+  ],
+  "kurzbeschreibung": "Aufnahme im Retro Pop Hotel Hamburg - viele Themen ohne klares Startup. Peinlicher 9/11 Verschwoerungs-Talk. Highlight: Koala mit Fingerabdruecken wie Hatar wird ueber drei Knotenpunkte (VPN-aehnlich) ferngesteuert, um den Louvre auszurauben.",
+  "startup_idee": {
+    "idee": "Garbage Pro 360 (G60) - Vision Pro im Muelleimer-Format / Koala raubt Louvre aus",
+    "beschreibung": "Vision Pro / VR-Brille so gross gebaut wie ein DB-Muelleimer, der auf den Schultern ruht statt am Kopf - 2 Monate Akku, Mensch komplett versteckt. Ergaenzt durch Rock statt Hose (Richtung nicht erkennbar). Plus: Koalabaer mit Neuralink-Implantat raubt ueber Knotenpunkte (Emilio Sakrayya) den Louvre aus.",
+    "punkte": null,
+    "max_punkte": 24,
+    "begruendung": "Wird nicht bewertet - 'die Zukunft zu bewerten ist nicht einfach' - sie wollen es erst in 5-10 Jahren rueckwirkend ansehen"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Island Boys / Sin Island",
+    "inhalt": "Die Island Boys (US-Internet-Bekanntheiten mit Dread-Antennen) sollen als Kinder auf Epstein Island gewesen sein. Foto kursiert von ihnen mit Epstein als ca. 10/12-Jaehrige - das soll erklaeren, wo deren Craziness herkommt."
+  },
+  "fun_facts": [
+    "Peter Lustig war vor Loewenzahn Tontechniker und hat die Aufnahme von JFKs 'Ich bin ein Berliner' Rede gemacht",
+    "Die Asbest-Staubwolke nach 9/11 hat angeblich mehr Leute getoetet als am Tag selbst gestorben sind",
+    "Asbest wurde frueher sogar in Zigarettenfilter eingebaut"
+  ],
+  "erfindungen": [
+    {
+      "name": "Garbage Pro 360 / G60",
+      "beschreibung": "Vision Pro im Muelleimer-Format auf den Schultern, 60 Akkus, 2 Monate Akkulaufzeit - Mensch komplett verborgen"
+    },
+    {
+      "name": "Rock statt Hose",
+      "beschreibung": "Wenn man die Knie nicht sieht, weiss man nicht, ob jemand nach Norden oder Sueden geht - revolutionaeres Anti-Tracking"
+    },
+    {
+      "name": "CG Hilcher (Consider Gezogen)",
+      "beschreibung": "Wenn du nachtraeglich bereust, was du vortraeglich getan hast - rueckwirkende Reue ohne Konsequenzen"
+    },
+    {
+      "name": "Koala-Diebstahl-Setup",
+      "beschreibung": "Koalabaer mit Fingerabdruecken wie Hatar, V-Brille, Segway und Neuralink, ferngesteuert via VPN-aehnlichen Knotenpunkten ueber Emilio Sakrayya nach Berlin"
+    }
+  ],
+  "orte": [
+    "Retro Pop Hotel Hamburg (am Grindel, Planten und Blomen)",
+    "Iran / Nahost",
+    "Sin Island",
+    "Area 51",
+    "Schloss im Osten Deutschlands (Steuerfluechtlings-Konferenz)",
+    "Madeira",
+    "Dubai",
+    "Hamburg-Hammerbrook",
+    "TU Hamburg-Harburg",
+    "Louvre Paris"
+  ],
+  "gaeste_erwaehnte": [
+    "Peter Lustig",
+    "JFK (John F. Kennedy)",
+    "Andy Warhol",
+    "Frank Elstner",
+    "Klaas",
+    "Florentin Will",
+    "Bones MC",
+    "187 Strassenbande",
+    "Bobby Serano",
+    "Frost (Graffiti-Artist)",
+    "Mike King / Nike Gruender",
+    "Tom Cruise",
+    "John Travolta",
+    "L. Ron Hubbard",
+    "Max Herre",
+    "Joy Denalane",
+    "Vincent Kompany",
+    "Vinicius Junior",
+    "Kylian Mbappe",
+    "Felix Lobrecht",
+    "Olli Schulz",
+    "Tilo Jung / 'der bei Twitch' (ISO Speed)",
+    "Logan Paul",
+    "Jake Paul",
+    "Jean-Michel Basquiat",
+    "Peter Fox",
+    "Mohamed Atta (9/11)",
+    "Barack Obama",
+    "Prinz Marcus von Anhalt",
+    "Pip Klockner",
+    "Til Schweiger",
+    "Mark Zuckerberg",
+    "Matthias Doepfner",
+    "Matze Hilscher",
+    "Philipp Westermeyer",
+    "Donald Trump",
+    "Montana Black"
+  ],
+  "zitate": [
+    {
+      "text": "Diese verdammten Roboter",
+      "kontext": "Running Gag der Folge - Anti-KI/Roboter-Satz"
+    },
+    {
+      "text": "Consider gezogen / CG",
+      "kontext": "Neues Jugendwort - rueckwirkende Reue"
+    },
+    {
+      "text": "Wer sein wer sein Gedicht kennt, indem es um Vergewaltigung seinerseits geht, der kann sich den Rest schon denken",
+      "kontext": "Nisses Andeutung zu Rammstein/Till Lindemann"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "CG / CG Hilcher",
+      "bedeutung": "Consider Gezogen - Hilcher (Halscher) rueckwirkend gezogen - Bereuen nach der Tat ohne Konsequenzen, neues Jugendwort"
+    },
+    {
+      "begriff": "G60",
+      "bedeutung": "Garbage Pro 360 - Riesen-VR-Brille als Muelleimer auf den Schultern"
+    },
+    {
+      "begriff": "Yard",
+      "bedeutung": "Wartungsbetriebsbereich fuer S/U-Bahn, wo Graffiti-Crews nachts Zuege bemalen"
+    },
+    {
+      "begriff": "Hotel Garni",
+      "bedeutung": "Kleines Hotel bis 20 Zimmer ohne Restaurant - rechtlich leichter zu genehmigen als grosses Hotel"
+    },
+    {
+      "begriff": "POC",
+      "bedeutung": "Person of Color"
+    }
+  ]
+}

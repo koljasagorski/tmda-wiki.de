@@ -1,0 +1,131 @@
+{
+  "folge": 31,
+  "titel": "Blinde Waisenkinder suchen Jan Marsalek",
+  "laufzeit": "1:12:42",
+  "themen": [
+    "Bill Gates Mugshot als Outlook-Profilbildumrandung",
+    "Microsoft Geheimnisse",
+    "Apple Files offengelegt",
+    "Frederik Lau Begegnung in Torstrasse Berlin",
+    "Schauspielerin macht Beziehung kaputt (LB?)",
+    "Alarm fuer Cobra 11 Schauspieler",
+    "Paul Ripke Telefonat / Toto Wolff",
+    "Entschuldigungen aussprechen vs. Nonpology",
+    "Frederik Lau anrufen und entschuldigen",
+    "Stahlzeit (Rammstein Cover Band)",
+    "ChatGPT 100x Bild kopieren",
+    "Matschklumpen Musikrichtung",
+    "Blutspende-Krise bei Erkaeltungswelle (15000 Konserven/Tag)",
+    "Stromnetz und Suppe-Metapher",
+    "Vulkangruppe Brandanschlag auf Tesla-Stromleitung",
+    "Blutwaesche / deutsches Blut / Schwangerschaft per Eizellspende",
+    "Til Schweiger Film 'Der Samen eines Mannes'",
+    "Kaminfeuer YouTube-Video Geld machen",
+    "Steuersystem in Deutschland",
+    "Power Anker (Juergen Hoeller)",
+    "Trump Power Supporter Scheme",
+    "WM 2026 USA Reise- und Hotelkosten",
+    "Brian Jakobowski (fiktive Erloeserfigur)",
+    "Wer hat sich Wirecard reingezogen / Jan Marsalek",
+    "Eichhoernchen Sprung von Baum zu Baum",
+    "Demenz Fight Club in USA",
+    "Samuel L. Jackson Motherfucker-Anteil am Verdienst"
+  ],
+  "kurzbeschreibung": "Folge ueber alte Stress-Geschichten mit deutschen Schauspielern, Microsoft-Mythen, Blutkonserven-Knappheit und ein 'Steuerquartett' als Startup-Idee, das Nisse abgrundtief schlecht findet. Plus: Vorsatz, Jan Marsalek zu finden.",
+  "startup_idee": {
+    "idee": "Steuerquartett",
+    "beschreibung": "Ein Kartenspiel im Quartett-Stil mit deutschen Steuersaetzen als Karten (Mehrwertsteuer 19%, Einkommensteuer, Erbschaftssteuer 7%, Koerperschaftssteuer 15%, Gewerbesteuer mit Hebelsatz, Solidaritaetszuschlag, Kfz-Steuer, Hundesteuer als regionalen Ableger). Karten konkurrieren ueber Prozentsatz und jaehrlichen Beitrag zum Bundeshaushalt. Soll vom Staat zwangsweise per Post an alle Haushalte verteilt werden. Auch eine Variante: Ein Finanzbeamter kommt vorbei und man kann mit dem Spiel Steuern reduzieren.",
+    "punkte": 0,
+    "max_punkte": 24,
+    "begruendung": "Nisse startet bei 3, geht hoch auf 7 (wegen 'Steuerquartettsteuer'-Joker), dann runter auf 3, und schliesslich auf 0 Punkte: 'Die letzte Kackscheisse... egal, das flattert hier sowieso rein bei dir.'"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Elon Musk (Halscher gezogen)",
+    "inhalt": "Nisse will ein Geruecht ueber Musk teilen, zieht aber dann den Hilcher"
+  },
+  "fun_facts": [
+    "Die Umrandung des Standard-Profilbilds in Microsoft Outlook 2010 ist der Mugshot von Bill Gates von 1977, als er besoffen Auto gefahren ist",
+    "In Apple-Files sind alte Daten von Privatpersonen offengelegt - inklusive eines Microsoft-Lizenzschluessels, der heute noch fuer Windows 2002 funktioniert",
+    "In Deutschland werden 15.000 Blutkonserven pro Tag verbraucht - eine Erkaeltungswelle leert die Vorraete in 3-5 Tagen",
+    "Samuel L. Jackson hat ungefaehr 300 Millionen Dollar in seiner Karriere verdient. Etwa 1% (ca. 1,4 Mio.) entfaellt auf das Wort 'Motherfucker' (alleine in Pulp Fiction 48 Mal gesagt)"
+  ],
+  "erfindungen": [
+    {
+      "name": "Demenz Fight Club",
+      "beschreibung": "Drei Frauen aus einem Altenheim in den USA haben Demenz-Patienten gegeneinander kaempfen lassen - die sich am naechsten Tag nicht mehr daran erinnern konnten. Sie wurden festgenommen. Diskussion: Im Film waere es 'erste Regel des Demenz Fight Club: Du kannst nicht darueber reden, weil du dich nicht erinnerst'"
+    }
+  ],
+  "orte": [
+    "Berlin (Torstrasse)",
+    "Sueberlin (Tesla-Anschlag Gruenheide)",
+    "Russland (Jan Marsalek)",
+    "Kiel (Bruder von Nisse, Stahlzeit-Konzert)"
+  ],
+  "gaeste_erwaehnte": [
+    "Bill Gates",
+    "Frederik Lau",
+    "Paul Ripke",
+    "Toto Wolff",
+    "Ein Schauspieler von Alarm fuer Cobra 11 ('Sprengmeister')",
+    "Til Schweiger",
+    "Stahlgewitter / Stahlzeit",
+    "Rammstein",
+    "Brian Jakobowski (fiktiv)",
+    "Eline Fischer",
+    "Sebastian Pufpaff (?)",
+    "Tilman (Padel-Kumpel)",
+    "Jan Marsalek (Wirecard)",
+    "Werner Kimmich",
+    "Joshua Kimmich",
+    "Juergen Hoeller (Coaching)",
+    "Dirk Kreuter",
+    "Donald Trump",
+    "Frederik Lau (entschuldigt sich, Apologie),",
+    "Olli (Hausboot-Kumpel)",
+    "Uli Hoeness",
+    "Angela Merkel",
+    "Schweden- und WoW-Lehrer",
+    "Maesimoto / Materia"
+  ],
+  "zitate": [
+    {
+      "text": "Bist jetzt cool oder was?",
+      "kontext": "Frederik Lau zu Finn beim ersten Kennenlernen in der Torstrasse in Berlin vor 10 Jahren"
+    },
+    {
+      "text": "Stress auf der Torstrasse Frederik Lau, 10 Jahre her",
+      "kontext": "Liest sich wie ein Bushido-Text"
+    },
+    {
+      "text": "Zwei Schritte vor, kein zurueck",
+      "kontext": "Wiederkehrendes Motto der Folge (Freiwild/Stahlgewitter-Stil)"
+    },
+    {
+      "text": "Mein Vorsatz fuer dieses Jahr ist Jan Marsalek finden.",
+      "kontext": "Finns Padel-Kumpel Tilman (Musiker) im Auto"
+    },
+    {
+      "text": "Er hat den Power einfach zu oft gesetzt",
+      "kontext": "Imaginaerer Notarzt-Satz, was als Todesursache bei Finns Beerdigung auf seinem Grab steht"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Matschklumpen",
+      "bedeutung": "Eine Musikrichtung, die durch 100-faches Kopieren in ChatGPT entsteht - 'Matschklumpen von Terence Hill' / 'Matschklumpen von Timothy Chalamet'"
+    },
+    {
+      "begriff": "Power Anker (PPA)",
+      "bedeutung": "Konzept von Juergen Hoeller: Mit einem Schlag auf die Brust 'setzt' man einen Anker, der einen wieder in einen positiven Zustand bringt"
+    },
+    {
+      "begriff": "Vulkangruppe",
+      "bedeutung": "Aktivistengruppe, die Brandanschlaege macht (z.B. gegen Tesla in Gruenheide)"
+    },
+    {
+      "begriff": "Nonpology",
+      "bedeutung": "Apologie, die wie eine Entschuldigung formuliert ist, aber inhaltlich keine ist"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "folge": 47,
+  "titel": "Talahons im Weltall",
+  "laufzeit": "1:02:11",
+  "themen": [
+    "Eiffelturm schrumpft bei Kaelte um 15 cm",
+    "Pimmel schrumpft bei Kaelte (Friedrich Merz-Vergleich)",
+    "Friedrich Merz Buehnen-Bewertung (1-10)",
+    "Nisses Nazi-Boy-Vergangenheit in England mit 13",
+    "Fenster-Hersteller-Chef mit Englisch-Lern-Uhr (Navy Seals Ultraschall-Scam)",
+    "Startup-Idee: KeyBillboard (BB Keyboard mit magischer Frequenz)",
+    "Paul Ripke als Weltmeister-Glueckbringer (Kimi Antonelli)",
+    "Hoerbuecher / Filme die ausgemacht wurden",
+    "Stuckrad-Barre Buch 'Panikherz' ueber Udo Lindenberg",
+    "Udo Lindenberg, Otto Walkes, Westernhagen WG am Rondell",
+    "Selbstreflexion ueber Kuenstlertum (Mese, Kanye, Lindenberg)",
+    "Musikindustrie als gefaehrliches Geschaeft",
+    "Startup-Idee: Das schwarze Weltkleid (one size fits all)",
+    "Aliens und Talahons im Weltall mit Udo Lindenberg",
+    "rotten.com und World Star Hip Hop Schock-Videos",
+    "Helikopter-Rotor-Unfall Schutznippel-Idee",
+    "Aufruf an Webentwickler fuer TMDA-Wiki",
+    "Bestell-Szene: Was wuerde Tommy / Felix bei 'Gemischtes Hack' sagen?"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse erfinden das KeyBillboard, ein magisches Keyboard, das automatisch Hits produziert, und ein schwarzes Universalkleid fuer die ganze Menschheit (und Aliens). Es geht um Udo Lindenberg, Kuenstlertum und die Gefahren der Musikindustrie.",
+  "startup_idee": {
+    "idee": "Das schwarze Weltkleid / Kleid fuer die Welt",
+    "beschreibung": "Ein einziges Kleid, das jedem Menschen passt - One Size Fits All. Aus dehnbarem Stoff wie eine Jalousie, mit Schnueren kann man es enger/weiter machen wie ein Dirndl. Immer schwarz. Soll fuer 6 Milliarden Menschen produziert werden, 398 EUR pro Stueck. Spaeter erweitert auf 'das Kleid fuer das Sonnensystem', das ueber Astronautenanzuege gezogen werden kann.",
+    "punkte": 5,
+    "max_punkte": 24,
+    "begruendung": "Die Idee und die Geschichte findet Nisse mega, die Umsetzung komplett unrealistisch. Deshalb nur eine 5."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Der Eiffelturm schrumpft bei Kaelte um 15 cm.",
+    "Der Eiffelturm besteht aus Puddeleisen.",
+    "Materie zieht sich bei Kaelte zusammen (thermische Kontraktion).",
+    "Der aelteste Kaugummi der Welt ist 9000 Jahre alt.",
+    "Guerteltiere gelten als kugelsicher.",
+    "Bei IKEA sind Stuehle und Schreibtische nach Maennern benannt, Stoff und Gardinen nach Frauen."
+  ],
+  "erfindungen": [
+    {
+      "name": "Helikopter-Rotor-Schutznippel",
+      "beschreibung": "Ein kleiner Plastiknippel, der wie beim Auto-Tueroeffner-Schutz aus dem Helikopter herausfaehrt, wenn jemand aussteigt, und als Schiene fungiert, damit man sich nicht den Kopf oder die Haende am Rotor abschneidet. Aehnlich Fynns 'Blinkerhand' aus einer frueheren Folge."
+    }
+  ],
+  "orte": [
+    "Eiffelturm / Paris",
+    "England / London",
+    "Hamburg (Rondell an der Alster)",
+    "Chateau Marmont (LA)",
+    "Berlin",
+    "Kassel (Jonathan Mese)",
+    "Berlinale",
+    "Lueneburger Heide",
+    "Dubai (Drifting-Video)",
+    "Schoeneberg (Berlin)",
+    "Brasilien (Bungee Jump Video)"
+  ],
+  "gaeste_erwaehnte": [
+    "Friedrich Merz",
+    "Fabi / Fabian",
+    "Vincent Bosse (Bosse)",
+    "Paul Ripke",
+    "Kimi Antonelli",
+    "Lewis Hamilton",
+    "Nico Rosberg",
+    "Stuckrad-Barre",
+    "Sophie Passmann",
+    "Mark Wahlberg",
+    "Keanu Reeves",
+    "Jonah Hill",
+    "Udo Lindenberg",
+    "Peter Maffay",
+    "Roy Black",
+    "Elvis Presley",
+    "Led Zeppelin",
+    "The Doors",
+    "Otto Walkes",
+    "Marius Mueller-Westernhagen",
+    "Cliso",
+    "Max Herre",
+    "Jan Delay",
+    "Apache 207",
+    "Herbert Groenemeyer",
+    "Olli Schulz",
+    "Berger",
+    "Paul McCartney",
+    "Falco",
+    "David Bowie",
+    "Sting",
+    "Tina Turner",
+    "Jonathan Meese",
+    "Kanye West",
+    "Ricardo Simonetti",
+    "Bill Kaulitz",
+    "Amy Winehouse",
+    "Miley Cyrus",
+    "Jared Leto",
+    "John Belushi",
+    "Michael Jackson",
+    "Felix Lobrecht",
+    "Tommy (Gemischtes Hack)",
+    "Heidi Klum (Germany's Next Topmodel)",
+    "Vivian Karl",
+    "Angela Merkel",
+    "Olaf Scholz",
+    "Elon Musk"
+  ],
+  "zitate": [
+    {
+      "text": "Das kleine ganz gross machen, das grosse ganz klein machen.",
+      "kontext": "Udo Lindenbergs Sprache, wie Stuckrad-Barre in 'Panikherz' beschreibt."
+    },
+    {
+      "text": "You must not become the most likely version of yourself.",
+      "kontext": "Nisses Mantra aus dem Innsbruck-Vortrag, hier wieder als Aufforderung zum Kuenstlertum."
+    },
+    {
+      "text": "Hallo, Stoesschen erstmal auf unsere Freundschaft.",
+      "kontext": "Nisse macht Udo Lindenberg nach, der die Aliens am Neptun 234 ueberzeugen soll, das schwarze Weltkleid zu tragen."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Talahons im Weltall",
+      "bedeutung": "Im Podcast nicht direkt erklaert, aber der Folgentitel bezieht sich auf den Schluss-Gedankenexperiment, wo Talahons (jugendliche Subkultur in Deutschland) ins Weltall expandieren, an intergalaktischen Bushaltestellen schwarze Weltkleider tragen und ihre Helme bespucken."
+    },
+    {
+      "begriff": "KeyBillboard / BB Keyboard / Bill Keyboard",
+      "bedeutung": "Hypothetisches Keyboard aus daenischer Produktion, das eine Frequenz aussendet, die Songs automatisch zu Hits macht - vermarktet von 'zwei Number One Music Producer Legends'. Kostet 899 EUR im TMDA Shop bei twofingerrecords.com."
+    },
+    {
+      "begriff": "Panikherz",
+      "bedeutung": "Buch von Benjamin von Stuckrad-Barre, das die Beziehung zu Udo Lindenberg und das Comeback mit 'Stark wie zwei' beschreibt."
+    },
+    {
+      "begriff": "Rotten.com / World Star Hip Hop",
+      "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor)."
+    }
+  ]
+}

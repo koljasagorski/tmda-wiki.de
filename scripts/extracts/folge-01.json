@@ -1,0 +1,105 @@
+{
+  "folge": 1,
+  "titel": "Fanta Gnu schmeckt nach Ziege",
+  "laufzeit": "0:36:48",
+  "themen": [
+    "Papstwahl und Weltuntergangs-Prophezeiung",
+    "Maya-Kalender und 2033",
+    "Kanye West vs. Adidas/Nike",
+    "Avici-Stellvertretung als Geschäftsidee",
+    "Digitaler Nachlass / KI-Avatare nach dem Tod",
+    "Kryo-Schlaf und Ideocracy"
+  ],
+  "kurzbeschreibung": "Auftaktfolge: Fynn und Nisse spinnen ueber Papst-Prophezeiungen, den moeglichen Weltuntergang 2033 und entwickeln die absurde Idee, Avici-Nachfolger zu werden. Dazu eine Anekdote ueber das Geschenk eines Opas, das jeden Tag um 11 Uhr klingelt.",
+  "startup_idee": {
+    "idee": "Fanta Gnu",
+    "beschreibung": "Eine neue Fanta-Sorte, die nach Ziege/Fell schmeckt, mit Sahara-Werbespot wo ein durstiges Gnu durch eine Fata-Morgana an Fanta Gnu gelangt und probiert.",
+    "punkte": null,
+    "max_punkte": 24,
+    "begruendung": "Keine explizite Bewertung in Punkten"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "In einer Kapelle gibt es angeblich nur Plaetze fuer 24 Papst-Abbilder; der aktuelle amerikanische Papst sei der letzte",
+    "Der Maya-Kalender soll fuer das Jahr 2033 den Weltuntergang vorhergesagt haben (2000 Jahre nach Jesu Tod)",
+    "Brian Johnson forscht in den USA daran, fuer immer zu leben",
+    "Nur 10.000 Segways wurden weltweit verkauft (kommt in spaeterer Folge zur Sprache, hier nicht)"
+  ],
+  "erfindungen": [
+    {
+      "name": "Fanta Gnu",
+      "beschreibung": "Limonaden-Sorte mit Ziegen-/Fell-Geschmack, vermarktet ueber Sahara-Spot mit durstigem Gnu"
+    },
+    {
+      "name": "Avici-Stellvertreter",
+      "beschreibung": "Sich selbst per OP zu Avici umbauen lassen, dessen Sound und Look uebernehmen und seinen Platz einnehmen, da er nicht mehr lebt"
+    },
+    {
+      "name": "Reminder-Clock fuer Omas und Opas",
+      "beschreibung": "Wetterstation-aehnliches Geraet, das taeglich klingelt und eine vorher aufgenommene Nachricht der Oma/des Opas abspielt - Erinnerung an Verstorbene"
+    },
+    {
+      "name": "Digitaler KI-Erbe-Avatar",
+      "beschreibung": "App/Firma, die deinen digitalen Fingerabdruck (Stimme, WhatsApp, Posts) sammelt; Hinterbliebene koennen mit dir nach dem Tod sprechen"
+    }
+  ],
+  "orte": [
+    "Vatikan",
+    "Tokio",
+    "Berlin"
+  ],
+  "gaeste_erwaehnte": [
+    "Papst Franziskus",
+    "Brian Johnson",
+    "Bushido",
+    "Arafat Abou-Chaker",
+    "Kanye West",
+    "Drake",
+    "Avici (Tim Bergling)",
+    "Sascha Unsympathisch TV",
+    "Montana Black",
+    "Lars Eidinger",
+    "Slavik (ukrainischer Obdachloser)",
+    "Laura Kampf",
+    "Jeremy aus Matt",
+    "Joaquin Phoenix",
+    "Jan Krueger"
+  ],
+  "zitate": [
+    {
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Nisse ueber Sternzeichen-Glaeubige"
+    },
+    {
+      "text": "Fanta Gnu schmeckt nach Ziege",
+      "kontext": "Titelgebende Erkenntnis"
+    },
+    {
+      "text": "Der beste Mensch ist ein Imperator am Ende des Tages",
+      "kontext": "Nisse ueber den Foundation-Imperator als Vergleich zum Papst"
+    },
+    {
+      "text": "Crocs getragen, ne?",
+      "kontext": "Nisse zu Fynn ueber Ideocracy"
+    },
+    {
+      "text": "Wir frieren unsere Gedanken bis zur naechsten Folge ein",
+      "kontext": "Fynns Abschluss-Spruch"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Klimasand",
+      "bedeutung": "Fynns Hof / Projekt-Standort (taucht in mehreren Folgen auf)"
+    },
+    {
+      "begriff": "Pepse",
+      "bedeutung": "Auto-Caption-Fehler fuer 'Paepste'"
+    },
+    {
+      "begriff": "Konklave",
+      "bedeutung": "Papstwahl-Film, den Nisse als Referenz fuer sein Wissen nutzt"
+    }
+  ]
+}

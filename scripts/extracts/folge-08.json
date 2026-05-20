@@ -1,0 +1,70 @@
+{
+  "folge": 8,
+  "titel": "Fynns Milliardenidee & Akons Bruder im B2 Bomber",
+  "laufzeit": "0:46:21",
+  "themen": [
+    "Akons Bruder, der heimlich Akons Shows performt hat",
+    "Fynns Verhältnis zu Kindern im Klimansland",
+    "Action Bronson Konzert in Köln (Cousin trat für ihn auf)",
+    "B2 Tarnkappenbomber und Radar-Technologie",
+    "Defense-Drohnen Startup das Bomben entschärft",
+    "Padel-Tennis vs. Tennis, Padel-Spielkultur",
+    "Brazilian Jiu-Jitsu als effektive Kampfsportart"
+  ],
+  "kurzbeschreibung": "Fynn erzählt von Akons Doppelgänger-Bruder und präsentiert seine bisher bestbewertete Startup-Idee. Tiefer Dive in B2-Bomber-Technik und ein Besuch beim Padel mit Axel-Springer-Chef Matthias Döpfner.",
+  "startup_idee": {
+    "idee": "Navi-Plugin mit Kinderstimme",
+    "beschreibung": "Ein Plugin für Google Maps oder TomTom, das ein Navi mit Warnhinweisen ergänzt, gesprochen von der eigenen Tochter: 'Papi, fahr nicht so schnell', 'Wir freuen uns auf dich zu Hause'. Soll verhindern, dass der Vater zu schnell fährt oder die Mutter hintergeht. Bestimmte Sektoren (z.B. Hamburger Hafen-Industriegebiet) lösen spezifische Sätze aus.",
+    "punkte": 22,
+    "max_punkte": 24,
+    "begruendung": "Super easy umzusetzen, kaufstarke Zielgruppe (Mütter), erste Idee mit gesellschaftlichem Impact, verkauft Angst und Sicherheit."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Der B2 Tarnkappenbomber hat einen Radarabdruck so groß wie eine Maus (4x2 cm)",
+    "B2 Bomber kostet 2 Milliarden Dollar in der Produktion und muss alle 2 Jahre mit Spezialfarbe gestrichen werden, deren Zusammensetzung geheim ist",
+    "Akons Bruder hat sich als Akon ausgegeben und parallel Shows gespielt, sogar einen dritten Bruder als Ersatz geschickt",
+    "Ein Kind ist wie keins, zwei sind wie 1000 (Spruch über Elternschaft)",
+    "Action Bronson kam in Köln 30 Minuten zu spät und sein Cousin spielte 25 von 30 Minuten"
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Atlanta",
+    "Los Angeles",
+    "Köln",
+    "Klimansland",
+    "Iran (B2-Bombardement)",
+    "Ukraine",
+    "Bremen (Startup Summit)",
+    "Padel-Halle"
+  ],
+  "gaeste_erwaehnte": [
+    "Akon",
+    "Action Bronson",
+    "Jan",
+    "Matze (Marlich/Mateo)",
+    "Frank Thelen",
+    "Joko",
+    "Matthias Döpfner",
+    "Palmer Luckey (Oculus, Anduril)",
+    "Cristiano Ronaldo",
+    "Rafael Nadal",
+    "Zlatan Ibrahimovic",
+    "Conor McGregor",
+    "Khabib Nurmagomedov",
+    "Gracie Familie",
+    "Steady (Steadycraft)"
+  ],
+  "zitate": [
+    {"text": "Ich locke die Kinder in mein kleines Reich, damit sie viele Produkte kaufen", "kontext": "Fynn über sein Klimansland - direkt danach distanziert er sich"},
+    {"text": "Hast du genug Nährstoffe zu dir genommen, kleiner Kevin?", "kontext": "Fynn darüber wie er mit Kindern spricht"},
+    {"text": "Saug saug zapf zapf", "kontext": "Untertitel des Klimanslands - Fynn zapft die guten Gefühle der Kinder ab"},
+    {"text": "Wenn ihr Durchfall habt, dann verpisst euch hier ganz schnell", "kontext": "Fynn über seine Beziehung zu den Klimansland-Kindern"}
+  ],
+  "glossar": [
+    {"begriff": "Saug saug zapf zapf", "bedeutung": "Fynns scherzhafter Untertitel für seinen Hof/Klimansland - Beziehung zu den Kindern"},
+    {"begriff": "Defense", "bedeutung": "Das 'gute' Defense - Drohnen die Bomben entschärfen statt Angriff, in Abgrenzung zur Rüstungsindustrie"},
+    {"begriff": "Shooten", "bedeutung": "Im Brazilian Jiu-Jitsu: sich ducken und direkt in die Beine des Gegners gehen"}
+  ]
+}

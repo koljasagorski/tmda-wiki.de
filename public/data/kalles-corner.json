@@ -1,4 +1,36 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 5,
+  "items": [
+    {
+      "folge": 43,
+      "datum": "2026-04-21",
+      "titel": "Kalles Corner ist Geschichte / Goodbye Connor",
+      "inhalt": "Kalles Corner wird in dieser Folge eingestellt. Grund: Kalle Schwensen hat sich auf Instagram in einem Beitrag ueber Colin Fernandes geaeussert und dabei das Klarnamengesetz, Corona-Impfpflicht und Bundesregierung kritisiert in einer Form, die Fynn und Nisse zu Distanzierung bewegt. Sie betrauern den 'Kalle der 80er, 90er und fruehen 2000er' und beenden das Format."
+    },
+    {
+      "folge": 40,
+      "datum": "2026-03-31",
+      "titel": "Kalle Schwensens Doppelgaenger-Trick im Gericht",
+      "inhalt": "Vor ca. 7 Jahren wurde Kalle Schwensen geblitzt/von Polizisten angehalten. Im Gerichtssaal sagen die Polizisten als Augenzeugen, das war Kalle Schwensen in seinem Mercedes ('Der ist einmalig'). In dem Moment springt Kalle Schwensen hinten als Zuschauer auf, weil er einen Doppelgaenger mit seiner Frisur und Sonnenbrille auf den Angeklagtenplatz gesetzt hat. Er ruft: 'Ihr wisst nicht mal, wie ich aussehe!' Er hat es nicht gewonnen, aber alle Zeitungen haben drueber berichtet. Korrekturen aus letz…"
+    },
+    {
+      "folge": 38,
+      "datum": null,
+      "titel": "Mucki Pinzner und Kalle Schwensens Attentat",
+      "inhalt": "Anekdote ueber den kleinwuechsigen Auftragskiller Werner Mucki Pinzner (faelschlich Pitzner genannt) in den spaeten 80ern/fruehen 90ern. Hat zwei Zuhaelter erschossen. In einer Verhoersituation hat ihm seine Anwaeltin eine Waffe reingeschmuggelt, mit der er erst sie und dann sich selbst erschossen hat. Zweite Geschichte: Kalle Schwensen wurde angeschossen, lag auf der Trage, wollte seine Sonnenbrille nicht abnehmen lassen und hat den Sanitaeter mit eisernem Griff bedroht: 'Wenn du mir die Brill…"
+    },
+    {
+      "folge": 37,
+      "datum": null,
+      "titel": "Kalle Schwensen gibt das Geld zurueck (Erste Kalles Corner)",
+      "inhalt": "Nisses Vater hatte mit Kalle Schwensen (sehr bekannte Hamburger Persoenlichkeit/Kaufmann auf St. Pauli, aus 5-Sterne-Lux-Doku ueber Zuhaelter) Business gemacht und Geld fuer ein Projekt geliehen. Kalle sagte: 'Wenn das hier in die Hose geht, gebe ich dir das bis auf den letzten Cent zurueck.' Das Projekt scheiterte. Nisses Vater dachte, das Geld sei weg (war ueber Firma, Wirtschaftsrisiko). Doch Kalle kam mit Koffer voll Bargeld an, Nisses Vater meinte: 'Kalle, unter uns - haettest das nicht ma…"
+    },
+    {
+      "folge": 26,
+      "datum": null,
+      "titel": "Regionalzug-Spitzname und 'Brennsuppe' (Mehl mit Wasser, DDR-Idiom fuer Dummheit)",
+      "inhalt": "Kalle (bzw. ein Kollege) nennt einen normalen Regionalzug 'Hartz 4 Raupe' - gegenueber dem ICE als 'erste Klasse Gerhard Schroeder'. Das Wortspiel mit dem normalen Zug, in den 'alle einsteigen' wie in eine arbeitslose Raupe, gibt der Folge ihren Titel."
+    }
+  ]
 }

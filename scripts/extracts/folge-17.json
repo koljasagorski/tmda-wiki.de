@@ -1,0 +1,115 @@
+{
+  "folge": 17,
+  "titel": "Was haben Till Lindemann und Harry Potter gemeinsam",
+  "laufzeit": "1:01:23",
+  "themen": [
+    "Vergessene Regenschirme in der Londoner U-Bahn (80.000 pro Jahr)",
+    "Verhandlungstaktiken und Lobbyismus",
+    "Hoehle der Loewen (Erfindung des Namens)",
+    "Teenage Engineering und Billy Eilish",
+    "Selbstverletzung als Show-Element (Till Lindemann, Rammstein)",
+    "Eigene Erfahrungen mit Ritzen als Teenager",
+    "Branding (Brandmal, The Beach)",
+    "Emmys und 45-Sekunden-Dankesrede mit Spendenuhr",
+    "Andre 3000s kuerzeste Dankesrede",
+    "AI-altrnder Harry Potter Spinoff (Startup-Idee)",
+    "Hogwarts Big Brother",
+    "Piloten und das Klatschen bei Landung",
+    "Stay Forever Podcast (DDR-Computer)",
+    "Wiedervereinigung und Westunternehmen, die Ostfirmen aufkauften",
+    "Mikrowellen-White-Label-Hersteller",
+    "Fettklops vs. Fleischklops als Beleidigung",
+    "Krumme Penisse",
+    "Vollmond und Schlafstoerungen / Hirnwasser",
+    "Astronomie-Diskussion ueber Sonne, Erde, Mond",
+    "Sockenliebe und Vans Authentic",
+    "Palina-Horoskop",
+    "Anekdote: Savas wirft Nisses BCD im Rapquiz weg"
+  ],
+  "kurzbeschreibung": "Es geht um vergessene Londoner Regenschirme als Rohstoff, Selbstverletzungs-Anekdoten aus der Jugend, einen AI-Harry-Potter-Spinoff als Startup-Idee, Vollmond-Theorien und Nisses BCD die Savas im Rapquiz wegwirft.",
+  "startup_idee": {
+    "idee": "Hogwarts Big Brother / AI-Harry-Potter-Spinoff",
+    "beschreibung": "Mit AI einen Harry-Potter-Spinoff bauen, in dem die Charaktere (Harry, Hermine, Ron, Malfoy) mit dem Publikum mitaltern. Jeder Tag eine neue Folge, jederzeit reinguckbar wie Big Brother. Im Disney Abo als endlos-laufende Serie.",
+    "punkte": 6,
+    "max_punkte": 24,
+    "begruendung": "Nisse haelt das Konzept fuer zu komplex, schwer umsetzbar und sieht viele 'Critical Errors'. Erst 4 Punkte, nach der Spinoff-Klarstellung Aufstockung auf 6."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "In der Londoner U-Bahn werden jedes Jahr 80.000 Regenschirme zurueckgelassen.",
+    "Wenn GTA 6 erscheint, gehen die US-Behoerden von bis zu 10 Milliarden Dollar Wirtschaftsverlust durch Krankmeldungen aus.",
+    "Andre 3000 von Outkast hielt mit einem schlichten 'Thank you' eine der kuerzesten Dankesreden der Award-Geschichte."
+  ],
+  "erfindungen": [
+    {
+      "name": "Umbrella Bridge",
+      "beschreibung": "Bandname-Idee: eine Bruecke aus den 80.000 Londoner Regenschirmen mit Frontschreier in Kettenhemd und Deutsch-und-Gabbana-Logo."
+    },
+    {
+      "name": "Kettenhemden-Revival",
+      "beschreibung": "Modisches Kettenhemd mit deutschem Gabbana-Logo (D und G als ineinander verflochtene Metallringe)."
+    }
+  ],
+  "orte": [
+    "London (U-Bahn)",
+    "Hamburg",
+    "Berlin"
+  ],
+  "gaeste_erwaehnte": [
+    "Carsten Maschmeier",
+    "Peter Thiel",
+    "Veggie Crumbs (Startup)",
+    "Teenage Engineering",
+    "Billy Eilish",
+    "Paul Rudd",
+    "Mary Poppins",
+    "Till Lindemann (Rammstein)",
+    "Marilyn Manson",
+    "Andre 3000",
+    "ETA Hoffmann",
+    "Harry Potter, Hermine, Ron, Malfoy (Figuren)",
+    "Elon Musk",
+    "George Clooney",
+    "Atila Hildmann",
+    "Wendler",
+    "Sido",
+    "Xavier Naidoo",
+    "Udo Lindenberg",
+    "Savas",
+    "Visa Vie",
+    "Heinz Strunk"
+  ],
+  "zitate": [
+    {
+      "text": "Ach nur irgendeine BCD.",
+      "kontext": "Savas zu Sido im 16-Bars-Rapquiz beim Wegwerfen von Nisses Demo-CD."
+    },
+    {
+      "text": "Hallo.",
+      "kontext": "Anekdote: Nisses Kumpel hat sich als 13-Jaehriger 'Hallo' in den Arm geritzt."
+    },
+    {
+      "text": "Das ist nicht so schoen wie mein lecker Tee.",
+      "kontext": "Vermeintliches NDR-Werbe-Zitat, das Nisse spontan einfaellt."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "White Label",
+      "bedeutung": "Produktionsweise, bei der ein Hersteller das gleiche Produkt unter verschiedenen Marken (Logos/Verpackungen) verkauft."
+    },
+    {
+      "begriff": "Hoehle der Loewen",
+      "bedeutung": "Deutsche Version von Shark Tank; der Name soll laut Nisses ehemaligem Manager von dessen Umfeld erfunden worden sein."
+    },
+    {
+      "begriff": "Branding",
+      "bedeutung": "Bewusst zugefuegtes Brandmal auf der Haut, hier im Kontext jugendlicher Selbstverletzung nach dem Film 'The Beach'."
+    },
+    {
+      "begriff": "Batman-Effekt",
+      "bedeutung": "Psychologisches Konzept, sich selbst in eine Superhelden-Rolle zu versetzen; von Fynn umbenannt in 'Klimaneffekt'."
+    }
+  ]
+}

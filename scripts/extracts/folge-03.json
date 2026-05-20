@@ -1,0 +1,120 @@
+{
+  "folge": 3,
+  "titel": "Aaron Carter im Tropical Island",
+  "laufzeit": "1:26:51",
+  "themen": [
+    "Zukunfts-Musik / Aman-Breakbeat",
+    "Klimasand Bauprojekte und Hotel",
+    "Beste Rapper aller Zeiten (Eminem, Haftbefehl)",
+    "Tropical Island und Actionpark Horror",
+    "Buddhist Matthieu Ricard und Selbstkontrolle",
+    "Schlimmste Begegnungen mit Fans / Aaron Carter und Macaulay Culkin",
+    "Habit Detector App und Top 24-Punkte-Ideen"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse spielen ihre 'Musik der Zukunft' vor (Aman-Breakbeat vs. Alien-Sound), schwelgen in Tropical-Island-Horror und beruehren sich gegenseitig nahegegangenen Geschichten von Begegnungen mit Aaron Carter und Macaulay Culkin.",
+  "startup_idee": {
+    "idee": "Habit Detector / Hoer auf",
+    "beschreibung": "App in Kombination mit der Apple Watch, die Gesten lernt (Naegelkauen, Rauchen) und ueber Vibration/Piepen/Sound 'Hoer auf' meldet, wenn der Nutzer die schlechte Angewohnheit ausfuehrt",
+    "punkte": 14,
+    "max_punkte": 24,
+    "begruendung": "Nisse startet bei 6 von 24, weil das Schwert-Detail fehlt; durch den Namen 'Hoer auf' und Erweiterungs-Plugins (z.B. Fap-Filter) klettert sie auf 13-14"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Die erste Festplatte der Welt (IBM 1950) wog eine Tonne und hatte 5 MB Speicher",
+    "Beim Tod verlassen angeblich 21 Gramm den Koerper (Film: 21 Gramm)",
+    "Russen sollen Krebs durch heisses Baden (50 Grad mit Thermometer im Anus) ueberlebt haben, weil Eiweiss/Krebszellen zersetzt werden",
+    "0 Kelvin entspricht -278 Grad (eigentlich -273,15) - bei dieser Temperatur leiten Materialien sehr gut Strom",
+    "Macaulay Culkin hat sich selbst den Mittelnamen 'Macaulay Culkin' gegeben",
+    "Die letzten 10.000 Segways wurden weltweit verkauft - Steve Jobs hatte das Produkt gebackt",
+    "Es brauchte Jahrzehnte Forschung, bis die blaue LED erfunden wurde - rot und gruen gab es vorher"
+  ],
+  "erfindungen": [
+    {
+      "name": "Habit Detector / Hoer auf",
+      "beschreibung": "Apple-Watch-App gegen Naegelkauen und Rauchen mit Gestenerkennung"
+    },
+    {
+      "name": "Riesengrosse Schlauchboot-Raftingbahn doppelte Wassermenge",
+      "beschreibung": "Vom verbotenen Actionpark inspiriert"
+    }
+  ],
+  "orte": [
+    "Klimasand",
+    "Hamburg",
+    "Berlin (Funkhaus)",
+    "Tropical Island",
+    "Action Park (USA)",
+    "Edinburgh",
+    "Centerpark/Aquamundo"
+  ],
+  "gaeste_erwaehnte": [
+    "Kalscher Candela",
+    "Crow / Drake",
+    "Schiau / Shahak Shapira",
+    "Eminem",
+    "Jay-Z",
+    "Farid Bang",
+    "Kollegah",
+    "Haftbefehl",
+    "PMA / Patrick mit Absicht",
+    "Money Boy",
+    "Shindy",
+    "John Bellion",
+    "Mac Miller",
+    "Matthieu Ricard",
+    "Eckhart Tolle",
+    "Stephen Hawking",
+    "Kendrick Lamar",
+    "Tom Hardy / Venom",
+    "Jasmin Wagner / Bluemchen",
+    "Aaron Carter",
+    "Macaulay Culkin",
+    "Michael Jackson",
+    "Hustensaftjuengling",
+    "Christoph Altmann",
+    "Lena (Sozialarbeiterin)",
+    "Brian (Fotograf)"
+  ],
+  "zitate": [
+    {
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Wird in dieser Folge erneut erwaehnt"
+    },
+    {
+      "text": "Auf jeden Fall glaube ich",
+      "kontext": "Vorschlag fuer Podcast-Titel - selbstbewusste Aussagen, die auf nichts fussen"
+    },
+    {
+      "text": "Frueher tat mir McCaulay Culkin so leid, Mann",
+      "kontext": "Fynn nach Aaron-Carter-Tod"
+    },
+    {
+      "text": "21 Gramm verlassen den Koerper",
+      "kontext": "Fynn ueber Seele und Sterben"
+    },
+    {
+      "text": "Pisse den Wind",
+      "kontext": "Nisse beim Deutschbuch-Witz"
+    },
+    {
+      "text": "Patrick mit Patrick mit Absicht Absicht",
+      "kontext": "Mittelnamen-Witz a la Macaulay Culkin"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Aman-Breakbeat",
+      "bedeutung": "Der meist gesampelte Drum-Loop der Musikgeschichte - laut Nisse so tief verankert, dass er nach Weltuntergang wiederkaeme"
+    },
+    {
+      "begriff": "Verdichtung",
+      "bedeutung": "Bauplanungsbegriff: Wie viel Boden auf einem Gebiet verdichtet/versiegelt werden darf"
+    },
+    {
+      "begriff": "Tufu",
+      "bedeutung": "Rapper von Sichtexot, in Nisses Rap-Top-Liste"
+    }
+  ]
+}

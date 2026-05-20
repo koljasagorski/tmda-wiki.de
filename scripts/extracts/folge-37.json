@@ -1,0 +1,188 @@
+{
+  "folge": 37,
+  "titel": "Carsten Maschmeyer ist Gemuese",
+  "laufzeit": "1:11:16",
+  "themen": [
+    "Amiga 1000 Praesentation Frank Elstner als menschlicher Computer",
+    "Andy Warhol als Amiga-Praesentator in USA",
+    "Florentin Will / Rocket Beans",
+    "Bones MC Produzent auf der Strasse getroffen",
+    "187 Strassenbande / Frost Cross Wand",
+    "Murat Aslam Graffiti-Connection",
+    "Graffiti Joint-Story (Yard, Baseballkeulen)",
+    "Ziege Bettina aus Norwegen",
+    "Junkie kokst neben Nisse in Glaskasten-Ausstellung",
+    "Flusssaeure-Graffiti Story",
+    "Cooler Raubueberfall-Tipp",
+    "Kalle Schwensen / Kalles Corner Einfuehrung",
+    "Kalle gibt Nisses Vater Geld zurueck",
+    "Random Anonymous Facts (RAF)",
+    "Einhorn Nationaltier Schottland",
+    "Upgrade der Woche: Alufolie Klebestreifen",
+    "Mensch wird mit Alufolie ausgeliefert",
+    "Klone (Selena Gomez, Jim Carrey, Donald Trump)",
+    "Paul McCartney Klon nach 1967",
+    "Olli Pocher klonen und neu erziehen",
+    "Startup: Feuchttuecher / Zero You Go / W Tissue Company",
+    "Spaeter befeuchtetes Trockentuch System",
+    "Carsten Maschmeyer wird zu Gemuese bei Pitch",
+    "Frank Thelen schreit 'Der ist Gemuese'",
+    "Sarah Engels ESC fuer Deutschland",
+    "World Cleanup Day mit Le Maison",
+    "ESA Tuete im Park",
+    "Aganti Projektmanagement-Tool fuer Airbus/ESA",
+    "Colin Turner als neuer James Bond (geleakt)",
+    "Franz Beckenbauer 'Liebe Gott freut sich ueber jedes Kind'"
+  ],
+  "kurzbeschreibung": "Erste Folge mit Kalles Corner (Anekdote ueber Kalle Schwensen)! Plus: Startup Zero You Go (komprimierte Feuchttuecher mit spaeterer Befeuchtung) und die irre Vorstellung, dass Carsten Maschmeyer beim Pitch zu Gemuese wird und Frank Thelen reagiert.",
+  "startup_idee": {
+    "idee": "Zero You Go / W Tissue Company (Feuchttuecher-Neuerfindung)",
+    "beschreibung": "Komprimierte Trockentuecher in Bananenhund-Geraet (wie Waterdrops), die erst beim Herausziehen durch eine Oese mit Seifenlauge und Wasser befeuchtet werden - leichter Transport, immer frisch, keine ausgetrockneten Tuecher mehr. Geplante Ausrichtung auch fuer Frauen-Hygieneprodukte, vom Staat finanziert.",
+    "punkte": 14,
+    "max_punkte": 24,
+    "begruendung": "Nach Visualisierung mit 'Bananenhund' aufgewertet von ursprueglicher Skepsis - 'das ist doch cool, die 14'"
+  },
+  "kalles_corner": {
+    "titel": "Kalle Schwensen gibt das Geld zurueck (Erste Kalles Corner)",
+    "inhalt": "Nisses Vater hatte mit Kalle Schwensen (sehr bekannte Hamburger Persoenlichkeit/Kaufmann auf St. Pauli, aus 5-Sterne-Lux-Doku ueber Zuhaelter) Business gemacht und Geld fuer ein Projekt geliehen. Kalle sagte: 'Wenn das hier in die Hose geht, gebe ich dir das bis auf den letzten Cent zurueck.' Das Projekt scheiterte. Nisses Vater dachte, das Geld sei weg (war ueber Firma, Wirtschaftsrisiko). Doch Kalle kam mit Koffer voll Bargeld an, Nisses Vater meinte: 'Kalle, unter uns - haettest das nicht machen muessen', wie Vorschuss. Kalle: 'Ich habe dir mein Wort gegeben und hier ist der Koffer und den nimmst du jetzt.' - Das bedeutete in Hamburg noch was."
+  },
+  "gerucht_der_woche": {
+    "ueber": "Colin Turner / neuer James Bond",
+    "inhalt": "Nisse hat auf der Berlinale die Managerin von Colin Turner getroffen, die verplappert hat, dass Colin Turner (Freund von Dua Lipa) der neue James Bond wird. Waere der erste Nicht-Englaender als Bond. Der prisma.de-Artikel hat zwar 'Fragezeichen' - TMDA macht 'Ausrufezeichen hinter Geruechte'."
+  },
+  "fun_facts": [
+    "Bei der Amiga 1000 Praesentation hat Frank Elstner in Deutschland die Funktionen des Computers mit Publikum als 'menschlicher Computer' nachgespielt",
+    "Andy Warhol hat den Amiga 1000 in den USA praesentiert",
+    "Einhorn ist das Nationaltier von Schottland",
+    "Koalabaeren haben fast identische Fingerabdruecke wie Menschen, von Forensikern kaum zu unterscheiden",
+    "Heute war 'World Cleanup Day'"
+  ],
+  "erfindungen": [
+    {
+      "name": "Zero You Go (W Tissue Company / Bananenhund)",
+      "beschreibung": "Geraet wie eine Kaffeemaschine: Trockentuecher werden oben eingespeist, beim Herausziehen durch Oese mit Seifenlauge/Frischwasser befeuchtet, am Ende durch Kamera-Verschluss-aehnliche Mechanik abgeschnitten - revolutionaere Feuchttuecher-Produktion zu Hause"
+    },
+    {
+      "name": "Alufolie ohne Klebestreifen (Hoerer-Idee Lars Kelbert)",
+      "beschreibung": "Loesung: Mensch wird mit jeder Folienrolle ausgeliefert, der die Folie haelt - bekaempft Arbeitslosigkeit"
+    },
+    {
+      "name": "Olli Pocher klonen und neu erziehen",
+      "beschreibung": "Klon mit Liebe aufziehen und dann verhungern lassen, damit er erkennt was er haette sein koennen - philosophisches Klon-Experiment"
+    }
+  ],
+  "orte": [
+    "Hamburg (Polizeiwache, St. Pauli, Hammerbrook, TU Harburg)",
+    "Retro Pop Hotel Hamburg",
+    "25 Hours Hotel Hafen City Hamburg",
+    "Westfield Einkaufszentrum Hafen City",
+    "Berlin",
+    "Norwegen",
+    "Indien",
+    "Wien (ESC)",
+    "Berlinale"
+  ],
+  "gaeste_erwaehnte": [
+    "Andy Warhol",
+    "Frank Elstner",
+    "Klaas",
+    "Florentin Will",
+    "Bones MC",
+    "Bobby Serano",
+    "Frost (Graffiti-Artist)",
+    "Murat Aslam (Fotograf)",
+    "Kalle Schwensen",
+    "Uwe (religioes)",
+    "Patrick mit Absicht",
+    "Carsten Maschmeyer",
+    "Frank Thelen",
+    "Selena Gomez",
+    "Jim Carrey",
+    "Donald Trump",
+    "Paul McCartney",
+    "Jeppy (Fynns Hund)",
+    "Olli Pocher",
+    "Sarah Engels",
+    "Pietro Lombardi",
+    "Daniel Craig",
+    "Tom Cruise",
+    "Dua Lipa",
+    "Colin Turner",
+    "Franz Beckenbauer",
+    "Pele",
+    "Till Lindemann",
+    "Sido",
+    "Bushido",
+    "Jeffrey Epstein (in Klammern)",
+    "Jen (Nisses Freundin)",
+    "Lars Kelbert (Hoerer)"
+  ],
+  "zitate": [
+    {
+      "text": "Ich erkenne an, dass euch etwas aufgefallen ist",
+      "kontext": "Wiederholtes Motto - im Stil von Til Lindemann als Krisenkommunikation"
+    },
+    {
+      "text": "Crazy crazy, gut gut",
+      "kontext": "Pele ueber Franz Beckenbauer in einer RTL-Doku - Running Gag"
+    },
+    {
+      "text": "Der liebe Gott freut sich ueber jedes Kind",
+      "kontext": "Franz Beckenbauers Antwort auf Vorwuerfe ueber uneheliche Kinder - als perfekte PR-Antwort gefeiert"
+    },
+    {
+      "text": "Karsten ist Gemuese",
+      "kontext": "Frank Thelens fiktive Reaktion bei Hoehle der Loewen, nachdem Carsten Maschmeyer durch Hirnschlag bei Pitch von Zero You Go zur Karotte wird"
+    },
+    {
+      "text": "Ich habe dir mein Wort gegeben und hier ist der Koffer und den nimmst du jetzt",
+      "kontext": "Kalle Schwensen zu Nisses Vater bei der Geldrueckgabe - Hamburger Ehrenkodex"
+    },
+    {
+      "text": "Lutsch mein Schwanz",
+      "kontext": "Sido-Zitat als universelle Krisen-Antwort"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Kalles Corner",
+      "bedeutung": "Neue TMDA-Rubrik ab Folge 37 - Anekdote ueber Kalle Schwensen (Hamburger Kaufmann/Persoenlichkeit von St. Pauli)"
+    },
+    {
+      "begriff": "Zero You Go",
+      "bedeutung": "Fynns Feuchttuecher-Startup - 'as you go home', auch fuer Damenhygiene"
+    },
+    {
+      "begriff": "Bananenhund",
+      "bedeutung": "Form des Zero-You-Go-Geraets - 'Jeff Koons fuer Arme'"
+    },
+    {
+      "begriff": "Cross",
+      "bedeutung": "Im Graffiti: Uebermalen einer fremden Marke - bei Heberbahnverbot und Schlaegen geahndet"
+    },
+    {
+      "begriff": "Yard",
+      "bedeutung": "Wartungsbereich fuer S/U-Bahnen, wo Graffiti-Crews nachts malen"
+    },
+    {
+      "begriff": "Flusssaeure",
+      "bedeutung": "Hochgiftige Saeure (Fluorwasserstoffsaeure), die Glas/Haut/Knochen aetzt, von Graffiti-Profis fuer Scheiben-Tags genutzt"
+    },
+    {
+      "begriff": "RAF",
+      "bedeutung": "Random Anonymous Facts - kurze unkommentierte Fakten-Rubrik"
+    },
+    {
+      "begriff": "Aganti",
+      "bedeutung": "Nisses Projektmanagement-Tool, das fuer Airbus/ESA bei der Triggerrakete eingesetzt wurde - Name beginnt mit A wegen Listensortierung"
+    },
+    {
+      "begriff": "ESC",
+      "bedeutung": "Eurovision Song Contest - 2026 vertritt Sarah Engels Deutschland"
+    },
+    {
+      "begriff": "Le Maison",
+      "bedeutung": "Schauspieleragentur in Hamburg, vergleichbar mit der Agentur aus 'Emily in Paris'"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "folge": 2,
+  "titel": "Tigerkaefig fuer Kontra K",
+  "laufzeit": "0:52:52",
+  "themen": [
+    "Tattoos und der Tag des Juengsten Gerichts",
+    "Nisses Job bei der Muellabfuhr und Schrottwert",
+    "Nahtoderfahrungen (Waschmaschine, Syrien-Dach)",
+    "Nikes vs. Adidas und Style-Switches",
+    "LKW-Plane-Idee mit Schwert-Skandal",
+    "Oekofit Fitnessstudio mit Stromerzeugung",
+    "Musik der Zukunft / nach dem Weltuntergang"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse schwadronieren ueber Tattoos vorm Juengsten Gericht, Nisses Vergangenheit bei der Muellabfuhr und Schrottmafia und Fynn pitcht seine ersten Startup-Ideen mit absurden Verfeinerungen wie einem Samurai-Schwert.",
+  "startup_idee": {
+    "idee": "LKW-plane-kostenlos.de",
+    "beschreibung": "Plattform, die Speditionen mit beschaedigten LKW-Planen und Werbetreibende verbindet: Werbetreibender bezahlt neue Plane mit Branding, LKW-Fahrer faehrt weiter - aufgepeppt durch ein Samuraischwert, mit dem man Planen anschneidet, um Akquise zu betreiben",
+    "punkte": 19,
+    "max_punkte": 24,
+    "begruendung": "Nisse: Mit dem Schwert eine 19, ohne nur eine 6 - das Detail (Schwert) bringt den Sprung wie eine gelbe Tennisball-Faerbung"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Wenn man sich den ganzen Arm schwarz taetowieren laesst, zieht man mehr Hitze an und kann nicht mehr in die Sonne",
+    "Der ganze Sack/die Hoden sind aus Designer-Sicht ueberfluessig laut Fynn",
+    "Bei Damm-Lauf (Mueltransportbetrieb 'Fair Edelhoff') findet ein Mitarbeiter einen Ring fuer 15.000 EUR im Sperrmuell - die Besitzerin schenkt ihn ihm"
+  ],
+  "erfindungen": [
+    {
+      "name": "LKW-plane-kostenlos.de",
+      "beschreibung": "Werbe-Plattform fuer beschaedigte LKW-Planen mit Schwert-Akquise"
+    },
+    {
+      "name": "Echofit / Oekofit",
+      "beschreibung": "Fitnessstudio, in dem die Sportgeraete Strom erzeugen; Mitgliedschaft sinkt mit erzeugtem Strom, Punktesystem, Goodies, Meisterschaften"
+    }
+  ],
+  "orte": [
+    "Cuxhaven (Edelhoff/Niedersachsen)",
+    "Hamburg",
+    "Berlin",
+    "Syrien (Skatepark-Bau, Dach)",
+    "Klimasand"
+  ],
+  "gaeste_erwaehnte": [
+    "Shindy",
+    "Bushido",
+    "Diggy/Diggs (Kollegen)",
+    "Philip (Produzent)",
+    "Lars (Kumpel)",
+    "Franzi (Fynns Partnerin)",
+    "Laura Kampf"
+  ],
+  "zitate": [
+    {
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Wird in Folge 2 nochmal aufgegriffen"
+    },
+    {
+      "text": "Gib mal von 1 bis 24 Punkte",
+      "kontext": "Erstmalige Etablierung des Punktesystems"
+    },
+    {
+      "text": "Wenn du Wallraff bist und das mit dem Schwert machst",
+      "kontext": "Fynns Logo-Idee fuer LKW-plane-kostenlos.de"
+    },
+    {
+      "text": "Es gibt das Gesetz der Schmierung",
+      "kontext": "Nisses 'Gesetz', dass 8% aller Leistung weltweit durch unzureichende Schmierung verloren gehen"
+    },
+    {
+      "text": "Ich pump das einfach in so ein Stueck Schwein",
+      "kontext": "Fynn ueber Muecken/Zecken servieren"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Klimasand",
+      "bedeutung": "Fynns Hofgelaende/Projekt in der Region"
+    },
+    {
+      "begriff": "Tadu / TADUlied",
+      "bedeutung": "Tag des Juengsten Gerichts - Witz darueber, was Gott zu Tattoos sagt"
+    },
+    {
+      "begriff": "Patrick mit Absicht / PMA",
+      "bedeutung": "Rapper, dessen Name Nisse fuer den besten MC-Namen aller Zeiten haelt"
+    }
+  ]
+}

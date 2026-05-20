@@ -1,0 +1,133 @@
+{
+  "folge": 5,
+  "titel": "Hausverbot auf Kreuzfahrtschiff mit Mark Forster",
+  "laufzeit": "0:49:06",
+  "themen": [
+    "AirPod-Fernsteuerung mit Liam-Gallagher-Frisur",
+    "Nisses ESC-Hausverbot",
+    "Schulzeit und 'aus dem Jungen wird nichts'",
+    "Blutsbrueder-Schaft und China-und-Plastik-Rollergang",
+    "Patent-Strategien",
+    "Mark-Forster-Cover-Cruise",
+    "Stimmverstellung am Adamsapfel"
+  ],
+  "kurzbeschreibung": "Nisse erzaehlt, wie er beim ESC als deutscher Songwriter Kamera-Bombing betrieb und dafuer eine eigene schwarze Liste bekam. Fynn pitcht 'Punching Bulb' und gemeinsam planen sie eine Kreuzfahrt zu einer Mark-Forster-Coverband.",
+  "startup_idee": {
+    "idee": "Punching Bulb / Lightning Ball",
+    "beschreibung": "Lampe in Form eines Punching Balls an einer Feder, gegen die man im Vorbeigehen schlagen kann - 49,90 EUR pro Stueck, Mutterfirma 'könnte könnte' aus Schweden, Vertrieb primaer ueber IKEA",
+    "punkte": 2,
+    "max_punkte": 24,
+    "begruendung": "Nisse startet bei 3 von 24 ('voll das so noch nett'), faellt nach Fynns endlosem Pitch auf 2 - 'manche Ideen gehen umso laenger du redest eher nach unten'"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Liam Gallagher dachte, dass A$AP Rocky 'What's Ricky' heisst",
+    "Steve Jobs' Krebs koennte laut Verschwoerung von den elektromagnetischen Stroemen seines MacBooks auf dem Schoss gekommen sein",
+    "EU-Haushalte haben durchschnittlich 32 Lampen, US-Haushalte 50-67, australische 48",
+    "Es gibt 2,4 Milliarden Haushalte auf der Welt mit 80-120 Milliarden Lampen",
+    "Trick zur Stimmen-Tieferlegung: Adamsapfel hochziehen mit zwei Fingern - aber dabei nicht reden, sonst feuchte Augen"
+  ],
+  "erfindungen": [
+    {
+      "name": "Punching Bulb / Lightning Ball / könnte könnte",
+      "beschreibung": "Punching-Ball-Lampe an Feder, schwedische Marke, ueber IKEA vertrieben"
+    },
+    {
+      "name": "Fernlenk-AirPod-Coaching",
+      "beschreibung": "Fremdsteuerung durch Freund mit Airpods unter Liam-Gallagher-Haaren fuer wichtige Lebenssituationen"
+    },
+    {
+      "name": "Super Soaker mit Samuraischwert vorne",
+      "beschreibung": "Kombi-Erfindung als Beispiel fuer Patent-Diskussion"
+    },
+    {
+      "name": "Haartrockner an Waescheklammer",
+      "beschreibung": "Beispiel-Erfindung fuer Kombi-Patente - Person haengt an Waescheleine"
+    }
+  ],
+  "orte": [
+    "ESC (Eurovision Song Contest)",
+    "Klimasand",
+    "Centerpark Aquamundo",
+    "Kreuzbergrum (Berlin)",
+    "Grand Canyon (hypothetisch Zipline)"
+  ],
+  "gaeste_erwaehnte": [
+    "Liam Gallagher",
+    "A$AP Rocky",
+    "Sacha Baron Cohen",
+    "Jim Carrey",
+    "Sam L. Jackson",
+    "Stefan Raab",
+    "Lena Meyer-Landrut",
+    "Guildo Horn",
+    "Max Mutzke",
+    "Michelle Schulte",
+    "Christoph Altmann",
+    "Franzi",
+    "Aminata Belli",
+    "Bruno (Intimate)",
+    "Udo Lindenberg",
+    "Robbie Williams",
+    "Scooter",
+    "Boese Onkelz",
+    "Rammstein",
+    "Mark Forster",
+    "Helene Fischer",
+    "Lukas (schenkt Fynn Sachen mit Gesichtern)",
+    "Steve Jobs"
+  ],
+  "zitate": [
+    {
+      "text": "Es gibt eine schwarze Liste nur fuer mich, das ist so Punkt 1 Nisse und danach kommt einfach keiner mehr",
+      "kontext": "Nisses ESC-Hausverbot"
+    },
+    {
+      "text": "Aus diesem Jungen wird niemals etwas werden",
+      "kontext": "Fynns Grundschullehrerin Frau Grundwald ueber Fynn"
+    },
+    {
+      "text": "China und Plastik",
+      "kontext": "Name von Franzis Roller-Gang in der Jugend"
+    },
+    {
+      "text": "Bro, hey Bro",
+      "kontext": "Nisses Surfer-Typ-Imitation beim Blutsbrueder-Szenario"
+    },
+    {
+      "text": "Hose ausziehen",
+      "kontext": "Fynn als verzweifelter Startup-Gruender"
+    },
+    {
+      "text": "Ich habe lang nicht so eine Scheisse gehoert",
+      "kontext": "Nisse zur 80-120 Milliarden Lampen-Rechnung"
+    },
+    {
+      "text": "Bei mir ist alles okay. Das perfekte Ende",
+      "kontext": "Nisses Abschluss nach dem Adamsapfel-Trick"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Hassler",
+      "bedeutung": "Wird hier durch Nisses ESC-Kamera-Robben definiert: 'Ich hassel mich zum Entertainment hin'"
+    },
+    {
+      "begriff": "Nisseliste",
+      "bedeutung": "Die ESC-Hausverbots-Liste, auf der nur Nisse steht"
+    },
+    {
+      "begriff": "Frau Grundwald",
+      "bedeutung": "Fynns Grundschullehrerin, Synonym fuer fehlende Foerderung in der Kindheit"
+    },
+    {
+      "begriff": "Punching Bulb",
+      "bedeutung": "Fynns Erfindung der Folge - Punching-Ball-Lampe"
+    },
+    {
+      "begriff": "Christoph Altmann",
+      "bedeutung": "Wiederkehrende Figur, der 'Pizzamann' der in jeder Folge vorkommen soll"
+    }
+  ]
+}

@@ -288,6 +288,117 @@ tr:hover td { background: var(--bg-elev-2); }
 }
 .repo-link:hover { border-color: var(--accent); color: var(--accent); }
 
+/* ---------- Stats grid (Home) ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+.stat {
+  display: block;
+  text-align: center;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 12px;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.stat:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--fg); }
+.stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+.stat-label { color: var(--fg-muted); font-size: 0.85rem; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ---------- Card variants ---------- */
+.card-highlight {
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 12%, var(--bg-elev)) 0%, var(--bg-elev) 60%);
+  border-color: color-mix(in oklab, var(--accent) 40%, var(--border));
+}
+.card-highlight:hover { border-color: var(--accent); }
+
+/* ---------- Score variants ---------- */
+.score small { opacity: 0.6; font-weight: 500; margin-left: 2px; font-size: 0.75em; }
+.score-large { font-size: 1.4rem; padding: 8px 16px; min-width: 70px; }
+
+/* ---------- Detail page ---------- */
+.detail-block { margin-top: 32px; }
+.detail-block h2 {
+  font-size: 1.25rem;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+.detail-block .card { margin-bottom: 12px; }
+
+/* ---------- Quotes ---------- */
+.quote {
+  margin: 0 0 16px;
+  padding: 18px 22px;
+  background: var(--bg-elev);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+.quote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+.quote-grid {
+  columns: 2;
+  column-gap: 16px;
+}
+.quote-grid .quote { break-inside: avoid; }
+@media (max-width: 720px) {
+  .quote-grid { columns: 1; }
+}
+
+/* ---------- Lists ---------- */
+.bulletlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.bulletlist li {
+  background: var(--bg-elev);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+/* ---------- Filter bar ---------- */
+.filter-bar {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  padding: 4px;
+  background: var(--bg-elev);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  width: fit-content;
+}
+.filter-bar a {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.filter-bar a:hover { color: var(--fg); }
+.filter-bar a.active { background: var(--bg-elev-2); color: var(--fg); }
+
 /* ---------- Misc ---------- */
 .kbd {
   font-family: var(--font-mono);

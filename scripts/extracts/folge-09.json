@@ -1,0 +1,73 @@
+{
+  "folge": 9,
+  "titel": "Felix Lobrechts Roboter beleidigt Kinder im Kliemannsland",
+  "laufzeit": "0:59:45",
+  "themen": [
+    "Five Guys als Fake-Sponsor und Eigenbewerbung",
+    "Felix Lobrecht hat in ein Padel-Startup investiert",
+    "Drakes angeblich gefakte Bauchmuskeln und Hennessy-Fotos",
+    "Nisse hat einen Personal Trainer",
+    "Kirchenaustritt - Nisse ist raus, Fynn überlegt",
+    "Bandwurm-Geschichte aus Fynns Kindheit",
+    "Hypothetisches Angebot: 100 Millionen vs. 100 Jahre gesundes Leben",
+    "Aggressive Unitree-Roboter als Klimansland-Attraktion",
+    "Ärger mit Beamtinnen auf dem Amt"
+  ],
+  "kurzbeschreibung": "Die Folge führt das Five Guys Fake-Sponsoring ein, behandelt Kirchenaustritt und Drakes Fitness-Fotos. Fynn stellt seine ambitionierte Haus-auf-einer-Waage-Idee vor und beide spinnen über Roboter, die Kinder anschreien.",
+  "startup_idee": {
+    "idee": "Uwe seine Waage / What Life Weights",
+    "beschreibung": "Jedes Haus steht auf einer Waage. Damit kann man bei Einbruch sofort sagen wieviel Kilogramm fehlen, hat eine Bandwurmdetection, sieht beim Sterben den 21-Gramm-Seelen-Verlust, kann den Umzugswagen passend buchen und weiß genau, was man besitzt. Beworben von Flying Uwe (Uwe ist im Haus). Kooperation mit Versicherung (Gothaer) und Techniker Krankenkasse.",
+    "punkte": 11,
+    "max_punkte": 24,
+    "begruendung": "Startete bei 2 Punkten, weil Umsetzung extrem schwer. Stieg auf 6 wegen Versicherungs-Co-Op, dann auf 10 wegen Seelen-Gramm-Idee, dann auf 11 wegen Flying-Uwe-Marketing-Hook."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Felix Lobrecht und Drake",
+    "inhalt": "Felix Lobrecht hat in eine neue Padel-Gründung investiert - laut Nisse sein erstes Investment, was bedeutet dass er bald keinen Bock mehr aufs Podcasten hat. Außerdem wird Drakes Fitness-Foto-Affäre (vermeintlich aufgemalte Bauchmuskeln) diskutiert sowie Montana Blacks Foto mit Drake backstage."
+  },
+  "fun_facts": [
+    "Wenn man sein T-Shirt auf links trägt, trägt 'das ganze Universum' es richtig herum und nur man selbst ist 'draußen'",
+    "Flohsamenschalen funktionieren wie ein Spreizer im Darm (Feuerwehr-Werkzeug-Vergleich)",
+    "Folge 5 und 6 von TMDA wurden zu 60% komplett durchgehört",
+    "Eine Seele wiegt 21 Gramm (im Kontext der Hauswaagen-Idee)"
+  ],
+  "erfindungen": [
+    {"name": "Uwe seine Waage / What Life Weights", "beschreibung": "Haus auf einer Waage zur Detection von Einbrüchen, Bandwürmern und Seelenverlust"},
+    {"name": "Aggressive Unitree-Roboter", "beschreibung": "Zwei Kung-Fu-Roboter (je 6000$) mit ChatGPT-Integration auf einem Schrottplatz im Klimansland, die Besucher beleidigen ('Verpiss dich, du verfickter Gnom') - mit Kind-Detection für jugendgerechtere Sprache"}
+  ],
+  "orte": [
+    "Klimansland",
+    "Tirol",
+    "Rumänien (Kapelle)",
+    "Vatikan",
+    "Berlin (Padel-Plätze)",
+    "Stadtamt"
+  ],
+  "gaeste_erwaehnte": [
+    "Felix Lobrecht",
+    "Klaas Heufer-Umlauf",
+    "Drake (Drizzy)",
+    "Montana Black",
+    "Karl Lauterbach",
+    "Flying Uwe",
+    "Toby Maguire",
+    "Spider-Man",
+    "Steady",
+    "Arne",
+    "Maike Rudolph"
+  ],
+  "zitate": [
+    {"text": "Wenn jede Wohnung gewogen werden würde", "kontext": "Fynn übt den Satz mehrfach, den Karl Lauterbach/Flying Uwe sagen soll"},
+    {"text": "Uwe ist im Haus", "kontext": "Marketing-Slogan für Flying Uwe-Kooperation der Waagen-Idee"},
+    {"text": "Verfickter Gnom raus, raus", "kontext": "Was die Klimansland-Roboter zu kleinen Kindern sagen sollen"},
+    {"text": "Ich weiß nicht, ob sie das können", "kontext": "Der Satz von Beamten/Verkäufern, den Nisse hasst"},
+    {"text": "Wir sind nicht beratend tätig", "kontext": "Beamtin auf dem Amt"},
+    {"text": "Der Aufstand der Roboter", "kontext": "Fynn über die Strategie, Beamte mit 'ich hätte noch eine Frage und zwar' zu nerven"}
+  ],
+  "glossar": [
+    {"begriff": "Mittelpodcast", "bedeutung": "Fynns Selbstbezeichnung: TMDA als perfekte Mischung/Mitte aller Podcast-Genres - Männerpodcast, Laberpodcast, Wissenschaftspodcast, Promy-Podcast, True Crime"},
+    {"begriff": "Five Guys-Sponsoring", "bedeutung": "Laufender Gag: Fynn findet Nisses Five Guys Cap im Auto und 'bewirbt' das gesamte Format als Sponsor, obwohl Five Guys nichts davon weiß"},
+    {"begriff": "Mach deine Scheiße Tag", "bedeutung": "Nisses erfundener Tag am ersten Sonntag im Jahr, an dem alle aufgeschobenen Erledigungen gemacht werden"}
+  ]
+}

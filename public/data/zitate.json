@@ -1,4 +1,941 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 187,
+  "items": [
+    {
+      "folge": 47,
+      "text": "Das kleine ganz gross machen, das grosse ganz klein machen.",
+      "kontext": "Udo Lindenbergs Sprache, wie Stuckrad-Barre in 'Panikherz' beschreibt."
+    },
+    {
+      "folge": 47,
+      "text": "You must not become the most likely version of yourself.",
+      "kontext": "Nisses Mantra aus dem Innsbruck-Vortrag, hier wieder als Aufforderung zum Kuenstlertum."
+    },
+    {
+      "folge": 47,
+      "text": "Hallo, Stoesschen erstmal auf unsere Freundschaft.",
+      "kontext": "Nisse macht Udo Lindenberg nach, der die Aliens am Neptun 234 ueberzeugen soll, das schwarze Weltkleid zu tragen."
+    },
+    {
+      "folge": 46,
+      "text": "He would make money.",
+      "kontext": "Antwort der hypothetischen 'What would Lee Katching do?'-Plattform, die immer Geld als Loesung vorschlaegt."
+    },
+    {
+      "folge": 46,
+      "text": "Mach den Weg.",
+      "kontext": "Letzte Worte der Mutter im RAF-Storytelling am Ende - bzw. eine Verwechslung mit Tommy auf der Beerdigung, der gar nich…"
+    },
+    {
+      "folge": 46,
+      "text": "Pip hasst Frank. Tiefer triefender Hass wie Bones und Bushido.",
+      "kontext": "Nisse erklaert die Beziehung zwischen Pip Klockner und Frank Thelen."
+    },
+    {
+      "folge": 45,
+      "text": "Vermoegen ist das, was du nicht gekauft hast.",
+      "kontext": "Spruch im Rihanna-Manager-Prozess, von dem Fynn beeindruckt war (aber spaeter revidiert wird)."
+    },
+    {
+      "folge": 45,
+      "text": "Ich kotze. Ich kotze mal wiederholen, ich kotze.",
+      "kontext": "Franzi nach drei Saetzen Poetry Slam in einem 'Tierheim'."
+    },
+    {
+      "folge": 45,
+      "text": "Don't let the label label you.",
+      "kontext": "Fynns Street-Art Spruch."
+    },
+    {
+      "folge": 44,
+      "text": "Halt deine Fresse, du Arschloch.",
+      "kontext": "Was ein 12-jaehriger sagt, wenn der ekelige Onkel ihm an der bereits geschlossenen Fontanelle herumdrueckt."
+    },
+    {
+      "folge": 44,
+      "text": "Erst seid ihr fuer Windraeder, jetzt seid ihr gegen Windraeder.",
+      "kontext": "Fynn ueber die Reaktion der letzten Generation / Fridays for Future / Naturschutzverbaende auf seine Windrad-Hologramm-…"
+    },
+    {
+      "folge": 44,
+      "text": "Freiheit ist nicht das tun zu koennen, was man will. Freiheit ist das nicht machen zu muessen, was man nicht machen moechte.",
+      "kontext": "Zitat, das Nisses Therapeut zu ihm gesagt hat."
+    },
+    {
+      "folge": 43,
+      "text": "Raus aus der Wohnung, ran an den Koerper.",
+      "kontext": "Fynns Mantra fuer die Startup-Idee-Suche, das im Laufe der Folge mehrfach wiederholt wird."
+    },
+    {
+      "folge": 43,
+      "text": "Du musst nicht die wahrscheinlichste Version von dir selbst werden.",
+      "kontext": "Nisse zitiert aus seinem Vortrag in Innsbruck (you must not become the most likely version of yourself)."
+    },
+    {
+      "folge": 43,
+      "text": "Kannst du mal ins Maul machen, wenn du Bock auf Steifen hast.",
+      "kontext": "Werbung fuer das Buch 12 Minuten von Paulo Coelho mit Stuckrad-Barre und Elevator Boys als Testimonials."
+    },
+    {
+      "folge": 42,
+      "text": "Trockener Flutschi in Moskau.",
+      "kontext": "Imaginiertes Bosse-Album-Titel-Lied, das Finn vorschlaegt"
+    },
+    {
+      "folge": 42,
+      "text": "Wenn die Hummel das schafft, dann schaffst du das auch.",
+      "kontext": "Hummel-Motivation als Telegram-Gruppenfoto"
+    },
+    {
+      "folge": 42,
+      "text": "Optimerer von Deutschland macht, was er machen muss.",
+      "kontext": "Finn als Selbst-Optimierer wie in Dubai"
+    },
+    {
+      "folge": 42,
+      "text": "Der Junge ist mu(e)de.",
+      "kontext": "Selbstbeschreibung Finns - die Folge ist aus Muedigkeit besonders alber"
+    },
+    {
+      "folge": 42,
+      "text": "Wenn du da nicht fuer 30 Minuten aufgeregt wie so ein kleiner Junge bist, dann geh da nicht hin.",
+      "kontext": "Nisses Ratschlag zur Spielsucht - Verweis auf Casino-Folge davor"
+    },
+    {
+      "folge": 41,
+      "text": "Champions League der Gestoerten Hitler, Goebbels, Himmler.",
+      "kontext": "Finns Statement an Rechtsradikale - die Vorbilder waren auf einem Niveau, das heutige Rechte nicht erreichen koennen"
+    },
+    {
+      "folge": 41,
+      "text": "Es ist die wahrscheinlich krasseste Sache, die ich je gemacht habe.",
+      "kontext": "Nisse ueber seine Dunlop Padel-Kooperation"
+    },
+    {
+      "folge": 41,
+      "text": "Ein schoener Tag, die Welt steht still.",
+      "kontext": "Finn fuehlt sich nach Casino-Gewinn wie Mann aus Krombacher-Werbung"
+    },
+    {
+      "folge": 41,
+      "text": "Rechtes Gedankengut bleibt draussen.",
+      "kontext": "Finns Position fuer das Mofarennen im Klimansland"
+    },
+    {
+      "folge": 41,
+      "text": "Zwei Schritte vor, kein zurueck.",
+      "kontext": "Finn beim Casino-Besuch"
+    },
+    {
+      "folge": 40,
+      "text": "Du bist der Teufel wieder mal.",
+      "kontext": "Nisse zu Finn nach der Kofferreisen-Idee mit Kindern"
+    },
+    {
+      "folge": 40,
+      "text": "Ihr wisst nicht mal, wie ich aussehe!",
+      "kontext": "Kalle Schwensen springt im Gerichtssaal auf nach dem Doppelgaenger-Trick"
+    },
+    {
+      "folge": 40,
+      "text": "Gib mir mal so eine richtige Drohenvorstellung der Zukunft.",
+      "kontext": "Finn ueber sein neues Plastikblumen-Geschaeft"
+    },
+    {
+      "folge": 39,
+      "text": "Maenner muessen in Therapie, Maenner muessen zuhoeren, dass wir halt einfach die Schnauze halten und es besser machen sollten.",
+      "kontext": "Nisses Statement zur Cosima Fernandes Sache"
+    },
+    {
+      "folge": 39,
+      "text": "Ich gehe jetzt einfach von einem Therapeuten zum naechsten und macht das alle.",
+      "kontext": "Appell, Therapie als Normalitaet zu sehen"
+    },
+    {
+      "folge": 39,
+      "text": "Spermer und Urin kommt auch aus dem gleichen Loch.",
+      "kontext": "Folge 40 Vorgriff - bzw. Vergleich zu Traenen und Lachen"
+    },
+    {
+      "folge": 38,
+      "text": "Wenn du mir die Brille abnimmst, bringe ich dich um.",
+      "kontext": "Kalle Schwensen waehrend er angeschossen auf der Trage zum Krankenhaus liegt"
+    },
+    {
+      "folge": 38,
+      "text": "Ich heisse Mucki und dann Zeit um Kontakt verloren.",
+      "kontext": "Imaginierte Jumanji-Seance mit Mucki Pinzner"
+    },
+    {
+      "folge": 38,
+      "text": "Wer diese Folge teilt, koennt ihr einen Two Finger Records Hoodie gewinnen.",
+      "kontext": "Werbung am Ende der Folge"
+    },
+    {
+      "folge": 37,
+      "text": "Ich erkenne an, dass euch etwas aufgefallen ist",
+      "kontext": "Wiederholtes Motto - im Stil von Til Lindemann als Krisenkommunikation"
+    },
+    {
+      "folge": 37,
+      "text": "Crazy crazy, gut gut",
+      "kontext": "Pele ueber Franz Beckenbauer in einer RTL-Doku - Running Gag"
+    },
+    {
+      "folge": 37,
+      "text": "Der liebe Gott freut sich ueber jedes Kind",
+      "kontext": "Franz Beckenbauers Antwort auf Vorwuerfe ueber uneheliche Kinder - als perfekte PR-Antwort gefeiert"
+    },
+    {
+      "folge": 37,
+      "text": "Karsten ist Gemuese",
+      "kontext": "Frank Thelens fiktive Reaktion bei Hoehle der Loewen, nachdem Carsten Maschmeyer durch Hirnschlag bei Pitch von Zero Yo…"
+    },
+    {
+      "folge": 37,
+      "text": "Ich habe dir mein Wort gegeben und hier ist der Koffer und den nimmst du jetzt",
+      "kontext": "Kalle Schwensen zu Nisses Vater bei der Geldrueckgabe - Hamburger Ehrenkodex"
+    },
+    {
+      "folge": 37,
+      "text": "Lutsch mein Schwanz",
+      "kontext": "Sido-Zitat als universelle Krisen-Antwort"
+    },
+    {
+      "folge": 36,
+      "text": "Diese verdammten Roboter",
+      "kontext": "Running Gag der Folge - Anti-KI/Roboter-Satz"
+    },
+    {
+      "folge": 36,
+      "text": "Consider gezogen / CG",
+      "kontext": "Neues Jugendwort - rueckwirkende Reue"
+    },
+    {
+      "folge": 36,
+      "text": "Wer sein wer sein Gedicht kennt, indem es um Vergewaltigung seinerseits geht, der kann sich den Rest schon denken",
+      "kontext": "Nisses Andeutung zu Rammstein/Till Lindemann"
+    },
+    {
+      "folge": 35,
+      "text": "Wir polen hier gerade nur unser Ei und wir warten darauf, dass er uns antwortet darauf",
+      "kontext": "Boris Brand-Antwort kommt aus letzter Folge"
+    },
+    {
+      "folge": 35,
+      "text": "Litter Fit",
+      "kontext": "Wortspiel mit 'Litter' und 'fit' bei der Litfasssaeulen-Klettersaeule"
+    },
+    {
+      "folge": 35,
+      "text": "Hier guck mal, ich muss den Krieg ziehen",
+      "kontext": "Telefon-Streich-Geschichte mit Oma Irmgard und der Brand-Anschlag"
+    },
+    {
+      "folge": 34,
+      "text": "Soeldnersport, Voelkermord",
+      "kontext": "Nisses Doppelreim - 'ein guter Doppelreim, wo der auch sehr sehr viel Sinn macht'"
+    },
+    {
+      "folge": 34,
+      "text": "Ich liebe das, wenn du lacht. Wenn du lacht, bin ich auch immer komplett...",
+      "kontext": "Hoererkommentare zu Nisses Lachen"
+    },
+    {
+      "folge": 34,
+      "text": "Wir sind ein gutes Team",
+      "kontext": "Wiederholt nach der Steuerquartett-fuer-Europa-Idee"
+    },
+    {
+      "folge": 34,
+      "text": "Crazy crazy, gut gut",
+      "kontext": "Pele ueber Beckenbauer (kommt eigentlich erst in Folge 37, hier nicht zitiert)"
+    },
+    {
+      "folge": 33,
+      "text": "Ohne Migration geht es nicht",
+      "kontext": "Der wichtigste Satz aus Brandenburg in den letzten 24 Tagen - in Bezug auf IKEA Aufnahmeort"
+    },
+    {
+      "folge": 33,
+      "text": "Ich nahm etwas LSD, dann ass sie ein Kuchen von meiner Grossmutter. Sie hat gesagt, dass sie ihn selbst gemacht hat. Ich sagte, das glaube ich dir nicht, weil es das selbst nicht gibt.",
+      "kontext": "Battle-Rap Zitat von Josef Steinschleuder, das Fynn beeindruckt"
+    },
+    {
+      "folge": 33,
+      "text": "Wie wir flackern, wie wir lagern",
+      "kontext": "Hamburg-Hafen-Song zu Jonas von Schwans Gefrierfach"
+    },
+    {
+      "folge": 32,
+      "text": "Wir gehen zu Steady",
+      "kontext": "Finn ueber den ersten Studiobesuch von Nisse bei Steady, mit grossem iMac als Vorspiel-Geraet"
+    },
+    {
+      "folge": 32,
+      "text": "Was wollt ihr? Steig ein. Steig ein.",
+      "kontext": "Uwe von der Eisfabrik, der nach 5,5 Stunden Wartezeit in einem Renault Twingo mit 200 Sachen vorfaehrt und die beiden d…"
+    },
+    {
+      "folge": 32,
+      "text": "Geschmacklose Scheisse",
+      "kontext": "Uwes Reaktion auf Finns Hausboot-Video"
+    },
+    {
+      "folge": 32,
+      "text": "Na ja, wie dem auch sei",
+      "kontext": "Finns wiederkehrender Spruch zum Themenwechsel oder zur Bagatellisierung peinlicher Aussagen - 'die geilste Unterbrechu…"
+    },
+    {
+      "folge": 31,
+      "text": "Bist jetzt cool oder was?",
+      "kontext": "Frederik Lau zu Finn beim ersten Kennenlernen in der Torstrasse in Berlin vor 10 Jahren"
+    },
+    {
+      "folge": 31,
+      "text": "Stress auf der Torstrasse Frederik Lau, 10 Jahre her",
+      "kontext": "Liest sich wie ein Bushido-Text"
+    },
+    {
+      "folge": 31,
+      "text": "Zwei Schritte vor, kein zurueck",
+      "kontext": "Wiederkehrendes Motto der Folge (Freiwild/Stahlgewitter-Stil)"
+    },
+    {
+      "folge": 31,
+      "text": "Mein Vorsatz fuer dieses Jahr ist Jan Marsalek finden.",
+      "kontext": "Finns Padel-Kumpel Tilman (Musiker) im Auto"
+    },
+    {
+      "folge": 31,
+      "text": "Er hat den Power einfach zu oft gesetzt",
+      "kontext": "Imaginaerer Notarzt-Satz, was als Todesursache bei Finns Beerdigung auf seinem Grab steht"
+    },
+    {
+      "folge": 29,
+      "text": "In the beginning they say you crazy. And then they ask: How did you do it?",
+      "kontext": "Phasen-Modell, angewendet auf den Anzeigenhauptmeister - 'wir sind in Phase 3 angekommen'"
+    },
+    {
+      "folge": 29,
+      "text": "Es ist mir eingefallen, ich kenne der das mal gemacht hat. In die eigene Hand geschissen.",
+      "kontext": "Nisses Story von einem Typen beim Hurricane-Festival in Schessel, der sich in die Hand schiss und mit Bier abwusch"
+    },
+    {
+      "folge": 29,
+      "text": "Wir nannten ihn Suppe",
+      "kontext": "Materia/Maximator Song-Zitat ueber einen zahnlosen Saenger"
+    },
+    {
+      "folge": 28,
+      "text": "Klar, ganz direkt. Der Podcast von Finn Kliman und Nisse heisst...",
+      "kontext": "ChatGPT, das trotz Anweisung weiter mit Einleitungen anfaengt"
+    },
+    {
+      "folge": 28,
+      "text": "Bist jetzt cool oder was?",
+      "kontext": "Frederik Lau zu Finn beim Kennenlernen in der Torstrasse (wird in spaeterer Folge erzaehlt - hier nicht)"
+    },
+    {
+      "folge": 28,
+      "text": "Ich glaube ich habe mir echt in die Hose gekackt",
+      "kontext": "Nisse zu Brian im Auto auf dem Weg zu Tim Wieses Charity Pokerturnier"
+    },
+    {
+      "folge": 27,
+      "text": "Hattest du mal einen schweren Unfall oder so?",
+      "kontext": "Barbara Schoeneberger zu Finn im Podcast 'Mit den Waffeln einer Frau', spielt auf seine Augenringe an"
+    },
+    {
+      "folge": 27,
+      "text": "Ich war auf der Versteckung",
+      "kontext": "Finn ueber sein Reiseleben als 'No-Maedchen' (Nomade)"
+    },
+    {
+      "folge": 27,
+      "text": "Die aufgespritzten Lippen werden niemals luegen hier",
+      "kontext": "Finn ueber Filler/Botox als Werbestrategie statt Wkippen"
+    },
+    {
+      "folge": 27,
+      "text": "It's working",
+      "kontext": "Idris Elba angeblich, als er sein Handy mit seiner Wachsfigur entsperrt"
+    },
+    {
+      "folge": 26,
+      "text": "Hartz 4 Raupe",
+      "kontext": "Bezeichnung fuer normalen Regionalzug; gibt der Folge den Titel"
+    },
+    {
+      "folge": 26,
+      "text": "Erste Klasse Gerhard Schroeder",
+      "kontext": "Gegenstueck zur Hartz 4 Raupe: der ICE"
+    },
+    {
+      "folge": 26,
+      "text": "Brennsuppe daher gebremst",
+      "kontext": "DDR-Idiom fuer eine etwas dumme Person - Mehl mit Wasser"
+    },
+    {
+      "folge": 26,
+      "text": "Optimierer fuer Deutschland",
+      "kontext": "Finns Selbstbezeichnung: 'Die einen sagen Fuehrer, die anderen sagen der Optimierer'"
+    },
+    {
+      "folge": 26,
+      "text": "Ich bin hochbegabt",
+      "kontext": "Finns Spontan-Luege auf der Versteigerung, als jemand sein Fidget-Tool fuer ADHS-Hilfsmittel hielt"
+    },
+    {
+      "folge": 26,
+      "text": "Cringe drueber als drunter",
+      "kontext": "Finns Tipp fuer hochrangige Situationen: lieber cringy auffallen als gar nicht"
+    },
+    {
+      "folge": 26,
+      "text": "Lass uns einfach machen",
+      "kontext": "Nisses Lebensmotto, das Finn wegen Natalie-Naming aufruft"
+    },
+    {
+      "folge": 25,
+      "text": "Technologia",
+      "kontext": "Indisches Akzent-Meme, das Nisse zu imitieren versucht"
+    },
+    {
+      "folge": 25,
+      "text": "I don't do stairs",
+      "kontext": "Beruechtigte Mariah Carey Rider-Anforderung"
+    },
+    {
+      "folge": 25,
+      "text": "Pumpernickel a little bit toasted and no butter",
+      "kontext": "Toto Wolff im Drive to Survive"
+    },
+    {
+      "folge": 25,
+      "text": "I love the earth so much. We have to protect it",
+      "kontext": "Katy Perry beim Aussteigen aus Raumkapsel"
+    },
+    {
+      "folge": 24,
+      "text": "Du siehst aus und ziehst dich aus wie ein Hechche",
+      "kontext": "Wiederholtes Lieblingszitat aus Strassenreport"
+    },
+    {
+      "folge": 24,
+      "text": "Penn doch wo du bist",
+      "kontext": "Slogan fuer das fahrbare Hotel"
+    },
+    {
+      "folge": 24,
+      "text": "Berentzen - irgendwo kommst du wieder raus",
+      "kontext": "Erfundener Slogan, jetzt fester Sponsor-Witz"
+    },
+    {
+      "folge": 24,
+      "text": "Wasser ist Leben",
+      "kontext": "Spruch, den Nisse von Micha Fritz geklaut hat"
+    },
+    {
+      "folge": 22,
+      "text": "Du siehst aus und ziehst dich aus wie ein Hechche",
+      "kontext": "Frankfurter Strassenreport-Zitat, das Finn liebt und immer wieder zitiert"
+    },
+    {
+      "folge": 22,
+      "text": "Do what moves you",
+      "kontext": "Bacardi-Slogan, den Finn fuer schlecht uebersetztes Englisch haelt"
+    },
+    {
+      "folge": 22,
+      "text": "Berentzen - irgendwo kommst du wieder raus",
+      "kontext": "Erfundener Slogan als Antwort auf Bacardi-Slogan"
+    },
+    {
+      "folge": 22,
+      "text": "Protect the Earth",
+      "kontext": "Schluss-Manifestation in Anlehnung an Katy Perrys Weltallflug-Aussage"
+    },
+    {
+      "folge": 21,
+      "text": "Ach noe",
+      "kontext": "Reaktion der Sexarbeiterin auf einen jungen unerfahrenen Freier, ausfuehrlich zelebriert"
+    },
+    {
+      "folge": 21,
+      "text": "Die Alternative fuer gemischtes Hack",
+      "kontext": "Selbstbeschreibung des Podcasts (AfG) nach Hoererkommentar"
+    },
+    {
+      "folge": 21,
+      "text": "Ich kritisiere mich ja selber",
+      "kontext": "Nisse zur eigenen Lache"
+    },
+    {
+      "folge": 21,
+      "text": "Stadtbild zerstoeren",
+      "kontext": "Anspielung auf Merz-Aussage, neu interpretiert als 'Cornern'"
+    },
+    {
+      "folge": 20,
+      "text": "Finn, du hast aber ganz schoen viel Duennes geredet.",
+      "kontext": "Josi Miller zu Fynn nach Anhoeren der Podcast-Clips."
+    },
+    {
+      "folge": 20,
+      "text": "Ihr seid immer kurz davor, gecancelt zu werden.",
+      "kontext": "Aussage einer Bekannten, die die beiden auf die Reichweite ihrer Aussagen hinweist."
+    },
+    {
+      "folge": 20,
+      "text": "Ihr haltet uns am Scheissen.",
+      "kontext": "Running-Gag-Werbespruch fuer Sponsoren wie Skoda, Berentzen, Netflix, Kinder Milchschnitte, Fanta."
+    },
+    {
+      "folge": 20,
+      "text": "This guy fucks.",
+      "kontext": "Silicon-Valley-Zitat ueber den groessten Loser der Truppe; Inspiration fuer den Charaker Sakofuckx."
+    },
+    {
+      "folge": 19,
+      "text": "Wenn das Produkt kostenlos ist, bist du das Produkt.",
+      "kontext": "Allgemeines Tech-Sprichwort, von Fynn im Kontext kostenloser Tools wie Google Maps benutzt."
+    },
+    {
+      "folge": 19,
+      "text": "Alternative fuer gemischtes Hack - AfG.",
+      "kontext": "Selbstpositionierung des Podcasts als Alternative zu 'Gemischtes Hack'."
+    },
+    {
+      "folge": 19,
+      "text": "Deine Feinde sind auch meine Feinde, Bruder.",
+      "kontext": "Wiederkehrendes Zitat (Farid Bang) ueber die Blutsbruderschaft zwischen Fynn und Nisse."
+    },
+    {
+      "folge": 19,
+      "text": "Fuck off.",
+      "kontext": "Bedeutung des Two-Finger Records Logos."
+    },
+    {
+      "folge": 18,
+      "text": "Deine Feinde sind auch meine Feinde.",
+      "kontext": "Farid Bang Zitat, das Fynn aus dem Stegreif nennt."
+    },
+    {
+      "folge": 18,
+      "text": "Ey Nisse, ist schon gut, was du machst, aber es geht noch besser, viel besser.",
+      "kontext": "Aussage eines Four-Music-Mitarbeiters auf der Weihnachtsfeier, die Nisse monatelang beschaeftigt hat."
+    },
+    {
+      "folge": 18,
+      "text": "Du isst das. Nee, ich esse das nicht. Du bleibst so lange essen sitzen, bis das aufgegessen ist.",
+      "kontext": "Anekdote ueber den hollaendischen Militaer-Mann, der Nisses Bruder Jos zwang zu Ende zu essen."
+    },
+    {
+      "folge": 17,
+      "text": "Ach nur irgendeine BCD.",
+      "kontext": "Savas zu Sido im 16-Bars-Rapquiz beim Wegwerfen von Nisses Demo-CD."
+    },
+    {
+      "folge": 17,
+      "text": "Hallo.",
+      "kontext": "Anekdote: Nisses Kumpel hat sich als 13-Jaehriger 'Hallo' in den Arm geritzt."
+    },
+    {
+      "folge": 17,
+      "text": "Das ist nicht so schoen wie mein lecker Tee.",
+      "kontext": "Vermeintliches NDR-Werbe-Zitat, das Nisse spontan einfaellt."
+    },
+    {
+      "folge": 16,
+      "text": "Mit dem Porsche bist du hier richtig gefickt.",
+      "kontext": "Fynn warnt seine Freundin vor einer Baustelle in Oesterreich, woraufhin direkt 100+ Porsche der Porsche-Berggrally vorb…"
+    },
+    {
+      "folge": 16,
+      "text": "Hier kommt Sido, hier kommt Matthias rein.",
+      "kontext": "Running Gag ueber Matthias Reim als Wortspiel."
+    },
+    {
+      "folge": 16,
+      "text": "Wenn du Porsche hast, bist du gefickt.",
+      "kontext": "Fynn ueber tiefergelegte Autos und Baustellenkanten."
+    },
+    {
+      "folge": 15,
+      "text": "Schönen Tag noch",
+      "kontext": "Stefan Effenbergs angebliche Erklärung vor Gericht statt 'blödes Arschloch' - als Reim"
+    },
+    {
+      "folge": 15,
+      "text": "Blickdicht",
+      "kontext": "Was Fynn vor sich hingemurmelt hat, als die EasyJet-Mitarbeiterin ihn nicht durchgelassen hat (gereimt mit 'alte F***')"
+    },
+    {
+      "folge": 15,
+      "text": "Hör auf zu bocken, reiß dich zusammen und mach endlich was produktives",
+      "kontext": "Fynns von ChatGPT zusammengefasstes Stier-Wochenhoroskop für Palina Rosinski"
+    },
+    {
+      "folge": 15,
+      "text": "Winning Tiger Blood",
+      "kontext": "Charlie Sheens Spruch während seines absoluten Absturzes"
+    },
+    {
+      "folge": 15,
+      "text": "Wir sind in Französien",
+      "kontext": "Insider-Bezeichnung für den Aufnahmeort in Frankreich"
+    },
+    {
+      "folge": 14,
+      "text": "Zeugenschutz für alle",
+      "kontext": "Subline von Reborn.de - Slogan der Startup-Idee"
+    },
+    {
+      "folge": 14,
+      "text": "Splash Master X / Kane Wall / Sky Crusher",
+      "kontext": "Beispielnamen die man sich bei Reborn.de aussuchen könnte"
+    },
+    {
+      "folge": 14,
+      "text": "Just shut the f*ck up",
+      "kontext": "Englisches Zitat aus dem Ben Affleck DVD-Kommentar zu Armageddon - Antwort des Regisseurs Michael Bay auf seine Skript-…"
+    },
+    {
+      "folge": 14,
+      "text": "Schnellfickerhose",
+      "kontext": "Bezeichnung für die alten Adidas-Hosen mit Magnet/Druckknöpfen seitlich"
+    },
+    {
+      "folge": 13,
+      "text": "Convers und nehme ein bisschen mehr Kohle mit",
+      "kontext": "Was der Basketballspieler hätte sagen können, wenn er nicht Nike-Aktien genommen hätte"
+    },
+    {
+      "folge": 13,
+      "text": "Stell nicht so viel Fragen",
+      "kontext": "Was Erwachsene Kindern beibringen, was aber laut Stickmat-Berater die Neugier abtötet"
+    },
+    {
+      "folge": 13,
+      "text": "Der Mörder in meinem Telefonbuch",
+      "kontext": "Möglicher Buchtitel oder Folgentitel über die Vermutung, dass jeder einen Mörder im Telefonbuch hat"
+    },
+    {
+      "folge": 13,
+      "text": "Mama hat ich ja muss ich dann ja raustun",
+      "kontext": "Nisses Reaktion beim Pinkeltest mit Polizisten, der ihm dabei zugesehen hat"
+    },
+    {
+      "folge": 12,
+      "text": "Jo, danke, geh rein",
+      "kontext": "Was Andreas Bourani angeblich gesagt hat, als er sich an der Klotür vordrängelte"
+    },
+    {
+      "folge": 12,
+      "text": "Burani Money",
+      "kontext": "Bezeichnung für die Premium-Version des Knarschimulators (Vollausstattung)"
+    },
+    {
+      "folge": 12,
+      "text": "do you got Burani Money?",
+      "kontext": "Frage am Anfang des Knarchsimulator-Konfigurators"
+    },
+    {
+      "folge": 12,
+      "text": "Oktober ist Oktagon ist 8",
+      "kontext": "Argument für die Monatsnamen-Reform"
+    },
+    {
+      "folge": 11,
+      "text": "Stumpf ist Trumpf",
+      "kontext": "Was Jesus in seiner Dokumentation gesagt haben soll, als Erfolgsrezept für simple aber effektive Inhalte"
+    },
+    {
+      "folge": 11,
+      "text": "Tachonase",
+      "kontext": "Spitzname des Hundes, weil er ab 60 km/h niest"
+    },
+    {
+      "folge": 11,
+      "text": "Gib auf, lass es. Ich habe Hunger und du hast genug",
+      "kontext": "Was die Kino-Zuschauer dem eigenen Leben zurufen würden"
+    },
+    {
+      "folge": 11,
+      "text": "Ich bin's Drake. Ich bin Drake",
+      "kontext": "Gag-Passport-Identifikation am Flughafen mit Sixpack"
+    },
+    {
+      "folge": 10,
+      "text": "Warum essen wir eigentlich keine Menschen?",
+      "kontext": "Fynns provokante Eröffnungsfrage"
+    },
+    {
+      "folge": 10,
+      "text": "Das Huhn hat sich sogar zurückentwickelt",
+      "kontext": "Fynn 'widerlegt' Darwin"
+    },
+    {
+      "folge": 10,
+      "text": "Wer weiß?",
+      "kontext": "Sidos Tochter Malina als Antwort darauf, ob Papa nochmal in den Knast geht"
+    },
+    {
+      "folge": 10,
+      "text": "Ihr haltet uns am Scheißen",
+      "kontext": "Fynn als Spruch eines Handwerkers für Bezahlung - an die Fake-Sponsoren Amazon, Netflix etc."
+    },
+    {
+      "folge": 10,
+      "text": "Ich fahr von Garmisch-Partenkirchen nach Baden-Baden würfeln, Pagen fragen, ob sie meinen Wagen parken dürfen",
+      "kontext": "Shindy-Reim, den Nisse zitiert"
+    },
+    {
+      "folge": 10,
+      "text": "Ich glaube, ich habe die Evolutionstheorie widerlegt",
+      "kontext": "Fynn"
+    },
+    {
+      "folge": 9,
+      "text": "Wenn jede Wohnung gewogen werden würde",
+      "kontext": "Fynn übt den Satz mehrfach, den Karl Lauterbach/Flying Uwe sagen soll"
+    },
+    {
+      "folge": 9,
+      "text": "Uwe ist im Haus",
+      "kontext": "Marketing-Slogan für Flying Uwe-Kooperation der Waagen-Idee"
+    },
+    {
+      "folge": 9,
+      "text": "Verfickter Gnom raus, raus",
+      "kontext": "Was die Klimansland-Roboter zu kleinen Kindern sagen sollen"
+    },
+    {
+      "folge": 9,
+      "text": "Ich weiß nicht, ob sie das können",
+      "kontext": "Der Satz von Beamten/Verkäufern, den Nisse hasst"
+    },
+    {
+      "folge": 9,
+      "text": "Wir sind nicht beratend tätig",
+      "kontext": "Beamtin auf dem Amt"
+    },
+    {
+      "folge": 9,
+      "text": "Der Aufstand der Roboter",
+      "kontext": "Fynn über die Strategie, Beamte mit 'ich hätte noch eine Frage und zwar' zu nerven"
+    },
+    {
+      "folge": 8,
+      "text": "Ich locke die Kinder in mein kleines Reich, damit sie viele Produkte kaufen",
+      "kontext": "Fynn über sein Klimansland - direkt danach distanziert er sich"
+    },
+    {
+      "folge": 8,
+      "text": "Hast du genug Nährstoffe zu dir genommen, kleiner Kevin?",
+      "kontext": "Fynn darüber wie er mit Kindern spricht"
+    },
+    {
+      "folge": 8,
+      "text": "Saug saug zapf zapf",
+      "kontext": "Untertitel des Klimanslands - Fynn zapft die guten Gefühle der Kinder ab"
+    },
+    {
+      "folge": 8,
+      "text": "Wenn ihr Durchfall habt, dann verpisst euch hier ganz schnell",
+      "kontext": "Fynn über seine Beziehung zu den Klimansland-Kindern"
+    },
+    {
+      "folge": 7,
+      "text": "Das mache ich jetzt ganz groß",
+      "kontext": "Drängler-Story von Nisses Drummer-Kumpel"
+    },
+    {
+      "folge": 7,
+      "text": "Sims spielen",
+      "kontext": "Fynns Deeskalations-Trick im Schulbus gegen einen mit Messer bedrohenden Mitschüler"
+    },
+    {
+      "folge": 7,
+      "text": "Du und die halbe Portion jetzt oder was?",
+      "kontext": "Magerer Typ in Berlin vor Spi gegen Nisse und Georg (1,96m, 160kg)"
+    },
+    {
+      "folge": 7,
+      "text": "Nazi Boy",
+      "kontext": "Was Mitschüler in England zu Nisse sagten"
+    },
+    {
+      "folge": 7,
+      "text": "Ich bin gerade im Bus nach Bayern",
+      "kontext": "Hooligan-Telefonat-Szenario zum Deeskalieren"
+    },
+    {
+      "folge": 6,
+      "text": "Bei dir ist egal",
+      "kontext": "Steinway-Mitarbeiter zu Fynn nach dessen verspielter Klavier-Performance"
+    },
+    {
+      "folge": 6,
+      "text": "Phase 1 Unterhosen sammeln, Phase 2 ???, Phase 3 Profit",
+      "kontext": "Fynn über sein South-Park-inspiriertes Geschäftsmodell"
+    },
+    {
+      "folge": 6,
+      "text": "Tennisball und ein Klavier",
+      "kontext": "Fynn über das Minimum, das er für ein Schweigekloster bräuchte"
+    },
+    {
+      "folge": 6,
+      "text": "Die Matruschka der Macht",
+      "kontext": "Nisse, später als guter Buchtitel bezeichnet"
+    },
+    {
+      "folge": 5,
+      "text": "Es gibt eine schwarze Liste nur fuer mich, das ist so Punkt 1 Nisse und danach kommt einfach keiner mehr",
+      "kontext": "Nisses ESC-Hausverbot"
+    },
+    {
+      "folge": 5,
+      "text": "Aus diesem Jungen wird niemals etwas werden",
+      "kontext": "Fynns Grundschullehrerin Frau Grundwald ueber Fynn"
+    },
+    {
+      "folge": 5,
+      "text": "China und Plastik",
+      "kontext": "Name von Franzis Roller-Gang in der Jugend"
+    },
+    {
+      "folge": 5,
+      "text": "Bro, hey Bro",
+      "kontext": "Nisses Surfer-Typ-Imitation beim Blutsbrueder-Szenario"
+    },
+    {
+      "folge": 5,
+      "text": "Hose ausziehen",
+      "kontext": "Fynn als verzweifelter Startup-Gruender"
+    },
+    {
+      "folge": 5,
+      "text": "Ich habe lang nicht so eine Scheisse gehoert",
+      "kontext": "Nisse zur 80-120 Milliarden Lampen-Rechnung"
+    },
+    {
+      "folge": 5,
+      "text": "Bei mir ist alles okay. Das perfekte Ende",
+      "kontext": "Nisses Abschluss nach dem Adamsapfel-Trick"
+    },
+    {
+      "folge": 4,
+      "text": "Wusstest du, dass man jeden Monat mit seinem Daumen zwischen 30 und 100 km beim Scrollen zurueck legt?",
+      "kontext": "Fynns Eroeffnungs-Fun-Fact"
+    },
+    {
+      "folge": 4,
+      "text": "Erste Session nur am Heulen",
+      "kontext": "Nisse ueber misslungene Producer-Session"
+    },
+    {
+      "folge": 4,
+      "text": "Brot mit Kaese auf die eins",
+      "kontext": "Nisse beim Pitch fuer Habit-Detector"
+    },
+    {
+      "folge": 4,
+      "text": "Genauso wie sie das wollen. Genauso wird es",
+      "kontext": "Fynn als verzweifelter Startup-Gruender im Joko-Winterscheidt-Rollenspiel"
+    },
+    {
+      "folge": 4,
+      "text": "Wir nennen uns Unicorn Immoscan",
+      "kontext": "Fynn ueber seine Pitching-Strategie"
+    },
+    {
+      "folge": 4,
+      "text": "Es zaehlt nur, was du jetzt machst",
+      "kontext": "Fynns Reflexion ueber die ZDF-Doku"
+    },
+    {
+      "folge": 3,
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Wird in dieser Folge erneut erwaehnt"
+    },
+    {
+      "folge": 3,
+      "text": "Auf jeden Fall glaube ich",
+      "kontext": "Vorschlag fuer Podcast-Titel - selbstbewusste Aussagen, die auf nichts fussen"
+    },
+    {
+      "folge": 3,
+      "text": "Frueher tat mir McCaulay Culkin so leid, Mann",
+      "kontext": "Fynn nach Aaron-Carter-Tod"
+    },
+    {
+      "folge": 3,
+      "text": "21 Gramm verlassen den Koerper",
+      "kontext": "Fynn ueber Seele und Sterben"
+    },
+    {
+      "folge": 3,
+      "text": "Pisse den Wind",
+      "kontext": "Nisse beim Deutschbuch-Witz"
+    },
+    {
+      "folge": 3,
+      "text": "Patrick mit Patrick mit Absicht Absicht",
+      "kontext": "Mittelnamen-Witz a la Macaulay Culkin"
+    },
+    {
+      "folge": 2,
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Wird in Folge 2 nochmal aufgegriffen"
+    },
+    {
+      "folge": 2,
+      "text": "Gib mal von 1 bis 24 Punkte",
+      "kontext": "Erstmalige Etablierung des Punktesystems"
+    },
+    {
+      "folge": 2,
+      "text": "Wenn du Wallraff bist und das mit dem Schwert machst",
+      "kontext": "Fynns Logo-Idee fuer LKW-plane-kostenlos.de"
+    },
+    {
+      "folge": 2,
+      "text": "Es gibt das Gesetz der Schmierung",
+      "kontext": "Nisses 'Gesetz', dass 8% aller Leistung weltweit durch unzureichende Schmierung verloren gehen"
+    },
+    {
+      "folge": 2,
+      "text": "Ich pump das einfach in so ein Stueck Schwein",
+      "kontext": "Fynn ueber Muecken/Zecken servieren"
+    },
+    {
+      "folge": 1,
+      "text": "Astrologie kommt von gelogen",
+      "kontext": "Nisse ueber Sternzeichen-Glaeubige"
+    },
+    {
+      "folge": 1,
+      "text": "Fanta Gnu schmeckt nach Ziege",
+      "kontext": "Titelgebende Erkenntnis"
+    },
+    {
+      "folge": 1,
+      "text": "Der beste Mensch ist ein Imperator am Ende des Tages",
+      "kontext": "Nisse ueber den Foundation-Imperator als Vergleich zum Papst"
+    },
+    {
+      "folge": 1,
+      "text": "Crocs getragen, ne?",
+      "kontext": "Nisse zu Fynn ueber Ideocracy"
+    },
+    {
+      "folge": 1,
+      "text": "Wir frieren unsere Gedanken bis zur naechsten Folge ein",
+      "kontext": "Fynns Abschluss-Spruch"
+    }
+  ]
 }

@@ -1,4 +1,1601 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 252,
+  "items": [
+    {
+      "ort": "Berlin",
+      "folgen": [
+        1,
+        2,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        22,
+        27,
+        28,
+        29,
+        33,
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "ort": "Hamburg",
+      "folgen": [
+        2,
+        3,
+        7,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        22,
+        24,
+        25,
+        27,
+        28,
+        29,
+        32,
+        33,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "ort": "Klimansland",
+      "folgen": [
+        6,
+        8,
+        9,
+        10,
+        26,
+        38,
+        40,
+        41
+      ]
+    },
+    {
+      "ort": "Frankreich",
+      "folgen": [
+        4,
+        12,
+        14,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "ort": "Klimasand",
+      "folgen": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "ort": "Mallorca",
+      "folgen": [
+        11,
+        12,
+        33,
+        40
+      ]
+    },
+    {
+      "ort": "Bolivien",
+      "folgen": [
+        4,
+        14,
+        20
+      ]
+    },
+    {
+      "ort": "Hong Kong",
+      "folgen": [
+        26,
+        43,
+        46
+      ]
+    },
+    {
+      "ort": "Vatikan",
+      "folgen": [
+        1,
+        9
+      ]
+    },
+    {
+      "ort": "Frankfurt",
+      "folgen": [
+        7,
+        42
+      ]
+    },
+    {
+      "ort": "Mailand",
+      "folgen": [
+        7,
+        34
+      ]
+    },
+    {
+      "ort": "China",
+      "folgen": [
+        11,
+        13
+      ]
+    },
+    {
+      "ort": "England",
+      "folgen": [
+        14,
+        40
+      ]
+    },
+    {
+      "ort": "Funkhaus Berlin",
+      "folgen": [
+        22,
+        35
+      ]
+    },
+    {
+      "ort": "Schessel (Hurricane Festival)",
+      "folgen": [
+        24,
+        28
+      ]
+    },
+    {
+      "ort": "Indien",
+      "folgen": [
+        33,
+        37
+      ]
+    },
+    {
+      "ort": "Dubai",
+      "folgen": [
+        36,
+        40
+      ]
+    },
+    {
+      "ort": "Berlinale",
+      "folgen": [
+        37,
+        47
+      ]
+    },
+    {
+      "ort": "Koeln",
+      "folgen": [
+        39,
+        40
+      ]
+    },
+    {
+      "ort": "Cape Canaveral",
+      "folgen": [
+        40,
+        41
+      ]
+    },
+    {
+      "ort": "Innsbruck",
+      "folgen": [
+        43,
+        45
+      ]
+    },
+    {
+      "ort": "Tokio",
+      "folgen": [
+        1
+      ]
+    },
+    {
+      "ort": "Cuxhaven (Edelhoff/Niedersachsen)",
+      "folgen": [
+        2
+      ]
+    },
+    {
+      "ort": "Syrien (Skatepark-Bau, Dach)",
+      "folgen": [
+        2
+      ]
+    },
+    {
+      "ort": "Berlin (Funkhaus)",
+      "folgen": [
+        3
+      ]
+    },
+    {
+      "ort": "Tropical Island",
+      "folgen": [
+        3
+      ]
+    },
+    {
+      "ort": "Action Park (USA)",
+      "folgen": [
+        3
+      ]
+    },
+    {
+      "ort": "Edinburgh",
+      "folgen": [
+        3
+      ]
+    },
+    {
+      "ort": "Centerpark/Aquamundo",
+      "folgen": [
+        3
+      ]
+    },
+    {
+      "ort": "Klein Machnow (Berlin Umland)",
+      "folgen": [
+        4
+      ]
+    },
+    {
+      "ort": "London",
+      "folgen": [
+        4
+      ]
+    },
+    {
+      "ort": "Griechische Insel (Hochzeit)",
+      "folgen": [
+        4
+      ]
+    },
+    {
+      "ort": "Berlin Funkhaus",
+      "folgen": [
+        4
+      ]
+    },
+    {
+      "ort": "ESC (Eurovision Song Contest)",
+      "folgen": [
+        5
+      ]
+    },
+    {
+      "ort": "Centerpark Aquamundo",
+      "folgen": [
+        5
+      ]
+    },
+    {
+      "ort": "Kreuzbergrum (Berlin)",
+      "folgen": [
+        5
+      ]
+    },
+    {
+      "ort": "Grand Canyon (hypothetisch Zipline)",
+      "folgen": [
+        5
+      ]
+    },
+    {
+      "ort": "Los Angeles (Skid Row)",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "New York (Billionaires Row am Central Park)",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "Frankfurter Bahnhofsviertel",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "Hisling",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "Steinway Showroom",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "Thailand",
+      "folgen": [
+        6
+      ]
+    },
+    {
+      "ort": "Berlin (Thai-Massage)",
+      "folgen": [
+        7
+      ]
+    },
+    {
+      "ort": "Prenzlauer Berg",
+      "folgen": [
+        7
+      ]
+    },
+    {
+      "ort": "Spätkauf in Spi",
+      "folgen": [
+        7
+      ]
+    },
+    {
+      "ort": "England (Internat)",
+      "folgen": [
+        7
+      ]
+    },
+    {
+      "ort": "Österreich",
+      "folgen": [
+        7
+      ]
+    },
+    {
+      "ort": "Atlanta",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Los Angeles",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Köln",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Iran (B2-Bombardement)",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Ukraine",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Bremen (Startup Summit)",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Padel-Halle",
+      "folgen": [
+        8
+      ]
+    },
+    {
+      "ort": "Tirol",
+      "folgen": [
+        9
+      ]
+    },
+    {
+      "ort": "Rumänien (Kapelle)",
+      "folgen": [
+        9
+      ]
+    },
+    {
+      "ort": "Berlin (Padel-Plätze)",
+      "folgen": [
+        9
+      ]
+    },
+    {
+      "ort": "Stadtamt",
+      "folgen": [
+        9
+      ]
+    },
+    {
+      "ort": "Schweiz (Sterbehilfe)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Denver (NBA)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Schweden (Survival Mahin)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "New Mexico (Touchma-haltempel)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Dubai (der eine Puff)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Mallorca (Milliardär)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Hamburg (Color-Line/Allianz Arena)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Garmisch-Partenkirchen",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Baden-Baden",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Bispingen (Skihalle)",
+      "folgen": [
+        10
+      ]
+    },
+    {
+      "ort": "Südkorea",
+      "folgen": [
+        11
+      ]
+    },
+    {
+      "ort": "Seoul Flughafen",
+      "folgen": [
+        11
+      ]
+    },
+    {
+      "ort": "Sao Paulo",
+      "folgen": [
+        11
+      ]
+    },
+    {
+      "ort": "Hamburg (Süden)",
+      "folgen": [
+        12
+      ]
+    },
+    {
+      "ort": "Schweden (einsame Insel)",
+      "folgen": [
+        12
+      ]
+    },
+    {
+      "ort": "Uckermark",
+      "folgen": [
+        12
+      ]
+    },
+    {
+      "ort": "USA (Hawaii)",
+      "folgen": [
+        12
+      ]
+    },
+    {
+      "ort": "USA / L.A.",
+      "folgen": [
+        13
+      ]
+    },
+    {
+      "ort": "Disneyland Paris",
+      "folgen": [
+        13
+      ]
+    },
+    {
+      "ort": "Efteling (Niederlande)",
+      "folgen": [
+        13
+      ]
+    },
+    {
+      "ort": "Mannheim",
+      "folgen": [
+        13
+      ]
+    },
+    {
+      "ort": "Autobahn",
+      "folgen": [
+        13
+      ]
+    },
+    {
+      "ort": "Klimaland (Fynns Anwesen)",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Brandenburg",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Skandinavien",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Bayern",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Italien",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Chile",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Asien",
+      "folgen": [
+        14
+      ]
+    },
+    {
+      "ort": "Frankreich (Schloss / 'Französien')",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Transsylvanien (angebliches Dracula-Schloss)",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Düsseldorf",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Klimaland",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Studley Castle",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Shenzhen",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Hamburger Hafen",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Tegernsee",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Rotenburg",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Bremervörde",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Kongo",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "New York City",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "L.A.",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Amerika",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Apothekenumschau (als Werbeplatz)",
+      "folgen": [
+        15
+      ]
+    },
+    {
+      "ort": "Frankreich (Fynns Haus)",
+      "folgen": [
+        16
+      ]
+    },
+    {
+      "ort": "Oesterreich (Porsche-Berggrally)",
+      "folgen": [
+        16
+      ]
+    },
+    {
+      "ort": "Emmaues-Laeden in Frankreich",
+      "folgen": [
+        16
+      ]
+    },
+    {
+      "ort": "London (U-Bahn)",
+      "folgen": [
+        17
+      ]
+    },
+    {
+      "ort": "Granby, Colorado (Killdozer)",
+      "folgen": [
+        18
+      ]
+    },
+    {
+      "ort": "New York (Virgin Cola Panzer)",
+      "folgen": [
+        18
+      ]
+    },
+    {
+      "ort": "Koeln (SAE Vortrag)",
+      "folgen": [
+        19
+      ]
+    },
+    {
+      "ort": "Dubai (Simon Desue)",
+      "folgen": [
+        19
+      ]
+    },
+    {
+      "ort": "Phoenix (Helikopter-Rotation)",
+      "folgen": [
+        19
+      ]
+    },
+    {
+      "ort": "Berlin (Funkhaus, Matze Hirschmann Studio)",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Frankfurt (Zoom Club, Travis Scott Konzert 2015)",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Tschernobyl",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Fukushima",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Dubai (Palm-Insel)",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Hamburg Reeperbahn",
+      "folgen": [
+        20
+      ]
+    },
+    {
+      "ort": "Davidstrasse / Reeperbahn / St. Pauli / Hamburg",
+      "folgen": [
+        21
+      ]
+    },
+    {
+      "ort": "Herbertstrasse",
+      "folgen": [
+        21
+      ]
+    },
+    {
+      "ort": "Polnische Grenze",
+      "folgen": [
+        21
+      ]
+    },
+    {
+      "ort": "Friseursalon vom Cousin (Recording-Location)",
+      "folgen": [
+        22
+      ]
+    },
+    {
+      "ort": "Elbtunnel",
+      "folgen": [
+        22
+      ]
+    },
+    {
+      "ort": "Bremen (Werder Bremen Sprechtermin)",
+      "folgen": [
+        24
+      ]
+    },
+    {
+      "ort": "Koeln (kurdische Hochzeit)",
+      "folgen": [
+        24
+      ]
+    },
+    {
+      "ort": "Wacken (Festival)",
+      "folgen": [
+        24
+      ]
+    },
+    {
+      "ort": "Hannover",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "Braunschweig",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "Berlin (Friedrichshain, Funkhaus, alter C&A)",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "Lichtenberg (Friseursalon)",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "Paderborn",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "Frankreich (Brainstorming-Ort)",
+      "folgen": [
+        25
+      ]
+    },
+    {
+      "ort": "KDW Berlin",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Alsterhaus Hamburg",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Shoe City",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Hamburg / Elbchaussee",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Kolumbien / Bolivien (Freund von Nisse)",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Costa Rica (Jake Pauls Trainingscamp)",
+      "folgen": [
+        26
+      ]
+    },
+    {
+      "ort": "Hamburger Hauptbahnhof",
+      "folgen": [
+        27
+      ]
+    },
+    {
+      "ort": "London (Madame Tussauds)",
+      "folgen": [
+        27
+      ]
+    },
+    {
+      "ort": "Neuseeland",
+      "folgen": [
+        27
+      ]
+    },
+    {
+      "ort": "LA (Walk of Fame)",
+      "folgen": [
+        27
+      ]
+    },
+    {
+      "ort": "Mumbai",
+      "folgen": [
+        27
+      ]
+    },
+    {
+      "ort": "Bremen (bei Max Kruse)",
+      "folgen": [
+        28
+      ]
+    },
+    {
+      "ort": "Frankreich (Schloss von Matze Hielscher)",
+      "folgen": [
+        28
+      ]
+    },
+    {
+      "ort": "Bielefeld",
+      "folgen": [
+        28
+      ]
+    },
+    {
+      "ort": "Schloss von Matze Hielscher in Frankreich",
+      "folgen": [
+        29
+      ]
+    },
+    {
+      "ort": "Neuseeland (Praepperbunker der Millionaere)",
+      "folgen": [
+        29
+      ]
+    },
+    {
+      "ort": "Schweden (Survival Madin's Seven vs Wild Insel)",
+      "folgen": [
+        29
+      ]
+    },
+    {
+      "ort": "Aethiopien (Zuckerrohr-Story)",
+      "folgen": [
+        29
+      ]
+    },
+    {
+      "ort": "Verklaerungskirche Adlershof",
+      "folgen": [
+        29
+      ]
+    },
+    {
+      "ort": "Berlin (Torstrasse)",
+      "folgen": [
+        31
+      ]
+    },
+    {
+      "ort": "Sueberlin (Tesla-Anschlag Gruenheide)",
+      "folgen": [
+        31
+      ]
+    },
+    {
+      "ort": "Russland (Jan Marsalek)",
+      "folgen": [
+        31
+      ]
+    },
+    {
+      "ort": "Kiel (Bruder von Nisse, Stahlzeit-Konzert)",
+      "folgen": [
+        31
+      ]
+    },
+    {
+      "ort": "Berlin (Fashion Week, Prince Charles Club, Eisfabrik)",
+      "folgen": [
+        32
+      ]
+    },
+    {
+      "ort": "Paris (wo Danny Reinke hin will)",
+      "folgen": [
+        32
+      ]
+    },
+    {
+      "ort": "Frankreich (Bon Madame Nachtisch)",
+      "folgen": [
+        32
+      ]
+    },
+    {
+      "ort": "IKEA Waltersdorf bei Stettin",
+      "folgen": [
+        33
+      ]
+    },
+    {
+      "ort": "Stuckenborstel",
+      "folgen": [
+        33
+      ]
+    },
+    {
+      "ort": "Tenerifa",
+      "folgen": [
+        34
+      ]
+    },
+    {
+      "ort": "Berlin (Flughafen)",
+      "folgen": [
+        34
+      ]
+    },
+    {
+      "ort": "London (wo der Koffer war)",
+      "folgen": [
+        34
+      ]
+    },
+    {
+      "ort": "Murat Aslams Studio",
+      "folgen": [
+        34
+      ]
+    },
+    {
+      "ort": "Wueste (Schweigekloster)",
+      "folgen": [
+        34
+      ]
+    },
+    {
+      "ort": "Catalyst (Musikschule)",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Lidl",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Bottrop",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Mykonos",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Zakynthos",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Griechenland",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Brandenburg (Tesla-Anschlag)",
+      "folgen": [
+        35
+      ]
+    },
+    {
+      "ort": "Retro Pop Hotel Hamburg (am Grindel, Planten und Blomen)",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Iran / Nahost",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Sin Island",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Area 51",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Schloss im Osten Deutschlands (Steuerfluechtlings-Konferenz)",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Madeira",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Hamburg-Hammerbrook",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "TU Hamburg-Harburg",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Louvre Paris",
+      "folgen": [
+        36
+      ]
+    },
+    {
+      "ort": "Hamburg (Polizeiwache, St. Pauli, Hammerbrook, TU Harburg)",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "Retro Pop Hotel Hamburg",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "25 Hours Hotel Hafen City Hamburg",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "Westfield Einkaufszentrum Hafen City",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "Norwegen",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "Wien (ESC)",
+      "folgen": [
+        37
+      ]
+    },
+    {
+      "ort": "St. Peter-Ording",
+      "folgen": [
+        38
+      ]
+    },
+    {
+      "ort": "Uber-Arena Berlin",
+      "folgen": [
+        38
+      ]
+    },
+    {
+      "ort": "Centerparcs",
+      "folgen": [
+        38
+      ]
+    },
+    {
+      "ort": "Sylt",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "Hawaii",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "LA",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "San Diego",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "Dover/Sued-England",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "Alaska/Kanada",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "Cleverfit (Finns Fitnessstudio)",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "MTP Meers Tanzpalast",
+      "folgen": [
+        39
+      ]
+    },
+    {
+      "ort": "Erfurt",
+      "folgen": [
+        40
+      ]
+    },
+    {
+      "ort": "Las Vegas",
+      "folgen": [
+        40
+      ]
+    },
+    {
+      "ort": "Puerto Rico (Jennifer Lopez Villa)",
+      "folgen": [
+        40
+      ]
+    },
+    {
+      "ort": "Kairo (neues Museum)",
+      "folgen": [
+        40
+      ]
+    },
+    {
+      "ort": "Koeln (Lanxess Arena, Karneval)",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Dunlop Hauptfabrik",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Casino Esplanade Hamburg",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Cinemax Dammtor",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Bartypen Rudi",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Brighton (Pier)",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Belgien (Tomorrowland)",
+      "folgen": [
+        41
+      ]
+    },
+    {
+      "ort": "Moskau (Edward Snowden)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Klimansland (mit Pflaumenbaum)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Mallorca (Olivenhain)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Berlin (Universal)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Muenchen (Stoiber)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "New York (Times Square)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Litauen (ESC)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Italien, Spanien (ESC)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Reeperbahn (Spotify Spotlight-Show)",
+      "folgen": [
+        42
+      ]
+    },
+    {
+      "ort": "Muenchen",
+      "folgen": [
+        43
+      ]
+    },
+    {
+      "ort": "Miami (in GTA 6 nachgebaut)",
+      "folgen": [
+        43
+      ]
+    },
+    {
+      "ort": "St. Pauli",
+      "folgen": [
+        43
+      ]
+    },
+    {
+      "ort": "Reeperbahn",
+      "folgen": [
+        43
+      ]
+    },
+    {
+      "ort": "Dollhaus (Strip Club)",
+      "folgen": [
+        43
+      ]
+    },
+    {
+      "ort": "Sri Lanka",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Helgoland (deutsche Insel mit weisser Klippe)",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Hamburg (Gaskraftwerk, BGS)",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Suedfrankreich",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Niedersachsen (Nisses Heimatort)",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Hauselingen / Haeslingen",
+      "folgen": [
+        44
+      ]
+    },
+    {
+      "ort": "Edeka",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Kitzbuehel / Hahnenkamm",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Hamburger Pauli",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Daenemark (Minigolf-Geschichte)",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Mallorca / Palma",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Meppen",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Wedding",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Leipziger Buchmesse",
+      "folgen": [
+        45
+      ]
+    },
+    {
+      "ort": "Hamburger Bahnhof (Berlin)",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Andres Wohnung in Berlin",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Seemen (Schwimmbad)",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Karls Erdbeerhof",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Rondell an der Alster (Hamburg)",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Mallorca / Ibiza",
+      "folgen": [
+        46
+      ]
+    },
+    {
+      "ort": "Eiffelturm / Paris",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "England / London",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Hamburg (Rondell an der Alster)",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Chateau Marmont (LA)",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Kassel (Jonathan Mese)",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Lueneburger Heide",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Dubai (Drifting-Video)",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Schoeneberg (Berlin)",
+      "folgen": [
+        47
+      ]
+    },
+    {
+      "ort": "Brasilien (Bungee Jump Video)",
+      "folgen": [
+        47
+      ]
+    }
+  ]
 }

@@ -1,0 +1,137 @@
+{
+  "folge": 19,
+  "titel": "Fynn verklagt sich selbst",
+  "laufzeit": "1:09:57",
+  "themen": [
+    "Fynn verklagt sich selbst via Shopify-Inkasso-Testbestellung",
+    "Donald Trump und das Department of Justice / Ballroom-Anbau",
+    "Bodyfat-Statistiken (Trump 6,4%, Jack Reacher 10%)",
+    "Digitale Waagen, Bodyfat und BMI-Diskussion",
+    "ChatGPT Atlas Browser und Datenschutz",
+    "Gaeste-Pipeline: Natascha Ochsenknecht, Jasmin Wagner (Bluemchen), Ina Mueller",
+    "Probleme mit fruehen Aussagen (Frauen=Omas-ab-60, Felix Lobrecht, Krystallpalast Padel)",
+    "Jimmy Blue gewinnt Promi Big Brother",
+    "AI Buddy mit Lebensstatistiken (Startup-Idee)",
+    "Wuestest-Du-Schon-Einsendung Julius Caesar Atemzug-Atome",
+    "AfG (Alternative fuer gemischtes Hack)",
+    "Berentzen-Sponsoring-Witz",
+    "Helikopter-Rotation: 74-jaehrige Frau dreht sich 174 Mal in 40 Sekunden",
+    "Selbstverletzung in der Vergangenheit (T-Shirt-Frage)",
+    "Sport-Anekdote: Rueckenbehandlung durch Spritzen am Facettengelenk",
+    "Two Finger Records Logo (englische Bogenschuetzen)",
+    "Two-Finger-Salut Bedeutung (fuck off)",
+    "My Most Private Bag - Designer-Windeln und Blutbeutel (Startup-Idee)",
+    "Henry Ford als Hitler-Vorbild und Disney/Walt als anti-kommunistisch",
+    "Simon Desue im Knast in Dubai (Gerueecht der Woche)",
+    "Spiessrutenlauf in der deutschen Armee abgeschafft durch Nisses Vorfahr Knight",
+    "Palina-Horoskop"
+  ],
+  "kurzbeschreibung": "Fynn erzaehlt, wie er sich selbst durch eine Shopify-Testbestellung verklagt hat, die beiden diskutieren ueber Trumps Bodyfat, AI Buddy als Statistik-Wearable, die Geschichte des Two-Finger Records Logos und Simon Desues Knastaufenthalt in Dubai.",
+  "startup_idee": {
+    "idee": "My Most Private Bag - Designer Blutbeutel und Windeln",
+    "beschreibung": "Hochwertige Designer-Versionen von medizinischen Hilfsmitteln wie Katheter-Blutbeuteln (Louis Vuitton oder Captain & Sons Branding) und Windeln (Nike mit Swoosh, Slogan 'Just shit in me'). Idee: medizinische Notwendigkeiten als Mode-Statement nach aussen tragen statt verstecken.",
+    "punkte": 17,
+    "max_punkte": 24,
+    "begruendung": "Nisse findet die Idee 'starke 17' - es ist gut die Stigmatisierung zu durchbrechen, in der Tuerkei produzieren und vermarkten wuerde funktionieren."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Simon Desue",
+    "inhalt": "Simon Desue sitzt in Dubai im Knast wegen Drogenbesitz; viele Leute goennen ihm das. Es wird spekuliert, dass das nur ein Teil seiner Vergehen sein koennte (Schneeballsystem-Geschichten aus Dubai)."
+  },
+  "fun_facts": [
+    "Atemfakt von Dominique: Mit fast jedem Atemzug atmet man statistisch mindestens ein Atom ein, das schon einmal in Julius Caesar war.",
+    "Bei einer Bergrettung in Phoenix wurde eine 74-jaehrige Frau im Rettungssarkophag 174 Mal in 40 Sekunden um die eigene Achse geschleudert (Rotor-Effekt).",
+    "Henry Ford war eine wichtige Inspiration fuer Hitlers Gedankengut; er schrieb antisemitische Pamphlete.",
+    "Two-Finger-Salut: stammt von englischen Bogenschuetzen im Krieg gegen Frankreich - Gefangenen wurden Zeige- und Mittelfinger abgeschnitten, die noch intakten zeigten sie der anderen Seite."
+  ],
+  "erfindungen": [
+    {
+      "name": "AI Buddy",
+      "beschreibung": "Anklippbares Wearable wie das von Jony Ive/Sam Altman, das Statistiken zu deinem Leben generiert ('Du hast in den letzten 20 Minuten am meisten Koerperfett zugelegt in ganz Berlin')."
+    },
+    {
+      "name": "Formel 1 mit Twitch-Chat-Power-Ups",
+      "beschreibung": "F1 wie Mario Kart: Zuschauer koennen Fahrer behindern (Algen im Cockpit, Moskitos in der Schwimmbrille von Verstappen)."
+    }
+  ],
+  "orte": [
+    "Berlin",
+    "Koeln (SAE Vortrag)",
+    "Dubai (Simon Desue)",
+    "Phoenix (Helikopter-Rotation)"
+  ],
+  "gaeste_erwaehnte": [
+    "Donald Trump",
+    "Melania Trump",
+    "Friedrich Merz",
+    "Matthias Doepfner",
+    "Sam Altman",
+    "Jony Ive (Alf)",
+    "Julius Caesar",
+    "Joe Rogan",
+    "Jimmy Blue",
+    "Natascha Ochsenknecht",
+    "Jasmin Wagner (Bluemchen)",
+    "Ina Mueller",
+    "Felix Lobrecht",
+    "Tommi Schmitt",
+    "Kurt Kroemer",
+    "Philip Amthor",
+    "Klaas Heufer-Umlauf",
+    "Jakko Like (?)",
+    "Joko Winterscheidt",
+    "Henry Ford",
+    "Adolf Hitler",
+    "Walt Disney",
+    "Bryan Cranston",
+    "Jaden Smith",
+    "Simon Desue",
+    "Tagesspiegel / Tagesschau",
+    "Natascha Beddingfeld",
+    "Krystallpalast",
+    "Elena Gruschka",
+    "Joe Exotic (Tiger King)",
+    "Hugh Hefner"
+  ],
+  "zitate": [
+    {
+      "text": "Wenn das Produkt kostenlos ist, bist du das Produkt.",
+      "kontext": "Allgemeines Tech-Sprichwort, von Fynn im Kontext kostenloser Tools wie Google Maps benutzt."
+    },
+    {
+      "text": "Alternative fuer gemischtes Hack - AfG.",
+      "kontext": "Selbstpositionierung des Podcasts als Alternative zu 'Gemischtes Hack'."
+    },
+    {
+      "text": "Deine Feinde sind auch meine Feinde, Bruder.",
+      "kontext": "Wiederkehrendes Zitat (Farid Bang) ueber die Blutsbruderschaft zwischen Fynn und Nisse."
+    },
+    {
+      "text": "Fuck off.",
+      "kontext": "Bedeutung des Two-Finger Records Logos."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "AfG",
+      "bedeutung": "'Alternative fuer gemischtes Hack' - selbst-ironische Bezeichnung des Podcasts gegenueber dem Mainstream-Podcast 'Gemischtes Hack'."
+    },
+    {
+      "begriff": "Tees / Teenis / Teens / Tidies / Torpedos",
+      "bedeutung": "Verschiedene Begriffe fuer die Hoererschaft von TMDA."
+    },
+    {
+      "begriff": "ChatGPT Atlas",
+      "bedeutung": "Browser von OpenAI mit integriertem ChatGPT, der saemtliche Browser-Daten speichert."
+    },
+    {
+      "begriff": "Two Finger Records",
+      "bedeutung": "Nisses Plattenlabel; das Logo (zwei gestreckte Finger) symbolisiert 'fuck off' und stammt aus dem Brauch der englischen Langbogenschuetzen."
+    },
+    {
+      "begriff": "Spiessrutenlauf",
+      "bedeutung": "Historische Militaerstrafe; soll laut Nisse durch einen seiner Vorfahren (Familienname Knight) in der deutschen Armee abgeschafft worden sein."
+    }
+  ]
+}

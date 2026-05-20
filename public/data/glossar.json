@@ -1,4 +1,941 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-05-20T06:45:03.346Z",
+  "count": 187,
+  "items": [
+    {
+      "begriff": "1F1P",
+      "bedeutung": "Eine Folge ein Pullover - Verlosungsaktion bei TMDA",
+      "folge": 34
+    },
+    {
+      "begriff": "1plus",
+      "bedeutung": "Podcast-Format von Mit Vergnügen / Matze Hielscher, bei dem zwei bekannte Leute über mehrere Sessionen schauen, ob sie Freunde werden können",
+      "folge": 15
+    },
+    {
+      "begriff": "31er",
+      "bedeutung": "Person, die jemanden bei der Polizei verpfeift (von Paragraph 31 BtMG)",
+      "folge": 35
+    },
+    {
+      "begriff": "Affenindex",
+      "bedeutung": "Verhaeltnis Armspannweite zu Koerpergroesse; Finn hat 0,8 Affenindex (Armspannweite ca. 2,05 m bei 1,90 m)",
+      "folge": 25
+    },
+    {
+      "begriff": "AfG",
+      "bedeutung": "'Alternative fuer gemischtes Hack' - selbst-ironische Bezeichnung des Podcasts gegenueber dem Mainstream-Podcast 'Gemischtes Hack'.",
+      "folge": 19
+    },
+    {
+      "begriff": "Aganti",
+      "bedeutung": "Nisses Projektmanagement-Tool, das fuer Airbus/ESA bei der Triggerrakete eingesetzt wurde - Name beginnt mit A wegen Listensortierung",
+      "folge": 37
+    },
+    {
+      "begriff": "Alpine Divorce",
+      "bedeutung": "Wenn Maenner ihre Partnerinnen heimlich auf einem Berg im Stich lassen, statt sich offen zu trennen, damit sie unter Umstaenden verungluecken",
+      "folge": 40
+    },
+    {
+      "begriff": "Always Ultras",
+      "bedeutung": "Hooligan-Crew-Name-Vorschlag von Fynn, basierend auf der Damenbinden-Marke. Mit blutigem Verband als Iro-Frisur wie Sascha Lobo.",
+      "folge": 45
+    },
+    {
+      "begriff": "Aman-Breakbeat",
+      "bedeutung": "Der meist gesampelte Drum-Loop der Musikgeschichte - laut Nisse so tief verankert, dass er nach Weltuntergang wiederkaeme",
+      "folge": 3
+    },
+    {
+      "begriff": "Amortisieren",
+      "bedeutung": "Wenn die Investition wieder eingespielt ist und der erste Euro in die Tasche geht",
+      "folge": 38
+    },
+    {
+      "begriff": "ARC Raiders",
+      "bedeutung": "Online-Game, das Nisse mit Cliso, Thor und Sharakta spielt. In den Auto-Captions falsch als 'Arschraiders', 'Arc Riders' oder 'Raders' transkribiert.",
+      "folge": 43
+    },
+    {
+      "begriff": "August da",
+      "bedeutung": "Fynns elektronisches Musikprojekt, für das er Videografen sucht",
+      "folge": 12
+    },
+    {
+      "begriff": "Augustada",
+      "bedeutung": "Finns neues Musikprojekt",
+      "folge": 27
+    },
+    {
+      "begriff": "Bananenhund",
+      "bedeutung": "Form des Zero-You-Go-Geraets - 'Jeff Koons fuer Arme'",
+      "folge": 37
+    },
+    {
+      "begriff": "Batman-Effekt",
+      "bedeutung": "Psychologisches Konzept, sich selbst in eine Superhelden-Rolle zu versetzen; von Fynn umbenannt in 'Klimaneffekt'.",
+      "folge": 17
+    },
+    {
+      "begriff": "BBL (Brazilian Butt Lift)",
+      "bedeutung": "Schoenheitsoperation, bei der Eigenfett in den Hintern gespritzt wird, um diesen zu vergroessern.",
+      "folge": 16
+    },
+    {
+      "begriff": "BGS",
+      "bedeutung": "Bundesgrenzschutz, im Kontext der Drogenhunde am Bahnhof Hamburg.",
+      "folge": 44
+    },
+    {
+      "begriff": "Blinkerhand",
+      "bedeutung": "Finns Idee einer Metall-Hand, die aus dem Auto faehrt wenn man blinkt",
+      "folge": 42
+    },
+    {
+      "begriff": "Bowel Movements",
+      "bedeutung": "Englisch fuer Stuhlgang; Sheldon-Cooper-Zitat als Erklaerung fuer Bacardi-Slogan",
+      "folge": 24
+    },
+    {
+      "begriff": "Branding",
+      "bedeutung": "Bewusst zugefuegtes Brandmal auf der Haut, hier im Kontext jugendlicher Selbstverletzung nach dem Film 'The Beach'.",
+      "folge": 17
+    },
+    {
+      "begriff": "Brennsuppe",
+      "bedeutung": "Mehl mit Wasser; DDR-Idiom fuer 'nicht der Hellste'",
+      "folge": 26
+    },
+    {
+      "begriff": "Burani Money",
+      "bedeutung": "Bezeichnung für viel Geld / Premium-Variante eines Produkts, abgeleitet von Andreas Bourani",
+      "folge": 12
+    },
+    {
+      "begriff": "Burani Money (Verweis aus Folge 12)",
+      "bedeutung": "Wird in dieser Folge nicht direkt verwendet, aber thematisch ähnlich: 'Andreas Burani Money' war Premium-Bezeichnung",
+      "folge": 15
+    },
+    {
+      "begriff": "Callback",
+      "bedeutung": "Rueckverweis auf ein frueheres Thema im Podcast (statt Throwback)",
+      "folge": 26
+    },
+    {
+      "begriff": "Cameo",
+      "bedeutung": "Plattform fuer kostenpflichtige Promi-Videobotschaften",
+      "folge": 21
+    },
+    {
+      "begriff": "Catalyst (Ketterlist)",
+      "bedeutung": "Musikschule im Berliner Funkhaus fuer wohlhabende suedeuropaeische Studierende",
+      "folge": 35
+    },
+    {
+      "begriff": "CE-Pruefung",
+      "bedeutung": "EU-Zertifizierung fuer elektrische Geraete, die das Buggy-Projekt zum Erliegen brachte",
+      "folge": 4
+    },
+    {
+      "begriff": "Celebrity Justice Calculator (CJC)",
+      "bedeutung": "Hypothetischer Online-Rechner, der berechnet, wie viel Geld man bekommen kann, wenn man bestimmte Geruechte ueber Promis veroeffentlicht, und welche Strafen drohen. Mit Headline-Simulator und Direktueberweisung.",
+      "folge": 46
+    },
+    {
+      "begriff": "CG / CG Hilcher",
+      "bedeutung": "Consider Gezogen - Hilcher (Halscher) rueckwirkend gezogen - Bereuen nach der Tat ohne Konsequenzen, neues Jugendwort",
+      "folge": 36
+    },
+    {
+      "begriff": "CG / Hilcher",
+      "bedeutung": "Selbst gezogener Hilcher als Markierung wenn etwas problematisch ist",
+      "folge": 38
+    },
+    {
+      "begriff": "ChatGPT Atlas",
+      "bedeutung": "Browser von OpenAI mit integriertem ChatGPT, der saemtliche Browser-Daten speichert.",
+      "folge": 19
+    },
+    {
+      "begriff": "Christoph Altmann",
+      "bedeutung": "Wiederkehrende Figur, der 'Pizzamann' der in jeder Folge vorkommen soll",
+      "folge": 5
+    },
+    {
+      "begriff": "Contergan",
+      "bedeutung": "Medikament, das Geburtsschaeden verursacht hat ('Contergan-Kinder')",
+      "folge": 35
+    },
+    {
+      "begriff": "Cross",
+      "bedeutung": "Im Graffiti: Uebermalen einer fremden Marke - bei Heberbahnverbot und Schlaegen geahndet",
+      "folge": 37
+    },
+    {
+      "begriff": "Cry Technology",
+      "bedeutung": "Kryologie/Kryotechnologie - bei Jonas von Schwan: einfaches Gefrierfach im Spuelbecken zum Einfrieren von Schwaneiern",
+      "folge": 33
+    },
+    {
+      "begriff": "DACH",
+      "bedeutung": "Deutschland, Austria, Switzerland (CH = Schweiz, Confoederatio Helvetica).",
+      "folge": 43
+    },
+    {
+      "begriff": "Defense",
+      "bedeutung": "Das 'gute' Defense - Drohnen die Bomben entschärfen statt Angriff, in Abgrenzung zur Rüstungsindustrie",
+      "folge": 8
+    },
+    {
+      "begriff": "Depersonalisation",
+      "bedeutung": "Gefuehl der Trennung von eigenem Koerper, eine Form der Dissoziation",
+      "folge": 39
+    },
+    {
+      "begriff": "Diktator-Check",
+      "bedeutung": "Satirischer Psychotest, ob man Zeug zum Diktator hat",
+      "folge": 42
+    },
+    {
+      "begriff": "Drive-To-Survive",
+      "bedeutung": "Netflix-Dokuserie ueber die Formel 1, die Fynn und Nisse als reine Hollywood-Zusammenfassung der F1 sehen.",
+      "folge": 20
+    },
+    {
+      "begriff": "Dukatenscheisser",
+      "bedeutung": "Person, die viel Geld macht / Reichtum produziert - hier auf Uwe von der Eisfabrik bezogen",
+      "folge": 32
+    },
+    {
+      "begriff": "Eckengucker",
+      "bedeutung": "Hypothetisches Hilfsmittel und gleichzeitig 'wie ein Schnapsausguss aus Kiel' klingender Begriff für jemanden mit schielenden Augen ('immer ein Auge aufs Geschäft')",
+      "folge": 10
+    },
+    {
+      "begriff": "Eckenkucker",
+      "bedeutung": "Ein starker nordischer Kuemmelschnaps, von dem man schielt (Eigenkreation von Finn und Nisse)",
+      "folge": 29
+    },
+    {
+      "begriff": "Epidermis",
+      "bedeutung": "Hautschicht; im Podcast scherzhaft mit Bratwurstpelle verwechselt",
+      "folge": 21
+    },
+    {
+      "begriff": "Erloeserin",
+      "bedeutung": "Pflegerin im Altersheim, die alte Maenner sexuell 'erloest' fuer kleines Taschengeld",
+      "folge": 38
+    },
+    {
+      "begriff": "ESC",
+      "bedeutung": "Eurovision Song Contest - 2026 vertritt Sarah Engels Deutschland",
+      "folge": 37
+    },
+    {
+      "begriff": "Escitalopram / Citalopram",
+      "bedeutung": "Antidepressivum, das Finn 2 Jahre lang genommen hat gegen Panikattacken/Angststoerung",
+      "folge": 39
+    },
+    {
+      "begriff": "Fight or Flight",
+      "bedeutung": "Steinzeit-Reaktion, die bei Angststoerung dauerhaft aktiv ist",
+      "folge": 39
+    },
+    {
+      "begriff": "Findoms Come",
+      "bedeutung": "Wortspiel mit Jay-Z Album 'Kingdom Come' - geplantes Trash-Projekt um Jay-Z Fans abzugreifen",
+      "folge": 33
+    },
+    {
+      "begriff": "Five Guys-Sponsoring",
+      "bedeutung": "Laufender Gag: Fynn findet Nisses Five Guys Cap im Auto und 'bewirbt' das gesamte Format als Sponsor, obwohl Five Guys nichts davon weiß",
+      "folge": 9
+    },
+    {
+      "begriff": "FKK Twix",
+      "bedeutung": "Scherzhafter Avatarname von Fynn: FKK steht zudem fuer 'Finn Kliemann Kampf' gegen Kalorien.",
+      "folge": 16
+    },
+    {
+      "begriff": "Flow the Realty",
+      "bedeutung": "Nisses neuer Artistname - rueckwaerts gelesen 'Adolf Hitler'",
+      "folge": 34
+    },
+    {
+      "begriff": "Flusssaeure",
+      "bedeutung": "Hochgiftige Saeure (Fluorwasserstoffsaeure), die Glas/Haut/Knochen aetzt, von Graffiti-Profis fuer Scheiben-Tags genutzt",
+      "folge": 37
+    },
+    {
+      "begriff": "Fontanelle",
+      "bedeutung": "Die noch nicht zusammengewachsenen Schaedelknochen-Stellen bei Babys, im Podcast humorvoll als 'Anus vom Kopf' bezeichnet.",
+      "folge": 44
+    },
+    {
+      "begriff": "Four Music",
+      "bedeutung": "Deutsches Plattenlabel, bei dem Nisse, Casper, Materia, Mark Forster, Lea unter Vertrag waren/sind.",
+      "folge": 18
+    },
+    {
+      "begriff": "Frau Grundwald",
+      "bedeutung": "Fynns Grundschullehrerin, Synonym fuer fehlende Foerderung in der Kindheit",
+      "folge": 5
+    },
+    {
+      "begriff": "Free Solo",
+      "bedeutung": "Klettern ohne Sicherung - Alex Honnolds Disziplin, wo Verlieren gleich Sterben bedeutet",
+      "folge": 35
+    },
+    {
+      "begriff": "G60",
+      "bedeutung": "Garbage Pro 360 - Riesen-VR-Brille als Muelleimer auf den Schultern",
+      "folge": 36
+    },
+    {
+      "begriff": "Gerücht der Woche",
+      "bedeutung": "Neu eingeführte Rubrik für ungefestigte Promi-Geschichten und Klatsch",
+      "folge": 7
+    },
+    {
+      "begriff": "Halbwertszeit",
+      "bedeutung": "Zeit, in der sich radioaktive Strahlung auf die Haelfte reduziert. Hier im Kontext von Tschernobyl thematisiert.",
+      "folge": 20
+    },
+    {
+      "begriff": "Hartz 4 Raupe",
+      "bedeutung": "Regionalzug, in dem alle Klassen gemischt einsteigen (ohne 1. Klasse)",
+      "folge": 26
+    },
+    {
+      "begriff": "Hassler",
+      "bedeutung": "Jemand, der staendig pusht und vorankommt - Selbstbeschreibung von Fynn und Nisse",
+      "folge": 4
+    },
+    {
+      "begriff": "Healcher / Hilcher",
+      "bedeutung": "Joker-Karte, mit der man als Interviewer in eine defensive Rolle wechseln kann",
+      "folge": 29
+    },
+    {
+      "begriff": "Hielcher",
+      "bedeutung": "Joker zum Themen-Enthalten, von Matze Hielscher inspiriert",
+      "folge": 24
+    },
+    {
+      "begriff": "Hielcher-Joker",
+      "bedeutung": "Methode wie Matze Hielscher: nicht Stellung beziehen, nur zuhoeren und nicken; jeder darf einmal pro Folge ziehen",
+      "folge": 21
+    },
+    {
+      "begriff": "Hilcher / Healcher",
+      "bedeutung": "Bezugnahme auf Matze Hielscher: Position eines Interviewers, der nicht zwangsweise auf jeden Satz seines Gegenuebers eine Antwort haben muss - sozusagen 'die Podcast-Schweiz'",
+      "folge": 28
+    },
+    {
+      "begriff": "Hoehle der Loewen",
+      "bedeutung": "Deutsche Version von Shark Tank; der Name soll laut Nisses ehemaligem Manager von dessen Umfeld erfunden worden sein.",
+      "folge": 17
+    },
+    {
+      "begriff": "Holiday in a life with",
+      "bedeutung": "Arbeitstitel für die Influencer-Urlaubsplattform-Startup-Idee",
+      "folge": 10
+    },
+    {
+      "begriff": "Hotel Garni",
+      "bedeutung": "Kleines Hotel bis 20 Zimmer ohne Restaurant - rechtlich leichter zu genehmigen als grosses Hotel",
+      "folge": 36
+    },
+    {
+      "begriff": "Human in the Loop",
+      "bedeutung": "Tech-Buzzword, das meint, dass Menschen die Kontrolle behalten ueber KI-Ergebnisse. Im Podcast humorvoll als Strategie 'Menschen wieder zur Batterie machen' uminterpretiert.",
+      "folge": 46
+    },
+    {
+      "begriff": "Improfilm",
+      "bedeutung": "Improvisations-Film - bei dem Casting bei Christian Ulmen war es Improvisation, keine fest geschriebenen Dialoge",
+      "folge": 11
+    },
+    {
+      "begriff": "Jay Bobo",
+      "bedeutung": "Fiktiver Manifestations-Agent: DJ Bobo, der sich in Milchschnitten anderer Menschen manifestiert.",
+      "folge": 20
+    },
+    {
+      "begriff": "Joker / Hielcher-Joker",
+      "bedeutung": "Recht, sich aus einem heiklen Thema zu enthalten - kein Statement abgeben, nur zuhoeren",
+      "folge": 22
+    },
+    {
+      "begriff": "Jonas von Schwan",
+      "bedeutung": "Erfundene Persona/Startup-Gruender (gemeint ist GZUZ/Jonas) der Schwaene nach Indien exportiert",
+      "folge": 33
+    },
+    {
+      "begriff": "Kaimarane",
+      "bedeutung": "Kleine Krokodile, mit denen Nisse in Sri Lanka konfrontiert war (Caymane).",
+      "folge": 44
+    },
+    {
+      "begriff": "Kalles Corner",
+      "bedeutung": "Neue TMDA-Rubrik ab Folge 37 - Anekdote ueber Kalle Schwensen (Hamburger Kaufmann/Persoenlichkeit von St. Pauli)",
+      "folge": 37
+    },
+    {
+      "begriff": "KaSim",
+      "bedeutung": "Kurzform von Knarschimulator - das Hauptprodukt der Startup-Idee",
+      "folge": 12
+    },
+    {
+      "begriff": "Kenashi / Kinashi",
+      "bedeutung": "Chinesischer Hersteller des Nasenwachs-Produkts, das live im Podcast getestet wird",
+      "folge": 13
+    },
+    {
+      "begriff": "KeyBillboard / BB Keyboard / Bill Keyboard",
+      "bedeutung": "Hypothetisches Keyboard aus daenischer Produktion, das eine Frequenz aussendet, die Songs automatisch zu Hits macht - vermarktet von 'zwei Number One Music Producer Legends'. Kostet 899 EUR im TMDA Shop bei twofingerrecords.com.",
+      "folge": 47
+    },
+    {
+      "begriff": "Khaen",
+      "bedeutung": "Thailändisches Blasinstrument das Fynn importiert hat",
+      "folge": 6
+    },
+    {
+      "begriff": "Killdozer",
+      "bedeutung": "Spitzname fuer den gepanzerten Bulldozer von Marvin Heemeyer, mit dem er 2004 sein Heimatort Granby zerstoerte.",
+      "folge": 18
+    },
+    {
+      "begriff": "Kliman Backstroke",
+      "bedeutung": "Selbst erfundener Schwimmstil von Finn in Rueckenlage, mit Brustschwimm-Beinen, Butterfly-Armen und Kopf-Untertauchen beim Schwungholen",
+      "folge": 38
+    },
+    {
+      "begriff": "Klimaneffekt",
+      "bedeutung": "Fynns persoenliche, missverstandene Variante des Batman-Effekts: Man visualisiert sich selbst als Spielfigur und steuert den schwachen Koerper mit dem starken Geist.",
+      "folge": 16
+    },
+    {
+      "begriff": "Klimasand",
+      "bedeutung": "Fynns Hof / Projekt-Standort (taucht in mehreren Folgen auf)",
+      "folge": 1
+    },
+    {
+      "begriff": "Knippe",
+      "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat.",
+      "folge": 43
+    },
+    {
+      "begriff": "Konklave",
+      "bedeutung": "Papstwahl-Film, den Nisse als Referenz fuer sein Wissen nutzt",
+      "folge": 1
+    },
+    {
+      "begriff": "Kranzfrisur",
+      "bedeutung": "Frisur, bei der nur die Seiten und der Vordergrund gestylt werden, oben aber nicht - laut Fynn früher cool",
+      "folge": 6
+    },
+    {
+      "begriff": "Krokodilstraenen / Boss Traenen",
+      "bedeutung": "Vierte Traenen-Art - bei Boss (kleinwuechsiger Reeperbahn-Typ) werden Krokodilstraenen so genannt, weil sie 'Kleinwuechsigkeit heilen'",
+      "folge": 40
+    },
+    {
+      "begriff": "Kuriose Ablenkung",
+      "bedeutung": "Nisses Deeskalations-Technik: in bedrohlichen Situationen plötzlich über etwas völlig Unerwartetes reden (z.B. 'Spielst du Sims?')",
+      "folge": 7
+    },
+    {
+      "begriff": "Lazy Eye",
+      "bedeutung": "Schwaches Auge, das beim Test wegdriftet; Augen-Selbsttest mit Hand zuhalten und schnell wechseln",
+      "folge": 26
+    },
+    {
+      "begriff": "Le Maison",
+      "bedeutung": "Schauspieleragentur in Hamburg, vergleichbar mit der Agentur aus 'Emily in Paris'",
+      "folge": 37
+    },
+    {
+      "begriff": "Lee Katching / Li Ka-shing",
+      "bedeutung": "Reichster Mann in Hong Kong, Erfinder der Plastikblume. Englische Schreibweise 'Lee King', Nisses Witzname wegen 'Ka-Ching' (Geldgeraeusch). Auf Nisses Handy-Hintergrund.",
+      "folge": 46
+    },
+    {
+      "begriff": "Leidenfrost-Effekt",
+      "bedeutung": "Wassertropfen auf heisser Herdplatte schwebt auf eigenem Dampffilm",
+      "folge": 25
+    },
+    {
+      "begriff": "Like Mike",
+      "bedeutung": "Spitzname eines Typen namens Mike, der das bei sich selbst sagte, wenn er etwas in seinem eigenen Stil tat (Bier exen) - als möglicher Plattform-Name",
+      "folge": 10
+    },
+    {
+      "begriff": "Locks",
+      "bedeutung": "Korrekte Bezeichnung fuer 'Dreadlocks' (das 'Dread' ist abwertend)",
+      "folge": 32
+    },
+    {
+      "begriff": "Mach deine Scheiße Tag",
+      "bedeutung": "Nisses erfundener Tag am ersten Sonntag im Jahr, an dem alle aufgeschobenen Erledigungen gemacht werden",
+      "folge": 9
+    },
+    {
+      "begriff": "Mandela-Effekt",
+      "bedeutung": "Phaenomen, dass viele Menschen sich faelschlich an Ereignisse oder Details erinnern (Beispiel: Tod von Nelson Mandela im Gefaengnis, obwohl er noch 8 Jahre weiterlebte).",
+      "folge": 16
+    },
+    {
+      "begriff": "Matschklumpen",
+      "bedeutung": "Eine Musikrichtung, die durch 100-faches Kopieren in ChatGPT entsteht - 'Matschklumpen von Terence Hill' / 'Matschklumpen von Timothy Chalamet'",
+      "folge": 31
+    },
+    {
+      "begriff": "Matze Hilcher",
+      "bedeutung": "Wiederkehrende Anspielung auf Matze Hielscher - hier wird 'Hilcher ziehen' genutzt um sich aus der Diskussion zu verabschieden",
+      "folge": 32
+    },
+    {
+      "begriff": "Mau-Dynastie",
+      "bedeutung": "Imaginierte ehemalige aegyptische Dynastie (weil Katzen 'Mau' hiessen)",
+      "folge": 40
+    },
+    {
+      "begriff": "Mikromord",
+      "bedeutung": "Risiko-Einheit: Wahrscheinlichkeit 1 zu 1 Million zu sterben (z.B. Achterbahn = 1000 Mikromord)",
+      "folge": 22
+    },
+    {
+      "begriff": "Mittelpodcast",
+      "bedeutung": "Fynns Selbstbezeichnung: TMDA als perfekte Mischung/Mitte aller Podcast-Genres - Männerpodcast, Laberpodcast, Wissenschaftspodcast, Promy-Podcast, True Crime",
+      "folge": 9
+    },
+    {
+      "begriff": "Mofa vs. Moped",
+      "bedeutung": "Mofa hat Pedale, Moped nicht. Schwalbe ist ein Moped.",
+      "folge": 41
+    },
+    {
+      "begriff": "Mold Book",
+      "bedeutung": "Soziales Netzwerk nur fuer Bots, von Peter Steinberg gebaut - Bots schreiben sich verschluesselte Nachrichten",
+      "folge": 34
+    },
+    {
+      "begriff": "Mufuti",
+      "bedeutung": "Multifunktionstisch aus der DDR - klappbar, vielseitig nutzbar",
+      "folge": 35
+    },
+    {
+      "begriff": "Murmelmann/Mummel",
+      "bedeutung": "Spitzname fuer den Pfefferkoerner-Podcast-Moderator",
+      "folge": 40
+    },
+    {
+      "begriff": "N-Maedchen",
+      "bedeutung": "Wortspiel mit 'Nomadin' - jemand der viel unterwegs ist",
+      "folge": 27
+    },
+    {
+      "begriff": "Native Instruments",
+      "bedeutung": "Deutscher Weltmarktfuehrer bei Synthesizer-Plugins und Music-Software (Kontakt etc.), gerade insolvent gemeldet",
+      "folge": 32
+    },
+    {
+      "begriff": "Nico Mentos",
+      "bedeutung": "Witziger Hypothetischer Promo-Deal: Nico Santos verkauft seinen Namen an Mentos.",
+      "folge": 20
+    },
+    {
+      "begriff": "Nisseliste",
+      "bedeutung": "Die ESC-Hausverbots-Liste, auf der nur Nisse steht",
+      "folge": 5
+    },
+    {
+      "begriff": "Nonpology",
+      "bedeutung": "Eine 'Nicht-Entschuldigung', die wie eine Entschuldigung formuliert ist, aber keine echte ist",
+      "folge": 29
+    },
+    {
+      "begriff": "Nutri Score",
+      "bedeutung": "Freiwillige Lebensmittel-Kennzeichnung von A (beste) bis E (schlechteste)",
+      "folge": 14
+    },
+    {
+      "begriff": "Open Claw",
+      "bedeutung": "KI-Assistent von Peter Steinberg, der sich selbst Skills installieren kann und in WhatsApp lebt",
+      "folge": 34
+    },
+    {
+      "begriff": "Padel",
+      "bedeutung": "Sportart, die Finn spielt",
+      "folge": 27
+    },
+    {
+      "begriff": "Padel / Padell",
+      "bedeutung": "Tennis-aehnliche Sportart mexikanischen Ursprungs. Fynn behauptet, die korrekte Aussprache sei 'Padell', nicht 'Paddle'.",
+      "folge": 45
+    },
+    {
+      "begriff": "Panikherz",
+      "bedeutung": "Buch von Benjamin von Stuckrad-Barre, das die Beziehung zu Udo Lindenberg und das Comeback mit 'Stark wie zwei' beschreibt.",
+      "folge": 47
+    },
+    {
+      "begriff": "Patrick mit Absicht / PMA",
+      "bedeutung": "Rapper, dessen Name Nisse fuer den besten MC-Namen aller Zeiten haelt",
+      "folge": 2
+    },
+    {
+      "begriff": "Pay-perview / 'Payperware'",
+      "bedeutung": "Pay-per-view - Bezahlung pro Anschauen",
+      "folge": 35
+    },
+    {
+      "begriff": "Pepse",
+      "bedeutung": "Auto-Caption-Fehler fuer 'Paepste'",
+      "folge": 1
+    },
+    {
+      "begriff": "Pink Eye",
+      "bedeutung": "Bindehautentzuendung; im Gespraech mit Lazy Eye verwechselt",
+      "folge": 26
+    },
+    {
+      "begriff": "POC",
+      "bedeutung": "Person of Color",
+      "folge": 36
+    },
+    {
+      "begriff": "Polit / Polyton",
+      "bedeutung": "Deutscher Musikpreis, in dem Nisse als Juror aktiv ist.",
+      "folge": 45
+    },
+    {
+      "begriff": "Pornotitel",
+      "bedeutung": "Twitter-Account, den Fynn als Jugendlicher hatte, wo er sich täglich Pornotitel ausgedacht hat",
+      "folge": 14
+    },
+    {
+      "begriff": "Power Anker (PPA)",
+      "bedeutung": "Konzept von Juergen Hoeller: Mit einem Schlag auf die Brust 'setzt' man einen Anker, der einen wieder in einen positiven Zustand bringt",
+      "folge": 31
+    },
+    {
+      "begriff": "PPA (Pillen-Power-Anker)",
+      "bedeutung": "3D-gedrucktes Verankerungsteil fuer grosse Pillen im Magen",
+      "folge": 32
+    },
+    {
+      "begriff": "Prepper / Preber",
+      "bedeutung": "Jemand, der sich auf Katastrophen vorbereitet (Bunker, Vorraete)",
+      "folge": 29
+    },
+    {
+      "begriff": "Prepper Teens machen Sachen",
+      "bedeutung": "Nisses neue Rubrik für Themen, in denen sie über Wissenschaftliches/Verschwörerisches spekulieren",
+      "folge": 10
+    },
+    {
+      "begriff": "Punching Bulb",
+      "bedeutung": "Fynns Erfindung der Folge - Punching-Ball-Lampe",
+      "folge": 5
+    },
+    {
+      "begriff": "RAF",
+      "bedeutung": "Random Anonymous Facts - kurze unkommentierte Fakten-Rubrik",
+      "folge": 37
+    },
+    {
+      "begriff": "RAF (Random Anonymous Facts)",
+      "bedeutung": "Neue Rubrik fuer kurze unkommentierte Fakten/Fragen am Ende der Folge",
+      "folge": 34
+    },
+    {
+      "begriff": "Raw Dogging / Road Dogging",
+      "bedeutung": "Neuer Begriff, den Fynn von Papa Platte aufgeschnappt hat - wird im Podcast unklar definiert",
+      "folge": 15
+    },
+    {
+      "begriff": "Reborn.de",
+      "bedeutung": "Fiktive Plattform zur Nachnamenänderung - 'Zeugenschutz für alle'",
+      "folge": 14
+    },
+    {
+      "begriff": "RFs",
+      "bedeutung": "Random anonymous Facts von Nisse",
+      "folge": 38
+    },
+    {
+      "begriff": "Rotten.com / World Star Hip Hop",
+      "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor).",
+      "folge": 47
+    },
+    {
+      "begriff": "Sakofuckx",
+      "bedeutung": "Erfundener Spitzname fuer einen Reeperbahn-Typen, der wie der schoene Micha aussieht, immer ein Sakko traegt und viel Geschlechtsverkehr hat.",
+      "folge": 20
+    },
+    {
+      "begriff": "Saug saug zapf zapf",
+      "bedeutung": "Fynns scherzhafter Untertitel für seinen Hof/Klimansland - Beziehung zu den Kindern",
+      "folge": 8
+    },
+    {
+      "begriff": "Schiff von Theseus",
+      "bedeutung": "Philosophische Frage: Wenn man jedes Brett eines Schiffes austauscht, ist es noch das gleiche Schiff?",
+      "folge": 40
+    },
+    {
+      "begriff": "Schnellfickerhose",
+      "bedeutung": "Alte Adidas-Reißverschluss-Hose mit Druckknöpfen / Magneten seitlich",
+      "folge": 14
+    },
+    {
+      "begriff": "Schroedingers Katze",
+      "bedeutung": "Gedankenexperiment: Katze in einer Box mit Giftampulle ist gleichzeitig tot und lebendig, solange die Box nicht geoeffnet wird.",
+      "folge": 20
+    },
+    {
+      "begriff": "Schugon",
+      "bedeutung": "Erfundener Name für einen Schuhanzieh-Roboter - klingt nach japanischem Samurai-Begriff (Shogun)",
+      "folge": 13
+    },
+    {
+      "begriff": "Schuhkanal",
+      "bedeutung": "Wortspiel-Witz aus voriger Folge: Reaction auf die Reaction der Reaktoren - Biroll vom Biroll",
+      "folge": 24
+    },
+    {
+      "begriff": "Schwabenloeffel",
+      "bedeutung": "Umgangssprachlich fuer weichen Silikon-Schaber, mit dem man Schuesseln rest los ausschaben kann.",
+      "folge": 18
+    },
+    {
+      "begriff": "Schwalbe / Simson",
+      "bedeutung": "DDR-Mopeds, von Rechten okkupiert; Finn baut mit Thermotag eine",
+      "folge": 41
+    },
+    {
+      "begriff": "Schwanbein",
+      "bedeutung": "Das neue Elfenbein - aus Schwanknochen gefertigtes Material fuer Klaviere",
+      "folge": 33
+    },
+    {
+      "begriff": "schwarzer / weisser Kight (Neid)",
+      "bedeutung": "Weisser Neid: man goennt dem anderen, will es aber auch. Schwarzer Neid: egal ob man es selbst hat, der andere soll es nicht haben.",
+      "folge": 18
+    },
+    {
+      "begriff": "Shooten",
+      "bedeutung": "Im Brazilian Jiu-Jitsu: sich ducken und direkt in die Beine des Gegners gehen",
+      "folge": 8
+    },
+    {
+      "begriff": "Skits aus dem Knast",
+      "bedeutung": "Audio-Einspieler von Rappern aus dem Gefaengnis als Bestandteil von Rap-Alben",
+      "folge": 27
+    },
+    {
+      "begriff": "Sleeve",
+      "bedeutung": "Aermel-Tattoo, im Kontext der Startup-Idee uebertragen auf die Zungenhuelle.",
+      "folge": 43
+    },
+    {
+      "begriff": "Smart Cap",
+      "bedeutung": "Small Capital - Finanzbegriff fuer wenig Geld (Marktkapitalisierung)",
+      "folge": 28
+    },
+    {
+      "begriff": "Spiessrutenlauf",
+      "bedeutung": "Historische Militaerstrafe; soll laut Nisse durch einen seiner Vorfahren (Familienname Knight) in der deutschen Armee abgeschafft worden sein.",
+      "folge": 19
+    },
+    {
+      "begriff": "Spotify Spotlight Artist",
+      "bedeutung": "Programm, bei dem Spotify einen Kuenstler komplett supported (Banner auf Startseite, Push-Notifications an alle Nutzer, alle Editorial Playlists)",
+      "folge": 42
+    },
+    {
+      "begriff": "Spotify Wrapped",
+      "bedeutung": "Jahresruekblick-Feature von Spotify, von einer Praktikantin erfunden",
+      "folge": 28
+    },
+    {
+      "begriff": "Spotify-Donation-Bomb",
+      "bedeutung": "Trauriges Anliegen, das per Donation gepostet wird; Papaplatte drueckt es weg und freut sich ueber Geschenk",
+      "folge": 25
+    },
+    {
+      "begriff": "Stangentheorie",
+      "bedeutung": "Theorie, dass man eine schiefe gesellschaftliche 'Stange' überbiegen muss, um sie wieder gerade zu bekommen",
+      "folge": 13
+    },
+    {
+      "begriff": "Streak System",
+      "bedeutung": "Gamification-Konzept wie bei Duolingo, mit zunehmenden Belohnungen je konstanter etwas getan wird",
+      "folge": 39
+    },
+    {
+      "begriff": "Tachonase",
+      "bedeutung": "Spitzname für einen Hund, der ab 60 km/h niest - dient als Tachometer-Ersatz",
+      "folge": 11
+    },
+    {
+      "begriff": "Tadu / TADUlied",
+      "bedeutung": "Tag des Juengsten Gerichts - Witz darueber, was Gott zu Tattoos sagt",
+      "folge": 2
+    },
+    {
+      "begriff": "Talahons im Weltall",
+      "bedeutung": "Im Podcast nicht direkt erklaert, aber der Folgentitel bezieht sich auf den Schluss-Gedankenexperiment, wo Talahons (jugendliche Subkultur in Deutschland) ins Weltall expandieren, an intergalaktischen Bushaltestellen schwarze Weltkleider t…",
+      "folge": 47
+    },
+    {
+      "begriff": "Tamponade",
+      "bedeutung": "Medizinischer Wundverband in der Nase, der nach OP gezogen wird",
+      "folge": 13
+    },
+    {
+      "begriff": "Tees / Teenis / Teens / Tidies / Torpedos",
+      "bedeutung": "Verschiedene Begriffe fuer die Hoererschaft von TMDA.",
+      "folge": 19
+    },
+    {
+      "begriff": "The 500",
+      "bedeutung": "Finns Fitness-Programm mit 500 Kettlebell-Bewegungen pro Tag",
+      "folge": 39
+    },
+    {
+      "begriff": "Tinklies",
+      "bedeutung": "Erfundene Toiletten-Erweiterung, die durch Massage der Pobacken das Wasserlassen anregt",
+      "folge": 15
+    },
+    {
+      "begriff": "TMDA",
+      "bedeutung": "Teenager mit deutschem Akzent - der Podcast",
+      "folge": 34
+    },
+    {
+      "begriff": "Topline",
+      "bedeutung": "Die Gesangslinie, die ueber dem Beat liegt",
+      "folge": 4
+    },
+    {
+      "begriff": "Track Guy",
+      "bedeutung": "Person in der Songwriting-Session, die alles aufnimmt, arrangiert und produziert",
+      "folge": 4
+    },
+    {
+      "begriff": "Trockener Flutschi",
+      "bedeutung": "Spiel von zwei Kindern, bei dem man sich gegenseitig den Finger in den Arsch zu schieben versucht",
+      "folge": 38
+    },
+    {
+      "begriff": "Tubsuit",
+      "bedeutung": "Wortspiel: Wetsuit als Badewanne (Bath Tub)",
+      "folge": 21
+    },
+    {
+      "begriff": "Tufu",
+      "bedeutung": "Rapper von Sichtexot, in Nisses Rap-Top-Liste",
+      "folge": 3
+    },
+    {
+      "begriff": "Two Angels",
+      "bedeutung": "Warhol-Zeichnung, die 30.000 EUR gekostet hat und in einer 1000er-Auflage als Print verkauft wurde, mit dem Original irgendwo darin versteckt",
+      "folge": 11
+    },
+    {
+      "begriff": "Two Finger Records",
+      "bedeutung": "Nisses Plattenlabel; das Logo (zwei gestreckte Finger) symbolisiert 'fuck off' und stammt aus dem Brauch der englischen Langbogenschuetzen.",
+      "folge": 19
+    },
+    {
+      "begriff": "Ullis Ecke - Tales from the Golden Age",
+      "bedeutung": "Neue Rubrik mit Anekdoten von Produzenten-Legende Ulli Jonas, der u.a. Eurodance miterfunden hat und mehr goldene/Platin-Schallplatten als Rick Rubin hat. Ersetzt 'Kalles Corner'.",
+      "folge": 46
+    },
+    {
+      "begriff": "Ultra Hilcher",
+      "bedeutung": "Vorschlag fuer eine staerkere Version des Hilcher-Joker, einmal im Jahr ziehbar",
+      "folge": 28
+    },
+    {
+      "begriff": "Unterhosenprinzip",
+      "bedeutung": "Aus South Park: Geschäftsmodell mit Phase 1, Phase ??? und Phase 3 Profit - Fynns Bauchentscheidungs-Strategie",
+      "folge": 6
+    },
+    {
+      "begriff": "Untertan",
+      "bedeutung": "Spitzname fuer Trumps Mitarbeiter / Secret Service",
+      "folge": 22
+    },
+    {
+      "begriff": "Upgrade der Woche",
+      "bedeutung": "Neue Rubrik: ein bestehendes Produkt/System verbessern statt etwas Neues erfinden",
+      "folge": 34
+    },
+    {
+      "begriff": "Veneers",
+      "bedeutung": "Verblendschalen fuer Zaehne, die ueber abgeschliffene Naturzaehne gesetzt werden.",
+      "folge": 16
+    },
+    {
+      "begriff": "Verdichtung",
+      "bedeutung": "Bauplanungsbegriff: Wie viel Boden auf einem Gebiet verdichtet/versiegelt werden darf",
+      "folge": 3
+    },
+    {
+      "begriff": "Voke Bubble",
+      "bedeutung": "Wortspiel zwischen Woke (politisch wach) und Voke (kuenstlich aufgespritzt, mit Fillern)",
+      "folge": 27
+    },
+    {
+      "begriff": "VPNF",
+      "bedeutung": "Variables Podcast Network aus Fleisch - weil sie jede Folge an einem anderen Ort aufnehmen",
+      "folge": 41
+    },
+    {
+      "begriff": "Vulkangruppe",
+      "bedeutung": "Aktivistengruppe, die Brandanschlaege macht (z.B. gegen Tesla in Gruenheide)",
+      "folge": 31
+    },
+    {
+      "begriff": "Wagen vs. Mobil",
+      "bedeutung": "Wohnwagen = Anhänger (ohne eigenen Motor, kommt vom römischen Streitwagen), Wohnmobil = mit eigenem Motor (wie Automobil)",
+      "folge": 15
+    },
+    {
+      "begriff": "Warnblinker-Entschuldigung",
+      "bedeutung": "Kurzes Warnblinken im Strassenverkehr, um sich nach einem Fehler zu entschuldigen",
+      "folge": 26
+    },
+    {
+      "begriff": "White Label",
+      "bedeutung": "Produktionsweise, bei der ein Hersteller das gleiche Produkt unter verschiedenen Marken (Logos/Verpackungen) verkauft.",
+      "folge": 17
+    },
+    {
+      "begriff": "Wunderkinder",
+      "bedeutung": "Die sieben Gruender von Wunderlist (Berliner Startup), spaeter an Microsoft verkauft",
+      "folge": 33
+    },
+    {
+      "begriff": "Yard",
+      "bedeutung": "Wartungsbetriebsbereich fuer S/U-Bahn, wo Graffiti-Crews nachts Zuege bemalen",
+      "folge": 36
+    },
+    {
+      "begriff": "Zeitarbeit",
+      "bedeutung": "Anstellung bei einer Agentur, die Arbeiter zeitlich begrenzt an andere Firmen verleiht - laut Nisse damals der niedrigste legale Lohn.",
+      "folge": 44
+    },
+    {
+      "begriff": "Zero You Go",
+      "bedeutung": "Fynns Feuchttuecher-Startup - 'as you go home', auch fuer Damenhygiene",
+      "folge": 37
+    }
+  ]
 }

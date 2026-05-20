@@ -1,14 +1,15 @@
 {
   "name": "tmda-wiki",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Fan-Wiki für den TMDA Podcast (Teenager mit deutschem Akzent)",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "extract": "node scripts/extract.js",
-    "build:data": "npm run extract"
+    "import:raw": "python3 scripts/import-raw.py",
+    "aggregate": "node scripts/aggregate.js",
+    "build:data": "node scripts/aggregate.js"
   },
   "dependencies": {
     "hono": "^4.6.14"

@@ -1,0 +1,114 @@
+{
+  "folge": 12,
+  "titel": "Merkel & Burani Money im Visier Toiletten Skandal",
+  "laufzeit": "1:05:07",
+  "themen": [
+    "Magenschleimhaut und Nagetier-Zähne",
+    "1-2-3-Wortassoziations-Spiel",
+    "Nick und Aaron Carter Dokumentation",
+    "Lou Pearlman als Backstreet-Boys-Manager und seine Macht über die Carter-Familie",
+    "Pädagogische Mobbing-Praktiken in der Schule",
+    "Fynns Vater als Raubkopierer Deutschlands",
+    "Videothek mit Raubkopien (befreundete Familie)",
+    "Pizzaofen-Brand-Geschichte mit Benzin",
+    "Angela Merkel beim Pizza-Machen am See",
+    "Burani drängelt sich an der Klotür vor (Gerücht der Woche)",
+    "Kontakte und Netzwerke (Matze Hielscher, Philipp Westermeyer, Paul Ripke)",
+    "Monatsnamen-Reform (September=7, Oktober=8)",
+    "Power Rade als Sponsor / Werbung mit Geschmacks-Reaktion",
+    "Fynns elektronisches Musikprojekt 'August da' sucht Videografen",
+    "Schweden Survival-Trip mit Max von Sevenwild und Brian"
+  ],
+  "kurzbeschreibung": "Eine Folge voller Gerüchte: Andreas Bourani drängelt sich an einer Toilettenschlange vor, Angela Merkel besucht eine private Pizza-Session am See, und Fynn präsentiert seinen 'Knarschimulator' als Startup-Idee mit Beamer-Extension und Burani-Money-Premium-Paket.",
+  "startup_idee": {
+    "idee": "Knarschimulator (Casim Burani Edition)",
+    "beschreibung": "Ein Simulator-System für Neubauwohnungen, das das Knarschen alter Holzböden imitiert. Mit Beamer-Extension an der Decke kann man Bodenmuster (Holz, Fischgrät, Teppich) projizieren und 3D-Welten erschaffen (Lava, Motorräder, Mario Kart). Verbindbar mit Sonos für Sumpf-Geräusche. Basisversion 16-26 EUR, Vollausstattung 12.000 EUR (Burani-Money-Paket).",
+    "punkte": 13,
+    "max_punkte": 24,
+    "begruendung": "Nisse findet 13 Punkte 'solide'. Knarschimulator klingt nach deutschem Engineering, deutscher Klang bricht aber globalen Markt-Trichter. Kürzel KaSim wird besser bewertet. Vollausstattung wirkt teuer für was es macht."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": {
+    "ueber": "Andreas Bourani",
+    "inhalt": "Auf einer Veranstaltung bei der Sängerin Elif drängelt sich Andreas Bourani an Schwangerer, Frau mit Krücken und anderen wartenden Personen vorbei, um zuerst auf die Toilette zu gehen. Sagt nur 'Jo, danke, geh rein'. Außerdem: Angela Merkel taucht angeblich vor einer Woche bei einer privaten Pizza-Session zweier Fotografen-Kumpels in der Uckermark/Schweden-ähnlichen Setting auf, geht schwimmen und kauft sich danach denselben mobilen Pizzaofen."
+  },
+  "fun_facts": [
+    "Die menschliche Magenschleimhaut erneuert sich alle zwei bis drei Tage, damit der Magen sich nicht selbst auffrisst",
+    "Bei Nagetieren wachsen die Zähne unendlich lang weiter, weshalb sie nagen müssen",
+    "September heißt eigentlich '7' (sept), Oktober '8' (octa) - Monatszählung ist verschoben"
+  ],
+  "erfindungen": [
+    {
+      "name": "Knarschimulator (KaSim)",
+      "beschreibung": "Gerät, das das Knarschen alter Holzböden in Neubauwohnungen elektronisch simuliert, kombinierbar mit Beamer-Extension für Boden-Projektionen"
+    }
+  ],
+  "orte": [
+    "Mallorca",
+    "Hamburg (Süden)",
+    "Berlin",
+    "Schweden (einsame Insel)",
+    "Uckermark",
+    "USA (Hawaii)",
+    "Frankreich"
+  ],
+  "gaeste_erwaehnte": [
+    "Nick Carter",
+    "Aaron Carter",
+    "Lou Pearlman",
+    "Backstreet Boys",
+    "NSYNC",
+    "US5",
+    "Jay Khan",
+    "Seinfeld",
+    "Bushido",
+    "Angela Merkel",
+    "Olaf Scholz",
+    "Bibi Bad Aue (Lied 'Olaf hör da mal rein')",
+    "Matze Hielscher",
+    "Markus Lanz (implizit)",
+    "Andreas Bourani",
+    "Elif (Sängerin)",
+    "Oliver Pocher",
+    "50 Cent",
+    "Philipp Westermeyer",
+    "Paul Ripke",
+    "Rihanna",
+    "Tom Hamilton (F1 - vermutlich Lewis Hamilton)",
+    "Tiger Woods",
+    "Max (Survival Marvin / Sevenwild)",
+    "Brian"
+  ],
+  "zitate": [
+    {
+      "text": "Jo, danke, geh rein",
+      "kontext": "Was Andreas Bourani angeblich gesagt hat, als er sich an der Klotür vordrängelte"
+    },
+    {
+      "text": "Burani Money",
+      "kontext": "Bezeichnung für die Premium-Version des Knarschimulators (Vollausstattung)"
+    },
+    {
+      "text": "do you got Burani Money?",
+      "kontext": "Frage am Anfang des Knarchsimulator-Konfigurators"
+    },
+    {
+      "text": "Oktober ist Oktagon ist 8",
+      "kontext": "Argument für die Monatsnamen-Reform"
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "KaSim",
+      "bedeutung": "Kurzform von Knarschimulator - das Hauptprodukt der Startup-Idee"
+    },
+    {
+      "begriff": "Burani Money",
+      "bedeutung": "Bezeichnung für viel Geld / Premium-Variante eines Produkts, abgeleitet von Andreas Bourani"
+    },
+    {
+      "begriff": "August da",
+      "bedeutung": "Fynns elektronisches Musikprojekt, für das er Videografen sucht"
+    }
+  ]
+}
