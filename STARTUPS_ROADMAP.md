@@ -25,12 +25,13 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 - [x] **HATS — Hot Air to Sock Adapter** · Folge 45 · 22/24 · industrial engineering style
 - [x] **windradhologramm.de** · Folge 44 · 22/24 · eco-tech with cynical twist
+- [x] **Das letzte was ich sehe.de** · Folge 41 · 22/24 · dystopian medical (Playfair Display + black/red)
+- [x] **Tabletten-Matrjoschka** · Folge 32 · 22/24 · pharma luxury serif (Cormorant + russian-red/gold)
+- [x] **Kinderstimme Navi** · Folge 8 · 22/24 · friendly pastel app-store (Nunito + Caveat)
 
-### 📋 Top-Bewertet (22/24+ Punkte) — Priorität 1
+### 📋 Nächste — Priorität 2
 
-- [ ] **Das letzte was ich sehe.de** — Werbung in die Iris brennen · Folge 41 · 22/24 · dystopian medical
-- [ ] **Tabletten-Matruschka** · Folge 32 · 22/24 · pharma + russian aesthetic
-- [ ] **Navi-Plugin mit Kinderstimme** · Folge 8 · 22/24 · friendly app-store style
+- [ ] **Zusammenfuehren.de** · Folge 28 · 21/24 · brutalist mono navi-app
 
 ### 📋 21/24 — Priorität 2
 

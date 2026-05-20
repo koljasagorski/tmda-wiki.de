@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>das letzte was ich sehe — Werbung. In deine Iris. Eingebrannt.</title>
+<meta name="description" content="Wenn Werbung dein letzter Eindruck im Leben ist, dann richtig. Iris-Lasertattoo für Marken, die bleiben. Klinisch zertifiziert. Schmerzlos. Endgültig." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/das-letzte-was-ich-sehe" />
+<meta property="og:title" content="das letzte was ich sehe" />
+<meta property="og:description" content="Iris-Werbung. Klinisch zertifiziert. Endgültig." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/das-letzte-was-ich-sehe" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalProcedure","name":"Iris-Werbungs-Einbrennung","description":"Ophthalmologische Brand-Implantation in die Iris"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #050505;
+  --black-soft: #0d0d0d;
+  --gray: #1c1c1c;
+  --gray-soft: #2a2a2a;
+  --red: #dc2626;
+  --red-dark: #991b1b;
+  --red-glow: #ef4444;
+  --cream: #f5f1ea;
+  --cream-dim: #c4bfb5;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--black); color: var(--cream); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: var(--red-glow); text-decoration: none; }
+a:hover { color: var(--cream); }
+
+.disclaimer {
+  background: var(--red-dark);
+  color: var(--cream);
+  text-align: center;
+  font-size: 0.78rem;
+  padding: 8px 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--gray);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+.nav-logo .red { color: var(--red); }
+.nav-cta {
+  font-size: 0.78rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+
+.hero {
+  position: relative;
+  padding: 120px 40px 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 1200px; height: 800px;
+  background: radial-gradient(ellipse at center, var(--red-dark) 0%, transparent 60%);
+  opacity: 0.25;
+  z-index: -1;
+  filter: blur(60px);
+}
+.hero .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 28px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin-bottom: 28px;
+}
+.hero h1 em { font-style: italic; color: var(--red); font-weight: 400; }
+.hero p.lead {
+  font-size: 1.2rem;
+  color: var(--cream-dim);
+  max-width: 56ch;
+  margin: 0 auto 50px;
+  font-weight: 300;
+}
+
+.eye-art {
+  width: min(440px, 90vw);
+  margin: 0 auto 60px;
+  display: block;
+  filter: drop-shadow(0 0 50px rgba(220, 38, 38, 0.4));
+}
+
+.hero-cta {
+  display: inline-flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  border: 2px solid;
+  transition: all .2s;
+  cursor: pointer;
+}
+.btn-red { background: var(--red); border-color: var(--red); color: white; }
+.btn-red:hover { background: var(--red-dark); border-color: var(--red-dark); }
+.btn-outline { border-color: var(--cream); color: var(--cream); background: transparent; }
+.btn-outline:hover { background: var(--cream); color: var(--black); }
+
+/* Steps */
+.procedure {
+  padding: 100px 40px;
+  background: var(--black-soft);
+  border-top: 1px solid var(--gray);
+}
+.procedure-inner { max-width: 1100px; margin: 0 auto; }
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section-sub {
+  text-align: center;
+  color: var(--cream-dim);
+  max-width: 50ch;
+  margin: 0 auto 60px;
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--gray);
+}
+.step {
+  padding: 36px 24px;
+  border-right: 1px solid var(--gray);
+  position: relative;
+}
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  color: var(--red);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 18px;
+  opacity: 0.7;
+}
+.step h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.step p { color: var(--cream-dim); font-size: 0.92rem; font-weight: 300; }
+
+/* Brands */
+.brands {
+  padding: 100px 40px;
+  background: var(--black);
+}
+.brands-inner { max-width: 1100px; margin: 0 auto; }
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--gray);
+  border: 1px solid var(--gray);
+}
+.brand-card {
+  background: var(--black);
+  padding: 36px;
+  text-align: center;
+  transition: background .2s;
+}
+.brand-card:hover { background: var(--gray-soft); }
+.brand-eye {
+  width: 80px; height: 80px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  border: 3px solid var(--red);
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: radial-gradient(circle at center, var(--gray) 0%, var(--black) 70%);
+}
+.brand-eye::after {
+  content: '';
+  position: absolute;
+  width: 22px; height: 22px;
+  background: var(--black);
+  border-radius: 50%;
+}
+.brand-eye span {
+  position: relative;
+  z-index: 2;
+  font-family: var(--serif);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.brand-name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.brand-cpm {
+  font-size: 0.82rem;
+  color: var(--cream-dim);
+}
+.brand-price {
+  margin-top: 14px;
+  font-family: var(--serif);
+  color: var(--red);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* Big quote */
+.bigquote {
+  padding: 120px 40px;
+  background: linear-gradient(180deg, var(--black) 0%, var(--red-dark) 100%);
+  text-align: center;
+}
+.bigquote q {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 400;
+  display: block;
+  max-width: 30ch;
+  margin: 0 auto 24px;
+  line-height: 1.3;
+}
+.bigquote q::before { content: '"'; }
+.bigquote q::after { content: '"'; }
+.bigquote cite {
+  font-style: normal;
+  color: var(--cream-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+/* FAQ */
+.faq {
+  padding: 100px 40px;
+  background: var(--black-soft);
+}
+.faq-inner { max-width: 800px; margin: 0 auto; }
+.faq-item {
+  border-bottom: 1px solid var(--gray);
+  padding: 20px 0;
+}
+.faq-item summary {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  cursor: pointer;
+  padding: 6px 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::after { content: '+'; color: var(--red); font-size: 1.4rem; font-weight: 100; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p {
+  color: var(--cream-dim);
+  font-size: 0.95rem;
+  margin-top: 12px;
+  font-weight: 300;
+}
+
+footer {
+  background: var(--black);
+  border-top: 1px solid var(--gray);
+  padding: 50px 40px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--cream-dim);
+}
+footer a { color: var(--red); }
+footer .legal { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 12px; }
+
+@media (max-width: 760px) {
+  .steps { grid-template-columns: 1fr 1fr; }
+  .step:nth-child(2) { border-right: none; }
+  .step:nth-child(1), .step:nth-child(2) { border-bottom: 1px solid var(--gray); }
+  .nav { padding: 18px 20px; }
+  .hero { padding: 60px 20px; }
+}
+@media (max-width: 460px) {
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none; border-bottom: 1px solid var(--gray); }
+}
+
+@keyframes pulse-glow { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+.pulse { animation: pulse-glow 2.4s ease-in-out infinite; }
+</style>
+</head>
+<body>
+
+<div class="disclaimer">⚠ Ophthalmologisches Verfahren · CE 1234 · Schmerzlos. Endgültig.</div>
+
+<nav class="nav">
+  <div class="nav-logo">das letzte was ich sehe<span class="red">.</span>de</div>
+  <div class="nav-cta">Termin · Hamburg · Berlin · München</div>
+</nav>
+
+<section class="hero">
+  <div class="eyebrow">▲ Patient-Branding für die Ewigkeit</div>
+  <h1>Werbung.<br><em>In deine Iris.</em><br>Eingebrannt.</h1>
+
+  <svg class="eye-art" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="iris" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#dc2626"/>
+        <stop offset="40%" stop-color="#7a1414"/>
+        <stop offset="70%" stop-color="#2a0808"/>
+        <stop offset="100%" stop-color="#050505"/>
+      </radialGradient>
+      <radialGradient id="reflect" cx="35%" cy="35%">
+        <stop offset="0%" stop-color="#f5f1ea" stop-opacity="0.7"/>
+        <stop offset="40%" stop-color="#f5f1ea" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="redglow"><feGaussianBlur stdDeviation="4"/></filter>
+    </defs>
+    <!-- Augapfel -->
+    <ellipse cx="200" cy="120" rx="180" ry="80" fill="#f5f1ea"/>
+    <!-- Lid-Schatten oben -->
+    <path d="M 30 110 Q 200 30 370 110 Z" fill="none" stroke="#0d0d0d" stroke-width="2" opacity="0.4"/>
+    <!-- Iris -->
+    <circle cx="200" cy="120" r="68" fill="url(#iris)"/>
+    <!-- Eingebrannte Marke (Mock-Logo: stilisiertes "A") -->
+    <g class="pulse" filter="url(#redglow)">
+      <circle cx="200" cy="120" r="42" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.7"/>
+      <text x="200" y="135" text-anchor="middle" font-family="Playfair Display, serif" font-style="italic" font-weight="900" font-size="56" fill="#dc2626">A</text>
+    </g>
+    <!-- Pupille -->
+    <circle cx="200" cy="120" r="22" fill="#050505"/>
+    <!-- Reflexion -->
+    <ellipse cx="180" cy="100" rx="60" ry="40" fill="url(#reflect)"/>
+    <!-- Adern -->
+    <g stroke="#dc2626" stroke-width="0.6" fill="none" opacity="0.5">
+      <path d="M 40 130 Q 60 125 80 135"/>
+      <path d="M 340 130 Q 320 128 300 138"/>
+      <path d="M 50 145 Q 80 148 110 152"/>
+    </g>
+  </svg>
+
+  <p class="lead">
+    Du stirbst eines Tages. Egal wann. In dem Moment, in dem deine Pupillen sich weit stellen,
+    ist <em>etwas</em> das letzte, was du bewusst siehst. Wir machen daraus einen <em>Brand-Moment</em>.
+    Klinisch. Schmerzlos. Endgültig.
+  </p>
+
+  <div class="hero-cta">
+    <a class="btn btn-red" href="#prozedur">Verfahren ansehen</a>
+    <a class="btn btn-outline" href="#marken">Markenliste</a>
+  </div>
+</section>
+
+<section class="procedure" id="prozedur">
+  <div class="procedure-inner">
+    <h2 class="section-title">Das Verfahren</h2>
+    <p class="section-sub">In vier Schritten zur lebenslangen Marken-Bindung. Durchgeführt von approbierten Ophthalmologen in zertifizierten Studios.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">i.</div>
+        <h3>Anamnese</h3>
+        <p>Persönlichkeit, Werte, Konsumprofil — wir matchen dich mit kompatiblen Marken aus unserem Portfolio.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">ii.</div>
+        <h3>Mikro-Laser</h3>
+        <p>Ein präziser 405-nm-Laser brennt das Logo in die Iris-Pigmentierung. Sub-Millimeter-Auflösung.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iii.</div>
+        <h3>Heilung</h3>
+        <p>72 Stunden Tragen einer Schutzlinse. Danach voll alltagstauglich. Marke bleibt für immer.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iv.</div>
+        <h3>Auszahlung</h3>
+        <p>Du bekommst zwischen 5.000 und 80.000 € pro Auge. Anbieter überweist 14 Tage nach Eingriff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="marken">
+  <div class="brands-inner">
+    <h2 class="section-title">Premium-Marken im Portfolio</h2>
+    <p class="section-sub">Auswahl unserer aktuellen Sponsoren. Preise pro Auge, garantiert lebenslang.</p>
+    <div class="brands-grid">
+      <div class="brand-card">
+        <div class="brand-eye"><span>RX</span></div>
+        <div class="brand-name">Rolex Submariner</div>
+        <div class="brand-cpm">CPM Lebensende: konkurrenzlos</div>
+        <div class="brand-price">€ 80.000</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-eye"><span>P</span></div>
+        <div class="brand-name">Porsche AG</div>
+        <div class="brand-cpm">Limitiert auf männl. Endverbraucher 35+</div>
+        <div class="brand-price">€ 55.000</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-eye"><span>L'</span></div>
+        <div class="brand-name">L'Oréal</div>
+        <div class="brand-cpm">Du bist es dir wert.</div>
+        <div class="brand-price">€ 24.000</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-eye"><span>F</span></div>
+        <div class="brand-name">Flensburger Pilsener</div>
+        <div class="brand-cpm">Standard-Trademark-PLOP</div>
+        <div class="brand-price">€ 5.000</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-eye"><span>K</span></div>
+        <div class="brand-name">Kik Textildiscount</div>
+        <div class="brand-cpm">B-Tier · für die Volumen-Studios</div>
+        <div class="brand-price">€ 800</div>
+      </div>
+      <div class="brand-card">
+        <div class="brand-eye"><span>?</span></div>
+        <div class="brand-name">Custom Brand</div>
+        <div class="brand-cpm">Eigenes Logo. Eigene Konditionen.</div>
+        <div class="brand-price">Auf Anfrage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bigquote">
+  <q>Das letzte Bild im Leben sollte nichts mehr verkaufen müssen — also tut es das ganz besonders.</q>
+  <cite>Marketing-Manifest · 2026</cite>
+</section>
+
+<section class="faq">
+  <div class="faq-inner">
+    <h2 class="section-title">Häufige Fragen</h2>
+    <p class="section-sub">Ehrlich, weil wir das eh in jedem Beratungsgespräch erklären.</p>
+    <details class="faq-item">
+      <summary>Ist das wirklich für immer?</summary>
+      <p>Ja. Iris-Pigmentierung regeneriert sich nicht. Mit unserer Technik ist das Logo so lange sichtbar, wie deine Iris existiert. Auch durch eine Iris-Transplantation kann es nur partiell überdeckt werden.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Kann ich die Marke später wechseln?</summary>
+      <p>Theoretisch ja, dann überlagern wir das alte Logo mit einem neuen. Optisch wird das Ergebnis unsauber. Wir empfehlen: eine Marke, ein Leben.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Was passiert beim Sterben?</summary>
+      <p>Im Moment der Pupillenerweiterung wird das Logo durch den höheren Lichteinfall maximal sichtbar — exakt der Effekt, für den die Marke zahlt.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Ist das legal?</summary>
+      <p>Aktuell in der EU als ophthalmologisches kosmetisches Verfahren zugelassen, analog zu Iris-Tätowierungen. Marken-Branding wird über CE 1234 abgedeckt.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Was, wenn meine Marke insolvent geht?</summary>
+      <p>Die Rechte werden im Insolvenzverfahren versteigert. Das neue Unternehmen erbt deine Iris als Werbefläche.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #41 · Bewertung 22/24<br>
+  <a href="/folge/41">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+  <div class="legal">Kein medizinisches Verfahren · Keine Marken-Affiliation · Satire</div>
+</footer>
+
+</body>
+</html>

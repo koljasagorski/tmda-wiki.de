@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Тablette-Matrjoschka™ — One pill. Many pills. Same pill.</title>
+<meta name="description" content="Die erste Multi-Wirkstoff-Tablette mit kaskadiertem Pharmaprofil. Außen Schmerz, innen Schlaf, im Kern Glück. Patentiert in 27 Ländern." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/tabletten-matrjoschka" />
+<meta property="og:title" content="Tabletten-Matrjoschka — kaskadiertes Pharmaprofil" />
+<meta property="og:description" content="Außen Schmerz. Innen Schlaf. Im Kern Glück." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/tabletten-matrjoschka" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Drug","name":"Tabletten-Matrjoschka","activeIngredient":"Multi-Layer Compound","alternateName":"Matrjoschka-Pill"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Mulish:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #faf8f4;
+  --paper-soft: #f1ede4;
+  --paper-line: #e3dccc;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4642;
+  --red: #c0392b;
+  --red-deep: #922b1c;
+  --gold: #b88a44;
+  --gold-soft: #d4af6c;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Mulish', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--red-deep); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Russian-inspired ornament dividers */
+.ornament {
+  text-align: center;
+  margin: 24px auto;
+  color: var(--gold);
+  font-size: 1.4rem;
+  letter-spacing: 0.5em;
+}
+
+.topribbon {
+  background: var(--red);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-style: italic;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+.topribbon span { font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; margin-left: 10px; font-weight: 600; }
+
+.nav {
+  background: var(--paper);
+  border-bottom: 1px solid var(--paper-line);
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--red-deep);
+  letter-spacing: -0.01em;
+}
+.nav-logo .gold { color: var(--gold); }
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hero {
+  padding: 80px 40px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 30px 0 24px;
+}
+.hero h1 .red { color: var(--red); }
+.hero h1 .small { display: block; font-family: var(--sans); font-style: normal; font-size: 0.3em; font-weight: 400; color: var(--ink-soft); letter-spacing: 0.4em; text-transform: uppercase; margin-top: 12px; }
+.hero p.lead {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 50ch;
+  margin: 0 auto 50px;
+  font-weight: 400;
+}
+
+/* Pill cross-section illustration */
+.pill-stage {
+  position: relative;
+  width: min(500px, 90vw);
+  margin: 0 auto 60px;
+  aspect-ratio: 1.4 / 1;
+}
+.pill-svg { width: 100%; height: 100%; }
+.pill-label {
+  position: absolute;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--paper-line);
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+.pill-label.l1 { top: 14%; left: 0; }
+.pill-label.l2 { top: 38%; left: -8%; }
+.pill-label.l3 { top: 60%; right: 0; }
+.pill-label.l4 { bottom: 8%; right: -4%; }
+
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  border: 1.5px solid;
+  transition: all .2s;
+  cursor: pointer;
+}
+.btn-red { background: var(--red); border-color: var(--red); color: var(--paper); }
+.btn-red:hover { background: var(--red-deep); border-color: var(--red-deep); text-decoration: none; }
+.btn-outline { border-color: var(--ink); color: var(--ink); }
+.btn-outline:hover { background: var(--ink); color: var(--paper); text-decoration: none; }
+
+/* Layers explanation */
+.layers {
+  padding: 100px 40px;
+  background: var(--paper-soft);
+}
+.layers-inner { max-width: 1100px; margin: 0 auto; }
+.layers-title {
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-style: italic;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.layers-sub {
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+}
+.layer {
+  display: grid;
+  grid-template-columns: 80px 1fr 200px;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--paper-line);
+  align-items: center;
+}
+.layer:last-child { border-bottom: 1px solid var(--paper-line); }
+.layer-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 3.5rem;
+  color: var(--gold);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+.layer-info h3 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.layer-info p { color: var(--ink-soft); font-size: 1rem; max-width: 50ch; }
+.layer-active {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--red-deep);
+  font-style: italic;
+}
+.layer-active small { display: block; font-family: var(--sans); font-style: normal; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+
+/* Trust signals */
+.trust {
+  padding: 80px 40px;
+  background: var(--paper);
+  text-align: center;
+}
+.trust-inner { max-width: 1100px; margin: 0 auto; }
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+.trust-item {
+  font-family: var(--serif);
+  font-style: italic;
+}
+.trust-num {
+  font-size: 3.6rem;
+  color: var(--red);
+  font-weight: 700;
+  line-height: 1;
+}
+.trust-label {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
+
+/* Dosage */
+.dosage {
+  padding: 100px 40px;
+  background: var(--ink);
+  color: var(--paper);
+}
+.dosage-inner { max-width: 1100px; margin: 0 auto; }
+.dosage-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.dosage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--serif);
+}
+.dosage-table th {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 2px solid var(--gold);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+.dosage-table td {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.dosage-table tr:last-child td { border-bottom: none; }
+
+/* Testimonial */
+.testi {
+  padding: 100px 40px;
+  background: var(--paper-soft);
+  text-align: center;
+}
+.testi q {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  color: var(--ink);
+  display: block;
+  max-width: 30ch;
+  margin: 0 auto 24px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.testi q::before { content: '« '; color: var(--red); }
+.testi q::after { content: ' »'; color: var(--red); }
+.testi cite {
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+footer {
+  background: var(--paper);
+  border-top: 4px double var(--gold);
+  padding: 50px 40px;
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+footer a { color: var(--red-deep); }
+footer .micro {
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 16px;
+}
+
+@media (max-width: 760px) {
+  .nav-links { display: none; }
+  .layer { grid-template-columns: 60px 1fr; }
+  .layer-active { grid-column: 1 / -1; }
+  .pill-label { font-size: 0.75rem; padding: 3px 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topribbon">
+  Made for one. Engineered for all. <span>Patent EP 4 224 901</span>
+</div>
+
+<nav class="nav">
+  <div class="nav-logo">Тablette<span class="gold">‑</span>Matrjoschka<sup style="font-size:0.55em">™</sup></div>
+  <div class="nav-links">
+    <span>Konzept</span>
+    <span>Dosierung</span>
+    <span>Apotheke</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="ornament">✦ &nbsp; ◆ &nbsp; ✦</div>
+  <h1>
+    Eine Tablette.<br>
+    Viele Tabletten.<br>
+    <span class="red">Dieselbe Tablette.</span>
+    <span class="small">Multi-Wirkstoff-Kaskade · entwickelt in Sankt Petersburg</span>
+  </h1>
+
+  <div class="pill-stage">
+    <svg class="pill-svg" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="shell" cx="50%" cy="40%">
+          <stop offset="0%" stop-color="#e85948"/>
+          <stop offset="100%" stop-color="#922b1c"/>
+        </radialGradient>
+        <radialGradient id="shell2" cx="50%" cy="40%">
+          <stop offset="0%" stop-color="#f0d59a"/>
+          <stop offset="100%" stop-color="#b88a44"/>
+        </radialGradient>
+        <radialGradient id="shell3" cx="50%" cy="40%">
+          <stop offset="0%" stop-color="#9fb89c"/>
+          <stop offset="100%" stop-color="#5a7858"/>
+        </radialGradient>
+        <radialGradient id="core" cx="50%" cy="40%">
+          <stop offset="0%" stop-color="#faf8f4"/>
+          <stop offset="100%" stop-color="#c0392b"/>
+        </radialGradient>
+      </defs>
+      <!-- Schale 1 (rot, außen) -->
+      <ellipse cx="350" cy="250" rx="320" ry="220" fill="url(#shell)" stroke="#7a1414" stroke-width="2"/>
+      <!-- Schnitt-Indikator (gerade Linie quer) -->
+      <line x1="30" y1="250" x2="670" y2="250" stroke="#7a1414" stroke-width="2" stroke-dasharray="4,4" opacity="0.4"/>
+      <!-- Schale 2 (gold) -->
+      <ellipse cx="350" cy="250" rx="240" ry="160" fill="url(#shell2)" stroke="#8d6a32" stroke-width="2"/>
+      <!-- Schale 3 (grün) -->
+      <ellipse cx="350" cy="250" rx="160" ry="100" fill="url(#shell3)" stroke="#3d5c3a" stroke-width="2"/>
+      <!-- Kern (klein) -->
+      <ellipse cx="350" cy="250" rx="80" ry="50" fill="url(#core)" stroke="#922b1c" stroke-width="2"/>
+      <!-- Inneres Logo "M" -->
+      <text x="350" y="270" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-weight="700" font-size="56" fill="#7a1414">М</text>
+    </svg>
+
+    <div class="pill-label l1">Schicht I — Ibuprofen 400</div>
+    <div class="pill-label l2">Schicht II — Diazepam 5 mg</div>
+    <div class="pill-label l3">Schicht III — Melatonin 3 mg</div>
+    <div class="pill-label l4">Kern — Substanz X</div>
+  </div>
+
+  <div>
+    <a class="btn btn-red" href="#schichten">Schichten ansehen</a>
+    &nbsp;
+    <a class="btn btn-outline" href="#dosierung">Dosierung</a>
+  </div>
+</section>
+
+<section class="layers" id="schichten">
+  <div class="layers-inner">
+    <div class="ornament">✦</div>
+    <h2 class="layers-title">Vier Wirkstoffe, ein Zeitfenster.</h2>
+    <p class="layers-sub">Du nimmst eine. Die Wirkung kaskadiert von außen nach innen, über 12 Stunden.</p>
+
+    <div class="layer">
+      <div class="layer-num">I.</div>
+      <div class="layer-info">
+        <h3>Außenschicht — Erste 90 Minuten</h3>
+        <p>Klassischer Schmerzhemmer. Der Patient nimmt die Tablette wegen Kopfschmerzen. Die Schmerzen verschwinden. Patient ist entspannt.</p>
+      </div>
+      <div class="layer-active"><small>Wirkstoff</small>Ibuprofen 400 mg</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-num">II.</div>
+      <div class="layer-info">
+        <h3>Mittelschicht — Stunde 2 bis 6</h3>
+        <p>Anxiolytische Phase. Die Welt wird sanft. Der Patient versteht plötzlich Familienkonflikte und Steuerrecht.</p>
+      </div>
+      <div class="layer-active"><small>Wirkstoff</small>Diazepam 5 mg</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-num">III.</div>
+      <div class="layer-info">
+        <h3>Tiefenschicht — Stunde 6 bis 10</h3>
+        <p>Schlafanstoß. Patient schläft ein, ohne es zu merken. REM-Phase qualitativ überdurchschnittlich.</p>
+      </div>
+      <div class="layer-active"><small>Wirkstoff</small>Melatonin 3 mg</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-num">IV.</div>
+      <div class="layer-info">
+        <h3>Kern — Stunde 10 bis 14</h3>
+        <p>Die finale Schicht. Wir kommentieren das nicht weiter. Der Patient wacht glücklich auf.</p>
+      </div>
+      <div class="layer-active"><small>Wirkstoff</small>Substanz X</div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="trust-inner">
+    <div class="ornament">✦ &nbsp; ◆ &nbsp; ✦</div>
+    <h2 style="font-family: var(--serif); font-style: italic; font-size: 2.2rem; font-weight: 500;">Klinisch erprobt. Apothekenpflichtig.</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-num">27</div>
+        <div class="trust-label">Länder Zulassung</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">12 h</div>
+        <div class="trust-label">Wirkzeit pro Pille</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">94 %</div>
+        <div class="trust-label">Patientenzufriedenheit</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num">€ 38</div>
+        <div class="trust-label">Pro Packung à 10 Stück</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dosage" id="dosierung">
+  <div class="dosage-inner">
+    <h2 class="dosage-title">Dosierung nach Körpergewicht</h2>
+    <table class="dosage-table">
+      <thead>
+        <tr><th>Gewichtsklasse</th><th>Halbwert-Schale</th><th>Volle Tablette</th><th>Doppeldosis</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>50–70 kg</td><td>Schicht I + II</td><td>alle Schichten</td><td>nicht empfohlen</td></tr>
+        <tr><td>70–90 kg</td><td>Schicht I bis III</td><td>alle Schichten</td><td>auf Rezept</td></tr>
+        <tr><td>90–120 kg</td><td>nicht empfohlen</td><td>alle Schichten</td><td>möglich</td></tr>
+        <tr><td>&gt; 120 kg</td><td>nicht empfohlen</td><td>1,5 Tabletten</td><td>auf Rezept</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="testi">
+  <div class="ornament">✦</div>
+  <q>Ich habe eine Tablette für meine Erkältung genommen und am nächsten Morgen war ich verheiratet.</q>
+  <cite>Patient #2241 · Pilotphase 2025</cite>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #32 · Bewertung 22/24<br>
+  <a href="/folge/32">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+  <div class="micro">Keine medizinische Beratung · Satire · Made in Sankt Pegnitz</div>
+</footer>
+
+</body>
+</html>

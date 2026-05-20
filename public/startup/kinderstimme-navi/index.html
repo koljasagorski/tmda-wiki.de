@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kinderstimme Navi — Endlich hält Papa sich an die Verkehrsregeln</title>
+<meta name="description" content="Das Navi-Plugin, das deine Routen mit Kinderstimme ansagt. Du fährst niemals zu schnell. Du überfährst keine Ampel. Du bist plötzlich Vater des Jahres." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/kinderstimme-navi" />
+<meta property="og:title" content="Kinderstimme Navi" />
+<meta property="og:description" content="Mit Kinderstimme im Auto fährt man automatisch besser." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/kinderstimme-navi" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Kinderstimme Navi","applicationCategory":"NavigationApplication","operatingSystem":"iOS, Android, CarPlay, Android Auto"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --peach: #ffd5b8;
+  --peach-2: #ffb98c;
+  --mint: #c2f0d0;
+  --mint-2: #7dd09a;
+  --cream: #fffaf3;
+  --lavender: #e0d4ff;
+  --pink: #ffb8d1;
+  --ink: #2d2438;
+  --ink-soft: #6e5a82;
+  --sun: #ffd84d;
+  --orange: #ff7a3d;
+  --sans: 'Nunito', system-ui, sans-serif;
+  --hand: 'Caveat', cursive;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: var(--orange); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Squiggly underline utility */
+.squiggle { position: relative; display: inline-block; }
+.squiggle::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -8px;
+  height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 8'%3E%3Cpath d='M 0 4 Q 5 0 10 4 T 20 4 T 30 4 T 40 4 T 50 4 T 60 4' fill='none' stroke='%23ff7a3d' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 28px 32px 60px;
+  background: linear-gradient(135deg, var(--peach) 0%, var(--pink) 40%, var(--lavender) 100%);
+  overflow: hidden;
+}
+.hero::before, .hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 0;
+}
+.hero::before { width: 280px; height: 280px; background: var(--mint); top: -80px; right: -40px; }
+.hero::after { width: 200px; height: 200px; background: var(--sun); bottom: -50px; left: 10%; }
+
+.topbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto 30px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+.logo-emoji {
+  display: inline-grid;
+  place-items: center;
+  width: 42px; height: 42px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  font-size: 1.4rem;
+}
+.topbar nav { display: flex; gap: 24px; font-weight: 700; font-size: 0.95rem; color: var(--ink-soft); }
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+}
+.hero-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+.hero-rating .stars { color: var(--orange); letter-spacing: -1px; }
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+  margin-bottom: 22px;
+}
+.hero h1 .handwritten {
+  font-family: var(--hand);
+  font-weight: 600;
+  color: var(--orange);
+  display: inline-block;
+  transform: rotate(-3deg);
+  font-size: 1.1em;
+}
+.hero p.lead {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+.app-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.app-badge {
+  background: var(--ink);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.app-badge:hover { background: var(--ink-soft); text-decoration: none; color: white; }
+.app-badge .icon { font-size: 1.3rem; }
+.app-badge small { display: block; font-size: 0.65rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.7; }
+
+/* Phone mockup */
+.phone-stage {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.phone {
+  width: 280px;
+  height: 560px;
+  background: var(--ink);
+  border-radius: 38px;
+  padding: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+  position: relative;
+  transform: rotate(4deg);
+}
+.phone-notch {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; height: 22px;
+  background: var(--ink);
+  border-radius: 0 0 14px 14px;
+  z-index: 3;
+}
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, var(--mint) 0%, var(--peach) 70%, var(--pink) 100%);
+  border-radius: 26px;
+  padding: 50px 18px 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.phone-time {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.phone-card {
+  background: white;
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.phone-eta { font-size: 1.5rem; font-weight: 900; }
+.phone-eta-label { font-size: 0.7rem; font-weight: 700; color: var(--ink-soft); letter-spacing: 0.1em; text-transform: uppercase; }
+.phone-instr { font-size: 0.85rem; font-weight: 700; color: var(--ink); margin-top: 6px; }
+.phone-instr .arrow { color: var(--orange); }
+.phone-voice {
+  background: var(--mint);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: auto;
+  font-family: var(--hand);
+  font-size: 1.1rem;
+  color: var(--ink);
+  position: relative;
+  line-height: 1.3;
+}
+.phone-voice::before { content: '🗣️'; margin-right: 6px; }
+.phone-voice-status { font-family: var(--sans); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mint-2); position: absolute; top: 8px; right: 12px; }
+
+/* Voice samples */
+.voices {
+  padding: 100px 32px;
+  background: var(--cream);
+}
+.voices-inner { max-width: 1100px; margin: 0 auto; }
+.voices-eyebrow { color: var(--orange); font-weight: 800; letter-spacing: 0.25em; text-transform: uppercase; font-size: 0.78rem; margin-bottom: 12px; text-align: center; }
+.voices-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.05;
+}
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.voice-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  position: relative;
+  transition: transform .2s;
+}
+.voice-card:hover { transform: translateY(-4px); }
+.voice-avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+}
+.voice-card.lina .voice-avatar { background: var(--peach); }
+.voice-card.tom .voice-avatar { background: var(--mint); }
+.voice-card.greta .voice-avatar { background: var(--lavender); }
+.voice-card.lukas .voice-avatar { background: var(--pink); }
+.voice-card.emil .voice-avatar { background: var(--sun); }
+.voice-card.zoe .voice-avatar { background: #ffb8d1; }
+.voice-name { font-weight: 900; font-size: 1.2rem; }
+.voice-age { color: var(--ink-soft); font-weight: 700; font-size: 0.85rem; margin-bottom: 12px; }
+.voice-quote {
+  font-family: var(--hand);
+  font-size: 1.15rem;
+  color: var(--ink);
+  line-height: 1.3;
+  padding: 12px 16px;
+  background: var(--cream);
+  border-radius: 12px;
+  position: relative;
+  margin-bottom: 12px;
+}
+.voice-quote::before { content: '"'; color: var(--orange); font-size: 1.4rem; font-family: serif; margin-right: 4px; }
+.voice-tag {
+  display: inline-block;
+  background: var(--ink);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Before/After */
+.compare {
+  padding: 100px 32px;
+  background: linear-gradient(135deg, var(--mint) 0%, var(--peach) 100%);
+}
+.compare-inner { max-width: 1100px; margin: 0 auto; }
+.compare h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 50px;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.compare-col {
+  background: white;
+  border-radius: 24px;
+  padding: 32px 28px;
+  position: relative;
+}
+.compare-col h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+.compare-col ul { list-style: none; display: grid; gap: 12px; }
+.compare-col li { padding-left: 30px; position: relative; font-weight: 600; color: var(--ink-soft); }
+.compare-col.before li::before { content: '😡'; position: absolute; left: 0; }
+.compare-col.after li::before { content: '✨'; position: absolute; left: 0; }
+.compare-col.before { border: 3px solid #f87171; }
+.compare-col.after { border: 3px solid var(--mint-2); }
+
+/* Reviews */
+.reviews {
+  padding: 100px 32px;
+  background: var(--cream);
+}
+.reviews-inner { max-width: 1100px; margin: 0 auto; }
+.reviews-title {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+.reviews-sub { text-align: center; color: var(--ink-soft); margin-bottom: 50px; font-weight: 600; }
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.review {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+.review .stars { color: var(--orange); margin-bottom: 8px; letter-spacing: -1px; }
+.review .text { font-weight: 600; margin-bottom: 12px; color: var(--ink); font-size: 0.95rem; }
+.review .author { font-size: 0.82rem; font-weight: 800; color: var(--ink-soft); }
+.review .verified {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  color: var(--mint-2);
+}
+
+/* CTA */
+.cta {
+  padding: 100px 32px;
+  background: var(--ink);
+  color: white;
+  text-align: center;
+}
+.cta h2 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta h2 .yellow { color: var(--sun); }
+.cta p { color: rgba(255,255,255,0.7); margin-bottom: 30px; font-size: 1.05rem; max-width: 50ch; margin-left: auto; margin-right: auto; font-weight: 500; }
+
+footer {
+  padding: 40px 32px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: var(--cream);
+  font-weight: 600;
+}
+footer a { color: var(--orange); }
+
+@media (max-width: 760px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .phone { transform: rotate(0); margin: 20px auto; }
+  .compare-grid { grid-template-columns: 1fr; }
+  .topbar nav { display: none; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="topbar">
+    <div class="logo">
+      <span class="logo-emoji">🚗</span>
+      <span>kinderstimme-navi</span>
+    </div>
+    <nav>
+      <span>Features</span>
+      <span>Stimmen</span>
+      <span>Reviews</span>
+    </nav>
+  </div>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-rating"><span class="stars">★★★★★</span> 4,9 · 28.412 Bewertungen</div>
+      <h1>
+        Endlich hält Papa<br>
+        sich an die <span class="squiggle">Verkehrsregeln</span>.<br>
+        <span class="handwritten">Wegen einer Kinderstimme.</span>
+      </h1>
+      <p class="lead">
+        Du installierst das Plugin in dein Navi. Statt der genervten Frauenstimme spricht jetzt
+        ein <strong>echtes Kind</strong>. Du fährst niemals wieder zu schnell. Du bremst vor jeder
+        Ampel. Du bist plötzlich Vater des Jahres.
+      </p>
+      <div class="app-badges">
+        <a class="app-badge" href="#">
+          <span class="icon">🍎</span>
+          <span><small>Download im</small>App Store</span>
+        </a>
+        <a class="app-badge" href="#">
+          <span class="icon">▶</span>
+          <span><small>Get it on</small>Google Play</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="phone-stage">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-time">9:41</div>
+          <div class="phone-card">
+            <div class="phone-eta-label">Ankunft</div>
+            <div class="phone-eta">14:32 Uhr</div>
+            <div class="phone-instr"><span class="arrow">→</span> In 200 m rechts abbiegen</div>
+          </div>
+          <div class="phone-card">
+            <div class="phone-eta-label">Aktive Stimme</div>
+            <div class="phone-instr">Lina · 7 Jahre · Hamburg</div>
+          </div>
+          <div class="phone-voice">
+            Papa, da steht eine Ampel. Rot ist die Farbe von Erdbeerjoghurt. Bremsen.
+            <span class="phone-voice-status">● live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="voices" id="stimmen">
+  <div class="voices-inner">
+    <div class="voices-eyebrow">★ Die Stimmen-Bibliothek</div>
+    <h2 class="voices-title">Wähle das Kind, das dich erzieht.</h2>
+    <div class="voices-grid">
+      <div class="voice-card lina">
+        <div class="voice-avatar">🦄</div>
+        <div class="voice-name">Lina</div>
+        <div class="voice-age">7 Jahre · Hamburg · weich</div>
+        <div class="voice-quote">Papa, da steht eine Ampel. Rot ist die Farbe von Erdbeerjoghurt.</div>
+        <span class="voice-tag">Standard</span>
+      </div>
+      <div class="voice-card tom">
+        <div class="voice-avatar">🤖</div>
+        <div class="voice-name">Tom</div>
+        <div class="voice-age">9 Jahre · Berlin · faktenbasiert</div>
+        <div class="voice-quote">Geschwindigkeit aktuell 18 km/h über erlaubt. Statistisch erhöht das die Unfallwahrscheinlichkeit.</div>
+        <span class="voice-tag">Nerd Edition</span>
+      </div>
+      <div class="voice-card greta">
+        <div class="voice-avatar">🌿</div>
+        <div class="voice-name">Greta</div>
+        <div class="voice-age">11 Jahre · streng</div>
+        <div class="voice-quote">Du. Hast. Gerade. Eine. Plastiktüte. Aus. Dem. Fenster. Geworfen.</div>
+        <span class="voice-tag">Eco Plus</span>
+      </div>
+      <div class="voice-card lukas">
+        <div class="voice-avatar">🎮</div>
+        <div class="voice-name">Lukas</div>
+        <div class="voice-age">8 Jahre · Hannover</div>
+        <div class="voice-quote">In 500 m kommt eine Tankstelle, da gibt es Spielzeug.</div>
+        <span class="voice-tag">Begleitkindl</span>
+      </div>
+      <div class="voice-card emil">
+        <div class="voice-avatar">🐻</div>
+        <div class="voice-name">Emil</div>
+        <div class="voice-age">5 Jahre · Sachsen</div>
+        <div class="voice-quote">Mein Onkel sagt, du fährst wie eine ALTE FRAU.</div>
+        <span class="voice-tag">Toddler Edition</span>
+      </div>
+      <div class="voice-card zoe">
+        <div class="voice-avatar">⭐</div>
+        <div class="voice-name">Zoë</div>
+        <div class="voice-age">12 Jahre · Klugscheißerin</div>
+        <div class="voice-quote">Du hast eben den Blinker nicht gesetzt. Ich erzähle das Mama.</div>
+        <span class="voice-tag">Premium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="compare-inner">
+    <h2>Vorher · Nachher</h2>
+    <div class="compare-grid">
+      <div class="compare-col before">
+        <h3>Mit Standard-Navi-Stimme</h3>
+        <ul>
+          <li>Tempo 17 km/h über erlaubt</li>
+          <li>Rote Ampel wird zur „Hellgelben Ampel"</li>
+          <li>Fluchen bei Spurwechsel</li>
+          <li>Kein Blinker beim Abbiegen</li>
+          <li>Im Schnitt 1,2 Strafzettel pro Monat</li>
+        </ul>
+      </div>
+      <div class="compare-col after">
+        <h3>Mit Kinderstimme</h3>
+        <ul>
+          <li>Tempo 2 km/h unter erlaubt</li>
+          <li>Anhalten vor gelber Ampel</li>
+          <li>Du sagst „nö, das machen wir nicht"</li>
+          <li>Blinker drei Spuren vorher</li>
+          <li>Vater-Stolz steigt um 312 %</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="reviews-inner">
+    <div class="reviews-title">28.412 × 5 Sterne.</div>
+    <div class="reviews-sub">App Store · Deutschland · letzte 30 Tage</div>
+    <div class="review-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <div class="text">Mein Mann hat seit zwei Wochen keinen Strafzettel mehr. Wir wissen nicht, was wir mit dem gesparten Geld machen sollen. Vielleicht ein Kind?</div>
+        <div class="author">— sandra_h <span class="verified">verifiziert</span></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <div class="text">Greta-Edition. Bin jetzt Veganer.</div>
+        <div class="author">— bjoern_e</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <div class="text">Nachdem ich beim dritten Mal von „Lina" gehört habe, dass ich „doof fahre", habe ich geweint und seitdem fahre ich rücksichtsvoll. Kein Witz.</div>
+        <div class="author">— pascal_m</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <div class="text">Die Stimme von Emil ist so süß, dass ich extra langsam fahre, damit ich sie länger höre. Genau wie geplant, schätze ich.</div>
+        <div class="author">— sebastian_k</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Fahre, als ob ein <span class="yellow">Kind im Auto</span> sitzt.<br>Auch wenn keins drin ist.</h2>
+  <p>Kinderstimme Navi ist kompatibel mit CarPlay, Android Auto und allen großen Navi-Apps. 14 Tage gratis testen.</p>
+  <a class="app-badge" href="#">
+    <span class="icon">🎙️</span>
+    <span><small>Jetzt starten</small>Gratis 14 Tage</span>
+  </a>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #8 · Bewertung 22/24<br>
+  <a href="/folge/8">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+</footer>
+
+</body>
+</html>
