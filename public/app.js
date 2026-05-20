@@ -686,7 +686,7 @@ function setupChat(container, opts = {}) {
       <h3>Hey — kleines Wort in eigener Sache 🙏</h3>
       <p>Das hier ist ein <strong>Hobby-Fan-Projekt</strong>, kein offizielles TMDA-Angebot. Jede Chat-Anfrage kostet ein paar Cent Cloudflare-AI-Gebühren — auf Dauer summiert sich das.</p>
       <p>Wenn dir das Wiki Spaß macht, freu ich mich über einen kleinen Beitrag:</p>
-      <a class="donate-btn" href="https://www.paypal.com/paypalme/koljasagorski" target="_blank" rel="noopener">
+      <a class="donate-btn" href="https://www.paypal.com/paypalme/gigalogi" target="_blank" rel="noopener">
         <strong>PayPal:</strong> paypal@koljasagorski.de
       </a>
       <p class="meta">Danke! Frag ruhig weiter — die Antworten kommen wie gewohnt.</p>
