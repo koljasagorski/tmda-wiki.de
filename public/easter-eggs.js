@@ -16,6 +16,7 @@
 //   Tipp "bosse"                          → Album-Cover (Folge 42)
 //   Tipp "lindemann"                      → Krisen-PR-Quote
 //   Tipp "aaron"                          → Palmen-Regen (Folge 3)
+//   6 Seiten besucht                      → Hielscher-Karte (Hotel Matze)
 //   3× Klick Score-Badge                  → Konfetti
 //   5× Klick Stat-Counter                 → Achievement
 //   Maus in alle 4 Ecken                  → Cornerologe
@@ -421,6 +422,7 @@
           <ul>
             <li><kbd>lindemann</kbd> → Krisen-PR-Quote</li>
             <li><kbd>aaron</kbd> → Palmen-Regen</li>
+            <li><kbd>6 Seiten besucht</kbd> → Hielscher-Karte</li>
             <li><kbd>3× Klick Score-Badge</kbd> → Konfetti</li>
             <li><kbd>5× Klick Stat-Counter</kbd> → Achievement</li>
             <li><kbd>Maus alle 4 Ecken</kbd> → Cornerologe</li>
@@ -451,6 +453,70 @@
     };
     setTimeout(() => document.addEventListener('keydown', onKey), 50);
   }
+
+  // =============== Hielscher-Karte (nach 6 besuchten Seiten) ===============
+  // Inside-Joke: „den Hielscher ziehen" = in die Interviewer-Rolle wechseln,
+  // nur Fragen stellen, nicht selbst Stellung beziehen. Bezug auf Matze
+  // Hielscher (Hotel Matze). Card pop-up von unten-links nach 6 unique Routes.
+  const HIELSCHER_VISITS_KEY = 'tmda-visits-session';
+  const HIELSCHER_SHOWN_KEY = 'tmda-hielscher-shown-session';
+  const HIELSCHER_THRESHOLD = 6;
+  const HIELSCHER_URL = 'https://hotelmatze.de';
+
+  function trackHielscherVisit() {
+    if (sessionStorage.getItem(HIELSCHER_SHOWN_KEY)) return;
+    const path = location.pathname.replace(/\/+$/, '') || '/';
+    let visited;
+    try { visited = JSON.parse(sessionStorage.getItem(HIELSCHER_VISITS_KEY) || '[]'); }
+    catch (e) { visited = []; }
+    if (!visited.includes(path)) {
+      visited.push(path);
+      sessionStorage.setItem(HIELSCHER_VISITS_KEY, JSON.stringify(visited));
+    }
+    if (visited.length >= HIELSCHER_THRESHOLD) {
+      sessionStorage.setItem(HIELSCHER_SHOWN_KEY, '1');
+      showHielscherCard();
+    }
+  }
+
+  function showHielscherCard() {
+    if (document.getElementById('hielscherCard')) return;
+    const card = document.createElement('div');
+    card.id = 'hielscherCard';
+    card.className = 'hielscher-card';
+    card.innerHTML = `
+      <button class="hielscher-close" aria-label="Schließen" type="button">×</button>
+      <a class="hielscher-card-inner" href="${HIELSCHER_URL}" target="_blank" rel="noopener noreferrer">
+        <div class="hielscher-corner hielscher-corner-tl"><span class="hielscher-rank">H</span><span class="hielscher-suit">♠</span></div>
+        <div class="hielscher-corner hielscher-corner-br"><span class="hielscher-rank">H</span><span class="hielscher-suit">♠</span></div>
+        <div class="hielscher-center">
+          <div class="hielscher-label">JOKER</div>
+          <h3>Willst du lieber den Hielscher ziehen?</h3>
+          <p>Zuhören, nicken, nicht Stellung beziehen. Bei <strong>Hotel Matze</strong>.</p>
+          <span class="hielscher-cta">→ Podcast öffnen</span>
+        </div>
+      </a>
+    `;
+    document.body.appendChild(card);
+    requestAnimationFrame(() => card.classList.add('show'));
+    const close = (e) => {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      card.classList.remove('show');
+      setTimeout(() => card.remove(), 400);
+    };
+    card.querySelector('.hielscher-close').addEventListener('click', close);
+    setTimeout(() => card.classList.contains('show') && close(), 14000);
+  }
+
+  // SPA-Navigation abfangen: pushState wird gepatcht + popstate gehört
+  const _origPushState = history.pushState;
+  history.pushState = function () {
+    const ret = _origPushState.apply(this, arguments);
+    trackHielscherVisit();
+    return ret;
+  };
+  window.addEventListener('popstate', trackHielscherVisit);
+  trackHielscherVisit();
 
   // =============== Konsolen-Greeting ===============
   console.log(
