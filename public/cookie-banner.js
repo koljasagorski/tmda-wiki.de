@@ -4,9 +4,18 @@
 
 (function () {
   const KEY = 'tmda-cookie-acknowledged';
+
+  // Test-Hook: ?cookie=reset löscht das Flag und zeigt den Banner sofort wieder
+  const url = new URL(location.href);
+  if (url.searchParams.get('cookie') === 'reset') {
+    localStorage.removeItem(KEY);
+    url.searchParams.delete('cookie');
+    history.replaceState(null, '', url.pathname + (url.search ? '?' + url.searchParams : '') + url.hash);
+  }
   if (localStorage.getItem(KEY)) return;
 
-  // 1.5 Sek warten, damit die Seite erstmal lädt
+  // Auf Mobile braucht's keine 1.5 Sek-Wartezeit — kürzer ist OK
+  const delay = window.matchMedia('(max-width: 640px)').matches ? 600 : 1200;
   setTimeout(() => {
     const banner = document.createElement('div');
     banner.className = 'cookie-banner';
