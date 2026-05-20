@@ -49,7 +49,7 @@ for (const name of dataFiles) {
 app.get('/api/config', (c) => {
   return c.json({
     turnstileSiteKey: c.env.TURNSTILE_SITE_KEY || '',
-    turnstileThreshold: Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 5),
+    turnstileInterval: Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 6),
     youtubeChannel: !!c.env.YOUTUBE_CHANNEL_ID,
   });
 });
@@ -202,18 +202,20 @@ app.post('/api/chat', async (c) => {
     return c.json({ error: 'messages[] erforderlich' }, 400);
   }
 
-  // Turnstile-Schwelle: ab der N-ten Frage muss ein gültiges Token mitkommen
-  const threshold = Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 5);
+  // Turnstile: alle N Fragen Challenge (Token sind Single-Use bei Cloudflare,
+  // daher Interval-Logik statt "ab Frage N immer")
+  const interval = Number(c.env.TURNSTILE_QUESTION_THRESHOLD || 6);
   const secret = c.env.TURNSTILE_SECRET_KEY;
   const qCount = Number(userQuestionCount || 0);
-  if (secret && qCount >= threshold) {
+  const needsCheck = qCount > 0 && qCount % interval === 0;
+  if (secret && needsCheck) {
     const ip = c.req.header('cf-connecting-ip') || '';
     const verified = await verifyTurnstile(secret, turnstileToken, ip);
     if (!verified.ok) {
       return c.json({
         error: 'turnstile-required',
         reason: verified.reason,
-        threshold,
+        interval,
       }, 401);
     }
   }
