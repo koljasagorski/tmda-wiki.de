@@ -4,6 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#ff8a3d" />
+
+  <!-- Performance: DNS-Prefetch & Preconnect für externe Domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+  <link rel="dns-prefetch" href="https://www.youtube.com" />
+  <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
+
+  <!-- Preload kritischer Daten — wird oft als erstes gebraucht -->
+  <link rel="preload" href="/api/data/episodes" as="fetch" crossorigin />
 
   <!-- SEO: wird per Cloudflare Worker (HTMLRewriter) pro Route überschrieben.
        Siehe src/seo.js für die Single Source of Truth. -->
