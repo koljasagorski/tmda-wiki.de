@@ -81,6 +81,10 @@ const views = {
   '/hosts': renderHosts,
   '/chat': renderChat,
   '/transkripte-gesucht': renderTranskripteGesucht,
+  '/stats': renderStats,
+  '/quiz': renderQuiz,
+  '/bingo': renderBingo,
+  '/timeline': renderTimeline,
 };
 
 function setActive(path) {
@@ -229,6 +233,10 @@ async function renderHome() {
     { href: '/zitate', title: 'Zitate', desc: 'Die besten Sätze aller Folgen.', tag: 'Best-of', emoji: '💬' },
     { href: '/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
     { href: '/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
+    { href: '/stats', title: 'Statistik-Dashboard', desc: 'Charts: Punkte-Trend, Top-Personen, Heatmap.', tag: 'Daten', emoji: '📊' },
+    { href: '/timeline', title: 'Folgen-Timeline', desc: 'Chronik aller Folgen mit Highlights.', tag: 'Chronik', emoji: '⏳' },
+    { href: '/quiz', title: 'TMDA-Quiz', desc: '10 Fragen aus dem Wiki. Highscore.', tag: 'Spiel', emoji: '🧠' },
+    { href: '/bingo', title: 'TMDA-Bingo', desc: '5×5-Karte für Live-Hören. Tap to mark.', tag: 'Spiel', emoji: '🎲' },
     { href: '/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
     { href: '/transkripte-gesucht', title: 'Transkripte gesucht', desc: 'Du kannst Audio nach Sprecher zuordnen? Meld dich!', tag: 'Mithelfen', emoji: '🎤' },
   ];
@@ -702,6 +710,344 @@ function renderTranskripteGesucht() {
       </a>
     </article>
   `;
+}
+
+// ---------- 📊 Statistik-Dashboard ----------
+async function renderStats() {
+  const [eps, ideen, gaeste, geru, corner] = await Promise.all([
+    getData('episodes'), getData('startup-ideen'), getData('gaeste'),
+    getData('geruechte'), getData('kalles-corner'),
+  ]);
+  const epItems = eps.items || [];
+  const ideenItems = (ideen.items || []).filter((i) => i.punkte != null);
+
+  // Punkte über Folgen
+  const byFolge = new Map();
+  for (const i of ideenItems) byFolge.set(i.folge, i.punkte);
+  const sortedFolgen = [...new Set([...epItems.map((e) => e.folge), ...ideenItems.map((i) => i.folge)])].sort((a, b) => a - b);
+  const maxPkt = 24;
+
+  // Punkte-Histogramm
+  const histo = new Array(25).fill(0);
+  for (const i of ideenItems) if (i.punkte >= 0 && i.punkte <= 24) histo[i.punkte]++;
+  const maxHistoBar = Math.max(...histo, 1);
+
+  // Top-Personen (Top 12)
+  const topPersonen = (gaeste.items || []).slice(0, 12);
+  const maxPersonen = Math.max(...topPersonen.map((p) => p.folgen.length), 1);
+
+  // Laufzeit-Average
+  const seconds = epItems.map((e) => {
+    const m = (e.laufzeit || '').match(/(\d+):(\d{2}):(\d{2})|(\d+):(\d{2})/);
+    if (!m) return 0;
+    return m[1] ? +m[1] * 3600 + +m[2] * 60 + +m[3] : +m[4] * 60 + +m[5];
+  }).filter((s) => s > 0);
+  const avgSec = seconds.length ? Math.round(seconds.reduce((a, b) => a + b) / seconds.length) : 0;
+  const totalSec = seconds.reduce((a, b) => a + b, 0);
+
+  // Rubriken-Heatmap
+  const cornerFolgen = new Set((corner.items || []).map((c) => c.folge));
+  const geruchtFolgen = new Set((geru.items || []).map((g) => g.folge));
+
+  app.innerHTML = `
+    <h1 class="section-title">📊 Statistik-Dashboard</h1>
+    <p class="section-sub">Daten über alle ${epItems.length} Folgen. Alles aus den Transkripten extrahiert.</p>
+
+    <section class="stat-block">
+      <h2>💡 Startup-Idee der Woche · Punkte über die Folgen</h2>
+      <p class="meta">Skala 0–24. Punkte von Nisse pro Folge.</p>
+      <div class="line-chart" id="lineChart"></div>
+    </section>
+
+    <section class="stat-block">
+      <h2>📈 Punkte-Verteilung</h2>
+      <p class="meta">Wie oft welcher Score vergeben wurde.</p>
+      <div class="histo">
+        ${histo.map((count, i) => `
+          <div class="histo-col" title="${count} Ideen mit ${i}/24 Punkten">
+            <div class="histo-bar" style="height:${(count / maxHistoBar) * 180}px">${count > 0 ? `<span>${count}</span>` : ''}</div>
+            <div class="histo-label">${i}</div>
+          </div>`).join('')}
+      </div>
+    </section>
+
+    <section class="stat-block">
+      <h2>👥 Top 12 erwähnte Personen</h2>
+      <div class="bar-list">
+        ${topPersonen.map((p) => `
+          <div class="bar-row">
+            <span class="bar-name">${esc(p.name)}</span>
+            <div class="bar-track"><div class="bar-fill" style="width:${(p.folgen.length / maxPersonen) * 100}%"></div></div>
+            <span class="bar-val">${p.folgen.length}×</span>
+          </div>`).join('')}
+      </div>
+    </section>
+
+    <section class="stat-block">
+      <h2>🎙️ Laufzeit</h2>
+      <div class="kpi-row">
+        <div class="kpi"><div class="kpi-num">${Math.floor(avgSec / 60)} min</div><div class="kpi-lab">Durchschnitt</div></div>
+        <div class="kpi"><div class="kpi-num">${Math.floor(totalSec / 3600)} h</div><div class="kpi-lab">Insgesamt</div></div>
+        <div class="kpi"><div class="kpi-num">${epItems.length}</div><div class="kpi-lab">Folgen</div></div>
+        <div class="kpi"><div class="kpi-num">${Math.floor(totalSec / 60 / epItems.length)} min</div><div class="kpi-lab">Avg in min</div></div>
+      </div>
+    </section>
+
+    <section class="stat-block">
+      <h2>🔍 Rubriken-Heatmap</h2>
+      <p class="meta">Welche Folge hatte welche Rubrik?</p>
+      <div class="heatmap">
+        <div class="heat-row"><span class="heat-label">Startup-Idee</span>${sortedFolgen.map((f) => `<div class="heat-cell ${byFolge.has(f) ? 'on' : ''}" title="Folge ${f}"></div>`).join('')}</div>
+        <div class="heat-row"><span class="heat-label">Kalles Corner</span>${sortedFolgen.map((f) => `<div class="heat-cell ${cornerFolgen.has(f) ? 'on kalle' : ''}" title="Folge ${f}"></div>`).join('')}</div>
+        <div class="heat-row"><span class="heat-label">Gerücht der Woche</span>${sortedFolgen.map((f) => `<div class="heat-cell ${geruchtFolgen.has(f) ? 'on geru' : ''}" title="Folge ${f}"></div>`).join('')}</div>
+      </div>
+    </section>
+  `;
+
+  // Line Chart SVG mit Punkten
+  const chart = document.getElementById('lineChart');
+  const w = 800, h = 240, pad = 32;
+  const xStep = (w - pad * 2) / Math.max(sortedFolgen.length - 1, 1);
+  const yScale = (v) => h - pad - (v / maxPkt) * (h - pad * 2);
+  const points = sortedFolgen.map((f, i) => ({ x: pad + i * xStep, y: byFolge.has(f) ? yScale(byFolge.get(f)) : null, folge: f, pkt: byFolge.get(f) }));
+  const line = points.filter((p) => p.y !== null).map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+  chart.innerHTML = `
+    <svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" width="100%" height="240" aria-label="Punkte-Trend">
+      <g stroke="var(--border)" stroke-width="1">
+        ${[0, 6, 12, 18, 24].map((v) => `<line x1="${pad}" y1="${yScale(v)}" x2="${w - pad}" y2="${yScale(v)}"/><text x="6" y="${yScale(v) + 4}" font-size="10" fill="var(--fg-muted)">${v}</text>`).join('')}
+      </g>
+      <path d="${line}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      ${points.filter((p) => p.y !== null).map((p) => `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="3.5" fill="var(--accent)"><title>Folge ${p.folge}: ${p.pkt}/24</title></circle>`).join('')}
+    </svg>
+  `;
+}
+
+// ---------- 🧠 TMDA-Quiz ----------
+async function renderQuiz() {
+  const [ideen, zit, eps, gaeste] = await Promise.all([
+    getData('startup-ideen'), getData('zitate'), getData('episodes'), getData('gaeste'),
+  ]);
+  app.innerHTML = `
+    <h1 class="section-title">🧠 TMDA-Quiz</h1>
+    <p class="section-sub">Wie gut kennst du den Podcast? 10 Fragen, 4 Optionen pro Frage. Score und Highscore werden lokal gespeichert.</p>
+    <div id="quizArea"></div>
+  `;
+  const area = document.getElementById('quizArea');
+  const ideenP = (ideen.items || []).filter((i) => i.punkte != null);
+  const zitateP = (zit.items || []).filter((z) => z.text && z.text.length > 20 && z.text.length < 200);
+  const epsP = eps.items || [];
+
+  const HIGHSCORE_KEY = 'tmda-quiz-highscore';
+  const highscore = Number(localStorage.getItem(HIGHSCORE_KEY) || '0');
+  let questions = generateQuestions(10);
+  let current = 0;
+  let score = 0;
+  let answered = false;
+
+  function shuffle(arr) { return [...arr].sort(() => Math.random() - 0.5); }
+  function pickN(arr, n) { return shuffle(arr).slice(0, n); }
+  function generateQuestions(n) {
+    const out = [];
+    const types = ['quote', 'punkte', 'folge-titel'];
+    while (out.length < n) {
+      const t = types[Math.floor(Math.random() * types.length)];
+      let q = null;
+      if (t === 'quote' && zitateP.length >= 4) {
+        const correct = zitateP[Math.floor(Math.random() * zitateP.length)];
+        const wrongEps = shuffle(epsP.filter((e) => e.folge !== correct.folge)).slice(0, 3);
+        if (wrongEps.length < 3) continue;
+        q = {
+          q: `Aus welcher Folge stammt das Zitat: „${correct.text}"?`,
+          options: shuffle([{ label: `#${correct.folge} · ${(epsP.find((e) => e.folge === correct.folge) || {}).titel || ''}`, correct: true },
+            ...wrongEps.map((e) => ({ label: `#${e.folge} · ${e.titel || ''}`, correct: false }))]),
+        };
+      } else if (t === 'punkte' && ideenP.length >= 4) {
+        const correct = ideenP[Math.floor(Math.random() * ideenP.length)];
+        const wrongPunkte = shuffle([1, 6, 9, 12, 14, 16, 18, 20, 22, 24].filter((p) => p !== correct.punkte)).slice(0, 3);
+        q = {
+          q: `Wie viele Punkte bekam „${correct.idee}" (Folge #${correct.folge})?`,
+          options: shuffle([{ label: `${correct.punkte}/24`, correct: true },
+            ...wrongPunkte.map((p) => ({ label: `${p}/24`, correct: false }))]),
+        };
+      } else if (t === 'folge-titel' && epsP.length >= 4) {
+        const correct = epsP[Math.floor(Math.random() * epsP.length)];
+        const wrongs = shuffle(epsP.filter((e) => e.folge !== correct.folge)).slice(0, 3);
+        if (wrongs.length < 3) continue;
+        q = {
+          q: `Welche Folgennummer hat die Episode „${correct.titel}"?`,
+          options: shuffle([{ label: `Folge #${correct.folge}`, correct: true },
+            ...wrongs.map((e) => ({ label: `Folge #${e.folge}`, correct: false }))]),
+        };
+      }
+      if (q) out.push(q);
+    }
+    return out;
+  }
+
+  function renderQuestion() {
+    if (current >= questions.length) {
+      const newHigh = Math.max(highscore, score);
+      if (score > highscore) localStorage.setItem(HIGHSCORE_KEY, String(score));
+      area.innerHTML = `
+        <div class="quiz-result">
+          <div class="quiz-score">${score}/${questions.length}</div>
+          <p class="meta">${score === questions.length ? '🏆 Perfekt! Du bist Talahon-Level.' : score >= 7 ? '🛸 Stark!' : score >= 4 ? '👍 Solide.' : '🐐 Übung macht den Fanta Gnu.'}</p>
+          <p>Highscore: <strong>${newHigh}/10</strong></p>
+          <button class="btn btn-primary" id="quizRestart">Nochmal spielen</button>
+        </div>
+      `;
+      document.getElementById('quizRestart').addEventListener('click', () => {
+        questions = generateQuestions(10); current = 0; score = 0; answered = false; renderQuestion();
+      });
+      return;
+    }
+    const q = questions[current];
+    answered = false;
+    area.innerHTML = `
+      <div class="quiz-progress">Frage ${current + 1} von ${questions.length} · Score ${score}</div>
+      <div class="quiz-card">
+        <h2 class="quiz-q">${esc(q.q)}</h2>
+        <div class="quiz-options">
+          ${q.options.map((o, i) => `<button class="quiz-opt" data-i="${i}" data-correct="${o.correct}">${esc(o.label)}</button>`).join('')}
+        </div>
+      </div>
+    `;
+    area.querySelectorAll('.quiz-opt').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (answered) return;
+        answered = true;
+        const correct = btn.dataset.correct === 'true';
+        if (correct) { btn.classList.add('correct'); score++; }
+        else btn.classList.add('wrong');
+        area.querySelectorAll('.quiz-opt').forEach((b) => {
+          if (b.dataset.correct === 'true') b.classList.add('correct');
+          b.disabled = true;
+        });
+        setTimeout(() => { current++; renderQuestion(); }, 1200);
+      });
+    });
+  }
+  renderQuestion();
+}
+
+// ---------- 🎲 TMDA-Bingo ----------
+async function renderBingo() {
+  const BINGO_POOL = [
+    'Kalles Corner', '„Crazy crazy, gut gut"', 'Fynn redet über Steuern', 'Nisse über Therapie',
+    'PLOP™', 'Trockener Flutschi', 'Talahon', 'Fanta Gnu', '24-Punkte-Idee',
+    'Maya-Kalender', 'Bushido erwähnt', 'Elon Musk erwähnt', 'Til Lindemann erwähnt',
+    'Kliemannsland-Story', 'Fynn überredet Nisse', 'Nisse sagt „du musst nicht…"',
+    'Mucki Pinzner', 'Tomorrowland', 'Dubai-Reference', 'Hartz-4-Raupe',
+    'Iris-Werbung', 'windradhologramm.de', 'Steuerquartett', 'oderso.cool',
+    'Werbeblock', 'Folge geht > 1 Stunde', 'Fynn redet über Hunde', 'Goldener Retriever',
+    'Casino-Story', 'Heimwerker-Story', 'Pizza-Reference', 'Carsten Maschmeyer',
+    'Frank Thelen', 'Wikipedia gegoogelt', 'Nisse lacht 5 Sekunden lang',
+    'Fynn erwähnt Tom Illbruck', 'Restaurant in Hamburg', 'Spotify-Daten',
+  ];
+  app.innerHTML = `
+    <h1 class="section-title">🎲 TMDA-Bingo</h1>
+    <p class="section-sub">Für die nächste Folge. Tap die Begriffe an, wenn du sie hörst. Bingo bei Reihe, Spalte oder Diagonale.</p>
+    <div class="bingo-controls">
+      <button class="btn btn-primary" id="bingoNew">Neue Karte ziehen</button>
+      <span class="meta" id="bingoStatus">Drück Tap auf Begriffe, die du hörst.</span>
+    </div>
+    <div class="bingo-grid" id="bingoGrid"></div>
+  `;
+  const grid = document.getElementById('bingoGrid');
+  const status = document.getElementById('bingoStatus');
+  let cells = [];
+
+  function newCard() {
+    const picks = [...BINGO_POOL].sort(() => Math.random() - 0.5).slice(0, 25);
+    picks[12] = '🎙️ FREE'; // mittlere Zelle ist free
+    cells = picks.map((text, i) => ({ text, marked: i === 12 }));
+    render();
+  }
+  function checkBingo() {
+    const m = cells.map((c) => c.marked);
+    const lines = [];
+    for (let r = 0; r < 5; r++) lines.push([0, 1, 2, 3, 4].map((c) => r * 5 + c));
+    for (let c = 0; c < 5; c++) lines.push([0, 1, 2, 3, 4].map((r) => r * 5 + c));
+    lines.push([0, 6, 12, 18, 24]);
+    lines.push([4, 8, 12, 16, 20]);
+    const winners = new Set();
+    for (const line of lines) if (line.every((i) => m[i])) line.forEach((i) => winners.add(i));
+    return winners;
+  }
+  function render() {
+    const winners = checkBingo();
+    grid.innerHTML = cells.map((c, i) => `
+      <button class="bingo-cell ${c.marked ? 'marked' : ''} ${winners.has(i) ? 'winning' : ''}" data-i="${i}">${esc(c.text)}</button>
+    `).join('');
+    grid.querySelectorAll('.bingo-cell').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const i = +btn.dataset.i;
+        cells[i].marked = !cells[i].marked;
+        render();
+      });
+    });
+    status.textContent = winners.size ? `🎉 BINGO! ${winners.size} Felder in einer Reihe.` : `${cells.filter((c) => c.marked).length} / 25 markiert.`;
+  }
+  document.getElementById('bingoNew').addEventListener('click', newCard);
+  newCard();
+}
+
+// ---------- ⏳ Folgen-Timeline ----------
+async function renderTimeline() {
+  const [eps, ideen, corner] = await Promise.all([
+    getData('episodes'), getData('startup-ideen'), getData('kalles-corner'),
+  ]);
+  const epItems = [...(eps.items || [])].sort((a, b) => (a.folge || 0) - (b.folge || 0));
+  const ideenMap = new Map((ideen.items || []).map((i) => [i.folge, i]));
+  const cornerMap = new Map((corner.items || []).map((c) => [c.folge, c]));
+
+  app.innerHTML = `
+    <h1 class="section-title">⏳ Folgen-Timeline</h1>
+    <p class="section-sub">Chronik aller ${epItems.length} Folgen. Mit Punkten, Kalles-Corner-Markern und Highlights.</p>
+    <div class="filter-bar">
+      <a class="active" data-f="all" href="#">Alle</a>
+      <a data-f="top" href="#">Nur Top-Punkte (≥ 20)</a>
+      <a data-f="kalle" href="#">Mit Kalles Corner</a>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  `;
+  const tl = document.getElementById('timeline');
+  let filter = 'all';
+  function renderItems() {
+    const items = epItems.filter((ep) => {
+      if (filter === 'all') return true;
+      if (filter === 'top') return (ideenMap.get(ep.folge)?.punkte || 0) >= 20;
+      if (filter === 'kalle') return cornerMap.has(ep.folge);
+      return true;
+    });
+    tl.innerHTML = items.map((ep, idx) => {
+      const idee = ideenMap.get(ep.folge);
+      const kc = cornerMap.get(ep.folge);
+      const side = idx % 2 === 0 ? 'left' : 'right';
+      return `
+        <a class="tl-item tl-${side}" href="/folge/${ep.folge}">
+          <span class="tl-dot ${idee && idee.punkte >= 20 ? 'gold' : ''}"></span>
+          <div class="tl-card">
+            <div class="tl-folge">Folge #${ep.folge}${ep.datum ? ' · ' + fmtDate(ep.datum) : ''}</div>
+            <div class="tl-title">${esc(ep.titel || '')}</div>
+            <div class="tl-meta">
+              ${idee ? `<span class="tl-tag tag-accent">💡 ${idee.punkte ?? '?'}/24 · ${esc((idee.idee || '').slice(0, 40))}</span>` : ''}
+              ${kc ? `<span class="tl-tag tag-kalle">🪑 Kalle</span>` : ''}
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('') || `<div class="empty">Keine Folgen mit diesem Filter.</div>`;
+  }
+  app.querySelectorAll('.filter-bar a').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      filter = a.dataset.f;
+      app.querySelectorAll('.filter-bar a').forEach((x) => x.classList.toggle('active', x === a));
+      renderItems();
+    });
+  });
+  renderItems();
 }
 
 // ---------- Chat (refactored: shared zwischen Seite und Modal) ----------
