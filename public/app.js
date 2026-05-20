@@ -169,17 +169,15 @@ async function renderHome() {
     </section>
 
     ${topIdee ? `
-    <section style="margin-top:32px">
+    <section class="home-highlight">
       <h2 class="section-title">🏆 Best-bewertete Startup-Idee</h2>
-      <a class="card card-highlight" href="/folge/${topIdee.folge}">
-        <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
-          <div>
-            <span class="tag tag-accent">Folge #${topIdee.folge}</span>
-            <h3 style="margin-top:8px">${esc(topIdee.idee)}</h3>
-            <div class="desc">${esc(topIdee.beschreibung)}</div>
-          </div>
-          <span class="score score-high score-large">${topIdee.punkte}<small>/${topIdee.max_punkte || 24}</small></span>
+      <a class="card card-highlight highlight-card" href="/folge/${topIdee.folge}">
+        <div class="highlight-body">
+          <span class="tag tag-accent">Folge #${topIdee.folge}</span>
+          <h3 class="highlight-title">${esc(topIdee.idee)}</h3>
+          <div class="desc">${esc(topIdee.beschreibung)}</div>
         </div>
+        <span class="score score-high score-large highlight-score">${topIdee.punkte}<small>/${topIdee.max_punkte || 24}</small></span>
       </a>
     </section>` : ''}
 
@@ -293,15 +291,13 @@ async function renderFolgeDetail(folge) {
   if (idee) {
     app.appendChild(el(`<section class="detail-block">
       <h2>💡 Startup-Idee der Woche</h2>
-      <div class="card card-highlight">
-        <div style="display:flex;justify-content:space-between;align-items:start;gap:12px;flex-wrap:wrap">
-          <div style="flex:1;min-width:200px">
-            <h3>${esc(idee.idee)}</h3>
-            <div class="desc">${esc(idee.beschreibung)}</div>
-            ${idee.begruendung ? `<div class="meta" style="margin-top:8px"><strong>Nisse:</strong> ${esc(idee.begruendung)}</div>` : ''}
-          </div>
-          ${idee.punkte != null ? `<span class="score ${scoreClass(idee.punkte, idee.max_punkte || 24)} score-large">${idee.punkte}<small>/${idee.max_punkte || 24}</small></span>` : ''}
+      <div class="card card-highlight highlight-card">
+        <div class="highlight-body">
+          <h3 class="highlight-title">${esc(idee.idee)}</h3>
+          <div class="desc">${esc(idee.beschreibung)}</div>
+          ${idee.begruendung ? `<div class="meta highlight-meta"><strong>Nisse:</strong> ${esc(idee.begruendung)}</div>` : ''}
         </div>
+        ${idee.punkte != null ? `<span class="score ${scoreClass(idee.punkte, idee.max_punkte || 24)} score-large highlight-score">${idee.punkte}<small>/${idee.max_punkte || 24}</small></span>` : ''}
       </div>
     </section>`));
   }
