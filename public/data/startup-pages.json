@@ -64,6 +64,30 @@
       "domain": null,
       "tagline": "Schluss mit Holzdreiecken. Auto-Levelling per Luftfahrwerk.",
       "punkte": 20
+    },
+    {
+      "folge": 34,
+      "ideeMatch": "Fingerabdruck-Handschuhe",
+      "slug": "fingerabdruck-handschuhe",
+      "domain": null,
+      "tagline": "Handschuhe mit dem Fingerabdruck deiner Wahl.",
+      "punkte": 20
+    },
+    {
+      "folge": 10,
+      "ideeMatch": "Like Mike",
+      "slug": "like-mike",
+      "domain": null,
+      "tagline": "Hol dir dasselbe Hotel wie dein Lieblings-Influencer.",
+      "punkte": 20
+    },
+    {
+      "folge": 2,
+      "ideeMatch": "LKW-plane-kostenlos",
+      "slug": "lkw-plane-kostenlos",
+      "domain": "lkw-plane-kostenlos.de",
+      "tagline": "Neue Plane gratis. Werbefläche fährt.",
+      "punkte": 19
     }
   ]
 }
