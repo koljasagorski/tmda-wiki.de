@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HATS — Hot Air to Sock Adapter | h-a-c-s.de</title>
+<meta name="description" content="Der universelle Luftleitschlauch für jede Lüftung im Fahrzeug. Vom Centartikel im Baumarkt bis zur 200-Meter-Industrieversion. Patent angemeldet." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/hats" />
+<meta property="og:title" content="HATS — Hot Air to Sock Adapter" />
+<meta property="og:description" content="Universal-Belüftungsschlauch. Klick. Plop. Fertig." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/hats" />
+<meta property="og:site_name" content="HATS" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"HATS — Hot Air to Sock Adapter","description":"Universal-Belüftungsschlauch fürs Auto","brand":{"@type":"Brand","name":"HATS"}}
+</script>
+<style>
+:root {
+  --bg: #0e1014;
+  --bg-2: #181c22;
+  --bg-3: #20252e;
+  --fg: #f4f5f7;
+  --fg-muted: #8a93a3;
+  --warning: #ffd60a;
+  --warning-dark: #d4b000;
+  --steel: #5a8bb0;
+  --border: #2a303a;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: var(--warning); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hazard-strip {
+  background: repeating-linear-gradient(45deg, var(--warning) 0 18px, #000 18px 36px);
+  height: 14px;
+}
+.topbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 32px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+.topbar .brand {
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  font-size: 1.1rem;
+  color: var(--warning);
+}
+.topbar .meta { color: var(--fg-muted); }
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 80px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-family: var(--mono);
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.hero h1 .yellow { color: var(--warning); }
+.hero h1 .small { display: block; font-size: 0.35em; color: var(--fg-muted); margin-top: 12px; letter-spacing: 0.4em; font-weight: 500; }
+.hero p.lead {
+  font-size: 1.15rem;
+  color: var(--fg-muted);
+  margin: 28px 0;
+  max-width: 50ch;
+}
+.hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.btn-yellow { background: var(--warning); color: #000; }
+.btn-yellow:hover { background: var(--warning-dark); text-decoration: none; }
+.btn-outline { border-color: var(--fg); color: var(--fg); }
+.btn-outline:hover { background: var(--fg); color: #000; text-decoration: none; }
+
+.hero-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.specs {
+  background: var(--bg-2);
+  padding: 80px 32px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.specs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-label {
+  font-family: var(--mono);
+  color: var(--warning);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.section-h {
+  font-family: var(--mono);
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.spec-cell {
+  background: var(--bg-2);
+  padding: 24px;
+}
+.spec-cell .label { font-family: var(--mono); color: var(--fg-muted); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; }
+.spec-cell .value { font-family: var(--mono); font-size: 1.3rem; font-weight: 700; }
+
+.applications {
+  padding: 80px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.app-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  padding: 26px 22px;
+  position: relative;
+  transition: border-color .15s, transform .15s;
+}
+.app-card:hover { border-color: var(--warning); transform: translateY(-3px); }
+.app-card .num {
+  position: absolute;
+  top: 12px; right: 14px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--warning);
+  letter-spacing: 0.2em;
+}
+.app-card .emoji { font-size: 2.4rem; display: block; margin-bottom: 12px; }
+.app-card h3 { font-family: var(--mono); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+.app-card p { color: var(--fg-muted); font-size: 0.9rem; }
+
+.pricing {
+  background: var(--bg-3);
+  padding: 80px 32px;
+  border-top: 1px solid var(--border);
+}
+.pricing-inner { max-width: 1100px; margin: 0 auto; }
+.price-table {
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  font-family: var(--mono);
+}
+.price-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto;
+  gap: 24px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+.price-row:last-child { border-bottom: none; }
+.price-row .sku { color: var(--warning); font-weight: 700; }
+.price-row .name { font-weight: 700; font-size: 1.05rem; }
+.price-row .name small { display: block; color: var(--fg-muted); font-size: 0.78rem; margin-top: 2px; font-weight: 400; letter-spacing: 0; text-transform: none; }
+.price-row .len { color: var(--fg-muted); }
+.price-row .price { font-size: 1.4rem; font-weight: 900; color: var(--warning); }
+
+.trademark {
+  padding: 80px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.trademark .plop {
+  font-family: var(--mono);
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 900;
+  color: var(--warning);
+  letter-spacing: -0.05em;
+  text-shadow: 6px 6px 0 var(--bg-2);
+  margin-bottom: 12px;
+}
+.trademark p { color: var(--fg-muted); font-size: 1rem; }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 50px 32px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+}
+footer a { color: var(--warning); }
+footer .back { display: inline-block; margin-top: 18px; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; gap: 30px; padding: 50px 20px; text-align: left; }
+  .topbar { padding: 14px 20px; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .price-row { grid-template-columns: 1fr; gap: 6px; }
+  .price-row .price { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="hazard-strip"></div>
+
+<header class="topbar">
+  <div class="brand">H · A · T · S</div>
+  <div class="meta">SKU-Reihe HACS · DIN-konform · Patent angemeldet</div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>
+      Hot Air<br>
+      to <span class="yellow">Sock</span><br>
+      Adapter.
+      <span class="small">DAS UNIVERSALADAPTER-SCHLAUCH-SYSTEM</span>
+    </h1>
+    <p class="lead">
+      Du steckst ihn in deine Auto-Lüftung. Du leitest die Warm- oder Kaltluft, wohin du willst.
+      Füße. Hose. Goldener Retriever auf der Rücksitzbank. Pizzakarton vom Lieferdienst. Motor.
+      Dann sagt es: <strong style="color:var(--warning)">Plop.</strong>
+    </p>
+    <div class="ctas">
+      <a class="btn btn-yellow" href="#preise">Preise ansehen</a>
+      <a class="btn btn-outline" href="#anwendung">So funktioniert's</a>
+    </div>
+  </div>
+
+  <svg class="hero-svg" viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="metalg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#5a8bb0"/>
+        <stop offset="100%" stop-color="#2c4a66"/>
+      </linearGradient>
+      <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="8" stroke="#ffd60a" stroke-width="2"/>
+      </pattern>
+    </defs>
+    <!-- Auto-Dashboard-Vent rechts -->
+    <rect x="340" y="80" width="160" height="100" fill="#20252e" stroke="#5a8bb0" stroke-width="3" rx="6"/>
+    <g stroke="#5a8bb0" stroke-width="2">
+      <line x1="360" y1="100" x2="480" y2="100"/>
+      <line x1="360" y1="120" x2="480" y2="120"/>
+      <line x1="360" y1="140" x2="480" y2="140"/>
+      <line x1="360" y1="160" x2="480" y2="160"/>
+    </g>
+    <text x="420" y="200" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#8a93a3" letter-spacing="2">AC VENT</text>
+    <!-- Adapter-Tülle am Vent -->
+    <ellipse cx="340" cy="130" rx="14" ry="38" fill="url(#metalg)" stroke="#ffd60a" stroke-width="2"/>
+    <!-- Schlauch (Wellrohr) -->
+    <path d="M 340 130 Q 240 200 200 340" stroke="#ffd60a" stroke-width="32" fill="none" stroke-linecap="round"/>
+    <path d="M 340 130 Q 240 200 200 340" stroke="url(#hatch)" stroke-width="28" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- Wellen-Markierung -->
+    <g stroke="#0e1014" stroke-width="1.5" fill="none">
+      <path d="M 330 138 Q 320 142 312 148"/>
+      <path d="M 315 154 Q 305 158 297 164"/>
+      <path d="M 298 172 Q 286 176 278 184"/>
+      <path d="M 278 192 Q 264 198 256 208"/>
+      <path d="M 254 222 Q 240 230 232 246"/>
+      <path d="M 226 262 Q 218 280 214 298"/>
+    </g>
+    <!-- Socke am Ende -->
+    <g transform="translate(150, 340)">
+      <path d="M 0 0 L 0 70 Q 0 90 18 90 L 60 90 L 60 70 Q 70 60 70 40 L 70 0 Z" fill="#f4f5f7" stroke="#2a303a" stroke-width="2"/>
+      <line x1="10" y1="20" x2="60" y2="20" stroke="#ffd60a" stroke-width="3"/>
+      <line x1="10" y1="32" x2="60" y2="32" stroke="#ffd60a" stroke-width="3"/>
+      <text x="35" y="68" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#8a93a3" letter-spacing="1">XL</text>
+    </g>
+    <!-- Connector-Plop-Indikator -->
+    <circle cx="340" cy="130" r="3" fill="#0e1014"/>
+    <text x="364" y="76" font-family="ui-monospace, monospace" font-size="12" fill="#ffd60a" font-weight="900">PLOP™</text>
+    <line x1="362" y1="78" x2="346" y2="120" stroke="#ffd60a" stroke-width="1.5"/>
+  </svg>
+</section>
+
+<section class="specs">
+  <div class="specs-inner">
+    <div class="section-label">Technische Daten</div>
+    <h2 class="section-h">Eine Plattform. Beliebige Endgeräte.</h2>
+    <div class="specs-grid">
+      <div class="spec-cell"><div class="label">Anschluss</div><div class="value">Universal-Vent</div></div>
+      <div class="spec-cell"><div class="label">Material</div><div class="value">PVC / EPDM</div></div>
+      <div class="spec-cell"><div class="label">Min. Länge</div><div class="value">0,4 m</div></div>
+      <div class="spec-cell"><div class="label">Max. Länge</div><div class="value">200 m</div></div>
+      <div class="spec-cell"><div class="label">Druckverlust</div><div class="value">&lt; 0,3 kPa</div></div>
+      <div class="spec-cell"><div class="label">Trademark-Sound</div><div class="value">PLOP™</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="applications" id="anwendung">
+  <div class="section-label">Use Cases</div>
+  <h2 class="section-h">Wohin du willst.</h2>
+  <div class="app-grid">
+    <div class="app-card">
+      <span class="num">001</span>
+      <span class="emoji">🧦</span>
+      <h3>Füße</h3>
+      <p>Direkter Anschluss an die Socke. Im Winter warm, im Sommer kalt.</p>
+    </div>
+    <div class="app-card">
+      <span class="num">002</span>
+      <span class="emoji">🩲</span>
+      <h3>Hose</h3>
+      <p>Klimatisierte Unterhose. Patent „Crotch Comfort System" pending.</p>
+    </div>
+    <div class="app-card">
+      <span class="num">003</span>
+      <span class="emoji">🐕</span>
+      <h3>Goldener Retriever</h3>
+      <p>Hund auf der Rücksitzbank hechelt nicht mehr. Belüftung direkt ans Halsband.</p>
+    </div>
+    <div class="app-card">
+      <span class="num">004</span>
+      <span class="emoji">🍕</span>
+      <h3>Pizzakarton</h3>
+      <p>B2B-Lösung für Lieferdienste. Pizza bleibt warm bis zur Haustür.</p>
+    </div>
+    <div class="app-card">
+      <span class="num">005</span>
+      <span class="emoji">⚙️</span>
+      <h3>Motorkühlung</h3>
+      <p>Aftermarket-Industrie-Variante. 200 m, druckstabil. Auf Anfrage.</p>
+    </div>
+    <div class="app-card">
+      <span class="num">006</span>
+      <span class="emoji">📦</span>
+      <h3>Beliebig</h3>
+      <p>HATS-Anschluss + Schlauch + Endstück deiner Wahl. Modulares System.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="preise">
+  <div class="pricing-inner">
+    <div class="section-label">Preise</div>
+    <h2 class="section-h">Vom Cent-Bereich bis Industrie.</h2>
+    <div class="price-table">
+      <div class="price-row">
+        <span class="sku">HACS-1</span>
+        <span class="name">HATS Starter <small>für Privatkunden, Obi-Sortiment</small></span>
+        <span class="len">0,4 m</span>
+        <span class="price">9,90 €</span>
+      </div>
+      <div class="price-row">
+        <span class="sku">HACS-3</span>
+        <span class="name">HATS Familie <small>3 m Schlauch + 2 Adapter</small></span>
+        <span class="len">3,0 m</span>
+        <span class="price">29,90 €</span>
+      </div>
+      <div class="price-row">
+        <span class="sku">HACS-PRO</span>
+        <span class="name">HATS Professional <small>für Pizzadienste & Hundetransporte</small></span>
+        <span class="len">10 m</span>
+        <span class="price">189,00 €</span>
+      </div>
+      <div class="price-row">
+        <span class="sku">HACS-IND</span>
+        <span class="name">HATS Industrial <small>Aftermarket Motorkühlung, druckstabil</small></span>
+        <span class="len">200 m</span>
+        <span class="price">a. A.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trademark">
+  <div class="plop">PLOP™</div>
+  <p>Der eingetragene Trademark-Sound, wenn der HATS-Adapter einrastet.<br>
+  „Wie die letzte Flensburger." — Erfinder</p>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #45 · Bewertung 22/24
+  <span class="back"><a href="/folge/45">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a></span>
+</footer>
+
+</body>
+</html>

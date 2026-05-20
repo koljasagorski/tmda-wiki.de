@@ -368,8 +368,24 @@ async function renderFolgeDetail(folge) {
 
 // ---------- Startup-Ideen ----------
 async function renderStartupIdeen() {
-  const data = await getData('startup-ideen');
+  const [data, pages] = await Promise.all([
+    getData('startup-ideen'),
+    fetch('/data/startup-pages.json').then((r) => r.json()).catch(() => ({ items: [] })),
+  ]);
   const items = data.items || [];
+  const pageMap = new Map();
+  for (const p of pages.items || []) {
+    const key = `${p.folge}|${(p.ideeMatch || '').toLowerCase()}`;
+    pageMap.set(key, p);
+  }
+  function findPage(item) {
+    if (!item) return null;
+    const idee = (item.idee || '').toLowerCase();
+    for (const p of pages.items || []) {
+      if (p.folge === item.folge && idee.includes((p.ideeMatch || '').toLowerCase())) return p;
+    }
+    return null;
+  }
 
   // Sort buttons
   const sortBy = new URLSearchParams(location.search).get('sort') || 'folge';
@@ -379,7 +395,7 @@ async function renderStartupIdeen() {
 
   app.innerHTML = `
     <h1 class="section-title">💡 Startup-Idee der Woche</h1>
-    <p class="section-sub">Fynns Brainstorms — bewertet von Nisse auf einer Skala bis ${items[0]?.max_punkte || 24}. ${items.length} Ideen.</p>
+    <p class="section-sub">Fynns Brainstorms — bewertet von Nisse auf einer Skala bis ${items[0]?.max_punkte || 24}. ${items.length} Ideen. Klick auf eine fett markierte Idee öffnet die fiktive Produkt-Seite.</p>
     <div class="filter-bar">
       <a class="${sortBy === 'folge' ? 'active' : ''}" href="/startup-ideen?sort=folge">Nach Folge</a>
       <a class="${sortBy === 'punkte' ? 'active' : ''}" href="/startup-ideen?sort=punkte">Nach Punkten</a>
@@ -394,9 +410,13 @@ async function renderStartupIdeen() {
   const tb = tbl.querySelector('tbody');
   for (const i of sorted) {
     const max = i.max_punkte || 24;
+    const page = findPage(i);
+    const ideeCell = page
+      ? `<a class="startup-link" href="/startup/${esc(page.slug)}"><strong>${esc(i.idee)}</strong> <span class="startup-link-arrow">↗</span></a>`
+      : `<strong>${esc(i.idee)}</strong>`;
     tb.appendChild(el(`<tr>
-      <td><a href="/folge/${i.folge}"><strong>#${i.folge}</strong></a></td>
-      <td><strong>${esc(i.idee)}</strong></td>
+      <td><a href="/folge/${i.folge}">#${i.folge}</a></td>
+      <td>${ideeCell}</td>
       <td>${esc(i.beschreibung)}</td>
       <td><span class="score ${scoreClass(i.punkte, max)}">${i.punkte ?? '–'}<small>/${max}</small></span></td>
     </tr>`));
