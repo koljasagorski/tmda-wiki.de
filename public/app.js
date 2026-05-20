@@ -600,8 +600,9 @@ function renderTranskripteGesucht() {
 
 // ---------- Chat (refactored: shared zwischen Seite und Modal) ----------
 const DONATION_THRESHOLD = 3;
-const DONATION_KEY = 'tmda-chat-questions';
-// sessionStorage: Donation-Hinweis pro Browser-Session einmal anzeigen
+// Counter + shown-Flag beide pro Session — Donation triggert dann
+// zuverlässig bei der 3. Frage einer frischen Browser-Session
+const QUESTION_COUNT_KEY = 'tmda-chat-questions-session';
 const DONATION_SHOWN_KEY = 'tmda-donate-shown-session';
 
 let chatConfig = null;
@@ -675,7 +676,7 @@ function setupChat(container, opts = {}) {
     await ensureTurnstileScript();
     if (!window.turnstile) return null;
     tsBox.hidden = false;
-    tsBox.innerHTML = '<div class="msg system">Kurz beweisen, dass du kein Bot bist — danke! 🤖❌</div><div data-ts-widget></div>';
+    tsBox.innerHTML = '<div class="msg system">Kurz beweisen, dass du kein Bot bist 🤖❌</div><div data-ts-widget></div>';
     const widgetTarget = tsBox.querySelector('[data-ts-widget]');
     return new Promise((resolve) => {
       turnstileWidgetId = window.turnstile.render(widgetTarget, {
@@ -683,7 +684,17 @@ function setupChat(container, opts = {}) {
         theme: 'auto',
         callback: (token) => {
           turnstileToken = token;
-          tsBox.querySelector('.msg').textContent = '✅ Danke! Sende deine Nachricht…';
+          // Kurzes ✅-Feedback, dann Overlay weg
+          const msg = tsBox.querySelector('.msg');
+          if (msg) msg.textContent = '✅ Danke!';
+          setTimeout(() => {
+            tsBox.hidden = true;
+            tsBox.innerHTML = '';
+            if (turnstileWidgetId != null && window.turnstile) {
+              try { window.turnstile.remove(turnstileWidgetId); } catch {}
+              turnstileWidgetId = null;
+            }
+          }, 400);
           resolve(token);
         },
         'error-callback': () => resolve(null),
@@ -697,7 +708,7 @@ function setupChat(container, opts = {}) {
     const pending = addMsg('assistant', '…');
 
     const cfg = await getChatConfig();
-    const count = Number(localStorage.getItem(DONATION_KEY) || '0') + 1;
+    const count = Number(sessionStorage.getItem(QUESTION_COUNT_KEY) || '0') + 1;
     const interval = cfg.turnstileInterval || 6;
     // Turnstile-Tokens sind Single-Use → nur alle N Fragen challengen
     const needsTurnstile = !!cfg.turnstileSiteKey && count > 0 && count % interval === 0;
@@ -743,7 +754,7 @@ function setupChat(container, opts = {}) {
         tsBox.hidden = true;
         // Token nach Verbrauch verwerfen (Cloudflare Tokens sind single-use)
         turnstileToken = null;
-        localStorage.setItem(DONATION_KEY, String(count));
+        sessionStorage.setItem(QUESTION_COUNT_KEY, String(count));
         if (count >= DONATION_THRESHOLD && !sessionStorage.getItem(DONATION_SHOWN_KEY)) {
           sessionStorage.setItem(DONATION_SHOWN_KEY, '1');
           showDonationCallout();
