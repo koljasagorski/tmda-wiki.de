@@ -37,7 +37,6 @@
              onerror="this.style.display='none';this.parentElement.querySelector('.cookie-fallback').hidden=false;" />
         <div class="cookie-fallback" hidden>🍟</div>
       </div>
-      <button class="cookie-close" aria-label="Schließen" data-cookie-close>×</button>
     `;
     document.body.appendChild(banner);
     requestAnimationFrame(() => banner.classList.add('show'));
@@ -49,6 +48,5 @@
     };
     banner.querySelector('[data-cookie-accept]').addEventListener('click', () => dismiss('accepted'));
     banner.querySelector('[data-cookie-decline]').addEventListener('click', () => dismiss('declined'));
-    banner.querySelector('[data-cookie-close]').addEventListener('click', () => dismiss('closed'));
   }, 1500);
 })();

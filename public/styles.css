@@ -1082,7 +1082,7 @@ body.flutschi-mode::after {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
   padding: 18px 18px 18px 20px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 16px;
   align-items: center;
   z-index: 150;
@@ -1162,22 +1162,9 @@ body.flutschi-mode::after {
   padding: 8px 14px;
   font-size: 0.9rem;
 }
-.cookie-close {
-  background: transparent;
-  border: none;
-  color: var(--fg-muted);
-  font-size: 1.4rem;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm);
-  line-height: 1;
-}
-.cookie-close:hover { background: var(--bg-elev-2); color: var(--fg); }
-
 @media (max-width: 640px) {
   .cookie-banner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     gap: 12px;
     bottom: 12px;
     left: 12px;
