@@ -956,4 +956,225 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeChatModal();
 });
 
+// ---------- Globale Suche (Cmd+K / Ctrl+K) ----------
+let searchIndex = null;
+let searchOverlay = null;
+let searchInput = null;
+let searchResults = null;
+let searchSelectedIdx = 0;
+
+async function buildSearchIndex() {
+  if (searchIndex) return searchIndex;
+  const [eps, ideen, corner, ger, glo, erf, zit, hosts] = await Promise.all([
+    getData('episodes'), getData('startup-ideen'), getData('kalles-corner'),
+    getData('geruechte'), getData('glossar'), getData('erfindungen'),
+    getData('zitate'), getData('hosts'),
+  ]);
+  const idx = [];
+  for (const ep of eps.items || []) {
+    idx.push({
+      cat: 'Folge', icon: '📅',
+      title: `#${ep.folge} · ${ep.titel || ''}`,
+      sub: ep.kurzbeschreibung || (ep.themen || []).join(' · '),
+      blob: `${ep.titel || ''} ${ep.kurzbeschreibung || ''} ${(ep.themen || []).join(' ')}`.toLowerCase(),
+      href: `/folge/${ep.folge}`,
+    });
+  }
+  for (const i of ideen.items || []) {
+    idx.push({
+      cat: 'Startup', icon: '💡',
+      title: `#${i.folge} · ${i.idee || ''}`,
+      sub: i.beschreibung || '',
+      blob: `${i.idee || ''} ${i.beschreibung || ''}`.toLowerCase(),
+      href: `/folge/${i.folge}`,
+    });
+  }
+  for (const k of corner.items || []) {
+    idx.push({
+      cat: 'Kalle', icon: '🪑',
+      title: `#${k.folge} · ${k.titel || 'Kalles Corner'}`,
+      sub: k.inhalt || '',
+      blob: `${k.titel || ''} ${k.inhalt || ''}`.toLowerCase(),
+      href: `/folge/${k.folge}`,
+    });
+  }
+  for (const g of ger.items || []) {
+    idx.push({
+      cat: 'Gerücht', icon: '🤫',
+      title: `#${g.folge} · ${g.ueber || 'Gerücht'}`,
+      sub: g.inhalt || '',
+      blob: `${g.ueber || ''} ${g.inhalt || ''}`.toLowerCase(),
+      href: `/folge/${g.folge}`,
+    });
+  }
+  for (const g of glo.items || []) {
+    idx.push({
+      cat: 'Glossar', icon: '📖',
+      title: g.begriff || '',
+      sub: g.bedeutung || '',
+      blob: `${g.begriff || ''} ${g.bedeutung || ''}`.toLowerCase(),
+      href: g.folge ? `/folge/${g.folge}` : '/glossar',
+    });
+  }
+  for (const e of erf.items || []) {
+    idx.push({
+      cat: 'Erfindung', icon: '🔧',
+      title: e.name || '',
+      sub: e.beschreibung || '',
+      blob: `${e.name || ''} ${e.beschreibung || ''}`.toLowerCase(),
+      href: `/folge/${e.folge}`,
+    });
+  }
+  for (const z of zit.items || []) {
+    idx.push({
+      cat: 'Zitat', icon: '💬',
+      title: `„${z.text || ''}"`,
+      sub: z.kontext || `Folge #${z.folge}`,
+      blob: `${z.text || ''} ${z.kontext || ''}`.toLowerCase(),
+      href: `/folge/${z.folge}`,
+    });
+  }
+  for (const h of hosts.items || []) {
+    idx.push({
+      cat: 'Hosts', icon: '🎙️',
+      title: h.name || '',
+      sub: h.rolle || '',
+      blob: `${h.name || ''} ${h.rolle || ''} ${h.bio || ''}`.toLowerCase(),
+      href: '/hosts',
+    });
+  }
+  searchIndex = idx;
+  return idx;
+}
+
+function runSearch(query) {
+  if (!searchIndex) return [];
+  const q = (query || '').trim().toLowerCase();
+  if (!q) return [];
+  const terms = q.split(/\s+/);
+  const scored = [];
+  for (const item of searchIndex) {
+    let score = 0;
+    let matched = true;
+    for (const t of terms) {
+      const pos = item.blob.indexOf(t);
+      if (pos === -1) { matched = false; break; }
+      if (item.title.toLowerCase().indexOf(t) === 0) score += 10;
+      else if (item.title.toLowerCase().includes(t)) score += 6;
+      else score += 1;
+      score += Math.max(0, 3 - Math.floor(pos / 30));
+    }
+    if (matched) scored.push({ item, score });
+  }
+  return scored.sort((a, b) => b.score - a.score).slice(0, 30).map((r) => r.item);
+}
+
+function renderSearchResults(results, query) {
+  if (!results.length) {
+    if (!query) {
+      searchResults.innerHTML = '<div class="search-hint">Tipp ein Wort — Folgen, Startups, Zitate, Glossar, alle Rubriken auf einmal.</div>';
+    } else {
+      searchResults.innerHTML = `<div class="search-hint">Nichts gefunden zu „${esc(query)}".</div>`;
+    }
+    return;
+  }
+  const groups = new Map();
+  for (const r of results) {
+    if (!groups.has(r.cat)) groups.set(r.cat, []);
+    groups.get(r.cat).push(r);
+  }
+  const html = [];
+  let i = 0;
+  for (const [cat, items] of groups) {
+    html.push(`<div class="search-group-h">${esc(cat)}</div>`);
+    for (const item of items) {
+      const idx = i++;
+      html.push(`<a class="search-result" data-idx="${idx}" href="${esc(item.href)}">
+        <span class="search-icon">${item.icon}</span>
+        <span class="search-text">
+          <span class="search-title">${esc(item.title)}</span>
+          <span class="search-sub">${esc((item.sub || '').slice(0, 140))}</span>
+        </span>
+      </a>`);
+    }
+  }
+  searchResults.innerHTML = html.join('');
+  searchSelectedIdx = 0;
+  updateSearchSelection();
+}
+
+function updateSearchSelection() {
+  const items = searchResults.querySelectorAll('.search-result');
+  items.forEach((el, i) => el.classList.toggle('selected', i === searchSelectedIdx));
+  const sel = items[searchSelectedIdx];
+  if (sel) sel.scrollIntoView({ block: 'nearest' });
+}
+
+async function openSearch() {
+  if (!searchOverlay) {
+    searchOverlay = el(`<div class="search-overlay" id="searchOverlay" hidden>
+      <div class="search-backdrop"></div>
+      <div class="search-modal">
+        <div class="search-input-wrap">
+          <span class="search-prefix">🔎</span>
+          <input class="search-input" type="text" placeholder="Folgen, Startups, Zitate, Glossar … (ESC schließt)" autocomplete="off"/>
+          <kbd class="search-esc">ESC</kbd>
+        </div>
+        <div class="search-results"></div>
+      </div>
+    </div>`);
+    document.body.appendChild(searchOverlay);
+    searchInput = searchOverlay.querySelector('.search-input');
+    searchResults = searchOverlay.querySelector('.search-results');
+    searchOverlay.querySelector('.search-backdrop').addEventListener('click', closeSearch);
+    searchInput.addEventListener('input', () => {
+      renderSearchResults(runSearch(searchInput.value), searchInput.value);
+    });
+    searchInput.addEventListener('keydown', (e) => {
+      const items = searchResults.querySelectorAll('.search-result');
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (items.length) searchSelectedIdx = (searchSelectedIdx + 1) % items.length;
+        updateSearchSelection();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (items.length) searchSelectedIdx = (searchSelectedIdx - 1 + items.length) % items.length;
+        updateSearchSelection();
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        const sel = items[searchSelectedIdx];
+        if (sel) sel.click();
+      } else if (e.key === 'Escape') {
+        closeSearch();
+      }
+    });
+    searchResults.addEventListener('click', (e) => {
+      if (e.target.closest('.search-result')) setTimeout(closeSearch, 30);
+    });
+  }
+  searchResults.innerHTML = '<div class="search-hint">Lade Index…</div>';
+  searchOverlay.hidden = false;
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(() => searchOverlay.classList.add('open'));
+  setTimeout(() => searchInput.focus(), 60);
+  await buildSearchIndex();
+  renderSearchResults(runSearch(searchInput.value), searchInput.value);
+}
+
+function closeSearch() {
+  if (!searchOverlay) return;
+  searchOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+  setTimeout(() => { searchOverlay.hidden = true; }, 200);
+}
+
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+    e.preventDefault();
+    if (searchOverlay && !searchOverlay.hidden) closeSearch();
+    else openSearch();
+  }
+});
+document.getElementById('searchTrigger')?.addEventListener('click', () => openSearch());
+
 router();
