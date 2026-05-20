@@ -12,11 +12,6 @@
     banner.className = 'cookie-banner';
     banner.id = 'cookieBanner';
     banner.innerHTML = `
-      <div class="cookie-image">
-        <img src="/cookies.png" alt="Cookies?"
-             onerror="this.style.display='none';this.parentElement.querySelector('.cookie-fallback').hidden=false;" />
-        <div class="cookie-fallback" hidden>🍟<br/><span style="font-size:0.5em;opacity:0.5">platzhalter</span></div>
-      </div>
       <div class="cookie-content">
         <h3>🍪 Du willst was über Cookies hören?</h3>
         <p><strong>Wir tracken nichts.</strong> Wirklich. Keine Werbe-Cookies, kein Google Analytics, keine Pixel.
@@ -36,6 +31,11 @@
           <button class="btn btn-primary" data-cookie-accept>Akzeptieren (passiert eh nix)</button>
           <button class="btn" data-cookie-decline>Ablehnen (auch egal)</button>
         </div>
+      </div>
+      <div class="cookie-image">
+        <img src="/cookies.png" alt="Cookies?"
+             onerror="this.style.display='none';this.parentElement.querySelector('.cookie-fallback').hidden=false;" />
+        <div class="cookie-fallback" hidden>🍟</div>
       </div>
       <button class="cookie-close" aria-label="Schließen" data-cookie-close>×</button>
     `;
