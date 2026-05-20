@@ -333,6 +333,8 @@ async function renderPage(c) {
 
   const baseResp = await c.env.ASSETS.fetch(new URL('/', c.req.url));
 
+  const imgUrl = meta.image ? (meta.image.startsWith('http') ? meta.image : base + meta.image) : '';
+
   return new HTMLRewriter()
     .on('title', { element(el) { el.setInnerContent(meta.title); } })
     .on('meta[name="description"]', { element(el) { el.setAttribute('content', meta.description); } })
@@ -344,8 +346,14 @@ async function renderPage(c) {
     .on('meta[property="og:url"]', { element(el) { el.setAttribute('content', fullUrl); } })
     .on('meta[property="og:site_name"]', { element(el) { el.setAttribute('content', SITE_NAME); } })
     .on('meta[property="og:locale"]', { element(el) { el.setAttribute('content', SITE_LOCALE); } })
+    .on('meta[property="og:image"]', { element(el) { if (imgUrl) el.setAttribute('content', imgUrl); } })
+    .on('meta[property="og:image:type"]', { element(el) { if (meta.imageType) el.setAttribute('content', meta.imageType); } })
+    .on('meta[property="og:image:width"]', { element(el) { if (meta.imageWidth) el.setAttribute('content', meta.imageWidth); } })
+    .on('meta[property="og:image:height"]', { element(el) { if (meta.imageHeight) el.setAttribute('content', meta.imageHeight); } })
+    .on('meta[property="og:image:alt"]', { element(el) { el.setAttribute('content', meta.title); } })
     .on('meta[name="twitter:title"]', { element(el) { el.setAttribute('content', meta.title); } })
     .on('meta[name="twitter:description"]', { element(el) { el.setAttribute('content', meta.description); } })
+    .on('meta[name="twitter:image"]', { element(el) { if (imgUrl) el.setAttribute('content', imgUrl); } })
     .on('script[data-seo="jsonld"]', { element(el) { el.setInnerContent(jsonld, { html: true }); } })
     .transform(baseResp);
 }

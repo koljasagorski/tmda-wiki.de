@@ -44,6 +44,17 @@ Ab der **N-ten Nutzerfrage** (Default: 5) wird ein Cloudflare-Turnstile-Captcha 
 
 Solange die Keys leer sind, läuft alles ohne Captcha (graceful degradation).
 
+### 🥚 Easter Eggs
+
+Versteckt im Frontend (`public/easter-eggs.js`):
+- Logo **7× klicken** → „Talahons im Weltall" mit Starfield-Overlay
+- Tippen **`kalle`** → Kalle-Schwensen-Quote-Toast
+- Tippen **`papst`** → Maya-Kalender-Countdown bis 2033 (Folge-1-Reference)
+- Tippen **`fanta`** → 🐐-Regen + „Fanta Gnu schmeckt nach Ziege"
+- Tippen **`flutschi`** oder **Konami-Code** (↑↑↓↓←→←→BA) → „Trockener Flutschi"-Modus (Tilt + Ice-Filter)
+- **Triple-Click** auf den Footer-Repo-Link → Credits-Toast
+- Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
+
 ---
 
 ## Tech Stack

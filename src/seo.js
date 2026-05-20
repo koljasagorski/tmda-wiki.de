@@ -14,6 +14,10 @@ const DEFAULT = {
   changefreq: 'weekly',
   priority: 0.7,
   robots: 'index,follow',
+  image: '/og-image.svg',
+  imageType: 'image/svg+xml',
+  imageWidth: '1200',
+  imageHeight: '630',
 };
 
 export const STATIC_ROUTES = {
