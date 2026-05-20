@@ -49,13 +49,14 @@ Solange die Keys leer sind, läuft alles ohne Captcha (graceful degradation).
 ### 🥚 Easter Eggs
 
 Versteckt im Frontend (`public/easter-eggs.js`):
-- Logo **7× klicken** → „Talahons im Weltall" mit Starfield-Overlay
+- Logo **2× klicken** → „Talahons im Weltall" mit Starfield-Overlay
 - Tippen **`kalle`** → Kalle-Schwensen-Quote-Toast
 - Tippen **`papst`** → Maya-Kalender-Countdown bis 2033 (Folge-1-Reference)
 - Tippen **`fanta`** → 🐐-Regen + „Fanta Gnu schmeckt nach Ziege"
 - Tippen **`flutschi`** oder **Konami-Code** (↑↑↓↓←→←→BA) → „Trockener Flutschi"-Modus (Tilt + Ice-Filter)
-- **Triple-Click** auf den Footer-Repo-Link → Credits-Toast
+- **Triple-Click** auf den `TMDA Wiki`-Footer-Titel → Credits-Toast
 - Browser-Konsole öffnen → Branded Greeting mit Nisse-Quote
+- **Geheime Übersichtsseite** `/eggs` → über einen sehr unscheinbaren Punkt irgendwo im Footer erreichbar (noindex, nicht in der Sitemap)
 
 ---
 
