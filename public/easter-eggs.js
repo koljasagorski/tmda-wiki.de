@@ -114,19 +114,20 @@
     setTimeout(() => document.body.classList.remove('flutschi-mode'), 6000);
   }
 
-  // ---------- 6. Triple-Click auf Footer-Repo → Credits ----------
-  const repoLink = document.getElementById('repoLink');
-  let clicks = 0, clickTimer = null;
-  repoLink?.addEventListener('click', (e) => {
-    clicks++;
-    clearTimeout(clickTimer);
-    clickTimer = setTimeout(() => { clicks = 0; }, 500);
-    if (clicks === 3) {
-      e.preventDefault();
-      clicks = 0;
+  // ---------- 6. Triple-Click auf Footer-Titel → Credits ----------
+  // Bindet auf das <strong>-Element (kein Link), damit es nicht mit Navigation kollidiert
+  const footerTitle = document.getElementById('footerTmdaTitle');
+  let footerClicks = 0, footerClickTimer = null;
+  footerTitle?.addEventListener('click', () => {
+    footerClicks++;
+    clearTimeout(footerClickTimer);
+    footerClickTimer = setTimeout(() => { footerClicks = 0; }, 500);
+    if (footerClicks === 3) {
+      footerClicks = 0;
       toast('🎙️ Made with vibes by <strong>@koljasagorski</strong> & Claude Code. Powered by Cloudflare Workers AI + viel Kaffee.', 6000);
     }
   });
+  if (footerTitle) footerTitle.style.cursor = 'default';
 
   // ---------- Konsolen-Easter-Egg für Devs ----------
   // eslint-disable-next-line no-console

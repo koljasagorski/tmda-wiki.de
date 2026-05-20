@@ -14,8 +14,8 @@ const DEFAULT = {
   changefreq: 'weekly',
   priority: 0.7,
   robots: 'index,follow',
-  image: '/og-image.svg',
-  imageType: 'image/svg+xml',
+  image: '/og-image.png',
+  imageType: 'image/png',
   imageWidth: '1200',
   imageHeight: '630',
 };
