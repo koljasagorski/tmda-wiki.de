@@ -6,9 +6,19 @@
       "rolle": "Heimwerkerking · Musiker · Unternehmer · YouTuber",
       "geboren": "1. Mai 1988",
       "geburtsort": "Zeven, Niedersachsen",
-      "bio": "Aufgewachsen in Heeslingen mit zwei Brüdern und mehreren Pflegegeschwistern. 2008–2010 Ausbildung zum Mediengestalter an der Wilhelm-Wagenfeld-Schule in Bremen. Bekannt für seine Mischung aus Heimwerker-DIY, schnellem Schnitt, Dilettantismus und ständig neuen Projekten. 2017 Webvideopreis und Studio-Hamburg-Nachwuchspreis für Kliemannsland. Sein Label twoFinger Records gründete er, nachdem er einen Plattenvertrag bei Four Music ablehnte. Album TOD (2025) erreichte Platz 1 der deutschen Album-Charts. Im Mai 2022 deckte das ZDF Magazin Royale Betrugsvorwürfe rund um in Bangladesch/Vietnam produzierte Masken auf — ein Einschnitt, von dem er sich erst Schritt für Schritt erholte.",
+      "bio": "Aufgewachsen in Heeslingen mit zwei Brüdern und mehreren Pflegegeschwistern. 2008–2010 Ausbildung zum Mediengestalter an der Wilhelm-Wagenfeld-Schule in Bremen. Bekannt für die Mischung aus Heimwerker-DIY, schnellem Schnitt, Dilettantismus und ständig neuen Projekten. 2017 Webvideopreis und Studio-Hamburg-Nachwuchspreis für Kliemannsland. Sein Label twoFinger Records gründete er mit Niklas Tietjen, nachdem er einen Plattenvertrag bei Four Music ablehnte. Im Mai 2022 deckte das ZDF Magazin Royale Betrugsvorwürfe rund um in Bangladesch/Vietnam produzierte Masken auf — ein Einschnitt, von dem er sich erst Schritt für Schritt erholte.",
+      "musik": {
+        "label": "twoFinger Records (eigenes Label)",
+        "alben": [
+          { "titel": "NIE", "jahr": 2018, "anmerkung": "Debütalbum, Gold-Status. Hits „Zuhause“ und „Alles was ich hab“ jeweils über 200.000 Einheiten." },
+          { "titel": "POP", "jahr": 2020, "anmerkung": "" },
+          { "titel": "NUR", "jahr": 2021, "anmerkung": "Remixe und Piano-Versionen. Direkt auf #1 der deutschen Album-Charts." },
+          { "titel": "TOD", "jahr": 2025, "anmerkung": "Drittes Studioalbum, erreichte #1. Rap-näher als seine vorigen Platten. Singles u.a. „FIN“, „JPG“, „Terpentin“." }
+        ],
+        "highlights": ["4× #1-Platzierung auf den deutschen Album-Charts ohne Major-Label-Struktur", "DIY-Ansatz, alles über das eigene Label"]
+      },
       "projekte": [
-        { "name": "Kliemannsland", "url": "https://www.kliemannsland.de", "beschreibung": "Kreativ-Hof in Rüspel — Zentrum für Kreative, samstags/sonntags geöffnet." },
+        { "name": "Kliemannsland", "url": "https://www.kliemannsland.de", "beschreibung": "Kreativ-Hof in Rüspel — „Zentrum für Kreative“, samstags/sonntags geöffnet. Bis 2020 mit Funk als Webserie produziert." },
         { "name": "twoFinger Records", "url": "https://twofingerrecords.com", "beschreibung": "Sein unabhängiges Plattenlabel, gegründet mit Niklas Tietjen." },
         { "name": "oderso", "url": "https://oderso.cool", "beschreibung": "Merch- und Projekt-Hub, dort auch die TMDA-Podcast-Seite." }
       ],
@@ -22,13 +32,22 @@
     },
     {
       "name": "Nisse Ingwersen",
-      "rolle": "Sänger · Songwriter · Produzent",
+      "rolle": "Sänger · Songwriter · Produzent · Moderator",
       "geboren": "Hamburg",
       "geburtsort": "Hamburg-Harburg",
-      "bio": "Hamburger Singer-Songwriter, Künstlername Nisse. Verbrachte als Teenager ein Jahr in Großbritannien — dort entdeckte er den Rap für sich, fing nach der Rückkehr mit 17 Jahren in Hamburg an, eigene Texte zu schreiben. Eine erste HipHop-Band mit Freunden löste sich schnell wieder auf; nachdem er Demos rumgeschickt hatte, holte ihn das Berliner Label Four Music unter Vertrag. Debütalbum August erschien 2015, gefolgt von Wie ein Mann (2017) und Ciao (2018). Schreibt als Songwriter für Künstler:innen wie Peter Maffay, Matthias Schweighöfer, Sido und Kontra K — quer durch alle Genres von Rap bis Pop.",
+      "bio": "Hamburger Singer-Songwriter, Künstlername Nisse. Verbrachte als Teenager ein Jahr in Großbritannien — dort entdeckte er den Rap für sich, fing nach der Rückkehr mit 17 Jahren in Hamburg an, eigene Texte zu schreiben. Eine erste HipHop-Band mit Freunden löste sich schnell wieder auf; nachdem er Demos rumgeschickt hatte, holte ihn das Berliner Label Four Music unter Vertrag. Seit 2020 Moderator der Funk-Internetserie „Sounds Of“. Spricht oft im TMDA Podcast über seine Therapie-Erfahrungen und sein Mantra „You must not become the most likely version of yourself“.",
+      "musik": {
+        "label": "Four Music (Berlin)",
+        "alben": [
+          { "titel": "August", "jahr": 2015, "anmerkung": "Debütalbum, erschienen am 4. September 2015." },
+          { "titel": "Wie ein Mann", "jahr": 2017, "anmerkung": "Erschienen am 24. Februar 2017." },
+          { "titel": "Ciao", "jahr": 2018, "anmerkung": "Erschienen am 12. Oktober 2018." }
+        ],
+        "highlights": ["Schreibt als Songwriter für Peter Maffay, Matthias Schweighöfer, Sido, Kontra K u.v.m.", "Spotlight-Artist-Programm: war der allererste in Deutschland"]
+      },
       "projekte": [
         { "name": "Diskografie auf Spotify", "url": "https://open.spotify.com/artist/4KnUDY0asYB0Eb7vtNWIK7", "beschreibung": "Alle Alben & Singles — u.a. August, Wie ein Mann, Ciao." },
-        { "name": "Songwriting", "url": "https://de.wikipedia.org/wiki/Nisse_(Musiker)", "beschreibung": "Schreibt für Peter Maffay, Schweighöfer, Sido, Kontra K u.v.m." }
+        { "name": "Sounds Of (funk)", "url": "https://www.funk.net/", "beschreibung": "Moderation der Funk-Musikinterview-Reihe seit 2020." }
       ],
       "social": [
         { "platform": "Instagram", "handle": "@nissemusik", "url": "https://www.instagram.com/nissemusik/" },
@@ -41,7 +60,7 @@
       "rolle": "Hamburger Kaufmann · St. Pauli · namensgebender Gast in Kalles Corner",
       "geboren": null,
       "geburtsort": "Hamburg",
-      "bio": "Hamburger Persönlichkeit von St. Pauli, bekannt aus der 5-Sterne-Lux-Doku über Zuhälter. Er ist die namensgebende Figur der wiederkehrenden TMDA-Rubrik Kalles Corner ab Folge 37 — kurze, oft erstaunliche Anekdoten über ihn (Geldrückgabe per Bargeld-Koffer, Doppelgänger-Trick im Gericht, das Mucki-Pinzner-Attentat). In TMDA-Transkripten wird sein Name häufig als Kale oder Kales auto-transkribiert.",
+      "bio": "Hamburger Persönlichkeit von St. Pauli, bekannt aus der 5-Sterne-Lux-Doku über Zuhälter. Namensgebende Figur der wiederkehrenden TMDA-Rubrik Kalles Corner ab Folge 37 — kurze, oft erstaunliche Anekdoten über ihn (Geldrückgabe per Bargeld-Koffer, Doppelgänger-Trick im Gericht, das Mucki-Pinzner-Attentat). Im echten Leben Pate von Nisses bester Freundin. In TMDA-Transkripten wird sein Name häufig als Kale oder Kales auto-transkribiert.",
       "projekte": [],
       "social": []
     }

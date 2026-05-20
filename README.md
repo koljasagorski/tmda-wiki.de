@@ -21,7 +21,28 @@ Alle Rubriken werden aus den Folgen-Transkripten extrahiert. Stand `npm run aggr
 | **Zitate** | Beste Sätze pro Folge |
 | **Erwähnte Personen** | Index aller genannten Promis/Künstler |
 | **Fun Facts** | Spontaner Fun Fact am Folgenanfang |
-| **AI-Chat** | Frag das Wiki direkt (Workers AI) |
+| **Hosts & Cast** | Fynn, Nisse, Kalle — Bio, Diskografie, Projekte, Social |
+| **AI-Chat** | Frag das Wiki direkt (Workers AI, kennt auch Hosts-Bios) |
+| **Transkripte gesucht** | Aufruf an Helfer:innen für Sprecher-zugeordnete Transkripte |
+
+### Auf der Startseite
+
+- **Neueste YouTube-Folge** wird automatisch als Embed gezeigt (über die RSS-Feed-Lookup im Worker, gecacht).
+- **Stats-Grid** mit allen Counts.
+- **Top-bewertete Startup-Idee** als Highlight-Card.
+
+### Floating Chat
+
+Ein **AI-Chat-Button** unten rechts auf allen Seiten. Klick → Modal mit gleicher Chat-Logik wie die `/chat`-Seite. Beide teilen sich Question-Count, Spenden-Callout (nach 3 Fragen) und Bot-Schutz.
+
+### Bot-Schutz mit Cloudflare Turnstile
+
+Ab der **N-ten Nutzerfrage** (Default: 5) wird ein Cloudflare-Turnstile-Captcha eingeblendet. Der Worker verifiziert das Token serverseitig. Konfiguration in `wrangler.jsonc`:
+- `TURNSTILE_SITE_KEY` (public, var)
+- `TURNSTILE_QUESTION_THRESHOLD` (default `"5"`)
+- `TURNSTILE_SECRET_KEY` → setzen via `npx wrangler secret put TURNSTILE_SECRET_KEY`
+
+Solange die Keys leer sind, läuft alles ohne Captcha (graceful degradation).
 
 ---
 
@@ -120,6 +141,28 @@ Voraussetzungen:
 - Node.js ≥ 20
 - Python 3 (für `import-raw.py`)
 - Cloudflare Account + `wrangler login`
+
+### Environment-Variablen (`wrangler.jsonc` → `vars`)
+
+| Variable | Was | Default |
+|---|---|---|
+| `SITE_URL` | Canonical-URL für Sitemap/OG | `https://tmda-wiki.de` |
+| `REPO_URL` | Repo-Link für Footer | `https://github.com/koljasagorski/tmda-wiki.de` |
+| `YOUTUBE_CHANNEL_ID` | YouTube-Channel-ID für den Latest-Video-Embed (`UC...`). Wenn leer, wird der Embed nicht angezeigt. | `""` |
+| `TURNSTILE_SITE_KEY` | Public Site-Key (vom Cloudflare-Dashboard). Wenn leer, kein Captcha. | `""` |
+| `TURNSTILE_QUESTION_THRESHOLD` | Ab welcher Nutzerfrage Turnstile triggert | `"5"` |
+
+### Secrets (via `wrangler secret put`)
+
+| Secret | Was |
+|---|---|
+| `TURNSTILE_SECRET_KEY` | Server-Secret für Turnstile-Verifikation |
+
+Beispiel: `npx wrangler secret put TURNSTILE_SECRET_KEY`
+
+### Beim Ändern → README mit anpassen
+
+**Konvention für PRs:** wenn du Routes, UI-Komponenten, Env-Vars, Pipelines oder API-Endpunkte ergänzt/änderst, **muss** die README mit aktualisiert werden. Der PR-Template-Check `.github/PULL_REQUEST_TEMPLATE.md` hat dazu eine Checkbox.
 
 ---
 
