@@ -513,6 +513,10 @@ async function renderHosts() {
 }
 
 // ---------- Chat ----------
+const DONATION_THRESHOLD = 3;
+const DONATION_KEY = 'tmda-chat-questions';
+const DONATION_SHOWN_KEY = 'tmda-donate-shown';
+
 async function renderChat() {
   app.innerHTML = `
     <h1 class="section-title">🤖 Chat</h1>
@@ -540,6 +544,20 @@ async function renderChat() {
     return m;
   }
 
+  function showDonationCallout() {
+    const callout = el(`<div class="donate-callout">
+      <h3>Hey — kleines Wort in eigener Sache 🙏</h3>
+      <p>Das hier ist ein <strong>Hobby-Fan-Projekt</strong>, kein offizielles TMDA-Angebot. Jede Chat-Anfrage kostet ein paar Cent Cloudflare-AI-Gebühren — auf Dauer summiert sich das.</p>
+      <p>Wenn dir das Wiki Spaß macht, freu ich mich über einen kleinen Beitrag:</p>
+      <a class="donate-btn" href="https://www.paypal.com/paypalme/koljasagorski" target="_blank" rel="noopener">
+        <strong>PayPal:</strong> paypal@koljasagorski.de
+      </a>
+      <p class="meta">Danke! Frag ruhig weiter — die Antworten kommen wie gewohnt.</p>
+    </div>`);
+    log.appendChild(callout);
+    log.scrollTop = log.scrollHeight;
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const text = input.value.trim();
@@ -558,6 +576,12 @@ async function renderChat() {
       if (data.reply) {
         pending.textContent = data.reply;
         history.push({ role: 'assistant', content: data.reply });
+        const count = Number(localStorage.getItem(DONATION_KEY) || '0') + 1;
+        localStorage.setItem(DONATION_KEY, String(count));
+        if (count >= DONATION_THRESHOLD && !localStorage.getItem(DONATION_SHOWN_KEY)) {
+          localStorage.setItem(DONATION_SHOWN_KEY, '1');
+          showDonationCallout();
+        }
       } else {
         pending.textContent = data.error || 'Keine Antwort.';
       }
