@@ -37,9 +37,11 @@ Ein **AI-Chat-Button** unten rechts auf allen Seiten. Klick → Modal mit gleich
 
 ### Bot-Schutz mit Cloudflare Turnstile
 
-Ab der **N-ten Nutzerfrage** (Default: 5) wird ein Cloudflare-Turnstile-Captcha eingeblendet. Der Worker verifiziert das Token serverseitig. Konfiguration in `wrangler.jsonc`:
+**Alle N Fragen** (Default: 6, also bei Frage 6, 12, 18, …) wird ein Cloudflare-Turnstile-Captcha eingeblendet. Das ist Interval-basiert, weil Turnstile-Tokens single-use sind und „immer ab Frage 5" bedeuten würde, dass jede Frage einen neuen Token braucht.
+
+Konfiguration in `wrangler.jsonc`:
 - `TURNSTILE_SITE_KEY` (public, var)
-- `TURNSTILE_QUESTION_THRESHOLD` (default `"5"`)
+- `TURNSTILE_QUESTION_THRESHOLD` (Interval, default `"6"`)
 - `TURNSTILE_SECRET_KEY` → setzen via `npx wrangler secret put TURNSTILE_SECRET_KEY`
 
 Solange die Keys leer sind, läuft alles ohne Captcha (graceful degradation).

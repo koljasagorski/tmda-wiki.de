@@ -605,7 +605,8 @@ function renderTranskripteGesucht() {
 // ---------- Chat (refactored: shared zwischen Seite und Modal) ----------
 const DONATION_THRESHOLD = 3;
 const DONATION_KEY = 'tmda-chat-questions';
-const DONATION_SHOWN_KEY = 'tmda-donate-shown';
+// sessionStorage: Donation-Hinweis pro Browser-Session einmal anzeigen
+const DONATION_SHOWN_KEY = 'tmda-donate-shown-session';
 
 let chatConfig = null;
 async function getChatConfig() {
@@ -614,8 +615,10 @@ async function getChatConfig() {
     const r = await fetch('/api/config');
     chatConfig = await r.json();
   } catch {
-    chatConfig = { turnstileSiteKey: '', turnstileThreshold: 5 };
+    chatConfig = { turnstileSiteKey: '', turnstileInterval: 6 };
   }
+  // Backwards-compat: alte threshold-Property
+  chatConfig.turnstileInterval = chatConfig.turnstileInterval || chatConfig.turnstileThreshold || 6;
   return chatConfig;
 }
 
@@ -699,58 +702,57 @@ function setupChat(container, opts = {}) {
 
     const cfg = await getChatConfig();
     const count = Number(localStorage.getItem(DONATION_KEY) || '0') + 1;
+    const interval = cfg.turnstileInterval || 6;
+    // Turnstile-Tokens sind Single-Use → nur alle N Fragen challengen
+    const needsTurnstile = !!cfg.turnstileSiteKey && count > 0 && count % interval === 0;
 
-    // Turnstile-Schwelle erreicht und noch kein Token → challenge
-    if (cfg.turnstileSiteKey && count >= (cfg.turnstileThreshold || 5) && !turnstileToken) {
+    if (needsTurnstile) {
       const t = await showTurnstileChallenge(cfg.turnstileSiteKey);
       if (!t) {
         pending.textContent = 'Konnte CAPTCHA nicht laden. Versuch es nochmal.';
         return;
       }
+    } else {
+      // Außerhalb des Challenge-Intervalls keinen alten Token mitschicken
+      turnstileToken = null;
     }
 
-    try {
+    async function postChat(extraToken) {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
           messages: history,
-          turnstileToken,
+          turnstileToken: extraToken ?? turnstileToken,
           userQuestionCount: count,
         }),
       });
-      const data = await res.json();
+      return { res, data: await res.json() };
+    }
+
+    try {
+      let { res, data } = await postChat();
       if (res.status === 401 && data.error === 'turnstile-required') {
-        // Token abgelaufen oder fehlt — neu challengen
+        // Token war ungültig/spent — frisches Token holen und retryen
         turnstileToken = null;
-        pending.textContent = 'Schnell durch das Captcha — danach geht\'s weiter.';
+        pending.textContent = 'Kurz durch das Captcha — danach geht\'s weiter.';
         const t = await showTurnstileChallenge(cfg.turnstileSiteKey);
         if (t) {
-          // Retry mit neuem Token
-          const retry = await fetch('/api/chat', {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ messages: history, turnstileToken, userQuestionCount: count }),
-          });
-          const retryData = await retry.json();
-          if (retryData.reply) {
-            pending.textContent = retryData.reply;
-            history.push({ role: 'assistant', content: retryData.reply });
-            tsBox.hidden = true;
-          } else {
-            pending.textContent = retryData.error || 'Keine Antwort.';
-          }
+          ({ res, data } = await postChat(t));
         }
-      } else if (data.reply) {
+      }
+      if (data.reply) {
         pending.textContent = data.reply;
         history.push({ role: 'assistant', content: data.reply });
         tsBox.hidden = true;
+        // Token nach Verbrauch verwerfen (Cloudflare Tokens sind single-use)
+        turnstileToken = null;
         localStorage.setItem(DONATION_KEY, String(count));
-        if (count >= DONATION_THRESHOLD && !localStorage.getItem(DONATION_SHOWN_KEY)) {
-          localStorage.setItem(DONATION_SHOWN_KEY, '1');
+        if (count >= DONATION_THRESHOLD && !sessionStorage.getItem(DONATION_SHOWN_KEY)) {
+          sessionStorage.setItem(DONATION_SHOWN_KEY, '1');
           showDonationCallout();
         }
-      } else {
+      } else if (!pending.textContent.includes('Captcha')) {
         pending.textContent = data.error || 'Keine Antwort.';
       }
     } catch (err) {
