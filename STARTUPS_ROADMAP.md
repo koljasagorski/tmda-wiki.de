@@ -28,10 +28,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 - [x] **Das letzte was ich sehe.de** · Folge 41 · 22/24 · dystopian medical (Playfair Display + black/red)
 - [x] **Tabletten-Matrjoschka** · Folge 32 · 22/24 · pharma luxury serif (Cormorant + russian-red/gold)
 - [x] **Kinderstimme Navi** · Folge 8 · 22/24 · friendly pastel app-store (Nunito + Caveat)
-
-### 📋 Nächste — Priorität 2
-
-- [ ] **Zusammenfuehren.de** · Folge 28 · 21/24 · brutalist mono navi-app
+- [x] **Zusammenfuehren.de** · Folge 28 · 21/24 · brutalist mono (Space Mono + black/white/yellow/magenta)
+- [x] **THE 500** · Folge 39 · 20/24 · performance-athletic neon (Archivo Black + dark + neon green)
+- [x] **LEVEL Wohnmobil-Levelling** · Folge 26 · 20/24 · outdoor premium magazine (Fraunces + moss/sand/terra)
 
 ### 📋 21/24 — Priorität 2
 

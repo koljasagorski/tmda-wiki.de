@@ -40,6 +40,30 @@
       "domain": null,
       "tagline": "Endlich hält Papa sich an die Verkehrsregeln.",
       "punkte": 22
+    },
+    {
+      "folge": 28,
+      "ideeMatch": "Zusammenfuehren",
+      "slug": "zusammenfuehren",
+      "domain": "zusammenfuehren.de",
+      "tagline": "Die App, die euch zueinander führt — live, mit Detour.",
+      "punkte": 21
+    },
+    {
+      "folge": 39,
+      "ideeMatch": "The 500",
+      "slug": "the-500",
+      "domain": null,
+      "tagline": "500 Reps. 1 Kettlebell. 25 Minuten. Jeden Tag.",
+      "punkte": 20
+    },
+    {
+      "folge": 26,
+      "ideeMatch": "Wohnmobil-Levelling",
+      "slug": "wohnmobil-levelling",
+      "domain": null,
+      "tagline": "Schluss mit Holzdreiecken. Auto-Levelling per Luftfahrwerk.",
+      "punkte": 20
     }
   ]
 }
