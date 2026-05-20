@@ -290,6 +290,26 @@ async function renderFolgen() {
 }
 
 // ---------- Folge Detail ----------
+let _ytCache = null;
+async function getYouTubeVideos() {
+  if (_ytCache) return _ytCache;
+  try {
+    const r = await fetch('/api/latest-video');
+    const data = await r.json();
+    _ytCache = data.ok ? (data.videos || []) : [];
+  } catch { _ytCache = []; }
+  return _ytCache;
+}
+function findVideoForFolge(videos, folge) {
+  // Match "#NN" oder " NN " im Titel — TMDA-Titel sind Format "TMDA #47 ..."
+  const num = String(folge);
+  for (const v of videos) {
+    const t = v.title || '';
+    if (new RegExp(`(?:^|[^0-9])#?\\s*${num}(?![0-9])`).test(t)) return v;
+  }
+  return null;
+}
+
 async function renderFolgeDetail(folge) {
   const [eps, ideen, corner, ger, fact, zit, erf] = await Promise.all([
     getData('episodes'), getData('startup-ideen'), getData('kalles-corner'),
@@ -301,6 +321,12 @@ async function renderFolgeDetail(folge) {
     return;
   }
 
+  // Prev/Next folge (sortiert nach folge-Nummer)
+  const sortedEps = [...(eps.items || [])].sort((a, b) => (a.folge || 0) - (b.folge || 0));
+  const idx = sortedEps.findIndex((e) => e.folge === folge);
+  const prevEp = idx > 0 ? sortedEps[idx - 1] : null;
+  const nextEp = idx >= 0 && idx < sortedEps.length - 1 ? sortedEps[idx + 1] : null;
+
   const idee = (ideen.items || []).find((i) => i.folge === folge);
   const kc = (corner.items || []).find((i) => i.folge === folge);
   const gr = (ger.items || []).find((i) => i.folge === folge);
@@ -308,16 +334,42 @@ async function renderFolgeDetail(folge) {
   const zitate = (zit.items || []).filter((i) => i.folge === folge);
   const erfindungen = (erf.items || []).filter((i) => i.folge === folge);
 
+  const navHtml = (pos) => `<nav class="folge-nav folge-nav-${pos}">
+    ${prevEp ? `<a class="folge-nav-btn prev" href="/folge/${prevEp.folge}"><span class="dir">← Vorherige</span><span class="title">#${prevEp.folge} · ${esc(prevEp.titel || '')}</span></a>` : '<span></span>'}
+    ${nextEp ? `<a class="folge-nav-btn next" href="/folge/${nextEp.folge}"><span class="dir">Nächste →</span><span class="title">#${nextEp.folge} · ${esc(nextEp.titel || '')}</span></a>` : '<span></span>'}
+  </nav>`;
+
   app.innerHTML = `
-    <p><a href="/folgen">← Folgen-Archiv</a></p>
-    <header style="margin:16px 0 24px">
+    <p style="margin-bottom:16px"><a href="/folgen">← Folgen-Archiv</a></p>
+    ${navHtml('top')}
+    <header class="folge-head">
       <span class="tag tag-accent">Folge #${ep.folge}</span>
-      <h1 style="margin:8px 0; font-size:clamp(1.8rem,4vw,2.5rem); letter-spacing:-0.02em">${esc(ep.titel)}</h1>
+      <h1 class="folge-title">${esc(ep.titel)}</h1>
       <div class="meta">${fmtDate(ep.datum)} ${ep.laufzeit ? '· ' + esc(ep.laufzeit) : ''}</div>
-      <p style="margin-top:12px">${esc(ep.kurzbeschreibung || '')}</p>
-      <div style="margin-top:12px">${(ep.themen || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+      <p class="folge-desc">${esc(ep.kurzbeschreibung || '')}</p>
+      <div class="folge-themen">${(ep.themen || []).map((t) => `<span class="tag tag-theme">${esc(t)}</span>`).join('')}</div>
     </header>
+    <section class="detail-block" id="folgeVideoSlot" hidden>
+      <h2>🎬 Auf YouTube</h2>
+      <div class="yt-embed" id="folgeVideoEmbed"></div>
+    </section>
   `;
+
+  // YouTube-Embed asynchron suchen
+  (async () => {
+    const videos = await getYouTubeVideos();
+    const v = findVideoForFolge(videos, folge);
+    if (!v) return;
+    const slot = document.getElementById('folgeVideoSlot');
+    const embed = document.getElementById('folgeVideoEmbed');
+    if (!slot || !embed) return;
+    embed.innerHTML = `<iframe loading="lazy"
+      src="https://www.youtube-nocookie.com/embed/${esc(v.id)}?rel=0"
+      title="${esc(v.title)}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>`;
+    slot.hidden = false;
+  })();
 
   if (idee) {
     app.appendChild(el(`<section class="detail-block">
@@ -373,6 +425,9 @@ async function renderFolgeDetail(folge) {
   app.appendChild(el(`<section class="detail-block">
     <a class="btn" href="/transcripts/folge-${String(folge).padStart(2, '0')}.txt" target="_blank" rel="noopener">Volles Transkript öffnen ↗</a>
   </section>`));
+
+  // Bottom prev/next nav
+  app.appendChild(el(navHtml('bottom')));
 }
 
 // ---------- Startup-Ideen ----------
