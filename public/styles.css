@@ -1068,6 +1068,126 @@ body.flutschi-mode::after {
 }
 .tmda-tuesday-banner.show { transform: translateX(-50%) translateY(0); }
 
+/* ---------- Cookie-Banner ---------- */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-elev);
+  border: 1px solid color-mix(in oklab, var(--accent) 40%, var(--border));
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  padding: 18px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: start;
+  z-index: 150;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .4s ease, transform .4s cubic-bezier(.34, 1.56, .64, 1);
+}
+.cookie-banner.show { opacity: 1; transform: translateY(0); }
+.cookie-image {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-elev-2);
+  display: grid;
+  place-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.cookie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cookie-fallback {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--fg-muted);
+  line-height: 1.1;
+}
+.cookie-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+.cookie-content p {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--fg);
+}
+.cookie-content p strong { color: var(--fg); }
+.cookie-details {
+  margin: 8px 0;
+  font-size: 0.85rem;
+}
+.cookie-details summary {
+  cursor: pointer;
+  color: var(--fg-muted);
+  user-select: none;
+}
+.cookie-details summary:hover { color: var(--fg); }
+.cookie-details ul {
+  margin: 8px 0;
+  padding-left: 20px;
+  color: var(--fg-muted);
+}
+.cookie-details li { margin: 2px 0; }
+.cookie-details code {
+  font-family: var(--font-mono);
+  background: var(--bg-elev-2);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.cookie-details .meta {
+  font-size: 0.82rem;
+  margin-top: 6px;
+}
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.cookie-actions .btn {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+.cookie-close {
+  background: transparent;
+  border: none;
+  color: var(--fg-muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+}
+.cookie-close:hover { background: var(--bg-elev-2); color: var(--fg); }
+
+@media (max-width: 640px) {
+  .cookie-banner {
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 14px;
+  }
+  .cookie-image { display: none; }
+}
+
 /* ---------- Egg Help Overlay (? Taste) ---------- */
 .egg-help-overlay {
   position: fixed;

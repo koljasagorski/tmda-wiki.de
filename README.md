@@ -73,6 +73,10 @@ Alles in `public/easter-eggs.js`. Drück <kbd>?</kbd> auf der Seite für das kom
 
 Dazu hängt der **Chat-Bot** nach jeder AI-Antwort eine kleine kursive Hint-Bubble (`.msg-hint`) mit einem zufälligen Egg-Hint an. Die Hint-Texte erklären explizit, dass das Trigger-Wort **auf der Seite** (nicht im Chat-Input) getippt werden muss.
 
+### 🍪 Cookie-Banner
+
+Pure Witz-Compliance — wir setzen keine Tracking-Cookies, nur funktionale localStorage-Keys. Banner erscheint einmal pro Browser (`tmda-cookie-acknowledged`-Flag), schreibt ironisch was wir wirklich speichern, und linkt auf nichts. Das Bild im Banner-Slot lädt aus `/fynn-cookie.jpg` — falls die Datei fehlt, fällt der Banner auf 🍟-Emoji zurück. **Bildrechte beachten beim Hochladen.**
+
 ---
 
 ## Tech Stack
