@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>THE 500 — 500 Reps. 1 Kettlebell. 25 Minuten. Jeden Tag.</title>
+<meta name="description" content="500 Bewegungen pro Tag mit einer einzigen Kettlebell. 5 Übungen × 100 Reps. 20-30 Minuten. Inkl. Kreatin-Protokoll und Sunday Club am Frankfurter Hauptbahnhof." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/the-500" />
+<meta property="og:title" content="THE 500" />
+<meta property="og:description" content="500 Reps. 1 Kettlebell. 25 Minuten." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/the-500" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"THE 500","category":"FitnessProgram","brand":{"@type":"Brand","name":"THE 500"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #060709;
+  --bg-2: #0d0f14;
+  --bg-3: #161922;
+  --fg: #fafafa;
+  --fg-dim: #6b7280;
+  --neon: #b6ff3c;
+  --neon-glow: #d4ff7c;
+  --rust: #ef4444;
+  --line: #1f2230;
+  --display: 'Archivo Black', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: var(--neon); text-decoration: none; }
+a:hover { color: var(--neon-glow); }
+
+/* Status ticker */
+.ticker {
+  background: var(--neon);
+  color: var(--bg);
+  font-family: var(--body);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  padding: 7px 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid var(--line);
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.nav-logo {
+  font-family: var(--display);
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+}
+.nav-logo .neon { color: var(--neon); }
+.nav-meta { display: flex; gap: 24px; font-size: 0.82rem; color: var(--fg-dim); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+
+/* Hero */
+.hero {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(4rem, 12vw, 9rem);
+  letter-spacing: -0.05em;
+  line-height: 0.86;
+  margin-bottom: 32px;
+}
+.hero h1 .num {
+  display: block;
+  color: var(--neon);
+  font-size: 1.3em;
+  text-shadow: 0 0 60px rgba(182, 255, 60, 0.4);
+}
+.hero h1 .strike {
+  display: block;
+  font-size: 0.45em;
+  color: var(--fg-dim);
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.hero p.lead {
+  font-size: 1.15rem;
+  color: var(--fg-dim);
+  max-width: 50ch;
+  margin-bottom: 36px;
+  font-weight: 400;
+}
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 18px 32px;
+  font-family: var(--body);
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid;
+  transition: all .2s;
+  cursor: pointer;
+}
+.btn-neon { background: var(--neon); color: var(--bg); border-color: var(--neon); }
+.btn-neon:hover { background: var(--neon-glow); border-color: var(--neon-glow); color: var(--bg); }
+.btn-outline { background: transparent; color: var(--fg); border-color: var(--fg-dim); }
+.btn-outline:hover { border-color: var(--fg); }
+
+.hero-display {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  padding: 36px;
+  position: relative;
+}
+.hero-display::before {
+  content: 'PROGRAMM';
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  background: var(--bg);
+  color: var(--neon);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  padding: 0 10px;
+  font-weight: 800;
+}
+.exercise {
+  display: grid;
+  grid-template-columns: 36px 1fr auto auto;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--line);
+  align-items: center;
+}
+.exercise:last-child { border-bottom: none; }
+.exercise .ex-num {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  color: var(--neon);
+}
+.exercise .ex-name {
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+.exercise .ex-reps {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  color: var(--fg);
+  letter-spacing: -0.02em;
+}
+.exercise .ex-time {
+  font-size: 0.78rem;
+  color: var(--fg-dim);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.exercise-total {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--neon);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--display);
+  font-size: 1.6rem;
+}
+.exercise-total .neon { color: var(--neon); }
+
+/* Stats band */
+.stats {
+  background: var(--bg-2);
+  padding: 80px 40px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.stats-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+.stat-cell {
+  background: var(--bg-2);
+  padding: 36px 24px;
+}
+.stat-num {
+  font-family: var(--display);
+  font-size: 3.5rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--neon);
+}
+.stat-num .small { font-size: 0.4em; color: var(--fg-dim); display: block; letter-spacing: 0.2em; font-weight: 400; margin-top: 8px; text-transform: uppercase; font-family: var(--body); }
+
+/* Kettlebell illustration */
+.kettle-section {
+  padding: 100px 40px;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.kettle-vis {
+  display: grid;
+  place-items: center;
+}
+.kettle-vis svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  filter: drop-shadow(0 0 40px rgba(182, 255, 60, 0.2));
+}
+.kettle-text .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--neon);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.kettle-text h2 {
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+  margin-bottom: 24px;
+}
+.kettle-text p { color: var(--fg-dim); font-size: 1.05rem; margin-bottom: 16px; max-width: 50ch; }
+.weights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 32px;
+  border: 1px solid var(--line);
+}
+.weight {
+  padding: 16px 12px;
+  border-right: 1px solid var(--line);
+  text-align: center;
+}
+.weight:last-child { border-right: none; }
+.weight .w-num { font-family: var(--display); font-size: 1.6rem; }
+.weight .w-label { font-size: 0.72rem; color: var(--fg-dim); letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; margin-top: 4px; }
+.weight.recommended { background: var(--neon); color: var(--bg); }
+.weight.recommended .w-label { color: var(--bg); opacity: 0.7; }
+
+/* Creatine pitch */
+.creatine {
+  padding: 100px 40px;
+  background: var(--bg-3);
+}
+.creatine-inner { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.creatine-bag {
+  background: linear-gradient(180deg, var(--bg-2) 0%, #000 100%);
+  border: 1px solid var(--line);
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+}
+.creatine-bag .brand-name {
+  font-family: var(--display);
+  font-size: 3rem;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  margin-bottom: 8px;
+}
+.creatine-bag .brand-name .neon { color: var(--neon); }
+.creatine-bag .product { font-size: 0.85rem; letter-spacing: 0.3em; color: var(--fg-dim); text-transform: uppercase; font-weight: 800; margin-bottom: 30px; }
+.creatine-bag .amount { font-family: var(--display); font-size: 4rem; color: var(--neon); line-height: 1; }
+.creatine-bag .amount .unit { font-size: 0.35em; color: var(--fg-dim); margin-left: 6px; vertical-align: super; }
+.creatine-bag .weight { font-size: 0.85rem; color: var(--fg-dim); letter-spacing: 0.2em; margin-top: 14px; text-transform: uppercase; font-weight: 600; }
+.creatine-bag .nutri {
+  border-top: 1px solid var(--line);
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  font-weight: 700;
+}
+
+/* Sunday Club */
+.sunday {
+  padding: 120px 40px;
+  background: var(--bg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.sunday::before {
+  content: '500';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--display);
+  font-size: 32rem;
+  color: rgba(182, 255, 60, 0.03);
+  z-index: 0;
+  letter-spacing: -0.06em;
+}
+.sunday-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
+.sunday .eyebrow { color: var(--neon); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 800; margin-bottom: 20px; }
+.sunday h2 {
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+.sunday p { color: var(--fg-dim); font-size: 1.1rem; margin-bottom: 32px; max-width: 56ch; margin-left: auto; margin-right: auto; }
+
+.sunday-location {
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  text-align: left;
+  background: var(--bg-2);
+  border: 1px solid var(--neon);
+  padding: 24px 32px;
+  margin-top: 24px;
+  align-items: center;
+}
+.sunday-location .day {
+  font-family: var(--display);
+  font-size: 3rem;
+  color: var(--neon);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.sunday-location .info .when { font-family: var(--display); font-size: 1.4rem; letter-spacing: -0.02em; }
+.sunday-location .info .where { color: var(--fg-dim); font-size: 0.88rem; margin-top: 4px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 50px 40px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  background: var(--bg);
+}
+footer a { color: var(--neon); }
+
+@media (max-width: 800px) {
+  .nav { flex-direction: column; gap: 8px; padding: 20px; text-align: center; }
+  .nav-meta { font-size: 0.72rem; gap: 12px; }
+  .hero { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+  .kettle-section { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+  .creatine-inner { grid-template-columns: 1fr; gap: 40px; }
+  .weights-grid { grid-template-columns: repeat(2, 1fr); }
+  .weight:nth-child(2) { border-right: none; }
+  .weight:nth-child(1), .weight:nth-child(2) { border-bottom: 1px solid var(--line); }
+}
+</style>
+</head>
+<body>
+
+<div class="ticker">▸ pre-order open · launch q3 2026 · creatin in production</div>
+
+<nav class="nav">
+  <div class="nav-logo">THE <span class="neon">500</span></div>
+  <div class="nav-meta">
+    <span>Programm</span>
+    <span>Kreatin</span>
+    <span>Sunday Club</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>
+      <span class="num">500</span>
+      reps.
+      <span class="strike">1 kettlebell · 25 min · jeden tag</span>
+    </h1>
+    <p class="lead">
+      Fünf Übungen. Hundert Wiederholungen pro Übung. Eine Kettlebell. Eine halbe Stunde. Sieben Tage die Woche. Mehr braucht es nicht.
+      Kein Studio, keine Maschinen, keine Ausreden.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-neon" href="#programm">Programm ansehen</a>
+      <a class="btn btn-outline" href="#sunday">Sunday Club beitreten</a>
+    </div>
+  </div>
+
+  <div class="hero-display" id="programm">
+    <div class="exercise">
+      <span class="ex-num">1</span>
+      <span class="ex-name">Kettlebell Swing</span>
+      <span class="ex-reps">100</span>
+      <span class="ex-time">4 min</span>
+    </div>
+    <div class="exercise">
+      <span class="ex-num">2</span>
+      <span class="ex-name">Goblet Squat</span>
+      <span class="ex-reps">100</span>
+      <span class="ex-time">5 min</span>
+    </div>
+    <div class="exercise">
+      <span class="ex-num">3</span>
+      <span class="ex-name">Push Press <small style="color:var(--fg-dim);font-weight:400">50 pro Arm</small></span>
+      <span class="ex-reps">100</span>
+      <span class="ex-time">5 min</span>
+    </div>
+    <div class="exercise">
+      <span class="ex-num">4</span>
+      <span class="ex-name">Single-Arm Row <small style="color:var(--fg-dim);font-weight:400">50/50</small></span>
+      <span class="ex-reps">100</span>
+      <span class="ex-time">5 min</span>
+    </div>
+    <div class="exercise">
+      <span class="ex-num">5</span>
+      <span class="ex-name">Turkish Get-Up</span>
+      <span class="ex-reps">50</span>
+      <span class="ex-time">6 min</span>
+    </div>
+    <div class="exercise-total">
+      <span>Total</span>
+      <span class="neon">450 + 50 = 500</span>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-num">25<small class="small">Minuten pro Tag</small></div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">1<small class="small">Kettlebell genügt</small></div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">7<small class="small">Tage die Woche</small></div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">0<small class="small">Studio-Beiträge</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="kettle-section">
+  <div class="kettle-vis">
+    <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="iron" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3a3a45"/>
+          <stop offset="100%" stop-color="#0a0a0d"/>
+        </linearGradient>
+        <radialGradient id="iron-hl" cx="35%" cy="40%">
+          <stop offset="0%" stop-color="#7a7a85" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="transparent"/>
+        </radialGradient>
+      </defs>
+      <!-- Griff -->
+      <path d="M 90 60 Q 90 30 140 30 Q 190 30 190 60 L 190 100 L 170 100 L 170 70 Q 170 50 140 50 Q 110 50 110 70 L 110 100 L 90 100 Z" fill="url(#iron)" stroke="#06070a" stroke-width="2"/>
+      <!-- Kettlebell-Körper -->
+      <circle cx="140" cy="200" r="100" fill="url(#iron)" stroke="#06070a" stroke-width="2"/>
+      <circle cx="140" cy="200" r="100" fill="url(#iron-hl)"/>
+      <!-- Verbindungs-Hals -->
+      <rect x="105" y="95" width="70" height="20" fill="url(#iron)" stroke="#06070a" stroke-width="2"/>
+      <!-- Gewichts-Label -->
+      <ellipse cx="140" cy="220" rx="42" ry="18" fill="#0a0a0d" stroke="#b6ff3c" stroke-width="2"/>
+      <text x="140" y="226" text-anchor="middle" font-family="Archivo Black, sans-serif" font-size="20" fill="#b6ff3c">24 KG</text>
+      <!-- Boden-Schatten -->
+      <ellipse cx="140" cy="310" rx="110" ry="6" fill="#000" opacity="0.6"/>
+    </svg>
+  </div>
+  <div class="kettle-text">
+    <div class="eyebrow">▸ Ein Werkzeug. Eine Investition.</div>
+    <h2>Wähle dein Gewicht und kauf nichts mehr.</h2>
+    <p>Eine einzige Kettlebell hält ein Leben lang. Keine Hanteln, keine Bänder, keine Maschinen. Nichts, was im Keller verstaubt.</p>
+    <p>Wir verkaufen sie nicht — wir empfehlen dir, was deinem Trainingsstand entspricht.</p>
+    <div class="weights-grid">
+      <div class="weight">
+        <div class="w-num">16</div>
+        <div class="w-label">kg · Einstieg</div>
+      </div>
+      <div class="weight recommended">
+        <div class="w-num">24</div>
+        <div class="w-label">kg · Empfohlen</div>
+      </div>
+      <div class="weight">
+        <div class="w-num">32</div>
+        <div class="w-label">kg · Fortgeschritten</div>
+      </div>
+      <div class="weight">
+        <div class="w-num">48</div>
+        <div class="w-label">kg · Pro</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="creatine">
+  <div class="creatine-inner">
+    <div class="creatine-bag">
+      <div class="product">Creatin-Monohydrat</div>
+      <div class="brand-name">THE <span class="neon">500</span> CR</div>
+      <div class="amount">5<span class="unit">g/Tag</span></div>
+      <div class="weight">300 g · 60 Servings</div>
+      <div class="nutri">100% reines Creatin · keine Füllstoffe · 39,90 €</div>
+    </div>
+    <div>
+      <div class="eyebrow" style="color:var(--neon); letter-spacing: 0.3em; text-transform: uppercase; font-size: 0.78rem; font-weight: 800; margin-bottom: 16px;">▸ Das Protokoll</div>
+      <h2 style="font-family: var(--display); font-size: clamp(2rem, 4vw, 3.4rem); line-height: 0.95; letter-spacing: -0.03em; margin-bottom: 24px;">Eine Kettlebell. Ein Programm. Eine Dose Kreatin.</h2>
+      <p style="color: var(--fg-dim); font-size: 1.05rem; margin-bottom: 14px;">5 g Creatin-Monohydrat pro Tag. Direkt nach den 500 Reps. Mit Wasser oder Saft.</p>
+      <p style="color: var(--fg-dim); font-size: 1.05rem; margin-bottom: 14px;">Wissenschaftlich am häufigsten dokumentiertes Supplement. Erhöht Kraftleistung um durchschnittlich 8–14 %.</p>
+      <p style="color: var(--fg-dim); font-size: 1.05rem;">Wir mischen es selbst ab in einer Halle in Frankfurt. Kein Aroma, kein Quatsch.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sunday" id="sunday">
+  <div class="sunday-inner">
+    <div class="eyebrow">▸ Sonntag · 9:00 Uhr · live</div>
+    <h2>THE 500<br>SUNDAY CLUB</h2>
+    <p>
+      Jeden Sonntagmorgen treffen wir uns am Frankfurter Hauptbahnhof. Wir hauen 500 Reps gemeinsam durch.
+      Danach gibt's Kaffee aus der Bahnhofs-Bäckerei. Ohne Anmeldung. Bring deine Kettlebell mit.
+    </p>
+    <div class="sunday-location">
+      <span class="day">SO</span>
+      <div class="info">
+        <div class="when">9:00 — 9:25</div>
+        <div class="where">Frankfurt Hbf · Eingang Süd · Treffpunkt Uhr</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #39 · Bewertung 20/24<br>
+  <a href="/folge/39">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+</footer>
+
+</body>
+</html>

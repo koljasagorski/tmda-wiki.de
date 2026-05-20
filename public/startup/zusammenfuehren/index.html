@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>zusammenfuehren.de — die navigationsapp mit personality</title>
+<meta name="description" content="Eine App, die euch beide automatisch zueinander führt. Live, kürzester Weg, mit Interessen-Detour. Magic-Karten-Turnier auf der Strecke? Käse vom Bauern? Du wirst informiert." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/zusammenfuehren" />
+<meta property="og:title" content="zusammenfuehren.de" />
+<meta property="og:description" content="Navigationsapp, die zwei Personen verbindet. Mit Personality." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/zusammenfuehren" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"zusammenfuehren.de","applicationCategory":"NavigationApplication"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #f3f3f3;
+  --gray-2: #e0e0e0;
+  --yellow: #ffe600;
+  --green: #00d26a;
+  --magenta: #ff006e;
+  --mono: 'Space Mono', ui-monospace, Menlo, monospace;
+  --sans: 'Space Grotesk', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--white); color: var(--black); font-family: var(--sans); line-height: 1.4; -webkit-font-smoothing: antialiased; }
+a { color: var(--black); text-decoration: underline; text-decoration-thickness: 2px; }
+a:hover { background: var(--yellow); }
+
+/* Brutalist topnotice */
+.topnote {
+  background: var(--yellow);
+  padding: 8px 24px;
+  border-bottom: 3px solid var(--black);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  border-bottom: 3px solid var(--black);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.nav-left { font-family: var(--mono); font-size: 0.85rem; }
+.nav-logo {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+.nav-logo a { text-decoration: none; }
+.nav-logo .yellow { background: var(--yellow); padding: 0 8px; }
+.nav-right { font-family: var(--mono); font-size: 0.85rem; text-align: right; }
+
+/* Hero */
+.hero {
+  padding: 80px 24px 60px;
+  border-bottom: 3px solid var(--black);
+}
+.hero-inner { max-width: 1280px; margin: 0 auto; }
+.hero h1 {
+  font-family: var(--mono);
+  font-size: clamp(2.6rem, 9vw, 7.5rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.92;
+  text-transform: lowercase;
+  margin-bottom: 36px;
+}
+.hero h1 .strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 6px;
+  color: rgba(0,0,0,0.4);
+}
+.hero h1 .yellow-bg { background: var(--yellow); padding: 0 16px; }
+.hero h1 .magenta { color: var(--magenta); }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+.hero-text p {
+  font-family: var(--mono);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 56ch;
+}
+.hero-text p::before { content: '> '; color: var(--magenta); font-weight: 700; }
+
+/* Map illustration */
+.map-box {
+  border: 3px solid var(--black);
+  background: var(--gray);
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+}
+.map-label {
+  position: absolute;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  padding: 3px 8px;
+}
+.map-label.tl { top: 12px; left: 12px; }
+.map-label.tr { top: 12px; right: 12px; background: var(--magenta); }
+.map-label.bl { bottom: 12px; left: 12px; background: var(--green); }
+.map-label.br { bottom: 12px; right: 12px; background: var(--yellow); color: var(--black); }
+.map-box svg { width: 100%; height: 100%; }
+
+/* Big CTA-stripe */
+.big-cta {
+  background: var(--black);
+  color: var(--white);
+  padding: 90px 24px;
+  text-align: center;
+  border-bottom: 3px solid var(--black);
+}
+.big-cta-h {
+  font-family: var(--mono);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: lowercase;
+  max-width: 22ch;
+  margin: 0 auto 36px;
+}
+.big-cta-h .yellow { color: var(--yellow); }
+.btn {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 18px 40px;
+  background: var(--yellow);
+  color: var(--black);
+  border: 3px solid var(--white);
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+}
+.btn:hover { background: var(--white); text-decoration: none; }
+
+/* Use cases */
+.cases {
+  padding: 80px 24px;
+  border-bottom: 3px solid var(--black);
+}
+.cases-inner { max-width: 1280px; margin: 0 auto; }
+.cases-label {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+.cases-h {
+  font-family: var(--mono);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-transform: lowercase;
+  margin-bottom: 50px;
+}
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0;
+  border: 3px solid var(--black);
+}
+.case {
+  padding: 32px;
+  border-right: 3px solid var(--black);
+  background: var(--white);
+}
+.case:last-child { border-right: none; }
+.case-num {
+  font-family: var(--mono);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  margin-bottom: 20px;
+}
+.case h3 {
+  font-family: var(--mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+.case p { font-family: var(--mono); font-size: 0.9rem; line-height: 1.55; color: rgba(0,0,0,0.7); }
+.case:nth-child(1) { background: var(--yellow); }
+.case:nth-child(2) { background: var(--white); }
+.case:nth-child(3) { background: var(--magenta); color: var(--white); }
+.case:nth-child(3) p { color: rgba(255,255,255,0.85); }
+
+/* Feature list */
+.features {
+  padding: 80px 24px;
+  border-bottom: 3px solid var(--black);
+}
+.features-inner { max-width: 1280px; margin: 0 auto; }
+.f-list {
+  list-style: none;
+  margin-top: 30px;
+}
+.f-list li {
+  font-family: var(--mono);
+  padding: 24px 0;
+  border-bottom: 1px solid var(--black);
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 20px;
+  align-items: baseline;
+  font-size: 1.1rem;
+}
+.f-list li:last-child { border-bottom: none; }
+.f-list .num { color: var(--magenta); font-weight: 700; }
+.f-list .status {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  background: var(--green);
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.f-list .status.beta { background: var(--yellow); }
+.f-list .status.todo { background: var(--gray-2); }
+
+/* Final */
+.final {
+  padding: 100px 24px;
+  text-align: center;
+  background: var(--yellow);
+}
+.final h2 {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-transform: lowercase;
+  margin-bottom: 24px;
+  max-width: 24ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 40px 24px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-top: 3px solid var(--yellow);
+}
+footer a { color: var(--yellow); }
+footer .right { text-align: right; }
+
+@media (max-width: 760px) {
+  .nav { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+  .nav-left, .nav-right { text-align: center; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .cases-grid { grid-template-columns: 1fr; }
+  .case { border-right: none; border-bottom: 3px solid var(--black); }
+  .case:last-child { border-bottom: none; }
+  footer { grid-template-columns: 1fr; }
+  footer .right { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<div class="topnote">
+  <span>↘ beta 0.4 · android only · ios in q3</span>
+  <span>servers up · 7.812 paare verbunden</span>
+</div>
+
+<nav class="nav">
+  <div class="nav-left">koord. system: wgs84 / utm</div>
+  <div class="nav-logo"><a href="/">zusammen<span class="yellow">fuehren</span>.de</a></div>
+  <div class="nav-right">version 0.4.12 · letztes update gestern</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>
+      <span class="strike">treffen wir uns</span><br>
+      <span class="yellow-bg">die app</span> <span class="magenta">→</span><br>
+      <span class="yellow-bg">trifft uns.</span>
+    </h1>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p>ihr seid beide irgendwo unterwegs. ihr habt verabredet, dass ihr euch trefft. ihr habt vergessen, wo.</p>
+        <p>zusammenfuehren.de errechnet live euren kürzesten gemeinsamen weg. ihr lauft beide. die app passt sich an. wenn einer abbiegt, biegt der andere mit ab.</p>
+        <p>zusatz: wenn auf der strecke ein magic-karten-turnier stattfindet oder käse direkt vom bauernhof verkauft wird, kriegt ihr eine notification. mit option umzuleiten.</p>
+        <p style="font-weight: 700;">→ keine treffpunkt-diskussion mehr.</p>
+      </div>
+
+      <div class="map-box">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Straßennetz -->
+          <g stroke="#000" stroke-width="2" fill="none" opacity="0.18">
+            <line x1="0" y1="80" x2="400" y2="80"/>
+            <line x1="0" y1="160" x2="400" y2="160"/>
+            <line x1="0" y1="240" x2="400" y2="240"/>
+            <line x1="0" y1="320" x2="400" y2="320"/>
+            <line x1="80" y1="0" x2="80" y2="400"/>
+            <line x1="160" y1="0" x2="160" y2="400"/>
+            <line x1="240" y1="0" x2="240" y2="400"/>
+            <line x1="320" y1="0" x2="320" y2="400"/>
+          </g>
+          <!-- Person A Path (yellow) -->
+          <path d="M 30 50 L 30 160 L 160 160 L 160 220" stroke="#ffe600" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Person B Path (magenta) -->
+          <path d="M 370 360 L 370 240 L 240 240 L 240 220" stroke="#ff006e" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Convergence -->
+          <path d="M 160 220 L 200 220 L 240 220" stroke="#000" stroke-width="6" stroke-dasharray="6,6" fill="none"/>
+          <!-- A marker -->
+          <circle cx="30" cy="50" r="10" fill="#000"/>
+          <text x="30" y="40" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" font-weight="700">A</text>
+          <!-- B marker -->
+          <circle cx="370" cy="360" r="10" fill="#000"/>
+          <text x="370" y="380" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" font-weight="700">B</text>
+          <!-- Treffpunkt -->
+          <rect x="190" y="210" width="20" height="20" fill="#00d26a"/>
+          <text x="200" y="200" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" font-weight="700">!</text>
+          <!-- Detour-Marker (Magic Turnier) -->
+          <circle cx="240" cy="320" r="6" fill="#ff006e" stroke="#000" stroke-width="2"/>
+          <text x="252" y="324" font-family="Space Mono, monospace" font-size="9" font-weight="700">magic</text>
+          <circle cx="100" cy="80" r="6" fill="#ffe600" stroke="#000" stroke-width="2"/>
+          <text x="112" y="84" font-family="Space Mono, monospace" font-size="9" font-weight="700">käse</text>
+        </svg>
+        <span class="map-label tl">A</span>
+        <span class="map-label tr">B</span>
+        <span class="map-label bl">DETOUR</span>
+        <span class="map-label br">MEET</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="big-cta">
+  <div class="big-cta-h">
+    null treffpunkt-diskussion.<br>
+    null „wo bist du jetzt".<br>
+    null karten-screenshots <span class="yellow">whatsapp.</span>
+  </div>
+  <a class="btn" href="#features">→ feature liste ansehen</a>
+</section>
+
+<section class="cases">
+  <div class="cases-inner">
+    <div class="cases-label">[ use cases ]</div>
+    <h2 class="cases-h">drei szenarien.<br>einmal app.</h2>
+    <div class="cases-grid">
+      <div class="case">
+        <div class="case-num">01</div>
+        <h3>verabredung in der stadt</h3>
+        <p>du kommst aus norden, sie aus süden. ihr trefft euch auf einer bank in der mitte. die bank stand schon. die app fand sie.</p>
+      </div>
+      <div class="case">
+        <div class="case-num">02</div>
+        <h3>festival-gelände</h3>
+        <p>ihr seid auf einem konzert. ihr verliert euch. die app führt euch ohne netzempfang via bluetooth-mesh zueinander. patent angemeldet.</p>
+      </div>
+      <div class="case">
+        <div class="case-num">03</div>
+        <h3>autobahn-rendezvous</h3>
+        <p>ihr fahrt euch entgegen. die app routet euch zur selben raststätte. mit empfehlung welche raststätte den besten kaffee hat (basierend auf yelp-score).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="features-inner">
+    <div class="cases-label">[ features ]</div>
+    <h2 class="cases-h">was sie schon kann.<br>und was nicht.</h2>
+    <ul class="f-list">
+      <li><span class="num">01</span><span>live-rendezvous-berechnung (gps + cellnet)</span><span class="status">live</span></li>
+      <li><span class="num">02</span><span>interessen-detour: magic-karten-turniere automatisch erkannt</span><span class="status">live</span></li>
+      <li><span class="num">03</span><span>käse-vom-bauern-radar (deutschland, alpenrand)</span><span class="status">live</span></li>
+      <li><span class="num">04</span><span>kaffee-detour mit yelp-score-trigger ab 4,3</span><span class="status">live</span></li>
+      <li><span class="num">05</span><span>festival-bluetooth-mesh ohne netzempfang</span><span class="status beta">beta</span></li>
+      <li><span class="num">06</span><span>gruppen-zusammenführung (3+ personen)</span><span class="status beta">beta</span></li>
+      <li><span class="num">07</span><span>auto-vorschlag für dritten verabredeten (couple → friend join)</span><span class="status todo">todo</span></li>
+      <li><span class="num">08</span><span>integration apple watch + google fit</span><span class="status todo">todo</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="final">
+  <h2>30 minuten weniger pro woche<br>damit, sich zu suchen.</h2>
+  <a class="btn" style="background: var(--black); color: var(--yellow); border-color: var(--black);" href="mailto:tmda@sagorski.org?subject=zusammenfuehren%20Beta-Liste">→ in beta-liste eintragen</a>
+</section>
+
+<footer>
+  <div>
+    fiktives produkt-konzept aus dem TMDA podcast<br>
+    folge #28 · bewertung 21/24<br>
+    <a href="/folge/28">← zur folge im wiki</a>
+  </div>
+  <div class="right">
+    <a href="/startup-ideen">alle startup-ideen</a><br>
+    version 0.4.12 · 2026
+  </div>
+</footer>
+
+</body>
+</html>

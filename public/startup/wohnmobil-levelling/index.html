@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LEVEL — Automatisches Wohnmobil-Levelling per Luftfahrwerk</title>
+<meta name="description" content="Schluss mit Holzdreiecken. LEVEL nutzt das Luftfahrwerk deines Wohnmobils und nivelliert über Sensorik in 12 Sekunden. Ab Werk nachrüstbar." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/wohnmobil-levelling" />
+<meta property="og:title" content="LEVEL — Automatisches Wohnmobil-Levelling" />
+<meta property="og:description" content="Ein Knopfdruck. Zwölf Sekunden. Gerade." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/wohnmobil-levelling" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"LEVEL Automatisches Wohnmobil-Levelling"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sand: #efe8d8;
+  --sand-2: #e3d9c1;
+  --cream: #f7f2e7;
+  --moss: #4a5a3e;
+  --moss-dark: #2d3b22;
+  --moss-light: #6b7f56;
+  --terra: #b86847;
+  --terra-dark: #8a4830;
+  --ink: #1f2415;
+  --ink-soft: #5a604c;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--terra); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--terra-dark); }
+
+/* Magazine-style topbar */
+.banner {
+  background: var(--moss-dark);
+  color: var(--cream);
+  font-family: var(--serif);
+  font-style: italic;
+  text-align: center;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+}
+
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 32px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  align-items: center;
+  border-bottom: 1px solid var(--sand-2);
+}
+.nav-meta { font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: 0.92rem; }
+.nav-logo {
+  font-family: var(--serif);
+  font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--moss-dark);
+}
+.nav-logo small { display: block; font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 0.32em; letter-spacing: 0.2em; color: var(--ink-soft); margin-top: -4px; text-transform: uppercase; }
+.nav-right { text-align: right; font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: 0.92rem; }
+
+/* Hero */
+.hero {
+  padding: 80px 32px 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero-eyebrow {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--terra);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 8vw, 6.4rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+.hero h1 em { font-style: italic; font-weight: 400; color: var(--moss); }
+.hero p.lead {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: var(--ink-soft);
+  max-width: 50ch;
+  margin: 0 auto 50px;
+  font-weight: 400;
+}
+
+/* Hero illustration: camper with level indicator */
+.camper-stage {
+  position: relative;
+  width: min(900px, 100%);
+  margin: 0 auto 50px;
+  aspect-ratio: 2 / 1;
+}
+.camper-stage svg { width: 100%; height: 100%; }
+
+.hero-cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 1.5px solid;
+  text-decoration: none;
+  transition: all .15s;
+}
+.btn-moss { background: var(--moss-dark); color: var(--cream); border-color: var(--moss-dark); }
+.btn-moss:hover { background: var(--moss); border-color: var(--moss); color: var(--cream); text-decoration: none; }
+.btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-outline:hover { background: var(--ink); color: var(--cream); text-decoration: none; }
+
+/* Problem statement */
+.problem {
+  padding: 100px 32px;
+  background: var(--sand);
+  border-top: 1px solid var(--sand-2);
+  border-bottom: 1px solid var(--sand-2);
+}
+.problem-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.problem-img {
+  background: var(--cream);
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--sand-2);
+}
+.problem-img svg { width: 80%; height: 80%; }
+.problem .eyebrow {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--terra);
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.problem h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+.problem h2 em { font-style: italic; color: var(--moss); font-weight: 400; }
+.problem p {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  max-width: 50ch;
+}
+.problem ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.problem li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--sand-2);
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+.problem li::before {
+  content: '×';
+  color: var(--terra);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* How */
+.how {
+  padding: 120px 32px;
+  background: var(--cream);
+}
+.how-inner { max-width: 1200px; margin: 0 auto; }
+.how-h {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.how-h em { font-style: italic; color: var(--terra); font-weight: 400; }
+.how-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 1.1rem;
+}
+.how-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.how-step .seconds {
+  font-family: var(--serif);
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--moss);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.how-step .seconds small { font-size: 0.3em; color: var(--ink-soft); margin-left: 6px; font-weight: 400; }
+.how-step h3 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.how-step p { color: var(--ink-soft); font-size: 0.98rem; }
+
+/* Specs */
+.specs {
+  padding: 100px 32px;
+  background: var(--moss-dark);
+  color: var(--cream);
+}
+.specs-inner { max-width: 1100px; margin: 0 auto; }
+.specs-h {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.specs-h em { font-style: italic; color: var(--sand-2); font-weight: 400; }
+.specs-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--moss-light);
+  border: 1px solid var(--moss-light);
+}
+.spec-cell {
+  background: var(--moss-dark);
+  padding: 28px 30px;
+}
+.spec-cell .label {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--sand-2);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+.spec-cell .value {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--cream);
+}
+
+/* Testimonial / quote */
+.testi {
+  padding: 120px 32px;
+  background: var(--sand);
+  text-align: center;
+}
+.testi q {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  color: var(--ink);
+  display: block;
+  max-width: 30ch;
+  margin: 0 auto 28px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.testi cite {
+  font-style: normal;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Pricing */
+.pricing {
+  padding: 120px 32px;
+  background: var(--cream);
+}
+.pricing-inner { max-width: 1200px; margin: 0 auto; }
+.pricing-h {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.pricing-h em { font-style: italic; color: var(--terra); font-weight: 400; }
+.pricing-sub { text-align: center; font-family: var(--serif); font-style: italic; color: var(--ink-soft); margin-bottom: 60px; font-size: 1.05rem; }
+.tiers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.tier {
+  background: var(--cream);
+  border: 1px solid var(--sand-2);
+  padding: 40px 32px;
+  border-radius: 16px;
+}
+.tier.featured { background: var(--moss-dark); color: var(--cream); border-color: var(--moss-dark); }
+.tier .name { font-family: var(--serif); font-style: italic; font-size: 1.4rem; margin-bottom: 8px; }
+.tier .price {
+  font-family: var(--serif);
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+.tier.featured .price { color: var(--cream); }
+.tier .price small { font-size: 0.35em; font-weight: 400; color: var(--ink-soft); margin-left: 6px; font-family: var(--sans); }
+.tier.featured .price small { color: var(--sand-2); }
+.tier .descr {
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+.tier.featured .descr { color: var(--sand-2); }
+.tier ul { list-style: none; }
+.tier li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 0.95rem;
+}
+.tier li::before { content: '✓'; position: absolute; left: 0; color: var(--moss); font-weight: 700; }
+.tier.featured li::before { color: var(--sand-2); }
+
+footer {
+  background: var(--moss-dark);
+  color: var(--sand-2);
+  padding: 50px 32px;
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+footer a { color: var(--sand-2); }
+
+@media (max-width: 800px) {
+  .nav { grid-template-columns: 1fr; text-align: center; gap: 12px; padding: 22px; }
+  .nav-meta, .nav-right { text-align: center; }
+  .problem-inner { grid-template-columns: 1fr; }
+  .how-steps { grid-template-columns: 1fr; gap: 30px; }
+  .specs-table { grid-template-columns: 1fr; }
+  .tiers { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="banner">— Volumen 01 · Frühjahr 2026 · Eine Neue Generation Wohnmobil-Technik —</div>
+
+<nav class="nav">
+  <div class="nav-meta">Made for serious vans · Hand-installed in Niedersachsen</div>
+  <div class="nav-logo">
+    LEVEL
+    <small>Automatic Levelling · seit 2026</small>
+  </div>
+  <div class="nav-right">EN · DE</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">▴ Stell dein Mobil ab. Drück einen Knopf.</div>
+  <h1>Schluss mit<br><em>Holzdreiecken.</em></h1>
+  <p class="lead">
+    Dein Wohnmobil hat ein Luftfahrwerk. Wir nutzen es. Du parkst auf schrägem Untergrund,
+    drückst einen Knopf, und das Mobil nivelliert sich in zwölf Sekunden.
+  </p>
+
+  <div class="camper-stage">
+    <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#b8a384"/>
+          <stop offset="100%" stop-color="#8a7558"/>
+        </linearGradient>
+        <linearGradient id="camper-body" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#f7f2e7"/>
+          <stop offset="100%" stop-color="#e3d9c1"/>
+        </linearGradient>
+      </defs>
+      <!-- Sky -->
+      <rect width="800" height="400" fill="#f7f2e7"/>
+      <!-- Berge hinten -->
+      <polygon points="0,260 200,180 380,240 550,150 720,210 800,200 800,300 0,300" fill="#6b7f56" opacity="0.3"/>
+      <!-- Schräger Boden -->
+      <polygon points="0,310 800,260 800,400 0,400" fill="url(#ground)"/>
+      <!-- Wasserwaage über dem Boden -->
+      <line x1="50" y1="285" x2="750" y2="245" stroke="#b86847" stroke-width="2" stroke-dasharray="6,5"/>
+      <text x="60" y="280" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#b86847">tatsächliche Bodenneigung 4°</text>
+      <!-- Wohnmobil -->
+      <g transform="translate(220, 130)">
+        <!-- Karosserie -->
+        <rect x="0" y="20" width="380" height="120" rx="6" fill="url(#camper-body)" stroke="#2d3b22" stroke-width="2"/>
+        <!-- Fahrerkabine -->
+        <path d="M 0 60 L 0 50 L 30 30 L 90 30 L 90 140 L 0 140 Z" fill="url(#camper-body)" stroke="#2d3b22" stroke-width="2"/>
+        <!-- Frontscheibe -->
+        <polygon points="10,52 30,38 88,38 88,80 10,80" fill="#4a5a3e" opacity="0.4"/>
+        <!-- Fenster -->
+        <rect x="110" y="50" width="60" height="40" fill="#4a5a3e" opacity="0.3" stroke="#2d3b22" stroke-width="1"/>
+        <rect x="190" y="50" width="60" height="40" fill="#4a5a3e" opacity="0.3" stroke="#2d3b22" stroke-width="1"/>
+        <rect x="270" y="50" width="60" height="40" fill="#4a5a3e" opacity="0.3" stroke="#2d3b22" stroke-width="1"/>
+        <!-- Tür -->
+        <rect x="340" y="60" width="32" height="80" fill="none" stroke="#2d3b22" stroke-width="1.5"/>
+        <circle cx="365" cy="100" r="2" fill="#2d3b22"/>
+        <!-- LEVEL-Logo seitlich -->
+        <text x="190" y="120" text-anchor="middle" font-family="Fraunces, serif" font-size="22" font-weight="900" fill="#2d3b22" letter-spacing="2">LEVEL</text>
+        <!-- Reifen -->
+        <circle cx="50" cy="155" r="20" fill="#1f2415"/>
+        <circle cx="50" cy="155" r="9" fill="#5a604c"/>
+        <circle cx="320" cy="155" r="20" fill="#1f2415"/>
+        <circle cx="320" cy="155" r="9" fill="#5a604c"/>
+        <!-- Luftfahrwerk-Visualisierung (Federn an Reifen) -->
+        <g stroke="#b86847" stroke-width="2" fill="none">
+          <path d="M 50 140 Q 50 130 50 120 M 50 130 L 47 128 L 53 124 L 47 120 L 53 116" />
+          <path d="M 320 140 Q 320 130 320 120 M 320 130 L 317 128 L 323 124 L 317 120 L 323 116" />
+        </g>
+        <!-- Höhen-Marker -->
+        <line x1="50" y1="180" x2="50" y2="200" stroke="#b86847" stroke-width="2"/>
+        <line x1="320" y1="170" x2="320" y2="200" stroke="#b86847" stroke-width="2"/>
+        <text x="50" y="215" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#b86847">+8 cm</text>
+        <text x="320" y="215" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#b86847">−4 cm</text>
+      </g>
+      <!-- Wasserwaage oben drauf -->
+      <g transform="translate(360, 145)">
+        <rect x="0" y="0" width="120" height="14" rx="3" fill="#1f2415"/>
+        <circle cx="60" cy="7" r="5" fill="#4ade80" stroke="#06070a" stroke-width="1.5"/>
+        <line x1="44" y1="7" x2="76" y2="7" stroke="#fff" stroke-width="1"/>
+      </g>
+      <!-- Status -->
+      <text x="400" y="40" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18" fill="#2d3b22">▴ Wohnmobil-Innenraum 0,1° aus der Waage. ✓</text>
+    </svg>
+  </div>
+
+  <div class="hero-cta">
+    <a class="btn btn-moss" href="#pricing">Modelle ansehen</a>
+    <a class="btn btn-outline" href="#how">So funktioniert's</a>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="problem-inner">
+    <div class="problem-img">
+      <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Schräger Untergrund -->
+        <polygon points="0,200 320,160 320,320 0,320" fill="url(#ground)"/>
+        <!-- Reifen -->
+        <circle cx="100" cy="180" r="28" fill="#1f2415"/>
+        <!-- Holz-Dreieck -->
+        <polygon points="60,180 60,210 130,210" fill="#b88a44" stroke="#5a604c" stroke-width="2"/>
+        <line x1="60" y1="190" x2="125" y2="208" stroke="#5a604c" stroke-width="1"/>
+        <line x1="60" y1="200" x2="120" y2="206" stroke="#5a604c" stroke-width="1"/>
+        <text x="160" y="280" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="18" fill="#8a4830">↟ wie 1990 ↟</text>
+        <!-- Stoßstange / Annäherung an dieses System -->
+        <line x1="40" y1="140" x2="160" y2="140" stroke="#1f2415" stroke-width="3" stroke-dasharray="2,4" opacity="0.4"/>
+        <text x="100" y="130" text-anchor="middle" font-family="Fraunces, serif" font-size="12" fill="#5a604c" font-style="italic">Stoßstange Wohnmobil</text>
+      </svg>
+    </div>
+    <div>
+      <div class="eyebrow">▴ Das Problem.</div>
+      <h2>Hölzerne Keile. <em>Seit 1990.</em></h2>
+      <p>
+        Wohnmobil-Hersteller bauen seit zwei Jahrzehnten Luftfahrwerke ein. Aber das Levelling
+        machen Camper immer noch mit den Auffahrkeilen aus Plastik oder Holz, die in jedem
+        Baumarkt für 12,90 € verkauft werden.
+      </p>
+      <ul>
+        <li>Dreiecke kommen nie an den richtigen Punkt.</li>
+        <li>Du musst rangieren. Auf dem Campingplatz. Vor allen anderen.</li>
+        <li>Du steckst dir die Wasserwaage in die Innenraum-Schublade und vergisst sie immer.</li>
+        <li>Die Keile liegen die nächsten drei Wochen im Kofferraum.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-inner">
+    <h2 class="how-h">Drei Schritte. <em>Zwölf Sekunden.</em></h2>
+    <p class="how-sub">Knopf drücken. Sensor scannt. Kompressor justiert.</p>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="seconds">02<small>sek</small></div>
+        <h3>Sensor scannt die Neigung</h3>
+        <p>3-Achsen-Inklinometer im Fahrzeugboden misst die exakte Schräglage. Auflösung 0,01°.</p>
+      </div>
+      <div class="how-step">
+        <div class="seconds">10<small>sek</small></div>
+        <h3>Kompressor pumpt jede Achse separat</h3>
+        <p>Jedes Luftfederbein wird einzeln angesteuert. Wenn vorne links 8 cm fehlen, geht vorne links 8 cm hoch.</p>
+      </div>
+      <div class="how-step">
+        <div class="seconds">00<small>sek</small></div>
+        <h3>Du machst Kaffee</h3>
+        <p>Der Innenraum ist horizontal. Die Dusche läuft nicht in die Sitzgruppe. Der Kühlschrank zeigt grün.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specs">
+  <div class="specs-inner">
+    <h2 class="specs-h">Technik. <em>Direkt aus dem Truck-Sektor.</em></h2>
+    <div class="specs-table">
+      <div class="spec-cell"><div class="label">Maximale Neigung</div><div class="value">8°</div></div>
+      <div class="spec-cell"><div class="label">Levelling-Zeit (Avg)</div><div class="value">12 s</div></div>
+      <div class="spec-cell"><div class="label">Achsen-Hub</div><div class="value">± 90 mm</div></div>
+      <div class="spec-cell"><div class="label">Sensor-Auflösung</div><div class="value">0,01 °</div></div>
+      <div class="spec-cell"><div class="label">Kompressor-Lautstärke</div><div class="value">52 dB</div></div>
+      <div class="spec-cell"><div class="label">Stromverbrauch</div><div class="value">14 A · 12 s</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="testi">
+  <q>Ich habe das Holzkeil-Set seit drei Saisons nicht mehr angefasst. Es liegt noch im Kofferraum.</q>
+  <cite>Stefan B. · LEVEL-Pilot seit Mai 2025</cite>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="pricing-inner">
+    <h2 class="pricing-h"><em>Zwei Wege</em> ins ebene Wohnmobil.</h2>
+    <p class="pricing-sub">Werks-Integration oder Nachrüst-Kit. Beides hält länger als der Vertrag bei Vodafone.</p>
+    <div class="tiers">
+      <div class="tier">
+        <div class="name">Nachrüst-Kit</div>
+        <div class="price">3.490 €<small>einmalig</small></div>
+        <p class="descr">Für alle Wohnmobile mit Luft-Heck- oder Vollluft-Fahrwerk ab Baujahr 2015.</p>
+        <ul>
+          <li>Sensor-Box (3-Achsen Inklinometer)</li>
+          <li>4× ECU-Adapter für Werks-Luftfedern</li>
+          <li>Bluetooth-Fernbedienung + App</li>
+          <li>Einbau bei Partner-Werkstatt inkl.</li>
+          <li>5 Jahre Garantie</li>
+        </ul>
+      </div>
+      <div class="tier featured">
+        <div class="name">LEVEL Werks-Integration</div>
+        <div class="price">ab Werk<small>OEM</small></div>
+        <p class="descr">Für Hersteller (Hymer, Knaus, Bürstner). Wir liefern das Modul, ihr integriert es in der Linie.</p>
+        <ul>
+          <li>CAN-Bus-Integration ins Werks-Display</li>
+          <li>Knopf in der Mittelkonsole</li>
+          <li>Software-OTA-Updates</li>
+          <li>Logo-Branding nach Wahl</li>
+          <li>10 Jahre Garantie</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #26 · Bewertung 20/24<br>
+  <a href="/folge/26">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+</footer>
+
+</body>
+</html>
