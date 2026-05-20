@@ -9,7 +9,8 @@
     "deploy": "wrangler deploy",
     "import:raw": "python3 scripts/import-raw.py",
     "aggregate": "node scripts/aggregate.js",
-    "build:data": "node scripts/aggregate.js"
+    "build:data": "node scripts/aggregate.js",
+    "seo-check": "node scripts/seo-check.js"
   },
   "dependencies": {
     "hono": "^4.6.14"

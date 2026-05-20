@@ -112,6 +112,7 @@ tmda-wiki.de/
 npm install
 npm run dev          # Lokaler Workers-Dev-Server (mit Asset-Serving)
 npm run build:data   # Aggregiert aus /tmp/tmda-extracts/ → public/data/
+npm run seo-check    # Prüft SEO-Coverage neuer Routen
 npm run deploy       # Push nach Cloudflare
 ```
 
@@ -119,6 +120,21 @@ Voraussetzungen:
 - Node.js ≥ 20
 - Python 3 (für `import-raw.py`)
 - Cloudflare Account + `wrangler login`
+
+---
+
+## SEO
+
+Die Wiki verwendet **Path-basiertes Routing** (kein Hash) und ist damit komplett crawlbar. Pro Route werden Title, Description, Open Graph, Twitter Card und JSON-LD vom Worker via HTMLRewriter pro Request injiziert. `/sitemap.xml` und `/robots.txt` werden ebenfalls dynamisch im Worker generiert.
+
+**Source of Truth:** [`src/seo.js`](./src/seo.js) — dort sind alle Routen mit `title`, `description`, `priority`, `changefreq` und ggf. `robots` konfiguriert.
+
+**Bei jeder neuen Route:**
+1. Eintrag in `src/seo.js` → `STATIC_ROUTES` (oder `DYNAMIC_PATTERNS`) ergänzen
+2. `npm run seo-check` läuft lokal — CI macht das auch automatisch bei jedem PR
+3. PR-Template hat eine SEO-Checkliste, die ausgefüllt werden muss
+
+Die `SITE_URL` ist in `wrangler.jsonc` unter `vars` gesetzt — anpassen, falls die Custom Domain wechselt.
 
 ---
 

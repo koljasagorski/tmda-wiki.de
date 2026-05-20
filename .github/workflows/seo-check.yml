@@ -1,0 +1,32 @@
+name: SEO Check
+
+on:
+  pull_request:
+    paths:
+      - 'public/app.js'
+      - 'public/index.html'
+      - 'src/seo.js'
+      - 'src/index.js'
+      - 'scripts/seo-check.js'
+      - '.github/workflows/seo-check.yml'
+  push:
+    branches: [main]
+
+jobs:
+  seo-check:
+    name: SEO Coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run SEO check
+        run: node scripts/seo-check.js
+      - name: Validate sitemap.xml format (when generated)
+        run: |
+          if [ -f public/sitemap.xml ]; then
+            xmllint --noout public/sitemap.xml && echo "Sitemap valide"
+          else
+            echo "Kein statisches sitemap.xml — wird dynamisch im Worker generiert"
+          fi

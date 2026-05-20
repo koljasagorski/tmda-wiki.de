@@ -16,6 +16,7 @@
     "enabled": true
   },
   "vars": {
-    "REPO_URL": "https://github.com/koljasagorski/tmda-wiki.de"
+    "REPO_URL": "https://github.com/koljasagorski/tmda-wiki.de",
+    "SITE_URL": "https://tmda-wiki.de"
   }
 }

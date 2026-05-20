@@ -4,27 +4,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="dark light" />
-  <title>TMDA Wiki · Teenager mit deutschem Akzent</title>
-  <meta name="description" content="Fan-Wiki für den Podcast 'Teenager mit deutschem Akzent' von Fynn Kliemann und Nisse Ingwersen. Startup-Ideen, Kalles Corner, Gerüchte der Woche und mehr." />
+
+  <!-- SEO: wird per Cloudflare Worker (HTMLRewriter) pro Route überschrieben.
+       Siehe src/seo.js für die Single Source of Truth. -->
+  <title>TMDA Wiki — Teenager mit deutschem Akzent Fan-Wiki</title>
+  <meta name="description" content="Inoffizielles Fan-Wiki für &bdquo;Teenager mit deutschem Akzent&ldquo; mit Fynn Kliemann und Nisse Ingwersen. Startup-Ideen, Kalles Corner, Gerüchte, Inside-Jokes." />
+  <meta name="keywords" content="TMDA, Teenager mit deutschem Akzent, Fynn Kliemann, Nisse Ingwersen, Podcast, Wiki, Startup-Idee der Woche, Kalles Corner" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="koljasagorski" />
+  <link rel="canonical" href="https://tmda-wiki.de/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TMDA Wiki — Teenager mit deutschem Akzent Fan-Wiki" />
+  <meta property="og:description" content="Inoffizielles Fan-Wiki für &bdquo;Teenager mit deutschem Akzent&ldquo; mit Fynn Kliemann und Nisse Ingwersen." />
+  <meta property="og:url" content="https://tmda-wiki.de/" />
+  <meta property="og:site_name" content="TMDA Wiki" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TMDA Wiki — Teenager mit deutschem Akzent Fan-Wiki" />
+  <meta name="twitter:description" content="Inoffizielles Fan-Wiki für &bdquo;Teenager mit deutschem Akzent&ldquo; mit Fynn Kliemann und Nisse Ingwersen." />
+
+  <!-- JSON-LD strukturierte Daten — wird vom Worker pro Route ersetzt -->
+  <script type="application/ld+json" data-seo="jsonld">
+  {"@context":"https://schema.org","@type":"WebSite","name":"TMDA Wiki","url":"https://tmda-wiki.de"}
+  </script>
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%99%EF%B8%8F%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#/">
+    <a class="logo" href="/">
       <span class="logo-mark">TMDA</span>
       <span class="logo-sub">Wiki</span>
     </a>
     <nav class="primary-nav" id="primaryNav">
-      <a href="#/folgen">Folgen</a>
-      <a href="#/startup-ideen">Ideen</a>
-      <a href="#/kalles-corner">Kalle</a>
-      <a href="#/geruechte">Gerüchte</a>
-      <a href="#/erfindungen">Erfindungen</a>
-      <a href="#/glossar">Glossar</a>
-      <a href="#/zitate">Zitate</a>
-      <a href="#/hosts">Hosts</a>
-      <a href="#/chat">Chat</a>
+      <a href="/folgen">Folgen</a>
+      <a href="/startup-ideen">Ideen</a>
+      <a href="/kalles-corner">Kalle</a>
+      <a href="/geruechte">Gerüchte</a>
+      <a href="/erfindungen">Erfindungen</a>
+      <a href="/glossar">Glossar</a>
+      <a href="/zitate">Zitate</a>
+      <a href="/hosts">Hosts</a>
+      <a href="/chat">Chat</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Theme wechseln">◐</button>
   </header>

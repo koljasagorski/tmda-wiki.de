@@ -1,8 +1,14 @@
-// Tiny hash-routed SPA — kein Build-Step nötig
+// Tiny SPA mit History-API-Routing (SEO-freundlich, keine Hash-URLs)
 
 const app = document.getElementById('app');
 const nav = document.getElementById('primaryNav');
 const themeToggle = document.getElementById('themeToggle');
+
+// Backward-Compat: alte #/-Bookmarks auf Path-URLs redirecten
+if (location.hash.startsWith('#/')) {
+  const redirect = location.hash.slice(1) + location.search;
+  history.replaceState({}, '', redirect);
+}
 
 // ---------- Theme ----------
 const savedTheme = localStorage.getItem('tmda-theme');
@@ -76,27 +82,48 @@ const views = {
   '/chat': renderChat,
 };
 
-function setActive(hash) {
+function setActive(path) {
   for (const a of nav.querySelectorAll('a')) {
-    a.classList.toggle('active', a.getAttribute('href') === hash);
+    const href = (a.getAttribute('href') || '').split('?')[0];
+    a.classList.toggle('active', href === path);
   }
 }
 
+function navigate(path) {
+  if (path === location.pathname + location.search) return;
+  history.pushState({}, '', path);
+  router();
+}
+
+// Intercept clicks on internal links and route via pushState
+document.addEventListener('click', (e) => {
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest('a');
+  if (!a) return;
+  const href = a.getAttribute('href');
+  if (!href) return;
+  if (a.target === '_blank' || a.hasAttribute('download')) return;
+  if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('#')) return;
+  if (!href.startsWith('/')) return;
+  e.preventDefault();
+  navigate(href);
+});
+
 async function router() {
-  const fullHash = location.hash.replace(/^#/, '') || '/';
-  const [base, param] = fullHash.split('?');
-  setActive('#' + base);
+  const path = location.pathname.replace(/\/+$/, '') || '/';
+  const param = location.search.replace(/^\?/, '');
+  setActive(path);
   app.innerHTML = '<div class="skeleton" style="width:60%;height:32px;margin-bottom:16px"></div><div class="skeleton" style="width:90%;margin-bottom:8px"></div><div class="skeleton" style="width:80%"></div>';
 
-  if (base.startsWith('/folge/')) {
-    const num = Number(base.split('/folge/')[1]);
+  if (path.startsWith('/folge/')) {
+    const num = Number(path.split('/folge/')[1]);
     return renderFolgeDetail(num);
   }
-  const view = views[base] || renderHome;
+  const view = views[path] || renderHome;
   await view(param);
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
-window.addEventListener('hashchange', router);
+window.addEventListener('popstate', router);
 
 // ---------- Home ----------
 async function renderHome() {
@@ -116,24 +143,24 @@ async function renderHome() {
         <h1>Das inoffizielle <span class="accent">TMDA</span> Wiki.</h1>
         <p>Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong> — Startup-Ideen mit Punkten, Kalles Corner, Gerüchte, Inside-Jokes, alles automatisch aus den Folgen-Transkripten.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#/startup-ideen">${ideen.count || 0} Startup-Ideen ansehen →</a>
-          <a class="btn" href="#/chat">AI-Chat</a>
+          <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen ansehen →</a>
+          <a class="btn" href="/chat">AI-Chat</a>
         </div>
       </div>
     </section>
 
     <section class="stats">
-      <a class="stat" href="#/folgen"><div class="stat-num">${eps.count || 0}</div><div class="stat-label">Folgen</div></a>
-      <a class="stat" href="#/startup-ideen"><div class="stat-num">${ideen.count || 0}</div><div class="stat-label">Startup-Ideen</div></a>
-      <a class="stat" href="#/kalles-corner"><div class="stat-num">${corner.count || 0}</div><div class="stat-label">Kalles Corner</div></a>
-      <a class="stat" href="#/geruechte"><div class="stat-num">${ger.count || 0}</div><div class="stat-label">Gerüchte</div></a>
-      <a class="stat" href="#/glossar"><div class="stat-num">${glo.count || 0}</div><div class="stat-label">Glossar</div></a>
+      <a class="stat" href="/folgen"><div class="stat-num">${eps.count || 0}</div><div class="stat-label">Folgen</div></a>
+      <a class="stat" href="/startup-ideen"><div class="stat-num">${ideen.count || 0}</div><div class="stat-label">Startup-Ideen</div></a>
+      <a class="stat" href="/kalles-corner"><div class="stat-num">${corner.count || 0}</div><div class="stat-label">Kalles Corner</div></a>
+      <a class="stat" href="/geruechte"><div class="stat-num">${ger.count || 0}</div><div class="stat-label">Gerüchte</div></a>
+      <a class="stat" href="/glossar"><div class="stat-num">${glo.count || 0}</div><div class="stat-label">Glossar</div></a>
     </section>
 
     ${topIdee ? `
     <section style="margin-top:32px">
       <h2 class="section-title">🏆 Best-bewertete Startup-Idee</h2>
-      <a class="card card-highlight" href="#/folge/${topIdee.folge}">
+      <a class="card card-highlight" href="/folge/${topIdee.folge}">
         <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
           <div>
             <span class="tag tag-accent">Folge #${topIdee.folge}</span>
@@ -153,16 +180,16 @@ async function renderHome() {
   `;
 
   const rubriken = [
-    { href: '#/folgen', title: 'Folgen-Archiv', desc: 'Alle Folgen mit Themen und Highlights.', tag: 'Archiv', emoji: '📅' },
-    { href: '#/startup-ideen', title: 'Startup-Idee der Woche', desc: 'Fynns Brainstorms mit Punkten von Nisse.', tag: 'Highlight', emoji: '💡' },
-    { href: '#/kalles-corner', title: 'Kalles Corner', desc: 'Beiträge und Anekdoten von Kalle.', tag: 'Rubrik', emoji: '🪑' },
-    { href: '#/geruechte', title: 'Gerücht der Woche', desc: 'Klatsch und Insiderwissen.', tag: 'Rubrik', emoji: '🤫' },
-    { href: '#/erfindungen', title: 'Erfindungen', desc: 'Absurde Produktideen.', tag: 'Lexikon', emoji: '🔧' },
-    { href: '#/glossar', title: 'Glossar & Inside-Jokes', desc: 'Running gags und Slang.', tag: 'Lexikon', emoji: '📖' },
-    { href: '#/zitate', title: 'Zitate', desc: 'Die besten Sätze aller Folgen.', tag: 'Best-of', emoji: '💬' },
-    { href: '#/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
-    { href: '#/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
-    { href: '#/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
+    { href: '/folgen', title: 'Folgen-Archiv', desc: 'Alle Folgen mit Themen und Highlights.', tag: 'Archiv', emoji: '📅' },
+    { href: '/startup-ideen', title: 'Startup-Idee der Woche', desc: 'Fynns Brainstorms mit Punkten von Nisse.', tag: 'Highlight', emoji: '💡' },
+    { href: '/kalles-corner', title: 'Kalles Corner', desc: 'Beiträge und Anekdoten von Kalle.', tag: 'Rubrik', emoji: '🪑' },
+    { href: '/geruechte', title: 'Gerücht der Woche', desc: 'Klatsch und Insiderwissen.', tag: 'Rubrik', emoji: '🤫' },
+    { href: '/erfindungen', title: 'Erfindungen', desc: 'Absurde Produktideen.', tag: 'Lexikon', emoji: '🔧' },
+    { href: '/glossar', title: 'Glossar & Inside-Jokes', desc: 'Running gags und Slang.', tag: 'Lexikon', emoji: '📖' },
+    { href: '/zitate', title: 'Zitate', desc: 'Die besten Sätze aller Folgen.', tag: 'Best-of', emoji: '💬' },
+    { href: '/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
+    { href: '/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
+    { href: '/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
   ];
   const grid = document.getElementById('rubrikenGrid');
   for (const r of rubriken) {
@@ -187,7 +214,7 @@ async function renderFolgen() {
 
   const grid = el('<div class="card-grid"></div>');
   for (const ep of items) {
-    grid.appendChild(el(`<a class="card" href="#/folge/${ep.folge}">
+    grid.appendChild(el(`<a class="card" href="/folge/${ep.folge}">
       <span class="tag tag-accent">Folge #${ep.folge}</span>
       <h3>${esc(ep.titel)}</h3>
       <div class="meta">${fmtDate(ep.datum)} ${ep.laufzeit ? '· ' + esc(ep.laufzeit) : ''}</div>
@@ -206,7 +233,7 @@ async function renderFolgeDetail(folge) {
   ]);
   const ep = (eps.items || []).find((e) => e.folge === folge);
   if (!ep) {
-    app.innerHTML = `<h1 class="section-title">Folge ${folge} nicht gefunden</h1><p><a href="#/folgen">← Zurück zum Archiv</a></p>`;
+    app.innerHTML = `<h1 class="section-title">Folge ${folge} nicht gefunden</h1><p><a href="/folgen">← Zurück zum Archiv</a></p>`;
     return;
   }
 
@@ -218,7 +245,7 @@ async function renderFolgeDetail(folge) {
   const erfindungen = (erf.items || []).filter((i) => i.folge === folge);
 
   app.innerHTML = `
-    <p><a href="#/folgen">← Folgen-Archiv</a></p>
+    <p><a href="/folgen">← Folgen-Archiv</a></p>
     <header style="margin:16px 0 24px">
       <span class="tag tag-accent">Folge #${ep.folge}</span>
       <h1 style="margin:8px 0; font-size:clamp(1.8rem,4vw,2.5rem); letter-spacing:-0.02em">${esc(ep.titel)}</h1>
@@ -292,7 +319,7 @@ async function renderStartupIdeen() {
   const items = data.items || [];
 
   // Sort buttons
-  const sortBy = new URLSearchParams(location.hash.split('?')[1] || '').get('sort') || 'folge';
+  const sortBy = new URLSearchParams(location.search).get('sort') || 'folge';
   let sorted = [...items];
   if (sortBy === 'punkte') sorted.sort((a, b) => (b.punkte ?? -1) - (a.punkte ?? -1));
   else sorted.sort((a, b) => (b.folge || 0) - (a.folge || 0));
@@ -301,8 +328,8 @@ async function renderStartupIdeen() {
     <h1 class="section-title">💡 Startup-Idee der Woche</h1>
     <p class="section-sub">Fynns Brainstorms — bewertet von Nisse auf einer Skala bis ${items[0]?.max_punkte || 24}. ${items.length} Ideen.</p>
     <div class="filter-bar">
-      <a class="${sortBy === 'folge' ? 'active' : ''}" href="#/startup-ideen?sort=folge">Nach Folge</a>
-      <a class="${sortBy === 'punkte' ? 'active' : ''}" href="#/startup-ideen?sort=punkte">Nach Punkten</a>
+      <a class="${sortBy === 'folge' ? 'active' : ''}" href="/startup-ideen?sort=folge">Nach Folge</a>
+      <a class="${sortBy === 'punkte' ? 'active' : ''}" href="/startup-ideen?sort=punkte">Nach Punkten</a>
     </div>
     ${items.length === 0 ? emptyState('Startup-Ideen') : ''}
   `;
@@ -315,7 +342,7 @@ async function renderStartupIdeen() {
   for (const i of sorted) {
     const max = i.max_punkte || 24;
     tb.appendChild(el(`<tr>
-      <td><a href="#/folge/${i.folge}"><strong>#${i.folge}</strong></a></td>
+      <td><a href="/folge/${i.folge}"><strong>#${i.folge}</strong></a></td>
       <td><strong>${esc(i.idee)}</strong></td>
       <td>${esc(i.beschreibung)}</td>
       <td><span class="score ${scoreClass(i.punkte, max)}">${i.punkte ?? '–'}<small>/${max}</small></span></td>
@@ -337,7 +364,7 @@ async function renderKallesCorner() {
 
   const grid = el('<div class="card-grid"></div>');
   for (const i of items) {
-    grid.appendChild(el(`<a class="card" href="#/folge/${i.folge}">
+    grid.appendChild(el(`<a class="card" href="/folge/${i.folge}">
       <span class="tag tag-accent">Folge #${i.folge}</span>
       <h3>${esc(i.titel)}</h3>
       <div class="meta">${fmtDate(i.datum)}</div>
@@ -360,7 +387,7 @@ async function renderGeruechte() {
 
   const grid = el('<div class="card-grid"></div>');
   for (const g of items) {
-    grid.appendChild(el(`<a class="card" href="#/folge/${g.folge}">
+    grid.appendChild(el(`<a class="card" href="/folge/${g.folge}">
       <span class="tag tag-accent">Folge #${g.folge}</span>
       <h3>${esc(g.ueber || 'Gerücht')}</h3>
       <div class="meta">${fmtDate(g.datum)}</div>
@@ -383,7 +410,7 @@ async function renderErfindungen() {
 
   const grid = el('<div class="card-grid"></div>');
   for (const e of items) {
-    grid.appendChild(el(`<a class="card" href="#/folge/${e.folge}">
+    grid.appendChild(el(`<a class="card" href="/folge/${e.folge}">
       <span class="tag tag-accent">Folge #${e.folge}</span>
       <h3>${esc(e.name)}</h3>
       <div class="desc">${esc(e.beschreibung)}</div>
@@ -411,7 +438,7 @@ async function renderGlossar() {
     tb.appendChild(el(`<tr>
       <td><strong>${esc(g.begriff)}</strong></td>
       <td>${esc(g.bedeutung)}</td>
-      <td>${g.folge ? `<a href="#/folge/${g.folge}">#${g.folge}</a>` : ''}</td>
+      <td>${g.folge ? `<a href="/folge/${g.folge}">#${g.folge}</a>` : ''}</td>
     </tr>`));
   }
   app.appendChild(tbl);
@@ -432,7 +459,7 @@ async function renderZitate() {
   for (const z of items) {
     list.appendChild(el(`<blockquote class="quote">
       „${esc(z.text)}"
-      <cite>— <a href="#/folge/${z.folge}">Folge #${z.folge}</a>${z.kontext ? ` · ${esc(z.kontext)}` : ''}</cite>
+      <cite>— <a href="/folge/${z.folge}">Folge #${z.folge}</a>${z.kontext ? ` · ${esc(z.kontext)}` : ''}</cite>
     </blockquote>`));
   }
   app.appendChild(list);
@@ -442,15 +469,15 @@ async function renderZitate() {
 async function renderPersonen() {
   const data = await getData('gaeste');
   const all = data.items || [];
-  const showAll = (new URLSearchParams(location.hash.split('?')[1] || '')).get('all') === '1';
+  const showAll = (new URLSearchParams(location.search)).get('all') === '1';
   const items = showAll ? all : all.filter((p) => (p.folgen || []).length >= 2);
 
   app.innerHTML = `
     <h1 class="section-title">👥 Erwähnte Personen</h1>
     <p class="section-sub">Wer alles im Podcast erwähnt wurde — sortiert nach Häufigkeit. ${items.length}/${all.length} angezeigt.</p>
     <div class="filter-bar">
-      <a class="${!showAll ? 'active' : ''}" href="#/personen">Mehrfach genannt</a>
-      <a class="${showAll ? 'active' : ''}" href="#/personen?all=1">Alle (${all.length})</a>
+      <a class="${!showAll ? 'active' : ''}" href="/personen">Mehrfach genannt</a>
+      <a class="${showAll ? 'active' : ''}" href="/personen?all=1">Alle (${all.length})</a>
     </div>
     ${items.length === 0 ? emptyState('Personen') : ''}
   `;
@@ -461,7 +488,7 @@ async function renderPersonen() {
     <tbody></tbody></table></div>`);
   const tb = tbl.querySelector('tbody');
   for (const p of items) {
-    const folgen = (p.folgen || []).map((f) => `<a href="#/folge/${f}">#${f}</a>`).join(', ');
+    const folgen = (p.folgen || []).map((f) => `<a href="/folge/${f}">#${f}</a>`).join(', ');
     tb.appendChild(el(`<tr>
       <td><strong>${esc(p.name)}</strong></td>
       <td>${folgen}</td>
