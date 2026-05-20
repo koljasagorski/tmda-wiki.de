@@ -81,7 +81,6 @@ const views = {
   '/hosts': renderHosts,
   '/chat': renderChat,
   '/transkripte-gesucht': renderTranskripteGesucht,
-  '/eggs': renderEasterEggs,
 };
 
 function setActive(path) {
@@ -571,77 +570,6 @@ async function renderHosts() {
   app.appendChild(wrap);
 }
 
-// ---------- 🥚 Easter Eggs Hinweis-Seite (versteckt) ----------
-function renderEasterEggs() {
-  app.innerHTML = `
-    <p class="meta" style="font-size:0.85rem;opacity:0.7">↙ Du hast den versteckten Punkt im Footer gefunden. Respekt.</p>
-    <h1 class="section-title">🥚 Easter Eggs</h1>
-    <p class="section-sub">Eine vollständige Liste aller Easter Eggs im TMDA Wiki. Bonus: das Auffinden dieser Seite war selbst eins.</p>
-
-    <div class="egg-grid">
-      <article class="egg-card">
-        <div class="egg-emoji">🛸</div>
-        <h3>Talahons im Weltall</h3>
-        <p class="meta">Klicke das <strong>TMDA-Logo</strong> oben links <strong>zweimal schnell</strong> hintereinander.</p>
-        <p class="desc">Starfield-Overlay mit Aliens und Untertassen. Ref: Folge 47.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">🪑</div>
-        <h3>Kalles Wort</h3>
-        <p class="meta">Tippe <code>kalle</code> irgendwo (nicht in einem Input).</p>
-        <p class="desc">Schwensen-Quote über den Bargeld-Koffer. Ref: Folge 37.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">⏳</div>
-        <h3>2033 ist Schluss</h3>
-        <p class="meta">Tippe <code>papst</code>.</p>
-        <p class="desc">Countdown bis zum Maya-Weltuntergang. Ref: Folge 1.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">🐐</div>
-        <h3>Fanta Gnu</h3>
-        <p class="meta">Tippe <code>fanta</code>.</p>
-        <p class="desc">Ziegen fallen vom Himmel. Schmeckt nach Ziege. Ref: Folge 1.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">🥶</div>
-        <h3>Trockener Flutschi</h3>
-        <p class="meta">Tippe <code>flutschi</code> oder den <strong>Konami-Code</strong>:<br><code>↑ ↑ ↓ ↓ ← → ← → B A</code></p>
-        <p class="desc">Seite kippelt + Eis-Filter. Ref: Folge 42.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">🎙️</div>
-        <h3>Credits</h3>
-        <p class="meta"><strong>Triple-Click</strong> auf das fette <code>TMDA Wiki</code> im Footer.</p>
-        <p class="desc">Made-with-vibes-Toast.</p>
-      </article>
-
-      <article class="egg-card">
-        <div class="egg-emoji">🤓</div>
-        <h3>Dev-Greeting</h3>
-        <p class="meta">Öffne die Browser-<strong>Konsole</strong> (F12 / Cmd+Opt+J).</p>
-        <p class="desc">Branded Greeting mit Nisses Mantra: „You must not become the most likely version of yourself."</p>
-      </article>
-
-      <article class="egg-card egg-card-found">
-        <div class="egg-emoji">🥚</div>
-        <h3>Diese Seite</h3>
-        <p class="meta">Den versteckten Punkt im Footer geklickt.</p>
-        <p class="desc">Du liest sie gerade. Achievement.</p>
-      </article>
-    </div>
-
-    <p class="section-sub" style="margin-top:32px;text-align:center">
-      <a href="/" style="color:var(--fg-muted)">← zurück</a>
-    </p>
-  `;
-}
-
 // ---------- Transkripte gesucht ----------
 function renderTranskripteGesucht() {
   app.innerHTML = `
@@ -676,6 +604,21 @@ const DONATION_THRESHOLD = 3;
 // zuverlässig bei der 3. Frage einer frischen Browser-Session
 const QUESTION_COUNT_KEY = 'tmda-chat-questions-session';
 const DONATION_SHOWN_KEY = 'tmda-donate-shown-session';
+
+// Easter-Egg-Hints, die nach jeder AI-Antwort kommen
+const EASTER_HINTS = [
+  '🛸 Tipp: Klick das TMDA-Logo oben links zweimal hintereinander.',
+  '🪑 Tipp: Tipp irgendwo auf der Seite „kalle" (außerhalb von Inputs).',
+  '⏳ Tipp: Probier mal „papst" zu tippen.',
+  '🐐 Tipp: Geheimwort der Folge 1 — „fanta".',
+  '🥶 Tipp: Konami-Code (↑ ↑ ↓ ↓ ← → ← → B A) macht was Eisiges.',
+  '❄️ Tipp: Tipp „flutschi" und beobachte die Seite.',
+  '🎙️ Tipp: Triple-Click auf das fette „TMDA Wiki" im Footer.',
+  '🤓 Tipp: Öffne mal die Browser-Konsole (F12 / Cmd+Opt+J).',
+];
+function pickEasterHint() {
+  return EASTER_HINTS[Math.floor(Math.random() * EASTER_HINTS.length)];
+}
 
 let chatConfig = null;
 async function getChatConfig() {
@@ -827,6 +770,11 @@ function setupChat(container, opts = {}) {
         // Token nach Verbrauch verwerfen (Cloudflare Tokens sind single-use)
         turnstileToken = null;
         sessionStorage.setItem(QUESTION_COUNT_KEY, String(count));
+        // Easter-Egg-Hint als kleine Bonus-Bubble unter der Antwort
+        const hint = el('<div class="msg msg-hint"></div>');
+        hint.textContent = pickEasterHint();
+        log.appendChild(hint);
+        log.scrollTop = log.scrollHeight;
         if (count >= DONATION_THRESHOLD && !sessionStorage.getItem(DONATION_SHOWN_KEY)) {
           sessionStorage.setItem(DONATION_SHOWN_KEY, '1');
           showDonationCallout();

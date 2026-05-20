@@ -815,49 +815,18 @@ tr:hover td { background: var(--bg-elev-2); }
   100% { background-position: -200% 0; }
 }
 
-/* ---------- Versteckter Footer-Link (führt zu /eggs) ---------- */
-.footer-secret {
-  color: inherit;
-  text-decoration: none;
-  cursor: text;          /* tarnt sich als normaler Text-Cursor */
-  outline: none;
-}
-.footer-secret:hover {
-  /* fast unsichtbarer Hinweis on hover für Neugierige */
-  color: var(--accent);
-}
-
-/* ---------- /eggs Hinweis-Seite ---------- */
-.egg-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 14px;
-}
-.egg-card {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  transition: transform .15s ease, border-color .15s ease;
-}
-.egg-card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
-.egg-emoji { font-size: 1.8rem; line-height: 1; }
-.egg-card h3 { margin: 4px 0 2px; font-size: 1rem; letter-spacing: -0.01em; }
-.egg-card .meta { font-size: 0.85rem; color: var(--fg-muted); }
-.egg-card .desc { font-size: 0.88rem; color: var(--fg); }
-.egg-card code {
-  font-family: var(--font-mono);
-  background: var(--bg-elev-2);
-  padding: 1px 5px;
+/* ---------- Chat: Easter-Egg-Hint nach AI-Antwort ---------- */
+.msg.msg-hint {
+  align-self: center;
+  max-width: 90%;
+  background: transparent;
+  color: var(--fg-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+  padding: 4px 10px;
+  border-left: 2px solid color-mix(in oklab, var(--accent) 40%, var(--border));
   border-radius: 4px;
-  font-size: 0.85em;
-}
-.egg-card-found {
-  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 18%, var(--bg-elev)), var(--bg-elev));
-  border-color: color-mix(in oklab, var(--accent) 50%, var(--border));
+  margin: 4px 0 8px;
 }
 
 /* ---------- Easter Eggs ---------- */
