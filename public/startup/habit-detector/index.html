@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Hör auf — App, die deine Watch beobachtet und dich stoppt</title>
+<meta name="description" content="Apple Watch + ML. Erkennt Nägelkauen, Rauchen, Knabbern. Vibriert, piepst, sagt Hör auf. Modelle ab 4,99 €/Monat."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/habit-detector"/>
+<meta property="og:title" content="Hör auf"/>
+<meta property="og:description" content="App, die dich stoppt, wenn du es nicht selbst kannst."/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04190f;--bg2:#082c1d;--green:#3ddc84;--green-d:#1ba360;--mint:#cdfae1;--cream:#f5fbf8;--gray:#7c8a82}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--cream);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}
+.nav{padding:24px 32px;display:flex;justify-content:space-between;align-items:center;max-width:1280px;margin:0 auto}
+.brand{font-weight:800;font-size:1.5rem;color:var(--cream);display:flex;gap:8px;align-items:center}
+.brand .dot{width:12px;height:12px;background:var(--green);border-radius:50%;box-shadow:0 0 14px var(--green)}
+.hero{padding:80px 32px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;letter-spacing:.25em;text-transform:uppercase;font-size:.78rem;margin-bottom:14px}
+h1{font-size:clamp(3rem,8vw,6rem);font-weight:800;letter-spacing:-.04em;line-height:.95;margin-bottom:24px}
+h1 .green{background:linear-gradient(135deg,var(--green),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.2rem;color:var(--gray);max-width:50ch;margin-bottom:32px}
+.btn{display:inline-block;padding:14px 28px;border-radius:14px;font-weight:700;text-decoration:none;font-size:.95rem;transition:all .15s}
+.btn-green{background:var(--green);color:var(--bg)}.btn-green:hover{background:var(--mint)}
+.btn-ghost{border:1.5px solid var(--gray);color:var(--cream)}.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+.watch-stage{display:grid;place-items:center;perspective:600px}
+.watch{width:240px;height:300px;background:var(--bg2);border:8px solid var(--cream);border-radius:36px;padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotateY(-8deg) rotateX(5deg)}
+.watch .alert{background:var(--green);color:var(--bg);font-weight:800;font-size:.7rem;letter-spacing:.2em;padding:4px 12px;border-radius:99px;text-transform:uppercase;margin-bottom:14px;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 20px var(--green)}}
+.watch h3{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;text-align:center;margin-bottom:8px}
+.watch .info{font-size:.85rem;color:var(--gray);text-align:center;margin-bottom:18px}
+.watch .icon{font-size:3rem}
+.habits{padding:90px 32px;background:var(--bg2);border-top:1px solid #1a3e2c;border-bottom:1px solid #1a3e2c}
+.habits-inner{max-width:1200px;margin:0 auto}
+.h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:50px}
+.h2 .green{color:var(--green)}
+.habit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.habit{background:var(--bg);padding:24px;border-radius:18px;border:1px solid #1a3e2c}
+.habit-emoji{font-size:2rem;margin-bottom:10px}
+.habit h3{font-weight:800;font-size:1.05rem;margin-bottom:4px}
+.habit p{color:var(--gray);font-size:.88rem}
+.tiers{padding:90px 32px;max-width:1200px;margin:0 auto;text-align:center}
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.tier{background:var(--bg2);padding:30px 26px;border-radius:24px;text-align:left;border:1px solid #1a3e2c}
+.tier.pro{border-color:var(--green);background:linear-gradient(180deg,rgba(61,220,132,.08),transparent)}
+.tier-name{font-weight:800;font-size:1.2rem;margin-bottom:8px}
+.tier-price{font-size:2.4rem;font-weight:800;color:var(--green);letter-spacing:-.02em;line-height:1;margin-bottom:14px}
+.tier-price small{font-size:.4em;color:var(--gray);font-weight:400}
+.tier ul{list-style:none}.tier li{padding:6px 0;color:var(--cream);font-size:.92rem}.tier li::before{content:'✓ ';color:var(--green)}
+footer{padding:30px;text-align:center;color:var(--gray);font-size:.88rem;border-top:1px solid #1a3e2c}
+footer a{color:var(--green)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.tier-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="brand"><div class="dot"></div>hör auf</div><a class="btn btn-green" href="#tiers">Im App Store</a></nav>
+<section class="hero">
+  <div>
+    <div class="eyebrow">▸ Habit Detector · Apple Watch native</div>
+    <h1>Wenn du nicht aufhörst,<br><span class="green">sagt sie's dir.</span></h1>
+    <p class="lead">Hör auf lernt deine Gesten aus den Bewegungsdaten der Apple Watch. Nägelkauen. Rauchen. Knöchel-Knacken. Snacks-aus-der-Schale. Sobald die App es erkennt: leichte Vibration, Pieton oder eine Stimme.</p>
+    <a class="btn btn-green" href="#tiers">Pläne ansehen</a> &nbsp; <a class="btn btn-ghost" href="#habits">Erkennbare Habits</a>
+  </div>
+  <div class="watch-stage">
+    <div class="watch">
+      <div class="alert">● HABIT DETECTED</div>
+      <div class="icon">💅</div>
+      <h3>Hör auf.</h3>
+      <div class="info">Nägelkauen · 4. Mal heute</div>
+      <div style="display:flex;gap:8px"><div style="width:6px;height:14px;background:var(--green);border-radius:2px"></div><div style="width:6px;height:14px;background:var(--green);border-radius:2px"></div><div style="width:6px;height:14px;background:#1a3e2c;border-radius:2px"></div></div>
+    </div>
+  </div>
+</section>
+<section class="habits" id="habits">
+  <div class="habits-inner">
+    <div class="eyebrow">▸ Erkennbare Habits</div>
+    <h2 class="h2">14 schlechte Gewohnheiten. <span class="green">Eine App.</span></h2>
+    <div class="habit-grid">
+      <div class="habit"><div class="habit-emoji">💅</div><h3>Nägelkauen</h3><p>Gesture-Pattern Daumen → Mund. Sensitivität einstellbar.</p></div>
+      <div class="habit"><div class="habit-emoji">🚬</div><h3>Rauchen</h3><p>Wiederholte Hand-zu-Mund Bewegung im 4–6-Sek-Takt. Optional mit Mikro-Bestätigung.</p></div>
+      <div class="habit"><div class="habit-emoji">🍿</div><h3>Snacks knabbern</h3><p>Greif-und-Mund-Pattern. Erkennt sogar Chips-Beutel via Akustik.</p></div>
+      <div class="habit"><div class="habit-emoji">📱</div><h3>Doom-Scrolling</h3><p>Daumen-Wisch-Pattern über 8 Min ohne Pause.</p></div>
+      <div class="habit"><div class="habit-emoji">🦷</div><h3>Zähneknirschen</h3><p>Über Mikrofon im Schlaf. Apple Watch in der Nacht.</p></div>
+      <div class="habit"><div class="habit-emoji">💆</div><h3>Haar-Drehen</h3><p>Rotation im Handgelenk + Hochheben des Arms.</p></div>
+    </div>
+  </div>
+</section>
+<section class="tiers" id="tiers">
+  <div class="eyebrow">▸ Pläne</div>
+  <h2 class="h2">Wähle dein <span class="green">Anti-Habit.</span></h2>
+  <div class="tier-grid">
+    <div class="tier"><div class="tier-name">Free</div><div class="tier-price">0 €</div><ul><li>1 Habit-Tracker</li><li>Vibration only</li><li>Werbung</li></ul></div>
+    <div class="tier pro"><div class="tier-name">Pro</div><div class="tier-price">4,99 €<small>/Mo</small></div><ul><li>Alle 14 Habits</li><li>Stimme + Sound</li><li>Verlaufs-Stats</li><li>Familien-Sharing</li></ul></div>
+    <div class="tier"><div class="tier-name">Therapie</div><div class="tier-price">29 €<small>/Mo</small></div><ul><li>Mit echtem Coach</li><li>Wöchentliche Gespräche</li><li>Krankenkasse erstattet</li></ul></div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #3 · 14/24 · <a href="/folge/3">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

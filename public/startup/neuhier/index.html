@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>neuhier.de — Audio-Stadtführer beim Vorbeifahren</title>
+<meta name="description" content="Drück Play. Locals erzählen dir Geschichten über die Straße, an der du gerade vorbeifährst. User-generated Channels. Andre Joseliny für Berlin."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/neuhier"/>
+<meta property="og:title" content="neuhier.de"/>
+<meta property="og:description" content="Hör Locals. Während du vorbeifährst."/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff7e8;--orange:#ff7a3d;--orange-d:#cc5520;--peach:#ffd8b8;--ink:#22150c;--ink-soft:#6e564a;--mint:#a8d8c0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--ink);font-family:Outfit,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--orange-d)}
+.nav{padding:20px 32px;display:flex;justify-content:space-between;align-items:center;max-width:1280px;margin:0 auto}
+.brand{font-weight:900;font-size:1.5rem;display:flex;align-items:center;gap:8px}
+.brand-dot{width:14px;height:14px;background:var(--orange);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(.7)}}
+.hero{padding:60px 32px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);font-weight:900;letter-spacing:-.04em;line-height:.95;margin-bottom:24px}
+h1 .orange{color:var(--orange)}
+.lead{font-size:1.2rem;color:var(--ink-soft);margin-bottom:32px;max-width:46ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:14px;font-weight:700;text-decoration:none;font-size:.95rem;transition:all .15s}
+.btn-orange{background:var(--orange);color:white}.btn-orange:hover{background:var(--orange-d)}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}.btn-ghost:hover{background:var(--ink);color:white}
+.player{background:var(--ink);color:var(--cream);border-radius:24px;padding:30px;position:relative;overflow:hidden}
+.player::before{content:'● LIVE';position:absolute;top:14px;right:14px;background:var(--orange);color:white;padding:4px 10px;border-radius:999px;font-size:.7rem;font-weight:700;letter-spacing:.1em}
+.now-playing{font-size:.7rem;letter-spacing:.3em;color:var(--orange);text-transform:uppercase;margin-bottom:8px;font-weight:700}
+.player h3{font-size:1.5rem;font-weight:900;margin-bottom:4px}
+.player .host{color:var(--peach);font-size:.92rem;margin-bottom:24px}
+.waveform{display:flex;align-items:flex-end;gap:3px;height:50px;margin-bottom:14px}
+.waveform span{flex:1;background:var(--peach);border-radius:2px;animation:wave 1.2s ease-in-out infinite}
+.waveform span:nth-child(2){animation-delay:.1s}.waveform span:nth-child(3){animation-delay:.2s}.waveform span:nth-child(4){animation-delay:.3s}.waveform span:nth-child(5){animation-delay:.4s}.waveform span:nth-child(6){animation-delay:.5s}
+@keyframes wave{0%,100%{height:30%}50%{height:100%}}
+.player-meta{display:flex;justify-content:space-between;font-size:.85rem;color:var(--peach);margin-bottom:14px}
+.player-controls{display:flex;justify-content:center;gap:18px;font-size:1.6rem}
+.player-controls span{cursor:pointer}
+.channels{padding:90px 32px;max-width:1280px;margin:0 auto}
+.eyebrow{color:var(--orange);font-weight:900;letter-spacing:.25em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}
+.h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:900;letter-spacing:-.02em;margin-bottom:36px}
+.h2 span{color:var(--orange)}
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.channel{background:var(--peach);padding:24px;border-radius:24px;position:relative;overflow:hidden}
+.channel:nth-child(2){background:var(--mint)}
+.channel:nth-child(3){background:var(--orange);color:white}
+.channel:nth-child(4){background:#ffd84d}
+.channel .city{font-weight:900;font-size:1.8rem;letter-spacing:-.02em;margin-bottom:4px}
+.channel .who{font-weight:700;font-size:.92rem;margin-bottom:14px;opacity:.85}
+.channel .stats{display:flex;gap:14px;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;opacity:.85}
+.coupling{padding:90px 32px;background:var(--ink);color:var(--cream)}
+.coupling-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.coupling .h2{color:var(--cream)}
+.coupling-img{background:var(--orange);border-radius:24px;aspect-ratio:1/.7;display:grid;place-items:center;font-weight:900;font-size:1.8rem;text-align:center;line-height:1.2}
+footer{padding:30px;text-align:center;color:var(--ink-soft);font-size:.88rem}
+footer a{color:var(--orange-d)}
+@media(max-width:760px){.hero,.coupling-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="brand"><div class="brand-dot"></div>neuhier.de</div><a class="btn btn-orange" href="#channels">App holen</a></nav>
+<section class="hero">
+  <div>
+    <div class="eyebrow">▸ Audio-Stadtführer</div>
+    <h1>Hör, was die <span class="orange">Locals</span><br>dir erzählen würden.<br>Wenn du sie fragen würdest.</h1>
+    <p class="lead">App im Auto starten, Play drücken, losfahren. Während du an Straßen, Plätzen und Lokalen vorbeifährst, erzählen dir Bewohner aus der Gegend Geschichten dazu. User-generated. Channel-basiert.</p>
+    <div class="cta"><a class="btn btn-orange" href="#channels">Channels ansehen</a><a class="btn btn-ghost" href="#coupling">Pokemon-Go-Kopplung</a></div>
+  </div>
+  <div class="player">
+    <div class="now-playing">Now playing</div>
+    <h3>Schlesisches Tor</h3>
+    <div class="host">Andre Joseliny · Berlin-Kreuzberg Channel</div>
+    <div class="waveform"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="player-meta"><span>02:14</span><span>Live · 14k Hörer</span><span>−06:22</span></div>
+    <div class="player-controls"><span>⏮</span><span>⏸</span><span>⏭</span></div>
+  </div>
+</section>
+<section class="channels" id="channels">
+  <div class="eyebrow">▸ Aktive Channels</div>
+  <h2 class="h2">Vier Städte. <span>Tausend Stimmen.</span></h2>
+  <div class="channel-grid">
+    <div class="channel"><div class="city">Berlin</div><div class="who">Host: Andre Joseliny + 412 Locals</div><div class="stats"><span>89k Hörer</span><span>2400 Storys</span></div></div>
+    <div class="channel"><div class="city">Hamburg</div><div class="who">Host: Jule J. + 308 Locals</div><div class="stats"><span>54k Hörer</span><span>1800 Storys</span></div></div>
+    <div class="channel"><div class="city">Köln</div><div class="who">Host: Tim Wiese + 188 Locals</div><div class="stats"><span>34k Hörer</span><span>900 Storys</span></div></div>
+    <div class="channel"><div class="city">München</div><div class="who">Host: Käthe Reichel + 122 Locals</div><div class="stats"><span>22k Hörer</span><span>540 Storys</span></div></div>
+  </div>
+</section>
+<section class="coupling" id="coupling">
+  <div class="coupling-inner">
+    <div>
+      <div class="eyebrow" style="color:var(--peach)">▸ Roadmap</div>
+      <h2 class="h2">Pokemon-Go-3D-Scan <span style="color:var(--orange)">+ Audio.</span></h2>
+      <p style="color:var(--peach);font-size:1.05rem">Niantic hat die Welt komplett gescannt. Wir holen uns die Daten via Schnittstelle, koppeln Audio-Storys an exakte GPS-Punkte. Du fährst an einer Hauswand vorbei und der Geist eines 89-jährigen Türken erzählt dir, wer da 1973 wohnte.</p>
+    </div>
+    <div class="coupling-img">🗺️<br><span style="font-size:1rem;opacity:.85">3D Map<br>+ Audio-Layer</span></div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #46 · 17/24 · <a href="/folge/46">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AURA Body-Tracking-Anzug — Aua-Button für Rückenschmerz-Forensik</title>
+<meta name="description" content="21 Sensor-Ringe am Körper, Daten 24/7 in der Cloud. Bei Schmerz Aua-Button drücken, App rekonstruiert die Ursache."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/body-tracking-anzug"/>
+<meta property="og:title" content="AURA"/>
+<meta property="og:description" content="Body-Tracking. Aua-Button. Forensik."/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f9ff;--cyan:#0066ff;--cyan-d:#0040b3;--cyan-l:#cce0ff;--white:#ffffff;--ink:#0a1626;--ink-soft:#4a5870;--medical:#00c2a8;--alert:#ff5a3c;--line:#d9e4f0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+.mono{font-family:'IBM Plex Mono',monospace}
+.topbar{background:var(--white);border-bottom:1px solid var(--line);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;font-size:.85rem}
+.topbar .pill{background:var(--medical);color:var(--white);padding:4px 10px;border-radius:999px;font-weight:700;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}
+.nav{padding:18px 32px;display:flex;justify-content:space-between;align-items:center;background:var(--white);border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:1.5rem;letter-spacing:-.02em;color:var(--ink)}
+.brand .a{color:var(--cyan)}
+.hero{padding:80px 32px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.02;margin-bottom:22px}
+h1 em{color:var(--cyan);font-style:normal}
+.lead{font-size:1.15rem;color:var(--ink-soft);margin-bottom:30px;max-width:50ch}
+.btn{display:inline-block;padding:13px 26px;border-radius:8px;font-weight:600;text-decoration:none;transition:all .15s}
+.btn-cyan{background:var(--cyan);color:white}.btn-cyan:hover{background:var(--cyan-d)}
+.btn-out{border:1.5px solid var(--ink);color:var(--ink);margin-left:10px}.btn-out:hover{background:var(--ink);color:white}
+.body-vis{position:relative;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:36px;aspect-ratio:1/1.2;display:grid;place-items:center}
+.body-vis::before{content:'BODY MAP · TRACKING ACTIVE';position:absolute;top:14px;left:18px;font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--medical);font-weight:700}
+.body-vis::after{content:'● 21 RINGS ONLINE';position:absolute;top:14px;right:18px;font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.18em;color:var(--medical);font-weight:700}
+.body-vis svg{max-width:100%;height:auto}
+.aua-btn{position:absolute;bottom:24px;right:24px;background:var(--alert);color:white;width:120px;height:120px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:1.4rem;letter-spacing:.05em;box-shadow:0 12px 30px rgba(255,90,60,.3);cursor:pointer;animation:pulse 2s ease-in-out infinite}
+.aua-btn small{display:block;font-size:.5em;font-weight:400;letter-spacing:.2em;text-transform:uppercase;margin-top:4px}
+@keyframes pulse{50%{box-shadow:0 12px 40px rgba(255,90,60,.55)}}
+.spec-band{background:var(--ink);color:white;padding:60px 32px}
+.spec-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px;text-align:center}
+.spec-num{font-size:3rem;font-weight:700;color:var(--medical);letter-spacing:-.02em;line-height:1}
+.spec-num small{display:block;font-size:.32em;color:white;opacity:.6;font-family:'IBM Plex Mono';margin-top:6px;letter-spacing:.15em;text-transform:uppercase;font-weight:400}
+.flow{padding:90px 32px;max-width:1200px;margin:0 auto}
+.eyebrow{color:var(--cyan);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.25em;font-size:.78rem;margin-bottom:14px;font-weight:700}
+.section-h{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.05;margin-bottom:40px}
+.section-h em{color:var(--cyan);font-style:normal}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.flow-step{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px}
+.flow-step .step{font-family:'IBM Plex Mono';color:var(--cyan);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;font-weight:700}
+.flow-step h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.flow-step p{color:var(--ink-soft);font-size:.92rem}
+footer{padding:40px;text-align:center;color:var(--ink-soft);font-size:.88rem;border-top:1px solid var(--line);background:var(--white)}
+footer a{color:var(--cyan)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:40px;padding:50px 24px}.flow-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>AURA Health Inc. · Hamburg · CE 0044 zertifiziert</span><span class="pill">FDA Pending</span></div>
+<nav class="nav"><div class="brand">AUR<span class="a">A</span></div><div class="mono" style="color:var(--ink-soft);font-size:.85rem">v 3.1.0 · 21 Sensor-Ringe</div></nav>
+<section class="hero">
+  <div>
+    <div class="eyebrow">▸ Patient-Reported Outcome System</div>
+    <h1>Dein Körper sagt dir, <em>woher der Rückenschmerz kommt.</em></h1>
+    <p class="lead">21 Sensor-Ringe an Gelenken und Wirbelsäule. Die App zeichnet jede Bewegung auf. Wenn du Schmerzen hast, drückst du den <strong>Aua-Button</strong> — und siehst die exakte Bewegungsfolge der letzten 6 Stunden, die dazu geführt hat.</p>
+    <a class="btn btn-cyan" href="#flow">Demo ansehen</a><a class="btn btn-out" href="#flow">Anzug bestellen</a>
+  </div>
+  <div class="body-vis">
+    <svg viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="100" cy="40" rx="22" ry="26" fill="none" stroke="#0a1626" stroke-width="2"/>
+      <path d="M 70 65 Q 60 80 60 130 L 60 170 L 75 250 L 90 310 M 130 65 Q 140 80 140 130 L 140 170 L 125 250 L 110 310 M 65 90 L 35 160 L 45 200 M 135 90 L 165 160 L 155 200" fill="none" stroke="#0a1626" stroke-width="2"/>
+      <g fill="#0066ff">
+        <circle cx="100" cy="45" r="4"/><circle cx="80" cy="80" r="4"/><circle cx="120" cy="80" r="4"/>
+        <circle cx="100" cy="110" r="4"/><circle cx="100" cy="140" r="4"/><circle cx="60" cy="110" r="4"/>
+        <circle cx="140" cy="110" r="4"/><circle cx="40" cy="150" r="4"/><circle cx="160" cy="150" r="4"/>
+        <circle cx="45" cy="195" r="4"/><circle cx="155" cy="195" r="4"/><circle cx="100" cy="170" r="4"/>
+        <circle cx="80" cy="190" r="4"/><circle cx="120" cy="190" r="4"/><circle cx="80" cy="230" r="4"/>
+        <circle cx="120" cy="230" r="4"/><circle cx="85" cy="270" r="4"/><circle cx="115" cy="270" r="4"/>
+        <circle cx="90" cy="305" r="4"/><circle cx="110" cy="305" r="4"/><circle cx="100" cy="65" r="4"/>
+      </g>
+      <g fill="none" stroke="#0066ff" stroke-width="1" opacity=".4"><circle cx="100" cy="45" r="9"/><circle cx="100" cy="170" r="9"/><circle cx="100" cy="110" r="9"/></g>
+    </svg>
+    <div class="aua-btn">AUA<small>tap me</small></div>
+  </div>
+</section>
+<div class="spec-band">
+  <div class="spec-grid">
+    <div><div class="spec-num">21<small>Sensor-Ringe</small></div></div>
+    <div><div class="spec-num">200<small>Hz Sampling</small></div></div>
+    <div><div class="spec-num">6 h<small>Aua-Lookback</small></div></div>
+    <div><div class="spec-num">93 %<small>Erkennungsrate</small></div></div>
+  </div>
+</div>
+<section class="flow" id="flow">
+  <div class="eyebrow">▸ Workflow</div>
+  <h2 class="section-h">Vier Schritte vom Stechen <em>zur Diagnose.</em></h2>
+  <div class="flow-grid">
+    <div class="flow-step"><div class="step">→ 01</div><h3>Anzug anziehen</h3><p>Wie ein Skinny-Pyjama. 21 Ringe positionieren sich magnetisch an Gelenken.</p></div>
+    <div class="flow-step"><div class="step">→ 02</div><h3>Tag verbringen</h3><p>App läuft im Hintergrund. Bewegungen werden mit 200 Hz erfasst.</p></div>
+    <div class="flow-step"><div class="step">→ 03</div><h3>Aua-Button</h3><p>Schmerz spüren → roter Knopf drücken (am Anzug oder per App).</p></div>
+    <div class="flow-step"><div class="step">→ 04</div><h3>Replay</h3><p>App zeigt 3D-Skelett-Animation der letzten 6 Stunden. „Du hast 14:32 Uhr falsch gebückt."</p></div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #27 · 18/24 · <a href="/folge/27">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</body>
+</html>

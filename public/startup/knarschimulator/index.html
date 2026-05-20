@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>KNARSCH — Knarrende Holzböden für Neubauwohnungen, simuliert</title>
+<meta name="description" content="Akustisch + visuell. Holz-Knarschen, Fischgrät, Lava-Boden, Mario-Kart-Modus. Basisversion 16-26 €, Vollausstattung 12.000 € (Burani-Money-Paket)."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/knarschimulator"/>
+<meta property="og:title" content="KNARSCH"/>
+<meta property="og:description" content="Simulierte Holzbalken für deine Neubauwohnung."/>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0410;--bg2:#181025;--purple:#a855f7;--purple-d:#7e22ce;--cyan:#22d3ee;--cyan-d:#0ea5e9;--pink:#ec4899;--gray:#a8a4b8;--ink:#ffffff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'JetBrains Mono',monospace;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan)}
+.display{font-family:'Major Mono Display',monospace}
+.body-grid{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);min-height:100vh}
+.nav{padding:24px 32px;display:flex;justify-content:space-between;align-items:center;max-width:1300px;margin:0 auto;border-bottom:1px solid #2a1e3d}
+.brand{font-family:'Major Mono Display';font-size:1.7rem;letter-spacing:.05em;background:linear-gradient(135deg,var(--purple),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{padding:100px 32px;max-width:1300px;margin:0 auto;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,var(--purple) 0%,transparent 60%);opacity:.15;z-index:0}
+.hero > *{position:relative;z-index:1}
+.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.4em;text-transform:uppercase;font-size:.78rem;margin-bottom:20px}
+h1{font-family:'Major Mono Display';font-size:clamp(3rem,9vw,7rem);letter-spacing:.05em;line-height:.95;margin-bottom:24px;text-transform:lowercase}
+h1 .grad{background:linear-gradient(135deg,var(--purple) 0%,var(--cyan) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--gray);max-width:54ch;margin:0 auto 36px}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:50px}
+.btn{display:inline-block;padding:14px 28px;font-weight:700;text-decoration:none;font-family:'JetBrains Mono';letter-spacing:.05em;border:1px solid;transition:all .15s}
+.btn-grad{background:linear-gradient(135deg,var(--purple),var(--cyan));color:white;border-color:transparent;border-radius:6px}
+.btn-grad:hover{filter:brightness(1.1)}
+.btn-ghost{color:var(--cyan);border-color:var(--cyan);border-radius:6px}
+.btn-ghost:hover{background:var(--cyan);color:var(--bg)}
+.modes{padding:90px 32px;max-width:1300px;margin:0 auto}
+.h2{font-family:'Major Mono Display';font-size:clamp(2rem,5vw,3.4rem);letter-spacing:.04em;line-height:1.05;margin-bottom:40px;text-transform:lowercase}
+.h2 .c{color:var(--cyan)}.h2 .p{color:var(--purple)}
+.mode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.mode{background:var(--bg2);padding:26px;border-radius:14px;border:1px solid #2a1e3d;position:relative;overflow:hidden}
+.mode::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.mode:nth-child(1)::before{background:#a16f43}
+.mode:nth-child(2)::before{background:linear-gradient(90deg,#ff6b1a,#ffd60a)}
+.mode:nth-child(3)::before{background:linear-gradient(90deg,#22d3ee,#a855f7)}
+.mode:nth-child(4)::before{background:linear-gradient(90deg,#ec4899,#ffd60a)}
+.mode-tag{font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--cyan);margin-bottom:10px;font-weight:700}
+.mode h3{font-family:'Major Mono Display';font-size:1.5rem;letter-spacing:.04em;margin-bottom:8px;text-transform:lowercase}
+.mode p{color:var(--gray);font-size:.92rem}
+.specs{padding:90px 32px;background:var(--bg2)}
+.spec-inner{max-width:1300px;margin:0 auto}
+.spec-table{display:grid;grid-template-columns:1.5fr 1fr 1fr;border:1px solid #2a1e3d}
+.spec-table > div{padding:18px 22px;border-bottom:1px solid #2a1e3d;border-right:1px solid #2a1e3d}
+.spec-table > div:nth-child(3n){border-right:none}
+.spec-table > div:nth-last-child(-n+3){border-bottom:none}
+.spec-table .head{background:linear-gradient(135deg,var(--purple-d),var(--cyan-d));color:white;font-family:'Major Mono Display';font-size:.85rem;letter-spacing:.15em;text-transform:lowercase}
+.spec-table .name{font-weight:700}
+.spec-table .price{font-family:'Major Mono Display';color:var(--cyan);font-size:1.2rem}
+footer{padding:30px;text-align:center;color:var(--gray);font-size:.85rem;border-top:1px solid #2a1e3d}
+footer a{color:var(--cyan)}
+@media(max-width:640px){.spec-table{grid-template-columns:1fr}.spec-table > div{border-right:none}}
+</style>
+</head>
+<body>
+<div class="body-grid">
+<nav class="nav">
+  <div class="brand">KNARSCH ⊹</div>
+  <span style="font-family:'JetBrains Mono';color:var(--gray);font-size:.85rem">v 1.4 · Casim Burani Edition</span>
+</nav>
+<section class="hero">
+  <div class="eyebrow">▶ Patent angemeldet · made for Neubau</div>
+  <h1>knarrende <span class="grad">holzböden</span><br>für deine neubauwohnung.</h1>
+  <p class="lead">Akustik aus 8 Boden-Mikrofonen unter dem Estrich. Beamer-Extension projiziert Holz, Fischgrät, Teppich. Sonos-Kopplung simuliert Sumpf-Geräusche, Lava, Mario-Kart-Modus.</p>
+  <div class="cta"><a class="btn btn-grad" href="#modes">Modi ansehen</a><a class="btn btn-ghost" href="#preise">Preise</a></div>
+</section>
+<section class="modes" id="modes">
+  <div class="eyebrow">▶ vier modi</div>
+  <h2 class="h2">klassisch. <span class="c">modern.</span> <span class="p">absurd.</span></h2>
+  <div class="mode-grid">
+    <div class="mode"><div class="mode-tag">▸ classic</div><h3>holzbohlen 1890</h3><p>Knarschen alle 0,8 Schritte. Eiche-Kontaktgeräusch. Inklusive saisonaler Quellung im Winter.</p></div>
+    <div class="mode"><div class="mode-tag">▸ fischgrät</div><h3>parkett deluxe</h3><p>Optisches Pattern via Beamer + Knarsch-Tonspur. Bewegungsabhängig, je nach Schrittfolge.</p></div>
+    <div class="mode"><div class="mode-tag">▸ ar-mode</div><h3>lava floor</h3><p>Visuell Lava unter dir, akustisch heißes Brodeln, haptisch nichts (zur Sicherheit). Burani-Money-Special.</p></div>
+    <div class="mode"><div class="mode-tag">▸ game-mode</div><h3>mario kart</h3><p>Bodenkacheln werden zu Rennstrecke. Beim drüberlaufen kommen Münz-Töne. Kartoffel-Erkennung optional.</p></div>
+  </div>
+</section>
+<section class="specs" id="preise">
+  <div class="spec-inner">
+    <div class="eyebrow">▶ ausstattungs-pakete</div>
+    <h2 class="h2">basic bis <span class="p">burani-money.</span></h2>
+    <div class="spec-table">
+      <div class="head">Paket</div><div class="head">Komponenten</div><div class="head">Preis</div>
+      <div class="name">Bohne</div><div>1 Bodensensor + Sonos-App</div><div class="price">16 €</div>
+      <div class="name">Klassik</div><div>4 Sensoren + Sonos + Holz-Mode</div><div class="price">26 €</div>
+      <div class="name">Modern</div><div>8 Sensoren + Beamer + alle Mode-Standards</div><div class="price">2.400 €</div>
+      <div class="name">Burani-Money</div><div>Vollausstattung + AR + Game-Mode + 3 Wandprojektoren</div><div class="price">12.000 €</div>
+    </div>
+  </div>
+</section>
+<footer>Fiktives Konzept · TMDA #12 · 13/24 · <a href="/folge/12">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></footer>
+</div>
+</body>
+</html>

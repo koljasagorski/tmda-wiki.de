@@ -1,93 +1,35 @@
 {
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
-    {
-      "folge": 45,
-      "ideeMatch": "HATS",
-      "slug": "hats",
-      "domain": "h-a-c-s.de",
-      "tagline": "Hot Air to Sock Adapter — der Universal-Belüftungsschlauch fürs Auto",
-      "punkte": 22
-    },
-    {
-      "folge": 44,
-      "ideeMatch": "windradhologramm",
-      "slug": "windradhologramm",
-      "domain": "windradhologramm.de",
-      "tagline": "Das Hologramm-Windrad gegen das Hologramm-Problem",
-      "punkte": 22
-    },
-    {
-      "folge": 41,
-      "ideeMatch": "Das letzte was ich sehe",
-      "slug": "das-letzte-was-ich-sehe",
-      "domain": "das-letzte-was-ich-sehe.de",
-      "tagline": "Werbung. In deine Iris. Eingebrannt.",
-      "punkte": 22
-    },
-    {
-      "folge": 32,
-      "ideeMatch": "Matruschka",
-      "slug": "tabletten-matrjoschka",
-      "domain": null,
-      "tagline": "Eine Tablette. Viele Tabletten. Dieselbe Tablette.",
-      "punkte": 22
-    },
-    {
-      "folge": 8,
-      "ideeMatch": "Kinderstimme",
-      "slug": "kinderstimme-navi",
-      "domain": null,
-      "tagline": "Endlich hält Papa sich an die Verkehrsregeln.",
-      "punkte": 22
-    },
-    {
-      "folge": 28,
-      "ideeMatch": "Zusammenfuehren",
-      "slug": "zusammenfuehren",
-      "domain": "zusammenfuehren.de",
-      "tagline": "Die App, die euch zueinander führt — live, mit Detour.",
-      "punkte": 21
-    },
-    {
-      "folge": 39,
-      "ideeMatch": "The 500",
-      "slug": "the-500",
-      "domain": null,
-      "tagline": "500 Reps. 1 Kettlebell. 25 Minuten. Jeden Tag.",
-      "punkte": 20
-    },
-    {
-      "folge": 26,
-      "ideeMatch": "Wohnmobil-Levelling",
-      "slug": "wohnmobil-levelling",
-      "domain": null,
-      "tagline": "Schluss mit Holzdreiecken. Auto-Levelling per Luftfahrwerk.",
-      "punkte": 20
-    },
-    {
-      "folge": 34,
-      "ideeMatch": "Fingerabdruck-Handschuhe",
-      "slug": "fingerabdruck-handschuhe",
-      "domain": null,
-      "tagline": "Handschuhe mit dem Fingerabdruck deiner Wahl.",
-      "punkte": 20
-    },
-    {
-      "folge": 10,
-      "ideeMatch": "Like Mike",
-      "slug": "like-mike",
-      "domain": null,
-      "tagline": "Hol dir dasselbe Hotel wie dein Lieblings-Influencer.",
-      "punkte": 20
-    },
-    {
-      "folge": 2,
-      "ideeMatch": "LKW-plane-kostenlos",
-      "slug": "lkw-plane-kostenlos",
-      "domain": "lkw-plane-kostenlos.de",
-      "tagline": "Neue Plane gratis. Werbefläche fährt.",
-      "punkte": 19
-    }
+    {"folge":45,"ideeMatch":"HATS","slug":"hats","domain":"h-a-c-s.de","tagline":"Hot Air to Sock Adapter — der Universal-Belüftungsschlauch fürs Auto","punkte":22},
+    {"folge":44,"ideeMatch":"windradhologramm","slug":"windradhologramm","domain":"windradhologramm.de","tagline":"Das Hologramm-Windrad gegen das Hologramm-Problem","punkte":22},
+    {"folge":41,"ideeMatch":"Das letzte was ich sehe","slug":"das-letzte-was-ich-sehe","domain":"das-letzte-was-ich-sehe.de","tagline":"Werbung. In deine Iris. Eingebrannt.","punkte":22},
+    {"folge":32,"ideeMatch":"Matruschka","slug":"tabletten-matrjoschka","domain":null,"tagline":"Eine Tablette. Viele Tabletten. Dieselbe Tablette.","punkte":22},
+    {"folge":8,"ideeMatch":"Kinderstimme","slug":"kinderstimme-navi","domain":null,"tagline":"Endlich hält Papa sich an die Verkehrsregeln.","punkte":22},
+    {"folge":28,"ideeMatch":"Zusammenfuehren","slug":"zusammenfuehren","domain":"zusammenfuehren.de","tagline":"Die App, die euch zueinander führt — live, mit Detour.","punkte":21},
+    {"folge":39,"ideeMatch":"The 500","slug":"the-500","domain":null,"tagline":"500 Reps. 1 Kettlebell. 25 Minuten. Jeden Tag.","punkte":20},
+    {"folge":26,"ideeMatch":"Wohnmobil-Levelling","slug":"wohnmobil-levelling","domain":null,"tagline":"Schluss mit Holzdreiecken. Auto-Levelling per Luftfahrwerk.","punkte":20},
+    {"folge":34,"ideeMatch":"Fingerabdruck-Handschuhe","slug":"fingerabdruck-handschuhe","domain":null,"tagline":"Handschuhe mit dem Fingerabdruck deiner Wahl.","punkte":20},
+    {"folge":10,"ideeMatch":"Like Mike","slug":"like-mike","domain":null,"tagline":"Hol dir dasselbe Hotel wie dein Lieblings-Influencer.","punkte":20},
+    {"folge":2,"ideeMatch":"LKW-plane-kostenlos","slug":"lkw-plane-kostenlos","domain":"lkw-plane-kostenlos.de","tagline":"Neue Plane gratis. Werbefläche fährt.","punkte":19},
+    {"folge":38,"ideeMatch":"Hello Flowers","slug":"hello-flowers","domain":null,"tagline":"Plastikblumen für ewig. Manufaktur in Rüspel.","punkte":18},
+    {"folge":35,"ideeMatch":"rapidnews","slug":"rapidnews","domain":"rapidnews.com","tagline":"KI Fake-News-Generator. 0,4 Sekunden pro Artikel.","punkte":18},
+    {"folge":27,"ideeMatch":"Body-Tracking","slug":"body-tracking-anzug","domain":null,"tagline":"21 Sensor-Ringe. Aua-Button. Rückenschmerz-Forensik.","punkte":18},
+    {"folge":16,"ideeMatch":"Silikonfinger","slug":"silikonfinger","domain":null,"tagline":"Der Silikonring, der jeden Siegelring passend macht.","punkte":18},
+    {"folge":14,"ideeMatch":"Reborn","slug":"reborn","domain":"reborn.gov","tagline":"Namensänderung in 14 Tagen. 29,90 €.","punkte":18},
+    {"folge":46,"ideeMatch":"neuhier","slug":"neuhier","domain":"neuhier.de","tagline":"Audio-Stadtführer von Locals beim Vorbeifahren.","punkte":17},
+    {"folge":22,"ideeMatch":"Google Maps Premium fuer Reiche","slug":"google-maps-rich","domain":null,"tagline":"Du fährst frei. Alle anderen werden umgeleitet.","punkte":17},
+    {"folge":19,"ideeMatch":"Most Private Bag","slug":"my-most-private-bag","domain":null,"tagline":"Designer-Blutbeutel. Designer-Windeln. Couture für medizinische Hilfsmittel.","punkte":17},
+    {"folge":21,"ideeMatch":"Tubsuit","slug":"tubsuit","domain":null,"tagline":"Die mobile Badewanne, die du anziehst.","punkte":16},
+    {"folge":4,"ideeMatch":"Immo Scan","slug":"immo-scan","domain":null,"tagline":"AR-App: Handy auf Haus halten, Verkaufsstatus sehen.","punkte":16},
+    {"folge":37,"ideeMatch":"Zero You Go","slug":"zero-you-go","domain":null,"tagline":"Feuchttücher, die erst beim Herausziehen feucht werden.","punkte":14},
+    {"folge":3,"ideeMatch":"Habit Detector","slug":"habit-detector","domain":null,"tagline":"App, die deine Watch beobachtet und dich stoppt.","punkte":14},
+    {"folge":18,"ideeMatch":"Schwabenpresse","slug":"schwabenpresse","domain":null,"tagline":"Marmelade bis zum letzten Gramm. French-Press-Prinzip.","punkte":13},
+    {"folge":15,"ideeMatch":"Tinklies","slug":"tinklies","domain":null,"tagline":"Sanfte Toiletten-Massage für ältere Herren.","punkte":13},
+    {"folge":12,"ideeMatch":"Knarschimulator","slug":"knarschimulator","domain":null,"tagline":"Knarrende Holzböden für deine Neubauwohnung. Simuliert.","punkte":13},
+    {"folge":43,"ideeMatch":"Bitter Sleeve","slug":"bitter-sleeve","domain":null,"tagline":"Schluck bittere Sachen ohne sie zu schmecken.","punkte":12},
+    {"folge":20,"ideeMatch":"Drive-Through Supermarkt","slug":"drive-through-supermarkt","domain":null,"tagline":"Du fährst durch. Du kaufst ein. Du zahlst per Nummernschild.","punkte":12},
+    {"folge":11,"ideeMatch":"Hundeschule","slug":"hundeschule","domain":null,"tagline":"Tachonase. Bullen-Sniff. Vegan-Test. Hundeerziehung anders.","punkte":11},
+    {"folge":9,"ideeMatch":"Uwe seine Waage","slug":"uwe-waage","domain":null,"tagline":"Jedes Haus auf einer Industrie-Waage.","punkte":11}
   ]
 }
