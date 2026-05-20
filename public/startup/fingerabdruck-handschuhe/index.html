@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>F·P·G — Handschuhe mit deinem Ziel-Fingerabdruck</title>
+<meta name="description" content="Maßgefertigte Latex-Handschuhe mit dem Fingerabdruck einer Person deiner Wahl. Anonyme Bestellung. Discreet Versand. Upgrade: Steuerquartett Europa." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/fingerabdruck-handschuhe" />
+<meta property="og:title" content="F·P·G — Fingerprint Gloves" />
+<meta property="og:description" content="Handschuhe mit dem Fingerabdruck deiner Wahl." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/fingerabdruck-handschuhe" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"F·P·G Fingerprint Gloves"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f4ecd6;
+  --paper-dirty: #ddd2b3;
+  --ink: #0d0a05;
+  --ink-soft: #3c2f1e;
+  --red-stamp: #b8231f;
+  --red-stamp-dark: #7a1814;
+  --blue-stamp: #2e4e7e;
+  --line: #5c4a30;
+  --shadow: #2a1e0e;
+  --type: 'Special Elite', 'Courier New', monospace;
+  --mono: 'IBM Plex Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--paper-dirty); }
+body {
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(0,0,0,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(0,0,0,0.06) 0%, transparent 50%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--type);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--red-stamp); text-decoration: underline; }
+a:hover { color: var(--red-stamp-dark); }
+
+/* Klassifizierte Banner */
+.classified {
+  background: var(--ink);
+  color: var(--red-stamp);
+  padding: 12px 24px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid var(--red-stamp);
+  font-weight: 700;
+}
+.classified .blink { animation: blink 1.8s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.dossier-frame {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 50px 60px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  box-shadow:
+    inset 0 0 60px rgba(60, 47, 30, 0.1),
+    0 30px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.dossier-frame::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px dashed var(--ink);
+  pointer-events: none;
+}
+
+/* Briefkopf */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 3px double var(--ink);
+  padding-bottom: 18px;
+  margin-bottom: 30px;
+  align-items: end;
+}
+.org-id {
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+}
+.org-id .red { color: var(--red-stamp); }
+.org-id small {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 0.45em;
+  letter-spacing: 0.3em;
+  color: var(--ink-soft);
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.stamp {
+  border: 4px solid var(--red-stamp);
+  color: var(--red-stamp);
+  padding: 10px 18px;
+  transform: rotate(-12deg);
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  opacity: 0.85;
+  box-shadow: inset 0 0 0 2px var(--red-stamp);
+}
+
+/* Sektionen */
+.sec-num {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: var(--red-stamp);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sec-h {
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 22px;
+  color: var(--ink);
+}
+.sec-h em { color: var(--red-stamp); font-style: italic; }
+
+.hero-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 40px 0;
+}
+.hero-text p {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  color: var(--ink);
+  font-family: var(--type);
+}
+.hero-text p.lead {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+/* Fingerprint SVG */
+.fingerprint-vis {
+  background: var(--paper-dirty);
+  padding: 30px;
+  border: 1px solid var(--line);
+  position: relative;
+}
+.fingerprint-vis::before {
+  content: 'EXHIBIT A';
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--red-stamp);
+  font-weight: 700;
+}
+.fingerprint-vis svg { width: 100%; height: auto; max-width: 320px; margin: 0 auto; display: block; }
+.fingerprint-vis-meta {
+  margin-top: 16px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.1em;
+  display: grid;
+  gap: 4px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-ink { background: var(--ink); color: var(--paper); }
+.btn-ink:hover { background: var(--ink-soft); color: var(--paper); text-decoration: none; }
+.btn-red { background: var(--red-stamp); color: var(--paper); border-color: var(--red-stamp); }
+.btn-red:hover { background: var(--red-stamp-dark); text-decoration: none; color: var(--paper); }
+
+/* Order form mock */
+.form-mock {
+  margin-top: 60px;
+  border-top: 3px double var(--ink);
+  padding-top: 40px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 24px;
+}
+.form-field {
+  border-bottom: 1px solid var(--ink);
+  padding: 4px 0;
+}
+.form-field .field-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.form-field .field-value {
+  font-family: var(--type);
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.form-field .field-value .typed {
+  background: var(--paper-dirty);
+  padding: 2px 8px;
+  display: inline-block;
+}
+
+/* Upgrade Steuerquartett */
+.upgrade {
+  margin-top: 60px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 40px 50px;
+  position: relative;
+}
+.upgrade::before {
+  content: 'UPGRADE';
+  position: absolute;
+  top: -14px;
+  left: 30px;
+  background: var(--red-stamp);
+  color: var(--paper);
+  padding: 4px 14px;
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-size: 0.78rem;
+}
+.upgrade-h {
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.upgrade-h em { font-style: italic; color: var(--red-stamp); }
+.upgrade p { font-size: 1.05rem; color: var(--paper-dirty); margin-bottom: 14px; }
+.quartet {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+.q-card {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 12px;
+  border: 2px solid var(--paper);
+  font-family: var(--mono);
+}
+.q-card .country { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 8px; }
+.q-card .rate { font-size: 1.6rem; font-weight: 700; }
+.q-card .rate small { font-size: 0.6em; color: var(--ink-soft); }
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px dashed var(--ink);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-align: justify;
+}
+.disclaimer p { margin-bottom: 8px; }
+
+footer {
+  max-width: 1100px;
+  margin: 30px auto 40px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+footer a { color: var(--red-stamp); }
+
+@media (max-width: 800px) {
+  .dossier-frame { padding: 30px 24px; margin: 20px 12px; }
+  .hero-row { grid-template-columns: 1fr; gap: 30px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .quartet { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="classified">
+  CASE FILE 0034 <span class="blink">▮</span> CLASSIFIED <span class="blink">▮</span> EYES ONLY
+</div>
+
+<article class="dossier-frame">
+
+  <header class="header">
+    <div class="org-id">
+      F · P · G
+      <small>Fingerprint Glove Foundry · Est. 2026</small>
+    </div>
+    <div class="stamp">EVIDENCE</div>
+  </header>
+
+  <section class="hero-row">
+    <div class="hero-text">
+      <div class="sec-num">§ 01 — Konzept</div>
+      <h1 class="sec-h">Die Handschuhe mit dem <em>fremden</em> Fingerabdruck.</h1>
+      <p class="lead">Du bestellst. Wir produzieren. Du trägst.<br>Die Spuren am Tatort gehören jemand anderem.</p>
+      <p>Latex-Handschuhe mit dem dermalen Papillarleisten-Muster einer Person deiner Wahl. Hochauflösend: 600 Mikrometer pro Linie. Forensisch nicht von echten Abdrücken zu unterscheiden.</p>
+      <p>Anwendungsfelder: opportunistische Selbstbedienung, dramatische Versöhnungen mit Verflossenen, Kunstprojekt.</p>
+      <div class="btn-row">
+        <a class="btn btn-red" href="#bestellen">→ Bestellformular</a>
+        <a class="btn btn-ink" href="#upgrade">Upgrade ansehen</a>
+      </div>
+    </div>
+
+    <div class="fingerprint-vis">
+      <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Daumen-Outline -->
+        <path d="M 60 50 Q 80 30 140 30 Q 220 30 240 90 Q 250 180 220 260 Q 200 300 140 300 Q 70 300 50 240 Q 40 150 60 50 Z" fill="none" stroke="#0d0a05" stroke-width="3"/>
+        <!-- Loops und Wirbel -->
+        <g stroke="#0d0a05" stroke-width="1.4" fill="none">
+          <path d="M 90 100 Q 140 70 200 100"/>
+          <path d="M 80 120 Q 140 85 215 120"/>
+          <path d="M 75 140 Q 140 105 220 140"/>
+          <path d="M 70 160 Q 100 140 130 150 Q 150 155 175 150 Q 200 145 225 165"/>
+          <path d="M 70 180 Q 100 160 130 170 Q 145 175 155 170 Q 175 165 200 170 Q 215 173 228 185"/>
+          <path d="M 75 200 Q 100 184 130 192 Q 145 196 155 188 Q 170 178 195 188 Q 215 195 225 210"/>
+          <path d="M 80 220 Q 110 206 135 214 Q 155 220 175 214 Q 200 206 222 232"/>
+          <path d="M 85 240 Q 115 228 140 234 Q 165 238 195 232 Q 215 228 220 252"/>
+          <path d="M 95 260 Q 130 250 165 256 Q 195 260 215 270"/>
+          <path d="M 110 278 Q 140 270 175 276 Q 195 280 205 285"/>
+          <!-- Wirbel im Zentrum -->
+          <circle cx="142" cy="165" r="6" />
+          <circle cx="142" cy="165" r="12" />
+          <circle cx="142" cy="165" r="20" />
+        </g>
+      </svg>
+      <div class="fingerprint-vis-meta">
+        <span>SUBJECT: ███████ ████ (anonymisiert)</span>
+        <span>LOCATION: D-21073 Hamburg</span>
+        <span>RESOLUTION: 600 µm / Linie</span>
+        <span>STATUS: ABNAHMEBEREIT</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-mock" id="bestellen">
+    <div class="sec-num">§ 02 — Bestellformular</div>
+    <h2 class="sec-h">Wessen Abdruck soll <em>auf dem Handschuh</em> sein?</h2>
+    <p>Wir benötigen einen verwertbaren Abdruck. Ein Foto reicht (Smartphone, gute Beleuchtung). Alternativ: Glas, Kaffeebecher, Türklinke — wir extrahieren selbst.</p>
+
+    <div class="form-grid">
+      <div class="form-field">
+        <div class="field-label">Antragsteller</div>
+        <div class="field-value">_______________________</div>
+      </div>
+      <div class="form-field">
+        <div class="field-label">Ziel-Person (Vor & Nachname)</div>
+        <div class="field-value">_______________________</div>
+      </div>
+      <div class="form-field">
+        <div class="field-label">Hand</div>
+        <div class="field-value"><span class="typed">☐ Links</span> &nbsp; <span class="typed">☐ Rechts</span> &nbsp; <span class="typed">☐ Beide</span></div>
+      </div>
+      <div class="form-field">
+        <div class="field-label">Größe</div>
+        <div class="field-value">S · M · L · XL · 2XL</div>
+      </div>
+      <div class="form-field">
+        <div class="field-label">Lieferadresse</div>
+        <div class="field-value">_______________________ (Packstation empfohlen)</div>
+      </div>
+      <div class="form-field">
+        <div class="field-label">Beleg-Quelle für Abdruck</div>
+        <div class="field-value">☐ Foto ☐ Glas ☐ Becher ☐ Andere</div>
+      </div>
+    </div>
+    <p style="margin-top:30px;font-family:var(--mono);font-size:0.85rem;color:var(--ink-soft)">
+      Preis: <strong style="color:var(--ink);font-family:var(--type);font-size:1.4rem">€ 249,–</strong> pro Paar · Lieferzeit: 14 Tage · Zahlung: Krypto oder Banküberweisung
+    </p>
+  </section>
+
+  <section class="upgrade" id="upgrade">
+    <div class="sec-num" style="color:var(--paper-dirty)">§ 03 — Upgrade · Q3 2026</div>
+    <h2 class="upgrade-h">Steuerquartett <em>Europa</em>.</h2>
+    <p>Statt nur einen Abdruck zu klonen, kannst du auch Steuerprofile von vier wohlhabenden EU-Bürgern in den Handschuh einarbeiten. Du gibst beim Finanzamt deren Abdruck ab. Sie zahlen deine Steuern.</p>
+    <p>Funktioniert in: Liechtenstein, Monaco, Schweiz (Zug), Luxemburg.</p>
+    <div class="quartet">
+      <div class="q-card">
+        <div class="country">★ Monaco</div>
+        <div class="rate">0 %<small>/ Einkommen</small></div>
+      </div>
+      <div class="q-card">
+        <div class="country">★ Zug · CH</div>
+        <div class="rate">11 %<small>/ Pauschal</small></div>
+      </div>
+      <div class="q-card">
+        <div class="country">★ Liechtenstein</div>
+        <div class="rate">12,5 %<small>/ Körperschaft</small></div>
+      </div>
+      <div class="q-card">
+        <div class="country">★ Luxemburg</div>
+        <div class="rate">17 %<small>/ KMU</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="disclaimer">
+    <p><strong>NB.</strong> Vorliegende Veröffentlichung ist ein FIKTIVES Produkt-Konzept aus einem deutschen Podcast (TMDA, Folge 34). Es bestehen keine Bestellmöglichkeiten und keine reale Produktionseinrichtung. Wir empfehlen ausdrücklich, keine Verbrechen zu begehen und keine fremden Fingerabdrücke zu fälschen. Niemand wurde im Rahmen dieser Konzeptseite identifiziert, abgebildet oder kompromittiert.</p>
+    <p>Idee eingesendet von Jonas Tiele (Hörer der Folge 34). Bewertet mit 20 von 24 Punkten.</p>
+  </section>
+
+</article>
+
+<footer>
+  <a href="/folge/34">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a>
+</footer>
+
+</body>
+</html>

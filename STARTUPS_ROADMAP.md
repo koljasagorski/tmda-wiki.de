@@ -31,23 +31,11 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 - [x] **Zusammenfuehren.de** · Folge 28 · 21/24 · brutalist mono (Space Mono + black/white/yellow/magenta)
 - [x] **THE 500** · Folge 39 · 20/24 · performance-athletic neon (Archivo Black + dark + neon green)
 - [x] **LEVEL Wohnmobil-Levelling** · Folge 26 · 20/24 · outdoor premium magazine (Fraunces + moss/sand/terra)
+- [x] **F·P·G Fingerabdruck-Handschuhe** · Folge 34 · 20/24 · classified dossier (Special Elite + paper/red-stamp)
+- [x] **LIKE MIKE** · Folge 10 · 20/24 · travel-influencer luxury (Bricolage Grotesque + hotpink/teal-gradients)
+- [x] **LKW-plane-kostenlos.de** · Folge 2 · 19/24 · highway brutalism (Anton + warning-yellow/orange/asphalt)
 
-### 📋 21/24 — Priorität 2
-
-- [ ] **Zusammenfuehren.de / Zusammenpunktfuehren** · Folge 28 · 21/24 · brutalist navi-app
-
-### 📋 20/24 — Priorität 3
-
-- [ ] **The 500** · Folge 39 · 20/24
-- [ ] **Fingerabdruck-Handschuhe** (von Hoerer Jonas Tiele) · Folge 34 · 20/24
-- [ ] **Wohnmobil-Levelling per Luftfahrwerk** · Folge 26 · 20/24
-- [ ] **Like Mike / Holiday in a life with** · Folge 10 · 20/24
-
-### 📋 19/24
-
-- [ ] **LKW-plane-kostenlos.de** · Folge 2 · 19/24
-
-### 📋 18/24
+### 📋 18/24 — Priorität 4
 
 - [ ] **Hello Flowers** · Folge 38 · 18/24
 - [ ] **rapidnews.com — KI Fake-News-Generator** · Folge 35 · 18/24

@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LIKE MIKE — Hol dir dasselbe Hotel wie dein Lieblings-Influencer</title>
+<meta name="description" content="Kuratierte Urlaubslisten von 480+ Influencern. Wo isst Sami? Welcher Pool? Welcher Bademantel? Mit exklusiven Behind-Scenes-Clips, die du erst nach Buchung siehst." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/like-mike" />
+<meta property="og:title" content="LIKE MIKE — Holiday in a life with" />
+<meta property="og:description" content="Hol dir den Urlaub deines Lieblings-Influencers. 1:1." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/like-mike" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"LIKE MIKE","applicationCategory":"TravelApplication"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --hotpink: #ff3d8a;
+  --hotpink-dark: #d9226d;
+  --teal: #00c9b1;
+  --teal-dark: #008f7d;
+  --sun: #ffd84d;
+  --cream: #fff8f0;
+  --sand: #f7eed8;
+  --ink: #1a1625;
+  --ink-soft: #5e5570;
+  --display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: var(--hotpink-dark); }
+a:hover { color: var(--hotpink); }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in oklab, var(--cream) 90%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.brand {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+}
+.brand .pink { color: var(--hotpink); }
+.nav-actions { display: flex; gap: 12px; align-items: center; }
+.search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  cursor: text;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  border: 2px solid;
+  text-decoration: none;
+  transition: all .15s;
+}
+.btn-pink { background: var(--hotpink); border-color: var(--hotpink); color: white; }
+.btn-pink:hover { background: var(--hotpink-dark); border-color: var(--hotpink-dark); color: white; }
+.btn-ink { background: var(--ink); border-color: var(--ink); color: white; }
+.btn-ink:hover { background: var(--ink-soft); color: white; }
+.btn-outline { background: transparent; border-color: var(--ink); color: var(--ink); }
+.btn-outline:hover { background: var(--ink); color: white; }
+
+/* Hero */
+.hero {
+  padding: 80px 32px;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  margin-bottom: 28px;
+}
+.hero h1 .gradient {
+  background: linear-gradient(135deg, var(--hotpink) 0%, var(--teal) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero h1 .strike { text-decoration: line-through; text-decoration-thickness: 6px; color: var(--ink-soft); opacity: 0.4; }
+.hero p.lead {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  margin-bottom: 32px;
+  max-width: 50ch;
+  font-weight: 400;
+}
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Hero collage */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  position: relative;
+}
+.tile {
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 12px;
+}
+.tile span { position: relative; z-index: 2; }
+.tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.5) 100%);
+}
+.tile-1 { grid-column: 1 / 2; grid-row: 1 / 3; background: linear-gradient(135deg, var(--hotpink), #ff7eb6); }
+.tile-2 { grid-column: 2 / 4; grid-row: 1 / 2; background: linear-gradient(135deg, var(--teal), #71e3d4); }
+.tile-3 { grid-column: 2 / 3; grid-row: 2 / 3; background: linear-gradient(135deg, var(--sun), #ffea88); color: var(--ink); }
+.tile-4 { grid-column: 3 / 4; grid-row: 2 / 4; background: linear-gradient(135deg, var(--ink), #4a3d65); }
+.tile-5 { grid-column: 1 / 3; grid-row: 3 / 4; background: linear-gradient(135deg, var(--hotpink), var(--teal)); }
+.tile-emoji { font-size: 2.5rem; display: block; margin-bottom: 4px; }
+
+/* Marquee Influencers */
+.influencers {
+  background: var(--ink);
+  color: white;
+  padding: 30px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+}
+.marquee span { display: inline-block; padding: 0 32px; }
+.marquee .dot { color: var(--hotpink); }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Pakete */
+.packs {
+  padding: 100px 32px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--hotpink);
+  margin-bottom: 16px;
+}
+.section-h {
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+  margin-bottom: 50px;
+}
+.section-h em { color: var(--teal-dark); font-style: italic; font-weight: 400; }
+.packs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.pack-card {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(26, 22, 37, 0.06);
+  transition: transform .2s, box-shadow .2s;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.pack-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(26, 22, 37, 0.12); }
+.pack-img {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  font-family: var(--display);
+  font-weight: 900;
+  color: white;
+  font-size: 2.2rem;
+  position: relative;
+}
+.pack-img::after {
+  content: 'VIDEO INSIDE 🔒';
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.pack-img-bushido { background: linear-gradient(135deg, var(--ink), var(--hotpink-dark)); }
+.pack-img-caro { background: linear-gradient(135deg, #ffb8d1, var(--sun)); color: var(--ink); }
+.pack-img-mahin { background: linear-gradient(135deg, var(--teal), #71e3d4); }
+.pack-img-sami { background: linear-gradient(135deg, var(--hotpink), #ff7eb6); }
+.pack-info { padding: 24px; }
+.pack-influencer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 0.95rem;
+  color: white;
+}
+.av-1 { background: var(--ink); }
+.av-2 { background: var(--hotpink); }
+.av-3 { background: var(--teal-dark); }
+.av-4 { background: var(--sun); color: var(--ink); }
+.pack-name { font-weight: 800; font-size: 0.95rem; }
+.pack-followers { font-size: 0.78rem; color: var(--ink-soft); }
+.pack-info h3 {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.pack-meta {
+  display: flex;
+  gap: 14px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.pack-meta span::before { content: '· '; margin-right: 2px; }
+.pack-meta span:first-child::before { content: ''; }
+.pack-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.pack-price {
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+.pack-price small { font-size: 0.5em; font-weight: 400; color: var(--ink-soft); }
+
+/* How */
+.how {
+  padding: 100px 32px;
+  background: linear-gradient(180deg, var(--sand) 0%, var(--cream) 100%);
+}
+.how-inner { max-width: 1100px; margin: 0 auto; }
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+.how-step {
+  background: white;
+  padding: 32px 28px;
+  border-radius: 24px;
+  position: relative;
+  border-top: 6px solid;
+}
+.how-step:nth-child(1) { border-top-color: var(--hotpink); }
+.how-step:nth-child(2) { border-top-color: var(--teal); }
+.how-step:nth-child(3) { border-top-color: var(--sun); }
+.how-step .step-emoji { font-size: 2rem; margin-bottom: 14px; }
+.how-step h3 {
+  font-family: var(--display);
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.how-step p { color: var(--ink-soft); font-size: 0.95rem; }
+
+/* Trustbar */
+.trust {
+  padding: 80px 32px;
+  background: var(--ink);
+  color: white;
+}
+.trust-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+.trust-num {
+  font-family: var(--display);
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, var(--hotpink), var(--teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.trust-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Footer-CTA */
+.cta {
+  padding: 100px 32px;
+  background: linear-gradient(135deg, var(--hotpink) 0%, var(--teal) 100%);
+  color: white;
+  text-align: center;
+}
+.cta h2 {
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+  margin-bottom: 24px;
+  max-width: 26ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta p { font-size: 1.1rem; max-width: 50ch; margin: 0 auto 32px; font-weight: 400; opacity: 0.95; }
+.cta .btn-ink { background: white; color: var(--ink); border-color: white; }
+.cta .btn-ink:hover { background: var(--ink); color: white; }
+
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.6);
+  padding: 40px 32px;
+  text-align: center;
+  font-size: 0.88rem;
+}
+footer a { color: var(--hotpink); }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; padding: 50px 24px; }
+  .collage { grid-template-rows: repeat(3, 80px); }
+  .how-grid { grid-template-columns: 1fr; }
+  .nav-actions .search { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="brand">like <span class="pink">mike</span></div>
+  <div class="nav-actions">
+    <span class="search">🔎 Suche nach Influencer …</span>
+    <a class="btn btn-pink" href="#packs">Pakete ansehen</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">▸ holiday in a life with</div>
+    <h1>
+      <span class="strike">Reise dahin,</span><br>
+      <span class="strike">wo schön ist.</span><br>
+      <span class="gradient">Reise dahin,<br>wo Sami war.</span>
+    </h1>
+    <p class="lead">
+      LIKE MIKE ist die Reiseplattform für Leute, die nicht selbst recherchieren wollen. Wir kuratieren die Urlaube von 480+ Influencern. Du buchst exakt das Hotel, das Restaurant, den Pool, den Bademantel — alles 1:1.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-pink" href="#packs">→ Reise wie ein Influencer</a>
+      <a class="btn btn-outline" href="#how">So funktioniert's</a>
+    </div>
+  </div>
+
+  <div class="collage">
+    <div class="tile tile-1"><span><span class="tile-emoji">🌴</span>Dubai</span></div>
+    <div class="tile tile-2"><span><span class="tile-emoji">🏝️</span>Bali</span></div>
+    <div class="tile tile-3"><span><span class="tile-emoji">🍹</span>Tulum</span></div>
+    <div class="tile tile-4"><span><span class="tile-emoji">⛰️</span>St. Moritz</span></div>
+    <div class="tile tile-5"><span><span class="tile-emoji">🥂</span>Mykonos</span></div>
+  </div>
+</section>
+
+<section class="influencers">
+  <div class="marquee">
+    <span>Bushido <span class="dot">·</span></span>
+    <span>Caro Daur <span class="dot">·</span></span>
+    <span>Sami Slimani <span class="dot">·</span></span>
+    <span>Survival Mahin <span class="dot">·</span></span>
+    <span>Simon Desue <span class="dot">·</span></span>
+    <span>Lisa Mantler <span class="dot">·</span></span>
+    <span>Bushido <span class="dot">·</span></span>
+    <span>Caro Daur <span class="dot">·</span></span>
+    <span>Sami Slimani <span class="dot">·</span></span>
+    <span>Survival Mahin <span class="dot">·</span></span>
+    <span>Simon Desue <span class="dot">·</span></span>
+    <span>Lisa Mantler <span class="dot">·</span></span>
+  </div>
+</section>
+
+<section class="packs" id="packs">
+  <div class="eyebrow">▸ Top Pakete</div>
+  <h2 class="section-h">Die meistgebuchten <em>Influencer-Urlaube</em>.</h2>
+  <div class="packs-grid">
+
+    <div class="pack-card">
+      <div class="pack-img pack-img-bushido">DUBAI</div>
+      <div class="pack-info">
+        <div class="pack-influencer">
+          <div class="avatar av-1">B</div>
+          <div>
+            <div class="pack-name">Bushido</div>
+            <div class="pack-followers">1,7 Mio Follower · IG</div>
+          </div>
+        </div>
+        <h3>5 Tage Burj Al Arab Suite</h3>
+        <div class="pack-meta">
+          <span>5 Tage</span>
+          <span>4 Restaurants</span>
+          <span>1 Yacht</span>
+          <span>4 Behind-Scenes-Clips</span>
+        </div>
+        <div class="pack-price-row">
+          <div class="pack-price">€ 18.490 <small>p.P.</small></div>
+          <a class="btn btn-ink" style="padding:8px 18px; font-size:0.82rem;">Buchen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pack-card">
+      <div class="pack-img pack-img-caro">PARIS · ST. TROPEZ</div>
+      <div class="pack-info">
+        <div class="pack-influencer">
+          <div class="avatar av-2">CD</div>
+          <div>
+            <div class="pack-name">Caro Daur</div>
+            <div class="pack-followers">2,4 Mio Follower · IG</div>
+          </div>
+        </div>
+        <h3>Fashion Week + Côte d'Azur</h3>
+        <div class="pack-meta">
+          <span>7 Tage</span>
+          <span>3 Outfits</span>
+          <span>6 Cafés</span>
+          <span>Mit ihren tatsächlichen Tischen</span>
+        </div>
+        <div class="pack-price-row">
+          <div class="pack-price">€ 12.900 <small>p.P.</small></div>
+          <a class="btn btn-ink" style="padding:8px 18px; font-size:0.82rem;">Buchen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pack-card">
+      <div class="pack-img pack-img-mahin">PHILIPPINEN</div>
+      <div class="pack-info">
+        <div class="pack-influencer">
+          <div class="avatar av-3">SM</div>
+          <div>
+            <div class="pack-name">Survival Mahin</div>
+            <div class="pack-followers">820k Follower · YT</div>
+          </div>
+        </div>
+        <h3>Inselüberlebens-Retreat</h3>
+        <div class="pack-meta">
+          <span>10 Tage</span>
+          <span>3 Inseln</span>
+          <span>Wasserfall-Lokation</span>
+          <span>Mit echtem Speer</span>
+        </div>
+        <div class="pack-price-row">
+          <div class="pack-price">€ 6.490 <small>p.P.</small></div>
+          <a class="btn btn-ink" style="padding:8px 18px; font-size:0.82rem;">Buchen</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pack-card">
+      <div class="pack-img pack-img-sami">TULUM</div>
+      <div class="pack-info">
+        <div class="pack-influencer">
+          <div class="avatar av-2">SS</div>
+          <div>
+            <div class="pack-name">Sami Slimani</div>
+            <div class="pack-followers">3,1 Mio Follower · IG</div>
+          </div>
+        </div>
+        <h3>5 Tage Cenotes & Sundowner</h3>
+        <div class="pack-meta">
+          <span>5 Tage</span>
+          <span>Cenote-Buchung</span>
+          <span>3 Restaurants</span>
+          <span>2 Yoga-Sessions</span>
+        </div>
+        <div class="pack-price-row">
+          <div class="pack-price">€ 4.890 <small>p.P.</small></div>
+          <a class="btn btn-ink" style="padding:8px 18px; font-size:0.82rem;">Buchen</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="eyebrow" style="color:var(--teal-dark)">▸ So funktioniert's</div>
+    <h2 class="section-h">Asset-light. <em>Provisions-stark.</em></h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="step-emoji">📱</div>
+        <h3>Influencer postet</h3>
+        <p>Wir scannen öffentliche Instagram- und TikTok-Posts, identifizieren Hotels, Restaurants und Locations mit Bilderkennung.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-emoji">📦</div>
+        <h3>Wir paketieren</h3>
+        <p>Aus den Stationen baut unser System ein buchbares Reise-Paket. Mit allen Originalen — Hotel, Tisch, Cocktail, Massage.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-emoji">💰</div>
+        <h3>Du buchst</h3>
+        <p>Beim Buchen fließen 8 % Provision an uns. Bei offiziell autorisierten Influencern fließen weitere 10 % an sie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="trust-inner">
+    <div>
+      <div class="trust-num">480+</div>
+      <div class="trust-label">Influencer im Katalog</div>
+    </div>
+    <div>
+      <div class="trust-num">12.400</div>
+      <div class="trust-label">Buchungen 2026</div>
+    </div>
+    <div>
+      <div class="trust-num">98 %</div>
+      <div class="trust-label">"so wie auf Insta"</div>
+    </div>
+    <div>
+      <div class="trust-num">€ 4.890</div>
+      <div class="trust-label">Durchschnittspaket</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Sieh aus wie ihn. Reise wie ihn.<br>Werd langsam ihn.</h2>
+  <p>Über 480 Influencer haben ihre Urlaube schon für dich vor-gegoogelt. Du musst nur noch buchen.</p>
+  <a class="btn btn-ink" href="#packs">→ Pakete ansehen</a>
+</section>
+
+<footer>
+  Fiktives Produkt-Konzept aus dem TMDA Podcast · Folge #10 · Bewertung 20/24<br>
+  <a href="/folge/10">← zur Folge im Wiki</a> &nbsp; · &nbsp; <a href="/startup-ideen">alle Startup-Ideen</a><br>
+  Keine offizielle Affiliation mit den genannten Personen · Satire
+</footer>
+
+</body>
+</html>
