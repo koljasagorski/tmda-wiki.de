@@ -84,6 +84,28 @@ export const STATIC_ROUTES = {
     priority: 0.5,
     changefreq: 'monthly',
   },
+  '/stats': {
+    title: 'Statistik-Dashboard — Daten aus 45 Folgen | TMDA Wiki',
+    description: 'Charts über alle TMDA-Folgen: Startup-Idee-Punkte über Zeit, häufigste Promis, Laufzeit-Verteilung, Rubriken-Heatmap.',
+    priority: 0.6,
+  },
+  '/quiz': {
+    title: 'TMDA-Quiz — Wie gut kennst du den Podcast? | TMDA Wiki',
+    description: 'Spielmodus: aus welcher Folge kommt das Zitat? Wer hat das gesagt? Wie viele Punkte bekam die Idee? Mit Score und Highscore.',
+    priority: 0.6,
+    robots: 'index,follow',
+  },
+  '/bingo': {
+    title: 'TMDA-Bingo für Live-Hören | TMDA Wiki',
+    description: '5×5-Bingo-Karte mit zufälligen TMDA-Begriffen. Tap zum Markieren, Reihen-Highlight bei Bingo. Perfekt für die Dienstags-Folge.',
+    priority: 0.6,
+    robots: 'index,follow',
+  },
+  '/timeline': {
+    title: 'Folgen-Timeline — Chronik aller TMDA-Folgen | TMDA Wiki',
+    description: 'Interaktive Zeitachse aller TMDA-Folgen mit Highlights, Top-Ideen, ersten Auftritten. Filterbar nach Themen und Punkten.',
+    priority: 0.7,
+  },
 };
 
 // Dynamische Routen — handled via metaForDynamic
