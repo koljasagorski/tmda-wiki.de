@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-20T06:45:03.346Z",
-  "count": 930,
+  "updatedAt": "2026-06-02T10:13:26.856Z",
+  "count": 944,
   "items": [
     {
       "name": "Bushido",
@@ -19,7 +19,8 @@
         35,
         37,
         41,
-        46
+        46,
+        49
       ]
     },
     {
@@ -58,7 +59,8 @@
         38,
         39,
         40,
-        42
+        42,
+        49
       ]
     },
     {
@@ -73,6 +75,32 @@
         42,
         45,
         47
+      ]
+    },
+    {
+      "name": "Michael Jackson",
+      "folgen": [
+        3,
+        16,
+        24,
+        28,
+        40,
+        42,
+        47,
+        49
+      ]
+    },
+    {
+      "name": "Matze Hielscher",
+      "folgen": [
+        12,
+        21,
+        22,
+        24,
+        28,
+        41,
+        46,
+        49
       ]
     },
     {
@@ -101,27 +129,39 @@
       ]
     },
     {
-      "name": "Michael Jackson",
+      "name": "Eminem",
       "folgen": [
         3,
-        16,
-        24,
-        28,
-        40,
-        42,
-        47
+        20,
+        21,
+        29,
+        35,
+        39,
+        49
       ]
     },
     {
-      "name": "Matze Hielscher",
+      "name": "Joko Winterscheidt",
       "folgen": [
+        4,
+        10,
+        19,
+        20,
+        25,
+        29,
+        49
+      ]
+    },
+    {
+      "name": "Paul Ripke",
+      "folgen": [
+        10,
         12,
-        21,
-        22,
-        24,
-        28,
-        41,
-        46
+        25,
+        31,
+        34,
+        47,
+        49
       ]
     },
     {
@@ -137,14 +177,26 @@
       ]
     },
     {
-      "name": "Eminem",
+      "name": "Casper",
       "folgen": [
-        3,
-        20,
-        21,
-        29,
-        35,
-        39
+        18,
+        28,
+        32,
+        39,
+        41,
+        42,
+        49
+      ]
+    },
+    {
+      "name": "Drake",
+      "folgen": [
+        1,
+        7,
+        11,
+        32,
+        40,
+        49
       ]
     },
     {
@@ -170,17 +222,6 @@
       ]
     },
     {
-      "name": "Joko Winterscheidt",
-      "folgen": [
-        4,
-        10,
-        19,
-        20,
-        25,
-        29
-      ]
-    },
-    {
       "name": "Peter Maffay",
       "folgen": [
         4,
@@ -188,17 +229,6 @@
         25,
         42,
         44,
-        47
-      ]
-    },
-    {
-      "name": "Paul Ripke",
-      "folgen": [
-        10,
-        12,
-        25,
-        31,
-        34,
         47
       ]
     },
@@ -236,17 +266,6 @@
       ]
     },
     {
-      "name": "Casper",
-      "folgen": [
-        18,
-        28,
-        32,
-        39,
-        41,
-        42
-      ]
-    },
-    {
       "name": "Friedrich Merz",
       "folgen": [
         19,
@@ -255,16 +274,6 @@
         43,
         44,
         47
-      ]
-    },
-    {
-      "name": "Drake",
-      "folgen": [
-        1,
-        7,
-        11,
-        32,
-        40
       ]
     },
     {
@@ -318,6 +327,26 @@
       ]
     },
     {
+      "name": "Udo Lindenberg",
+      "folgen": [
+        5,
+        17,
+        25,
+        47,
+        49
+      ]
+    },
+    {
+      "name": "Shirin David",
+      "folgen": [
+        10,
+        21,
+        26,
+        46,
+        49
+      ]
+    },
+    {
       "name": "Olli Pocher",
       "folgen": [
         14,
@@ -335,6 +364,16 @@
         22,
         25,
         40
+      ]
+    },
+    {
+      "name": "Materia",
+      "folgen": [
+        18,
+        38,
+        39,
+        41,
+        49
       ]
     },
     {
@@ -378,6 +417,15 @@
       ]
     },
     {
+      "name": "Shindy",
+      "folgen": [
+        2,
+        3,
+        15,
+        49
+      ]
+    },
+    {
       "name": "Kollegah",
       "folgen": [
         3,
@@ -414,15 +462,6 @@
       ]
     },
     {
-      "name": "Udo Lindenberg",
-      "folgen": [
-        5,
-        17,
-        25,
-        47
-      ]
-    },
-    {
       "name": "Mark Forster",
       "folgen": [
         5,
@@ -455,15 +494,6 @@
         10,
         32,
         38,
-        46
-      ]
-    },
-    {
-      "name": "Shirin David",
-      "folgen": [
-        10,
-        21,
-        26,
         46
       ]
     },
@@ -519,15 +549,6 @@
         38,
         38,
         40
-      ]
-    },
-    {
-      "name": "Materia",
-      "folgen": [
-        18,
-        38,
-        39,
-        41
       ]
     },
     {
@@ -594,19 +615,20 @@
       ]
     },
     {
+      "name": "Sarah Engels",
+      "folgen": [
+        37,
+        38,
+        42,
+        49
+      ]
+    },
+    {
       "name": "Montana Black",
       "folgen": [
         1,
         9,
         36
-      ]
-    },
-    {
-      "name": "Shindy",
-      "folgen": [
-        2,
-        3,
-        15
       ]
     },
     {
@@ -679,6 +701,14 @@
         10,
         24,
         46
+      ]
+    },
+    {
+      "name": "Eko Fresh",
+      "folgen": [
+        10,
+        24,
+        49
       ]
     },
     {
@@ -866,14 +896,6 @@
       ]
     },
     {
-      "name": "Sarah Engels",
-      "folgen": [
-        37,
-        38,
-        42
-      ]
-    },
-    {
       "name": "Paula Hartmann",
       "folgen": [
         42,
@@ -1029,13 +1051,6 @@
       ]
     },
     {
-      "name": "Eko Fresh",
-      "folgen": [
-        10,
-        24
-      ]
-    },
-    {
       "name": "Lou Pearlman",
       "folgen": [
         10,
@@ -1082,6 +1097,13 @@
       "folgen": [
         11,
         13
+      ]
+    },
+    {
+      "name": "Steven Spielberg",
+      "folgen": [
+        11,
+        49
       ]
     },
     {
@@ -1488,6 +1510,13 @@
       "folgen": [
         33,
         43
+      ]
+    },
+    {
+      "name": "Mutter Theresa",
+      "folgen": [
+        34,
+        49
       ]
     },
     {
@@ -2250,12 +2279,6 @@
     },
     {
       "name": "Russ",
-      "folgen": [
-        11
-      ]
-    },
-    {
-      "name": "Steven Spielberg",
       "folgen": [
         11
       ]
@@ -4493,12 +4516,6 @@
       ]
     },
     {
-      "name": "Mutter Theresa",
-      "folgen": [
-        34
-      ]
-    },
-    {
       "name": "Will.i.am",
       "folgen": [
         35
@@ -6014,6 +6031,90 @@
       "name": "Vivian Karl",
       "folgen": [
         47
+      ]
+    },
+    {
+      "name": "Alessio (Sarah Engels' Sohn)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Loredana",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Siovo",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Joe Budden",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Kool Savas",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Samy Deluxe",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Manuellsen",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Napoleon",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Christopher Columbus",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Mohammed Ali / Cassius Clay",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Cat Stevens / Yusuf Islam",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Audio88 & Yassin",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Hells Angels",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "name": "Crazy Frog & Schnappi",
+      "folgen": [
+        49
       ]
     }
   ]

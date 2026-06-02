@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-20T06:45:03.346Z",
-  "count": 252,
+  "updatedAt": "2026-06-02T10:13:26.856Z",
+  "count": 261,
   "items": [
     {
       "ort": "Berlin",
@@ -1595,6 +1595,60 @@
       "ort": "Brasilien (Bungee Jump Video)",
       "folgen": [
         47
+      ]
+    },
+    {
+      "ort": "Portugal (Atlantikkueste / Pilgerweg, ~300 km)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Berlin (Uniqlo am Kurfuerstendamm, Kollwitzmarkt)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Mekka (Kaaba)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Turin / Italien (Flohmarkt)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Klimasand (Graffiti-Workshop)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Niederlande / Holland (Zeugenschutz-Story)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Wien (ESC-Finale)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Sizilien (Sarah Engels' Wurzeln)",
+      "folgen": [
+        49
+      ]
+    },
+    {
+      "ort": "Sylt (Fasten-/Detox-Luxushotel)",
+      "folgen": [
+        49
       ]
     }
   ]

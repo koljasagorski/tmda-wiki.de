@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 30/30 LIVE ✅
+## Status — 31/31 LIVE ✅
 
-Alle Startup-Ideen mit Bewertung aus den Folgen 1-47 haben jetzt eine eigene Page. Jede mit komplett individuellem Design-Stil.
+Alle Startup-Ideen mit Bewertung aus den Folgen 1-49 haben jetzt eine eigene Page. Jede mit komplett individuellem Design-Stil.
 
 ### 22/24 — Top-Tier
 
@@ -83,6 +83,7 @@ Alle Startup-Ideen mit Bewertung aus den Folgen 1-47 haben jetzt eine eigene Pag
 
 ### 11/24
 
+- [x] **Reroute Your Praise — Kaba-Spiegel-Satellit-Abo** · Folge 49 · celestial astro-spiritual SaaS (Amiri + Space Grotesk, midnight/gold/beam)
 - [x] **Hundeschule der anderen Art** · Folge 11 · xerox flyer (Special Elite + Patrick Hand)
 - [x] **WHAT LIFE WEIGHTS** · Folge 9 · contemplative magazine (Cardo + olive/cream)
 

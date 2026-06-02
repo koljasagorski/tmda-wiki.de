@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-05-20T06:45:03.346Z",
-  "count": 44,
+  "updatedAt": "2026-06-02T10:13:26.856Z",
+  "count": 45,
   "items": [
+    {
+      "folge": 49,
+      "datum": "2026-06-02",
+      "idee": "Kaba-Spiegel-Satellit-Abo / Reroute Your Praise",
+      "beschreibung": "Ein kleiner Satellit mit einem guenstigen Ikea-Spiegel wird per SpaceX in den Orbit geschossen. Fuer 10 EUR/Monat (Abo unter spiegel-satellit-abo.de) richtet sich der Spiegel automatisch so aus, dass er jedes Gebet Richtung Mekka/Kaaba umleitet - egal wo auf der Welt man betet und wie wenig Platz man hat (etwa im winzigen Hotelzimmer auf der Pilgerfahrt). Slogan: 'Egal wohin du betest, egal wie w…",
+      "punkte": 11,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt 11 von 24 - 'unteres Mittelfeld'. Die Idee ist riesig gedacht (eine Milliarde potenzielle Kunden), aber die Umsetzung mit Orbit-Spiegeln und das schwer aussprechbare Wortspiel-Naming ziehen die Bewertung runter."
+    },
     {
       "folge": 47,
       "datum": "2026-05-19",

@@ -1,0 +1,146 @@
+{
+  "folge": 49,
+  "titel": "Sarah Engels, bitte verklag uns nicht!",
+  "laufzeit": "1:22:38",
+  "themen": [
+    "Nisse ist Vater geworden (Babyboy) - der Auserwaehlte mit 27% Gehirnleistung",
+    "Fun Fact: Babywal trinkt 600 l Muttermilch pro Tag unter Wasser",
+    "Kompassuhr-Idee: nur ein (fluoreszierender Taucher-)Kompass ums Handgelenk",
+    "Fynns Mode-Kollektion mit extra kurzen Jackett-Aermeln (alter Ford-CEO)",
+    "Hammergotchi / Mama-Goci: Tamagotchi-Hammer fuer Zimmermaenner mit Kamera-Zeitraffer",
+    "Tamagotchi-Aktien-Story: Buchstabendreher, falsche Firma gekauft, 500 EUR Gewinn",
+    "Musiktipp Siovo - Song 'Baby Boy' und das emotionale Video",
+    "Rap-Beef-Debatte (Eko vs Echo, Samy vs Kool Savas, Selfmade vs Aggro Berlin)",
+    "Fynns 300-km-Pilgerwanderung mit seiner Mutter an Portugals Atlantikkueste",
+    "Blasen-Drama und Apotheken-OP an Mutters Fuss (150 EUR, Klebeband + Spritze)",
+    "Analog-Detox: kein Handy, Apps deinstalliert, ganze Songs auf dem Weg geschrieben",
+    "ESC: Sarah Engels vertritt Deutschland und landet auf Platz 23 (von 25)",
+    "Die Wette: Verlierer kauft fuer 100 EUR Sarah-Engels-Merch - aber sie hat keinen Shop",
+    "Illegale Sarah-Engels-T-Shirts bei Uniqlo bedrucken (Copyright-Warnung, Servicekraft)",
+    "Startup-Idee: Kaba-Spiegel-Satellit-Abo / Reroute Your Praise",
+    "RFS (Random Facts): Hautzellen, Erroeten + Magenschleimhaut, Zwergziegen-Akzente",
+    "Joe-Budden-Story: Fynns peinliche MySpace-DM in dessen Suchtphase",
+    "Casper findet Fynns Musik cool, hat ihm aber nie geschrieben (Matze-Hielscher-Talk)",
+    "Graffiti-Workshop im Klimasand (Kurse fuer Kinder, gegen den Handschuh-Zipfel spruehen)",
+    "Panama-Kanal-T-Shirt und die Darmspuelungs-/Einlauf-Debatte",
+    "Talahon-Entschuldigung: Folgentitel 47 hatte diskriminierenden Beigeschmack",
+    "TMDA als bester Podcast der Welt + Tipp: eine Folge halbieren und langsam hoeren"
+  ],
+  "kurzbeschreibung": "Nisse ist Vater geworden, Fynn kehrt von einer 300-km-Pilgerwanderung mit seiner Mutter aus Portugal zurueck (inkl. Blasen-OP in der Apotheke) und loest die ESC-Wette ein, indem er bei Uniqlo illegale Sarah-Engels-T-Shirts bedruckt. Die Startup-Idee der Woche: ein Satelliten-Spiegel im Orbit, der jedes Gebet automatisch Richtung Mekka umleitet.",
+  "startup_idee": {
+    "idee": "Kaba-Spiegel-Satellit-Abo / Reroute Your Praise",
+    "beschreibung": "Ein kleiner Satellit mit einem guenstigen Ikea-Spiegel wird per SpaceX in den Orbit geschossen. Fuer 10 EUR/Monat (Abo unter spiegel-satellit-abo.de) richtet sich der Spiegel automatisch so aus, dass er jedes Gebet Richtung Mekka/Kaaba umleitet - egal wo auf der Welt man betet und wie wenig Platz man hat (etwa im winzigen Hotelzimmer auf der Pilgerfahrt). Slogan: 'Egal wohin du betest, egal wie wenig Platz du hast - deine Gebete kommen immer an.' Spaeter umbenannt in 'Reroute Your Praise' (Pray Mirror), weil die Zielgruppe von einer Milliarde+ Muslimen den deutschen Domainnamen nicht aussprechen kann.",
+    "punkte": 11,
+    "max_punkte": 24,
+    "begruendung": "Nisse vergibt 11 von 24 - 'unteres Mittelfeld'. Die Idee ist riesig gedacht (eine Milliarde potenzielle Kunden), aber die Umsetzung mit Orbit-Spiegeln und das schwer aussprechbare Wortspiel-Naming ziehen die Bewertung runter.",
+    "domain": "spiegel-satellit-abo.de"
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Ein Babywal trinkt rund 600 l Muttermilch pro Tag - unter Wasser.",
+    "Beton ist pro Kubikmeter deutlich schwerer als Wasser (Blei sowieso).",
+    "Jede Minute verlieren wir etwa 30.000 abgestorbene Hautzellen.",
+    "Wenn Frauen erroeten, roetet sich auch ihre Magenschleimhaut mit.",
+    "Zwergziegen entwickeln je nach sozialer Gruppe unterschiedliche 'Akzente'.",
+    "Schwangere Frauen sind tendenziell duennhaeutiger, weil sich die Haut strafft - daher der Begriff."
+  ],
+  "erfindungen": [
+    {
+      "name": "Hammergotchi (Mama-Goci)",
+      "beschreibung": "Ein Zimmermanns-Hammer als Tamagotchi: Jeder Schlag zaehlt wie ein Streak bei der Gamification und haelt das Tier (und deinen Instagram-Account) am Leben. Hinten am Hammer, bei den Nagelzieher-Zacken, sitzt eine Meta-Ray-Ban-artige Kamera, die bei jedem Schlag ein Foto schiesst und daraus automatisch einen Zeitraffer 'dein Leben als Zimmermann' baut."
+    },
+    {
+      "name": "Kompassuhr",
+      "beschreibung": "Eine Uhr, die nur aus einem grossen, fluoreszierenden Taucher-Kompass ums Handgelenk besteht. Teil von Fynns geplanter Mode-Kollektion mit extra kurzen Jackett-Aermeln (Vorbild: ein alter Ford-CEO), damit Uhr bzw. Kompass immer sichtbar bleiben. Nisse findet sie viel zu gross."
+    }
+  ],
+  "orte": [
+    "Portugal (Atlantikkueste / Pilgerweg, ~300 km)",
+    "Berlin (Uniqlo am Kurfuerstendamm, Kollwitzmarkt)",
+    "Mekka (Kaaba)",
+    "Turin / Italien (Flohmarkt)",
+    "Klimasand (Graffiti-Workshop)",
+    "Niederlande / Holland (Zeugenschutz-Story)",
+    "Wien (ESC-Finale)",
+    "Sizilien (Sarah Engels' Wurzeln)",
+    "Sylt (Fasten-/Detox-Luxushotel)"
+  ],
+  "gaeste_erwaehnte": [
+    "Sarah Engels",
+    "Alessio (Sarah Engels' Sohn)",
+    "Shirin David",
+    "Loredana",
+    "Siovo",
+    "Joe Budden",
+    "Eminem",
+    "Drake",
+    "Casper",
+    "Matze Hielscher",
+    "Eko Fresh",
+    "Kool Savas",
+    "Samy Deluxe",
+    "Bushido",
+    "Shindy",
+    "Manuellsen",
+    "Materia",
+    "Paul Ripke",
+    "Joko Winterscheidt",
+    "Napoleon",
+    "Mutter Theresa",
+    "Michael Jackson",
+    "Donald Trump",
+    "Christopher Columbus",
+    "Mohammed Ali / Cassius Clay",
+    "Cat Stevens / Yusuf Islam",
+    "Audio88 & Yassin",
+    "Steven Spielberg",
+    "Udo Lindenberg",
+    "Hells Angels",
+    "Crazy Frog & Schnappi"
+  ],
+  "zitate": [
+    {
+      "text": "Ich bin Vater, Leute.",
+      "kontext": "Nisse verkuendet in der 'Beichte des Tages', dass er einen Sohn bekommen hat."
+    },
+    {
+      "text": "Sarah Engels hat uns heftig vertreten.",
+      "kontext": "Fynn verteidigt Sarah Engels nach ihrem 23. Platz beim ESC - als Fan der ersten Stunde."
+    },
+    {
+      "text": "Egal wohin du betest, egal wie wenig Platz du hast - deine Gebete kommen immer an.",
+      "kontext": "Die Marketing-Slogans fuer das Kaba-Spiegel-Satellit-Abo / Reroute Your Praise."
+    },
+    {
+      "text": "Ich bin das Kaesebrot der Gesellschaft.",
+      "kontext": "Fynn beschreibt sich als absoluter Durchschnitt, an dem sich niemand stoert - so wie Sarah Engels die Mitte ist."
+    },
+    {
+      "text": "Reroute your praise.",
+      "kontext": "Das englische Rebranding der Gebets-Spiegel-Idee, weil eine Milliarde Muslime 'Spiegel-Satellit-Abo' nicht aussprechen koennen."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Hammergotchi / Mama-Goci",
+      "bedeutung": "Tamagotchi-Hammer fuer Zimmermaenner: Jeder Schlag haelt das virtuelle Tier am Leben, eine Kamera hinten am Hammer baut daraus einen Zeitraffer 'dein Leben als Zimmermann'."
+    },
+    {
+      "begriff": "Kaba-Spiegel-Satellit-Abo / Reroute Your Praise",
+      "bedeutung": "Startup-Idee der Folge: ein Spiegel-Satellit im Orbit, der per Abo (10 EUR/Monat) jedes Gebet automatisch Richtung Mekka umleitet, egal wo man steht."
+    },
+    {
+      "begriff": "RFS / Random Anonymous Facts",
+      "bedeutung": "Wiederkehrende Fakten-Rubrik. In dieser Folge ohne Internet 'aus dem Kopf' praesentiert (Hautzellen, Erroeten, Zwergziegen-Akzente)."
+    },
+    {
+      "begriff": "Kaesebrot der Gesellschaft",
+      "bedeutung": "Fynns Selbstbeschreibung als absoluter Durchschnitt, der keinem wehtut und ueber den sich keiner beschwert - parallel zu Sarah Engels als 'Mitte'."
+    },
+    {
+      "begriff": "Panama-Kanal",
+      "bedeutung": "Fynns Secondhand-T-Shirt mit der Aufschrift 'Panama Kanal' wird zum Wortwitz-Anlass fuer eine ausgiebige Darmspuelungs- und Einlauf-Debatte."
+    }
+  ]
+}
