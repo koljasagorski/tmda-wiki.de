@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-20T06:45:03.346Z",
-  "count": 187,
+  "updatedAt": "2026-06-02T10:13:26.856Z",
+  "count": 192,
   "items": [
     {
       "begriff": "1F1P",
@@ -303,6 +303,11 @@
       "folge": 20
     },
     {
+      "begriff": "Hammergotchi / Mama-Goci",
+      "bedeutung": "Tamagotchi-Hammer fuer Zimmermaenner: Jeder Schlag haelt das virtuelle Tier am Leben, eine Kamera hinten am Hammer baut daraus einen Zeitraffer 'dein Leben als Zimmermann'.",
+      "folge": 49
+    },
+    {
       "begriff": "Hartz 4 Raupe",
       "bedeutung": "Regionalzug, in dem alle Klassen gemischt einsteigen (ohne 1. Klasse)",
       "folge": 26
@@ -371,6 +376,16 @@
       "begriff": "Jonas von Schwan",
       "bedeutung": "Erfundene Persona/Startup-Gruender (gemeint ist GZUZ/Jonas) der Schwaene nach Indien exportiert",
       "folge": 33
+    },
+    {
+      "begriff": "Kaba-Spiegel-Satellit-Abo / Reroute Your Praise",
+      "bedeutung": "Startup-Idee der Folge: ein Spiegel-Satellit im Orbit, der per Abo (10 EUR/Monat) jedes Gebet automatisch Richtung Mekka umleitet, egal wo man steht.",
+      "folge": 49
+    },
+    {
+      "begriff": "Kaesebrot der Gesellschaft",
+      "bedeutung": "Fynns Selbstbeschreibung als absoluter Durchschnitt, der keinem wehtut und ueber den sich keiner beschwert - parallel zu Sarah Engels als 'Mitte'.",
+      "folge": 49
     },
     {
       "begriff": "Kaimarane",
@@ -578,6 +593,11 @@
       "folge": 45
     },
     {
+      "begriff": "Panama-Kanal",
+      "bedeutung": "Fynns Secondhand-T-Shirt mit der Aufschrift 'Panama Kanal' wird zum Wortwitz-Anlass fuer eine ausgiebige Darmspuelungs- und Einlauf-Debatte.",
+      "folge": 49
+    },
+    {
       "begriff": "Panikherz",
       "bedeutung": "Buch von Benjamin von Stuckrad-Barre, das die Beziehung zu Udo Lindenberg und das Comeback mit 'Stark wie zwei' beschreibt.",
       "folge": 47
@@ -666,6 +686,11 @@
       "begriff": "RFs",
       "bedeutung": "Random anonymous Facts von Nisse",
       "folge": 38
+    },
+    {
+      "begriff": "RFS / Random Anonymous Facts",
+      "bedeutung": "Wiederkehrende Fakten-Rubrik. In dieser Folge ohne Internet 'aus dem Kopf' praesentiert (Hautzellen, Erroeten, Zwergziegen-Akzente).",
+      "folge": 49
     },
     {
       "begriff": "Rotten.com / World Star Hip Hop",

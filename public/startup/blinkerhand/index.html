@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkerhand – Die ausfahrbare Metallhand für deinen Blinker</title>
+<meta name="description" content="Blinkerhand: Beim Blinken fährt eine 2,5 m lange Metallhand aus der Tür und zeigt unmissverständlich den Spurwechsel an. DIN-konformes Kfz-Zubehör.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/blinkerhand">
+
+<meta property="og:type" content="product">
+<meta property="og:title" content="Blinkerhand – Die ausfahrbare Metallhand für deinen Blinker">
+<meta property="og:description" content="Beim Blinken fährt eine 2,5 m lange Metallhand aus der Tür und zeigt anderen Verkehrsteilnehmern unmissverständlich den Spurwechsel an. DIN-konformes Aftermarket-Zubehör.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/blinkerhand">
+<meta property="og:image" content="https://tmda-wiki.de/startup/blinkerhand/og.png">
+<meta property="og:site_name" content="Blinkerhand">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blinkerhand – Die ausfahrbare Metallhand für deinen Blinker">
+<meta name="twitter:description" content="2,5 m Stahl, die für dich blinken. DIN-konformes Kfz-Zubehör für den unmissverständlichen Spurwechsel.">
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/blinkerhand/og.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Blinkerhand",
+  "image": "https://tmda-wiki.de/startup/blinkerhand/og.png",
+  "description": "Erweiterung des Autoblinkers: Beim Betätigen des Blinkers fährt aus der entsprechenden Fahrzeugseite eine 2,5 Meter lange Metallhand aus, um anderen Verkehrsteilnehmern den Spurwechsel unmissverständlich anzuzeigen.",
+  "brand": { "@type": "Brand", "name": "Blinkerhand" },
+  "category": "Kfz-Zubehör / Aftermarket",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://tmda-wiki.de/startup/blinkerhand",
+    "priceCurrency": "EUR",
+    "price": "249.90",
+    "availability": "https://schema.org/PreOrder"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --carbon:#0d0f12;
+    --carbon-2:#15181d;
+    --steel:#2a2f37;
+    --steel-light:#3a4049;
+    --signal:#e21f26;
+    --signal-glow:#ff3b41;
+    --txt:#e7e9ec;
+    --txt-dim:#9aa2ad;
+    --line:#4a525d;
+    --amber:#ffb000;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Rajdhani',sans-serif;
+    background:
+      linear-gradient(135deg,rgba(255,255,255,.02) 25%,transparent 25%) 0 0/14px 14px,
+      linear-gradient(225deg,rgba(0,0,0,.25) 25%,transparent 25%) 0 0/14px 14px,
+      radial-gradient(circle at 50% -10%,#1b1f25,var(--carbon) 60%);
+    color:var(--txt);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+  .mono{font-family:'JetBrains Mono',monospace}
+  a{color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  /* ---- top bar ---- */
+  .topbar{
+    border-bottom:1px solid var(--steel);
+    background:rgba(13,15,18,.85);
+    backdrop-filter:blur(6px);
+    position:sticky;top:0;z-index:50;
+  }
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:700;letter-spacing:.06em}
+  .brand .mark{
+    width:30px;height:30px;border-radius:5px;
+    background:linear-gradient(160deg,var(--signal-glow),var(--signal));
+    display:grid;place-items:center;color:#fff;font-size:18px;
+    box-shadow:0 0 14px rgba(226,31,38,.5);
+  }
+  .topbar nav{display:flex;gap:26px;font-size:.92rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-dim)}
+  .topbar nav a{text-decoration:none}
+  .topbar nav a:hover{color:var(--signal-glow)}
+  @media(max-width:720px){.topbar nav{display:none}}
+
+  /* ---- badges ---- */
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid var(--line);border-radius:3px;
+    padding:6px 12px;font-size:.78rem;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--txt-dim);
+    background:linear-gradient(180deg,rgba(255,255,255,.04),transparent);
+  }
+  .badge.din{border-color:var(--signal);color:#fff;background:rgba(226,31,38,.08)}
+  .badge.din b{color:var(--signal-glow)}
+
+  /* ---- hero ---- */
+  .hero{padding:64px 0 40px;position:relative}
+  .hero .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center}
+  @media(max-width:900px){.hero .grid{grid-template-columns:1fr;gap:32px}}
+  .kicker{color:var(--signal-glow);font-weight:700;letter-spacing:.22em;font-size:.85rem;text-transform:uppercase;margin-bottom:14px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:700}
+  .hero h1 .red{color:var(--signal)}
+  .hero p.lead{margin:20px 0 26px;font-size:1.18rem;color:var(--txt-dim);max-width:34ch;font-weight:500}
+  .hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    font-weight:700;font-size:1.15rem;letter-spacing:.06em;
+    padding:14px 28px;border-radius:4px;text-decoration:none;cursor:pointer;border:0;
+  }
+  .btn-primary{
+    background:linear-gradient(160deg,var(--signal-glow),var(--signal));color:#fff;
+    box-shadow:0 6px 24px rgba(226,31,38,.4),inset 0 1px 0 rgba(255,255,255,.25);
+    transition:transform .15s,box-shadow .15s;
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(226,31,38,.55)}
+  .btn-ghost{border:1px solid var(--line);color:var(--txt);background:transparent}
+  .btn-ghost:hover{border-color:var(--signal)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+  /* ---- technical drawing ---- */
+  .drawing{
+    background:
+      linear-gradient(rgba(74,82,93,.13) 1px,transparent 1px) 0 0/26px 26px,
+      linear-gradient(90deg,rgba(74,82,93,.13) 1px,transparent 1px) 0 0/26px 26px,
+      var(--carbon-2);
+    border:1px solid var(--steel);border-radius:8px;
+    padding:18px;position:relative;
+    box-shadow:inset 0 0 60px rgba(0,0,0,.5);
+  }
+  .drawing .tag{
+    position:absolute;top:14px;left:14px;font-size:.72rem;letter-spacing:.12em;
+    color:var(--txt-dim);text-transform:uppercase;
+  }
+  .drawing .tag2{position:absolute;bottom:14px;right:16px;font-size:.7rem;color:var(--txt-dim)}
+  .drawing svg{width:100%;height:auto;display:block}
+  .dim-text{font-family:'JetBrains Mono',monospace;fill:var(--amber);font-size:13px;letter-spacing:.02em}
+  .lbl{font-family:'JetBrains Mono',monospace;fill:var(--txt-dim);font-size:11px}
+
+  /* hand extend animation */
+  @keyframes extend{
+    0%,18%{transform:translateX(0)}
+    46%,72%{transform:translateX(168px)}
+    100%{transform:translateX(0)}
+  }
+  @keyframes blink{
+    0%,18%,72%,100%{opacity:.25}
+    30%,60%{opacity:1}
+  }
+  .hand-grp{animation:extend 5.5s cubic-bezier(.6,0,.3,1) infinite}
+  .blink-ind{animation:blink 5.5s infinite}
+  @media(prefers-reduced-motion:reduce){
+    .hand-grp{animation:none;transform:translateX(110px)}
+    .blink-ind{animation:none;opacity:1}
+  }
+
+  /* ---- sections ---- */
+  section.block{padding:58px 0;border-top:1px solid var(--steel)}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:34px}
+  .sec-head .num{font-family:'JetBrains Mono',monospace;color:var(--signal);font-size:.9rem}
+  .sec-head h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:700}
+  .sub{color:var(--txt-dim);max-width:60ch;margin-top:-22px;margin-bottom:34px;font-size:1.05rem}
+
+  /* use cases */
+  .cases{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media(max-width:900px){.cases{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.cases{grid-template-columns:1fr}}
+  .case{
+    background:linear-gradient(180deg,var(--carbon-2),#101216);
+    border:1px solid var(--steel);border-radius:8px;padding:22px;
+    position:relative;overflow:hidden;transition:border-color .2s,transform .2s;
+  }
+  .case:hover{border-color:var(--signal);transform:translateY(-3px)}
+  .case::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;
+    background:linear-gradient(90deg,var(--signal),transparent)}
+  .case .ico{font-size:1.9rem;margin-bottom:12px;display:block}
+  .case h3{font-size:1.32rem;margin-bottom:8px}
+  .case p{color:var(--txt-dim);font-size:.98rem;font-weight:500}
+  .case .ref{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--steel-light);margin-top:14px;letter-spacing:.05em}
+
+  /* install + spec */
+  .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px}
+  @media(max-width:900px){.split{grid-template-columns:1fr;gap:32px}}
+  ol.steps{list-style:none;counter-reset:s}
+  ol.steps li{
+    counter-increment:s;position:relative;padding:16px 0 16px 56px;
+    border-bottom:1px dashed var(--steel);
+  }
+  ol.steps li:last-child{border-bottom:0}
+  ol.steps li::before{
+    content:counter(s,decimal-leading-zero);position:absolute;left:0;top:14px;
+    font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.5rem;
+    color:var(--signal);width:40px;text-align:center;
+    border:1px solid var(--steel);border-radius:5px;padding:2px 0;background:var(--carbon-2);
+  }
+  ol.steps li h3{font-size:1.18rem;margin-bottom:4px}
+  ol.steps li p{color:var(--txt-dim);font-size:.95rem;font-weight:500}
+
+  table.spec{width:100%;border-collapse:collapse;font-size:.95rem}
+  table.spec caption{
+    text-align:left;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    letter-spacing:.04em;font-size:1.25rem;color:#fff;padding-bottom:12px;
+  }
+  table.spec th,table.spec td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--steel)}
+  table.spec th{color:var(--txt-dim);font-weight:600;width:46%;font-size:.86rem;text-transform:uppercase;letter-spacing:.06em}
+  table.spec td{font-family:'JetBrains Mono',monospace;color:var(--txt)}
+  table.spec tr:hover td,table.spec tr:hover th{background:rgba(226,31,38,.05)}
+  .ok{color:#3ad17a}
+
+  /* compat */
+  .compat{margin-top:26px;border:1px solid var(--steel);border-radius:8px;overflow:hidden}
+  .compat .row{display:flex;justify-content:space-between;padding:11px 16px;font-size:.92rem;border-bottom:1px solid var(--steel)}
+  .compat .row:last-child{border-bottom:0}
+  .compat .row span:first-child{color:var(--txt-dim)}
+  .compat .row .mono{color:var(--txt)}
+
+  /* CTA */
+  .cta{
+    text-align:center;
+    background:
+      radial-gradient(circle at 50% 0%,rgba(226,31,38,.18),transparent 60%),
+      linear-gradient(180deg,var(--carbon-2),#0a0c0f);
+    border:1px solid var(--steel);border-radius:12px;padding:54px 24px;
+  }
+  .cta h2{font-size:clamp(2rem,5vw,3.2rem)}
+  .cta p{color:var(--txt-dim);max-width:44ch;margin:14px auto 28px;font-size:1.1rem}
+  .price{font-family:'Barlow Condensed',sans-serif;font-size:2.4rem;color:#fff;font-weight:700}
+  .price small{font-size:1rem;color:var(--txt-dim);font-weight:600}
+  .preorder{display:flex;gap:10px;max-width:440px;margin:24px auto 0;flex-wrap:wrap}
+  .preorder input{
+    flex:1;min-width:200px;background:var(--carbon);border:1px solid var(--steel);
+    color:var(--txt);padding:13px 16px;border-radius:4px;font-family:'Rajdhani';font-size:1rem;
+  }
+  .preorder input:focus{outline:0;border-color:var(--signal)}
+  .formnote{margin-top:14px;font-size:.82rem;color:var(--steel-light)}
+
+  footer{padding:30px 24px 60px;text-align:center;border-top:1px solid var(--steel);margin-top:40px}
+  footer .disclaimer{font-style:italic;color:var(--steel-light);font-size:.85rem;max-width:62ch;margin:0 auto 16px;line-height:1.6}
+  footer .meta{color:var(--txt-dim);font-size:.9rem}
+  footer .meta a{color:var(--signal-glow);text-decoration:none}
+  footer .meta a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="mark">✋</span> BLINKERHAND<sup style="font-size:.6rem;color:var(--txt-dim)">®</sup></div>
+    <nav>
+      <a href="#anwendung">Anwendung</a>
+      <a href="#montage">Montage</a>
+      <a href="#specs">Technik</a>
+      <a href="#vorbestellen">Vorbestellen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="kicker">Aftermarket-Signaltechnik · Made for Deutschland</p>
+      <h1>2,5 Meter <span class="red">Stahl</span>, die für dich blinken.</h1>
+      <p class="lead">Drück den Blinker – und eine Metallhand fährt aus der Tür. Unmissverständlich. Optimiert. Endlich versteht der Hintermann den Spurwechsel.</p>
+      <div class="badges">
+        <span class="badge din">⚙ <b>DIN&nbsp;74024</b>&nbsp;konform*</span>
+        <span class="badge">Edelstahl V2A</span>
+        <span class="badge">12&nbsp;V&nbsp;/&nbsp;Plug&nbsp;&amp;&nbsp;Play</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#vorbestellen" class="btn btn-primary">Jetzt vorbestellen →</a>
+        <a href="#specs" class="btn btn-ghost">Datenblatt</a>
+      </div>
+    </div>
+
+    <!-- technical dimension drawing -->
+    <div class="drawing">
+      <span class="tag mono">FIG. 1 — AUSFAHRMECHANIK / DRAUFSICHT</span>
+      <svg viewBox="0 0 520 300" role="img" aria-label="Technische Maßzeichnung: Metallhand fährt 2,5 Meter aus der Fahrzeugseite aus">
+        <!-- car body -->
+        <rect x="20" y="120" width="120" height="120" rx="10" fill="#1c2128" stroke="#5a626d" stroke-width="2"/>
+        <rect x="34" y="138" width="40" height="34" rx="4" fill="#0d0f12" stroke="#4a525d"/>
+        <rect x="84" y="138" width="40" height="34" rx="4" fill="#0d0f12" stroke="#4a525d"/>
+        <text x="80" y="232" text-anchor="middle" class="lbl">FAHRZEUG</text>
+        <!-- wheels -->
+        <rect x="14" y="132" width="8" height="26" rx="3" fill="#000"/>
+        <rect x="14" y="202" width="8" height="26" rx="3" fill="#000"/>
+
+        <!-- blinker indicator -->
+        <circle class="blink-ind" cx="146" cy="180" r="7" fill="#ffb000"/>
+        <text x="146" y="262" text-anchor="middle" class="lbl">BLINKER</text>
+
+        <!-- guide rail -->
+        <line x1="150" y1="174" x2="470" y2="174" stroke="#39414b" stroke-width="2" stroke-dasharray="4 4"/>
+        <line x1="150" y1="186" x2="470" y2="186" stroke="#39414b" stroke-width="2" stroke-dasharray="4 4"/>
+
+        <!-- extending arm + hand -->
+        <g class="hand-grp">
+          <rect x="146" y="173" width="150" height="14" rx="3" fill="url(#steelgrad)" stroke="#7a828d"/>
+          <!-- hand -->
+          <g transform="translate(286,156)">
+            <rect x="0" y="6" width="22" height="36" rx="6" fill="#9aa2ad"/>
+            <rect x="20" y="2" width="9" height="14" rx="4" fill="#9aa2ad"/>
+            <rect x="20" y="14" width="9" height="14" rx="4" fill="#b4bcc6"/>
+            <rect x="20" y="26" width="9" height="13" rx="4" fill="#9aa2ad"/>
+            <rect x="20" y="37" width="8" height="11" rx="4" fill="#b4bcc6"/>
+            <rect x="-9" y="18" width="13" height="9" rx="4" fill="#7a828d" transform="rotate(-25 -2 22)"/>
+          </g>
+        </g>
+
+        <!-- dimension line 2,5 m -->
+        <line x1="150" y1="92" x2="470" y2="92" stroke="var(--amber)" stroke-width="1.4"/>
+        <line x1="150" y1="84" x2="150" y2="100" stroke="var(--amber)" stroke-width="1.4"/>
+        <line x1="470" y1="84" x2="470" y2="100" stroke="var(--amber)" stroke-width="1.4"/>
+        <polygon points="150,92 160,88 160,96" fill="var(--amber)"/>
+        <polygon points="470,92 460,88 460,96" fill="var(--amber)"/>
+        <rect x="278" y="78" width="64" height="28" fill="#15181d"/>
+        <text x="310" y="97" text-anchor="middle" class="dim-text">2,5 m</text>
+
+        <!-- vertical hint dim -->
+        <text x="500" y="184" text-anchor="end" class="lbl" transform="rotate(90 500 184)"></text>
+
+        <defs>
+          <linearGradient id="steelgrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#c2cad4"/>
+            <stop offset=".5" stop-color="#8a929d"/>
+            <stop offset="1" stop-color="#5a626d"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="tag2 mono">Maße ± 2 mm · Toleranzklasse m</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANWENDUNG ============ -->
+<section class="block" id="anwendung">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h2>Vier Anwendungsfälle</h2></div>
+    <p class="sub">Eine Hand. Unendliche Möglichkeiten der Optimierung von Deutschland. Vom Spurwechsel bis zur Cola-Entgegennahme.</p>
+    <div class="cases">
+      <article class="case">
+        <span class="ico">↔️</span>
+        <h3>Spurwechsel</h3>
+        <p>Der Hintermann sieht nicht nur ein Blinklicht, sondern 2,5 Meter ausgestreckten Stahl. Missverständnisse ausgeschlossen.</p>
+        <p class="ref">MODE: SIGNAL</p>
+      </article>
+      <article class="case">
+        <span class="ico">👊</span>
+        <h3>Abdrängen &amp; Anschubsen</h3>
+        <p>Zu langsame Fahrzeuge auf der Überholspur werden sanft, aber bestimmt motiviert. Die Hand schubst nach.</p>
+        <p class="ref">MODE: NUDGE</p>
+      </article>
+      <article class="case">
+        <span class="ico">🥤</span>
+        <h3>McDrive-Cola</h3>
+        <p>Fenster bleibt zu, die Hand greift. Becher, Tüte, Eis – kontaktlose Entgegennahme aus jeder Sitzposition.</p>
+        <p class="ref">MODE: GRIP</p>
+      </article>
+      <article class="case">
+        <span class="ico">🎫</span>
+        <h3>Parkhaus-Ticket</h3>
+        <p>Besonders für kleine Leute: Die Hand zieht das Ticket, drückt den Knopf, reicht es zurück ins Cockpit.</p>
+        <p class="ref">MODE: REACH</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MONTAGE + SPECS ============ -->
+<section class="block" id="montage">
+  <div class="wrap split">
+    <div>
+      <div class="sec-head"><span class="num">02</span><h2>So montierst du die Blinkerhand</h2></div>
+      <ol class="steps">
+        <li>
+          <h3>Türverkleidung öffnen</h3>
+          <p>Innenverkleidung lösen und das Schachtgehäuse hinter dem Außenspiegel freilegen.</p>
+        </li>
+        <li>
+          <h3>Schiene einsetzen</h3>
+          <p>Die 2,5-m-Teleskopschiene in den Türrahmen einführen und mit den beiliegenden M8-Schrauben fixieren.</p>
+        </li>
+        <li>
+          <h3>An Blinker-CAN koppeln</h3>
+          <p>Plug-&amp;-Play-Adapter zwischen Blinkrelais und Bordnetz klemmen. Kein Schneiden, kein Löten.</p>
+        </li>
+        <li>
+          <h3>Hand kalibrieren</h3>
+          <p>Zündung an, links blinken, rechts blinken. Die Hand erkennt die Endlage selbst. Fertig.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div id="specs">
+      <table class="spec">
+        <caption>Technisches Datenblatt</caption>
+        <tbody>
+          <tr><th>Ausfahrlänge</th><td>2,5 m (max.)</td></tr>
+          <tr><th>Material Hand</th><td>Edelstahl V2A, gebürstet</td></tr>
+          <tr><th>Ausfahrzeit</th><td>0,8 s</td></tr>
+          <tr><th>Greifkraft</th><td>340 N</td></tr>
+          <tr><th>Betriebsspannung</th><td>12 V DC</td></tr>
+          <tr><th>Leistungsaufnahme</th><td>140 W (Spitze)</td></tr>
+          <tr><th>Gewicht je Seite</th><td>4,6 kg</td></tr>
+          <tr><th>Schutzart</th><td>IP67 (wetterfest)</td></tr>
+          <tr><th>DIN-Norm*</th><td class="ok">74024 ✓</td></tr>
+          <tr><th>Betriebsmodi</th><td>SIGNAL · NUDGE · GRIP · REACH</td></tr>
+        </tbody>
+      </table>
+      <div class="compat">
+        <div class="row"><span>Fahrzeugklasse</span><span class="mono">PKW · Transporter · SUV</span></div>
+        <div class="row"><span>Türtyp</span><span class="mono">Rahmen &amp; rahmenlos</span></div>
+        <div class="row"><span>Linkslenker / Rechtslenker</span><span class="mono ok">beide ✓</span></div>
+        <div class="row"><span>Set</span><span class="mono">links + rechts (Paar)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="block" id="vorbestellen">
+  <div class="wrap">
+    <div class="cta">
+      <span class="badge din" style="margin-bottom:18px">⚙ Limitierte Erstcharge</span>
+      <h2>Optimiere dein Auto. <br>Optimiere Deutschland.</h2>
+      <p>Sichere dir das Blinkerhand-Paar der ersten Serie. Auslieferung nach erfolgreicher Gutachten-Eintragung.</p>
+      <div class="price">249,90&nbsp;€ <small>/ Paar · zzgl. Montage</small></div>
+      <form class="preorder" onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;color:var(--ok,#3ad17a);font-weight:600&quot;>Danke! Wir winken dir zurück.</p>';">
+        <input type="email" required placeholder="deine@e-mail.de" aria-label="E-Mail-Adresse">
+        <button type="submit" class="btn btn-primary">Vormerken</button>
+      </form>
+      <p class="formnote mono">* DIN-Konformität in laufender Prüfung. Eintragung erforderlich.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="disclaimer">Die Blinkerhand ist ein fiktives, satirisches Konzept aus dem Podcast „Teenager mit deutschem Akzent". Es existiert kein Produkt, keine Hand fährt aus, und das Anschubsen anderer Fahrzeuge ist – Stand jetzt – keine gute Idee. Bitte nicht montieren.</p>
+  <p class="meta">Fiktives Konzept · TMDA #42 · ungewertet · <a href="/folge/42">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+</footer>
+
+</body>
+</html>

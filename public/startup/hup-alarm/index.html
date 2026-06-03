@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hup-Alarm — Auto-Hupen als globales Alarm- und Synchronsystem</title>
+<meta name="description" content="Hup-Alarm vernetzt jede Auto-Hupe per SIM-Karte zum globalen Warnsystem: Katastrophenwarnung, synchrone Hupwellen, ganze Lieder und WM-Tore. Slots jetzt buchen.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/hup-alarm">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hup-Alarm — Auto-Hupen als globales Alarmsystem">
+<meta property="og:description" content="Jede Hupe per SIM ferngesteuert: Katastrophenwarnung, synchronisierte Hupwellen, ganze Lieder und WM-Tore. Das amtlich-absurde Alarm-Infrastruktur-Produkt.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/hup-alarm">
+<meta property="og:image" content="https://tmda-wiki.de/startup/hup-alarm/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hup-Alarm — Auto-Hupen als globales Alarmsystem">
+<meta name="twitter:description" content="Jede Hupe per SIM ferngesteuert: Katastrophenwarnung, Hupwellen, Lieder und WM-Tore. Slots jetzt buchen.">
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/hup-alarm/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Hup-Alarm",
+  "description": "Globales Alarm- und Synchronsystem, das jede vernetzte Auto-Hupe per SIM-Karte fernsteuert: Katastrophenwarnung, synchronisierte Hupwellen, ganze Lieder und WM-Tore.",
+  "brand": { "@type": "Brand", "name": "Hup-Alarm" },
+  "category": "Notfall-Infrastruktur",
+  "offers": {
+    "@type": "Offer",
+    "name": "Hup-Slot (30 Sekunden, regional)",
+    "price": "499.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://tmda-wiki.de/startup/hup-alarm"
+  }
+}
+</script>
+<style>
+:root{
+  --hazard:#ffd400;
+  --ink:#0c0c0c;
+  --red:#e2231a;
+  --line:#1a1a1a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+  background:var(--ink);
+  color:var(--hazard);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.hazard-tape{
+  height:34px;
+  background:repeating-linear-gradient(45deg,var(--hazard) 0 28px,var(--ink) 28px 56px);
+}
+h1,h2,.amt{font-family:'Anton',Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;line-height:.98;font-weight:400}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--red);color:#fff;
+  font-weight:800;font-size:.82rem;letter-spacing:.12em;
+  padding:7px 14px;border:2px solid #fff;text-transform:uppercase;
+}
+
+/* HERO */
+.hero{
+  background:var(--ink);
+  border-bottom:6px solid var(--hazard);
+  padding:0 0 60px;
+}
+.siren{
+  display:flex;align-items:center;justify-content:center;gap:18px;
+  background:var(--red);color:#fff;text-align:center;
+  padding:14px 12px;font-weight:800;letter-spacing:.18em;font-size:.85rem;
+  text-transform:uppercase;
+}
+.siren .dot{
+  width:14px;height:14px;border-radius:50%;background:#fff;
+  animation:pulse 1s infinite ease-in-out;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(1.6)}}
+.hero-inner{padding:46px 0 0;text-align:center}
+.tri{font-size:3.4rem;line-height:1;display:inline-block;animation:blink 1.4s steps(2,start) infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero h1{
+  font-size:clamp(2.9rem,11vw,7rem);
+  color:var(--hazard);margin:14px 0 6px;
+}
+.hero h1 .stripe{
+  display:inline-block;
+  background:repeating-linear-gradient(45deg,var(--hazard) 0 18px,var(--ink) 18px 36px);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .sub{font-size:1.05rem;max-width:640px;margin:18px auto 0;color:#f3e7a0}
+.warnbox{
+  margin:34px auto 0;max-width:760px;
+  border:4px solid var(--hazard);background:#161300;
+  padding:22px 24px;text-align:left;
+}
+.warnbox .label{color:var(--red);font-weight:800;letter-spacing:.14em;font-size:.8rem}
+.warnbox p{color:#f3e7a0;margin-top:8px;font-size:.96rem}
+.cta-row{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:800;
+  text-transform:uppercase;letter-spacing:.08em;font-size:.92rem;
+  padding:15px 26px;border:3px solid var(--hazard);
+}
+.btn-primary{background:var(--hazard);color:var(--ink)}
+.btn-primary:hover{background:#fff;border-color:#fff}
+.btn-ghost{background:transparent;color:var(--hazard)}
+.btn-ghost:hover{background:var(--hazard);color:var(--ink)}
+
+/* SECTION */
+section{padding:60px 0;border-bottom:2px solid var(--line)}
+.kicker{color:var(--red);font-weight:800;letter-spacing:.16em;font-size:.78rem;text-transform:uppercase}
+.sec-h{font-size:clamp(1.8rem,5vw,3rem);color:var(--hazard);margin:10px 0 8px}
+.sec-lead{color:#cdbd6f;max-width:680px;margin-bottom:30px;font-size:.96rem}
+
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.case{
+  border:3px solid var(--hazard);background:#141100;padding:22px;
+  position:relative;overflow:hidden;
+}
+.case::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:8px;
+  background:repeating-linear-gradient(45deg,var(--hazard) 0 12px,var(--ink) 12px 24px);
+}
+.case .ico{font-size:2rem;margin:8px 0 10px;display:block}
+.case h3{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.35rem;color:#fff;letter-spacing:.03em}
+.case p{color:#cdbd6f;font-size:.9rem;margin-top:8px}
+.case .stufe{margin-top:14px;display:inline-block;background:var(--red);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.1em;padding:4px 9px}
+
+/* FLOW */
+.flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;counter-reset:s}
+.step{
+  flex:1;min-width:200px;border:3px solid var(--hazard);background:#141100;
+  padding:24px 20px;position:relative;
+}
+.step .num{font-family:'Anton',sans-serif;font-size:2.6rem;color:var(--red);line-height:1}
+.step h3{font-family:'Anton',sans-serif;text-transform:uppercase;color:#fff;font-size:1.2rem;margin:6px 0 8px;letter-spacing:.03em}
+.step p{color:#cdbd6f;font-size:.88rem}
+.arrow{display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--hazard);padding:0 6px}
+@media(max-width:760px){.arrow{transform:rotate(90deg);padding:6px 0}}
+
+/* SLOT CTA */
+.slot{background:var(--hazard);color:var(--ink);border-bottom:6px solid var(--ink)}
+.slot .kicker{color:var(--red)}
+.slot .sec-h{color:var(--ink)}
+.slot .sec-lead{color:#332b00}
+.priceline{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);
+  padding:18px 0;margin:24px 0;
+}
+.priceline .amt{font-size:3rem;color:var(--ink)}
+.priceline .per{font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem}
+.slot-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:8px}
+.slot-card{border:3px solid var(--ink);padding:20px;background:#fff7cf}
+.slot-card h3{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.3rem;color:var(--ink)}
+.slot-card p{font-size:.88rem;color:#403600;margin-top:6px}
+.btn-dark{background:var(--ink);color:var(--hazard);border-color:var(--ink);margin-top:26px}
+.btn-dark:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+footer{
+  font-size:.82rem;color:#9c8e4a;text-align:center;
+  padding:40px 20px;background:var(--ink);
+}
+footer .disc{font-style:italic;color:#6f6433;max-width:620px;margin:0 auto 18px;font-size:.78rem}
+footer a{color:var(--hazard)}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="hazard-tape" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="siren">
+    <span class="dot" aria-hidden="true"></span>
+    Bundesweites Hup-Frühwarnsystem · Status: SCHARF GESCHALTET
+    <span class="dot" aria-hidden="true"></span>
+  </div>
+  <div class="wrap hero-inner">
+    <span class="tri" aria-hidden="true">⚠️</span>
+    <div class="badge">Warnstufe Hupe · Stufe Rot</div>
+    <h1>Hup-<span class="stripe">Alarm</span></h1>
+    <p class="sub">Jedes moderne Auto hat eine SIM-Karte. Also steuern wir jede Hupe der Republik zentral aus der Cloud — als globales Alarm- und Synchronsystem.</p>
+
+    <div class="warnbox">
+      <span class="label">⚠ Amtliche Mitteilung an die Bevölkerung</span>
+      <p>Im Ereignisfall ertönen sämtliche Auto-Hupen im Umkreis gleichzeitig. Bürgerinnen und Bürger werden gebeten, das Signal nicht als Verkehrsstreit, sondern als offizielle Warnung zu interpretieren. Ein Wegducken ist nicht erforderlich, aber zulässig.</p>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#slots">Hup-Slot buchen</a>
+      <a class="btn btn-ghost" href="#technik">So steuern wir jede Hupe</a>
+    </div>
+  </div>
+</header>
+
+<section id="cases">
+  <div class="wrap">
+    <span class="kicker">Einsatzszenarien · freigegeben</span>
+    <h2 class="sec-h">Use Cases der Hup-Infrastruktur</h2>
+    <p class="sec-lead">Eine Plattform, vier Betriebsmodi. Vom rettenden Ernstfall bis zur kollektiven Freude — alles über dasselbe Hup-Backbone.</p>
+    <div class="cases">
+      <article class="case">
+        <span class="ico" aria-hidden="true">🚨</span>
+        <h3>Katastrophen­warnung</h3>
+        <p>Unwetter, Stromausfall, Probealarm: Wir lösen flächendeckend jede Hupe aus und warnen die Bevölkerung dort, wo Sirenen längst abgebaut wurden.</p>
+        <span class="stufe">Warnstufe: kritisch</span>
+      </article>
+      <article class="case">
+        <span class="ico" aria-hidden="true">🌊</span>
+        <h3>Hupwellen</h3>
+        <p>Synchronisierte Wellen rollen Straße für Straße durch die Stadt — La-Ola für Blechlawinen, millisekundengenau getaktet.</p>
+        <span class="stufe">Warnstufe: gelb</span>
+      </article>
+      <article class="case">
+        <span class="ico" aria-hidden="true">🎵</span>
+        <h3>Ganze Lieder</h3>
+        <p>Jede Hupe ein Ton: Parkhäuser werden zum Orchester, der Berufsverkehr spielt die Nationalhymne. Notenmaterial inklusive.</p>
+        <span class="stufe">Warnstufe: melodisch</span>
+      </article>
+      <article class="case">
+        <span class="ico" aria-hidden="true">⚽</span>
+        <h3>WM-Tore</h3>
+        <p>Tor für die Mannschaft? Das ganze Land hupt im selben Augenblick. Live an die Spielminute gekoppelt, Verlängerung erfasst.</p>
+        <span class="stufe">Warnstufe: euphorisch</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="technik">
+  <div class="wrap">
+    <span class="kicker">Technische Lagebeschreibung</span>
+    <h2 class="sec-h">So steuern wir jede Hupe</h2>
+    <p class="sec-lead">Drei Stufen vom Befehl bis zum Ton. Keine App, keine Zustimmung der Fahrzeughalter notwendig — die SIM ist ohnehin schon verbaut.</p>
+    <div class="flow">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>SIM-Karte</h3>
+        <p>Jedes vernetzte Fahrzeug meldet sich mit seiner werkseitigen SIM in unserem Hup-Netz an. Standort bekannt, Hupe erreichbar.</p>
+      </div>
+      <div class="arrow" aria-hidden="true">➜</div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Cloud-Leitstelle</h3>
+        <p>Unsere Leitstelle bündelt Millionen Hupen, plant Wellen und Lieder und sendet den Auslöse-Befehl zentral und gleichzeitig.</p>
+      </div>
+      <div class="arrow" aria-hidden="true">➜</div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Hupe</h3>
+        <p>Das Fahrzeug empfängt das Signal und hupt. Lautstärke amtlich, Wirkung sofort, Abschaltung folgt automatisch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="slots" class="slot">
+  <div class="wrap">
+    <span class="kicker">Slot-Buchung · Vermarktung</span>
+    <h2 class="sec-h">Hup-Slots jetzt sichern</h2>
+    <p class="sec-lead">Hupzeit ist Sendezeit. Kirchen takten das Geläut, Hersteller refinanzieren ihre Flotte — alle buchen ihren festen Platz im Hup-Kalender.</p>
+
+    <div class="priceline">
+      <span class="amt">€499</span>
+      <span class="per">pro 30-Sekunden-Slot · regional</span>
+    </div>
+
+    <div class="slot-cards">
+      <div class="slot-card">
+        <h3>⛪ Gemeinde-Tarif</h3>
+        <p>Halbstündliches Hupen statt Glocke. Buchbar für den ganzen Pfarrbezirk, mit Andacht-Melodie und Sonntags-Aufschlag.</p>
+      </div>
+      <div class="slot-card">
+        <h3>🚗 Hersteller-Tarif</h3>
+        <p>Refinanzieren Sie Ihre Modellreihe: Markenklang als Hup-Jingle, exklusive Werbewellen, vertraglich gesicherte Hupquote.</p>
+      </div>
+      <div class="slot-card">
+        <h3>🏆 Event-Tarif</h3>
+        <p>WM-Tore, Silvester, Stadtfest. Minutengenaue Slots mit garantierter Flächendeckung und Eskalationsstufe Euphorie.</p>
+      </div>
+    </div>
+
+    <a class="btn btn-dark" href="#slots">Slot anfragen &amp; Hupquote sichern</a>
+  </div>
+</section>
+
+<div class="hazard-tape" aria-hidden="true"></div>
+
+<footer>
+  <p class="disc">Disclaimer: Würde dieses System je scharf geschaltet, bekäme allein vom Vorgespräch jeder im Umkreis Herzinfarkt-Gefühle. Bitte nicht ferngesteuert hupen.</p>
+  Fiktives Konzept · TMDA #25 · 2/24 · <a href="/folge/25">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+<script>
+// Sirenen-Status: Pulsfrequenz im Takt halten + Warnton-Wechsel im Hero-Badge
+(function(){
+  var badge=document.querySelector('.hero .badge');
+  if(!badge)return;
+  var stufen=['Warnstufe Hupe · Stufe Rot','Warnstufe Hupe · Stufe Laut','Warnstufe Hupe · Stufe Ohrenbetäubend'];
+  var i=0;
+  setInterval(function(){i=(i+1)%stufen.length;badge.lastChild.textContent=' '+stufen[i];},2600);
+})();
+</script>
+</body>
+</html>

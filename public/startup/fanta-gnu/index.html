@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fanta GNU – die Limonade mit echter Fell-Note aus der Sahara</title>
+<meta name="description" content="Fanta GNU: die wüstenheiße Limonade mit der ersten echten Ziegen-Fell-Note. Animalisch gut, wie im Sahara-Gnu-Werbespot. Schmeckt nach Fell, jetzt testen.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/fanta-gnu">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fanta GNU – die Limonade mit echter Fell-Note aus der Sahara">
+<meta property="og:description" content="Die wüstenheiße Limonade mit der weltweit ersten echten Ziegen-Fell-Note. Erfrischend, haarig, animalisch gut – wie im legendären Sahara-Gnu-Werbespot.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/fanta-gnu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fanta GNU – die Limonade mit echter Fell-Note aus der Sahara">
+<meta name="twitter:description" content="Die wüstenheiße Limonade mit der weltweit ersten echten Ziegen-Fell-Note. Animalisch gut – wie im Sahara-Gnu-Werbespot.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Fanta GNU",
+  "description": "Limonade mit der weltweit ersten echten Ziegen-Fell-Geschmacksnote, beworben im Sahara-Gnu-Werbespot. Ein rein fiktives, satirisches Konzept.",
+  "brand": {
+    "@type": "Brand",
+    "name": "GNU"
+  },
+  "category": "Erfrischungsgetränk / Limonade",
+  "url": "https://tmda-wiki.de/startup/fanta-gnu",
+  "offers": {
+    "@type": "Offer",
+    "price": "1.49",
+    "priceCurrency": "EUR",
+    "description": "0,33-l-Dose Fanta GNU, Sorte Fell-Note",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --sand-1:#ffe39a;
+    --sand-2:#f9b14b;
+    --orange:#ff7a00;
+    --orange-deep:#e8550a;
+    --sun:#ffd23f;
+    --sky-1:#ffd98a;
+    --sky-2:#ff9d3c;
+    --dune:#d98a3c;
+    --dune-dark:#b96a22;
+    --ink:#3b1e06;
+    --cream:#fff6e6;
+    --line:rgba(59,30,6,.16);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Fredoka',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.55;
+    overflow-x:hidden;
+  }
+  h1,h2,.brand,.claim-big{font-family:'Bungee',system-ui,sans-serif;letter-spacing:.5px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+  section{position:relative}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:90px 22px 60px;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 80% at 50% -10%, var(--sun) 0%, var(--sky-1) 26%, var(--sky-2) 55%, var(--orange) 100%);
+  }
+  /* sun glow */
+  .sun{
+    position:absolute;top:8%;left:50%;
+    width:min(46vw,360px);aspect-ratio:1;border-radius:50%;
+    transform:translateX(-50%);
+    background:radial-gradient(circle, #fff7d6 0%, var(--sun) 45%, rgba(255,210,63,0) 72%);
+    filter:blur(2px);
+    animation:pulse 6s ease-in-out infinite;
+    z-index:0;
+  }
+  @keyframes pulse{0%,100%{transform:translateX(-50%) scale(1);opacity:.92}50%{transform:translateX(-50%) scale(1.06);opacity:1}}
+  /* dunes */
+  .dunes{position:absolute;left:0;right:0;bottom:0;height:42%;z-index:0}
+  .dunes::before,.dunes::after{
+    content:"";position:absolute;left:-10%;right:-10%;bottom:0;
+    border-radius:50% 50% 0 0;
+  }
+  .dunes::before{height:78%;background:var(--dune);transform:scaleX(1.6)}
+  .dunes::after{height:54%;background:var(--dune-dark);transform:scaleX(2) translateX(8%)}
+
+  .hero-inner{position:relative;z-index:2}
+  .kicker{
+    display:inline-block;background:var(--ink);color:var(--sun);
+    font-family:'Bungee';font-size:.72rem;letter-spacing:2px;
+    padding:7px 16px;border-radius:999px;margin-bottom:20px;
+    box-shadow:0 6px 0 rgba(0,0,0,.18);
+  }
+  .brand{
+    font-size:clamp(3rem,13vw,7.4rem);line-height:.92;color:#fff;
+    text-shadow:
+      0 3px 0 var(--orange-deep),
+      0 7px 0 var(--ink),
+      0 12px 24px rgba(0,0,0,.35);
+  }
+  .brand .gnu{color:var(--sun);display:block}
+  .tagline{
+    font-size:clamp(1.05rem,3.4vw,1.6rem);font-weight:600;color:var(--ink);
+    margin:18px auto 0;max-width:620px;
+    text-shadow:0 1px 0 rgba(255,255,255,.4);
+  }
+  .hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+
+  .btn{
+    font-family:'Bungee';font-size:.92rem;letter-spacing:1px;cursor:pointer;
+    border:none;border-radius:999px;padding:16px 30px;text-decoration:none;display:inline-block;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary{background:var(--ink);color:var(--sun);box-shadow:0 8px 0 #1f0f02}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 11px 0 #1f0f02}
+  .btn-ghost{background:rgba(255,255,255,.85);color:var(--orange-deep);box-shadow:0 8px 0 rgba(0,0,0,.18)}
+  .btn-ghost:hover{transform:translateY(-3px)}
+
+  /* ===== CAN (CSS render) ===== */
+  .can-stage{position:relative;z-index:2;margin-top:46px;perspective:800px}
+  .can{
+    position:relative;width:150px;height:300px;margin:0 auto;
+    border-radius:18px / 26px;
+    background:linear-gradient(100deg,#ffb347 0%,#ff7a00 30%,#e8550a 60%,#ff8c1a 100%);
+    box-shadow:
+      inset 0 0 0 3px rgba(255,255,255,.25),
+      inset -22px 0 36px rgba(0,0,0,.32),
+      inset 22px 0 30px rgba(255,255,255,.28),
+      0 26px 40px rgba(120,50,0,.4);
+    animation:bob 4s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+  .can::before{/* top rim */
+    content:"";position:absolute;top:-7px;left:8px;right:8px;height:16px;border-radius:50%;
+    background:linear-gradient(#d9d9d9,#9a9a9a);box-shadow:inset 0 -3px 4px rgba(0,0,0,.3);
+  }
+  .can::after{/* bottom rim */
+    content:"";position:absolute;bottom:-6px;left:10px;right:10px;height:14px;border-radius:50%;
+    background:linear-gradient(#a8a8a8,#7c7c7c);
+  }
+  .can-label{
+    position:absolute;inset:46px 0 56px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:6px;text-align:center;color:#fff;
+  }
+  .can-label .cl-brand{font-family:'Bungee';font-size:1.5rem;line-height:.9;text-shadow:0 2px 0 var(--ink)}
+  .can-label .cl-sub{font-family:'Bungee';font-size:.62rem;letter-spacing:1px;color:var(--ink);background:var(--sun);padding:3px 8px;border-radius:6px}
+  .can-label .cl-gnu{font-size:2rem}
+  .can-shine{position:absolute;top:30px;left:18px;width:18px;height:230px;border-radius:40%;background:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,0));filter:blur(1px)}
+
+  /* heat shimmer overlay */
+  .heat{
+    position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 5px);
+    mix-blend-mode:overlay;opacity:.5;
+    animation:shimmer 2.2s linear infinite;
+  }
+  @keyframes shimmer{0%{transform:translateY(0) skewX(0deg)}50%{transform:translateY(-3px) skewX(.4deg)}100%{transform:translateY(0) skewX(0deg)}}
+
+  /* ===== GENERIC SECTION ===== */
+  .pad{padding:84px 0}
+  .center{text-align:center}
+  h2{font-size:clamp(1.8rem,5.6vw,3rem);color:var(--orange-deep);line-height:1}
+  .lead{font-size:1.12rem;max-width:640px;margin:18px auto 0;font-weight:500}
+
+  /* ===== THE SPOT (storyboard) ===== */
+  .spot{background:linear-gradient(180deg,#ffe9bf,#ffd98a)}
+  .board{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px;
+  }
+  .frame{
+    background:var(--cream);border:4px solid var(--ink);border-radius:14px;
+    padding:18px 14px;text-align:center;position:relative;
+    box-shadow:0 10px 0 rgba(184,106,34,.5);
+  }
+  .frame .no{
+    position:absolute;top:-16px;left:-14px;width:36px;height:36px;border-radius:50%;
+    background:var(--orange);color:#fff;font-family:'Bungee';font-size:.85rem;
+    display:flex;align-items:center;justify-content:center;border:4px solid var(--ink);
+  }
+  .frame .pic{
+    font-size:2.6rem;height:90px;display:flex;align-items:center;justify-content:center;
+    border-radius:10px;margin-bottom:12px;
+    background:radial-gradient(120% 120% at 50% 0%, var(--sky-1), var(--orange));
+    position:relative;overflow:hidden;
+  }
+  .frame .pic.mirage{background:radial-gradient(120% 120% at 50% 30%, #cfe8ff66, var(--sand-2))}
+  .frame .pic.mirage::after{
+    content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.35) 0 2px,transparent 2px 6px);
+    animation:shimmer 1.6s linear infinite;
+  }
+  .frame h3{font-family:'Bungee';font-size:.78rem;letter-spacing:.5px;margin-bottom:6px;color:var(--orange-deep)}
+  .frame p{font-size:.9rem;font-weight:500}
+
+  /* ===== TASTE / SORTEN ===== */
+  .taste{background:var(--cream)}
+  .notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+  .note{
+    background:linear-gradient(165deg,#fff,#fff2da);border-radius:18px;padding:30px 24px;
+    border:3px solid var(--line);box-shadow:0 14px 30px rgba(184,106,34,.16);
+  }
+  .note .ic{font-size:2.6rem;margin-bottom:12px}
+  .note h3{font-family:'Bungee';font-size:1rem;color:var(--orange-deep);margin-bottom:8px}
+  .note p{font-weight:500;font-size:.96rem}
+  .pyramid{
+    margin-top:42px;background:var(--ink);color:var(--cream);border-radius:18px;
+    padding:30px;text-align:center;
+  }
+  .pyramid h3{font-family:'Bungee';color:var(--sun);font-size:1.05rem;margin-bottom:18px;letter-spacing:1px}
+  .pyramid .layer{font-weight:600;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.2)}
+  .pyramid .layer:last-child{border:none}
+  .pyramid .layer b{color:var(--sun)}
+
+  /* ===== CTA ===== */
+  .cta{
+    text-align:center;color:#fff;padding:96px 22px;position:relative;overflow:hidden;
+    background:radial-gradient(120% 120% at 50% 0%, var(--sun), var(--orange) 55%, var(--orange-deep) 100%);
+  }
+  .claim-big{font-size:clamp(2rem,7vw,4rem);line-height:.95;color:#fff;text-shadow:0 4px 0 var(--ink)}
+  .cta p{font-weight:600;font-size:1.15rem;margin:18px auto 30px;max-width:560px;text-shadow:0 1px 0 rgba(0,0,0,.2)}
+  .price-tag{
+    display:inline-block;background:#fff;color:var(--orange-deep);font-family:'Bungee';
+    padding:10px 20px;border-radius:12px;margin-bottom:26px;transform:rotate(-3deg);
+    box-shadow:0 8px 0 rgba(0,0,0,.2);
+  }
+  .gnu-mascot{font-size:clamp(3rem,12vw,6rem);display:block;margin-bottom:10px;animation:bob 3.6s ease-in-out infinite}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--ink);color:var(--sand-1);text-align:center;padding:50px 22px}
+  footer .disclaimer{font-style:italic;font-size:.86rem;max-width:660px;margin:0 auto 16px;line-height:1.6;opacity:.85}
+  footer .meta{font-size:.92rem;font-weight:500}
+  footer .meta a{color:var(--sun);text-decoration:none}
+  footer .meta a:hover{text-decoration:underline}
+
+  @media(max-width:760px){
+    .board{grid-template-columns:repeat(2,1fr)}
+    .notes{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .sun,.can,.heat,.frame .pic.mirage::after,.gnu-mascot{animation:none}
+  }
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="sun"></div>
+  <div class="dunes"></div>
+  <div class="heat"></div>
+  <div class="hero-inner">
+    <span class="kicker">🌵 DURST? WIR HABEN DA WAS WILDES 🌵</span>
+    <h1 class="brand">FANTA<span class="gnu">GNU</span></h1>
+    <p class="tagline">Die wüstenheiße Limonade mit der weltweit ersten echten <strong>Ziegen-Fell-Note</strong>. Erfrischend animalisch. Verstörend lecker.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#probieren">Jetzt probieren</a>
+      <a class="btn btn-ghost" href="#spot">Der Spot ansehen</a>
+    </div>
+    <div class="can-stage">
+      <div class="can">
+        <div class="can-shine"></div>
+        <div class="can-label">
+          <span class="cl-gnu">🐃</span>
+          <span class="cl-brand">GNU</span>
+          <span class="cl-sub">FELL-NOTE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== DER SPOT ===== -->
+<section class="spot pad" id="spot">
+  <div class="wrap center">
+    <h2>Der Spot: „Durst aus der Sahara"</h2>
+    <p class="lead">45 Grad. Kein Wasser weit und breit. Nur ein durstiges Gnu – und eine Fata Morgana, die alles verändert. Das gefeierte Werbespot-Storyboard, Bild für Bild.</p>
+    <div class="board">
+      <div class="frame">
+        <span class="no">1</span>
+        <div class="pic">🐃🏜️</div>
+        <h3>Die Hitze</h3>
+        <p>Ein einsames Gnu wankt durch die flirrende Sahara. Die Zunge hängt. Der Durst ist episch.</p>
+      </div>
+      <div class="frame">
+        <span class="no">2</span>
+        <div class="pic mirage">🫧🥤</div>
+        <h3>Die Fata Morgana</h3>
+        <p>Am Horizont flimmert es: eine eiskalte, beschlagene GNU-Dose, schwebend über dem Sand.</p>
+      </div>
+      <div class="frame">
+        <span class="no">3</span>
+        <div class="pic">🐃💨🥤</div>
+        <h3>Der Sprint</h3>
+        <p>Das Gnu galoppiert durch die Illusion – und greift, wider Erwarten, eine ECHTE Dose.</p>
+      </div>
+      <div class="frame">
+        <span class="no">4</span>
+        <div class="pic">😌🐃✨</div>
+        <h3>Der Schluck</h3>
+        <p>Es trinkt. Es schmeckt nach … sich selbst. Pures Glück. Cut. „GNU. Schmeckt nach Fell."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GESCHMACK / SORTEN ===== -->
+<section class="taste pad" id="geschmack">
+  <div class="wrap center">
+    <h2>Schmeckt nach Fell. Und das ist gut so.</h2>
+    <p class="lead">Wo andere Limonaden mit langweiligem Orange oder Zitrone arbeiten, wagt GNU den mutigen Schritt zur authentischen Tier-Note. Ehrlich. Warm. Haarig.</p>
+
+    <div class="notes">
+      <div class="note">
+        <div class="ic">🐐</div>
+        <h3>Original Fell-Note</h3>
+        <p>Die Sorte, die alles begann. Eine warme, vollmundige Note von frisch gewärmtem Ziegenfell – mit einem trockenen Sahara-Abgang.</p>
+      </div>
+      <div class="note">
+        <div class="ic">🐃</div>
+        <h3>Wildes Gnu Extra-Strähnig</h3>
+        <p>Für Mutige: doppelte Fell-Intensität, ein Hauch Steppe, und ein Finish, das man „nicht so schnell wieder loswird".</p>
+      </div>
+      <div class="note">
+        <div class="ic">🌵</div>
+        <h3>Sahara Zero (Fell-frei?)</h3>
+        <p>Spoiler: nicht fell-frei. Nur fell-arm. Spritziger, leichter – mit dezenter Andeutung von Huf und Horizont.</p>
+      </div>
+    </div>
+
+    <div class="pyramid">
+      <h3>Die Geschmacks-Pyramide</h3>
+      <div class="layer"><b>Kopfnote:</b> sonnenwarmer Sand, Karbonsäure, ein Anflug von Trockenheit</div>
+      <div class="layer"><b>Herznote:</b> samtiges Ziegenfell, Steppengras, Brause-Süße</div>
+      <div class="layer"><b>Basisnote:</b> Fell. Einfach Fell. Lang anhaltend. Unausweichlich.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="probieren">
+  <div class="heat"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="gnu-mascot">🐃</span>
+    <h2 class="claim-big">JETZT PROBIEREN.<br>WENN DU DICH TRAUST.</h2>
+    <p>Eiskalt aus der Fata Morgana direkt zu dir. Eine Dose Mut. Eine Dose Fell.</p>
+    <span class="price-tag">0,33 l · nur 1,49 €</span><br>
+    <a class="btn btn-primary" href="#probieren">In den Wüsten-Warenkorb</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">Fanta GNU ist ein rein fiktives, satirisches Konzept aus dem Podcast „Teenager mit deutschem Akzent" (TMDA). Eine Parodie – keine echte Marke, kein echtes Getränk, keine echte Fell-Note. Es besteht keinerlei Verbindung zu bestehenden Limonaden- oder Markenherstellern.</p>
+    <p class="meta">Fiktives Konzept · TMDA #1 · ungewertet · <a href="/folge/1">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </div>
+</footer>
+
+<script>
+  // Hitze-Flimmern: leichte zufällige Variation der Shimmer-Intensität
+  (function(){
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var heats = document.querySelectorAll('.heat');
+    setInterval(function(){
+      heats.forEach(function(h){
+        h.style.opacity = (0.35 + Math.random()*0.3).toFixed(2);
+      });
+    }, 700);
+  })();
+</script>
+
+</body>
+</html>

@@ -98,7 +98,26 @@ function setActive(path) {
     const href = (a.getAttribute('href') || '').split('?')[0];
     a.classList.toggle('active', href === path);
   }
+  // „Mehr"-Dropdown: Gruppe markieren wenn ein Kind aktiv ist, und nach
+  // erfolgter Navigation wieder schließen.
+  const more = document.getElementById('navMore');
+  if (more) {
+    const childActive = !!more.querySelector('.nav-more-panel a.active');
+    more.classList.toggle('has-active', childActive);
+    more.open = false;
+  }
 }
+
+// Dropdown schließen bei Klick außerhalb oder Escape
+document.addEventListener('click', (e) => {
+  const more = document.getElementById('navMore');
+  if (more && more.open && !more.contains(e.target)) more.open = false;
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const more = document.getElementById('navMore');
+  if (more) more.open = false;
+});
 
 function navigate(path) {
   if (path === location.pathname + location.search) return;
@@ -147,15 +166,23 @@ window.addEventListener('popstate', router);
 
 // ---------- Home ----------
 async function renderHome() {
-  const [eps, ideen, corner, ger, glo] = await Promise.all([
+  const [eps, ideen, corner, ger, glo, pages] = await Promise.all([
     getData('episodes'), getData('startup-ideen'), getData('kalles-corner'),
-    getData('geruechte'), getData('glossar')
+    getData('geruechte'), getData('glossar'),
+    fetch('/data/startup-pages.json').then((r) => r.json()).catch(() => ({ items: [] })),
   ]);
 
-  // Top-rated startup idea
-  const topIdee = (ideen.items || [])
-    .filter(i => i.punkte != null)
-    .sort((a, b) => b.punkte - a.punkte)[0];
+  // Startup-Idee der Woche = die Idee aus der neuesten Folge.
+  const ideeDerWoche = (ideen.items || [])
+    .slice()
+    .sort((a, b) => (b.folge || 0) - (a.folge || 0))[0];
+  // Custom-Produktseite zur Idee finden (slug-Match wie in /startup-ideen)
+  const iwIdee = (ideeDerWoche?.idee || '').toLowerCase();
+  const iwPage = ideeDerWoche
+    ? (pages.items || []).find((p) => p.folge === ideeDerWoche.folge && iwIdee.includes((p.ideeMatch || '').toLowerCase()))
+    : null;
+  const iwMax = ideeDerWoche?.max_punkte || 24;
+  const iwLink = iwPage ? `/startup/${iwPage.slug}` : (ideeDerWoche ? `/folge/${ideeDerWoche.folge}` : '/startup-ideen');
 
   app.innerHTML = `
     <section class="home-top">
@@ -178,6 +205,23 @@ async function renderHome() {
         <div class="meta" id="latestVideoMeta"></div>
       </aside>
     </section>
+
+    ${ideeDerWoche ? `
+    <section class="idee-woche">
+      <div class="idee-woche-head">
+        <span class="idee-woche-kicker">💡 Startup-Idee der Woche</span>
+        <span class="meta">Folge #${ideeDerWoche.folge}${ideeDerWoche.datum ? ' · ' + fmtDate(ideeDerWoche.datum) : ''}</span>
+      </div>
+      <a class="idee-woche-card" href="${iwLink}">
+        <div class="idee-woche-body">
+          <h2 class="idee-woche-title">${esc(ideeDerWoche.idee)}</h2>
+          <p class="idee-woche-desc">${esc(ideeDerWoche.beschreibung)}</p>
+          ${ideeDerWoche.begruendung ? `<p class="idee-woche-nisse"><strong>Nisses Urteil:</strong> ${esc(ideeDerWoche.begruendung)}</p>` : ''}
+          <span class="idee-woche-go">${iwPage ? 'Zur Produkt-Seite' : 'Zur Folge'} →</span>
+        </div>
+        ${ideeDerWoche.punkte != null ? `<div class="idee-woche-score-wrap"><span class="score ${scoreClass(ideeDerWoche.punkte, iwMax)} score-large idee-woche-score">${ideeDerWoche.punkte}<small>/${iwMax}</small></span></div>` : ''}
+      </a>
+    </section>` : ''}
 
     <section class="stats">
       <a class="stat" href="/folgen"><div class="stat-num">${eps.count || 0}</div><div class="stat-label">Folgen</div></a>
@@ -209,51 +253,7 @@ async function renderHome() {
       </div>
     </section>
 
-    ${topIdee ? `
-    <section class="home-highlight">
-      <h2 class="section-title">🏆 Best-bewertete Startup-Idee</h2>
-      <a class="card card-highlight highlight-card" href="/folge/${topIdee.folge}">
-        <div class="highlight-body">
-          <span class="tag tag-accent">Folge #${topIdee.folge}</span>
-          <h3 class="highlight-title">${esc(topIdee.idee)}</h3>
-          <div class="desc">${esc(topIdee.beschreibung)}</div>
-        </div>
-        <span class="score score-high score-large highlight-score">${topIdee.punkte}<small>/${topIdee.max_punkte || 24}</small></span>
-      </a>
-    </section>` : ''}
-
-    <section style="margin-top:32px">
-      <h2 class="section-title">Rubriken</h2>
-      <p class="section-sub">Alles, was wiederkehrt — automatisch aus den Transkripten.</p>
-      <div class="card-grid" id="rubrikenGrid"></div>
-    </section>
   `;
-
-  const rubriken = [
-    { href: '/folgen', title: 'Folgen-Archiv', desc: 'Alle Folgen mit Themen und Highlights.', tag: 'Archiv', emoji: '📅' },
-    { href: '/startup-ideen', title: 'Startup-Idee der Woche', desc: 'Fynns Brainstorms mit Punkten von Nisse.', tag: 'Highlight', emoji: '💡' },
-    { href: '/kalles-corner', title: 'Kalles Corner', desc: 'Beiträge und Anekdoten von Kalle.', tag: 'Rubrik', emoji: '🪑' },
-    { href: '/geruechte', title: 'Gerücht der Woche', desc: 'Klatsch und Insiderwissen.', tag: 'Rubrik', emoji: '🤫' },
-    { href: '/erfindungen', title: 'Erfindungen', desc: 'Absurde Produktideen.', tag: 'Lexikon', emoji: '🔧' },
-    { href: '/glossar', title: 'Glossar & Inside-Jokes', desc: 'Running gags und Slang.', tag: 'Lexikon', emoji: '📖' },
-    { href: '/zitate', title: 'Zitate', desc: 'Die besten Sätze aller Folgen.', tag: 'Best-of', emoji: '💬' },
-    { href: '/personen', title: 'Erwähnte Personen', desc: 'Wer alles vorkam.', tag: 'Index', emoji: '👥' },
-    { href: '/hosts', title: 'Hosts & Cast', desc: 'Fynn, Nisse und Kalle — Bio, Projekte, Social.', tag: 'Profile', emoji: '🎙️' },
-    { href: '/stats', title: 'Statistik-Dashboard', desc: 'Charts: Punkte-Trend, Top-Personen, Heatmap.', tag: 'Daten', emoji: '📊' },
-    { href: '/timeline', title: 'Folgen-Timeline', desc: 'Chronik aller Folgen mit Highlights.', tag: 'Chronik', emoji: '⏳' },
-    { href: '/quiz', title: 'TMDA-Quiz', desc: '10 Fragen aus dem Wiki. Highscore.', tag: 'Spiel', emoji: '🧠' },
-    { href: '/bingo', title: 'TMDA-Bingo', desc: '5×5-Karte für Live-Hören. Tap to mark.', tag: 'Spiel', emoji: '🎲' },
-    { href: '/chat', title: 'AI-Chat', desc: 'Frag das Wiki direkt — powered by Workers AI.', tag: 'Live', emoji: '🤖' },
-    { href: '/transkripte-gesucht', title: 'Transkripte gesucht', desc: 'Du kannst Audio nach Sprecher zuordnen? Meld dich!', tag: 'Mithelfen', emoji: '🎤' },
-  ];
-  const grid = document.getElementById('rubrikenGrid');
-  for (const r of rubriken) {
-    grid.appendChild(el(`<a class="card" href="${r.href}">
-      <span class="tag tag-accent">${r.tag}</span>
-      <h3>${r.emoji} ${r.title}</h3>
-      <div class="desc">${r.desc}</div>
-    </a>`));
-  }
 
   // Latest YouTube video — lädt asynchron, blendet sich ein wenn verfügbar
   loadLatestVideo();

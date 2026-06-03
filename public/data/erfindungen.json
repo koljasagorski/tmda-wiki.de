@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-05-20T06:45:03.346Z",
-  "count": 68,
+  "updatedAt": "2026-06-02T10:13:26.856Z",
+  "count": 70,
   "items": [
+    {
+      "folge": 49,
+      "name": "Hammergotchi (Mama-Goci)",
+      "beschreibung": "Ein Zimmermanns-Hammer als Tamagotchi: Jeder Schlag zaehlt wie ein Streak bei der Gamification und haelt das Tier (und deinen Instagram-Account) am Leben. Hinten am Hammer, bei den Nagelzieher-Zacken, sitzt eine Meta-Ray-Ban-artige Kamera, die bei jedem Schlag ein Foto schiesst und daraus automatis…"
+    },
+    {
+      "folge": 49,
+      "name": "Kompassuhr",
+      "beschreibung": "Eine Uhr, die nur aus einem grossen, fluoreszierenden Taucher-Kompass ums Handgelenk besteht. Teil von Fynns geplanter Mode-Kollektion mit extra kurzen Jackett-Aermeln (Vorbild: ein alter Ford-CEO), damit Uhr bzw. Kompass immer sichtbar bleiben. Nisse findet sie viel zu gross."
+    },
     {
       "folge": 47,
       "name": "Helikopter-Rotor-Schutznippel",
