@@ -81,7 +81,7 @@ main { flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto; padding: 32
   letter-spacing: -0.02em;
 }
 .logo-mark {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  background: var(--accent);
   color: var(--accent-fg);
   padding: 4px 8px;
   border-radius: var(--radius-sm);
@@ -131,9 +131,7 @@ main { flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto; padding: 32
   font-weight: 800;
 }
 .hero h1 .accent {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  -webkit-background-clip: text; background-clip: text;
-  color: transparent;
+  color: var(--accent);
 }
 .hero p { color: var(--fg-muted); font-size: 1.1rem; max-width: 60ch; margin: 0; }
 .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
