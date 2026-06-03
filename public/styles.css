@@ -1,46 +1,55 @@
-/* ---------- Tokens ---------- */
+/* ---------- Tokens ----------
+   Brand: TMDA-Pink #f093e0. Verspielt/Pop: warme Plum-Darks, runde Ecken,
+   weiche pink-getönte Schatten. Akzent = Pink → Violett-Verlauf. */
 :root {
-  --bg: #0b0b0f;
-  --bg-elev: #14141b;
-  --bg-elev-2: #1c1c25;
-  --fg: #f4f4f5;
-  --fg-muted: #a1a1aa;
-  --fg-dim: #71717a;
-  --border: #27272f;
-  --border-strong: #3f3f47;
-  --accent: #ff8a3d;
-  --accent-2: #ffd60a;
-  --accent-fg: #0b0b0f;
-  --success: #4ade80;
-  --danger: #f87171;
-  --radius: 14px;
-  --radius-sm: 8px;
-  --shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  --bg: #150e1a;
+  --bg-elev: #1f1626;
+  --bg-elev-2: #2a1f33;
+  --fg: #fbf2fb;
+  --fg-muted: #c2adc8;
+  --fg-dim: #8f7c98;
+  --border: #362a40;
+  --border-strong: #4d3c5a;
+  --accent: #f093e0;
+  --accent-2: #a779f0;
+  --accent-fg: #2a0c25;
+  --success: #5be3a0;
+  --danger: #ff7a9c;
+  --radius: 22px;
+  --radius-sm: 13px;
+  --shadow: 0 12px 40px -12px rgba(240, 147, 224, 0.28);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 35%, transparent), 0 14px 44px -14px rgba(240, 147, 224, 0.55);
   --maxw: 1100px;
   --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 
 [data-theme="light"] {
-  --bg: #fafaf9;
+  --bg: #fdf4fb;
   --bg-elev: #ffffff;
-  --bg-elev-2: #f4f4f5;
-  --fg: #0b0b0f;
-  --fg-muted: #52525b;
-  --fg-dim: #71717a;
-  --border: #e4e4e7;
-  --border-strong: #d4d4d8;
-  --accent: #ea580c;
-  --accent-2: #ca8a04;
+  --bg-elev-2: #fbeef8;
+  --fg: #2a0c25;
+  --fg-muted: #6b4f66;
+  --fg-dim: #9a7f93;
+  --border: #f1dcec;
+  --border-strong: #e7c4df;
+  --accent: #d65fc4;
+  --accent-2: #8b5cf0;
   --accent-fg: #ffffff;
-  --shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  --shadow: 0 12px 40px -12px rgba(214, 95, 196, 0.22);
+  --glow: 0 0 0 1px color-mix(in oklab, var(--accent) 30%, transparent), 0 14px 44px -16px rgba(214, 95, 196, 0.4);
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(900px 520px at 88% -8%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 60%),
+    radial-gradient(720px 520px at -8% 8%, color-mix(in oklab, var(--accent-2) 16%, transparent), transparent 55%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--fg);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -168,7 +177,7 @@ main { flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto; padding: 32
   padding: 18px;
   transition: transform .15s ease, border-color .15s ease;
 }
-.card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+.card:hover { transform: translateY(-3px); border-color: color-mix(in oklab, var(--accent) 55%, var(--border)); box-shadow: var(--glow); }
 .card h3 { margin: 0 0 6px; font-size: 1.05rem; letter-spacing: -0.01em; }
 .card .meta { color: var(--fg-dim); font-size: 0.85rem; }
 .card .desc { color: var(--fg-muted); margin-top: 8px; font-size: 0.95rem; }
@@ -1910,4 +1919,107 @@ body.flutschi-mode::after {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ---------- Nav-Dropdown „Mehr" ---------- */
+.nav-more { position: relative; display: inline-flex; }
+.nav-more > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--fg-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  user-select: none;
+}
+.nav-more > summary::-webkit-details-marker { display: none; }
+.nav-more > summary:hover,
+.nav-more[open] > summary { background: var(--bg-elev); color: var(--fg); }
+.nav-more.has-active > summary { color: var(--fg); }
+.nav-more.has-active > summary::after {
+  content: ""; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent); margin-left: 1px;
+}
+.nav-more-caret { font-size: 0.7em; transition: transform .18s ease; }
+.nav-more[open] .nav-more-caret { transform: rotate(180deg); }
+.nav-more-panel {
+  position: fixed;
+  top: 60px;
+  right: 14px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 188px;
+  padding: 8px;
+  background: color-mix(in oklab, var(--bg-elev) 92%, transparent);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: navMoreIn .16s ease;
+}
+@keyframes navMoreIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.nav-more-panel a {
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--fg-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.nav-more-panel a:hover { background: var(--bg-elev-2); color: var(--fg); }
+.nav-more-panel a.active { background: color-mix(in oklab, var(--accent) 18%, var(--bg-elev-2)); color: var(--fg); }
+
+/* ---------- Startup-Idee der Woche (Homepage-Highlight) ---------- */
+.idee-woche { margin: 8px 0 4px; }
+.idee-woche-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+}
+.idee-woche-kicker {
+  font-size: 0.82rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent);
+}
+.idee-woche-card {
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+  padding: 32px;
+  border-radius: calc(var(--radius) + 6px);
+  background:
+    radial-gradient(120% 140% at 0% 0%, color-mix(in oklab, var(--accent) 24%, var(--bg-elev)) 0%, var(--bg-elev) 58%);
+  border: 1.5px solid color-mix(in oklab, var(--accent) 45%, var(--border));
+  box-shadow: var(--glow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.idee-woche-card::after {
+  content: ""; position: absolute; right: -60px; top: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in oklab, var(--accent) 40%, transparent), transparent 68%);
+  pointer-events: none;
+}
+.idee-woche-card:hover { transform: translateY(-3px); color: var(--fg); }
+.idee-woche-body { flex: 1 1 320px; min-width: 0; position: relative; z-index: 1; }
+.idee-woche-title {
+  margin: 0 0 10px; font-size: clamp(1.5rem, 3.4vw, 2.2rem); line-height: 1.1;
+  letter-spacing: -0.02em; font-weight: 800;
+}
+.idee-woche-desc { color: var(--fg-muted); margin: 0 0 12px; font-size: 1.02rem; }
+.idee-woche-nisse { color: var(--fg-muted); font-size: 0.92rem; margin: 0 0 16px; }
+.idee-woche-nisse strong { color: var(--fg); }
+.idee-woche-go {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-weight: 700; color: var(--accent);
+}
+.idee-woche-card:hover .idee-woche-go { gap: 10px; }
+.idee-woche-score-wrap { flex: 0 0 auto; position: relative; z-index: 1; }
+.idee-woche-score { font-size: 2rem; padding: 14px 22px; min-width: 92px; border-radius: var(--radius); }
+@media (max-width: 560px) {
+  .idee-woche-card { padding: 22px; gap: 18px; }
 }
