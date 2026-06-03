@@ -44,12 +44,7 @@
 html, body { margin: 0; padding: 0; }
 body {
   font-family: var(--font);
-  background-color: var(--bg);
-  background-image:
-    radial-gradient(900px 520px at 88% -8%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 60%),
-    radial-gradient(720px 520px at -8% 8%, color-mix(in oklab, var(--accent-2) 16%, transparent), transparent 55%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: var(--bg);
   color: var(--fg);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
