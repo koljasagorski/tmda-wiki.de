@@ -317,21 +317,6 @@
     }
   });
 
-  // =============== Long-Press auf Chat-FAB → Kalle Direct Line ===============
-  const fab = document.getElementById('chatFab');
-  let fabTimer = null;
-  const fabStart = () => {
-    fabTimer = setTimeout(() => {
-      toast('☎️ <strong>Kalle Direct Line</strong> — leider gerade in Hamburg unterwegs. Versuch\'s mit der normalen Wiki.', 5000);
-    }, 1500);
-  };
-  const fabEnd = () => clearTimeout(fabTimer);
-  fab?.addEventListener('mousedown', fabStart);
-  fab?.addEventListener('mouseup', fabEnd);
-  fab?.addEventListener('mouseleave', fabEnd);
-  fab?.addEventListener('touchstart', fabStart, { passive: true });
-  fab?.addEventListener('touchend', fabEnd);
-
   // =============== Dienstag-Banner ===============
   if (new Date().getDay() === 2 && !sessionStorage.getItem('tmda-tuesday-shown')) {
     sessionStorage.setItem('tmda-tuesday-shown', '1');
