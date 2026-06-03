@@ -73,6 +73,26 @@ function fmtDate(iso) {
   return d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
 }
 
+// URL-Slug aus einem Namen (Umlaute → ae/oe/ue, Rest kebab-case)
+function slugify(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'erfindung';
+}
+// Erfindungen deterministisch um eindeutige Slugs ergänzen (Kollisionen → -folge / -index)
+function withErfindungSlugs(items) {
+  const taken = new Set();
+  return (items || []).map((e, i) => {
+    const base = slugify(e.name);
+    let slug = base;
+    if (taken.has(slug)) slug = `${base}-${e.folge}`;
+    if (taken.has(slug)) slug = `${base}-${e.folge}-${i}`;
+    taken.add(slug);
+    return { ...e, slug };
+  });
+}
+
 // ---------- Routing ----------
 const views = {
   '/': renderHome,
@@ -94,9 +114,12 @@ const views = {
 };
 
 function setActive(path) {
+  // Detail-Routen markieren ihre Übersicht (z.B. /erfindung/x → /erfindungen)
+  let activeHref = path;
+  if (path.startsWith('/erfindung/')) activeHref = '/erfindungen';
   for (const a of nav.querySelectorAll('a')) {
     const href = (a.getAttribute('href') || '').split('?')[0];
-    a.classList.toggle('active', href === path);
+    a.classList.toggle('active', href === activeHref);
   }
   // „Mehr"-Dropdown: Gruppe markieren wenn ein Kind aktiv ist, und nach
   // erfolgter Navigation wieder schließen.
@@ -157,6 +180,10 @@ async function router() {
   if (path.startsWith('/folge/')) {
     const num = Number(path.split('/folge/')[1]);
     return renderFolgeDetail(num);
+  }
+  if (path.startsWith('/erfindung/')) {
+    const slug = decodeURIComponent(path.split('/erfindung/')[1] || '');
+    return renderErfindungDetail(slug);
   }
   const view = views[path] || renderHome;
   await view(param);
@@ -560,14 +587,63 @@ async function renderErfindungen() {
   if (items.length === 0) return;
 
   const grid = el('<div class="card-grid"></div>');
-  for (const e of items) {
-    grid.appendChild(el(`<a class="card" href="/folge/${e.folge}">
+  for (const e of withErfindungSlugs(items)) {
+    grid.appendChild(el(`<a class="card" href="/erfindung/${esc(e.slug)}">
       <span class="tag tag-accent">Folge #${e.folge}</span>
-      <h3>${esc(e.name)}</h3>
+      <h3>${esc(e.name)} <span class="startup-link-arrow">↗</span></h3>
       <div class="desc">${esc(e.beschreibung)}</div>
     </a>`));
   }
   app.appendChild(grid);
+}
+
+// ---------- Erfindung Detail ----------
+async function renderErfindungDetail(slug) {
+  const [erf, eps] = await Promise.all([getData('erfindungen'), getData('episodes')]);
+  const items = withErfindungSlugs(erf.items || []);
+  const idx = items.findIndex((e) => e.slug === slug);
+  if (idx < 0) {
+    app.innerHTML = `<p style="margin-bottom:16px"><a href="/erfindungen">← Alle Erfindungen</a></p>
+      <h1 class="section-title">🔧 Erfindung nicht gefunden</h1>
+      <p class="section-sub">Diese Erfindung gibt es (noch) nicht im Wiki.</p>`;
+    return;
+  }
+  const e = items[idx];
+  const ep = (eps.items || []).find((x) => x.folge === e.folge);
+  const prev = idx > 0 ? items[idx - 1] : null;
+  const next = idx < items.length - 1 ? items[idx + 1] : null;
+  const related = items.filter((x) => x.folge === e.folge && x.slug !== e.slug);
+
+  app.innerHTML = `
+    <p style="margin-bottom:16px"><a href="/erfindungen">← Erfindungen</a></p>
+    <header class="folge-head">
+      <span class="tag tag-accent">🔧 Erfindung · Folge #${e.folge}</span>
+      <h1 class="folge-title">${esc(e.name)}</h1>
+      ${ep ? `<div class="meta">${esc(ep.titel || '')}${ep.datum ? ' · ' + fmtDate(ep.datum) : ''}</div>` : ''}
+    </header>
+    <section class="detail-block">
+      <div class="card card-highlight">
+        <div class="desc" style="font-size:1.05rem">${esc(e.beschreibung)}</div>
+      </div>
+    </section>
+    <section class="detail-block">
+      <div class="hero-cta">
+        <a class="btn" href="/folge/${e.folge}">Zur Folge #${e.folge} →</a>
+        <a class="btn" href="/transcripts/folge-${String(e.folge).padStart(2, '0')}.txt" target="_blank" rel="noopener">Transkript öffnen ↗</a>
+      </div>
+    </section>
+    ${related.length ? `<section class="detail-block">
+      <h2>🔧 Mehr aus Folge #${e.folge}</h2>
+      <div class="card-grid">${related.map((r) => `<a class="card" href="/erfindung/${esc(r.slug)}">
+        <h3>${esc(r.name)}</h3>
+        <div class="desc">${esc(r.beschreibung)}</div>
+      </a>`).join('')}</div>
+    </section>` : ''}
+    <nav class="folge-nav folge-nav-bottom">
+      ${prev ? `<a class="folge-nav-btn prev" href="/erfindung/${esc(prev.slug)}"><span class="dir">← Vorherige</span><span class="title">${esc(prev.name)}</span></a>` : '<span></span>'}
+      ${next ? `<a class="folge-nav-btn next" href="/erfindung/${esc(next.slug)}"><span class="dir">Nächste →</span><span class="title">${esc(next.name)}</span></a>` : '<span></span>'}
+    </nav>
+  `;
 }
 
 // ---------- Glossar ----------

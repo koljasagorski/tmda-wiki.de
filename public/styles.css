@@ -99,6 +99,10 @@ main { flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto; padding: 32
 }
 .primary-nav a:hover { background: var(--bg-elev); color: var(--fg); }
 .primary-nav a.active { background: var(--bg-elev); color: var(--fg); }
+/* „Startup Ideen" dezent hervorgehoben */
+.primary-nav a.nav-feature { color: var(--accent); font-weight: 700; }
+.primary-nav a.nav-feature:hover,
+.primary-nav a.nav-feature.active { background: color-mix(in oklab, var(--accent) 14%, transparent); color: var(--accent); }
 
 .theme-toggle {
   background: transparent;
