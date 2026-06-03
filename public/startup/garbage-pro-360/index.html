@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garbage Pro 360 (G60) — Spatial Garbage für die Schulter</title>
+  <meta name="description" content="Garbage Pro 360 (G60): Spatial-Garbage-Brille so groß wie ein Mülleimer, getragen auf der Schulter. 2 Monate Akku, 360° Sicht, der Mensch ganz versteckt." />
+  <link rel="canonical" href="https://tmda-wiki.de/startup/garbage-pro-360" />
+
+  <meta property="og:type" content="product" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Garbage Pro 360" />
+  <meta property="og:title" content="Garbage Pro 360 (G60) — Spatial Garbage für die Schulter" />
+  <meta property="og:description" content="Spatial-Garbage-Brille so groß wie ein Mülleimer, getragen auf der Schulter. 2 Monate Akku, 360° Sicht, Mensch komplett versteckt." />
+  <meta property="og:url" content="https://tmda-wiki.de/startup/garbage-pro-360" />
+  <meta property="og:image" content="https://tmda-wiki.de/startup/garbage-pro-360/og.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Garbage Pro 360 (G60) — Spatial Garbage für die Schulter" />
+  <meta name="twitter:description" content="Spatial-Garbage-Brille so groß wie ein Mülleimer, getragen auf der Schulter. 2 Monate Akku, 360° Sicht, Mensch komplett versteckt." />
+  <meta name="twitter:image" content="https://tmda-wiki.de/startup/garbage-pro-360/og.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Garbage Pro 360 (G60)",
+    "image": "https://tmda-wiki.de/startup/garbage-pro-360/og.png",
+    "description": "Spatial-Garbage-Brille in der Größe eines Mülleimers, getragen auf den Schultern statt am Kopf. 2 Monate Akkulaufzeit, 360° Mixed Reality, der Mensch verschwindet vollständig darin.",
+    "brand": { "@type": "Brand", "name": "Garbage Pro" },
+    "category": "Spatial Computing",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://tmda-wiki.de/startup/garbage-pro-360",
+      "priceCurrency": "EUR",
+      "price": "11999.00",
+      "availability": "https://schema.org/PreOrder"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#f4f5f7;
+      --bg2:#ffffff;
+      --ink:#0a0a0c;
+      --muted:#6b6f76;
+      --line:rgba(10,10,12,.08);
+      --glass:rgba(255,255,255,.6);
+      --accent:#1d1d1f;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+    .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      text-align:center;
+      padding:120px 28px 80px;
+      background:
+        radial-gradient(140% 120% at 50% -10%, #ffffff 0%, #eef0f3 45%, #e7eaee 100%);
+    }
+    .eyebrow{
+      font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--muted);margin-bottom:22px;
+    }
+    .hero h1{
+      font-weight:200;
+      font-size:clamp(44px,9vw,104px);
+      letter-spacing:-.03em;
+      line-height:.98;
+    }
+    .hero h1 .pro{font-weight:600}
+    .hero .sub{
+      margin-top:26px;
+      font-weight:300;
+      font-size:clamp(18px,2.4vw,26px);
+      color:var(--muted);
+      max-width:600px;
+    }
+    .hero .sub b{font-weight:600;color:var(--ink)}
+
+    /* PRODUCT RENDER */
+    .render{
+      margin:64px auto 0;
+      width:min(440px,86vw);
+      aspect-ratio:1/1.05;
+      position:relative;
+      display:flex;align-items:flex-end;justify-content:center;
+      filter:drop-shadow(0 50px 70px rgba(10,10,12,.18));
+      animation:float 7s ease-in-out infinite;
+    }
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+    .render svg{width:100%;height:auto;overflow:visible}
+    .glow{
+      position:absolute;inset:auto 0 -6% 0;height:30%;
+      background:radial-gradient(60% 100% at 50% 100%, rgba(120,140,170,.35), transparent 70%);
+      filter:blur(14px);z-index:-1;
+    }
+
+    /* SPEC BAND */
+    .specs{
+      background:var(--bg2);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:90px 0;
+    }
+    .spec-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:48px;text-align:center;
+    }
+    .spec .num{
+      font-weight:200;font-size:clamp(40px,7vw,76px);letter-spacing:-.03em;line-height:1;
+    }
+    .spec .num small{font-weight:300;font-size:.34em;letter-spacing:0;color:var(--muted);display:block;margin-top:14px;text-transform:uppercase}
+    .spec .lbl{margin-top:14px;color:var(--muted);font-weight:300;font-size:16px}
+    .spec.big .num{font-size:clamp(56px,11vw,120px);font-weight:300}
+
+    /* FEATURE — Rock statt Hose */
+    .feature{padding:120px 0}
+    .feature .grid{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;
+    }
+    .feature h2{
+      font-weight:200;font-size:clamp(32px,5vw,58px);letter-spacing:-.025em;line-height:1.02;
+    }
+    .feature h2 b{font-weight:600}
+    .feature p{margin-top:24px;color:var(--muted);font-weight:300;font-size:19px;max-width:46ch}
+    .chiprow{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      font-size:14px;font-weight:500;color:var(--ink);
+      background:var(--glass);border:1px solid var(--line);
+      backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+      padding:9px 16px;border-radius:999px;
+    }
+    .rockcard{
+      aspect-ratio:1/1;border-radius:32px;
+      background:linear-gradient(160deg,#ffffff,#e9ecf0);
+      border:1px solid var(--line);
+      box-shadow:0 30px 60px rgba(10,10,12,.10), inset 0 1px 0 rgba(255,255,255,.9);
+      display:flex;align-items:center;justify-content:center;
+      position:relative;overflow:hidden;
+    }
+    .rockcard .arrows{position:relative;width:64%;height:64%}
+    .rockcard .arrows svg{position:absolute;inset:0;width:100%;height:100%;opacity:.28}
+
+    /* CTA */
+    .cta{
+      padding:130px 0 120px;text-align:center;
+      background:radial-gradient(120% 90% at 50% 0%, #ffffff, #e8ebef 100%);
+      border-top:1px solid var(--line);
+    }
+    .cta .eyebrow{margin-bottom:18px}
+    .cta h2{font-weight:200;font-size:clamp(36px,6vw,72px);letter-spacing:-.03em;line-height:1}
+    .price{
+      margin-top:38px;font-weight:300;font-size:clamp(28px,5vw,46px);letter-spacing:-.02em;
+    }
+    .price small{display:block;margin-top:10px;font-size:15px;color:var(--muted);font-weight:400}
+    .btn{
+      display:inline-block;margin-top:40px;
+      background:var(--accent);color:#fff;text-decoration:none;
+      font-weight:500;font-size:18px;
+      padding:18px 44px;border-radius:999px;
+      transition:transform .25s ease, box-shadow .25s ease;
+      box-shadow:0 14px 34px rgba(10,10,12,.22);
+    }
+    .btn:hover{transform:translateY(-3px);box-shadow:0 22px 46px rgba(10,10,12,.28)}
+    .note{margin-top:22px;color:var(--muted);font-size:14px;font-weight:300}
+
+    /* FOOTER */
+    footer{
+      background:var(--bg2);border-top:1px solid var(--line);
+      padding:54px 28px;text-align:center;
+    }
+    .disc{font-style:italic;color:var(--muted);font-size:13px;max-width:620px;margin:0 auto 18px;font-weight:300;line-height:1.6}
+    .meta{font-size:14px;color:var(--muted);font-weight:400}
+    .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+    .meta a:hover{border-color:var(--ink)}
+
+    @media(max-width:760px){
+      .spec-grid{grid-template-columns:1fr;gap:56px}
+      .feature .grid{grid-template-columns:1fr;gap:44px}
+      .feature{padding:90px 0}
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <header class="hero">
+    <div class="eyebrow">Garbage Pro 360 · Einführung</div>
+    <h1>Garbage <span class="pro">Pro</span> 360</h1>
+    <p class="sub"><b>Spatial Garbage.</b> Eine Brille so groß wie ein Mülleimer — getragen auf den Schultern, nicht am Kopf. Der Mensch verschwindet. Die Zukunft bleibt.</p>
+
+    <div class="render" aria-label="Produkt-Render der Garbage Pro 360 auf den Schultern">
+      <div class="glow"></div>
+      <svg viewBox="0 0 360 380" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#d9dde3"/>
+          </linearGradient>
+          <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#3a4047"/>
+            <stop offset="1" stop-color="#0c0e11"/>
+          </linearGradient>
+          <radialGradient id="lens" cx="50%" cy="40%" r="70%">
+            <stop offset="0" stop-color="#6f7c8d"/>
+            <stop offset="1" stop-color="#1b1f25"/>
+          </radialGradient>
+        </defs>
+        <!-- shoulders / torso hidden inside -->
+        <path d="M70 380 C70 320 100 300 180 300 C260 300 290 320 290 380 Z" fill="#cfd4da"/>
+        <!-- the bin-sized headset body resting on shoulders -->
+        <rect x="58" y="40" width="244" height="260" rx="54" fill="url(#body)" stroke="rgba(10,10,12,.07)"/>
+        <!-- top rim -->
+        <ellipse cx="180" cy="54" rx="120" ry="26" fill="#eef1f4" stroke="rgba(10,10,12,.06)"/>
+        <!-- giant smoked visor -->
+        <rect x="86" y="104" width="188" height="150" rx="44" fill="url(#glass)"/>
+        <!-- inner spatial lens -->
+        <ellipse cx="180" cy="178" rx="78" ry="64" fill="url(#lens)" opacity=".9"/>
+        <ellipse cx="152" cy="150" rx="20" ry="14" fill="#ffffff" opacity=".22"/>
+        <!-- subtle 360 ring -->
+        <circle cx="180" cy="178" r="52" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2" stroke-dasharray="3 7"/>
+      </svg>
+    </div>
+  </header>
+
+  <section class="specs">
+    <div class="wrap">
+      <div class="spec-grid">
+        <div class="spec big">
+          <div class="num">2<small>Monate Akku</small></div>
+          <div class="lbl">Eine Ladung. Ein Quartal Realität.</div>
+        </div>
+        <div class="spec">
+          <div class="num">360<small>Grad Sicht</small></div>
+          <div class="lbl">Lückenlose Spatial-Garbage-Hülle</div>
+        </div>
+        <div class="spec">
+          <div class="num">100<small>% versteckt</small></div>
+          <div class="lbl">Der Mensch komplett im Gerät</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <h2>Rock statt Hose.<br><b>Richtung? Geheim.</b></h2>
+          <p>Im Lieferumfang: ein bodenlanger Rock. Keine Beine, keine Hosenbeine, keine Hinweise. Niemand erkennt mehr, in welche Richtung Sie gehen — vorwärts, rückwärts, in die Zukunft. Maximale räumliche Privatsphäre für ein Gerät, das ohnehin alles verbirgt.</p>
+          <div class="chiprow">
+            <span class="chip">Gehrichtung unerkennbar</span>
+            <span class="chip">360° Anonymität</span>
+            <span class="chip">Unisex bodenlang</span>
+            <span class="chip">Schulter-getragen</span>
+          </div>
+        </div>
+        <div class="rockcard" aria-hidden="true">
+          <div class="arrows">
+            <svg viewBox="0 0 100 100"><path d="M50 8 L70 38 H58 V92 H42 V38 H30 Z" fill="#0a0a0c"/></svg>
+            <svg viewBox="0 0 100 100" style="transform:rotate(90deg)"><path d="M50 8 L70 38 H58 V92 H42 V38 H30 Z" fill="#0a0a0c"/></svg>
+            <svg viewBox="0 0 100 100" style="transform:rotate(180deg)"><path d="M50 8 L70 38 H58 V92 H42 V38 H30 Z" fill="#0a0a0c"/></svg>
+            <svg viewBox="0 0 100 100" style="transform:rotate(270deg)"><path d="M50 8 L70 38 H58 V92 H42 V38 H30 Z" fill="#0a0a0c"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="eyebrow">Vorbestellung geöffnet</div>
+      <h2>Reservieren Sie<br>die Zukunft.</h2>
+      <div class="price">
+        11.999 €
+        <small>zzgl. Rock · Lieferung, sobald wir in 5–10 Jahren wissen, ob es eine gute Idee war.</small>
+      </div>
+      <a class="btn" href="#" onclick="this.textContent='In 5 Jahren vorgemerkt ✓';return false;">Jetzt reservieren</a>
+      <p class="note">Anzahlung nicht erstattbar. Die Zukunft zu bewerten ist nicht einfach.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="disc">Parodie. Garbage Pro 360 ist ein fiktives Konzept aus dem Podcast „Teenager mit deutschem Akzent“. Keine echte Marke, kein echtes Produkt, keine Verbindung zu real existierenden Headsets oder Herstellern.</p>
+    <p class="meta">Fiktives Konzept · TMDA #36 · ungewertet · <a href="/folge/36">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </footer>
+
+</body>
+</html>

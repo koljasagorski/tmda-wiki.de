@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 31/31 LIVE ✅
+## Status — 45/45 LIVE ✅
 
-Alle Startup-Ideen mit Bewertung aus den Folgen 1-49 haben jetzt eine eigene Page. Jede mit komplett individuellem Design-Stil.
+**Jede** Startup-Idee aus den Folgen 1-49 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -87,9 +87,27 @@ Alle Startup-Ideen mit Bewertung aus den Folgen 1-49 haben jetzt eine eigene Pag
 - [x] **Hundeschule der anderen Art** · Folge 11 · xerox flyer (Special Elite + Patrick Hand)
 - [x] **WHAT LIFE WEIGHTS** · Folge 9 · contemplative magazine (Cardo + olive/cream)
 
+### < 10 — Spaß-/Low-Score- & ungewertete Ideen (neu)
+
+- [x] **Ad Music / Add Music** · Folge 6 · 9/24 · music-streaming neon (Equalizer/Waveform, cyan)
+- [x] **Kofferreisen.de** · Folge 40 · 8/24 · billig-airline boarding-pass (navy/gelb, Perforation)
+- [x] **Was-Verdient.de** · Folge 29 · 6/24 · fintech bloomberg-terminal (mono, grüne Ziffern, Ticker)
+- [x] **Zauberinternat Live (Hogwarts Big Brother)** · Folge 17 · 6/24 · streaming OTT cinematic dark-academia (emerald/gold)
+- [x] **Schugon** · Folge 13 · 6/24 · retro teleshopping infomercial (rote Starbursts, Vorher/Nachher)
+- [x] **Das schwarze Weltkleid** · Folge 47 · 5/24 · avantgarde haute-couture monochrom (rein schwarz, ultradünn)
+- [x] **ROLLBED — Fahrbares Hotel** · Folge 24 · 4/24 · industrielle Fracht/Logistik (stahl/container-orange)
+- [x] **Hup-Alarm** · Folge 25 · 2/24 · behörden emergency-broadcast (hazard gelb/schwarz, Sirene)
+- [x] **Punching Bulb (PUNCHBÄLLØ)** · Folge 5 · 2/24 · flatpack Möbelkatalog (blau/gelb, Montageanleitung)
+- [x] **Steuerquartett** · Folge 31 · 0/24 · Amtsformular × Quartett-Karten (amtsgrau, Stempel)
+- [x] **Blinkerhand** · Folge 42 · ungewertet · automotive aftermarket tuning (carbon, DIN-Maßzeichnung)
+- [x] **Garbage Pro 360 (G60)** · Folge 36 · ungewertet · Apple-keynote-Parodie (grau/weiß, ultradünn)
+- [x] **Jonas von Schwan — Schwan-Export** · Folge 33 · ungewertet · luxus-export Handelshaus (creme/teal/gold ornamental)
+- [x] **Fanta GNU** · Folge 1 · ungewertet · softdrink retro-wüsten-pop (orange, Sahara, Hitzeflimmern)
+
 ## Konvention bei NEUEN Folgen
 
-Wenn eine neue Folge kommt und eine Startup-Idee mit Punkten ≥ 10 enthält:
+Jede neue Folge mit Startup-Idee bekommt eine eigene Page (unabhängig von der Punktzahl):
 1. Roadmap-Eintrag in dieser Datei ergänzen
 2. PR-Template-Checklist hat dafür eine eigene Checkbox (siehe `.github/PULL_REQUEST_TEMPLATE.md`)
 3. Page mit komplett neuem Style (siehe Liste oben — keinen Stil doppelt)
+4. Eintrag in `public/data/startup-pages.json` + `node scripts/inject-back-button.js` ausführen

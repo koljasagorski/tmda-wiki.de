@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steuerquartett – Das amtliche Kartenspiel zur Zwangszustellung</title>
+<meta name="description" content="Steuerquartett: das amtlich verordnete Quartett-Kartenspiel mit deutschen Steuersätzen. Zwangszustellung per Post an alle Haushalte. Mit Steuerquartettsteuer-Joker. Eine fiktive Produktankündigung aus dem TMDA-Podcast.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/steuerquartett">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Steuerquartett – Das amtliche Kartenspiel zur Zwangszustellung">
+<meta property="og:description" content="Amtlich verordnetes Quartett mit deutschen Steuersätzen. Zwangszustellung per Post. Mit Steuerquartettsteuer-Joker. Schutzgebühr 0 €.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/steuerquartett">
+<meta property="og:image" content="https://tmda-wiki.de/startup/steuerquartett/og.png">
+<meta property="og:site_name" content="TMDA-Wiki">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Steuerquartett – Das amtliche Kartenspiel zur Zwangszustellung">
+<meta name="twitter:description" content="Amtlich verordnetes Quartett mit deutschen Steuersätzen. Zwangszustellung per Post. Mit Steuerquartettsteuer-Joker.">
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/steuerquartett/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Steuerquartett",
+  "description": "Amtlich verordnetes Quartett-Kartenspiel mit deutschen Steuersätzen. Karten konkurrieren über Prozentsatz und jährlichen Beitrag zum Bundeshaushalt. Zwangszustellung per Post an alle Haushalte. Mit Steuerquartettsteuer-Joker.",
+  "category": "Gesellschaftsspiel / Verwaltungsakt",
+  "brand": {
+    "@type": "Brand",
+    "name": "Bundesstelle für spielerische Abgabenkultur (BSA)"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "description": "Schutzgebühr 0,00 € – Zwangszustellung gemäß Verordnung. Eine Abbestellung ist nicht vorgesehen."
+  }
+}
+</script>
+<style>
+:root{
+  --amt-grau:#3a3d42;
+  --amt-grau-hell:#62666c;
+  --papier:#f4f2ec;
+  --papier-tief:#e9e6dd;
+  --linie:#c9c4b6;
+  --tinte:#1f2226;
+  --rot:#9a1b1b;
+  --stempel:#2c4a7a;
+  --karte-gold:#c9a227;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Fira Sans',system-ui,sans-serif;
+  background:var(--papier);
+  color:var(--tinte);
+  line-height:1.55;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(58,61,66,.045) 27px, rgba(58,61,66,.045) 28px);
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+.mono{font-family:'Fira Mono',monospace}
+a{color:var(--stempel)}
+
+/* ---- Amtskopf ---- */
+.amtskopf{
+  border-bottom:3px double var(--amt-grau);
+  background:var(--papier);
+  padding:14px 0 10px;
+}
+.amtskopf .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.wappen{
+  display:flex;align-items:center;gap:12px;
+}
+.adler{
+  width:46px;height:46px;border:2px solid var(--amt-grau);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:24px;
+  background:var(--papier-tief);flex:none;
+}
+.behoerde{font-size:.78rem;line-height:1.3;text-transform:uppercase;letter-spacing:.5px;color:var(--amt-grau)}
+.behoerde strong{display:block;font-size:.92rem;letter-spacing:.3px;color:var(--tinte)}
+.aktenzeichen{font-size:.72rem;text-align:right;color:var(--amt-grau-hell)}
+.aktenzeichen span{display:block}
+
+/* ---- Hero / Formular ---- */
+.hero{padding:38px 0 30px}
+.formularkasten{
+  border:1px solid var(--amt-grau);
+  background:#fbfaf6;
+  position:relative;
+  box-shadow:4px 4px 0 rgba(58,61,66,.12);
+}
+.formularkopf{
+  border-bottom:1px solid var(--linie);
+  background:var(--papier-tief);
+  padding:8px 18px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;
+  font-size:.74rem;text-transform:uppercase;letter-spacing:1px;color:var(--amt-grau)
+}
+.formularkorpus{padding:26px 22px 30px}
+.kennung{font-size:.74rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--rot);margin-bottom:6px}
+h1{
+  font-size:clamp(2rem,6vw,3.4rem);
+  line-height:1.04;font-weight:700;letter-spacing:-.5px;margin-bottom:8px;
+}
+h1 .sub{display:block;font-size:.42em;font-weight:500;color:var(--amt-grau-hell);letter-spacing:.5px;margin-top:8px;text-transform:none}
+.subtitle{font-size:1.05rem;max-width:60ch;color:var(--amt-grau);margin:14px 0 22px}
+.feldzeile{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--linie);margin-top:18px;background:#fff;
+}
+.feld{padding:9px 12px;border-right:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.feld:nth-child(2n){border-right:none}
+.feld label{display:block;font-size:.64rem;text-transform:uppercase;letter-spacing:1px;color:var(--amt-grau-hell);margin-bottom:2px}
+.feld .val{font-family:'Fira Mono',monospace;font-size:.92rem;font-weight:500}
+.stempel{
+  position:absolute;top:30px;right:18px;transform:rotate(-9deg);
+  border:3px solid var(--rot);color:var(--rot);
+  padding:6px 14px;border-radius:6px;font-weight:700;
+  text-transform:uppercase;letter-spacing:2px;font-size:.78rem;
+  opacity:.82;background:rgba(154,27,27,.04);text-align:center;line-height:1.2;
+}
+.stempel small{display:block;font-size:.56rem;letter-spacing:1px;font-weight:500}
+.hinweisbox{
+  margin-top:22px;border-left:4px solid var(--amt-grau);
+  background:var(--papier-tief);padding:12px 16px;font-size:.9rem;color:var(--amt-grau)
+}
+
+/* ---- Abschnitt ---- */
+.section{padding:34px 0}
+.section-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--amt-grau);padding-bottom:8px;margin-bottom:24px}
+.section-head .nr{font-family:'Fira Mono',monospace;font-size:.82rem;color:var(--rot);font-weight:700;letter-spacing:1px}
+h2{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:700;letter-spacing:-.3px}
+.section-head p{margin-left:auto;font-size:.74rem;text-transform:uppercase;letter-spacing:1px;color:var(--amt-grau-hell)}
+
+/* ---- Quartett-Karten ---- */
+.karten{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;
+}
+.karte{
+  border:2px solid var(--amt-grau);
+  border-radius:12px;
+  background:linear-gradient(160deg,#fdfcf8 0%,#f0ede4 100%);
+  padding:0;overflow:hidden;
+  box-shadow:3px 3px 0 rgba(58,61,66,.15);
+  display:flex;flex-direction:column;
+  position:relative;
+}
+.karte::before{
+  content:"";position:absolute;inset:5px;border:1px solid var(--karte-gold);border-radius:8px;pointer-events:none;opacity:.5;
+}
+.karte-kopf{
+  background:var(--amt-grau);color:#f4f2ec;
+  padding:9px 14px;display:flex;justify-content:space-between;align-items:center;
+}
+.karte-kopf .knr{font-family:'Fira Mono',monospace;font-size:.7rem;opacity:.8}
+.karte-kopf .gruppe{font-size:.62rem;text-transform:uppercase;letter-spacing:1.5px;background:var(--karte-gold);color:#2a2a1a;padding:1px 7px;border-radius:3px;font-weight:700}
+.karte-titel{padding:14px 14px 4px;font-size:1.18rem;font-weight:700;line-height:1.1}
+.karte-bild{
+  margin:6px 14px;height:74px;border:1px dashed var(--linie);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;font-size:2.6rem;
+  background:rgba(201,162,39,.06);
+}
+.werte{list-style:none;padding:6px 14px 4px;margin:0;flex:1}
+.werte li{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:5px 0;border-bottom:1px dotted var(--linie);font-size:.85rem;
+}
+.werte li:last-child{border-bottom:none}
+.werte .lbl{color:var(--amt-grau)}
+.werte .num{font-family:'Fira Mono',monospace;font-weight:700;font-size:1rem}
+.werte .num.top{color:var(--rot)}
+.karte-fuss{
+  font-size:.66rem;color:var(--amt-grau-hell);padding:8px 14px 12px;border-top:1px solid var(--linie);font-style:italic;
+}
+
+/* ---- Spielregeln ---- */
+.regeln{
+  border:1px solid var(--amt-grau);background:#fbfaf6;
+}
+.regeln-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:0}
+.regeln-haupt{padding:24px 22px;border-right:1px solid var(--linie)}
+.regeln ol{margin:0;padding-left:1.3em}
+.regeln li{margin-bottom:12px;font-size:.95rem}
+.regeln li strong{color:var(--tinte)}
+.joker{
+  padding:24px 22px;background:var(--papier-tief);
+}
+.joker .badge{
+  display:inline-block;border:2px dashed var(--rot);color:var(--rot);
+  font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:.7rem;
+  padding:4px 10px;border-radius:5px;margin-bottom:12px;
+}
+.joker h3{font-size:1.05rem;margin-bottom:8px}
+.joker p{font-size:.88rem;color:var(--amt-grau)}
+.joker .formel{
+  font-family:'Fira Mono',monospace;font-size:.8rem;margin-top:14px;
+  background:#fff;border:1px solid var(--linie);padding:10px 12px;color:var(--tinte)
+}
+
+/* ---- Verteilung / CTA ---- */
+.cta{
+  border:3px double var(--amt-grau);background:#fbfaf6;
+  padding:30px 24px;text-align:center;position:relative;
+}
+.cta .kennung{margin-bottom:10px}
+.cta h2{margin-bottom:10px}
+.cta p{max-width:58ch;margin:0 auto 22px;color:var(--amt-grau)}
+.cta-felder{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:22px}
+.cta-feld{
+  border:1px solid var(--amt-grau);background:#fff;padding:10px 18px;min-width:150px;
+}
+.cta-feld .lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:1px;color:var(--amt-grau-hell)}
+.cta-feld .val{font-family:'Fira Mono',monospace;font-weight:700;font-size:1.1rem}
+.button{
+  display:inline-block;background:var(--amt-grau);color:#f4f2ec;
+  text-decoration:none;padding:13px 28px;font-weight:700;
+  text-transform:uppercase;letter-spacing:1.5px;font-size:.82rem;
+  border:none;cursor:default;box-shadow:3px 3px 0 rgba(58,61,66,.25);
+}
+.kleingedruckt{margin-top:16px;font-size:.68rem;color:var(--amt-grau-hell);font-style:italic}
+
+/* ---- Footer ---- */
+footer{
+  border-top:3px double var(--amt-grau);
+  margin-top:20px;padding:24px 18px 40px;text-align:center;
+  font-size:.8rem;color:var(--amt-grau);max-width:980px;margin-left:auto;margin-right:auto;
+}
+.disclaimer{font-style:italic;font-size:.78rem;color:var(--amt-grau-hell);max-width:62ch;margin:0 auto 14px;line-height:1.5}
+
+@media(max-width:620px){
+  .feldzeile{grid-template-columns:1fr}
+  .feld{border-right:none}
+  .regeln-grid{grid-template-columns:1fr}
+  .regeln-haupt{border-right:none;border-bottom:1px solid var(--linie)}
+  .stempel{top:auto;bottom:14px;right:14px;transform:rotate(-7deg) scale(.85)}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<header class="amtskopf">
+  <div class="wrap">
+    <div class="wappen">
+      <div class="adler" aria-hidden="true">🦅</div>
+      <div class="behoerde">
+        Bundesrepublik Deutschland
+        <strong>Bundesstelle für spielerische Abgabenkultur</strong>
+        Referat IV b – Haushaltsnahe Unterhaltung
+      </div>
+    </div>
+    <div class="aktenzeichen mono">
+      <span>Az.: BSA IV b – 31/0-24</span>
+      <span>Vorgang: ZWANGSZUSTELLUNG</span>
+      <span>Gültig ab sofort</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="formularkasten">
+        <div class="formularkopf">
+          <span>Formular SQ-1 · Produktankündigung</span>
+          <span>Seite 1 von 1</span>
+        </div>
+        <div class="formularkorpus">
+          <div class="stempel" aria-hidden="true">Amtlich<small>verordnet</small></div>
+          <p class="kennung mono">Anlage 31 zur Verordnung über haushaltsnahe Steuerunterhaltung</p>
+          <h1>Steuerquartett
+            <span class="sub">Das amtlich verordnete Kartenspiel mit deutschen Steuersätzen.</span>
+          </h1>
+          <p class="subtitle">Vergleichen Sie Mehrwertsteuer, Körperschaftssteuer und Erbschaftssteuer im bewährten Quartett-Modus. Es gewinnt, wer den höheren Beitrag zum Bundeshaushalt leistet. Eine Teilnahme ist nicht erforderlich – die Zustellung erfolgt von Amts wegen.</p>
+
+          <div class="feldzeile">
+            <div class="feld">
+              <label>Produktart</label>
+              <div class="val">Quartett-Kartenspiel (verbindlich)</div>
+            </div>
+            <div class="feld">
+              <label>Zustellungsart</label>
+              <div class="val">Zwangszustellung per Post</div>
+            </div>
+            <div class="feld">
+              <label>Empfängerkreis</label>
+              <div class="val">Alle Haushalte, Bundesgebiet</div>
+            </div>
+            <div class="feld">
+              <label>Schutzgebühr</label>
+              <div class="val">0,00 € (steuerfinanziert)</div>
+            </div>
+          </div>
+
+          <div class="hinweisbox">
+            <strong>Hinweis nach § 0 SpAbgKultG:</strong> Mit Eingang dieses Spiels in Ihrem Briefkasten gilt die Annahme als erfolgt. Ein Widerspruch ist statthaft, bleibt jedoch ohne aufschiebende Wirkung. Die Karten sind sorgfältig aufzubewahren und auf Verlangen vorzulegen.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KARTEN -->
+  <section class="section" id="karten">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="nr mono">§ 1</span>
+        <h2>Das Kartenwerk</h2>
+        <p>Auszug · 4 von 32 Karten</p>
+      </div>
+
+      <div class="karten">
+
+        <!-- Mehrwertsteuer -->
+        <article class="karte">
+          <div class="karte-kopf">
+            <span class="knr mono">Karte A1</span>
+            <span class="gruppe">Verbrauch</span>
+          </div>
+          <h3 class="karte-titel">Mehrwertsteuer</h3>
+          <div class="karte-bild" aria-hidden="true">🧾</div>
+          <ul class="werte">
+            <li><span class="lbl">Regelsatz</span><span class="num top">19,0 %</span></li>
+            <li><span class="lbl">Beitrag z. Bundeshaushalt</span><span class="num">291,4 Mrd €</span></li>
+            <li><span class="lbl">Erhebungshäufigkeit</span><span class="num">täglich</span></li>
+            <li><span class="lbl">Ausweichbarkeit</span><span class="num">3 / 10</span></li>
+          </ul>
+          <p class="karte-fuss">Sticht beim Einkaufswagen-Trumpf. Ermäßigter Satz (7 %) gilt als Sonderkarte.</p>
+        </article>
+
+        <!-- Körperschaftssteuer -->
+        <article class="karte">
+          <div class="karte-kopf">
+            <span class="knr mono">Karte B2</span>
+            <span class="gruppe">Ertrag</span>
+          </div>
+          <h3 class="karte-titel">Körperschaftssteuer</h3>
+          <div class="karte-bild" aria-hidden="true">🏢</div>
+          <ul class="werte">
+            <li><span class="lbl">Steuersatz</span><span class="num top">15,0 %</span></li>
+            <li><span class="lbl">Beitrag z. Bundeshaushalt</span><span class="num">45,7 Mrd €</span></li>
+            <li><span class="lbl">Erhebungshäufigkeit</span><span class="num">jährlich</span></li>
+            <li><span class="lbl">Ausweichbarkeit</span><span class="num">7 / 10</span></li>
+          </ul>
+          <p class="karte-fuss">Beliebte Trumpfkarte im Konzern-Stapel. Hohe Ausweichbarkeit, mäßiger Satz.</p>
+        </article>
+
+        <!-- Erbschaftssteuer -->
+        <article class="karte">
+          <div class="karte-kopf">
+            <span class="knr mono">Karte C3</span>
+            <span class="gruppe">Übergang</span>
+          </div>
+          <h3 class="karte-titel">Erbschaftssteuer</h3>
+          <div class="karte-bild" aria-hidden="true">⚱️</div>
+          <ul class="werte">
+            <li><span class="lbl">Eingangssatz</span><span class="num top">7,0 %</span></li>
+            <li><span class="lbl">Beitrag z. Bundeshaushalt</span><span class="num">11,8 Mrd €</span></li>
+            <li><span class="lbl">Erhebungshäufigkeit</span><span class="num">einmalig</span></li>
+            <li><span class="lbl">Ausweichbarkeit</span><span class="num">9 / 10</span></li>
+          </ul>
+          <p class="karte-fuss">Gewinnt nur posthum. Bei Freibetrag wird die Karte stillschweigend abgelegt.</p>
+        </article>
+
+        <!-- Hundesteuer -->
+        <article class="karte">
+          <div class="karte-kopf">
+            <span class="knr mono">Karte D4</span>
+            <span class="gruppe">Regional</span>
+          </div>
+          <h3 class="karte-titel">Hundesteuer</h3>
+          <div class="karte-bild" aria-hidden="true">🐕</div>
+          <ul class="werte">
+            <li><span class="lbl">Satz p. a. (Ø)</span><span class="num top">120,00 €</span></li>
+            <li><span class="lbl">Beitrag z. Bundeshaushalt</span><span class="num">0,42 Mrd €</span></li>
+            <li><span class="lbl">Erhebungshäufigkeit</span><span class="num">jährlich</span></li>
+            <li><span class="lbl">Ausweichbarkeit</span><span class="num">2 / 10</span></li>
+          </ul>
+          <p class="karte-fuss">Regionaler Ableger. Kommunal hebbar. Schwächste Haushaltskarte, dafür unentrinnbar.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPIELREGELN -->
+  <section class="section" id="regeln">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="nr mono">§ 2</span>
+        <h2>Spielregeln (Kurzfassung)</h2>
+        <p>verbindlich</p>
+      </div>
+
+      <div class="regeln">
+        <div class="regeln-grid">
+          <div class="regeln-haupt">
+            <ol>
+              <li>Das Kartenwerk wird vollständig und gleichmäßig an alle Teilnehmenden ausgeteilt. Eine <strong>Verweigerung der Teilnahme</strong> ist nicht vorgesehen.</li>
+              <li>Reihum nennt eine teilnehmende Person einen <strong>Top-Trumpf-Wert</strong> (z. B. „Beitrag zum Bundeshaushalt" oder „Steuersatz").</li>
+              <li>Es gewinnt die Karte mit dem <strong>höheren Beitrag zum Bundeshaushalt</strong>. Bei Gleichstand entscheidet der Hebesatz.</li>
+              <li>Die Gewinnerin zieht alle ausgespielten Karten ein und vereinnahmt sie für das laufende Haushaltsjahr.</li>
+              <li>Das Spiel endet, sobald eine Person sämtliche Karten besitzt – oder das Bundesverfassungsgericht angerufen wird.</li>
+            </ol>
+          </div>
+          <div class="joker">
+            <span class="badge">Sonderkarte</span>
+            <h3>Steuerquartettsteuer-Joker</h3>
+            <p>Wird der Joker gezogen, fällt auf den Besitz und das Spielen des Steuerquartetts eine eigene Abgabe an – die <strong>Steuerquartettsteuer</strong>. Sie wird je gehaltener Karte erhoben und ist sofort fällig.</p>
+            <div class="formel">
+              Steuerquartettsteuer<br>
+              = Kartenanzahl × 0,19 €<br>
+              × (1 + Soli-Zuschlag)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERTEILUNG / CTA -->
+  <section class="section" id="verteilung">
+    <div class="wrap">
+      <div class="cta">
+        <p class="kennung mono">§ 3 · Zustellung & Vollzug</p>
+        <h2>Ihr Exemplar ist bereits unterwegs.</h2>
+        <p>Eine Bestellung ist weder möglich noch nötig. Die Zustellung erfolgt von Amts wegen, portofrei und ohne Empfangsbekenntnis. Sollte das Spiel binnen 14 Werktagen nicht eingetroffen sein, gilt es dennoch als zugestellt.</p>
+
+        <div class="cta-felder">
+          <div class="cta-feld">
+            <div class="lbl">Schutzgebühr</div>
+            <div class="val mono">0,00 €</div>
+          </div>
+          <div class="cta-feld">
+            <div class="lbl">Auflage</div>
+            <div class="val mono">41,5 Mio. Haushalte</div>
+          </div>
+          <div class="cta-feld">
+            <div class="lbl">Abbestellung</div>
+            <div class="val mono">nicht vorgesehen</div>
+          </div>
+        </div>
+
+        <span class="button" role="button" aria-disabled="true">Zustellung läuft – kein Handeln erforderlich</span>
+        <p class="kleingedruckt">Rechtsbehelfsbelehrung: Gegen die Zustellung kann innerhalb eines Monats Widerspruch erhoben werden. Der Widerspruch wird sodann ordnungsgemäß abgelegt.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p class="disclaimer">Satire-Hinweis: „Steuerquartett" ist ein frei erfundenes Konzept aus dem Podcast „Teenager mit deutschem Akzent". Es gibt keine Bundesstelle für spielerische Abgabenkultur, keine Zwangszustellung und keine Steuerquartettsteuer. Alle Haushaltszahlen, Aktenzeichen und Paragrafen sind erfunden und dienen ausschließlich der Belustigung. Bitte verklagen Sie uns nicht.</p>
+  Fiktives Konzept · TMDA #31 · 0/24 · <a href="/folge/31">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+</body>
+</html>

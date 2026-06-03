@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kofferreisen.de — Reise im Koffer und spar dir das Ticket</title>
+<meta name="description" content="Kofferreisen.de: der präparierte Reisekoffer mit Belüftung, Druckausgleich, Stuhl, Display und Akku. Matching-Plattform für Mitreisende — spar dir das Ticket."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/kofferreisen"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Kofferreisen.de — Reise im Koffer"/>
+<meta property="og:description" content="Präparierter Koffer mit Belüftung, Druckausgleich, Stuhl, Display & Akku. Spar dir das Ticket — reise als Gepäck."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/kofferreisen"/>
+<meta property="og:image" content="https://tmda-wiki.de/startup/kofferreisen/og.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Kofferreisen.de — Reise im Koffer"/>
+<meta name="twitter:description" content="Präparierter Koffer mit Belüftung, Druckausgleich, Stuhl, Display & Akku. Spar dir das Ticket."/>
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/kofferreisen/og.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Archivo+Black&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Kofferreisen.de Reisekoffer",
+  "image": "https://tmda-wiki.de/startup/kofferreisen/og.png",
+  "description": "Präparierter, sarkophag-ähnlicher Reisekoffer mit Belüftung, Druckausgleich, ausklappbarem Stuhl, Display und Akku. Matching-Plattform, um Personen als Gepäck mitzunehmen und Reisekosten zu sparen.",
+  "brand": { "@type": "Brand", "name": "Kofferreisen.de" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "49.99",
+    "availability": "https://schema.org/PreOrder",
+    "url": "https://tmda-wiki.de/startup/kofferreisen"
+  }
+}
+</script>
+<style>
+  :root{
+    --navy:#0b1f4d;
+    --navy-2:#13286b;
+    --yellow:#ffd400;
+    --yellow-deep:#f5b800;
+    --ink:#0a1633;
+    --paper:#fffdf4;
+    --line:#0b1f4d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--navy);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  h1,h2,h3{font-family:'Archivo Black','Archivo',sans-serif;line-height:.98;letter-spacing:-.02em}
+
+  /* top airline bar */
+  .topbar{
+    background:var(--yellow);
+    color:var(--navy);
+    border-bottom:4px solid var(--navy);
+    font-family:'JetBrains Mono',monospace;
+    font-weight:700;
+    font-size:.78rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+  .brandmark{display:flex;align-items:center;gap:9px}
+  .brandmark .plane{font-size:1.05rem;transform:rotate(45deg)}
+  .brandmark b{font-family:'Archivo Black',sans-serif;font-size:.95rem;letter-spacing:-.01em;text-transform:none}
+
+  /* hero */
+  .hero{padding:54px 0 64px;background:
+    radial-gradient(900px 400px at 80% -10%, rgba(255,212,0,.18), transparent 60%),
+    var(--navy);
+    border-bottom:4px solid var(--yellow);
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .kicker{
+    display:inline-block;background:var(--yellow);color:var(--navy);
+    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.72rem;
+    letter-spacing:.18em;text-transform:uppercase;padding:6px 12px;margin-bottom:20px;
+  }
+  .hero h1{color:#fff;font-size:clamp(2.6rem,7vw,4.7rem);text-transform:uppercase}
+  .hero h1 .hl{color:var(--yellow)}
+  .hero p.lead{color:#cdd7f2;font-size:1.18rem;margin:20px 0 28px;max-width:30ch}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;font-family:'Archivo Black',sans-serif;text-transform:uppercase;
+    letter-spacing:.02em;font-size:1rem;padding:16px 26px;border:3px solid var(--navy);
+    text-decoration:none;cursor:pointer;transition:transform .08s ease;
+  }
+  .btn:active{transform:translateY(2px)}
+  .btn-primary{background:var(--yellow);color:var(--navy);border-color:var(--yellow)}
+  .btn-primary:hover{background:var(--yellow-deep)}
+  .btn-ghost{background:transparent;color:#fff;border-color:#fff}
+  .btn-ghost:hover{background:#fff;color:var(--navy)}
+
+  /* boarding pass */
+  .pass{
+    background:var(--paper);
+    border-radius:14px;
+    box-shadow:0 24px 60px rgba(0,0,0,.45);
+    overflow:hidden;
+    border:2px solid #000;
+    position:relative;
+  }
+  .pass-head{
+    background:var(--navy);color:#fff;padding:14px 20px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  }
+  .pass-head .tag{color:var(--yellow);font-weight:700}
+  .pass-body{padding:22px 22px 8px}
+  .route{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .route .city{text-align:center}
+  .route .code{font-family:'Archivo Black',sans-serif;font-size:2.1rem;line-height:1;color:var(--navy)}
+  .route .sub{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;color:#667;margin-top:4px;text-transform:uppercase}
+  .route .arc{flex:1;text-align:center;color:var(--navy);font-size:1.2rem;opacity:.6;transform:rotate(45deg)}
+  .grid-info{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:20px}
+  .grid-info .cell{border:1.5px solid #d9d2b0;padding:8px 10px}
+  .grid-info .lbl{font-family:'JetBrains Mono',monospace;font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:#8a8260}
+  .grid-info .val{font-family:'Archivo Black',sans-serif;font-size:1.02rem;color:var(--navy);margin-top:2px}
+  .perf{border-top:2px dashed #b9b18c;margin-top:18px;position:relative}
+  .perf::before,.perf::after{content:"";position:absolute;top:-13px;width:26px;height:26px;border-radius:50%;background:var(--navy)}
+  .perf::before{left:-35px}
+  .perf::after{right:-35px}
+  .barcode{padding:16px 22px 20px;display:flex;align-items:flex-end;gap:2px;height:64px}
+  .barcode span{display:block;width:3px;background:var(--navy)}
+
+  /* sections */
+  section{padding:64px 0}
+  .sec-yellow{background:var(--yellow)}
+  .sec-paper{background:var(--paper)}
+  .sec-label{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+  .sec-title{font-size:clamp(2rem,5vw,3.1rem);text-transform:uppercase;color:var(--navy);max-width:18ch}
+  .sec-paper .sec-label{color:var(--navy-2)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .step{background:var(--navy);color:#fff;padding:26px 22px;border-radius:12px;position:relative;overflow:hidden}
+  .step .num{font-family:'Archivo Black',sans-serif;font-size:3.4rem;color:var(--yellow);line-height:.9}
+  .step h3{font-size:1.25rem;margin:10px 0 8px;text-transform:uppercase;color:#fff}
+  .step p{color:#c2cdec;font-size:.96rem}
+  .step .stub{position:absolute;top:14px;right:16px;font-family:'JetBrains Mono',monospace;font-size:.6rem;letter-spacing:.14em;color:var(--yellow);opacity:.8}
+
+  .features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:38px}
+  .feat{display:flex;gap:16px;align-items:flex-start;border:2px solid var(--navy);border-radius:12px;padding:20px;background:#fff}
+  .feat .ic{font-size:1.6rem;flex:0 0 auto;width:46px;height:46px;display:grid;place-items:center;background:var(--yellow);border-radius:10px}
+  .feat h3{font-size:1.12rem;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+  .feat p{font-size:.95rem;color:#3b466b}
+
+  /* price / matching */
+  .sec-cta{background:var(--navy);text-align:center}
+  .sec-cta .sec-title{color:#fff;margin:0 auto;text-align:center}
+  .sec-cta .sec-label{color:var(--yellow)}
+  .pricecard{
+    max-width:520px;margin:34px auto 0;background:var(--paper);border-radius:16px;
+    border:2px solid #000;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)
+  }
+  .pricecard .top{background:var(--yellow);color:var(--navy);padding:18px;font-family:'JetBrains Mono',monospace;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+  .pricecard .price{font-family:'Archivo Black',sans-serif;font-size:3.6rem;color:var(--navy);padding:26px 0 4px}
+  .pricecard .price small{font-size:1rem;font-family:'JetBrains Mono',monospace;letter-spacing:.08em}
+  .pricecard .note{color:#5a527f;color:#6a6488;font-size:.9rem;padding:0 28px 22px}
+  .pricecard .matchline{font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.06em;color:var(--navy-2);border-top:2px dashed #b9b18c;padding:16px 22px;text-transform:uppercase}
+  .pricecard .pad{padding:0 28px 30px}
+  .pricecard .btn{width:100%}
+
+  footer{background:#05122e;color:#9fb0d9;text-align:center;padding:34px 20px;font-size:.86rem}
+  footer .disc{font-style:italic;color:#7b8bb5;max-width:60ch;margin:0 auto 12px;font-size:.82rem}
+  footer a{color:var(--yellow);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+
+  @media(max-width:820px){
+    .hero .wrap{grid-template-columns:1fr;gap:34px}
+    .hero p.lead{max-width:none}
+    .steps{grid-template-columns:1fr}
+    .features{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="brandmark"><span class="plane">✈</span><b>Kofferreisen.de</b></span>
+    <span>Gepäck-Klasse · Spar dir das Ticket</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Folge 40 · Boarding offen</span>
+      <h1>Reise im <span class="hl">Koffer</span>. Spar dir das Ticket.</h1>
+      <p class="lead">Der präparierte Reisekoffer für Personen — mit Belüftung, Druckausgleich und eigenem Sitzplatz. Du buchst kein Ticket. Du bist das Gepäck.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#preis">Jetzt einchecken</a>
+        <a class="btn btn-ghost" href="#ausstattung">Koffer ansehen</a>
+      </div>
+    </div>
+
+    <div class="pass" role="img" aria-label="Boarding-Pass für eine Kofferreise">
+      <div class="pass-head">
+        <span>Boarding Pass</span>
+        <span class="tag">Klasse: Gepäck</span>
+      </div>
+      <div class="pass-body">
+        <div class="route">
+          <div class="city"><div class="code">BER</div><div class="sub">Berlin · Aufgabe</div></div>
+          <div class="arc">✈</div>
+          <div class="city"><div class="code">PMI</div><div class="sub">Palma · Abholung</div></div>
+        </div>
+        <div class="grid-info">
+          <div class="cell"><div class="lbl">Passagier</div><div class="val">VERSTAUT, M.</div></div>
+          <div class="cell"><div class="lbl">Sitz im Koffer</div><div class="val">01-A</div></div>
+          <div class="cell"><div class="lbl">Gate</div><div class="val">B8</div></div>
+          <div class="cell"><div class="lbl">Belüftung</div><div class="val">AKTIV</div></div>
+          <div class="cell"><div class="lbl">Akku</div><div class="val">100%</div></div>
+          <div class="cell"><div class="lbl">Gewicht</div><div class="val">≈ 1 Pers.</div></div>
+        </div>
+      </div>
+      <div class="perf"></div>
+      <div class="barcode" id="barcode" aria-hidden="true"></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec-yellow" id="ablauf">
+  <div class="wrap">
+    <div class="sec-label">In 3 Schritten unterwegs</div>
+    <h2 class="sec-title">So reist du im Koffer</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="stub">SEQ 01</span>
+        <div class="num">1</div>
+        <h3>Matchen</h3>
+        <p>Du suchst eine Strecke, ein:e Reisende:r mit Freigepäck nimmt dich auf. Plattform schlägt euch passgenau vor — Route, Termin, Koffergröße.</p>
+      </div>
+      <div class="step">
+        <span class="stub">SEQ 02</span>
+        <div class="num">2</div>
+        <h3>Einsteigen</h3>
+        <p>Stuhl ausklappen, Display einschalten, Belüftung an. Du wirst sanft verstaut, der Druckausgleich regelt den Rest. Reißverschluss zu.</p>
+      </div>
+      <div class="step">
+        <span class="stub">SEQ 03</span>
+        <div class="num">3</div>
+        <h3>Aufgeben</h3>
+        <p>Dein Match gibt dich am Schalter auf. Du fährst auf dem Band mit, schaust Serien, lädst das Handy. Am Ziel: Reißverschluss auf, Urlaub.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-paper" id="ausstattung">
+  <div class="wrap">
+    <div class="sec-label">Innenausstattung · Modell „Sarkophag Comfort“</div>
+    <h2 class="sec-title">Was im Koffer steckt</h2>
+    <div class="features">
+      <div class="feat">
+        <div class="ic">🌬️</div>
+        <div><h3>Belüftung</h3><p>Stiller Lüfter mit Frischluftkanal. Kein Mief, kein Schwitzen — drei Stufen, leise genug fürs Gepäckband.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">🎚️</div>
+        <div><h3>Druckausgleich</h3><p>Automatisches Ventilsystem hält die Ohren entspannt — von der Aufgabe bis zum Reiseflug in 10.000 Metern.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">🪑</div>
+        <div><h3>Kleiner Stuhl</h3><p>Gepolsterter Klappsitz mit Gurt. Du sitzt aufrecht statt zusammengefaltet — fast wie Economy, nur ohne Ticket.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">📺</div>
+        <div><h3>Display</h3><p>7-Zoll-Bildschirm an der Innenwand. Filme, Karte, Restzeit bis zur Abholung. Inflight-Entertainment im Koffer.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">🔋</div>
+        <div><h3>Akku</h3><p>Versorgt Lüfter, Display und Beleuchtung für bis zu zwei Langstrecken. USB-Anschluss fürs Handy inklusive.</p></div>
+      </div>
+      <div class="feat">
+        <div class="ic">📦</div>
+        <div><h3>Reisetauglich</h3><p>Robuste Hartschale in zugelassener Aufgabegröße. Außen unscheinbar — innen ein kleines Reise-Apartment.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-cta" id="preis">
+  <div class="wrap">
+    <div class="sec-label">Matching &amp; Preis</div>
+    <h2 class="sec-title">Find dein Match. Spar das Ticket.</h2>
+    <div class="pricecard">
+      <div class="top">Pre-Boarding · Frühbucher</div>
+      <div class="price">49,99&nbsp;€<br><small>/ Strecke · pro Koffer-Passagier</small></div>
+      <div class="note">Statt eines Tickets zahlst du nur die Vermittlung. Den Rest erledigt dein Match an der Gepäckaufgabe.</div>
+      <div class="matchline">★ 2.413 Reisende suchen gerade ein Koffer-Match</div>
+      <div class="pad">
+        <a class="btn btn-primary" href="#preis" onclick="alert('Boarding pausiert: Kofferreisen.de ist ein fiktives Satire-Konzept aus TMDA #40. Kein echter Check-in. Bitte mit gültigem Ticket reisen.');return false;">Match anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="disc">Bitte nur Koffer aufgeben, die selbständig wieder herausfinden. Kofferreisen.de übernimmt keine Haftung für verzollte Verwandte, verlorenes Gepäck oder spontane Beam-Versuche am Sicherheitsband.</p>
+  Fiktives Konzept · TMDA #40 · 8/24 · <a href="/folge/40">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+<script>
+  // Barcode-Deko prozedural erzeugen
+  (function(){
+    var bc=document.getElementById('barcode');
+    if(!bc)return;
+    var html='';
+    for(var i=0;i<78;i++){
+      var w=(i%5===0)?4:(Math.random()>.55?3:1);
+      var h=Math.random()>.3?100:60;
+      html+='<span style="width:'+w+'px;height:'+h+'%"></span>';
+    }
+    bc.innerHTML=html;
+  })();
+</script>
+
+</body>
+</html>

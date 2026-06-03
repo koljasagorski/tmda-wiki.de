@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ROLLBED — Fahrbares Hotel: 5000 Betten rollen zum Event</title>
+<meta name="description" content="ROLLBED: das autonom fahrende Container-Hotel. Wohn-Container à 6–10 Einheiten rollen per Truck zu OMR, Wacken & Hurricane — 5000 Betten, dann weiter." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/fahrbares-hotel" />
+<meta property="og:title" content="ROLLBED — Das fahrbare Hotel" />
+<meta property="og:description" content="Autonome Container-Hotels rollen ans Event. 5000 Betten, dann weiter." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/fahrbares-hotel" />
+<meta property="og:image" content="https://tmda-wiki.de/startup/fahrbares-hotel/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ROLLBED — Das fahrbare Hotel" />
+<meta name="twitter:description" content="Autonome Container-Hotels rollen ans Event. 5000 Betten, dann weiter." />
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/fahrbares-hotel/og.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ROLLBED — Fahrbares Hotel",
+  "description": "Autonom fahrende Container-Hotels: Tieflader mit Wohn-Containern à 6–10 Einheiten werden per autonomen Trucks an Events gefahren. Temporäres Hotel mit bis zu 5000 Betten.",
+  "brand": { "@type": "Brand", "name": "ROLLBED" },
+  "category": "Mobile Hospitality / Event-Logistik",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "149.00",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "149.00",
+      "priceCurrency": "EUR",
+      "unitText": "Bett / Nacht"
+    },
+    "availability": "https://schema.org/PreOrder",
+    "url": "https://tmda-wiki.de/startup/fahrbares-hotel"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --steel: #20242a;
+  --steel-2: #2b313a;
+  --steel-3: #363d49;
+  --concrete: #5a6573;
+  --line: #434b58;
+  --orange: #ff6a00;
+  --orange-2: #ff8c33;
+  --hazard: #ffb000;
+  --ink: #f3f5f8;
+  --mute: #aab2bf;
+  --display: 'Oswald', 'Arial Narrow', sans-serif;
+  --sans: 'Barlow Semi Condensed', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--steel); color: var(--ink); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: var(--orange); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+
+/* Hazard-Streifen */
+.hazard-bar {
+  height: 16px;
+  background: repeating-linear-gradient(135deg, var(--hazard) 0 22px, var(--steel) 22px 44px);
+}
+
+/* Nav */
+.nav {
+  background: var(--steel-2);
+  border-bottom: 2px solid var(--orange);
+}
+.nav .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+.brand {
+  font-family: var(--display); font-weight: 700; font-size: 1.7rem;
+  letter-spacing: 0.04em; text-transform: uppercase; display: flex; align-items: center; gap: 10px;
+}
+.brand .mark {
+  display: inline-block; width: 30px; height: 22px; position: relative;
+  background: var(--orange); border: 2px solid var(--ink);
+}
+.brand .mark::before { content:''; position:absolute; inset: 3px; border: 1px solid rgba(0,0,0,.4); }
+.brand .o { color: var(--orange); }
+.nav-meta { font-family: var(--display); font-size: .85rem; letter-spacing: .22em; color: var(--mute); text-transform: uppercase; }
+
+/* Hero */
+.hero { padding: 76px 0 60px; position: relative; overflow: hidden; }
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(180deg, rgba(255,106,0,.05), transparent 40%),
+    repeating-linear-gradient(0deg, transparent 0 38px, rgba(255,255,255,.015) 38px 39px);
+  pointer-events:none;
+}
+.eyebrow {
+  font-family: var(--display); font-weight: 600; font-size: .9rem; letter-spacing: .3em;
+  text-transform: uppercase; color: var(--orange); margin-bottom: 18px;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.eyebrow::before { content:''; width: 28px; height: 3px; background: var(--orange); }
+.hero h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.8rem, 8vw, 6.4rem);
+  line-height: .92; letter-spacing: .01em; text-transform: uppercase; max-width: 16ch;
+}
+.hero h1 .o { color: var(--orange); }
+.hero .lead { font-size: 1.2rem; color: var(--mute); max-width: 54ch; margin-top: 26px; }
+.hero .lead strong { color: var(--ink); font-weight: 600; }
+.cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+.btn {
+  display: inline-block; padding: 15px 30px;
+  font-family: var(--display); font-weight: 600; font-size: 1.05rem; letter-spacing: .08em;
+  text-transform: uppercase; border: 2px solid; transition: all .14s; cursor: pointer;
+}
+.btn-orange { background: var(--orange); color: #1a1209; border-color: var(--orange); }
+.btn-orange:hover { background: var(--orange-2); border-color: var(--orange-2); text-decoration: none; }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover { background: var(--steel-3); border-color: var(--ink); text-decoration: none; }
+
+/* Container-Stapel als CSS-Blöcke */
+.stack { margin-top: 56px; display: flex; flex-direction: column; gap: 7px; max-width: 760px; }
+.ctr {
+  position: relative; height: 58px; border: 2px solid rgba(0,0,0,.45);
+  border-radius: 2px; display: flex; align-items: center; padding: 0 18px;
+  font-family: var(--display); font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: rgba(0,0,0,.7); font-size: .82rem;
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.06);
+  background-image: repeating-linear-gradient(90deg, rgba(0,0,0,.12) 0 2px, transparent 2px 26px);
+}
+.ctr .id { margin-left: auto; opacity: .85; }
+.ctr.c1 { background-color: var(--orange); }
+.ctr.c2 { background-color: var(--hazard); }
+.ctr.c3 { background-color: #4a8f8a; color: rgba(255,255,255,.85); }
+.ctr.c4 { background-color: #b5402e; color: rgba(255,255,255,.9); }
+.stack .truck {
+  margin-top: 4px; height: 30px; background: var(--steel-3);
+  border: 2px solid var(--line); display: flex; align-items: center; padding: 0 14px;
+  font-family: var(--display); letter-spacing: .2em; font-size: .72rem; color: var(--mute); text-transform: uppercase;
+}
+.stack .truck .auto { margin-left: auto; color: var(--orange); }
+
+/* Spec / Zahlenband */
+.band { background: var(--orange); color: #1a1209; border-top: 4px solid var(--steel); border-bottom: 4px solid var(--steel); padding: 48px 0; }
+.band-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px,1fr)); gap: 24px; text-align: center; }
+.band-num { font-family: var(--display); font-weight: 700; font-size: 3.6rem; line-height: .9; letter-spacing: -.01em; }
+.band-num .u { font-size: .34em; letter-spacing: .12em; }
+.band-label { font-family: var(--display); font-weight: 600; font-size: .82rem; letter-spacing: .2em; text-transform: uppercase; margin-top: 8px; }
+.band .div { width: 1px; }
+
+/* How */
+.how { padding: 92px 0; }
+.section-h {
+  font-family: var(--display); font-weight: 700; font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  line-height: .98; text-transform: uppercase; margin-bottom: 14px;
+}
+.section-h .o { color: var(--orange); }
+.section-sub { color: var(--mute); max-width: 56ch; margin-bottom: 48px; font-size: 1.08rem; }
+.steps { display: grid; grid-template-columns: repeat(3,1fr); border: 2px solid var(--line); }
+.step { padding: 34px 26px; border-right: 2px solid var(--line); background: var(--steel-2); position: relative; }
+.step:last-child { border-right: none; }
+.step-num {
+  font-family: var(--display); font-weight: 700; font-size: 3.4rem; color: var(--orange);
+  line-height: .9; margin-bottom: 14px;
+}
+.step h3 { font-family: var(--display); font-weight: 600; font-size: 1.3rem; letter-spacing: .03em; text-transform: uppercase; margin-bottom: 10px; }
+.step p { color: var(--mute); font-size: .98rem; }
+.step .tag { position: absolute; top: 18px; right: 20px; font-family: var(--display); font-size: .68rem; letter-spacing: .2em; color: var(--concrete); text-transform: uppercase; }
+
+/* Spec-Tabelle */
+.spec { padding: 92px 0; background: var(--steel-2); border-top: 4px solid var(--orange); }
+.spec-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start; }
+.spec-table { border: 2px solid var(--line); background: var(--steel); }
+.spec-table .r { display: grid; grid-template-columns: 1fr auto; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.spec-table .r:last-child { border-bottom: none; }
+.spec-table .k { font-family: var(--sans); color: var(--mute); letter-spacing: .02em; }
+.spec-table .v { font-family: var(--display); font-weight: 600; font-size: 1.15rem; color: var(--ink); letter-spacing: .04em; }
+.spec-table .v .o { color: var(--orange); }
+.spec-note { background: var(--steel-3); border-left: 4px solid var(--hazard); padding: 24px; }
+.spec-note h4 { font-family: var(--display); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; font-size: .95rem; color: var(--hazard); margin-bottom: 12px; }
+.spec-note p { color: var(--mute); font-size: .98rem; margin-bottom: 10px; }
+
+/* Events / CTA */
+.events { padding: 92px 0 100px; }
+.event-list { border: 2px solid var(--line); }
+.event {
+  display: grid; grid-template-columns: auto 1fr auto auto; gap: 20px; align-items: center;
+  padding: 22px 26px; border-bottom: 2px solid var(--line); background: var(--steel-2);
+}
+.event:last-child { border-bottom: none; }
+.event .code { font-family: var(--display); font-weight: 700; font-size: 1.05rem; letter-spacing: .14em; color: var(--orange); width: 46px; }
+.event .name { font-family: var(--display); font-weight: 600; font-size: 1.45rem; text-transform: uppercase; letter-spacing: .03em; }
+.event .name small { display: block; font-family: var(--sans); font-weight: 400; font-size: .85rem; letter-spacing: 0; color: var(--mute); text-transform: none; }
+.event .beds { font-family: var(--display); font-weight: 600; color: var(--mute); letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; text-align: right; }
+.event .beds b { display: block; color: var(--ink); font-size: 1.4rem; }
+.event .book { font-family: var(--display); font-weight: 600; letter-spacing: .1em; text-transform: uppercase; font-size: .82rem; padding: 10px 18px; border: 2px solid var(--orange); color: var(--orange); }
+.event .book:hover { background: var(--orange); color: #1a1209; text-decoration: none; }
+.event.soldout .book { border-color: var(--line); color: var(--concrete); pointer-events: none; }
+
+.final { margin-top: 56px; background: var(--orange); color: #1a1209; padding: 56px 40px; text-align: center; }
+.final h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1; text-transform: uppercase; max-width: 22ch; margin: 0 auto 18px; }
+.final p { max-width: 50ch; margin: 0 auto 26px; font-size: 1.08rem; font-weight: 500; }
+.final .btn-dark { background: var(--steel); color: var(--ink); border-color: var(--steel); }
+.final .btn-dark:hover { background: var(--steel-2); border-color: var(--steel-2); text-decoration: none; }
+
+footer { background: var(--steel-2); border-top: 4px solid var(--orange); padding: 40px 0; }
+footer .wrap { text-align: center; }
+.disclaimer { font-style: italic; color: var(--concrete); font-size: .9rem; max-width: 62ch; margin: 0 auto 16px; line-height: 1.6; }
+.footline { font-family: var(--display); font-weight: 500; letter-spacing: .08em; font-size: .9rem; color: var(--mute); text-transform: uppercase; }
+.footline a { color: var(--orange); }
+
+@media (max-width: 820px) {
+  .steps { grid-template-columns: 1fr; }
+  .step { border-right: none; border-bottom: 2px solid var(--line); }
+  .step:last-child { border-bottom: none; }
+  .spec-grid { grid-template-columns: 1fr; }
+  .event { grid-template-columns: auto 1fr; row-gap: 12px; }
+  .event .beds, .event .book { grid-column: 2; text-align: left; justify-self: start; }
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="hazard-bar"></div>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand"><span class="mark"></span>ROLL<span class="o">BED</span></div>
+    <div class="nav-meta">Mobile Hotel Logistics · B2B · seit 2026</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Autonome Container-Hotels</div>
+    <h1>Das Hotel <span class="o">fährt</span> zum Event.</h1>
+    <p class="lead">
+      Tieflader mit Wohn-Containern — <strong>6 bis 10 Einheiten pro Container</strong> — rollen per autonomen Trucks
+      direkt aufs Festival- oder Messegelände. In 48 Stunden steht ein temporäres Hotel mit
+      <strong>5000 Betten</strong>. Ist das Event vorbei, fährt das ganze Haus zum nächsten.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-orange" href="#events">→ Event-Slot buchen</a>
+      <a class="btn btn-ghost" href="#spec">Technische Specs</a>
+    </div>
+
+    <div class="stack" aria-hidden="true">
+      <div class="ctr c1">Unit-Block A · 10 Betten <span class="id">RLB-04481</span></div>
+      <div class="ctr c2">Unit-Block B · 8 Betten <span class="id">RLB-04482</span></div>
+      <div class="ctr c3">Unit-Block C · 6 Betten <span class="id">RLB-04483</span></div>
+      <div class="ctr c4">Unit-Block D · 10 Betten <span class="id">RLB-04484</span></div>
+      <div class="truck">Autonomer Tieflader · Level 5 <span class="auto">● SELF-DRIVING</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="band" aria-label="Kennzahlen">
+  <div class="wrap band-grid">
+    <div>
+      <div class="band-num">5000<span class="u"> Betten</span></div>
+      <div class="band-label">pro Event-Standort</div>
+    </div>
+    <div>
+      <div class="band-num">6–10<span class="u"> Einh.</span></div>
+      <div class="band-label">pro Container</div>
+    </div>
+    <div>
+      <div class="band-num">48<span class="u"> Std</span></div>
+      <div class="band-label">Aufbau vor Ort</div>
+    </div>
+    <div>
+      <div class="band-num">149<span class="u"> €</span></div>
+      <div class="band-label">pro Bett &amp; Nacht</div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="eyebrow">So funktioniert's</div>
+    <h2 class="section-h">Anfahren. Aufstellen. <span class="o">Weiterziehen.</span></h2>
+    <p class="section-sub">Drei Phasen, ein Kreislauf. Das Hotel ist nie leer — weil es nie still steht.</p>
+    <div class="steps">
+      <div class="step">
+        <span class="tag">Phase 01</span>
+        <div class="step-num">01</div>
+        <h3>Autonom anfahren</h3>
+        <p>Die Container werden im Depot beladen. Autonome Tieflader (Level 5) fahren die Wohn-Blöcke über Nacht ans Gelände — ohne Fahrer, ohne Lenkzeiten, ohne Stau-Pausen.</p>
+      </div>
+      <div class="step">
+        <span class="tag">Phase 02</span>
+        <div class="step-num">02</div>
+        <h3>Aufstellen &amp; stapeln</h3>
+        <p>Vor Ort werden die Container per Reach-Stacker zu drei Etagen gestapelt und an Strom, Wasser und WLAN angeschlossen. Aus Stahlkästen wird in 48 Stunden ein Hotel mit 5000 Betten.</p>
+      </div>
+      <div class="step">
+        <span class="tag">Phase 03</span>
+        <div class="step-num">03</div>
+        <h3>Weiterziehen</h3>
+        <p>Sobald das Event endet, werden die Container wieder verladen. Das Hotel rollt zum nächsten Festival weiter — dieselben Betten, neues Gelände, null Leerstand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="spec" id="spec">
+  <div class="wrap">
+    <div class="eyebrow">Technische Daten · Flotte 2026</div>
+    <h2 class="section-h">Spezifikation pro <span class="o">Standort</span>.</h2>
+    <div class="spec-grid">
+      <div class="spec-table">
+        <div class="r"><span class="k">Betten pro Standort</span><span class="v"><span class="o">5000</span></span></div>
+        <div class="r"><span class="k">Wohneinheiten pro Container</span><span class="v">6 – 10</span></div>
+        <div class="r"><span class="k">Container pro Standort</span><span class="v">≈ 625</span></div>
+        <div class="r"><span class="k">Stapelhöhe</span><span class="v">3 Etagen</span></div>
+        <div class="r"><span class="k">Aufbauzeit</span><span class="v">48 Std</span></div>
+        <div class="r"><span class="k">Reichweite je Tieflader</span><span class="v">720 km</span></div>
+        <div class="r"><span class="k">Antrieb</span><span class="v">Autonom · Level 5</span></div>
+        <div class="r"><span class="k">Preis</span><span class="v"><span class="o">149 €</span> / Bett · Nacht</span></div>
+      </div>
+      <div class="spec-note">
+        <h4>⚠ Status Skalierung</h4>
+        <p>Für den bundesweiten Vollbetrieb werden rund <b>200.000 autonome Trucks</b> benötigt. Diese werden — bei aktueller Produktionsrate — voraussichtlich erst in <b>18 Jahren</b> verfügbar sein.</p>
+        <p>Bis dahin betreiben wir die Flotte mit reduzierter Container-Anzahl und freundschaftlich gewährten Bonuspunkten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="events" id="events">
+  <div class="wrap">
+    <div class="eyebrow">Event-Buchung · Saison 2026</div>
+    <h2 class="section-h">Sichere dir deine <span class="o">5000 Betten</span>.</h2>
+    <p class="section-sub">Wähle ein Event — wir rollen das Hotel hin. Slots gelten pro Veranstaltung und werden zugeteilt, sobald genug autonome Trucks vom Hof sind.</p>
+    <div class="event-list">
+      <div class="event">
+        <span class="code">001</span>
+        <div class="name">OMR Festival<small>Hamburg · Messegelände</small></div>
+        <div class="beds">Kapazität<b>5000</b></div>
+        <a class="book" href="mailto:tmda@sagorski.org?subject=ROLLBED%20Buchung%20OMR">Buchen →</a>
+      </div>
+      <div class="event soldout">
+        <span class="code">002</span>
+        <div class="name">Wacken Open Air<small>Wacken · Schleswig-Holstein</small></div>
+        <div class="beds">Kapazität<b>5000</b></div>
+        <a class="book" href="#events">Ausgebucht</a>
+      </div>
+      <div class="event">
+        <span class="code">003</span>
+        <div class="name">Hurricane<small>Scheeßel · Eichenring</small></div>
+        <div class="beds">Kapazität<b>5000</b></div>
+        <a class="book" href="mailto:tmda@sagorski.org?subject=ROLLBED%20Buchung%20Hurricane">Buchen →</a>
+      </div>
+    </div>
+
+    <div class="final">
+      <h2>Dein Event braucht 5000 Betten? Wir rollen sie an.</h2>
+      <p>Sag uns Ort, Datum und Bettenbedarf — der Rest ist Logistik. Sobald die autonome Flotte steht.</p>
+      <a class="btn btn-dark" href="mailto:tmda@sagorski.org?subject=ROLLBED%20Event-Anfrage">→ Standort anfragen</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">
+      ROLLBED ist ein frei erfundenes Konzept. Es existieren keine 200.000 autonomen Tieflader, kein Container-Hotel
+      und keine 5000 Betten, die nachts über die A7 zum nächsten Festival rollen. Wer hier ein Bett bucht,
+      schläft trotzdem im eigenen Zelt.
+    </p>
+    <p class="footline">
+      Fiktives Konzept · TMDA #24 · 4/24 · <a href="/folge/24">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zauberinternat Live – die KI-Endlosserie als Dauer-Stream</title>
+<meta name="description" content="Zauberinternat Live: eine endlose Reality-Serie aus dem Zauberinternat. Die Schüler altern mit dir, jeden Tag eine neue KI-Folge, rund um die Uhr im Abo streambar.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/hogwarts-big-brother">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tmda-wiki.de/startup/hogwarts-big-brother">
+<meta property="og:title" content="Zauberinternat Live – die KI-Endlosserie als Dauer-Stream">
+<meta property="og:description" content="Eine endlose Reality-Serie aus dem Zauberinternat. Die Schüler altern mit dir, jeden Tag eine neue KI-Folge, rund um die Uhr im Abo streambar.">
+<meta property="og:site_name" content="Zauberinternat Live">
+<meta property="og:image" content="https://tmda-wiki.de/startup/hogwarts-big-brother/og.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zauberinternat Live – die KI-Endlosserie als Dauer-Stream">
+<meta name="twitter:description" content="Eine endlose Reality-Serie aus dem Zauberinternat. Die Schüler altern mit dir, jeden Tag eine neue KI-Folge, rund um die Uhr streambar.">
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/hogwarts-big-brother/og.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Zauberinternat Live",
+  "description": "Eine endlose, KI-generierte Reality-Serie aus einem Zauberinternat. Die Charaktere altern in Echtzeit mit dem Publikum, jeden Tag erscheint eine neue Folge im Dauer-Stream.",
+  "brand": { "@type": "Brand", "name": "Zauberinternat Live" },
+  "category": "Streaming-Abo (fiktiv)",
+  "offers": {
+    "@type": "Offer",
+    "price": "13.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/PreOrder",
+    "url": "https://tmda-wiki.de/startup/hogwarts-big-brother"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --noir:#0b0d0c;
+    --noir-2:#11150f;
+    --emerald:#1f6b4a;
+    --emerald-bright:#3aa873;
+    --gold:#cBA45a;
+    --gold-bright:#e7c878;
+    --parchment:#e7ddc6;
+    --ink:#d8d2c2;
+    --muted:#8e9388;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--noir);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    min-height:92vh;
+    display:flex;align-items:center;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 80% 10%, rgba(58,168,115,.22), transparent 55%),
+      radial-gradient(90% 70% at 12% 90%, rgba(203,164,90,.16), transparent 60%),
+      linear-gradient(180deg,#0d100c 0%, #070806 100%);
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      repeating-linear-gradient(115deg, rgba(255,255,255,.012) 0 2px, transparent 2px 7px),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/></svg>");
+    pointer-events:none;mix-blend-mode:overlay;
+  }
+  .hero-inner{position:relative;z-index:2;padding:90px 0 70px}
+  .live-badge{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;
+    color:var(--parchment);
+    background:rgba(11,13,12,.55);
+    border:1px solid rgba(203,164,90,.45);
+    padding:9px 16px;border-radius:999px;
+    backdrop-filter:blur(4px);
+  }
+  .live-dot{width:9px;height:9px;border-radius:50%;background:#e0473f;box-shadow:0 0 0 0 rgba(224,71,63,.7);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(224,71,63,.6)}70%{box-shadow:0 0 0 12px rgba(224,71,63,0)}100%{box-shadow:0 0 0 0 rgba(224,71,63,0)}}
+  .day-tag{color:var(--gold-bright);font-weight:600}
+
+  .hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    font-size:clamp(2.9rem,7.5vw,6rem);
+    line-height:1.02;
+    letter-spacing:.005em;
+    margin:28px 0 22px;
+    color:#f4eede;
+    text-shadow:0 2px 40px rgba(0,0,0,.6);
+  }
+  .hero h1 .accent{
+    background:linear-gradient(100deg,var(--gold-bright),var(--emerald-bright));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    font-style:italic;
+  }
+  .hero p.lede{
+    max-width:620px;font-size:1.18rem;color:#cfc8b6;margin-bottom:34px;
+  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    font-weight:600;font-size:1rem;
+    padding:15px 30px;border-radius:8px;
+    text-decoration:none;cursor:pointer;border:none;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary{
+    background:linear-gradient(100deg,var(--gold),var(--gold-bright));
+    color:#1a1405;
+    box-shadow:0 10px 30px rgba(203,164,90,.28);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(203,164,90,.4)}
+  .btn-ghost{
+    background:rgba(231,221,198,.06);
+    color:var(--parchment);
+    border:1px solid rgba(231,221,198,.25);
+  }
+  .btn-ghost:hover{background:rgba(231,221,198,.12)}
+  .hero-meta{margin-top:26px;font-size:.85rem;color:var(--muted);letter-spacing:.04em}
+
+  section{padding:84px 0}
+  .eyebrow{
+    font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--gold-bright);font-weight:600;margin-bottom:14px;
+  }
+  h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(2rem,4.4vw,3.1rem);color:#f1ebda;line-height:1.1}
+  .section-sub{color:var(--muted);max-width:640px;margin-top:14px;font-size:1.05rem}
+
+  /* EPISODE RAIL */
+  .rail-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+  .rail{
+    display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,1fr);
+    gap:18px;overflow-x:auto;padding:6px 4px 22px;
+    scroll-snap-type:x mandatory;
+  }
+  .rail::-webkit-scrollbar{height:8px}
+  .rail::-webkit-scrollbar-thumb{background:rgba(203,164,90,.4);border-radius:99px}
+  .tile{
+    scroll-snap-align:start;
+    position:relative;
+    border-radius:12px;overflow:hidden;
+    min-height:300px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:18px;
+    border:1px solid rgba(231,221,198,.1);
+    background:linear-gradient(160deg,var(--emerald) -10%, var(--noir-2) 70%);
+    transition:transform .2s ease, border-color .2s ease;
+  }
+  .tile:nth-child(2n){background:linear-gradient(160deg,#3a2f12 -10%, var(--noir-2) 72%)}
+  .tile:nth-child(3n){background:linear-gradient(160deg,#123a2c -10%, #0c0f0b 72%)}
+  .tile:hover{transform:translateY(-4px);border-color:rgba(203,164,90,.5)}
+  .tile::after{content:"";position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 0%,rgba(255,255,255,.07),transparent 60%);pointer-events:none}
+  .tile-crest{font-size:2.4rem;line-height:1;filter:drop-shadow(0 4px 10px rgba(0,0,0,.5))}
+  .tile-top{position:absolute;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center}
+  .tile-ep{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-bright);font-weight:600}
+  .tile-len{font-size:.68rem;color:var(--muted)}
+  .tile h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.45rem;color:#f4eede;margin:10px 0 4px}
+  .tile p{font-size:.86rem;color:#bcb6a6}
+  .new-pill{display:inline-block;margin-top:10px;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#1a1405;background:var(--gold-bright);padding:3px 9px;border-radius:99px;font-weight:600}
+
+  /* HOW IT WORKS */
+  .how{background:linear-gradient(180deg,#070806,#0e120d)}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:46px}
+  .step{
+    position:relative;
+    background:rgba(231,221,198,.035);
+    border:1px solid rgba(231,221,198,.1);
+    border-radius:14px;padding:30px 26px;
+  }
+  .step-no{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:rgba(203,164,90,.6);line-height:1}
+  .step h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#f1ebda;margin:8px 0 10px}
+  .step p{color:#b9b3a3;font-size:.96rem}
+
+  /* SUBSCRIBE */
+  .sub{
+    background:
+      radial-gradient(100% 120% at 50% 0%, rgba(58,168,115,.18), transparent 60%),
+      linear-gradient(180deg,#0e120d,#070806);
+    text-align:center;
+  }
+  .plan-card{
+    max-width:480px;margin:40px auto 0;
+    background:linear-gradient(165deg,rgba(31,107,74,.22),rgba(11,13,12,.6));
+    border:1px solid rgba(203,164,90,.4);
+    border-radius:18px;padding:40px 34px;
+    box-shadow:0 30px 80px rgba(0,0,0,.5);
+  }
+  .price{font-family:'Cormorant Garamond',serif;font-weight:700;color:#f4eede}
+  .price .num{font-size:3.6rem}
+  .price .per{font-size:1rem;color:var(--muted);font-family:'Inter',sans-serif}
+  .plan-list{list-style:none;text-align:left;margin:26px 0 30px;display:grid;gap:12px}
+  .plan-list li{padding-left:30px;position:relative;color:#cfc8b6}
+  .plan-list li::before{content:"✦";position:absolute;left:0;color:var(--gold-bright)}
+  .plan-card .btn-primary{width:100%;justify-content:center}
+  .micro{margin-top:16px;font-size:.78rem;color:var(--muted)}
+
+  /* FOOTER */
+  footer{background:#060705;padding:46px 0 56px;border-top:1px solid rgba(231,221,198,.08)}
+  .disclaimer{font-style:italic;color:#6f7268;font-size:.82rem;max-width:760px;margin:0 auto 18px;text-align:center;line-height:1.7}
+  .footer-line{text-align:center;color:var(--muted);font-size:.86rem;letter-spacing:.02em}
+  .footer-line a{color:var(--gold-bright);text-decoration:none}
+  .footer-line a:hover{text-decoration:underline}
+
+  @media(max-width:640px){
+    .hero{min-height:auto}
+    .hero-inner{padding:60px 0 50px}
+    section{padding:60px 0}
+    .btn{width:100%;justify-content:center}
+    .cta-row{flex-direction:column;align-items:stretch}
+  }
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-inner">
+    <span class="live-badge">
+      <span class="live-dot"></span> Live &middot; <span class="day-tag">Tag 4.812</span>
+    </span>
+    <h1>Das Zauberinternat,<br>das <span class="accent">niemals endet</span>.</h1>
+    <p class="lede">
+      Eine unendliche Reality-Serie aus den Mauern eines Zauberinternats. Die Schüler altern in Echtzeit mit dir mit, jeden Tag erscheint eine frische, vollständig KI-generierte Folge. Schalte rein, wann du willst &ndash; der Stream läuft weiter, ob du zusiehst oder nicht.
+    </p>
+    <div class="cta-row">
+      <a href="#abo" class="btn btn-primary">Jetzt in den Dauer-Stream &rarr;</a>
+      <a href="#episoden" class="btn btn-ghost">▶ Heutige Folge ansehen</a>
+    </div>
+    <p class="hero-meta">Über 4.800 fortlaufende Folgen &middot; Neue Episode täglich um 18:00 &middot; Kein Staffelfinale, jemals.</p>
+  </div>
+</header>
+
+<!-- EPISODE RAIL -->
+<section id="episoden">
+  <div class="wrap">
+    <div class="rail-head">
+      <div>
+        <p class="eyebrow">Im Katalog</p>
+        <h2 class="serif">Was diese Woche im Internat geschah</h2>
+      </div>
+      <span class="tile-len">Endlos-Stream &middot; jederzeit einsteigen</span>
+    </div>
+    <div class="rail">
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.812</span><span class="tile-len">52 Min</span></div>
+        <div class="tile-crest">🦉</div>
+        <h3>Der Brief, der dreimal zurückkam</h3>
+        <p>Eine Eule verliert die Orientierung &ndash; und mit ihr eine ganze Hausgemeinschaft.</p>
+        <span class="new-pill">Neu heute</span>
+      </article>
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.811</span><span class="tile-len">48 Min</span></div>
+        <div class="tile-crest">🕯️</div>
+        <h3>Mitternachtsprüfung im Ostflügel</h3>
+        <p>Die Abschlussklasse altert sichtbar &ndash; und niemand will der Erste sein.</p>
+      </article>
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.810</span><span class="tile-len">55 Min</span></div>
+        <div class="tile-crest">🧹</div>
+        <h3>Das Turnier der drei Schlafsäle</h3>
+        <p>Reality trifft Magie: Wer fliegt raus, wer bleibt im Dauer-Stream?</p>
+      </article>
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.809</span><span class="tile-len">44 Min</span></div>
+        <div class="tile-crest">🔮</div>
+        <h3>Sprechstunde bei der Wahrsagerin</h3>
+        <p>Ein Schüler erfährt sein Schicksal &ndash; live, ungeschnitten, KI-gerendert.</p>
+      </article>
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.808</span><span class="tile-len">50 Min</span></div>
+        <div class="tile-crest">⚗️</div>
+        <h3>Der Trank, der zu lange köchelte</h3>
+        <p>Ein Zaubertrank-Experiment eskaliert in der großen Halle.</p>
+      </article>
+      <article class="tile">
+        <div class="tile-top"><span class="tile-ep">Folge 4.807</span><span class="tile-len">47 Min</span></div>
+        <div class="tile-crest">🏰</div>
+        <h3>Klassentreffen nach 20 Jahren</h3>
+        <p>Ehemalige kehren zurück &ndash; sichtbar gealtert, exakt wie das Publikum.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="wrap">
+    <p class="eyebrow">So funktioniert die KI-Endlosserie</p>
+    <h2 class="serif">Drei Magien, ein endloser Stream</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-no">01</div>
+        <h3>Charaktere, die mitaltern</h3>
+        <p>Die KI führt jede Figur kontinuierlich weiter. Wer als Erstklässler eingestiegen ist, sieht sie Jahr für Jahr älter werden &ndash; im selben Takt wie das Publikum.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">02</div>
+        <h3>Täglich eine neue Folge</h3>
+        <p>Jede Nacht generiert das System die nächste Episode aus dem laufenden Internatsalltag. Du steigst ein wie bei Big Brother &ndash; egal an welchem Tag.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">03</div>
+        <h3>Ein Stream, der nie pausiert</h3>
+        <p>Kein Staffelende, kein Cliffhanger-Warten. Die Welt läuft 24/7 weiter und merkt sich jede Handlung &ndash; auch die, die du verpasst hast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="sub" id="abo">
+  <div class="wrap">
+    <p class="eyebrow">Das Abo</p>
+    <h2 class="serif">Betritt das Internat. Für immer.</h2>
+    <p class="section-sub" style="margin:14px auto 0">Ein Abo, ein unendlicher Stream. Jederzeit kündbar &ndash; die Schüler altern trotzdem weiter.</p>
+    <div class="plan-card">
+      <div class="price"><span class="num">13,99&nbsp;&euro;</span> <span class="per">/ Monat</span></div>
+      <ul class="plan-list">
+        <li>24/7-Dauer-Stream aus dem Zauberinternat</li>
+        <li>Täglich eine neue, KI-generierte Folge</li>
+        <li>Charaktere, die in Echtzeit mit dir altern</li>
+        <li>Jederzeit ein- und aussteigen &ndash; wie bei Big Brother</li>
+        <li>Voller Zugriff auf 4.800+ Rückblick-Episoden</li>
+      </ul>
+      <a href="#" class="btn btn-primary">14 Tage kostenlos einschalten</a>
+      <p class="micro">Fiktives Abo. Kein echter Zahlvorgang. Keine Eule wird dir je eine Rechnung bringen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">
+      Rein fiktives, satirisches Konzept &ndash; eine Parodie aus dem Podcast &bdquo;Teenager mit deutschem Akzent&ldquo;. Keine echte Streaming-Plattform, keine Verbindung zu realen Marken, Filmstudios, Buchreihen oder deren Rechteinhabern. Jede Ähnlichkeit mit existierenden Zauberinternaten ist beabsichtigt komisch und ausdrücklich nicht offiziell.
+    </p>
+    <p class="footer-line">
+      Fiktives Konzept &middot; TMDA #17 &middot; 6/24 &middot; <a href="/folge/17">zur Folge</a> &middot; <a href="/startup-ideen">alle Startups</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

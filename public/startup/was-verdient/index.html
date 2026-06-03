@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Was-Verdient.de — der Musiker-Gehalts-Rechner in Echtzeit</title>
+<meta name="description" content="Was-Verdient.de rechnet live hoch, was jeder Musiker verdient: Streams mal Credits mal Labelvertrag. Auf Partys sofort nachschauen, was Drake kassiert."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/was-verdient"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Was-Verdient.de — der Musiker-Gehalts-Rechner"/>
+<meta property="og:description" content="Live-Hochrechnung: Streams × Credits × Vertrag. Sieh in Echtzeit, was jeder Musiker pro Monat verdient."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/was-verdient"/>
+<meta property="og:image" content="https://tmda-wiki.de/startup/was-verdient/og.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Was-Verdient.de — der Musiker-Gehalts-Rechner"/>
+<meta name="twitter:description" content="Live-Hochrechnung: Streams × Credits × Vertrag. Was verdient Drake gerade?"/>
+<meta name="twitter:image" content="https://tmda-wiki.de/startup/was-verdient/og.png"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Was-Verdient.de — Musiker-Gehalts-Rechner",
+  "description": "Echtzeit-Finanzterminal, das hochrechnet, wie viel jeder Musiker verdient — basierend auf Streams (Spotify, Apple, Tidal), Songwriting-Credits und üblichen Labelverträgen.",
+  "brand": {"@type": "Brand", "name": "Was-Verdient.de"},
+  "category": "Finanz-Software / Musik-Analytics",
+  "url": "https://tmda-wiki.de/startup/was-verdient",
+  "offers": {
+    "@type": "Offer",
+    "name": "Terminal-Abo (monatlich)",
+    "price": "14.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/PreOrder",
+    "url": "https://tmda-wiki.de/startup/was-verdient"
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e0c;--panel:#0f1512;--panel-2:#121a15;--line:#1d2a22;
+  --green:#26ff8a;--green-d:#15a85a;--green-glow:rgba(38,255,138,.55);
+  --amber:#ffc24b;--red:#ff5c5c;--ink:#d7e6dd;--ink-soft:#6f8478;--ink-dim:#46584e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background-image:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(38,255,138,.07),transparent 70%);background-attachment:fixed}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+a{color:var(--green)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* Ticker */
+.ticker{position:sticky;top:0;z-index:50;background:#070a08;border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-size:.82rem;height:38px;line-height:38px}
+.ticker-track{display:inline-block;padding-left:100%;animation:scroll 38s linear infinite;will-change:transform}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{display:inline-block;padding:0 26px;color:var(--ink-soft)}
+.ticker span b{color:var(--ink);font-weight:600;letter-spacing:.02em}
+.ticker span .up{color:var(--green)}
+.ticker span .dn{color:var(--red)}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none;padding-left:0}}
+
+/* Nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:11px;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green-glow);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.brand .de{color:var(--ink-soft)}
+.nav .meta{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink-soft);letter-spacing:.14em;text-transform:uppercase}
+
+/* Hero */
+.hero{padding:64px 0 70px;display:grid;grid-template-columns:1fr;gap:46px;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr;padding:80px 0 90px}}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green-d);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:"●";color:var(--green);font-size:.6em;animation:pulse 1.8s infinite}
+h1{font-size:clamp(2.3rem,5.6vw,3.8rem);font-weight:700;line-height:1.04;letter-spacing:-.025em;margin-bottom:22px}
+h1 .hl{color:var(--green);text-shadow:0 0 24px var(--green-glow)}
+.lead{font-size:1.12rem;color:var(--ink-soft);max-width:46ch;margin-bottom:30px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.95rem;letter-spacing:.02em;padding:14px 26px;border-radius:6px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .12s,box-shadow .12s}
+.btn-pri{background:var(--green);color:#04140b;box-shadow:0 0 0 0 var(--green-glow)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 8px 30px -8px var(--green-glow)}
+.btn-sec{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-sec:hover{border-color:var(--green-d);color:var(--green)}
+
+/* Live earnings panel */
+.terminal{background:linear-gradient(180deg,var(--panel),#0b110e);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px -40px #000}
+.terminal-bar{display:flex;align-items:center;gap:7px;padding:11px 15px;background:#0a0f0c;border-bottom:1px solid var(--line)}
+.terminal-bar i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.terminal-bar .t{margin-left:10px;font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--ink-soft);letter-spacing:.04em}
+.live-body{padding:26px 24px 28px}
+.live-label{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+.live-artist{font-family:"IBM Plex Mono",monospace;font-size:1.05rem;color:var(--ink);margin-bottom:18px}
+.big-num{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:clamp(2.4rem,7vw,3.6rem);color:var(--green);text-shadow:0 0 26px var(--green-glow);line-height:1;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.big-sub{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--ink-soft);margin-top:10px}
+.spark{display:flex;align-items:flex-end;gap:4px;height:54px;margin:22px 0 4px}
+.spark i{flex:1;background:linear-gradient(180deg,var(--green),var(--green-d));border-radius:2px 2px 0 0;opacity:.85;animation:bar 2.4s ease-in-out infinite}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);margin-top:22px}
+.mini-stats div{background:var(--panel);padding:14px 12px}
+.mini-stats .k{font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:5px}
+.mini-stats .v{font-family:"IBM Plex Mono",monospace;font-size:1.02rem;color:var(--ink);font-variant-numeric:tabular-nums}
+@keyframes bar{0%,100%{transform:scaleY(.45)}50%{transform:scaleY(1)}}
+
+/* Sections */
+.section{padding:74px 0;border-top:1px solid var(--line)}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green-d);margin-bottom:14px}
+h2{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px}
+.sub{color:var(--ink-soft);max-width:60ch;margin-bottom:42px;font-size:1.05rem}
+
+/* Formula */
+.formula{display:flex;flex-wrap:wrap;align-items:stretch;gap:14px}
+.fcard{flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px 22px;position:relative}
+.fcard .n{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--ink-dim);letter-spacing:.12em}
+.fcard h3{font-family:"IBM Plex Mono",monospace;font-size:1.15rem;color:var(--green);margin:6px 0 9px}
+.fcard p{font-size:.94rem;color:var(--ink-soft)}
+.op{display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;font-size:1.8rem;color:var(--ink-dim);min-width:24px}
+@media(max-width:760px){.op{width:100%;height:24px}}
+.formula-out{margin-top:26px;background:var(--panel-2);border:1px dashed var(--green-d);border-radius:10px;padding:20px 22px;font-family:"IBM Plex Mono",monospace;font-size:1.05rem;color:var(--ink)}
+.formula-out b{color:var(--green)}
+
+/* Table */
+.table-wrap{border:1px solid var(--line);border-radius:12px;overflow:hidden;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-family:"IBM Plex Mono",monospace;font-size:.92rem;min-width:560px}
+thead th{background:#0a0f0c;text-align:left;padding:14px 18px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--line)}
+thead th.r,tbody td.r{text-align:right}
+tbody td{padding:15px 18px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--panel-2)}
+.artist{color:var(--ink);font-weight:500}
+.gain{color:var(--green)}
+.loss{color:var(--red)}
+.streams{color:var(--ink-soft)}
+.amt{color:var(--green);text-shadow:0 0 14px var(--green-glow);font-weight:600}
+
+/* Party */
+.party{background:linear-gradient(180deg,var(--panel-2),#0a100c);border:1px solid var(--line);border-radius:16px;padding:48px 34px;text-align:center}
+.party .kicker{justify-content:center}
+.party h2{margin-bottom:14px}
+.party p{color:var(--ink-soft);max-width:54ch;margin:0 auto 30px;font-size:1.06rem}
+.party .cta-row{justify-content:center}
+.pill{display:inline-flex;gap:8px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:.74rem;letter-spacing:.1em;color:var(--ink-soft);border:1px solid var(--line);border-radius:999px;padding:6px 14px;margin-top:26px}
+.pill b{color:var(--green)}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:40px 0 56px;text-align:center}
+.disclaimer{font-style:italic;color:var(--ink-dim);font-size:.86rem;max-width:60ch;margin:0 auto 16px}
+.footline{font-family:"IBM Plex Mono",monospace;font-size:.85rem;color:var(--ink-soft)}
+.footline a{color:var(--green)}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="brand"><span class="dot"></span>Was-Verdient<span class="de">.de</span></div>
+    <div class="meta">Live-Terminal · MEZ · v6.0</div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Echtzeit-Gehaltsindex für Musik</div>
+      <h1>Sieh in Echtzeit, was jeder Musiker <span class="hl">verdient</span>.</h1>
+      <p class="lead">Wir hochrechnen aus Spotify-, Apple- und Tidal-Streams, Songwriting-Credits und üblichen Labelverträgen das geschätzte Monatseinkommen jedes Künstlers der Welt. Auf der Party einfach nachschauen.</p>
+      <div class="cta-row">
+        <a class="btn btn-pri" href="#party">Terminal öffnen</a>
+        <a class="btn btn-sec" href="#methode">So rechnen wir</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i>
+        <span class="t">live-earnings.feed — streaming</span>
+      </div>
+      <div class="live-body">
+        <div class="live-label">Aktuell im Feed · Monatsverdienst (geschätzt)</div>
+        <div class="live-artist" id="liveArtist">Drake</div>
+        <div class="big-num"><span id="liveNum">0</span> €</div>
+        <div class="big-sub" id="liveRate">+0 € seit Sie diese Seite öffneten</div>
+        <div class="spark" id="spark"></div>
+        <div class="mini-stats">
+          <div><div class="k">Streams/min</div><div class="v" id="msStreams">—</div></div>
+          <div><div class="k">€/Stream</div><div class="v" id="msRate">—</div></div>
+          <div><div class="k">Credit-Anteil</div><div class="v" id="msCredit">—</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section" id="methode">
+  <div class="wrap">
+    <div class="kicker">// Die Methode</div>
+    <h2>Streams × Credits × Vertrag.</h2>
+    <p class="sub">Keine PR-Zahlen, keine Schätzungen aus Interviews. Wir ziehen die rohen Abspielzahlen aller großen Plattformen und legen sie über die hinterlegten Songwriting-Credits und den marktüblichen Labelvertrag des Künstlers. Heraus kommt eine erschreckend konkrete Zahl.</p>
+    <div class="formula">
+      <div class="fcard">
+        <div class="n">FAKTOR 01</div>
+        <h3>Streams</h3>
+        <p>Spotify + Apple Music + Tidal + Deezer, plattformgewichtet nach durchschnittlicher Pro-Stream-Auszahlung.</p>
+      </div>
+      <div class="op">×</div>
+      <div class="fcard">
+        <div class="n">FAKTOR 02</div>
+        <h3>Credits</h3>
+        <p>Songwriting- und Produktions-Splits aus der Publishing-Datenbank. Wer mitschreibt, verdient mehr.</p>
+      </div>
+      <div class="op">×</div>
+      <div class="fcard">
+        <div class="n">FAKTOR 03</div>
+        <h3>Vertrag</h3>
+        <p>Der übliche Major-, Indie- oder 360-Deal. Künstler-Royalty-Rate minus Recoupment minus Manager.</p>
+      </div>
+    </div>
+    <div class="formula-out">
+      <b>Drake</b> · 1.42 Mrd Streams/Monat × 0.0034 €/Stream × 0.71 Credit-Anteil × 0.18 Royalty = <b>≈ 612.480 € / Monat</b>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="kicker">// Index der Woche</div>
+    <h2>Wer verdient gerade was?</h2>
+    <p class="sub">Ein Auszug aus dem Live-Index. Alle Beträge sind hochgerechnete Monatsschätzungen — abgeglichen zur Vorwoche.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Künstler</th>
+            <th class="r">Streams / Mon.</th>
+            <th class="r">Δ Woche</th>
+            <th class="r">Verdienst / Mon.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="artist">Drake</td><td class="r streams">1,42 Mrd</td><td class="r gain">▲ 4,1 %</td><td class="r amt">612.480 €</td></tr>
+          <tr><td class="artist">Bruno Mars</td><td class="r streams">0,98 Mrd</td><td class="r gain">▲ 11,7 %</td><td class="r amt">488.900 €</td></tr>
+          <tr><td class="artist">Shirin David</td><td class="r streams">71,3 Mio</td><td class="r gain">▲ 2,4 %</td><td class="r amt">58.210 €</td></tr>
+          <tr><td class="artist">Apache 207</td><td class="r streams">94,6 Mio</td><td class="r loss">▼ 1,8 %</td><td class="r amt">71.940 €</td></tr>
+          <tr><td class="artist">Taylor Swift</td><td class="r streams">1,11 Mrd</td><td class="r gain">▲ 6,3 %</td><td class="r amt">847.220 €</td></tr>
+          <tr><td class="artist">Ski Aggu</td><td class="r streams">38,9 Mio</td><td class="r gain">▲ 0,9 %</td><td class="r amt">24.770 €</td></tr>
+          <tr><td class="artist">Nina Chuba</td><td class="r streams">42,1 Mio</td><td class="r loss">▼ 0,4 %</td><td class="r amt">29.330 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="party">
+  <div class="wrap">
+    <div class="party">
+      <div class="kicker">// Party-Mode</div>
+      <h2>„Was hat der eigentlich verdient?"</h2>
+      <p>Der Party-Mode beantwortet die einzige Frage, die nach dem dritten Getränk wirklich zählt. Künstler eintippen, Telefon rumreichen, Schweigen im Raum. Funktioniert offline mit dem letzten synchronisierten Index.</p>
+      <div class="cta-row">
+        <a class="btn btn-pri" href="#">Party-Mode starten →</a>
+        <a class="btn btn-sec" href="#methode">Methode ansehen</a>
+      </div>
+      <div class="pill">Terminal-Abo · <b>14,99 € / Monat</b> · jederzeit kündbar</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="disclaimer">Sämtliche Beträge sind frei erfunden, willkürlich hochgerechnet und vermutlich grob daneben. Wir haften nicht für ruinierte Freundschaften, peinliche Stille auf Geburtstagen oder das plötzliche Wissen, dass dein Lieblingskünstler weniger verdient als dein Zahnarzt.</p>
+    <p class="footline">Fiktives Konzept · TMDA #29 · 6/24 · <a href="/folge/29">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // --- Ticker tape ---
+  var artists=[
+    ["Drake","612.480","up"],["Bruno Mars","488.900","up"],["Shirin David","58.210","up"],
+    ["Apache 207","71.940","dn"],["Taylor Swift","847.220","up"],["Ski Aggu","24.770","up"],
+    ["Nina Chuba","29.330","dn"],["The Weeknd","531.090","up"],["Capital Bra","41.620","dn"],
+    ["Ayliva","33.880","up"],["Bad Bunny","709.150","up"],["Cro","19.940","dn"],
+    ["Sido","27.410","up"],["Billie Eilish","402.770","up"],["Luciano","46.300","dn"]
+  ];
+  function row(){
+    return artists.map(function(a){
+      var arrow=a[2]==="up"?"▲":"▼";
+      return '<span><b>'+a[0]+'</b> '+a[1]+' €/Mon <span class="'+a[2]+'">'+arrow+'</span></span>';
+    }).join("");
+  }
+  document.getElementById("tickerTrack").innerHTML=row()+row();
+
+  // --- Sparkline bars ---
+  var spark=document.getElementById("spark"),bars="";
+  for(var i=0;i<28;i++){
+    bars+='<i style="animation-delay:'+(-(Math.random()*2.4)).toFixed(2)+'s;height:'+(35+Math.random()*65)+'%"></i>';
+  }
+  spark.innerHTML=bars;
+
+  // --- Live counter ---
+  var liveNum=document.getElementById("liveNum"),
+      liveArtist=document.getElementById("liveArtist"),
+      liveRate=document.getElementById("liveRate"),
+      msStreams=document.getElementById("msStreams"),
+      msRate=document.getElementById("msRate"),
+      msCredit=document.getElementById("msCredit");
+
+  var feed=[
+    {name:"Drake",target:612480,streams:"487.300",rate:"0,0034",credit:"71 %"},
+    {name:"Bruno Mars",target:488900,streams:"336.200",rate:"0,0036",credit:"82 %"},
+    {name:"Taylor Swift",target:847220,streams:"380.900",rate:"0,0041",credit:"94 %"},
+    {name:"Shirin David",target:58210,streams:"24.400",rate:"0,0033",credit:"66 %"}
+  ];
+  var idx=0,opened=0;
+  function nf(n){return Math.round(n).toLocaleString("de-DE");}
+
+  function runArtist(a){
+    liveArtist.textContent=a.name;
+    msStreams.textContent=a.streams;
+    msRate.textContent=a.rate+" €";
+    msCredit.textContent=a.credit;
+    var start=performance.now(),dur=1600,from=0;
+    function step(t){
+      var p=Math.min((t-start)/dur,1),
+          e=1-Math.pow(1-p,3),
+          val=from+(a.target-from)*e;
+      liveNum.textContent=nf(val);
+      if(p<1){requestAnimationFrame(step);}
+      else{tick(a.target);}
+    }
+    requestAnimationFrame(step);
+  }
+  var tickTimer;
+  function tick(base){
+    clearInterval(tickTimer);
+    var cur=base;
+    tickTimer=setInterval(function(){
+      cur+=Math.random()*22+4;opened+=Math.random()*22+4;
+      liveNum.textContent=nf(cur);
+      liveRate.textContent="+"+nf(opened)+" € seit Sie diese Seite öffneten";
+    },900);
+  }
+  function cycle(){
+    runArtist(feed[idx]);
+    idx=(idx+1)%feed.length;
+  }
+  cycle();
+  setInterval(cycle,7000);
+})();
+</script>
+</body>
+</html>
