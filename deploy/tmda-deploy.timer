@@ -1,0 +1,13 @@
+[Unit]
+Description=TMDA-Wiki Auto-Deploy alle 2 Minuten (GitHub main → node1)
+
+[Timer]
+# 1 Min nach Boot, danach alle 2 Min. So ist ein Merge in main schnell live,
+# ohne den Server mit ständigen git-fetches zu fluten.
+OnBootSec=1min
+OnUnitActiveSec=2min
+AccuracySec=15s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
