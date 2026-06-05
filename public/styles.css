@@ -1,7 +1,30 @@
+/* ---------- Self-hosted Display-Font ----------
+   Bricolage Grotesque (variable, opsz/wght). Verspielt-moderne Grotesk,
+   self-hosted statt Google-<link> für Performance + Privacy. */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/fonts/bricolage-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/fonts/bricolage-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 /* ---------- Tokens ----------
    Brand: TMDA-Pink #f093e0. Verspielt/Pop: warme Plum-Darks, runde Ecken,
-   weiche pink-getönte Schatten. Akzent = Pink → Violett-Verlauf. */
+   weiche pink-getönte Schatten. Akzent = Pink → Violett-Verlauf.
+   Der Pink→Violett-Verlauf ist die EINE Marken-Signatur, bewusst nur auf
+   dem Wort „TMDA" + Primary-CTAs, nicht auf jeder Zahl. */
 :root {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --bg: #150e1a;
   --bg-elev: #1f1626;
   --bg-elev-2: #2a1f33;
@@ -55,6 +78,13 @@ body {
 
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--accent); }
+
+/* Display-Font für alle Überschriften + Logo (markenweiter Lift) */
+h1, h2, h3,
+.logo-mark, .section-title, .stat-num, .hero h1,
+.folge-title, .idee-woche-title, .quiz-q, .kpi-num {
+  font-family: var(--font-display);
+}
 
 main { flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto; padding: 32px 24px 64px; }
 
@@ -378,9 +408,7 @@ tr:hover td { background: var(--bg-elev-2); }
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  -webkit-background-clip: text; background-clip: text;
-  color: transparent;
+  color: var(--accent); /* flach Pink statt Gradient-Clip (Anti-Slop) */
   line-height: 1;
 }
 .stat-label { color: var(--fg-muted); font-size: 0.85rem; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -2019,4 +2047,241 @@ body.flutschi-mode::after {
 .idee-woche-score { font-size: 2rem; padding: 14px 22px; min-width: 92px; border-radius: var(--radius); }
 @media (max-width: 560px) {
   .idee-woche-card { padding: 22px; gap: 18px; }
+}
+
+/* ======================================================================
+   HOME OVERHAUL (v0.3): kinetisches Pop-Hero, Marquee, Wiki-Bento.
+   Dials: VARIANCE 9 / MOTION 8 / DENSITY 4. Native CSS + IntersectionObserver,
+   keine Motion/GSAP-Lib (Vanilla-SPA). Alles reduced-motion-sicher.
+   ====================================================================== */
+
+/* ---- Scroll-Reveal: nur verstecken wenn JS aktiv ist (kein FOUC-Risiko) ---- */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+html.js [data-reveal].in { opacity: 1; transform: none; }
+
+/* ---- Marquee: voller Podcast-Name als Marken-Band (eine Marquee/Seite) ---- */
+.home-marquee {
+  margin: 4px 0 4px;
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  padding: 12px 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.home-marquee-track {
+  display: inline-flex;
+  gap: 0;
+  white-space: nowrap;
+  animation: marquee-scroll 32s linear infinite;
+}
+.home-marquee:hover .home-marquee-track { animation-play-state: paused; }
+.home-marquee-item {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.1rem, 2.6vw, 1.7rem);
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+}
+.home-marquee-item::after {
+  content: "✦";
+  color: var(--accent);
+  font-size: 0.7em;
+}
+.home-marquee-item.dim { color: var(--fg-dim); }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ---- Hero: asymmetrisch, oversized kinetischer Titel ---- */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0 8px;
+}
+@media (min-width: 900px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr);
+    gap: 48px;
+    padding: 44px 0 16px;
+  }
+}
+.home-hero-copy { min-width: 0; }
+.home-hero-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.6rem, 8vw, 5.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+  margin: 0 0 18px;
+}
+.home-hero-title .tmda-word {
+  display: inline-block;
+  background: linear-gradient(115deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: tmda-sheen 6s ease-in-out infinite;
+}
+@keyframes tmda-sheen {
+  0%, 100% { background-position: 0% 0; }
+  50%      { background-position: 100% 0; }
+}
+.home-hero-sub {
+  color: var(--fg-muted);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 1.5;
+  max-width: 46ch;
+  margin: 0 0 24px;
+}
+.home-hero-sub strong { color: var(--fg); font-weight: 700; }
+.home-hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+.home-hero-cta .btn { padding: 13px 22px; font-size: 1rem; border-radius: 999px; }
+.home-hero-cta .btn-primary {
+  box-shadow: 0 10px 30px -10px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+.home-hero-cta .btn:active { transform: translateY(1px) scale(0.985); }
+
+/* Hero-Eintritt (CSS, on load) */
+.home-hero-copy > * { animation: hero-rise .7s cubic-bezier(.16,1,.3,1) both; }
+.home-hero-copy > *:nth-child(1) { animation-delay: .04s; }
+.home-hero-copy > *:nth-child(2) { animation-delay: .12s; }
+.home-hero-copy > *:nth-child(3) { animation-delay: .20s; }
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Latest-Video im Hero rechts (wiederverwendet bestehendes yt-embed) */
+.home-hero-aside {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-hero-aside .latest-video-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.home-hero-aside .meta { font-size: 0.85rem; line-height: 1.4; }
+.home-hero-aside a.meta { text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--accent) 50%, transparent); }
+.home-hero-aside a.meta:hover { color: var(--accent); text-decoration-color: var(--accent); }
+/* Fallback-Platzhalter solange kein Video geladen ist */
+.home-hero-aside.is-loading .yt-embed {
+  display: grid; place-items: center;
+  background: radial-gradient(120% 120% at 30% 0%, color-mix(in oklab, var(--accent) 22%, var(--bg-elev-2)), var(--bg-elev-2));
+  color: var(--fg-muted); font-size: 0.9rem;
+}
+
+/* ---- Wiki-Bento: kuratierter Sektion-Navigator, variierende Zellgrößen ---- */
+.wiki-bento-head { margin: 40px 0 18px; }
+.wiki-bento-head h2 {
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+  letter-spacing: -0.02em; margin: 0 0 6px; font-weight: 800;
+}
+.wiki-bento-head p { color: var(--fg-muted); margin: 0; font-size: 1rem; }
+
+.wiki-bento {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+.bento-cell {
+  position: relative;
+  overflow: hidden;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.bento-cell:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in oklab, var(--accent) 55%, var(--border));
+  box-shadow: var(--glow);
+  color: var(--fg);
+}
+.bento-cell .bento-emoji { font-size: 1.5rem; line-height: 1; }
+.bento-cell .bento-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+}
+.bento-cell .bento-label { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; }
+.bento-cell .bento-meta { color: var(--fg-muted); font-size: 0.88rem; margin-top: 2px; }
+.bento-cell .bento-go { color: var(--fg-dim); font-size: 0.82rem; font-weight: 600; }
+.bento-cell:hover .bento-go { color: var(--accent); }
+
+/* Große Zellen */
+.bento-cell.is-tall { grid-column: span 3; grid-row: span 2; min-height: 320px; }
+
+/* Signatur-Zelle (Startup-Ideen): Pink-Fill statt Outline */
+.bento-cell.is-feature {
+  background: linear-gradient(150deg, var(--accent) 0%, var(--accent-2) 100%);
+  border-color: transparent;
+  color: var(--accent-fg);
+}
+.bento-cell.is-feature .bento-num,
+.bento-cell.is-feature .bento-go { color: var(--accent-fg); }
+.bento-cell.is-feature .bento-meta { color: color-mix(in oklab, var(--accent-fg) 75%, transparent); }
+.bento-cell.is-feature:hover { box-shadow: 0 18px 50px -16px color-mix(in oklab, var(--accent) 80%, transparent); }
+
+/* Getönte Zelle (Folgen): subtiler Pink-Radial für Bento-Diversität */
+.bento-cell.is-tinted {
+  background: radial-gradient(130% 130% at 0% 0%, color-mix(in oklab, var(--accent) 16%, var(--bg-elev)) 0%, var(--bg-elev) 62%);
+  border-color: color-mix(in oklab, var(--accent) 30%, var(--border));
+}
+
+/* Tablet */
+@media (max-width: 880px) {
+  .wiki-bento { grid-template-columns: repeat(4, 1fr); }
+  .bento-cell.is-tall { grid-column: span 4; grid-row: auto; min-height: 200px; }
+}
+/* Mobile: strikt einspaltig */
+@media (max-width: 560px) {
+  .wiki-bento { grid-template-columns: 1fr; gap: 12px; }
+  .bento-cell, .bento-cell.is-tall { grid-column: 1 / -1; grid-row: auto; min-height: 130px; }
+}
+
+/* ---- Podcast-Links: Heading entschärft (kein Uppercase-Eyebrow) ---- */
+.home-podcast { margin-top: 44px; }
+.home-podcast .podcast-links-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+  margin: 0 0 14px;
+}
+
+/* ---- Reduced Motion: alles statisch ---- */
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .home-marquee-track { animation: none !important; transform: none !important; }
+  .home-hero-copy > * { animation: none !important; }
+  .home-hero-title .tmda-word { animation: none !important; background-position: 0 0 !important; }
+  .bento-pulse { animation: none !important; }
 }

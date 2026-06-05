@@ -1,4 +1,4 @@
-// 🥚 Easter Eggs — alle scope-isoliert, fail-silent.
+// 🥚 Easter Eggs, alle scope-isoliert, fail-silent.
 //
 // Übersicht:
 //   Logo 2× klick                        → Starfield (Folge 47)
@@ -115,7 +115,7 @@
     });
     document.body.appendChild(wrap);
     setTimeout(() => wrap.remove(), 4500);
-    toast('💊 <strong>Tabletten-Matrjoschka</strong> (Folge 32) — Pillen in Pillen in Pillen.', 4000);
+    toast('💊 <strong>Tabletten-Matrjoschka</strong> (Folge 32), Pillen in Pillen in Pillen.', 4000);
   }
 
   function wantedPoster() {
@@ -141,7 +141,7 @@
   function caterpillarTrail() {
     if (trailActive) return;
     trailActive = true;
-    toast('🐛 <strong>Hartz-4-Raupe-Modus</strong> (Folge 26) — folgt dir 8 Sekunden lang.', 3000);
+    toast('🐛 <strong>Hartz-4-Raupe-Modus</strong> (Folge 26), folgt dir 8 Sekunden lang.', 3000);
     const move = (e) => {
       const t = document.createElement('span');
       t.className = 'easter-trail';
@@ -163,7 +163,7 @@
     overlay.className = 'easter-iris-flash';
     document.body.appendChild(overlay);
     setTimeout(() => overlay.remove(), 1300);
-    setTimeout(() => toast('👁️ <strong>Werbung in die IRIS gebrannt</strong> (Folge 41) — das letzte was du siehst.', 4000), 1100);
+    setTimeout(() => toast('👁️ <strong>Werbung in die IRIS gebrannt</strong> (Folge 41), das letzte was du siehst.', 4000), 1100);
   }
 
   function windradHologramm() {
@@ -172,7 +172,7 @@
     w.textContent = '🌀';
     document.body.appendChild(w);
     setTimeout(() => w.remove(), 5000);
-    toast('🌀 <strong>windradhologramm.de</strong> (Folge 44) — wenn die Letzte Generation klebt, holst du das Windrad weg.', 4500);
+    toast('🌀 <strong>windradhologramm.de</strong> (Folge 44), wenn die Letzte Generation klebt, holst du das Windrad weg.', 4500);
   }
 
   function bosseAlbumPopup() {
@@ -182,7 +182,7 @@
       <div class="album-cover">
         <div class="album-title">Trockener Flutschi</div>
         <div class="album-subtitle">in Moskau</div>
-        <div class="album-artist">— Bosse (fiktiv, Folge 42)</div>
+        <div class="album-artist">Bosse (fiktiv, Folge 42)</div>
       </div>
     `;
     document.body.appendChild(wrap);
@@ -200,8 +200,8 @@
     'papst':       () => toast('⏳ Maya-Kalender sagt: <strong>2033 ist Schluss.</strong> Bleiben noch ' + (2033 - new Date().getFullYear()) + ' Jahre. (Folge 1)', 5000),
     'fanta':       () => { emojiRain('🐐', 22); toast('🐐 <strong>Fanta Gnu</strong> schmeckt nach Ziege. (Folge 1)', 4000); },
     'flutschi':    () => trockenerFlutschiMode(),
-    'crazy':       () => toast('🤪 <strong>„crazy crazy, gut gut"</strong> — Pele über Beckenbauer (Folge 37)', 4500),
-    'thelen':      () => { emojiRain('🥕', 25); toast('🥕 <strong>„Karsten ist Gemüse"</strong> — Frank Thelens fiktive HdL-Reaktion auf Carsten Maschmeyer (Folge 37)', 5000); },
+    'crazy':       () => toast('🤪 <strong>„crazy crazy, gut gut"</strong>, Pele über Beckenbauer (Folge 37)', 4500),
+    'thelen':      () => { emojiRain('🥕', 25); toast('🥕 <strong>„Karsten ist Gemüse"</strong>, Frank Thelens fiktive HdL-Reaktion auf Carsten Maschmeyer (Folge 37)', 5000); },
     'matrjoschka': () => pillMatrjoschka(),
     'tabletten':   () => pillMatrjoschka(),
     'marsalek':    () => wantedPoster(),
@@ -209,7 +209,7 @@
     'iris':        () => irisFlash(),
     'windrad':     () => windradHologramm(),
     'bosse':       () => bosseAlbumPopup(),
-    'lindemann':   () => toast('🎤 <strong>„Ich erkenne an, dass euch etwas aufgefallen ist."</strong> — der Til-Lindemann-Krisen-PR-Move (Folge 37)', 5000),
+    'lindemann':   () => toast('🎤 <strong>„Ich erkenne an, dass euch etwas aufgefallen ist."</strong>, der Til-Lindemann-Krisen-PR-Move (Folge 37)', 5000),
     'aaron':       () => { emojiRain('🌴', 30); toast('🌴 <strong>Aaron Carter im Tropical Island</strong> (Folge 3)', 4000); },
   };
 
@@ -290,7 +290,7 @@
     stat._lastClick = now;
     if (stat._clicks >= 5) {
       stat._clicks = 0;
-      toast('📊 <strong>Achievement:</strong> Statistiker — du klickst Zahlen.', 4000);
+      toast('📊 <strong>Achievement:</strong> Statistiker, du klickst Zahlen.', 4000);
     }
   });
 
@@ -313,7 +313,7 @@
     }, 10000);
     if (Object.values(corners).every(v => v)) {
       Object.keys(corners).forEach(k => corners[k] = false);
-      toast('🗺️ <strong>Achievement:</strong> Cornerologe — alle vier Bildschirmecken berührt.', 5000);
+      toast('🗺️ <strong>Achievement:</strong> Cornerologe, alle vier Bildschirmecken berührt.', 5000);
     }
   });
 
@@ -323,7 +323,7 @@
     setTimeout(() => {
       const banner = document.createElement('div');
       banner.className = 'tmda-tuesday-banner';
-      banner.innerHTML = '📡 Heute ist Dienstag — Folgentag.';
+      banner.innerHTML = '📡 Heute ist Dienstag, Folgentag.';
       document.body.appendChild(banner);
       requestAnimationFrame(() => banner.classList.add('show'));
       setTimeout(() => {
@@ -522,6 +522,6 @@
   console.log(
     '%c TMDA Wiki ',
     'background:linear-gradient(135deg,#ff8a3d,#ffd60a);color:#0b0b0f;padding:6px 12px;border-radius:6px;font-weight:bold;font-size:14px',
-    '\n„You must not become the most likely version of yourself." — Nisse\n\nTipp: drück „?" für die komplette Easter-Egg-Liste.'
+    '\n„You must not become the most likely version of yourself.", Nisse\n\nTipp: drück „?" für die komplette Easter-Egg-Liste.'
   );
 })();
