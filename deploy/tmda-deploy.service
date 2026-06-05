@@ -1,0 +1,10 @@
+[Unit]
+Description=TMDA-Wiki Auto-Deploy (pull GitHub main + restart bei Änderung)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=admin
+ExecStart=/home/admin/tmda-wiki/scripts/node1-deploy.sh
+# Sichtbarkeit: journalctl -u tmda-deploy.service  +  ~/tmda-deploy.log
