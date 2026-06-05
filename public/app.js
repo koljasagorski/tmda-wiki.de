@@ -4,6 +4,26 @@ const app = document.getElementById('app');
 const nav = document.getElementById('primaryNav');
 const themeToggle = document.getElementById('themeToggle');
 
+// Markiert: JS aktiv → erlaubt CSS, Reveal-Elemente vorab zu verstecken (kein FOUC ohne JS).
+document.documentElement.classList.add('js');
+
+// Scroll-Reveal: blendet [data-reveal]-Elemente beim Eintritt ein.
+// Respektiert prefers-reduced-motion (dann sofort sichtbar, kein Observer).
+const _prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+function revealInit(root = document) {
+  const targets = root.querySelectorAll('[data-reveal]:not(.in)');
+  if (_prefersReducedMotion || !('IntersectionObserver' in window)) {
+    targets.forEach((t) => t.classList.add('in'));
+    return;
+  }
+  const io = new IntersectionObserver((entries, obs) => {
+    for (const e of entries) {
+      if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+    }
+  }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+  targets.forEach((t) => io.observe(t));
+}
+
 // Backward-Compat: alte #/-Bookmarks auf Path-URLs redirecten
 if (location.hash.startsWith('#/')) {
   const redirect = location.hash.slice(1) + location.search;
@@ -148,7 +168,7 @@ function navigate(path) {
   router();
 }
 
-// Pfade die NICHT durch den SPA-Router laufen sollen — der Browser navigiert
+// Pfade die NICHT durch den SPA-Router laufen sollen, der Browser navigiert
 // hierhin direkt (eigene HTML-Files, statische Assets, API).
 const NON_SPA_PREFIXES = ['/startup/', '/transcripts/', '/api/', '/data/'];
 
@@ -210,31 +230,60 @@ async function renderHome() {
     : null;
   const iwMax = ideeDerWoche?.max_punkte || 24;
   const iwLink = iwPage ? `/startup/${iwPage.slug}` : (ideeDerWoche ? `/folge/${ideeDerWoche.folge}` : '/startup-ideen');
+  const latestFolge = (eps.items || []).reduce((m, e) => Math.max(m, e.folge || 0), 0) || ideeDerWoche?.folge || 0;
+
+  // Marquee-Gruppe (voller Show-Name als Marken-Band), zweimal ausgegeben für nahtlosen Loop.
+  const marqueeGroup = `
+    <span class="home-marquee-item">Teenager mit deutschem Akzent</span>
+    <span class="home-marquee-item dim">Fynn Kliemann</span>
+    <span class="home-marquee-item">Nisse Ingwersen</span>
+    <span class="home-marquee-item dim">Neue Folge jeden Dienstag</span>`;
+
+  // Wiki-Bento: kuratierter Sektion-Navigator (genau so viele Zellen wie Inhalt).
+  const bentoCells = [
+    { href: '/kalles-corner', emoji: '🛒', num: corner.count, label: 'Kalles Corner', meta: 'Produkte & Empfehlungen' },
+    { href: '/geruechte', emoji: '🕵️', num: ger.count, label: 'Gerüchte', meta: 'Gerücht der Woche' },
+    { href: '/glossar', emoji: '📖', num: glo.count, label: 'Glossar', meta: 'Inside-Jokes erklärt' },
+    { href: '/quiz', emoji: '🧠', label: 'Quiz', meta: 'Wie gut kennst du TMDA?' },
+    { href: '/stats', emoji: '📊', label: 'Statistik', meta: 'Zahlen, Charts, Heatmaps' },
+    { href: '/timeline', emoji: '⏳', label: 'Timeline', meta: 'Alle Highlights chronologisch' },
+  ].map((c, i) => `
+    <a class="bento-cell" href="${c.href}" data-reveal style="--reveal-delay:${(i + 2) * 60}ms">
+      <span class="bento-emoji">${c.emoji}</span>
+      <div>
+        ${c.num != null ? `<div class="bento-num">${c.num || 0}</div>` : ''}
+        <div class="bento-label">${c.label}</div>
+        <div class="bento-meta">${c.meta}</div>
+      </div>
+      <span class="bento-go">Ansehen →</span>
+    </a>`).join('');
 
   app.innerHTML = `
-    <section class="home-top">
-      <div class="hero">
-        <div>
-          <h1>Das inoffizielle <span class="accent">TMDA</span> Wiki.</h1>
-          <p>Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong> — Startup-Ideen mit Punkten, Kalles Corner, Gerüchte, Inside-Jokes, alles automatisch aus den Folgen-Transkripten.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen ansehen →</a>
-            <a class="btn" href="/chat">AI-Chat</a>
-          </div>
+    <div class="home-marquee" aria-hidden="true">
+      <div class="home-marquee-track">${marqueeGroup}${marqueeGroup}</div>
+    </div>
+
+    <section class="home-hero">
+      <div class="home-hero-copy">
+        <h1 class="home-hero-title">Das inoffizielle <span class="tmda-word">TMDA</span> Wiki.</h1>
+        <p class="home-hero-sub">Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong>, automatisch aus den Transkripten.</p>
+        <div class="home-hero-cta">
+          <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen →</a>
+          <a class="btn" href="/chat">AI-Chat fragen</a>
         </div>
       </div>
-      <aside id="latestVideo" class="latest-video-aside" hidden>
+      <aside id="latestVideo" class="home-hero-aside is-loading">
         <div class="latest-video-head">
           <span class="tag tag-accent">🎬 Aktuelle Folge</span>
           <a href="https://www.youtube.com/playlist?list=PLMftwspHv5RgVDn9rePz3EuLlTJfrC9Hd" target="_blank" rel="noopener" class="meta">Playlist ↗</a>
         </div>
-        <div class="yt-embed" id="latestVideoEmbed"></div>
+        <div class="yt-embed" id="latestVideoEmbed">Aktuelle Folge lädt …</div>
         <div class="meta" id="latestVideoMeta"></div>
       </aside>
     </section>
 
     ${ideeDerWoche ? `
-    <section class="idee-woche">
+    <section class="idee-woche" data-reveal>
       <div class="idee-woche-head">
         <span class="idee-woche-kicker">💡 Startup-Idee der Woche</span>
         <span class="meta">Folge #${ideeDerWoche.folge}${ideeDerWoche.datum ? ' · ' + fmtDate(ideeDerWoche.datum) : ''}</span>
@@ -250,15 +299,33 @@ async function renderHome() {
       </a>
     </section>` : ''}
 
-    <section class="stats">
-      <a class="stat" href="/folgen"><div class="stat-num">${eps.count || 0}</div><div class="stat-label">Folgen</div></a>
-      <a class="stat" href="/startup-ideen"><div class="stat-num">${ideen.count || 0}</div><div class="stat-label">Startup-Ideen</div></a>
-      <a class="stat" href="/kalles-corner"><div class="stat-num">${corner.count || 0}</div><div class="stat-label">Kalles Corner</div></a>
-      <a class="stat" href="/geruechte"><div class="stat-num">${ger.count || 0}</div><div class="stat-label">Gerüchte</div></a>
-      <a class="stat" href="/glossar"><div class="stat-num">${glo.count || 0}</div><div class="stat-label">Glossar</div></a>
+    <section class="wiki-bento-head" data-reveal>
+      <h2>Stöber durchs Wiki</h2>
+      <p>Jede Rubrik wird automatisch aus den Folgen-Transkripten gepflegt.</p>
+    </section>
+    <section class="wiki-bento">
+      <a class="bento-cell is-tall is-tinted" href="/folgen" data-reveal style="--reveal-delay:0ms">
+        <span class="bento-emoji">📺</span>
+        <div>
+          <div class="bento-num">${eps.count || 0}</div>
+          <div class="bento-label">Folgen</div>
+          <div class="bento-meta">Komplettes Archiv${latestFolge ? ` · zuletzt #${latestFolge}` : ''}</div>
+        </div>
+        <span class="bento-go">Zum Archiv →</span>
+      </a>
+      <a class="bento-cell is-tall is-feature" href="/startup-ideen" data-reveal style="--reveal-delay:60ms">
+        <span class="bento-emoji">💡</span>
+        <div>
+          <div class="bento-num">${ideen.count || 0}</div>
+          <div class="bento-label">Startup-Ideen</div>
+          <div class="bento-meta">Mit Nisse-Punkten bewertet</div>
+        </div>
+        <span class="bento-go">Alle Ideen →</span>
+      </a>
+      ${bentoCells}
     </section>
 
-    <section class="podcast-links">
+    <section class="podcast-links home-podcast" data-reveal>
       <h2 class="podcast-links-title">🎧 Hör den Podcast</h2>
       <div class="podcast-links-row">
         <a class="podcast-link spotify" href="https://open.spotify.com/show/1U68QUHMUz360Ft1NCK9Ur" target="_blank" rel="noopener" aria-label="TMDA auf Spotify hören">
@@ -282,7 +349,8 @@ async function renderHome() {
 
   `;
 
-  // Latest YouTube video — lädt asynchron, blendet sich ein wenn verfügbar
+  // Scroll-Reveal aktivieren + Latest-Video asynchron nachladen.
+  revealInit(app);
   loadLatestVideo();
 }
 
@@ -294,7 +362,11 @@ async function loadLatestVideo() {
   try {
     const r = await fetch('/api/latest-video');
     const data = await r.json();
-    if (!data.ok || !data.videos?.length) return;
+    if (!data.ok || !data.videos?.length) {
+      // Kein Video verfügbar → Platzhalter bleibt, kein toter Embed.
+      embed.textContent = 'Aktuelle Folge auf YouTube ansehen ↗';
+      return;
+    }
     const v = data.videos[0];
     embed.innerHTML = `<iframe loading="lazy"
       src="https://www.youtube-nocookie.com/embed/${esc(v.id)}?rel=0"
@@ -302,7 +374,7 @@ async function loadLatestVideo() {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>`;
     meta.textContent = `${v.title}${v.published ? ' · ' + fmtDate(v.published.slice(0, 10)) : ''}`;
-    section.hidden = false;
+    section.classList.remove('is-loading'); // Schwarzer Embed-Hintergrund statt Lade-Tönung
   } catch {}
 }
 
@@ -342,7 +414,7 @@ async function getYouTubeVideos() {
   return _ytCache;
 }
 function findVideoForFolge(videos, folge) {
-  // Match "#NN" oder " NN " im Titel — TMDA-Titel sind Format "TMDA #47 ..."
+  // Match "#NN" oder " NN " im Titel, TMDA-Titel sind Format "TMDA #47 ..."
   const num = String(folge);
   for (const v of videos) {
     const t = v.title || '';
@@ -449,7 +521,7 @@ async function renderFolgeDetail(folge) {
   }
 
   if (zitate.length) {
-    const zHtml = zitate.map((z) => `<blockquote class="quote">„${esc(z.text)}"${z.kontext ? `<cite>— ${esc(z.kontext)}</cite>` : ''}</blockquote>`).join('');
+    const zHtml = zitate.map((z) => `<blockquote class="quote">„${esc(z.text)}"${z.kontext ? `<cite>${esc(z.kontext)}</cite>` : ''}</blockquote>`).join('');
     app.appendChild(el(`<section class="detail-block">
       <h2>💬 Zitate</h2>
       ${zHtml}
@@ -500,7 +572,7 @@ async function renderStartupIdeen() {
 
   app.innerHTML = `
     <h1 class="section-title">💡 Startup-Idee der Woche</h1>
-    <p class="section-sub">Fynns Brainstorms — bewertet von Nisse auf einer Skala bis ${items[0]?.max_punkte || 24}. ${items.length} Ideen. Klick auf eine fett markierte Idee öffnet die fiktive Produkt-Seite.</p>
+    <p class="section-sub">Fynns Brainstorms, bewertet von Nisse auf einer Skala bis ${items[0]?.max_punkte || 24}. ${items.length} Ideen. Klick auf eine fett markierte Idee öffnet die fiktive Produkt-Seite.</p>
     <div class="filter-bar">
       <a class="${sortBy === 'folge' ? 'active' : ''}" href="/startup-ideen?sort=folge">Nach Folge</a>
       <a class="${sortBy === 'punkte' ? 'active' : ''}" href="/startup-ideen?sort=punkte">Nach Punkten</a>
@@ -535,7 +607,7 @@ async function renderKallesCorner() {
   const items = data.items || [];
   app.innerHTML = `
     <h1 class="section-title">🪑 Kalles Corner</h1>
-    <p class="section-sub">Alle Beiträge aus Kalles Corner — die kurze Anekdote pro Folge.</p>
+    <p class="section-sub">Alle Beiträge aus Kalles Corner, die kurze Anekdote pro Folge.</p>
     ${items.length === 0 ? emptyState('Kalles-Corner', 'Kalles Corner taucht erst ab Folge 37 regelmäßig auf.') : ''}
   `;
   if (items.length === 0) return;
@@ -581,7 +653,7 @@ async function renderErfindungen() {
   const items = data.items || [];
   app.innerHTML = `
     <h1 class="section-title">🔧 Erfindungen, die keiner braucht</h1>
-    <p class="section-sub">Absurde Produktideen — manchmal mehrere pro Folge.</p>
+    <p class="section-sub">Absurde Produktideen, manchmal mehrere pro Folge.</p>
     ${items.length === 0 ? emptyState('Erfindungen') : ''}
   `;
   if (items.length === 0) return;
@@ -686,7 +758,7 @@ async function renderZitate() {
   for (const z of items) {
     list.appendChild(el(`<blockquote class="quote">
       „${esc(z.text)}"
-      <cite>— <a href="/folge/${z.folge}">Folge #${z.folge}</a>${z.kontext ? ` · ${esc(z.kontext)}` : ''}</cite>
+      <cite><a href="/folge/${z.folge}">Folge #${z.folge}</a>${z.kontext ? ` · ${esc(z.kontext)}` : ''}</cite>
     </blockquote>`));
   }
   app.appendChild(list);
@@ -701,7 +773,7 @@ async function renderPersonen() {
 
   app.innerHTML = `
     <h1 class="section-title">👥 Erwähnte Personen</h1>
-    <p class="section-sub">Wer alles im Podcast erwähnt wurde — sortiert nach Häufigkeit. ${items.length}/${all.length} angezeigt.</p>
+    <p class="section-sub">Wer alles im Podcast erwähnt wurde, sortiert nach Häufigkeit. ${items.length}/${all.length} angezeigt.</p>
     <div class="filter-bar">
       <a class="${!showAll ? 'active' : ''}" href="/personen">Mehrfach genannt</a>
       <a class="${showAll ? 'active' : ''}" href="/personen?all=1">Alle (${all.length})</a>
@@ -731,7 +803,7 @@ async function renderHosts() {
   const items = data.items || [];
   app.innerHTML = `
     <h1 class="section-title">🎙️ Hosts & Cast</h1>
-    <p class="section-sub">Wer hinter dem Mikrofon sitzt — und wer den Mythos „Kalles Corner" trägt.</p>
+    <p class="section-sub">Wer hinter dem Mikrofon sitzt, und wer den Mythos „Kalles Corner" trägt.</p>
     ${items.length === 0 ? emptyState('Hosts') : ''}
   `;
   if (items.length === 0) return;
@@ -742,7 +814,7 @@ async function renderHosts() {
     const projekte = (h.projekte || []).map((p) => `
       <li>
         <a href="${esc(p.url)}" target="_blank" rel="noopener"><strong>${esc(p.name)}</strong></a>
-        ${p.beschreibung ? ` — <span class="meta">${esc(p.beschreibung)}</span>` : ''}
+        ${p.beschreibung ? `, <span class="meta">${esc(p.beschreibung)}</span>` : ''}
       </li>`).join('');
     const social = (h.social || []).map((s) => `
       <a class="social-chip" href="${esc(s.url)}" target="_blank" rel="noopener">
@@ -773,12 +845,12 @@ function renderTranskripteGesucht() {
     <p class="section-sub">Du kannst Audio nach Sprecher zuordnen? Wir suchen Hilfe.</p>
 
     <article class="card" style="padding:24px;line-height:1.6">
-      <p>Aktuell sind alle Transkripte hier <strong>YouTube-Auto-Captions</strong> ohne Sprecher-Labels. Das macht das Wiki, den Chat und die Suche weniger präzise — und Rubriken wie „Kalles Corner" lassen sich nur über Heuristiken erkennen.</p>
-      <p>Wir suchen Menschen, die helfen können, die Folgen mit eindeutiger Sprecher-Zuordnung (<strong>Fynn / Nisse / Kalle / Gast</strong>) zu transkribieren — entweder per Tool (z.B. WhisperX, pyannote, AssemblyAI mit Speaker Diarization) oder von Hand.</p>
+      <p>Aktuell sind alle Transkripte hier <strong>YouTube-Auto-Captions</strong> ohne Sprecher-Labels. Das macht das Wiki, den Chat und die Suche weniger präzise, und Rubriken wie „Kalles Corner" lassen sich nur über Heuristiken erkennen.</p>
+      <p>Wir suchen Menschen, die helfen können, die Folgen mit eindeutiger Sprecher-Zuordnung (<strong>Fynn / Nisse / Kalle / Gast</strong>) zu transkribieren, entweder per Tool (z.B. WhisperX, pyannote, AssemblyAI mit Speaker Diarization) oder von Hand.</p>
       <h3 style="margin-top:20px">Was wir brauchen</h3>
       <ul class="host-list" style="margin-bottom:16px">
         <li>Klares Sprecher-Label pro Zeile (z.B. <code>Fynn:</code>, <code>Nisse:</code>)</li>
-        <li>Format Markdown oder Plain Text — Hauptsache lesbar</li>
+        <li>Format Markdown oder Plain Text, Hauptsache lesbar</li>
         <li>Folgen-Nummer im Dateinamen (<code>folge-XX.md</code>)</li>
       </ul>
       <h3>Was du davon hast</h3>
@@ -1134,38 +1206,38 @@ async function renderTimeline() {
 
 // ---------- Chat (refactored: shared zwischen Seite und Modal) ----------
 const DONATION_THRESHOLD = 3;
-// Counter + shown-Flag beide pro Session — Donation triggert dann
+// Counter + shown-Flag beide pro Session, Donation triggert dann
 // zuverlässig bei der 3. Frage einer frischen Browser-Session
 const QUESTION_COUNT_KEY = 'tmda-chat-questions-session';
 const DONATION_SHOWN_KEY = 'tmda-donate-shown-session';
 
-// Easter-Egg-Hints — kommen nach jeder AI-Antwort.
+// Easter-Egg-Hints, kommen nach jeder AI-Antwort.
 // Wichtig: Hint sagt klar, dass es OUTSIDE der Chat-Box getriggert wird.
 const EASTER_HINTS = [
-  '🥚 Easter Egg (NICHT hier im Chat — auf der Wiki-Seite ausprobieren): Klick das TMDA-Logo oben links zweimal schnell.',
+  '🥚 Easter Egg (NICHT hier im Chat, auf der Wiki-Seite ausprobieren): Klick das TMDA-Logo oben links zweimal schnell.',
   '🥚 Easter Egg: Schließ den Chat, dann tipp auf der Wiki-Seite das Wort kalle (irgendwo, ohne Eingabefeld zu fokussieren).',
-  '🥚 Easter Egg: Auf der Wiki-Seite (nicht im Chat) das Wort papst tippen — siehst du was?',
+  '🥚 Easter Egg: Auf der Wiki-Seite (nicht im Chat) das Wort papst tippen, siehst du was?',
   '🥚 Easter Egg: Außerhalb des Chats das Wort fanta auf der Tastatur tippen.',
   '🥚 Easter Egg: Drück auf der Wiki-Seite den Konami-Code: ↑ ↑ ↓ ↓ ← → ← → B A',
-  '🥚 Easter Egg: Tipp auf der Seite (Chat zu) das Wort flutschi — die Seite reagiert.',
+  '🥚 Easter Egg: Tipp auf der Seite (Chat zu) das Wort flutschi, die Seite reagiert.',
   '🥚 Easter Egg: Scroll ans Footer-Ende und mach Triple-Click auf das fette „TMDA Wiki".',
-  '🥚 Easter Egg: Öffne mal die Browser-Konsole (F12 oder Cmd+Opt+J) — dort wartet was.',
+  '🥚 Easter Egg: Öffne mal die Browser-Konsole (F12 oder Cmd+Opt+J), dort wartet was.',
   '🥚 Easter Egg: Tipp auf der Wiki-Seite das Wort crazy (Pele-Beckenbauer-Reference).',
-  '🥚 Easter Egg: Tipp das Wort thelen außerhalb des Chats — pass auf, was vom Himmel fällt.',
+  '🥚 Easter Egg: Tipp das Wort thelen außerhalb des Chats, pass auf, was vom Himmel fällt.',
   '🥚 Easter Egg: Tipp das Wort tabletten oder matrjoschka auf der Seite.',
-  '🥚 Easter Egg: Tipp das Wort marsalek auf der Seite — kurz schauen, weg.',
-  '🥚 Easter Egg: Tipp das Wort hartz4 — und beweg dann die Maus.',
-  '🥚 Easter Egg: Tipp das Wort iris auf der Seite — schließ kurz die Augen nicht.',
-  '🥚 Easter Egg: Tipp das Wort windrad — Hologramm-Mode.',
+  '🥚 Easter Egg: Tipp das Wort marsalek auf der Seite, kurz schauen, weg.',
+  '🥚 Easter Egg: Tipp das Wort hartz4, und beweg dann die Maus.',
+  '🥚 Easter Egg: Tipp das Wort iris auf der Seite, schließ kurz die Augen nicht.',
+  '🥚 Easter Egg: Tipp das Wort windrad, Hologramm-Mode.',
   '🥚 Easter Egg: Tipp das Wort bosse auf der Seite (Folge 42).',
-  '🥚 Easter Egg: Tipp das Wort lindemann — Krisen-PR-Quote.',
-  '🥚 Easter Egg: Tipp das Wort aaron — Folge 3.',
+  '🥚 Easter Egg: Tipp das Wort lindemann, Krisen-PR-Quote.',
+  '🥚 Easter Egg: Tipp das Wort aaron, Folge 3.',
   '🥚 Easter Egg: 3-mal hintereinander auf eine Score-Badge klicken (z.B. „22/24").',
   '🥚 Easter Egg: 5-mal eine Stat-Zahl auf der Startseite klicken (z.B. „45 Folgen").',
   '🥚 Easter Egg: Beweg den Mauszeiger nacheinander in alle 4 Bildschirmecken.',
   '🥚 Easter Egg: Halte den Chat-Button (unten rechts) länger als 1,5 Sekunden gedrückt.',
-  '🥚 Easter Egg: Drück die ? -Taste auf der Seite (Chat geschlossen) — Cheatsheet aller Eggs.',
-  '🥚 Easter Egg: Wechsel kurz den Tab — der Titel oben verrät dir was.',
+  '🥚 Easter Egg: Drück die ? -Taste auf der Seite (Chat geschlossen), Cheatsheet aller Eggs.',
+  '🥚 Easter Egg: Wechsel kurz den Tab, der Titel oben verrät dir was.',
   '🥚 Easter Egg: Schau Dienstags oder zwischen 3 und 7 Uhr morgens vorbei.',
 ];
 function pickEasterHint() {
@@ -1217,13 +1289,13 @@ function setupChat(container, opts = {}) {
 
   function showDonationCallout() {
     const callout = el(`<div class="donate-callout">
-      <h3>Hey — kleines Wort in eigener Sache 🙏</h3>
-      <p>Das hier ist ein <strong>Hobby-Fan-Projekt</strong>, kein offizielles TMDA-Angebot. Jede Chat-Anfrage kostet ein paar Cent Cloudflare-AI-Gebühren — auf Dauer summiert sich das.</p>
+      <h3>Hey, kleines Wort in eigener Sache 🙏</h3>
+      <p>Das hier ist ein <strong>Hobby-Fan-Projekt</strong>, kein offizielles TMDA-Angebot. Jede Chat-Anfrage kostet ein paar Cent Cloudflare-AI-Gebühren, auf Dauer summiert sich das.</p>
       <p>Wenn dir das Wiki Spaß macht, freu ich mich über einen kleinen Beitrag:</p>
       <a class="donate-btn" href="https://www.paypal.com/paypalme/gigalogi" target="_blank" rel="noopener">
         <strong>PayPal:</strong> paypal@koljasagorski.de
       </a>
-      <p class="meta">Danke! Frag ruhig weiter — die Antworten kommen wie gewohnt.</p>
+      <p class="meta">Danke! Frag ruhig weiter, die Antworten kommen wie gewohnt.</p>
     </div>`);
     log.appendChild(callout);
     log.scrollTop = log.scrollHeight;
@@ -1307,9 +1379,9 @@ function setupChat(container, opts = {}) {
     try {
       let { res, data } = await postChat();
       if (res.status === 401 && data.error === 'turnstile-required') {
-        // Token war ungültig/spent — frisches Token holen und retryen
+        // Token war ungültig/spent, frisches Token holen und retryen
         turnstileToken = null;
-        pending.textContent = 'Kurz durch das Captcha — danach geht\'s weiter.';
+        pending.textContent = 'Kurz durch das Captcha, danach geht\'s weiter.';
         const t = await showTurnstileChallenge(cfg.turnstileSiteKey);
         if (t) {
           ({ res, data } = await postChat(t));
@@ -1351,7 +1423,7 @@ function setupChat(container, opts = {}) {
 async function renderChat() {
   app.innerHTML = `
     <h1 class="section-title">🤖 Chat</h1>
-    <p class="section-sub">Frag das Wiki — läuft auf Cloudflare Workers AI (Llama 3.1) mit Volltext-Kontext aus allen Folgen.</p>
+    <p class="section-sub">Frag das Wiki, läuft auf Cloudflare Workers AI (Llama 3.1) mit Volltext-Kontext aus allen Folgen.</p>
     <div id="chatPageContainer"></div>
   `;
   setupChat(document.getElementById('chatPageContainer'));
@@ -1500,7 +1572,7 @@ function runSearch(query) {
 function renderSearchResults(results, query) {
   if (!results.length) {
     if (!query) {
-      searchResults.innerHTML = '<div class="search-hint">Tipp ein Wort — Folgen, Startups, Zitate, Glossar, alle Rubriken auf einmal.</div>';
+      searchResults.innerHTML = '<div class="search-hint">Tipp ein Wort: Folgen, Startups, Zitate, Glossar, alle Rubriken auf einmal.</div>';
     } else {
       searchResults.innerHTML = `<div class="search-hint">Nichts gefunden zu „${esc(query)}".</div>`;
     }

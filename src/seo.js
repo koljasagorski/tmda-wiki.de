@@ -111,6 +111,7 @@ export const STATIC_ROUTES = {
 // Dynamische Routen — handled via metaForDynamic
 export const DYNAMIC_PATTERNS = [
   { match: /^\/folge\/(\d+)$/, handler: 'folge' },
+  { match: /^\/erfindung\/([\w-]+)$/, handler: 'erfindung' },
 ];
 
 export function isDynamicRoute(path) {
@@ -142,6 +143,44 @@ export function metaForFolge(folge, ep) {
     priority: 0.7,
     changefreq: 'monthly',
     lastmod: ep.datum || null,
+  };
+}
+
+// Slug-Logik identisch zu public/app.js (slugify + Kollisions-Dedup),
+// damit der Worker dieselben Erfindungs-Slugs auflöst wie der Client.
+function slugify(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'erfindung';
+}
+
+export function metaForErfindung(slug, items) {
+  const taken = new Set();
+  let found = null;
+  const list = items || [];
+  for (let i = 0; i < list.length; i++) {
+    const e = list[i];
+    const base = slugify(e.name);
+    let s = base;
+    if (taken.has(s)) s = `${base}-${e.folge}`;
+    if (taken.has(s)) s = `${base}-${e.folge}-${i}`;
+    taken.add(s);
+    if (s === slug) { found = e; break; }
+  }
+  if (!found) {
+    return { ...DEFAULT, title: 'Erfindung | TMDA Wiki', robots: 'noindex,follow' };
+  }
+  const folgeHint = found.folge ? ` (Folge #${found.folge})` : '';
+  return {
+    ...DEFAULT,
+    title: `${found.name} | Erfindungen | TMDA Wiki`,
+    description: (found.beschreibung
+      ? `${found.beschreibung}${folgeHint}`
+      : `Absurde Erfindung aus dem TMDA Podcast${found.folge ? `, Folge #${found.folge}` : ''}: ${found.name}.`
+    ).slice(0, 300),
+    priority: 0.5,
+    changefreq: 'monthly',
   };
 }
 

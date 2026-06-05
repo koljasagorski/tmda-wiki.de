@@ -7,6 +7,7 @@ import {
   STATIC_ROUTES,
   metaForPath,
   metaForFolge,
+  metaForErfindung,
   knownRoutePaths,
   buildJsonLd,
 } from './seo.js';
@@ -339,6 +340,17 @@ async function renderPage(c) {
       }
     } catch {}
     if (!meta) meta = metaForFolge(folge, null);
+  }
+  if (!meta && path.startsWith('/erfindung/')) {
+    const slug = decodeURIComponent(path.split('/erfindung/')[1] || '');
+    try {
+      const r = await c.env.ASSETS.fetch(new URL('/data/erfindungen.json', c.req.url));
+      if (r.ok) {
+        const data = await r.json();
+        meta = metaForErfindung(slug, data.items || []);
+      }
+    } catch {}
+    if (!meta) meta = metaForErfindung(slug, []);
   }
   if (!meta) {
     meta = metaForPath('/');

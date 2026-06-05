@@ -14,6 +14,7 @@ import {
   DEFAULT_SITE_URL,
   metaForPath,
   metaForFolge,
+  metaForErfindung,
   knownRoutePaths,
   buildJsonLd,
 } from './seo.js';
@@ -370,6 +371,11 @@ async function renderPage(c) {
     meta = metaForFolge(folge, ep);
     if (ep) extra.episode = ep;
     if (!meta) meta = metaForFolge(folge, null);
+  }
+  if (!meta && path.startsWith('/erfindung/')) {
+    const slug = decodeURIComponent(path.split('/erfindung/')[1] || '');
+    const data = await readPublicJson('erfindungen');
+    meta = metaForErfindung(slug, data.items || []);
   }
   if (!meta) meta = metaForPath('/');
 
