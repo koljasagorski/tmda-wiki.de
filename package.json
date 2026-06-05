@@ -5,6 +5,7 @@
   "description": "Fan-Wiki für den TMDA Podcast (Teenager mit deutschem Akzent)",
   "type": "module",
   "scripts": {
+    "start": "bun src/server.js",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "import:raw": "python3 scripts/import-raw.py",
