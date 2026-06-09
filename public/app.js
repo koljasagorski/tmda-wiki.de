@@ -266,7 +266,7 @@ async function renderHome() {
     <section class="home-hero">
       <div class="home-hero-copy">
         <h1 class="home-hero-title">Das inoffizielle <span class="tmda-word">TMDA</span> Wiki.</h1>
-        <p class="home-hero-sub">Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong>, automatisch aus den Transkripten.</p>
+        <p class="home-hero-sub">Alles aus dem Podcast „Teenager mit deutschem Akzent" mit <strong>Fynn Kliemann</strong> und <strong>Nisse Ingwersen</strong>.</p>
         <div class="home-hero-cta">
           <a class="btn btn-primary" href="/startup-ideen">${ideen.count || 0} Startup-Ideen →</a>
           <a class="btn" href="/chat">AI-Chat fragen</a>

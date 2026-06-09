@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 46/46 LIVE ✅
+## Status — 47/47 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-49 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-50 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -63,6 +63,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 16/24
 
+- [x] **Hellflowers — Keine Macht den Stil-Pflanzen** · Folge 50 · desert/cactus eco (Fraunces + sand/cactus/bloom)
 - [x] **TUBSUIT** · Folge 21 · beach/surfer pastel (Fredoka + aqua/coral)
 - [x] **Unicorn ImmoScan** · Folge 4 · proptech editorial (DM Serif Display)
 

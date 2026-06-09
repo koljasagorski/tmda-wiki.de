@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-06-09T06:22:02.942Z",
-  "count": 72,
+  "updatedAt": "2026-06-09T11:20:56.793Z",
+  "count": 74,
   "items": [
+    {
+      "folge": 50,
+      "name": "Mensch-gegen-Roboter-Kampfsport",
+      "beschreibung": "Spin-off der Enhanced Games: ein gedopter Mensch tritt gegen einen Roboter an - z. B. im Judo, wo es nur ums Eigengewicht geht. Eigener Ginnesbuch-Rekord fuer die meisten Knochenbrueche, mit Extra-Praemie bei den 'Handsgames'."
+    },
+    {
+      "folge": 50,
+      "name": "Live-Galerie / Live-Musik 2030",
+      "beschreibung": "Fynns Idee fuer ein neues Live-Musik-Format der Zukunft ('Live-Galerie'). Sowohl Marteria als auch Mango Forster fanden die Idee laut Fynn 'scheisse'."
+    },
     {
       "folge": 49,
       "name": "Hammergotchi (Mama-Goci)",

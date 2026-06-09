@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T06:22:02.942Z",
-  "count": 197,
+  "updatedAt": "2026-06-09T11:20:56.793Z",
+  "count": 203,
   "items": [
     {
       "begriff": "1F1P",
@@ -218,6 +218,11 @@
       "folge": 29
     },
     {
+      "begriff": "Enhanced Games",
+      "bedeutung": "Doping-erlaubte Konkurrenz zu Olympia (Peter Thiel, Marius Angermayer) mit Doping-Shop und hohen Preisgeldern (100k Teilnahme, 250k Sieg, 1 Mio fuer einen Weltrekord).",
+      "folge": 50
+    },
+    {
       "begriff": "Epidermis",
       "bedeutung": "Hautschicht; im Podcast scherzhaft mit Bratwurstpelle verwechselt",
       "folge": 21
@@ -388,6 +393,11 @@
       "folge": 49
     },
     {
+      "begriff": "Kackepoche",
+      "bedeutung": "Selbst getaufte Bezeichnung fuer die jetzige Drogen-/Krisen-Epoche; auch 'Koks-Kack-Epoche'.",
+      "folge": 50
+    },
+    {
       "begriff": "Kaesebrot der Gesellschaft",
       "bedeutung": "Fynns Selbstbeschreibung als absoluter Durchschnitt, der keinem wehtut und ueber den sich keiner beschwert - parallel zu Sarah Engels als 'Mitte'.",
       "folge": 49
@@ -406,6 +416,11 @@
       "begriff": "KaSim",
       "bedeutung": "Kurzform von Knarschimulator - das Hauptprodukt der Startup-Idee",
       "folge": 12
+    },
+    {
+      "begriff": "Keine Macht den Stil-Pflanzen",
+      "bedeutung": "Startup-Idee der Folge (Wortspiel auf 'Keine Macht den Drogen'): einen Kaktus mit der Bluete einer Zierpflanze kreuzen, damit Blumen kaum Wasser brauchen - und alle Original-Stiel-Pflanzen abschaffen.",
+      "folge": 50
     },
     {
       "begriff": "Kenashi / Kinashi",
@@ -446,6 +461,11 @@
       "begriff": "Knippe",
       "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat.",
       "folge": 43
+    },
+    {
+      "begriff": "Koksrambo-Messe",
+      "bedeutung": "Fynns Spitzname fuer die OMR (Online Marketing Rockstars) in Hamburg.",
+      "folge": 50
     },
     {
       "begriff": "Konklave",
@@ -818,6 +838,11 @@
       "folge": 13
     },
     {
+      "begriff": "Stibitzen (Pfropfen)",
+      "bedeutung": "Die eigentlich 'Pfropfen' genannte Technik, eine Bluete oder Frucht auf eine andere Pflanze aufzusetzen - Grundlage der Kaktus-Kreuzung; im Eskalations-Slogan 'stibitzen und zermalmen'.",
+      "folge": 50
+    },
+    {
       "begriff": "Streak System",
       "bedeutung": "Gamification-Konzept wie bei Duolingo, mit zunehmenden Belohnungen je konstanter etwas getan wird",
       "folge": 39
@@ -861,6 +886,11 @@
       "begriff": "TMDA",
       "bedeutung": "Teenager mit deutschem Akzent - der Podcast",
       "folge": 34
+    },
+    {
+      "begriff": "TMDA Wiki",
+      "bedeutung": "Von Hoerern gebautes Fan-Wiki mit eigener Suchmaschine ueber alle Folgen (Startup-Ideen, Kalles Corner, RFS, Stichwortsuche) - genau diese Seite, im Podcast erwaehnt.",
+      "folge": 50
     },
     {
       "begriff": "Topline",

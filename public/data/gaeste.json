@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T06:22:02.942Z",
-  "count": 958,
+  "updatedAt": "2026-06-09T11:20:56.793Z",
+  "count": 974,
   "items": [
     {
       "name": "Bushido",
@@ -41,7 +41,8 @@
         35,
         42,
         43,
-        47
+        47,
+        50
       ]
     },
     {
@@ -61,7 +62,8 @@
         39,
         40,
         42,
-        49
+        49,
+        50
       ]
     },
     {
@@ -89,7 +91,34 @@
         40,
         42,
         47,
-        49
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Drake",
+      "folgen": [
+        1,
+        7,
+        11,
+        32,
+        40,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Joko Winterscheidt",
+      "folgen": [
+        4,
+        10,
+        19,
+        20,
+        25,
+        29,
+        49,
+        50
       ]
     },
     {
@@ -131,18 +160,6 @@
       ]
     },
     {
-      "name": "Drake",
-      "folgen": [
-        1,
-        7,
-        11,
-        32,
-        40,
-        48,
-        49
-      ]
-    },
-    {
       "name": "Eminem",
       "folgen": [
         3,
@@ -151,18 +168,6 @@
         29,
         35,
         39,
-        49
-      ]
-    },
-    {
-      "name": "Joko Winterscheidt",
-      "folgen": [
-        4,
-        10,
-        19,
-        20,
-        25,
-        29,
         49
       ]
     },
@@ -188,6 +193,18 @@
         42,
         42,
         43
+      ]
+    },
+    {
+      "name": "Peter Thiel",
+      "folgen": [
+        13,
+        14,
+        16,
+        17,
+        21,
+        27,
+        50
       ]
     },
     {
@@ -226,6 +243,17 @@
       ]
     },
     {
+      "name": "Rihanna",
+      "folgen": [
+        4,
+        6,
+        12,
+        15,
+        46,
+        50
+      ]
+    },
+    {
       "name": "Helene Fischer",
       "folgen": [
         4,
@@ -248,6 +276,17 @@
       ]
     },
     {
+      "name": "Udo Lindenberg",
+      "folgen": [
+        5,
+        17,
+        25,
+        47,
+        49,
+        50
+      ]
+    },
+    {
       "name": "Jesus",
       "folgen": [
         11,
@@ -256,17 +295,6 @@
         42,
         43,
         46
-      ]
-    },
-    {
-      "name": "Peter Thiel",
-      "folgen": [
-        13,
-        14,
-        16,
-        17,
-        21,
-        27
       ]
     },
     {
@@ -312,16 +340,6 @@
       ]
     },
     {
-      "name": "Rihanna",
-      "folgen": [
-        4,
-        6,
-        12,
-        15,
-        46
-      ]
-    },
-    {
       "name": "Beyonce",
       "folgen": [
         4,
@@ -342,13 +360,13 @@
       ]
     },
     {
-      "name": "Udo Lindenberg",
+      "name": "Bill Kaulitz",
       "folgen": [
-        5,
-        17,
-        25,
+        6,
+        13,
+        33,
         47,
-        49
+        50
       ]
     },
     {
@@ -379,6 +397,16 @@
         22,
         25,
         40
+      ]
+    },
+    {
+      "name": "Joe Rogan",
+      "folgen": [
+        19,
+        21,
+        34,
+        42,
+        50
       ]
     },
     {
@@ -429,6 +457,15 @@
         42,
         48,
         49
+      ]
+    },
+    {
+      "name": "Montana Black",
+      "folgen": [
+        1,
+        9,
+        36,
+        50
       ]
     },
     {
@@ -486,12 +523,12 @@
       ]
     },
     {
-      "name": "Bill Kaulitz",
+      "name": "Tom Kaulitz",
       "folgen": [
         6,
         13,
         33,
-        47
+        50
       ]
     },
     {
@@ -558,6 +595,15 @@
       ]
     },
     {
+      "name": "LeBron James",
+      "folgen": [
+        13,
+        25,
+        35,
+        50
+      ]
+    },
+    {
       "name": "Joel",
       "folgen": [
         14,
@@ -576,12 +622,12 @@
       ]
     },
     {
-      "name": "Joe Rogan",
+      "name": "Jeff Bezos",
       "folgen": [
-        19,
-        21,
-        34,
-        42
+        22,
+        25,
+        43,
+        50
       ]
     },
     {
@@ -639,14 +685,6 @@
       ]
     },
     {
-      "name": "Montana Black",
-      "folgen": [
-        1,
-        9,
-        36
-      ]
-    },
-    {
       "name": "Money Boy",
       "folgen": [
         3,
@@ -687,19 +725,19 @@
       ]
     },
     {
-      "name": "Tom Kaulitz",
-      "folgen": [
-        6,
-        13,
-        33
-      ]
-    },
-    {
       "name": "Apache",
       "folgen": [
         7,
         42,
         43
+      ]
+    },
+    {
+      "name": "Conor McGregor",
+      "folgen": [
+        8,
+        41,
+        50
       ]
     },
     {
@@ -764,14 +802,6 @@
         12,
         15,
         29
-      ]
-    },
-    {
-      "name": "LeBron James",
-      "folgen": [
-        13,
-        25,
-        35
       ]
     },
     {
@@ -847,14 +877,6 @@
       ]
     },
     {
-      "name": "Jeff Bezos",
-      "folgen": [
-        22,
-        25,
-        43
-      ]
-    },
-    {
       "name": "Brad Pitt",
       "folgen": [
         22,
@@ -884,6 +906,14 @@
         26,
         27,
         36
+      ]
+    },
+    {
+      "name": "Floyd Mayweather",
+      "folgen": [
+        26,
+        41,
+        50
       ]
     },
     {
@@ -1045,13 +1075,6 @@
       ]
     },
     {
-      "name": "Conor McGregor",
-      "folgen": [
-        8,
-        41
-      ]
-    },
-    {
       "name": "Simon Desue",
       "folgen": [
         10,
@@ -1161,6 +1184,13 @@
       "folgen": [
         15,
         48
+      ]
+    },
+    {
+      "name": "Jan Ullrich",
+      "folgen": [
+        15,
+        50
       ]
     },
     {
@@ -1479,13 +1509,6 @@
       ]
     },
     {
-      "name": "Floyd Mayweather",
-      "folgen": [
-        26,
-        41
-      ]
-    },
-    {
       "name": "Barbara Schoeneberger",
       "folgen": [
         27,
@@ -1525,6 +1548,13 @@
       "folgen": [
         32,
         36
+      ]
+    },
+    {
+      "name": "Nicki Minaj",
+      "folgen": [
+        33,
+        50
       ]
     },
     {
@@ -1591,10 +1621,24 @@
       ]
     },
     {
+      "name": "Selena Gomez",
+      "folgen": [
+        37,
+        50
+      ]
+    },
+    {
       "name": "Mucki Pinzner",
       "folgen": [
         38,
         40
+      ]
+    },
+    {
+      "name": "Paul Ronzheimer",
+      "folgen": [
+        38,
+        50
       ]
     },
     {
@@ -1679,6 +1723,20 @@
       "folgen": [
         45,
         46
+      ]
+    },
+    {
+      "name": "Serena Williams",
+      "folgen": [
+        48,
+        50
+      ]
+    },
+    {
+      "name": "Uwe Ochsenknecht",
+      "folgen": [
+        48,
+        50
       ]
     },
     {
@@ -2637,12 +2695,6 @@
     },
     {
       "name": "Niklas und David Finn und Nisse",
-      "folgen": [
-        15
-      ]
-    },
-    {
-      "name": "Jan Ullrich",
       "folgen": [
         15
       ]
@@ -4370,12 +4422,6 @@
       ]
     },
     {
-      "name": "Nicki Minaj",
-      "folgen": [
-        33
-      ]
-    },
-    {
       "name": "Pushat T",
       "folgen": [
         33
@@ -4712,12 +4758,6 @@
       ]
     },
     {
-      "name": "Selena Gomez",
-      "folgen": [
-        37
-      ]
-    },
-    {
       "name": "Jeppy (Fynns Hund)",
       "folgen": [
         37
@@ -4887,12 +4927,6 @@
     },
     {
       "name": "Ole und Henriette",
-      "folgen": [
-        38
-      ]
-    },
-    {
-      "name": "Paul Ronzheimer",
       "folgen": [
         38
       ]
@@ -6086,18 +6120,6 @@
       ]
     },
     {
-      "name": "Serena Williams",
-      "folgen": [
-        48
-      ]
-    },
-    {
-      "name": "Uwe Ochsenknecht",
-      "folgen": [
-        48
-      ]
-    },
-    {
       "name": "Leftboy",
       "folgen": [
         48
@@ -6209,6 +6231,102 @@
       "name": "Crazy Frog & Schnappi",
       "folgen": [
         49
+      ]
+    },
+    {
+      "name": "Benny Blanco",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Kanye West (Ye)",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Marius Angermayer",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Bryan Johnson",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Kid Rock",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Jelly Roll",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Frei.Wild",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Jolle",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Wilson Gonzales Ochsenknecht",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Li Ka-shing",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Mango Forster",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Benjamin von Stuckrad-Barre",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Lola Weippert",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Louis Klamroth",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Marteria",
+      "folgen": [
+        50
+      ]
+    },
+    {
+      "name": "Dennis Rodman",
+      "folgen": [
+        50
       ]
     }
   ]
