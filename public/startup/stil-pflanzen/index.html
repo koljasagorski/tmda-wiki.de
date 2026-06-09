@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Hellflowers — Keine Macht den Stil-Pflanzen</title>
+<meta name="description" content="Schöne Blüten, fast kein Wasser: Wir pfropfen die Blüte deiner Lieblingsblume auf einen Kaktus. Eine Pflanze für die Kackepoche. Ab sofort auf hellflowers.de."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/stil-pflanzen"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Hellflowers — Keine Macht den Stil-Pflanzen"/>
+<meta property="og:description" content="Die Kaktus-Kreuzung, die blüht wie eine Lilie und säuft wie ein Stein. Gegen die Wasserknappheit."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/stil-pflanzen"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Hellflowers — Keine Macht den Stil-Pflanzen"/>
+<meta name="twitter:description" content="Blüte einer Lilie, Durst eines Kaktus. Eine Pflanze für die Kackepoche."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"Hellflowers — Keine Macht den Stil-Pflanzen",
+  "description":"Eine Kaktus-Kreuzung mit der Blüte einer Zierpflanze: schön anzusehen, aber fast kein Wasserverbrauch. Fiktives Startup-Konzept aus dem TMDA-Podcast, Folge 50.",
+  "brand":{"@type":"Brand","name":"Hellflowers"},
+  "offers":{"@type":"Offer","price":"19.00","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}
+}
+</script>
+<style>
+:root{
+  --sand:#f3ead7;--sand-2:#ede0c6;--ink:#23311f;--ink-soft:#3c4f33;
+  --cactus:#3f6b3a;--cactus-2:#56883f;--bloom:#e06a8b;--bloom-soft:#f2a9bf;
+  --gold:#d9a441;--mute:#6f7a5f;--line:rgba(63,107,58,.22)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--sand);
+  background-image:radial-gradient(1100px 600px at 78% -12%,#fff7e6 0,var(--sand) 58%);
+  background-repeat:no-repeat;
+  color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{color:var(--cactus);text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+/* heat shimmer dots */
+.dust{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+.dust i{position:absolute;background:var(--cactus);border-radius:50%;opacity:.18;animation:drift 9s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translateY(0);opacity:.06}50%{transform:translateY(-14px);opacity:.22}}
+/* nav */
+nav{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:26px 28px;max-width:1180px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;font-family:Fraunces,serif;font-size:1.5rem;font-weight:600;letter-spacing:.01em}
+.logo .pot{width:24px;height:24px;border-radius:6px 6px 9px 9px;background:linear-gradient(180deg,var(--cactus-2),var(--cactus));position:relative;box-shadow:0 4px 12px rgba(63,107,58,.35)}
+.logo .pot::after{content:"";position:absolute;width:9px;height:9px;background:var(--bloom);border-radius:50%;top:-5px;left:50%;transform:translateX(-50%);box-shadow:0 0 10px rgba(224,106,139,.6)}
+.nav-cta{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line);padding:11px 20px;border-radius:999px;color:var(--ink-soft);transition:.2s}
+.nav-cta:hover{background:var(--cactus);color:#fff;border-color:var(--cactus)}
+/* hero */
+.hero{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:40px 0 64px}
+.kicker{font-family:Fraunces,serif;font-style:italic;color:var(--cactus);letter-spacing:.02em;font-size:1.02rem;margin-bottom:18px;opacity:.92}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2.6rem,6.2vw,4.8rem);line-height:1.02;letter-spacing:-.015em;margin-bottom:22px}
+h1 em{font-style:italic;color:var(--bloom)}
+.lead{color:var(--ink-soft);font-size:1.14rem;max-width:48ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;font-weight:700;font-size:.96rem;padding:15px 28px;border-radius:999px;transition:.2s;letter-spacing:.01em}
+.btn-fill{background:linear-gradient(180deg,var(--cactus-2),var(--cactus));color:#fff;box-shadow:0 12px 34px -12px rgba(63,107,58,.7)}
+.btn-fill:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--cactus)}
+/* the plant */
+.scene{position:relative;aspect-ratio:1/1;display:grid;place-items:end center;padding-bottom:6%}
+.cactus{position:relative;width:34%;height:64%;background:linear-gradient(120deg,var(--cactus-2),var(--cactus));border-radius:40px 40px 26px 26px;box-shadow:inset -10px -8px 26px rgba(0,0,0,.18),0 24px 50px -24px rgba(63,107,58,.6)}
+.cactus::before,.cactus::after{content:"";position:absolute;width:42%;height:34%;background:linear-gradient(120deg,var(--cactus-2),var(--cactus));border-radius:30px 30px 14px 14px;top:30%}
+.cactus::before{left:-34%;transform-origin:bottom right;box-shadow:inset -6px -4px 14px rgba(0,0,0,.15)}
+.cactus::after{right:-34%;transform-origin:bottom left;box-shadow:inset 6px -4px 14px rgba(0,0,0,.15)}
+.ridge{position:absolute;inset:0;border-radius:40px 40px 26px 26px;background:repeating-linear-gradient(90deg,transparent 0,transparent 10px,rgba(0,0,0,.06) 10px,rgba(0,0,0,.06) 12px)}
+.bloom{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:34%;height:22%;z-index:3;animation:sway 5s ease-in-out infinite}
+.bloom .petal{position:absolute;inset:0;border-radius:60% 60% 58% 58%;background:radial-gradient(circle at 50% 80%,var(--gold) 0,var(--bloom) 38%,var(--bloom-soft) 100%);box-shadow:0 8px 22px -8px rgba(224,106,139,.7)}
+.bloom .petal:nth-child(2){transform:rotate(72deg)}
+.bloom .petal:nth-child(3){transform:rotate(144deg)}
+.bloom .petal:nth-child(4){transform:rotate(216deg)}
+.bloom .petal:nth-child(5){transform:rotate(288deg)}
+.bloom .core{position:absolute;top:50%;left:50%;width:30%;height:30%;transform:translate(-50%,-50%);background:radial-gradient(circle,#fff3c4,var(--gold));border-radius:50%;z-index:4}
+@keyframes sway{0%,100%{transform:translateX(-50%) rotate(-4deg)}50%{transform:translateX(-50%) rotate(4deg)}}
+.pot-base{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:46%;height:14%;background:linear-gradient(180deg,#c98a4e,#9c6536);border-radius:8px 8px 16px 16px;box-shadow:0 16px 30px -16px rgba(0,0,0,.5)}
+.drop{position:absolute;top:42%;right:18%;font-size:1.3rem;opacity:.8;animation:nope 4s ease-in-out infinite}
+@keyframes nope{0%,100%{opacity:.2;transform:translateY(0)}50%{opacity:.85;transform:translateY(6px)}}
+/* sections */
+section{position:relative;z-index:2;padding:66px 0}
+.eyebrow{font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--cactus);margin-bottom:14px;font-weight:600}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.06;margin-bottom:18px}
+.section-lead{color:var(--ink-soft);max-width:56ch;margin-bottom:42px;font-size:1.06rem}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,.35));border:1px solid var(--line);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden}
+.step .num{font-family:Fraunces,serif;font-size:3rem;color:var(--cactus);opacity:.35;line-height:1}
+.step h3{font-size:1.22rem;margin:10px 0 8px;font-weight:700}
+.step p{color:var(--ink-soft);font-size:.96rem}
+.step::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(224,106,139,.18),transparent 70%)}
+/* band */
+.band{background:linear-gradient(180deg,var(--sand-2),#e6d7b8);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+.promise .big{font-family:Fraunces,serif;font-size:clamp(1.4rem,2.6vw,2rem);color:var(--cactus);margin-bottom:6px}
+.promise .sm{color:var(--ink-soft);font-size:.92rem;letter-spacing:.02em}
+/* pricing */
+.price-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.card{background:linear-gradient(180deg,#fff,rgba(255,255,255,.55));border:1px solid var(--cactus);border-radius:24px;padding:38px;box-shadow:0 30px 70px -40px rgba(63,107,58,.6)}
+.card .plan{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cactus)}
+.card .amt{font-family:Fraunces,serif;font-size:3.6rem;line-height:1;margin:8px 0}
+.card .amt small{font-size:1rem;color:var(--mute);font-family:'Space Grotesk'}
+.card ul{list-style:none;margin:22px 0 28px;display:grid;gap:12px}
+.card li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:.98rem}
+.card li::before{content:"🌵";font-size:.9em}
+.domain-note{color:var(--ink-soft);font-size:.95rem;line-height:1.7}
+.domain-note code{font-family:'Space Grotesk';color:var(--cactus);background:rgba(63,107,58,.12);padding:2px 8px;border-radius:6px;font-size:.86em}
+.rebrand{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px}
+.tag{border:1px dashed var(--line);border-radius:999px;padding:9px 18px;font-size:.9rem;color:var(--mute)}
+.tag s{color:#a99b7d}
+.tag b{color:var(--bloom)}
+/* footer */
+footer{position:relative;z-index:2;border-top:1px solid var(--line);padding:40px 28px;text-align:center;color:var(--ink-soft);font-size:.9rem}
+footer a{color:var(--cactus)}
+.disc{max-width:64ch;margin:0 auto 16px;font-size:.84rem;color:#8a7e62;font-style:italic}
+@media(max-width:820px){
+  .hero{grid-template-columns:1fr;gap:10px}
+  .scene{max-width:360px;margin:14px auto 0;aspect-ratio:4/3}
+  .steps,.promise{grid-template-columns:1fr}
+  .price-wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="dust" id="dust"></div>
+
+<nav>
+  <div class="logo"><span class="pot"></span>Hellflowers</div>
+  <a class="nav-cta" href="#pre">Vorbestellen</a>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <div class="kicker">Keine Macht den Stil-Pflanzen · Beta im Beet</div>
+    <h1>Blüht wie eine Lilie. <em>Säuft</em> wie ein Stein.</h1>
+    <p class="lead">Wir pfropfen die Blüte deiner Lieblingspflanze auf einen Kaktus. Das Ergebnis sieht aus wie eine Rose, eine Lilie, eine Orchidee — braucht aber fast kein Wasser. Schluss mit durstigen Stiel-Pflanzen, die dem Planeten das Wasser wegtrinken.</p>
+    <div class="hero-cta">
+      <a class="btn btn-fill" href="#pre">19&nbsp;€ &nbsp;·&nbsp; Kacklilie vorbestellen</a>
+      <a class="btn btn-ghost" href="#how">So funktioniert's</a>
+    </div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="cactus">
+      <div class="ridge"></div>
+      <div class="bloom">
+        <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+        <span class="petal"></span><span class="petal"></span><span class="core"></span>
+      </div>
+    </div>
+    <div class="pot-base"></div>
+    <div class="drop">💧</div>
+  </div>
+</header>
+
+<section id="how" class="wrap">
+  <div class="eyebrow">▸ So funktioniert's</div>
+  <h2>Stibitzen statt züchten.</h2>
+  <p class="section-lead">Kreuzen über Generationen dauert ewig. Wir machen's wie beim Apfel-Birnen-Baum: ein winziger Schnitt, die Blüte rein — fertig. Du willst es schön, du willst es jetzt, du willst es ohne Gießkanne.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Du wählst die Blüte.</h3>
+      <p>Lilie, Rose, Orchidee, Seerose — du sagst, was schön sein soll. Wir nennen sie liebevoll Kacklilie, Kackrose und so weiter. Über den Namen reden wir nochmal.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Wir stibitzen sie auf den Kaktus.</h3>
+      <p>Per Pfropf-Technik wandert deine Blüte auf einen dicken, wulstigen Kaktus-Stamm. Der hat eine unfassbare Fähigkeit: er ist unantastbar und braucht so gut wie kein Wasser.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Nie mehr gießen.</h3>
+      <p>Volle Blüte, null Durst. Während Mensch und Pflanze sonst um jeden Tropfen kämpfen, steckt hier einer zurück — und das ist die Lilie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap promise">
+    <div><div class="big">≈ 0 ml</div><div class="sm">Wasser pro Woche — der Kaktus regelt das</div></div>
+    <div><div class="big">100 %</div><div class="sm">Blüte oben, Stein unten</div></div>
+    <div><div class="big">1 Epoche</div><div class="sm">eingeleitet — willkommen in der Kackepoche*</div></div>
+  </div>
+</section>
+
+<section id="why" class="wrap">
+  <div class="eyebrow">▸ Warum überhaupt</div>
+  <h2>Es geht um den Planeten.</h2>
+  <p class="section-lead">30 Grad in der Berliner Altbauwohnung, der Mensch braucht zu trinken, die Pflanze auch. Einer muss zurückstecken. Wir finden: nicht der Mensch. Hellflowers nimmt die durstigen Stiel-Pflanzen einfach vom natürlichen Markt — damit der Mensch wieder größer werden kann.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="num">🌍</div>
+      <h3>Weniger Durst</h3>
+      <p>Schönheit ohne Wasserverbrauch. Deine Fensterbank wird klimaneutral hübsch.</p>
+    </div>
+    <div class="step">
+      <div class="num">🤝</div>
+      <h3>Bringt Menschen zusammen</h3>
+      <p>Eine gemeinsame Sache, ein gemeinsames Feindbild — komplett bunt, alle dabei. Das Blühen kehrt zurück zu den Menschen.</p>
+    </div>
+    <div class="step">
+      <div class="num">💼</div>
+      <h3>Schafft Beschäftigung</h3>
+      <p>Eine ganze Bewegung entsteht von selbst. Das können wir anstupsen, aufhalten können wir es nicht mehr. Wie eine Kernreaktion.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pre" class="wrap">
+  <div class="eyebrow">▸ Vorbestellen</div>
+  <h2>Hol dir deine erste Kacklilie.</h2>
+  <div class="price-wrap">
+    <div class="card">
+      <div class="plan">Starter-Topf</div>
+      <div class="amt">19&nbsp;€<small>&nbsp;/ Pflanze</small></div>
+      <ul>
+        <li>Ein Kaktus, eine Blüte deiner Wahl, fertig gestibitzt</li>
+        <li>Fast kein Wasserverbrauch, maximale Blüte</li>
+        <li>Unantastbar — der Kaktus regelt</li>
+        <li>Name frei wählbar (Kackrose, Kacklilie, Kacktulpe …)</li>
+      </ul>
+      <a class="btn btn-fill" href="#" onclick="return false">Vorbestellen</a>
+    </div>
+    <div>
+      <p class="domain-note">
+        Live geht's irgendwann auf <code>hellflowers.de</code> — der Name ist schon in Gang gebracht.
+        <br><br>
+        Bewertung von Nisse in Folge 50: <b>16 von 24 Punkten</b>. Eine ganze Epoche aus einer Pflanzen-Kreuzung — „wie das iPhone".
+      </p>
+      <div class="rebrand">
+        <span class="tag"><s>Kackrose</s></span>
+        <span class="tag"><s>Frack-Lilie</s></span>
+        <span class="tag"><b>Hellflowers</b> ✓</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="disc">Satirisches, rein fiktives Konzept aus dem TMDA-Podcast. Kein reales Produkt, keine echten Pflanzen, keine Keulen-Trupps — nur Quatsch zweier Hosts in einer fremden Wohnung. * „Kackepoche" ist ein Running-Gag der Folge, keine echte Zeitrechnung.</p>
+  Fiktives Konzept · TMDA #50 · 16/24 · <a href="/folge/50">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+<script>
+(function(){
+  var s=document.getElementById('dust'),h='';
+  for(var i=0;i<60;i++){
+    var x=Math.floor(Math.random()*100),y=Math.floor(Math.random()*100),
+        sz=(Math.random()*3+1).toFixed(1),d=(Math.random()*9).toFixed(2);
+    h+='<i style="left:'+x+'%;top:'+y+'%;width:'+sz+'px;height:'+sz+'px;animation-delay:'+d+'s"></i>';
+  }
+  s.innerHTML=h;
+})();
+</script>
+</body>
+</html>
