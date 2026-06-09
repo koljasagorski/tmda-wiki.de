@@ -1,0 +1,134 @@
+{
+  "folge": 48,
+  "titel": "Die Zingler fressen das Saarland auf",
+  "laufzeit": "1:05:15",
+  "themen": [
+    "Fun-Fact-Opener: John Kemeny - BASIC-Erfinder, Manhattan-Project-Beteiligter, Assistent von Einstein und Feynman",
+    "Aufzeichnung in der Kueche von Nisses Cousine (Alcopops, Bakadi, Breezer)",
+    "Fynns misslungenes Stern-Interview: Journalist will Negatives, Fynn weicht aus, transkribiert alles mit Fireflies, verweigert Freigabe",
+    "Sodbrennen-Geheimrezept: eine Packung Nippon-Reis mit Schoko + 1 l Maracujasaft",
+    "ESC-Ergebnisverifizierung: ihr '6000-Leute-Team' prueft das Eurovision-Ergebnis fuer Sarah Engels noch mal nach (Running Gag)",
+    "Startup-Konzept: Die Zingler / umzingeln.de (Menschen auf Bestellung einkreisen - Leave-a-Little-Space-for-Jesus-Package bis Querdenker-Package)",
+    "Will-Smith-Doppelgaenger zum Kliemannsland-Geburtstag (600 EUR inklusive Flug)",
+    "Paris-Hilton-Lookalike-Plattform: Original 600 EUR, kleinere Version 300 EUR",
+    "Sich-alt-fuehlen: 'lol' verbal sagen, 'Roffel', 'LD', Deutsch-Englisch-Sprachmix auf Konferenzen",
+    "Sie/Du-Diskussion: Nachteil der deutschen Sprache gegenueber dem englischen 'you'",
+    "Charlie-Sheen-Geschichte: Drogenkonsum so gross, dass Kartell dachte, er deale",
+    "Startup-Idee der Woche: Shability - Matching-Plattform fuer Menschen mit und ohne Behinderung",
+    "AirPods als Apples wichtigstes Produkt; AirPod-NFC-Chip-Kabel-Erfindung",
+    "Uwe Ochsenknecht vs. Serena Williams im Zigaretten-Wettrauchen (Pay-per-View-Idee)",
+    "Succession-Referenz: 'Trust and Money' als Lebensweisheit",
+    "Random Facts: Kolibri rueckwaerts, Niesen mit offenen Augen, Speichel-Lebensproduktion"
+  ],
+  "kurzbeschreibung": "Fynn berichtet von einem misslungenen Stern-Interview (Journalist verdreht seine Worte, Fynn verweigert die Freigabe), waehrend ihr 6000-Leute-Team das ESC-Ergebnis noch 'nachprueft'. Aus einem Witz ueber das Umzingeln von Friedrich Merz entsteht die Geschaeftsidee 'Die Zingler' (umzingeln.de, Packages von 15 EUR bis Querdenker-Groesse). Die eigentliche Startup-Idee der Woche ist Shability: eine Plattform, die Menschen mit Behinderung und ohne zusammenbringt - die eine Seite erhaelt Begleitung, die andere Seite die Privilegien (Erstboarding, Rollstuhlplaetze, Rabatte). Nisse vergibt 19/24.",
+  "startup_idee": {
+    "idee": "Shability - Matching-Plattform fuer Menschen mit und ohne Behinderung",
+    "beschreibung": "Shability (Share + Ability) verbindet Menschen mit einer Behinderung mit Begleitern ohne Behinderung. Inspiriert von Fynns Cousin Tapa (seltene Knochenkrankheit, studiert in Cambridge), der meistens die besten Plaetze bekommt - im Flugzeug, Konzert, Kino - aber jemanden braucht, der ihn dorthin fuehrt. Die Idee: Wer sich als Begleitung anmeldet, muss einen 'Pass' machen oder wird von einer KI (Bild-Upload) eingeschaetzt, ob er in der Lage ist, jemanden zum Venue zu bringen. Als Gegenleistung erhaelt der Begleiter alle Vorteile: Prioritaets-Boarding, beste Sitzplaetze, 50% Rabatt ueberall. Das Bewertungssystem stellt sicher, dass die Begleitung verlaesslich ist. Finanziert durch Krankenkassen, Konzertveranstalter und Unternehmen, die barrierefreie Zusatzplaetze vermarkten wollen.",
+    "punkte": 19,
+    "max_punkte": 24,
+    "begruendung": "Nisse gibt 19/24 - 'in der Grundidee super weit oben'. Die Idee ist schoen und sozial wertvoll, aber es braucht zwei Jahre Community-Aufbau, bis genuegend Vertrauen entsteht. Der buerokratische Aufwand (Steuer, Regulierung, Sanitätshaeuser) zieht die Note etwas runter."
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "John Kemeny pausierte sein Studium für ein Jahr, um am Manhattan Project mitzuarbeiten - und war danach Assistent von Albert Einstein und Richard Feynman, bevor er BASIC erfand.",
+    "Der älteste Kaugummi der Welt ist 9000 Jahre alt.",
+    "Ein Kolibri kann rückwärts fliegen.",
+    "Es ist unmöglich, mit offenen Augen zu niesen.",
+    "Im Laufe des Lebens produziert ein Mensch genügend Speichel, um zwei Schwimmbäder zu füllen."
+  ],
+  "erfindungen": [
+    {
+      "name": "Die Zingler / umzingeln.de",
+      "beschreibung": "Ein Dienstleistungs-Startup, bei dem man Menschen buchen kann, die eine andere Person auf Wunsch einkreisen/umzingeln. Packages: 1) Leave-a-Little-Space-for-Jesus (1 Person, kein Körperkontakt, 15 EUR/Tag), 2) Hooligan-Package (200-300 Zingler, sanfter Druck), 3) Querdenker-Package (5.000-8.000 Zingler, Demo-Größe). Die Zingler haben ihren eigenen Song ('Hand in Hand zingeln wir dich ein'). Einsatzmöglichkeiten: Personen sichern, Grenzen sichern (politischer Witz über Merz), Weltrekorde aufstellen, Bushido-Konzerte stürmen."
+    },
+    {
+      "name": "AirPod-NFC-Kabel-Chip",
+      "beschreibung": "AirPods mit einem ausziehbaren NFC-Chip-Kabel an der Unterseite: Man behält die Knöpfe im Ohr (hört weiter Musik), zieht das dünne Kabel raus und hält den NFC-Chip an ein Terminal zum Bezahlen oder Nummern-Tauschen. Keine Unterbrechung des Musikhörens nötig."
+    }
+  ],
+  "orte": [
+    "Küche bei Nisses Cousine (Aufzeichnungsort dieser Folge)",
+    "Hamburg (Kliemannsland-Geburtstag, Will-Smith-Doppelgänger)",
+    "Cambridge (wo Tapa studiert hat)",
+    "Berlin (Karochens Ballhaus, Berghain, Kurfuerstendamm-Clubs)",
+    "Saarland (Zingler-Witz: Zingler fressen das Saarland auf)",
+    "Wien (ESC-Finale)",
+    "Portugal (Kliemannsland-Testkonzert-Witz)",
+    "Polnische Grenze (Fynns Wasserturm in Zigarettenform)"
+  ],
+  "gaeste_erwaehnte": [
+    "John Kemeny",
+    "Albert Einstein",
+    "Richard Feynman",
+    "Matt Damon (Goodwill Hunting)",
+    "Tapa (Fynns Verwandter, Cambridge-Student mit seltener Knochenkrankheit)",
+    "Will Smith (und sein Doppelgaenger vom Kliemannsland-Geburtstag)",
+    "Paris Hilton (und ihre kleinere Lookalike-Version)",
+    "Charlie Sheen",
+    "Friedrich Merz",
+    "Sarah Engels",
+    "Olli Schulz",
+    "Jan Böhmermann",
+    "Felix Lobrecht",
+    "Serena Williams",
+    "Uwe Ochsenknecht",
+    "Drake",
+    "Kendrick Lamar",
+    "Leftboy",
+    "Materia",
+    "Bushido",
+    "CG Hielscher",
+    "Vivian Karl (Dr. Viv Karl)",
+    "Jan (Fynns Freund, Berlin-Zitat)",
+    "Silas"
+  ],
+  "zitate": [
+    {
+      "text": "Hand in Hand zingeln wir dich ein.",
+      "kontext": "Der Song-Slogan der Zingler - die Gruppe von Menschen, die man auf Bestellung buchen kann, um jemanden einzukreisen."
+    },
+    {
+      "text": "Die Zingler fressen das Saarland auf.",
+      "kontext": "Fynns Witz: Mit dem Querdenker-Package (8000 Leute) könnte man einfach das Saarland komplett umzingeln."
+    },
+    {
+      "text": "Ich möchte hier behandelt werden wie Scheiße. Deswegen bin ich da.",
+      "kontext": "Fynns Erklärung, warum er Berlin so liebt - von der Szene als wäre man nichts behandelt zu werden ist eine Besonderheit."
+    },
+    {
+      "text": "Only trust in money.",
+      "kontext": "Fazit einer langen Vertrauen-und-Geld-Diskussion, Anspielung auf die Succession-Philosophie."
+    },
+    {
+      "text": "Wir sehen uns nächsten Dienstag wie immer um 5 Uhr morgens bei Spotify.",
+      "kontext": "Der klassische TMDA-Outro-Satz."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Zingler / Die Zingler",
+      "bedeutung": "Personen, die man über umzingeln.de buchen kann, um jemanden einzukreisen. Verschiedene Packages von einer Person (15 EUR, Leave-a-Little-Space-for-Jesus) bis Querdenker-Größe (8000 Leute)."
+    },
+    {
+      "begriff": "Shability",
+      "bedeutung": "Startup-Idee der Folge: Matching-Plattform (Share + Ability), die Menschen mit Behinderung mit Begleitern ohne Behinderung verbindet. Die Begleitung bekommt die Privilegien (Erstboarding, beste Sitze, Rabatte), der Mensch mit Behinderung bekommt zuverlässige Begleitung."
+    },
+    {
+      "begriff": "Leave a Little Space for Jesus",
+      "bedeutung": "Amerikanischer Ausdruck für keusche Umarmungen ohne Körperkontakt (Platz für Jesus dazwischen lassen) - das günstigste Zingler-Package."
+    },
+    {
+      "begriff": "Fireflies",
+      "bedeutung": "KI-Tool für automatische Meeting-Transkripte, das Fynn beim Stern-Interview im Hintergrund laufen ließ, um eine 1:1-Abschrift des Gesprächs zu haben."
+    },
+    {
+      "begriff": "LD / Roffel",
+      "bedeutung": "Abkürzungen und Wörter der jüngeren Generation: 'LD' statt 'Alter', 'Roffel' oder 'lol' verbal ausgesprochen statt zu lachen - Zeichen, dass man alt wird, wenn man sie nicht versteht."
+    },
+    {
+      "begriff": "RFS / Random Anonymous Facts",
+      "bedeutung": "Wiederkehrende Fakten-Rubrik, diesmal mit Kolibri, Niesen und Speichel-Produktion."
+    }
+  ]
+}

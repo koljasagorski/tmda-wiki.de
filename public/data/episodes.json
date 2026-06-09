@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 46,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 47,
   "items": [
     {
       "folge": 49,
@@ -32,6 +32,31 @@
         "TMDA als bester Podcast der Welt + Tipp: eine Folge halbieren und langsam hoeren"
       ],
       "kurzbeschreibung": "Nisse ist Vater geworden, Fynn kehrt von einer 300-km-Pilgerwanderung mit seiner Mutter aus Portugal zurueck (inkl. Blasen-OP in der Apotheke) und loest die ESC-Wette ein, indem er bei Uniqlo illegale Sarah-Engels-T-Shirts bedruckt. Die Startup-Idee der Woche: ein Satelliten-Spiegel im Orbit, der jedes Gebet automatisch Richtung Mekka umleitet."
+    },
+    {
+      "folge": 48,
+      "titel": "Die Zingler fressen das Saarland auf",
+      "datum": "2026-05-26",
+      "laufzeit": "1:05:15",
+      "themen": [
+        "Fun-Fact-Opener: John Kemeny - BASIC-Erfinder, Manhattan-Project-Beteiligter, Assistent von Einstein und Feynman",
+        "Aufzeichnung in der Kueche von Nisses Cousine (Alcopops, Bakadi, Breezer)",
+        "Fynns misslungenes Stern-Interview: Journalist will Negatives, Fynn weicht aus, transkribiert alles mit Fireflies, verweigert Freigabe",
+        "Sodbrennen-Geheimrezept: eine Packung Nippon-Reis mit Schoko + 1 l Maracujasaft",
+        "ESC-Ergebnisverifizierung: ihr '6000-Leute-Team' prueft das Eurovision-Ergebnis fuer Sarah Engels noch mal nach (Running Gag)",
+        "Startup-Konzept: Die Zingler / umzingeln.de (Menschen auf Bestellung einkreisen - Leave-a-Little-Space-for-Jesus-Package bis Querdenker-Package)",
+        "Will-Smith-Doppelgaenger zum Kliemannsland-Geburtstag (600 EUR inklusive Flug)",
+        "Paris-Hilton-Lookalike-Plattform: Original 600 EUR, kleinere Version 300 EUR",
+        "Sich-alt-fuehlen: 'lol' verbal sagen, 'Roffel', 'LD', Deutsch-Englisch-Sprachmix auf Konferenzen",
+        "Sie/Du-Diskussion: Nachteil der deutschen Sprache gegenueber dem englischen 'you'",
+        "Charlie-Sheen-Geschichte: Drogenkonsum so gross, dass Kartell dachte, er deale",
+        "Startup-Idee der Woche: Shability - Matching-Plattform fuer Menschen mit und ohne Behinderung",
+        "AirPods als Apples wichtigstes Produkt; AirPod-NFC-Chip-Kabel-Erfindung",
+        "Uwe Ochsenknecht vs. Serena Williams im Zigaretten-Wettrauchen (Pay-per-View-Idee)",
+        "Succession-Referenz: 'Trust and Money' als Lebensweisheit",
+        "Random Facts: Kolibri rueckwaerts, Niesen mit offenen Augen, Speichel-Lebensproduktion"
+      ],
+      "kurzbeschreibung": "Fynn berichtet von einem misslungenen Stern-Interview (Journalist verdreht seine Worte, Fynn verweigert die Freigabe), waehrend ihr 6000-Leute-Team das ESC-Ergebnis noch 'nachprueft'. Aus einem Witz ueber das Umzingeln von Friedrich Merz entsteht die Geschaeftsidee 'Die Zingler' (umzingeln.de, Packages von 15 EUR bis Querdenker-Groesse). Die eigentliche Startup-Idee der Woche ist Shability: eine Plattform, die Menschen mit Behinderung und ohne zusammenbringt - die eine Seite erhaelt Begleitung, die andere Seite die Privilegien (Erstboarding, Rollstuhlplaetze, Rabatte). Nisse vergibt 19/24."
     },
     {
       "folge": 47,

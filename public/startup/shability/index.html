@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shability – Gemeinsam mehr erleben. Für beide.</title>
+  <meta name="description" content="Shability verbindet Menschen mit und ohne Behinderung für gemeinsame Erlebnisse. Du begleitest – du profitierst. Erstboarding, beste Plätze, 50% Rabatt. Eine Idee aus dem TMDA Podcast.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/shability">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shability – Gemeinsam mehr erleben. Für beide.">
+  <meta property="og:description" content="Shability verbindet Menschen mit und ohne Behinderung für gemeinsame Erlebnisse. Du begleitest – du profitierst. Erstboarding, beste Plätze, 50% Rabatt.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/shability">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shability – Gemeinsam mehr erleben. Für beide.">
+  <meta name="twitter:description" content="Verbinde dich mit jemandem, der Begleitung braucht – und bekomme dafür die besten Plätze der Stadt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Shability",
+    "description": "Matching-Plattform für gemeinsame Erlebnisse – Menschen mit und ohne Behinderung verbinden sich, beide profitieren.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Shability"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "0",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/PreOrder",
+      "description": "Kostenlos für beide Seiten – finanziert durch Konzertveranstalter und Krankenkassen"
+    }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --coral: #E8603C;
+      --coral-light: #F2845F;
+      --coral-pale: #FDE8DF;
+      --green: #1B4332;
+      --green-mid: #2D6A4F;
+      --green-light: #52B788;
+      --cream: #FFF8F0;
+      --cream-dark: #F5EDE1;
+      --text: #1A1A1A;
+      --text-muted: #5A5A5A;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ─────────────────────────────────────────────────── */
+    .hero {
+      background: var(--green);
+      color: var(--cream);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(82,183,136,0.18) 0%, transparent 70%);
+    }
+
+    .hero-circles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .hero-circles svg {
+      position: absolute;
+      opacity: 0.08;
+    }
+
+    .hero-circles svg:nth-child(1) { top: -10%; left: -8%; width: 420px; }
+    .hero-circles svg:nth-child(2) { bottom: -15%; right: -5%; width: 500px; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 99px;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .hero-badge::before {
+      content: '●';
+      font-size: 0.55rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .hero h1 {
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      position: relative;
+    }
+
+    .hero h1 span {
+      color: var(--coral-light);
+    }
+
+    .hero-sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+      margin-top: 1.5rem;
+      max-width: 560px;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    .hero-equation {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+
+    .eq-pill {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      font-weight: 800;
+      font-size: 0.95rem;
+      line-height: 1.3;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .eq-pill small {
+      display: block;
+      font-weight: 400;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.2rem;
+    }
+
+    .eq-plus {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--green-light);
+    }
+
+    .eq-result {
+      background: var(--coral);
+      border-color: var(--coral-light);
+    }
+
+    .hero-scroll {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .hero-scroll span {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* ── HOW IT WORKS ─────────────────────────────────────────── */
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      color: var(--green);
+    }
+
+    h2 em {
+      font-style: normal;
+      color: var(--coral);
+    }
+
+    .intro-text {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin-top: 1.2rem;
+    }
+
+    /* ── STORY BOX ────────────────────────────────────────────── */
+    .story-box {
+      background: var(--green);
+      color: var(--cream);
+      border-radius: 24px;
+      padding: 3rem;
+      margin-top: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-box::before {
+      content: '„';
+      position: absolute;
+      top: -0.5rem;
+      left: 1.5rem;
+      font-size: 12rem;
+      font-weight: 900;
+      color: rgba(82,183,136,0.12);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .story-box p {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      position: relative;
+    }
+
+    .story-box cite {
+      display: block;
+      margin-top: 1.5rem;
+      font-style: normal;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--green-light);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── CARDS (HOW IT WORKS) ────────────────────────────────── */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      border: 1.5px solid var(--cream-dark);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    .card-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-icon.coral { background: var(--coral-pale); }
+    .card-icon.green { background: rgba(27,67,50,0.08); }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--green);
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
+    /* ── TWO SIDES ────────────────────────────────────────────── */
+    .two-sides {
+      background: var(--cream-dark);
+      padding: 6rem 2rem;
+    }
+
+    .two-sides-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .two-sides-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 640px) {
+      .two-sides-grid { grid-template-columns: 1fr; }
+    }
+
+    .side {
+      border-radius: 24px;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .side-a {
+      background: var(--green);
+      color: var(--cream);
+    }
+
+    .side-b {
+      background: var(--coral);
+      color: white;
+    }
+
+    .side h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+
+    .side ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .side li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .side li::before {
+      content: '✓';
+      font-weight: 900;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+      opacity: 0.8;
+    }
+
+    .side-a li::before { color: var(--green-light); }
+    .side-b li::before { color: rgba(255,255,255,0.8); }
+
+    .side-a li { color: rgba(255,248,240,0.85); }
+    .side-b li { color: rgba(255,255,255,0.9); }
+
+    .side h3 { margin-bottom: 0.4rem; }
+    .side .side-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    /* ── SCORE SECTION ────────────────────────────────────────── */
+    .score-section {
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .score-display {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin: 2rem 0;
+    }
+
+    .score-number {
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 900;
+      color: var(--green);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .score-max {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .score-bar-wrap {
+      background: var(--cream-dark);
+      border-radius: 99px;
+      height: 16px;
+      width: min(400px, 90vw);
+      margin: 0 auto 2rem;
+      overflow: hidden;
+    }
+
+    .score-bar {
+      height: 100%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--coral), var(--green-light));
+      width: 0%;
+      transition: width 1.4s cubic-bezier(.22,1,.36,1);
+    }
+
+    .score-quote {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      font-style: italic;
+    }
+
+    .score-attr {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--coral);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── CTA ──────────────────────────────────────────────────── */
+    .cta-section {
+      background: var(--coral);
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='160' cy='40' r='80' fill='rgba(255,255,255,0.04)'/%3E%3Ccircle cx='40' cy='160' r='100' fill='rgba(255,255,255,0.03)'/%3E%3C/svg%3E") center / cover;
+    }
+
+    .cta-section h2 {
+      color: white;
+      font-size: clamp(2rem, 5vw, 3rem);
+      position: relative;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2.5rem;
+      background: white;
+      color: var(--coral);
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      padding: 1rem 2.5rem;
+      border-radius: 99px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+
+    .cta-sub {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      position: relative;
+    }
+
+    /* ── FOOTER ───────────────────────────────────────────────── */
+    footer {
+      background: var(--green);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--green-light);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer em {
+      display: block;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+      font-size: 0.72rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-circles">
+    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="95" stroke="white" stroke-width="4"/>
+      <circle cx="100" cy="100" r="60" stroke="white" stroke-width="2"/>
+    </svg>
+    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="95" stroke="white" stroke-width="4"/>
+      <circle cx="100" cy="100" r="60" stroke="white" stroke-width="2"/>
+      <circle cx="100" cy="100" r="25" stroke="white" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <div class="hero-badge">Beta · Waitlist offen</div>
+
+  <h1>Sha<span>bility</span></h1>
+
+  <p class="hero-sub">
+    Du begleitest jemanden, der dich braucht.<br>
+    Du bekommst dafür die besten Plätze der Stadt.
+  </p>
+
+  <div class="hero-equation">
+    <div class="eq-pill">
+      🧑‍🦽 Begleitung<br>brauchen
+      <small>Erstboarding, Konzert-Front, 50 % Rabatt</small>
+    </div>
+    <div class="eq-plus">+</div>
+    <div class="eq-pill">
+      🤝 Begleitung<br>geben
+      <small>1–2 Std. Guide, Check-In, Gute Energie</small>
+    </div>
+    <div class="eq-plus">=</div>
+    <div class="eq-pill eq-result">
+      ✨ Shability<br>Match
+      <small>Beide gewinnen. Immer.</small>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>↓</span>
+    Mehr erfahren
+  </div>
+</section>
+
+<!-- ORIGIN STORY -->
+<section class="section">
+  <span class="label">Die Idee</span>
+  <h2>Entstanden aus einer<br><em>echten Geschichte</em></h2>
+  <p class="intro-text">
+    Tapa studierte in Cambridge, kennt die klügsten Menschen der Welt – und braucht in einer fremden Stadt manchmal einfach jemanden, der ihn zum Konzert bringt. Kein Pfleger, kein Aufpasser. Einfach jemanden, der mitkommt.
+  </p>
+
+  <div class="story-box">
+    <p>
+      Tapa bekommt überall die besten Plätze. Erstboarding im Flieger. Rollstuhlzone beim Konzert mit bester Sicht. 50 % Rabatt, wo er hinkommt. All das steht ihm zu – und er braucht trotzdem jemanden, der ihm den Weg zeigt. Also fragten wir uns: Warum bringen wir nicht einfach die zusammen, die Begleitung geben können, und die, die davon profitieren möchten? Beide gewinnen. Kein Almosen. Ein echter Deal.
+    </p>
+    <cite>— Fynn Kliemann, TMDA Podcast #48</cite>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="background: var(--cream-dark); padding: 6rem 2rem;">
+  <div style="max-width: 1100px; margin: 0 auto;">
+    <span class="label">So funktioniert's</span>
+    <h2>In drei Schritten zum<br><em>perfekten Match</em></h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon coral">📋</div>
+        <h3>Profil anlegen</h3>
+        <p>Beide Seiten melden sich an. KI-gestützte Einschätzung: Bist du als Begleitung für diesen Event-Typ geeignet? Ein kurzes Onboarding reicht.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon green">🔗</div>
+        <h3>Match finden</h3>
+        <p>Du siehst Events in deiner Stadt. Menschen, die eine Begleitung suchen, für Konzerte, Flüge, Kinobesuche. Du wählst aus, was zu dir passt.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon coral">⭐</div>
+        <h3>Erleben & Bewerten</h3>
+        <p>Nach dem gemeinsamen Erlebnis bewertet ihr euch gegenseitig. Mehr Bewertungen = mehr Vertrauen = noch bessere Matches. Für beide Seiten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO SIDES -->
+<section class="two-sides">
+  <div class="two-sides-inner">
+    <span class="label">Für beide</span>
+    <h2>Was jede Seite<br><em>bekommt</em></h2>
+
+    <div class="two-sides-grid">
+      <div class="side side-a">
+        <h3>Für dich mit Behinderung</h3>
+        <span class="side-tag">Du suchst Begleitung</span>
+        <ul>
+          <li>Zuverlässige Begleitung zu Events, Flügen, Ausflügen</li>
+          <li>Kein Gefühl, jemandem zur Last zu fallen</li>
+          <li>Bewertetes System – du siehst vorher, wer kommt</li>
+          <li>Du bestimmst Tempo, Route und Rahmen</li>
+          <li>Matching nach Interessen, nicht nach Mitleid</li>
+        </ul>
+      </div>
+      <div class="side side-b">
+        <h3>Für dich ohne Behinderung</h3>
+        <span class="side-tag">Du gibst Begleitung</span>
+        <ul>
+          <li>Erstboarding – du kommst als Erstes ins Flugzeug</li>
+          <li>Beste Plätze im Konzert, Kino, Stadion</li>
+          <li>50 % Rabatt, wo die Behindertenregelung gilt</li>
+          <li>Prioritäts-Parken in der Innenstadt</li>
+          <li>Eine Stunde Guide-Aufwand. Lebenslange Stories.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCORE SECTION -->
+<section class="score-section">
+  <span class="label">Nisses Urteil – TMDA #48</span>
+  <h2>Was sagt der<br><em>Investor</em>?</h2>
+
+  <div class="score-display">
+    <span class="score-number" id="scoreNum">0</span>
+    <span class="score-max">/24</span>
+  </div>
+
+  <div class="score-bar-wrap">
+    <div class="score-bar" id="scoreBar"></div>
+  </div>
+
+  <p class="score-quote">
+    „Shability ist in der Grundidee super weit oben. Man braucht ein, zwei Jahre, damit sich die Community so bildet, dass Vertrauen entsteht – aber der Grundgedanke ist wirklich schön."
+  </p>
+  <p class="score-attr">— Nisse Ingwersen</p>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Bereit für deinen ersten Match?</h2>
+  <p>Trag dich auf die Warteliste ein – egal auf welcher Seite du stehst. Shability startet bald.</p>
+  <a href="#" class="cta-btn">🚀 Jetzt auf Warteliste</a>
+  <p class="cta-sub">Kostenlos · Kein Spam · Jederzeit abmeldbar</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <em>Shability ist ein rein fiktives Startup-Konzept aus dem Podcast „Teenager mit deutschem Akzent" (TMDA). Kein echtes Unternehmen, keine echte App. Satire.</em>
+  Fiktives Konzept · TMDA #48 · 19/24 · <a href="/folge/48">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+<script>
+  // Animate score bar when in viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const pct = (19 / 24) * 100;
+        document.getElementById('scoreBar').style.width = pct + '%';
+        let count = 0;
+        const target = 19;
+        const step = () => {
+          count++;
+          document.getElementById('scoreNum').textContent = count;
+          if (count < target) setTimeout(step, 60);
+        };
+        step();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const scoreEl = document.querySelector('.score-section');
+  if (scoreEl) observer.observe(scoreEl);
+</script>
+</body>
+</html>

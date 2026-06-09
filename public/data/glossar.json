@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 192,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 197,
   "items": [
     {
       "begriff": "1F1P",
@@ -248,6 +248,11 @@
       "folge": 33
     },
     {
+      "begriff": "Fireflies",
+      "bedeutung": "KI-Tool für automatische Meeting-Transkripte, das Fynn beim Stern-Interview im Hintergrund laufen ließ, um eine 1:1-Abschrift des Gesprächs zu haben.",
+      "folge": 48
+    },
+    {
       "begriff": "Five Guys-Sponsoring",
       "bedeutung": "Laufender Gag: Fynn findet Nisses Five Guys Cap im Auto und 'bewirbt' das gesamte Format als Sponsor, obwohl Five Guys nichts davon weiß",
       "folge": 9
@@ -468,9 +473,19 @@
       "folge": 26
     },
     {
+      "begriff": "LD / Roffel",
+      "bedeutung": "Abkürzungen und Wörter der jüngeren Generation: 'LD' statt 'Alter', 'Roffel' oder 'lol' verbal ausgesprochen statt zu lachen - Zeichen, dass man alt wird, wenn man sie nicht versteht.",
+      "folge": 48
+    },
+    {
       "begriff": "Le Maison",
       "bedeutung": "Schauspieleragentur in Hamburg, vergleichbar mit der Agentur aus 'Emily in Paris'",
       "folge": 37
+    },
+    {
+      "begriff": "Leave a Little Space for Jesus",
+      "bedeutung": "Amerikanischer Ausdruck für keusche Umarmungen ohne Körperkontakt (Platz für Jesus dazwischen lassen) - das günstigste Zingler-Package.",
+      "folge": 48
     },
     {
       "begriff": "Lee Katching / Li Ka-shing",
@@ -689,8 +704,8 @@
     },
     {
       "begriff": "RFS / Random Anonymous Facts",
-      "bedeutung": "Wiederkehrende Fakten-Rubrik. In dieser Folge ohne Internet 'aus dem Kopf' praesentiert (Hautzellen, Erroeten, Zwergziegen-Akzente).",
-      "folge": 49
+      "bedeutung": "Wiederkehrende Fakten-Rubrik, diesmal mit Kolibri, Niesen und Speichel-Produktion.",
+      "folge": 48
     },
     {
       "begriff": "Rotten.com / World Star Hip Hop",
@@ -751,6 +766,11 @@
       "begriff": "schwarzer / weisser Kight (Neid)",
       "bedeutung": "Weisser Neid: man goennt dem anderen, will es aber auch. Schwarzer Neid: egal ob man es selbst hat, der andere soll es nicht haben.",
       "folge": 18
+    },
+    {
+      "begriff": "Shability",
+      "bedeutung": "Startup-Idee der Folge: Matching-Plattform (Share + Ability), die Menschen mit Behinderung mit Begleitern ohne Behinderung verbindet. Die Begleitung bekommt die Privilegien (Erstboarding, beste Sitze, Rabatte), der Mensch mit Behinderung b…",
+      "folge": 48
     },
     {
       "begriff": "Shooten",
@@ -961,6 +981,11 @@
       "begriff": "Zero You Go",
       "bedeutung": "Fynns Feuchttuecher-Startup - 'as you go home', auch fuer Damenhygiene",
       "folge": 37
+    },
+    {
+      "begriff": "Zingler / Die Zingler",
+      "bedeutung": "Personen, die man über umzingeln.de buchen kann, um jemanden einzukreisen. Verschiedene Packages von einer Person (15 EUR, Leave-a-Little-Space-for-Jesus) bis Querdenker-Größe (8000 Leute).",
+      "folge": 48
     }
   ]
 }
