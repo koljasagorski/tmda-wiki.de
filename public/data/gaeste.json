@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 944,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 958,
   "items": [
     {
       "name": "Bushido",
@@ -20,6 +20,7 @@
         37,
         41,
         46,
+        48,
         49
       ]
     },
@@ -74,7 +75,8 @@
         36,
         42,
         45,
-        47
+        47,
+        48
       ]
     },
     {
@@ -126,6 +128,18 @@
         34,
         40,
         47
+      ]
+    },
+    {
+      "name": "Drake",
+      "folgen": [
+        1,
+        7,
+        11,
+        32,
+        40,
+        48,
+        49
       ]
     },
     {
@@ -189,14 +203,15 @@
       ]
     },
     {
-      "name": "Drake",
+      "name": "Friedrich Merz",
       "folgen": [
-        1,
-        7,
-        11,
-        32,
-        40,
-        49
+        19,
+        22,
+        29,
+        43,
+        44,
+        47,
+        48
       ]
     },
     {
@@ -266,14 +281,14 @@
       ]
     },
     {
-      "name": "Friedrich Merz",
+      "name": "Materia",
       "folgen": [
-        19,
-        22,
-        29,
-        43,
-        44,
-        47
+        18,
+        38,
+        39,
+        41,
+        48,
+        49
       ]
     },
     {
@@ -367,16 +382,6 @@
       ]
     },
     {
-      "name": "Materia",
-      "folgen": [
-        18,
-        38,
-        39,
-        41,
-        49
-      ]
-    },
-    {
       "name": "Fynn Kliemann",
       "folgen": [
         21,
@@ -414,6 +419,16 @@
         39,
         40,
         42
+      ]
+    },
+    {
+      "name": "Sarah Engels",
+      "folgen": [
+        37,
+        38,
+        42,
+        48,
+        49
       ]
     },
     {
@@ -606,21 +621,21 @@
       ]
     },
     {
+      "name": "Olli Schulz",
+      "folgen": [
+        36,
+        38,
+        47,
+        48
+      ]
+    },
+    {
       "name": "Kalle Schwensen",
       "folgen": [
         37,
         38,
         40,
         43
-      ]
-    },
-    {
-      "name": "Sarah Engels",
-      "folgen": [
-        37,
-        38,
-        42,
-        49
       ]
     },
     {
@@ -645,6 +660,14 @@
         3,
         21,
         24
+      ]
+    },
+    {
+      "name": "Kendrick Lamar",
+      "folgen": [
+        3,
+        35,
+        48
       ]
     },
     {
@@ -888,14 +911,6 @@
       ]
     },
     {
-      "name": "Olli Schulz",
-      "folgen": [
-        36,
-        38,
-        47
-      ]
-    },
-    {
       "name": "Paula Hartmann",
       "folgen": [
         42,
@@ -915,13 +930,6 @@
       "folgen": [
         1,
         2
-      ]
-    },
-    {
-      "name": "Kendrick Lamar",
-      "folgen": [
-        3,
-        35
       ]
     },
     {
@@ -1135,10 +1143,24 @@
       ]
     },
     {
+      "name": "Jan Böhmermann",
+      "folgen": [
+        15,
+        48
+      ]
+    },
+    {
       "name": "Ricky Gervais",
       "folgen": [
         15,
         25
+      ]
+    },
+    {
+      "name": "Charlie Sheen",
+      "folgen": [
+        15,
+        48
       ]
     },
     {
@@ -2530,12 +2552,6 @@
       ]
     },
     {
-      "name": "Jan Böhmermann",
-      "folgen": [
-        15
-      ]
-    },
-    {
       "name": "Trey Parker",
       "folgen": [
         15
@@ -2591,12 +2607,6 @@
     },
     {
       "name": "HP Baxxter (Scooter)",
-      "folgen": [
-        15
-      ]
-    },
-    {
-      "name": "Charlie Sheen",
       "folgen": [
         15
       ]
@@ -6031,6 +6041,90 @@
       "name": "Vivian Karl",
       "folgen": [
         47
+      ]
+    },
+    {
+      "name": "John Kemeny",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Albert Einstein",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Richard Feynman",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Matt Damon (Goodwill Hunting)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Tapa (Fynns Verwandter, Cambridge-Student mit seltener Knochenkrankheit)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Will Smith (und sein Doppelgaenger vom Kliemannsland-Geburtstag)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Paris Hilton (und ihre kleinere Lookalike-Version)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Serena Williams",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Uwe Ochsenknecht",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Leftboy",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "CG Hielscher",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Vivian Karl (Dr. Viv Karl)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Jan (Fynns Freund, Berlin-Zitat)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "name": "Silas",
+      "folgen": [
+        48
       ]
     },
     {

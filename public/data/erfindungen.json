@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 70,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 72,
   "items": [
     {
       "folge": 49,
@@ -11,6 +11,16 @@
       "folge": 49,
       "name": "Kompassuhr",
       "beschreibung": "Eine Uhr, die nur aus einem grossen, fluoreszierenden Taucher-Kompass ums Handgelenk besteht. Teil von Fynns geplanter Mode-Kollektion mit extra kurzen Jackett-Aermeln (Vorbild: ein alter Ford-CEO), damit Uhr bzw. Kompass immer sichtbar bleiben. Nisse findet sie viel zu gross."
+    },
+    {
+      "folge": 48,
+      "name": "Die Zingler / umzingeln.de",
+      "beschreibung": "Ein Dienstleistungs-Startup, bei dem man Menschen buchen kann, die eine andere Person auf Wunsch einkreisen/umzingeln. Packages: 1) Leave-a-Little-Space-for-Jesus (1 Person, kein Körperkontakt, 15 EUR/Tag), 2) Hooligan-Package (200-300 Zingler, sanfter Druck), 3) Querdenker-Package (5.000-8.000 Zin…"
+    },
+    {
+      "folge": 48,
+      "name": "AirPod-NFC-Kabel-Chip",
+      "beschreibung": "AirPods mit einem ausziehbaren NFC-Chip-Kabel an der Unterseite: Man behält die Knöpfe im Ohr (hört weiter Musik), zieht das dünne Kabel raus und hält den NFC-Chip an ein Terminal zum Bezahlen oder Nummern-Tauschen. Keine Unterbrechung des Musikhörens nötig."
     },
     {
       "folge": 47,

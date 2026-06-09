@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 261,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 268,
   "items": [
     {
       "ort": "Berlin",
@@ -209,6 +209,13 @@
       "folgen": [
         43,
         45
+      ]
+    },
+    {
+      "ort": "Wien (ESC-Finale)",
+      "folgen": [
+        48,
+        49
       ]
     },
     {
@@ -1598,6 +1605,48 @@
       ]
     },
     {
+      "ort": "Küche bei Nisses Cousine (Aufzeichnungsort dieser Folge)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Hamburg (Kliemannsland-Geburtstag, Will-Smith-Doppelgänger)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Cambridge (wo Tapa studiert hat)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Berlin (Karochens Ballhaus, Berghain, Kurfuerstendamm-Clubs)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Saarland (Zingler-Witz: Zingler fressen das Saarland auf)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Portugal (Kliemannsland-Testkonzert-Witz)",
+      "folgen": [
+        48
+      ]
+    },
+    {
+      "ort": "Polnische Grenze (Fynns Wasserturm in Zigarettenform)",
+      "folgen": [
+        48
+      ]
+    },
+    {
       "ort": "Portugal (Atlantikkueste / Pilgerweg, ~300 km)",
       "folgen": [
         49
@@ -1629,12 +1678,6 @@
     },
     {
       "ort": "Niederlande / Holland (Zeugenschutz-Story)",
-      "folgen": [
-        49
-      ]
-    },
-    {
-      "ort": "Wien (ESC-Finale)",
       "folgen": [
         49
       ]

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-02T10:13:26.856Z",
-  "count": 45,
+  "updatedAt": "2026-06-09T06:22:02.942Z",
+  "count": 46,
   "items": [
     {
       "folge": 49,
@@ -10,6 +10,15 @@
       "punkte": 11,
       "max_punkte": 24,
       "begruendung": "Nisse vergibt 11 von 24 - 'unteres Mittelfeld'. Die Idee ist riesig gedacht (eine Milliarde potenzielle Kunden), aber die Umsetzung mit Orbit-Spiegeln und das schwer aussprechbare Wortspiel-Naming ziehen die Bewertung runter."
+    },
+    {
+      "folge": 48,
+      "datum": "2026-05-26",
+      "idee": "Shability - Matching-Plattform fuer Menschen mit und ohne Behinderung",
+      "beschreibung": "Shability (Share + Ability) verbindet Menschen mit einer Behinderung mit Begleitern ohne Behinderung. Inspiriert von Fynns Cousin Tapa (seltene Knochenkrankheit, studiert in Cambridge), der meistens die besten Plaetze bekommt - im Flugzeug, Konzert, Kino - aber jemanden braucht, der ihn dorthin fuehrt. Die Idee: Wer sich als Begleitung anmeldet, muss einen 'Pass' machen oder wird von einer KI (Bi…",
+      "punkte": 19,
+      "max_punkte": 24,
+      "begruendung": "Nisse gibt 19/24 - 'in der Grundidee super weit oben'. Die Idee ist schoen und sozial wertvoll, aber es braucht zwei Jahre Community-Aufbau, bis genuegend Vertrauen entsteht. Der buerokratische Aufwand (Steuer, Regulierung, Sanitätshaeuser…"
     },
     {
       "folge": 47,
