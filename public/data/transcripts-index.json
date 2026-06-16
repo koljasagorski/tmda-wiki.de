@@ -190,5 +190,9 @@
   {
     "folge": 50,
     "path": "/transcripts/folge-50.txt"
+  },
+  {
+    "folge": 51,
+    "path": "/transcripts/folge-51.txt"
   }
 ]

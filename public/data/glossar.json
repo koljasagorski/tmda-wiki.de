@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T11:20:56.793Z",
-  "count": 203,
+  "updatedAt": "2026-06-16T08:11:57.377Z",
+  "count": 206,
   "items": [
     {
       "begriff": "1F1P",
@@ -83,6 +83,11 @@
       "folge": 16
     },
     {
+      "begriff": "Berufskleidung als Kultmode",
+      "bedeutung": "Startup-Idee der Folge: klassische Arbeitskleidung (Latzhosen, Westen, Boots) wird als begehrtes Streetwear-Statement neu positioniert – Handwerk meets Hype.",
+      "folge": 51
+    },
+    {
       "begriff": "BGS",
       "bedeutung": "Bundesgrenzschutz, im Kontext der Drogenhunde am Bahnhof Hamburg.",
       "folge": 44
@@ -161,6 +166,11 @@
       "begriff": "Christoph Altmann",
       "bedeutung": "Wiederkehrende Figur, der 'Pizzamann' der in jeder Folge vorkommen soll",
       "folge": 5
+    },
+    {
+      "begriff": "Cloudflare-Lavalampen",
+      "bedeutung": "Cloudflare nutzt Kameras, die auf Lavalampen in ihrem Büro gerichtet sind, um echte Zufallszahlen für kryptografische Zwecke zu generieren – die unvorhersehbaren Wachsblasen sind physikalische Entropie.",
+      "folge": 51
     },
     {
       "begriff": "Contergan",
@@ -441,6 +451,11 @@
       "begriff": "Killdozer",
       "bedeutung": "Spitzname fuer den gepanzerten Bulldozer von Marvin Heemeyer, mit dem er 2004 sein Heimatort Granby zerstoerte.",
       "folge": 18
+    },
+    {
+      "begriff": "Kliemannsland",
+      "bedeutung": "Fynns landwirtschaftliches Kreativprojekt in Schleswig-Holstein. In dieser Folge wird der echte Ursprung des Namens recherchiert und mit dem Zweiten Weltkrieg / der Ostfront in Verbindung gebracht.",
+      "folge": 51
     },
     {
       "begriff": "Kliman Backstroke",

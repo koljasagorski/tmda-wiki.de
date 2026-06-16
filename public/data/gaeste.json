@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T11:20:56.793Z",
-  "count": 974,
+  "updatedAt": "2026-06-16T08:11:57.377Z",
+  "count": 978,
   "items": [
     {
       "name": "Bushido",
@@ -6327,6 +6327,30 @@
       "name": "Dennis Rodman",
       "folgen": [
         50
+      ]
+    },
+    {
+      "name": "Fynn Kliemann (Host)",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Nisse Ingwersen (Host)",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Donald Trump (Trump-Schneekugeln-Erfindung)",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "M.I.A. (Verschwörungstheorie-Einschub)",
+      "folgen": [
+        51
       ]
     }
   ]

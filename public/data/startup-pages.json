@@ -1,6 +1,7 @@
 {
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
+    {"folge":51,"ideeMatch":"Berufskleidung als Kultmode","slug":"worq","domain":null,"tagline":"Arbeitskleidung, die du auch tragen willst.","punkte":null},
     {"folge":50,"ideeMatch":"Stil-Pflanzen","slug":"stil-pflanzen","domain":"hellflowers.de","tagline":"Blüht wie eine Lilie, säuft wie ein Stein — Kaktus-Kreuzung gegen die Wasserknappheit.","punkte":16},
     {"folge":6,"ideeMatch":"Ad Music","slug":"ad-music","domain":null,"tagline":"Markennamen im Song — bezahlt pro Listen.","punkte":9},
     {"folge":40,"ideeMatch":"Kofferreisen","slug":"kofferreisen","domain":"kofferreisen.de","tagline":"Reise als Gepäck — spar dir das Ticket.","punkte":8},

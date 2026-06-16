@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-06-09T11:20:56.793Z",
-  "count": 74,
+  "updatedAt": "2026-06-16T08:11:57.377Z",
+  "count": 76,
   "items": [
+    {
+      "folge": 51,
+      "name": "Wetter-Musik-Plugin",
+      "beschreibung": "Ein Plugin, das aktuelle Wetterdaten (Temperatur, Windstärke, Niederschlag) in Echtzeit in Sounds und Melodien umwandelt – jeder Tag klingt anders, jede Stadt hat ihren eigenen Soundtrack."
+    },
+    {
+      "folge": 51,
+      "name": "Das worst-case Passagierflugzeug",
+      "beschreibung": "Ein gedankliches Konstrukt: ein Passagierflugzeug, das zu Testzwecken mit dem Schlimmsten gefüllt wird – Wasser, Sirup, Öl, Trump-Schneekugeln. Niemand will an Bord, aber das Ding fliegt trotzdem."
+    },
     {
       "folge": 50,
       "name": "Mensch-gegen-Roboter-Kampfsport",

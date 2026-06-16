@@ -1,0 +1,80 @@
+{
+  "folge": 51,
+  "titel": "Pisse auf dem Schrank",
+  "laufzeit": "1:05:00",
+  "themen": [
+    "Hoerer-Story: Ein Mann lagert seit Jahren Uringläser auf seinem Kleiderschrank – die Titelgeschichte",
+    "Nachbar-Anekdote: Früherer Ford-Ingenieur, der am Batmobil und an Star-Wars-Produktionen mitgebaut hat",
+    "Teenager-Story: Ein 16-Jähriger wird von der Polizei mit einer geladenen Dienstwaffe bedroht",
+    "Ursprung des Namens 'Kliemannsland' wird auf den Zweiten Weltkrieg / Ostfront zurückgeführt",
+    "STARTUP-IDEE: Berufskleidung als begehrte Modeware – Workwear wird zum Kultprodukt",
+    "Cloudflare nutzt echte Lavalampen als Zufallszahlengenerator für Internetsicherheit",
+    "Erfindung: Musik-Plugin, das aktuelle Wetterdaten in Sounds / Melodien umwandelt",
+    "Graffiti-Schäden in Millionenhöhe – Community sendet ihre verrücktesten Geschichten",
+    "Armbrüste, Luftgewehre und gefährliche Kindheitserinnerungen auf dem Land",
+    "Erfindung: Worst-Case-Passagierflugzeug gefüllt mit Wasser, Sirup, Öl und Trump-Schneekugeln",
+    "M.I.A., Alufolienhüte und 5G-Schutzkleidung – Verschwörungsdenken als Markt",
+    "Klonen aus jahrzehntealten biologischen Proben – theoretisch möglich?",
+    "Oderso-Socken: Plug für den Podcast-Sponsor"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse tauchen in Hoerer-Storys ein: Ein Mann sammelt Urin in Gläsern auf seinem Schrank, ein Nachbar baute am Batmobil und bei Star Wars mit, und ein 16-Jähriger erlebt eine Polizeibegegnung mit Dienstwaffe. Fynn pitcht Berufskleidung als begehrtes Kultprodukt. Außerdem: Der echte Ursprung des Namens 'Kliemannsland', Cloudflare-Lavalampen, ein Musik-Wetter-Plugin und ein Passagierflugzeug voller Sondermüll.",
+  "startup_idee": {
+    "idee": "Berufskleidung als Kultmode (Workwear-Revolution)",
+    "beschreibung": "Fynn pitcht die Idee, klassische Berufskleidung – Latzhosen, Sicherheitswesten, Arbeitsboots, Kittel – als begehrte Modeware neu zu positionieren. Ähnlich wie Carhartt oder Dickies im internationalen Streetwear-Markt sollen Berufskleidungsmarken in Deutschland zum coolen Statement werden. Das Ziel: Handwerker tragen dasselbe wie Hype-Kids, und niemand schämt sich mehr für seine Arbeitskleidung.",
+    "punkte": null,
+    "max_punkte": 24,
+    "begruendung": "Nisses Bewertung liegt nicht vor (Transkript nicht verfügbar).",
+    "domain": null
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "Cloudflare generiert echte Zufallszahlen für seine Verschlüsselung, indem Kameras auf Lavalampen in einem Büro gerichtet sind – die chaotischen Bewegungen der Wachsblasen sind echte Entropie.",
+    "Es ist theoretisch möglich, aus jahrzehntealten biologischen Proben (Haare, Zähne) ein Klon-Profil zu erstellen, auch wenn die Erfolgsrate stark von der DNA-Erhaltung abhängt."
+  ],
+  "erfindungen": [
+    {
+      "name": "Wetter-Musik-Plugin",
+      "beschreibung": "Ein Plugin, das aktuelle Wetterdaten (Temperatur, Windstärke, Niederschlag) in Echtzeit in Sounds und Melodien umwandelt – jeder Tag klingt anders, jede Stadt hat ihren eigenen Soundtrack."
+    },
+    {
+      "name": "Das worst-case Passagierflugzeug",
+      "beschreibung": "Ein gedankliches Konstrukt: ein Passagierflugzeug, das zu Testzwecken mit dem Schlimmsten gefüllt wird – Wasser, Sirup, Öl, Trump-Schneekugeln. Niemand will an Bord, aber das Ding fliegt trotzdem."
+    }
+  ],
+  "orte": [
+    "Kliemannsland (Entstehungsgeschichte: WWII-Ostfront)",
+    "Deutschland allgemein (Graffiti-Storys, Arbeitskleidung-Markt)",
+    "San Francisco (Cloudflare-Büro mit Lavalampen)"
+  ],
+  "gaeste_erwaehnte": [
+    "Fynn Kliemann (Host)",
+    "Nisse Ingwersen (Host)",
+    "Donald Trump (Trump-Schneekugeln-Erfindung)",
+    "M.I.A. (Verschwörungstheorie-Einschub)"
+  ],
+  "zitate": [
+    {
+      "text": "Pisse auf dem Schrank – das ist einfach ein Lebensstil.",
+      "kontext": "Reaktion auf die Hoerer-Story über den Mann, der Uringläser auf seinem Kleiderschrank sammelt."
+    },
+    {
+      "text": "Der Typ hat das Batmobil gebaut. Der Typ hat bei Star Wars mitgemacht. Und der wohnt einfach nebenan.",
+      "kontext": "Staunen über die Geschichte des früheren Ford-Ingenieurs als Nachbarn."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Berufskleidung als Kultmode",
+      "bedeutung": "Startup-Idee der Folge: klassische Arbeitskleidung (Latzhosen, Westen, Boots) wird als begehrtes Streetwear-Statement neu positioniert – Handwerk meets Hype."
+    },
+    {
+      "begriff": "Cloudflare-Lavalampen",
+      "bedeutung": "Cloudflare nutzt Kameras, die auf Lavalampen in ihrem Büro gerichtet sind, um echte Zufallszahlen für kryptografische Zwecke zu generieren – die unvorhersehbaren Wachsblasen sind physikalische Entropie."
+    },
+    {
+      "begriff": "Kliemannsland",
+      "bedeutung": "Fynns landwirtschaftliches Kreativprojekt in Schleswig-Holstein. In dieser Folge wird der echte Ursprung des Namens recherchiert und mit dem Zweiten Weltkrieg / der Ostfront in Verbindung gebracht."
+    }
+  ]
+}
