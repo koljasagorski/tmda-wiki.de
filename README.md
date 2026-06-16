@@ -56,7 +56,7 @@ Alles in `public/easter-eggs.js`. Drück <kbd>?</kbd> auf der Seite für das kom
 - `thelen` → 🥕-Regen „Karsten ist Gemüse" · `tabletten` / `matrjoschka` → 💊-Pop
 - `marsalek` → Wanted-Poster · `hartz4` → 🐛 Cursor-Trail · `iris` → Werbungs-Blitz
 - `windrad` → Hologramm · `bosse` → fiktives Album-Cover · `lindemann` → Krisen-PR-Quote
-- `aaron` → 🌴-Regen
+- `aaron` → 🌴-Regen · `feierabend` → 🌙 „Komplett Feierabend" (Folge 51)
 
 **Klick/Maus-Trigger**:
 - Logo 2× klicken → Starfield „Talahons im Weltall"

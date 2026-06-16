@@ -1,80 +1,154 @@
 {
   "folge": 51,
   "titel": "Pisse auf dem Schrank",
-  "laufzeit": "1:05:00",
+  "laufzeit": "1:05:27",
   "themen": [
-    "Hoerer-Story: Ein Mann lagert seit Jahren Uringläser auf seinem Kleiderschrank – die Titelgeschichte",
-    "Nachbar-Anekdote: Früherer Ford-Ingenieur, der am Batmobil und an Star-Wars-Produktionen mitgebaut hat",
-    "Teenager-Story: Ein 16-Jähriger wird von der Polizei mit einer geladenen Dienstwaffe bedroht",
-    "Ursprung des Namens 'Kliemannsland' wird auf den Zweiten Weltkrieg / Ostfront zurückgeführt",
-    "STARTUP-IDEE: Berufskleidung als begehrte Modeware – Workwear wird zum Kultprodukt",
-    "Cloudflare nutzt echte Lavalampen als Zufallszahlengenerator für Internetsicherheit",
-    "Erfindung: Musik-Plugin, das aktuelle Wetterdaten in Sounds / Melodien umwandelt",
-    "Graffiti-Schäden in Millionenhöhe – Community sendet ihre verrücktesten Geschichten",
-    "Armbrüste, Luftgewehre und gefährliche Kindheitserinnerungen auf dem Land",
-    "Erfindung: Worst-Case-Passagierflugzeug gefüllt mit Wasser, Sirup, Öl und Trump-Schneekugeln",
-    "M.I.A., Alufolienhüte und 5G-Schutzkleidung – Verschwörungsdenken als Markt",
-    "Klonen aus jahrzehntealten biologischen Proben – theoretisch möglich?",
-    "Oderso-Socken: Plug für den Podcast-Sponsor"
+    "Das Wander-Format geht weiter: aufgenommen in einer fremden Wohnung (diesmal bei einer Frau namens Yingyet) - Hoerer koennen sich in den Kommentaren als naechster Aufnahmeort bewerben und einen twoFinger-Records-Hoodie gewinnen",
+    "Freiburger Strassennamenschilder mit kleiner Erklaerung unter dem Namen - Fynn findet, das sollte ueberall Pflicht werden",
+    "Wort-Spielerei 'Homolog': ein Wort, das exakt das beschreibt, was es ist (z. B. ist 'dreisilbig' dreisilbig, '18buchstabig' hat 18 Buchstaben)",
+    "Aaron Tuschkes Kiosk in Weissensee (Sammelkarten, Socken, eigenes Buch) und Fynns Socken-Obsession - 'passt wie angegossen'",
+    "Fynns neues Workwear-Mode-Projekt: Arbeitskleidung fuer den Alltag, Guertel aus einem Ueberbrueckungskabel, Hose aus Judo-/Grappling-Material (Gi)",
+    "Saengerin MIA und ihre Aluminium-/5G-abschirmenden Klamotten - Fynn will daraus 'Aluhuete in Fresh' als Modekollektion machen",
+    "Das Synthesizer-Plugin 'Conditions', das den Sound nach dem echten Wetter eines eingegebenen Ortes formt (Temperatur, Wind, Bewoelkung) - Vergleich zu Cloudflares Lavalampen-Verschluesselung",
+    "STARTUP-IDEE: das doppelwandige, wassergefuellte Flugzeug - Passagier schwerelos und immer gerade gelagert, Feuer beim Aufprall sofort geloescht",
+    "Steven Joerns' Silvester-Tradition: pisst jaehrlich in ein Glas und stellt es zum Verschimmeln auf den Schrank ('alle Versuche') - Titelgeber der Folge",
+    "Eskalierende Waffen-Anekdoten: Nisse schiesst seinem Bruder mit der Armbrust einen Buntstift ins Auge und fast seiner Oma mit dem Luftgewehr; Fynn wird von 'Torben' eine geladene Soko-Dienstwaffe an die Schlaefe gehalten",
+    "Fynns Bauernhof-Randale mit acht ('kleine freche Kobolde'): Stroh in Trecker-Tanks, 'Finn und Katrin waren hier' an die Wand gesprueht, danach als Strafe fegen - Fynns 'Kryptonit'",
+    "Der Tueftler-Nachbar 'Ralf': baute fuer Ford/Hollywood das Batmobil (erst aus Holz) und Star-Wars-Modelle, kannte den Ex-Ferrari-Chefdesigner - Fynn selbst baute Batmobil- und Cybertruck-Nachbauten fuer YouTube",
+    "Benzin- und Auto-Horror: ausgelaufenes Mofa/Monkey-Gemisch im Kofferraum (LGG Retro Pop Hotel Hamburg), Benzin in Pfannen getankt, Eisscholle von einer LKW-Plane in die Scheibe, mit dem Skoda im Sturm am Hausboot in den Dornbusch gerutscht",
+    "Nisses Graffiti-Vergangenheit (Crew 'R16', Schaeden in Millionenhoehe) und die Inception-Story mit den Lackdosen vom Graffiti-Soko-Chef",
+    "Herkunft von 'Klimasand/Kliemannsland': der Begriff tauchte zuerst als Folgentitel eines Pre-YouTube-Podcasts auf - Fynns Opa wiederum behauptet, ER habe ihn im Krieg fuer das Niemandsland zwischen den Fronten erfunden",
+    "Verschwoerungstheorie/Geruecht der Woche: Sido behauptete, Waermebildkameras zeigten, dass mit Merkel etwas nicht stimme; dazu die Doppelgaenger-Seiten-Suche (Paris-Hilton- und Sido-Dubel)",
+    "Serienempfehlung 'MobLand' (Tom Hardy, Pierce Brosnan, Helen Mirren) - Uli Jonas erfand angeblich 'Who the f*** is Alice'; Spezialfolge-Ideen (Berlin-Abenteuer, illegale Pornokino-Folge)",
+    "RFS/RRFs: Pinguine haben Knie; groesster Vulkan des Sonnensystems (Olympus Mons auf dem Mars, 22 km); Giraffen haben gleich viele Halswirbel wie Menschen"
   ],
-  "kurzbeschreibung": "Fynn und Nisse tauchen in Hoerer-Storys ein: Ein Mann sammelt Urin in Gläsern auf seinem Schrank, ein Nachbar baute am Batmobil und bei Star Wars mit, und ein 16-Jähriger erlebt eine Polizeibegegnung mit Dienstwaffe. Fynn pitcht Berufskleidung als begehrtes Kultprodukt. Außerdem: Der echte Ursprung des Namens 'Kliemannsland', Cloudflare-Lavalampen, ein Musik-Wetter-Plugin und ein Passagierflugzeug voller Sondermüll.",
+  "kurzbeschreibung": "Fynn und Nisse nehmen weiter in fremden Wohnungen auf (diesmal bei 'Yingyet') und rufen Hoerer auf, sich als naechsten Aufnahmeort zu bewerben. Es geht um Aaron Tuschkes Kiosk, Fynns Socken-Obsession und sein neues Workwear-Projekt, MIAs 5G-Aluhuete und das Wetter-Synthesizer-Plugin 'Conditions'. Kernstuecke: die titelgebende Steven-Joerns-Story (jaehrliche Silvester-Pisse im Glas auf dem Schrank) und Fynns Startup-Idee - ein doppelwandiges, wassergefuelltes Flugzeug, in dem man schwerelos und immer gerade gelagert ist (7/24). Dazu eine eskalierende Kette von Waffen-Anekdoten (Armbrust ins Auge des Bruders, Soko-Knarre an der Schlaefe, Oma fast erschossen), Fynns Bauernhof-Randale als 'kleiner frecher Kobold', der Tueftler-Nachbar Ralf (Batmobil, Star Wars, Cybertruck) und die Verschwoerungstheorie der Woche um Sido und Merkel.",
   "startup_idee": {
-    "idee": "Berufskleidung als Kultmode (Workwear-Revolution)",
-    "beschreibung": "Fynn pitcht die Idee, klassische Berufskleidung – Latzhosen, Sicherheitswesten, Arbeitsboots, Kittel – als begehrte Modeware neu zu positionieren. Ähnlich wie Carhartt oder Dickies im internationalen Streetwear-Markt sollen Berufskleidungsmarken in Deutschland zum coolen Statement werden. Das Ziel: Handwerker tragen dasselbe wie Hype-Kids, und niemand schämt sich mehr für seine Arbeitskleidung.",
-    "punkte": null,
+    "idee": "Das doppelwandige, wassergelagerte Flugzeug",
+    "beschreibung": "Fynns Loesung gegen Turbulenzen, Flugangst und den 'Ueberlebenskampf in der Luft': ein doppelwandiges Flugzeug, dessen Zwischenraum mit mehreren Tonnen Wasser gefuellt ist. Die Passagierkabine haengt schwerelos in der Mitte und bleibt immer gerade - egal ob der Flieger nach links oder rechts abbiegt oder sogar abstuerzt, man merkt nichts (bis zum Aufprall). Beim Crash loescht das Wasser das Feuer sofort. Prinzip wie der Wassermantel der ISS gegen Strahlung. Kostet riesige Tanks, staerkere Triebwerke und ein Vielfaches an Sprit. Bonus: zwischen den Glaswaenden koennen Deko-Teilchen schwimmen (Schneekugel mit kleinen Donald Trumps), Werbung (Spider-Man-Start) oder Sponsor-Fluessigkeiten (Vitamin Well, PowerAde, More-Nutrition-Sirup zum Abnehmen, Oel als Treibstoff). Man reist entweder 'in der Steinzeit' und spuert jedes Luftloch oder absolut gleitend wie Muenchhausen auf der Kanonenkugel.",
+    "punkte": 7,
     "max_punkte": 24,
-    "begruendung": "Nisses Bewertung liegt nicht vor (Transkript nicht verfügbar).",
+    "begruendung": "Nisse vergibt 7 von 24. Wie bei vielen Ideen seien '50% genial, 50% kompletter Wahnsinn' - der Wassermantel-Gedanke (schwerelose Lagerung, Feuerschutz) habe was, der Rest sei Quatsch. 'Sieben von 24 gebe ich mich absolut mit zufrieden.'",
     "domain": null
   },
   "kalles_corner": null,
-  "gerucht_der_woche": null,
+  "gerucht_der_woche": {
+    "ueber": "Sido / Angela Merkel (Verschwoerungstheorie der Woche)",
+    "inhalt": "Sido sei frueher ein 'ganz krasser Verschwoerungstheoretiker' gewesen und habe behauptet, Waermebildkameras wuerden zeigen, dass mit Angela Merkel etwas nicht stimme (Reptiloiden-Andeutung). Beim Gegenrecherchieren stiess Nisse auf 'Deutschlands groesste Doppelgaenger-Seite' und fand dort ausgerechnet ein Sido-Dubel, das ueberhaupt nicht aussieht wie Sido (ein Typ mit Bart und Fischerhut) - statt des gesuchten kleinwuechsigen Paris-Hilton-Doppelgaengers."
+  },
   "fun_facts": [
-    "Cloudflare generiert echte Zufallszahlen für seine Verschlüsselung, indem Kameras auf Lavalampen in einem Büro gerichtet sind – die chaotischen Bewegungen der Wachsblasen sind echte Entropie.",
-    "Es ist theoretisch möglich, aus jahrzehntealten biologischen Proben (Haare, Zähne) ein Klon-Profil zu erstellen, auch wenn die Erfolgsrate stark von der DNA-Erhaltung abhängt."
+    "An Freiburger Strassennamenschildern steht unter dem Namen oft eine kleine Erklaerung, wer die Person war oder was der Name bedeutet.",
+    "Pinguine haben Knie - sie sind nur unter Federn und Haut verborgen.",
+    "Der groesste Vulkan des Sonnensystems ist der Olympus Mons auf dem Mars: rund 22 km hoch und damit fast dreimal so hoch wie der Mount Everest.",
+    "Giraffen haben genauso viele Halswirbel wie Menschen (sieben) - bei der Giraffe ist jeder Wirbel aber rund 25 cm lang, beim Menschen nur etwa 3 cm."
   ],
   "erfindungen": [
     {
-      "name": "Wetter-Musik-Plugin",
-      "beschreibung": "Ein Plugin, das aktuelle Wetterdaten (Temperatur, Windstärke, Niederschlag) in Echtzeit in Sounds und Melodien umwandelt – jeder Tag klingt anders, jede Stadt hat ihren eigenen Soundtrack."
+      "name": "Aluhuete in Fresh (MIA-Kollektion)",
+      "beschreibung": "Modische, 5G- und strahlenabschirmende Kleidung mit eingewobenem Aluminium - der Aluhut als Fashion-Statement. Inspiriert von der Saengerin MIA, die solche Klamotten tatsaechlich macht."
     },
     {
-      "name": "Das worst-case Passagierflugzeug",
-      "beschreibung": "Ein gedankliches Konstrukt: ein Passagierflugzeug, das zu Testzwecken mit dem Schlimmsten gefüllt wird – Wasser, Sirup, Öl, Trump-Schneekugeln. Niemand will an Bord, aber das Ding fliegt trotzdem."
+      "name": "Grabstein-Inschrift 'Feierabend'",
+      "beschreibung": "Fuer Menschen mit Humor, denen der Tod nicht das Allerschlimmste ist: auf dem Grabstein steht einfach 'Feierabend'. Spin-off des Folgen-Running-Gags 'komplett Feierabend'."
     }
   ],
   "orte": [
-    "Kliemannsland (Entstehungsgeschichte: WWII-Ostfront)",
-    "Deutschland allgemein (Graffiti-Storys, Arbeitskleidung-Markt)",
-    "San Francisco (Cloudflare-Büro mit Lavalampen)"
+    "Freiburg (Strassennamenschilder mit Erklaerung)",
+    "Weissensee, Berlin (Aaron Tuschkes Kiosk)",
+    "Detroit, USA (Ford Motors - Nachbar Ralf)",
+    "Portugal (Fynns Roundhouse-Kick-Trip, halbes Album geschrieben)",
+    "Hamburg (LGG Retro Pop Hotel, Mofa-Story, Hausboot-Sturm, Graffiti-Soko)",
+    "Sueden von Hamburg (besprayter Bahnhof)",
+    "Mallorca (Atzen-Flug-Story von Nisses Partnerin)",
+    "Dakar (Ziel im 'Nudelsuppen'-Flugzeug-Gedankenspiel)",
+    "Dubai / Katar (edle Airlines)",
+    "London (Serie 'MobLand')",
+    "Mars - Olympus Mons (RFS)",
+    "ISS (Wassermantel-Vergleich)",
+    "Klimansland (von Fynns Opa benannte Frontzone im Krieg)"
   ],
   "gaeste_erwaehnte": [
-    "Fynn Kliemann (Host)",
-    "Nisse Ingwersen (Host)",
-    "Donald Trump (Trump-Schneekugeln-Erfindung)",
-    "M.I.A. (Verschwörungstheorie-Einschub)"
+    "Aaron Tuschke",
+    "Pietro Lombardi",
+    "Karl Lagerfeld",
+    "Udo Lindenberg",
+    "Benjamin von Stuckrad-Barre",
+    "MIA",
+    "Xavier Naidoo",
+    "Lena Gercke",
+    "Philip Schwarz",
+    "Steven Joerns",
+    "Christian Bale",
+    "Heath Ledger",
+    "Enzo Ferrari",
+    "Knossi",
+    "Elon Musk",
+    "Die Atzen",
+    "Justin Bieber",
+    "Donald Trump",
+    "Tom Hardy",
+    "Pierce Brosnan",
+    "Helen Mirren",
+    "Uli Jonas",
+    "Sido",
+    "Angela Merkel",
+    "Paris Hilton",
+    "Baron von Muenchhausen"
   ],
   "zitate": [
     {
-      "text": "Pisse auf dem Schrank – das ist einfach ein Lebensstil.",
-      "kontext": "Reaktion auf die Hoerer-Story über den Mann, der Uringläser auf seinem Kleiderschrank sammelt."
+      "text": "Das ist aber komplett Feierabend.",
+      "kontext": "Der Running-Gag der Folge: 'Feierabend' als Synonym fuer das endgueltige Ende - Gegenstueck zum entspannten 'Seele baumeln lassen'."
     },
     {
-      "text": "Der Typ hat das Batmobil gebaut. Der Typ hat bei Star Wars mitgemacht. Und der wohnt einfach nebenan.",
-      "kontext": "Staunen über die Geschichte des früheren Ford-Ingenieurs als Nachbarn."
+      "text": "Jedes Jahr zu Silvester pisst er in so ein Glas, stellt das auf seinen Schrank und laesst das da verschimmeln.",
+      "kontext": "Nisse ueber seinen Kumpel Steven Joerns - die titelgebende 'Pisse auf dem Schrank'. Stevens Erklaerung: 'Alle Versuche.'"
+    },
+    {
+      "text": "Wir reisen in der Steinzeit oder auf einem Pulverfass.",
+      "kontext": "Fynns Kontrast der zwei Flug-Modi: 'in der Steinzeit oder auf einem Pulverfass' (jedes Luftloch spueren) gegen 'absolut gleitend wie Muenchhausen auf der Kanonenkugel' (wassergelagert)."
+    },
+    {
+      "text": "Du bist in so einer Nudelsuppe unterwegs nach Dakar.",
+      "kontext": "Ueber die schwimmenden Deko-Teilchen im Wasser-Flugzeug (kleine Donald Trumps, Werbung, Sponsor-Fluessigkeiten)."
+    },
+    {
+      "text": "Knarren sind einfach uncool, Alter.",
+      "kontext": "Fazit nach der Anekdoten-Kette um Armbrust, Luftgewehr und die geladene Soko-Dienstwaffe an Fynns Schlaefe."
+    },
+    {
+      "text": "Kleine freche Kobolde waret ihr.",
+      "kontext": "Nisse ueber Fynns Bauernhof-Randale mit acht ('Finn und Katrin waren hier', Stroh in den Trecker-Tanks)."
     }
   ],
   "glossar": [
     {
-      "begriff": "Berufskleidung als Kultmode",
-      "bedeutung": "Startup-Idee der Folge: klassische Arbeitskleidung (Latzhosen, Westen, Boots) wird als begehrtes Streetwear-Statement neu positioniert – Handwerk meets Hype."
+      "begriff": "Pisse auf dem Schrank",
+      "bedeutung": "Die Silvester-Tradition von Steven Joerns: jaehrlich in ein Glas pinkeln, es auf den Schrank stellen und verschimmeln lassen ('alle Versuche') - Titelgeber der Folge."
     },
     {
-      "begriff": "Cloudflare-Lavalampen",
-      "bedeutung": "Cloudflare nutzt Kameras, die auf Lavalampen in ihrem Büro gerichtet sind, um echte Zufallszahlen für kryptografische Zwecke zu generieren – die unvorhersehbaren Wachsblasen sind physikalische Entropie."
+      "begriff": "Homolog",
+      "bedeutung": "Ein Wort, das exakt das beschreibt, was es ist - z. B. ist 'dreisilbig' selbst dreisilbig und '18buchstabig' hat genau 18 Buchstaben."
     },
     {
-      "begriff": "Kliemannsland",
-      "bedeutung": "Fynns landwirtschaftliches Kreativprojekt in Schleswig-Holstein. In dieser Folge wird der echte Ursprung des Namens recherchiert und mit dem Zweiten Weltkrieg / der Ostfront in Verbindung gebracht."
+      "begriff": "Komplett Feierabend",
+      "bedeutung": "Running-Gag fuer das endgueltige Aus bzw. den Tod; negative Variante des entspannten 'Seele baumeln lassen' - laut Fynn auch eine gute Grabstein-Inschrift."
+    },
+    {
+      "begriff": "Klimasand / Klimansland",
+      "bedeutung": "Begriff fuer das Niemandsland zwischen den Fronten, in dem Fynns Opa im Krieg festsass; der Opa behauptet, ihn erfunden zu haben. Tatsaechlich tauchte 'Klimasand' zuerst als Folgentitel eines aelteren Podcasts auf - daraus entstand Fynns Spitzname 'Kliemannsland'."
+    },
+    {
+      "begriff": "Conditions",
+      "bedeutung": "Synthesizer-Plugin, das den Klang nach dem echten Wetter eines eingegebenen Ortes formt (Temperatur, Wind, Bewoelkung) - 'macht glattes Haar und geile Sounds'."
+    },
+    {
+      "begriff": "Das wassergelagerte Flugzeug",
+      "bedeutung": "Die Startup-Idee der Folge: ein doppelwandiges Flugzeug mit Wassermantel, in dem der Passagier schwerelos und immer gerade gelagert ist (Spitzname der Fan-Produktseite: AQUAVION)."
+    },
+    {
+      "begriff": "RFS / RRFs",
+      "bedeutung": "Random Facts - die Abschlusskategorie mit zusammenhanglosem Trivia (Pinguin-Knie, Mars-Vulkan, Giraffen-Halswirbel)."
     }
   ]
 }

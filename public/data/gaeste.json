@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-16T08:11:57.377Z",
-  "count": 978,
+  "updatedAt": "2026-06-16T11:44:30.635Z",
+  "count": 988,
   "items": [
     {
       "name": "Bushido",
@@ -42,7 +42,8 @@
         42,
         43,
         47,
-        50
+        50,
+        51
       ]
     },
     {
@@ -63,7 +64,8 @@
         40,
         42,
         49,
-        50
+        50,
+        51
       ]
     },
     {
@@ -93,6 +95,20 @@
         47,
         49,
         50
+      ]
+    },
+    {
+      "name": "Sido",
+      "folgen": [
+        17,
+        20,
+        24,
+        26,
+        34,
+        37,
+        43,
+        46,
+        51
       ]
     },
     {
@@ -135,19 +151,6 @@
       ]
     },
     {
-      "name": "Sido",
-      "folgen": [
-        17,
-        20,
-        24,
-        26,
-        34,
-        37,
-        43,
-        46
-      ]
-    },
-    {
       "name": "Kanye West",
       "folgen": [
         1,
@@ -169,6 +172,18 @@
         35,
         39,
         49
+      ]
+    },
+    {
+      "name": "Udo Lindenberg",
+      "folgen": [
+        5,
+        17,
+        25,
+        47,
+        49,
+        50,
+        51
       ]
     },
     {
@@ -276,17 +291,6 @@
       ]
     },
     {
-      "name": "Udo Lindenberg",
-      "folgen": [
-        5,
-        17,
-        25,
-        47,
-        49,
-        50
-      ]
-    },
-    {
       "name": "Jesus",
       "folgen": [
         11,
@@ -377,6 +381,16 @@
         26,
         46,
         49
+      ]
+    },
+    {
+      "name": "Angela Merkel",
+      "folgen": [
+        12,
+        21,
+        31,
+        47,
+        51
       ]
     },
     {
@@ -577,15 +591,6 @@
       ]
     },
     {
-      "name": "Angela Merkel",
-      "folgen": [
-        12,
-        21,
-        31,
-        47
-      ]
-    },
-    {
       "name": "50 Cent",
       "folgen": [
         12,
@@ -601,6 +606,15 @@
         25,
         35,
         50
+      ]
+    },
+    {
+      "name": "Xavier Naidoo",
+      "folgen": [
+        13,
+        17,
+        20,
+        51
       ]
     },
     {
@@ -805,14 +819,6 @@
       ]
     },
     {
-      "name": "Xavier Naidoo",
-      "folgen": [
-        13,
-        17,
-        20
-      ]
-    },
-    {
       "name": "Heidi Klum",
       "folgen": [
         13,
@@ -861,6 +867,14 @@
       ]
     },
     {
+      "name": "Knossi",
+      "folgen": [
+        20,
+        29,
+        51
+      ]
+    },
+    {
       "name": "Matthias Schweighoefer",
       "folgen": [
         21,
@@ -874,6 +888,22 @@
         21,
         43,
         47
+      ]
+    },
+    {
+      "name": "Karl Lagerfeld",
+      "folgen": [
+        21,
+        26,
+        51
+      ]
+    },
+    {
+      "name": "Justin Bieber",
+      "folgen": [
+        21,
+        25,
+        51
       ]
     },
     {
@@ -1355,13 +1385,6 @@
       ]
     },
     {
-      "name": "Knossi",
-      "folgen": [
-        20,
-        29
-      ]
-    },
-    {
       "name": "Till Lindemann",
       "folgen": [
         20,
@@ -1397,24 +1420,10 @@
       ]
     },
     {
-      "name": "Karl Lagerfeld",
-      "folgen": [
-        21,
-        26
-      ]
-    },
-    {
       "name": "Mariah Carey",
       "folgen": [
         21,
         22
-      ]
-    },
-    {
-      "name": "Justin Bieber",
-      "folgen": [
-        21,
-        25
       ]
     },
     {
@@ -1558,6 +1567,13 @@
       ]
     },
     {
+      "name": "Paris Hilton",
+      "folgen": [
+        33,
+        51
+      ]
+    },
+    {
       "name": "Ades",
       "folgen": [
         33,
@@ -1625,6 +1641,13 @@
       "folgen": [
         37,
         50
+      ]
+    },
+    {
+      "name": "Pietro Lombardi",
+      "folgen": [
+        37,
+        51
       ]
     },
     {
@@ -1737,6 +1760,13 @@
       "folgen": [
         48,
         50
+      ]
+    },
+    {
+      "name": "Benjamin von Stuckrad-Barre",
+      "folgen": [
+        50,
+        51
       ]
     },
     {
@@ -4458,12 +4488,6 @@
       ]
     },
     {
-      "name": "Paris Hilton",
-      "folgen": [
-        33
-      ]
-    },
-    {
       "name": "Marv",
       "folgen": [
         33
@@ -4759,12 +4783,6 @@
     },
     {
       "name": "Jeppy (Fynns Hund)",
-      "folgen": [
-        37
-      ]
-    },
-    {
-      "name": "Pietro Lombardi",
       "folgen": [
         37
       ]
@@ -6300,12 +6318,6 @@
       ]
     },
     {
-      "name": "Benjamin von Stuckrad-Barre",
-      "folgen": [
-        50
-      ]
-    },
-    {
       "name": "Lola Weippert",
       "folgen": [
         50
@@ -6330,25 +6342,85 @@
       ]
     },
     {
-      "name": "Fynn Kliemann (Host)",
+      "name": "Aaron Tuschke",
       "folgen": [
         51
       ]
     },
     {
-      "name": "Nisse Ingwersen (Host)",
+      "name": "MIA",
       "folgen": [
         51
       ]
     },
     {
-      "name": "Donald Trump (Trump-Schneekugeln-Erfindung)",
+      "name": "Lena Gercke",
       "folgen": [
         51
       ]
     },
     {
-      "name": "M.I.A. (Verschwörungstheorie-Einschub)",
+      "name": "Philip Schwarz",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Steven Joerns",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Christian Bale",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Heath Ledger",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Enzo Ferrari",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Die Atzen",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Tom Hardy",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Pierce Brosnan",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Helen Mirren",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Uli Jonas",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "name": "Baron von Muenchhausen",
       "folgen": [
         51
       ]

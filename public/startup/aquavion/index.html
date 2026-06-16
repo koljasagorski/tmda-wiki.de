@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AQUAVION — Das wassergelagerte Flugzeug. Immer gerade.</title>
+<meta name="description" content="AQUAVION: das doppelwandige Flugzeug mit Wassermantel. Die Kabine schwebt immer gerade, beim Aufprall ist das Feuer sofort aus. Du bist komplett gelagert."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/aquavion"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="AQUAVION — Das wassergelagerte Flugzeug. Immer gerade."/>
+<meta property="og:description" content="Doppelwandig, wassergelagert, schwerelos. Die Kabine bleibt immer gerade — und beim Aufprall ist das Feuer sofort aus. Komplett gelagert."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/aquavion"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="AQUAVION — Das wassergelagerte Flugzeug"/>
+<meta name="twitter:description" content="Fliegen in der Blase. Immer gerade. Immer gelöscht. Du bist komplett gelagert."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"AQUAVION — Das wassergelagerte Flugzeug",
+  "description":"Ein doppelwandiges Flugzeug, dessen Hohlraum mit mehreren Tonnen Wasser gefüllt ist. Die Kabine hängt schwerelos in der Mitte und bleibt immer gerade; beim Aufprall löscht das Wasser jedes Feuer sofort. Fiktives Startup-Konzept aus dem TMDA-Podcast, Folge 51.",
+  "brand":{"@type":"Brand","name":"AQUAVION"},
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}
+}
+</script>
+<style>
+:root{
+  --abyss:#04181f;--deep:#072a36;--teal:#0b3a48;--teal-2:#0e4b5c;
+  --aqua:#46d6d6;--cyan:#7ef0e4;--foam:#eaf9f8;--foam-2:#cdeeec;
+  --amber:#f4c66a;--amber-2:#ffe6ac;--champ:#f7e6c4;
+  --ink:#eaf9f8;--mute:#9cc7cb;--line:rgba(126,240,228,.18);
+  --glass:rgba(126,240,228,.06);--glass-2:rgba(126,240,228,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--abyss);
+  background-image:
+    radial-gradient(1200px 720px at 80% -10%,rgba(70,214,214,.18) 0,transparent 55%),
+    radial-gradient(1000px 800px at 8% 14%,rgba(244,198,106,.10) 0,transparent 52%),
+    linear-gradient(180deg,#04181f 0,#072a36 42%,#04181f 100%);
+  background-attachment:fixed;
+  color:var(--ink);font-family:'Hanken Grotesk',system-ui,sans-serif;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{color:var(--aqua);text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+/* ambient water shimmer */
+.shimmer{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background:
+    radial-gradient(2px 2px at 20% 30%,rgba(126,240,228,.5),transparent),
+    radial-gradient(2px 2px at 70% 60%,rgba(126,240,228,.35),transparent),
+    radial-gradient(1px 1px at 40% 80%,rgba(244,198,106,.4),transparent),
+    radial-gradient(1.5px 1.5px at 88% 24%,rgba(126,240,228,.4),transparent);
+  animation:rise 18s linear infinite}
+@keyframes rise{0%{background-position:0 0,0 0,0 0,0 0}100%{background-position:0 -400px,0 -520px,0 -360px,0 -460px}}
+/* glass panel base */
+.glass{background:linear-gradient(180deg,var(--glass-2),var(--glass));
+  border:1px solid var(--line);border-radius:22px;
+  backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);
+  box-shadow:0 30px 70px -44px rgba(0,0,0,.8),inset 0 1px 0 rgba(234,249,248,.12)}
+/* nav */
+nav{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;
+  padding:24px 26px;max-width:1160px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:13px;font-family:'Sora',sans-serif;font-size:1.32rem;font-weight:600;letter-spacing:.14em}
+.logo .mark{position:relative;width:30px;height:30px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,var(--cyan),var(--aqua) 45%,var(--teal-2) 100%);
+  box-shadow:0 0 22px rgba(70,214,214,.5),inset 0 0 8px rgba(4,24,31,.6)}
+.logo .mark::after{content:"";position:absolute;inset:6px;border-radius:50%;
+  border:1.5px solid rgba(234,249,248,.5);border-bottom-color:transparent;border-right-color:transparent}
+.nav-cta{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--line);
+  padding:11px 20px;border-radius:999px;color:var(--foam);transition:.22s;backdrop-filter:blur(8px)}
+.nav-cta:hover{background:var(--aqua);color:var(--abyss);border-color:var(--aqua);box-shadow:0 0 26px rgba(70,214,214,.5)}
+/* hero */
+.hero{position:relative;z-index:2;display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;padding:36px 0 70px}
+.kicker{font-family:'Instrument Serif',serif;font-style:italic;color:var(--cyan);font-size:1.32rem;margin-bottom:18px;opacity:.95}
+h1{font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.02em;margin-bottom:22px}
+h1 .grad{background:linear-gradient(120deg,var(--cyan),var(--aqua) 55%,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mute);font-size:1.14rem;max-width:46ch;margin-bottom:30px}
+.lead b{color:var(--foam);font-weight:600}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;font-family:'Sora',sans-serif;font-weight:600;font-size:.94rem;padding:15px 28px;border-radius:999px;transition:.22s;letter-spacing:.01em}
+.btn-fill{background:linear-gradient(120deg,var(--aqua),var(--cyan));color:var(--abyss);
+  box-shadow:0 16px 44px -14px rgba(70,214,214,.8)}
+.btn-fill:hover{transform:translateY(-2px);box-shadow:0 22px 56px -14px rgba(70,214,214,.9)}
+.btn-ghost{border:1px solid var(--line);color:var(--foam);backdrop-filter:blur(8px)}
+.btn-ghost:hover{border-color:var(--aqua)}
+.rating-pill{display:inline-flex;align-items:center;gap:9px;margin-top:26px;padding:8px 16px;border-radius:999px;
+  background:var(--glass);border:1px solid var(--line);font-size:.82rem;color:var(--mute);letter-spacing:.02em}
+.rating-pill b{color:var(--amber);font-weight:600}
+/* hero scene: levitating gimbaled cabin in double wall */
+.scene{position:relative;aspect-ratio:1/1;display:grid;place-items:center}
+.bubble{position:relative;width:88%;height:88%;border-radius:50%;
+  background:
+    radial-gradient(circle at 36% 28%,rgba(234,249,248,.22),transparent 42%),
+    radial-gradient(circle at 50% 50%,rgba(70,214,214,.22),rgba(7,42,54,.55) 70%);
+  border:2px solid rgba(126,240,228,.35);
+  box-shadow:0 0 60px rgba(70,214,214,.35),inset 0 0 70px rgba(126,240,228,.25),inset 0 0 24px rgba(4,24,31,.6);
+  overflow:hidden;backdrop-filter:blur(2px)}
+.bubble .wall{position:absolute;inset:9%;border-radius:50%;border:1px dashed rgba(126,240,228,.35)}
+.bubble .water{position:absolute;inset:9%;border-radius:50%;
+  background:radial-gradient(circle at 50% 30%,rgba(126,240,228,.20),rgba(11,58,72,.35) 70%)}
+.cabin{position:absolute;top:50%;left:50%;width:46%;height:23%;transform:translate(-50%,-50%);
+  border-radius:60px;background:linear-gradient(180deg,rgba(234,249,248,.95),rgba(205,238,236,.82));
+  box-shadow:0 14px 40px -12px rgba(4,24,31,.7),inset 0 2px 0 rgba(255,255,255,.7);
+  display:grid;place-items:center;z-index:4;animation:bob 7s ease-in-out infinite}
+.cabin .ports{display:flex;gap:9px}
+.cabin .ports i{width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#bdeef0,var(--teal-2));box-shadow:inset 0 0 4px rgba(4,24,31,.6)}
+.cabin .lvl{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-family:'Sora',sans-serif;font-size:.62rem;letter-spacing:.24em;color:var(--cyan);white-space:nowrap;text-transform:uppercase}
+@keyframes bob{0%,100%{transform:translate(-50%,-54%)}50%{transform:translate(-50%,-46%)}}
+/* drifting particles between walls */
+.parts{position:absolute;inset:0;border-radius:50%;overflow:hidden;z-index:3;pointer-events:none}
+.parts i{position:absolute;border-radius:50%;background:rgba(234,249,248,.6);animation:float-up linear infinite}
+.parts .trump{border-radius:3px;background:var(--amber);box-shadow:0 0 8px rgba(244,198,106,.7)}
+@keyframes float-up{0%{transform:translateY(110%) translateX(0);opacity:0}
+  10%{opacity:.9}90%{opacity:.7}100%{transform:translateY(-20%) translateX(14px);opacity:0}}
+.bank-tag{position:absolute;bottom:6%;left:50%;transform:translateX(-50%);font-size:.74rem;color:var(--mute);
+  background:var(--glass);border:1px solid var(--line);padding:6px 14px;border-radius:999px;backdrop-filter:blur(6px);z-index:5}
+.bank-tag b{color:var(--cyan)}
+/* sections */
+section{position:relative;z-index:2;padding:70px 0}
+.eyebrow{font-family:'Sora',sans-serif;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--aqua);margin-bottom:14px;font-weight:600}
+h2{font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.08;margin-bottom:18px;letter-spacing:-.015em}
+h2 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--cyan);font-weight:400}
+.section-lead{color:var(--mute);max-width:58ch;margin-bottom:44px;font-size:1.06rem}
+/* problem cards */
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pcard{padding:30px 26px}
+.pcard .ico{font-size:1.7rem;margin-bottom:12px;filter:drop-shadow(0 0 10px rgba(70,214,214,.4))}
+.pcard h3{font-family:'Sora',sans-serif;font-size:1.16rem;margin-bottom:8px;font-weight:600}
+.pcard p{color:var(--mute);font-size:.96rem}
+/* cutaway diagram */
+.cut-wrap{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.cut{position:relative;aspect-ratio:1/1;display:grid;place-items:center;padding:8px}
+.ring{position:absolute;border-radius:50%}
+.ring.outer{inset:0;background:radial-gradient(circle at 38% 30%,rgba(234,249,248,.16),transparent 45%);
+  border:3px solid rgba(126,240,228,.55);box-shadow:0 0 50px rgba(70,214,214,.25),inset 0 0 40px rgba(4,24,31,.5)}
+.ring.water{inset:13%;border:1px dashed rgba(126,240,228,.4);
+  background:radial-gradient(circle at 50% 30%,rgba(70,214,214,.22),rgba(11,58,72,.4) 72%);overflow:hidden}
+.ring.water .blob{position:absolute;width:10px;height:10px;border-radius:50%;background:rgba(234,249,248,.55);animation:orbit 14s linear infinite}
+.ring.water .blob.amber{background:var(--amber);box-shadow:0 0 8px rgba(244,198,106,.7)}
+@keyframes orbit{from{transform:rotate(0) translateX(86px) rotate(0)}to{transform:rotate(360deg) translateX(86px) rotate(-360deg)}}
+.ring.inner{inset:38%;background:linear-gradient(180deg,rgba(234,249,248,.95),rgba(205,238,236,.82));
+  border:2px solid rgba(255,255,255,.5);box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 10px 30px -10px rgba(4,24,31,.7);
+  display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.18em;color:var(--teal);text-transform:uppercase;text-align:center;animation:bob 7s ease-in-out infinite}
+.layers{list-style:none;display:grid;gap:18px}
+.layers li{display:flex;gap:16px;align-items:flex-start}
+.layers .dot{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:600;font-size:.9rem;color:var(--abyss);background:linear-gradient(120deg,var(--aqua),var(--cyan));box-shadow:0 0 18px rgba(70,214,214,.4)}
+.layers h4{font-family:'Sora',sans-serif;font-size:1.06rem;margin-bottom:3px;font-weight:600}
+.layers p{color:var(--mute);font-size:.95rem}
+.iss-note{margin-top:26px;padding:18px 22px;font-size:.95rem;color:var(--foam-2)}
+.iss-note b{color:var(--cyan)}
+/* feature split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.feat{padding:38px 34px;position:relative;overflow:hidden}
+.feat::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle,rgba(70,214,214,.2),transparent 70%)}
+.feat .tag{font-family:'Sora',sans-serif;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--aqua);margin-bottom:12px}
+.feat h3{font-family:'Sora',sans-serif;font-size:1.5rem;margin-bottom:12px;font-weight:600;line-height:1.15}
+.feat p{color:var(--mute);font-size:1rem}
+.feat .quote{margin-top:18px;font-family:'Instrument Serif',serif;font-style:italic;font-size:1.2rem;color:var(--cyan)}
+/* horizon level visual */
+.horizon{position:relative;height:70px;margin:24px 0 4px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:rgba(4,24,31,.4)}
+.horizon .plane{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.4rem;animation:bank 6s ease-in-out infinite}
+.horizon .lvline{position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.6}
+.horizon .cab{position:absolute;top:50%;left:50%;width:38px;height:16px;transform:translate(-50%,-50%);border-radius:6px;background:var(--foam);box-shadow:0 0 14px rgba(126,240,228,.5)}
+@keyframes bank{0%,100%{transform:translate(-50%,-50%) rotate(-22deg)}50%{transform:translate(-50%,-50%) rotate(22deg)}}
+/* snow globe / liquid picker */
+.liquids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+.liq{padding:22px 20px;cursor:pointer;transition:.2s;border:1px solid var(--line)}
+.liq:hover,.liq.on{border-color:var(--aqua);box-shadow:0 0 30px -8px rgba(70,214,214,.5);transform:translateY(-2px)}
+.liq .swatch{width:100%;height:46px;border-radius:12px;margin-bottom:12px;box-shadow:inset 0 2px 0 rgba(255,255,255,.25)}
+.liq h4{font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;margin-bottom:3px}
+.liq p{color:var(--mute);font-size:.86rem}
+.globe-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;margin-top:4px}
+.globe{position:relative;aspect-ratio:1/1;max-width:340px;margin:0 auto;width:100%;border-radius:50%;
+  border:3px solid rgba(126,240,228,.5);overflow:hidden;
+  box-shadow:0 0 50px rgba(70,214,214,.3),inset 0 0 50px rgba(4,24,31,.5);transition:background .5s}
+.globe .gp{position:absolute;border-radius:50%;animation:float-up linear infinite}
+.globe .ad{position:absolute;bottom:14%;left:50%;transform:translateX(-50%);font-family:'Sora',sans-serif;
+  font-size:.62rem;letter-spacing:.06em;color:var(--abyss);background:var(--amber);padding:4px 10px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 0 16px rgba(244,198,106,.6);font-weight:600}
+.airlines{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.alpill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:.84rem;color:var(--foam-2)}
+.alpill .sw{width:14px;height:14px;border-radius:50%;box-shadow:inset 0 0 4px rgba(4,24,31,.5)}
+/* price */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pricecard{padding:30px 26px;text-align:center}
+.pricecard .big{font-family:'Sora',sans-serif;font-size:clamp(1.6rem,3vw,2.3rem);
+  background:linear-gradient(120deg,var(--cyan),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+.pricecard .sm{color:var(--mute);font-size:.92rem}
+.honest{margin-top:30px;padding:24px 28px;font-size:1rem;color:var(--foam-2);line-height:1.7}
+.honest b{color:var(--cyan)}
+/* two modes toggle */
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mode{padding:34px 30px;position:relative;transition:.25s}
+.mode.steinzeit{border:1px solid rgba(244,198,106,.3)}
+.mode.gleitflug{border:1px solid rgba(126,240,228,.3)}
+.mode .label{font-family:'Sora',sans-serif;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:10px}
+.mode.steinzeit .label{color:var(--amber)}
+.mode.gleitflug .label{color:var(--cyan)}
+.mode h3{font-family:'Sora',sans-serif;font-size:1.5rem;font-weight:600;margin-bottom:12px}
+.mode p{color:var(--mute);font-size:.98rem;margin-bottom:14px}
+.mode .ql{font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12rem;color:var(--foam-2)}
+.mode ul{list-style:none;display:grid;gap:9px;margin-top:6px}
+.mode li{display:flex;gap:10px;font-size:.92rem;color:var(--foam-2)}
+.mode.steinzeit li::before{content:"⚠";color:var(--amber)}
+.mode.gleitflug li::before{content:"≈";color:var(--cyan)}
+/* cta */
+.cta{text-align:center;padding:84px 0 70px}
+.cta .glass{padding:54px 34px;max-width:760px;margin:0 auto}
+.cta h2{margin-bottom:14px}
+.cta p{color:var(--mute);max-width:46ch;margin:0 auto 30px;font-size:1.06rem}
+/* footer */
+footer{position:relative;z-index:2;border-top:1px solid var(--line);padding:42px 26px;text-align:center;color:var(--mute);font-size:.9rem}
+footer a{color:var(--aqua)}
+.disc{max-width:66ch;margin:0 auto 16px;font-size:.84rem;color:#6f969b;font-style:italic}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;gap:6px}
+  .scene{max-width:380px;margin:18px auto 0}
+  .cards-3,.price-grid,.liquids{grid-template-columns:1fr}
+  .cut-wrap,.split,.globe-row,.modes{grid-template-columns:1fr}
+  .cut{max-width:340px;margin:0 auto}
+}
+@media(max-width:520px){
+  .liquids{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .shimmer{animation:none;opacity:.3}
+  .cabin,.ring.inner{animation:none;transform:translate(-50%,-50%)}
+  .ring.inner{transform:none}
+  .parts i,.globe .gp,.ring.water .blob{animation:none!important;opacity:.5}
+  .horizon .plane{animation:none;transform:translate(-50%,-50%) rotate(0)}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="shimmer" aria-hidden="true"></div>
+
+<nav>
+  <div class="logo"><span class="mark"></span>AQUAVION</div>
+  <a class="nav-cta" href="#pre">Vorbestellen</a>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <div class="kicker">Das wassergelagerte Flugzeug · Beta in der Blase</div>
+    <h1>Fliegen in der Blase. <span class="grad">Immer gerade.</span> Immer gelöscht.</h1>
+    <p class="lead">AQUAVION ist doppelwandig — und zwischen den Wänden stehen mehrere Tonnen <b>Wasser</b>. Deine Kabine hängt schwerelos in der Mitte und bleibt immer gerade. Das Flugzeug kippt nach links, nach rechts, stürzt sogar — und du spürst nichts. <b>Du bist gelagert. Komplett gelagert.</b></p>
+    <div class="hero-cta">
+      <a class="btn btn-fill" href="#pre">Platz in der Blase sichern</a>
+      <a class="btn btn-ghost" href="#prinzip">Das Prinzip</a>
+    </div>
+    <div class="rating-pill">🛟 Bewertung von Nisse in Folge 51: <b>7 / 24 Punkten</b></div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="bubble">
+      <div class="water"></div>
+      <div class="wall"></div>
+      <div class="parts" id="parts"></div>
+      <div class="cabin">
+        <div class="ports"><i></i><i></i><i></i></div>
+        <span class="lvl">Immer gerade</span>
+      </div>
+    </div>
+    <div class="bank-tag">Außenwand · <b>Wassermantel</b> · Kabine</div>
+  </div>
+</header>
+
+<section id="problem" class="wrap">
+  <div class="eyebrow">Das Problem</div>
+  <h2>Fliegen ist ein <em>Überlebenskampf</em> in der Luft.</h2>
+  <p class="section-lead">Du sitzt angeschnallt in einer fehlerbehafteten Maschine, fühlst jedes Luftloch im Magen, suchst nach der Tüte und betest. Der Mensch gehört da nicht hinein — der Mensch gehört isoliert von der Technik. AQUAVION nimmt dich aus dem Geschehen heraus und legt dich ins Wasser.</p>
+  <div class="cards-3">
+    <div class="pcard glass">
+      <div class="ico">🌀</div>
+      <h3>Jedes Luftloch im Bauch</h3>
+      <p>Turbulenzen schlagen ungefiltert auf den Körper durch. Du erlebst jeden Fehler der Maschine eins zu eins mit.</p>
+    </div>
+    <div class="pcard glass">
+      <div class="ico">🛍️</div>
+      <h3>Tüten-Bereitschaft</h3>
+      <p>Reisen im Survival-Modus: angespannt, übel, hoffend, dass es gleich vorbei ist. So sieht moderne Mobilität aus.</p>
+    </div>
+    <div class="pcard glass">
+      <div class="ico">🔥</div>
+      <h3>Ein Pulverfass</h3>
+      <p>Tonnen Kerosin, dünne Hülle, kein Puffer. Geht etwas schief, gibt es nichts zwischen dir und dem Feuer.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prinzip" class="wrap">
+  <div class="eyebrow">Das Prinzip</div>
+  <h2>Drei Schichten zwischen dir und der Welt.</h2>
+  <p class="section-lead">Außen die Hülle. Dazwischen ein dicker Wassermantel — derselbe Trick, mit dem die ISS ihre Crew gegen Strahlung abschirmt. Und in der Mitte: du, schwerelos aufgehängt, von allem entkoppelt.</p>
+  <div class="cut-wrap">
+    <div class="cut" aria-hidden="true">
+      <div class="ring outer"></div>
+      <div class="ring water">
+        <span class="blob" style="animation-delay:0s"></span>
+        <span class="blob amber" style="animation-delay:-4s"></span>
+        <span class="blob" style="animation-delay:-8s"></span>
+        <span class="blob amber" style="animation-delay:-11s"></span>
+      </div>
+      <div class="ring inner">Immer<br>gerade</div>
+    </div>
+    <div>
+      <ul class="layers">
+        <li>
+          <span class="dot">1</span>
+          <div><h4>Außenwand</h4><p>Die druckfeste Hülle, die fliegt. Sie darf ruhig kippen, schlingern, alles mitmachen — sie ist nicht mehr dein Zuhause.</p></div>
+        </li>
+        <li>
+          <span class="dot">2</span>
+          <div><h4>Wassermantel</h4><p>Mehrere Tonnen Wasser im Hohlraum zwischen den Wänden. Schluckt Stöße, schirmt Strahlung ab wie auf der ISS — und lässt zwischen den Glaswänden Dinge schweben.</p></div>
+        </li>
+        <li>
+          <span class="dot">3</span>
+          <div><h4>Schwerelose Kabine</h4><p>Kardanisch aufgehängt, immer im Wasser gelagert. Bleibt waagerecht, egal was die Hülle tut. Du schwebst.</p></div>
+        </li>
+      </ul>
+      <div class="iss-note glass">Gleiches Prinzip wie der <b>Wasserschild der ISS</b> gegen Strahlung — nur dass hier auch noch deine Übelkeit mitabgeschirmt wird.</div>
+    </div>
+  </div>
+</section>
+
+<section id="gerade" class="wrap">
+  <div class="split">
+    <div class="feat glass">
+      <div class="tag">Immer gerade gelagert</div>
+      <h3>Das Flugzeug kippt. Du nicht.</h3>
+      <p>Die Kabine ist kardanisch im Wassermantel aufgehängt. Bankt die Hülle in die Kurve, dreht sie sich, sackt sie durch — die Kabine gleicht alles aus und bleibt waagerecht. Du merkst von der ganzen Akrobatik draußen schlicht nichts.</p>
+      <div class="horizon" aria-hidden="true">
+        <span class="lvline"></span>
+        <span class="plane">✈</span>
+        <span class="cab"></span>
+      </div>
+      <div class="quote">„Immer gerade. Du bist komplett gelagert.“</div>
+    </div>
+    <div class="feat glass">
+      <div class="tag">Beim Aufprall: Feuer aus</div>
+      <h3>Aufschlag und Löschung in derselben Sekunde.</h3>
+      <p>Sollte AQUAVION jemals den Boden treffen, passiert genau eins: Der Wassermantel platzt — und löscht im selben Moment jedes Feuer. Kein Pulverfass, kein Inferno. Mehrere Tonnen Löschwasser, schon an Bord, schon am richtigen Ort.</p>
+      <p style="margin-top:14px;color:var(--foam-2)">Der Aufprall selbst bleibt, wie er ist. Aber brennen wirst du dabei nicht.</p>
+      <div class="quote">Sachlich betrachtet: das sicherste Feuer, das nie ausbricht.</div>
+    </div>
+  </div>
+</section>
+
+<section id="schneekugel" class="wrap">
+  <div class="eyebrow">Die Schneekugel-Option</div>
+  <h2>Wähle deine <em>Flüssigkeit</em>.</h2>
+  <p class="section-lead">Zwischen den Glaswänden kann schweben, was du willst: dekorative Partikel, kleine treibende Donald Trumps im Schneekugel-Stil, Werbung („neuer Spider-Man, 16.12.“) — oder gleich eine Sponsor-Flüssigkeit deiner Wahl. Klick dich durch und sieh die Blase die Farbe wechseln.</p>
+  <div class="globe-row">
+    <div class="globe" id="globe" aria-hidden="true">
+      <div class="ad">neuer Spider-Man · 16.12.</div>
+    </div>
+    <div>
+      <div class="liquids">
+        <div class="liq glass on" data-color="rgba(70,214,214,.30)" data-bg="radial-gradient(circle at 40% 30%,rgba(126,240,228,.3),rgba(11,58,72,.5))">
+          <div class="swatch" style="background:linear-gradient(180deg,#7ef0e4,#0e4b5c)"></div>
+          <h4>Vitamin Well</h4><p>klar, frisch, gut gelaunt</p>
+        </div>
+        <div class="liq glass" data-color="rgba(70,214,214,.30)" data-bg="radial-gradient(circle at 40% 30%,rgba(120,255,180,.35),rgba(11,58,72,.5))">
+          <div class="swatch" style="background:linear-gradient(180deg,#76f7a0,#0e4b5c)"></div>
+          <h4>PowerAde</h4><p>elektrisch, leistungsbereit</p>
+        </div>
+        <div class="liq glass" data-color="rgba(244,140,180,.30)" data-bg="radial-gradient(circle at 40% 30%,rgba(255,160,200,.4),rgba(60,18,40,.5))">
+          <div class="swatch" style="background:linear-gradient(180deg,#ffa0c8,#7a1230)"></div>
+          <h4>More-Sirup</h4><p>dünn innen drin — abnehmen beim Fliegen</p>
+        </div>
+        <div class="liq glass" data-color="rgba(40,40,40,.40)" data-bg="radial-gradient(circle at 40% 30%,rgba(90,90,90,.5),rgba(8,12,14,.7))">
+          <div class="swatch" style="background:linear-gradient(180deg,#5a5a5a,#0a0e10)"></div>
+          <h4>Öl</h4><p>edel & praktisch — ist gleichzeitig Sprit</p>
+        </div>
+        <div class="liq glass" data-color="rgba(244,198,106,.34)" data-bg="radial-gradient(circle at 40% 30%,rgba(255,230,172,.45),rgba(120,80,20,.45))">
+          <div class="swatch" style="background:linear-gradient(180deg,#ffe6ac,#9a6a18)"></div>
+          <h4>Crystal Champagner</h4><p>du fliegst, es perlt</p>
+        </div>
+        <div class="liq glass" data-color="rgba(255,200,40,.34)" data-bg="radial-gradient(circle at 40% 30%,rgba(255,215,90,.5),rgba(120,90,10,.45))">
+          <div class="swatch" style="background:linear-gradient(180deg,#ffd75a,#8a6510)"></div>
+          <h4>Trump-Konfetti</h4><p>winzige treibende Trumps</p>
+        </div>
+      </div>
+      <div class="airlines">
+        <span class="alpill"><span class="sw" style="background:#ffd75a"></span>Dubai / Emirates = gelb</span>
+        <span class="alpill"><span class="sw" style="background:#46d6d6"></span>Eurowings = blau („blaue Suppe“)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pre" class="wrap">
+  <div class="eyebrow">Der Preis</div>
+  <h2>Ehrlich gesagt: <em>nicht ganz billig.</em></h2>
+  <p class="section-lead">Wir machen uns nichts vor. Mehrere Tonnen Wasser fliegen nicht von allein. Hier die nüchterne Rechnung — ohne Schönfärberei.</p>
+  <div class="price-grid">
+    <div class="pricecard glass">
+      <div class="big">Riesentanks</div>
+      <div class="sm">Der Wassermantel will gefüllt und getragen werden. Das Flugzeug wird zur fliegenden Zisterne.</div>
+    </div>
+    <div class="pricecard glass">
+      <div class="big">Stärkere Triebwerke</div>
+      <div class="sm">Mehr Masse, mehr Schub. Die Maschine muss eine ganze Nudelsuppe mit in die Luft heben.</div>
+    </div>
+    <div class="pricecard glass">
+      <div class="big">≈ 10× Sprit</div>
+      <div class="sm">Der Verbrauch geht durch die Decke. Gut, dass man Öl als Füllung wählen kann — das fliegt wenigstens mit.</div>
+    </div>
+  </div>
+  <div class="honest glass">
+    „Du bist in so einer <b>Nudelsuppe</b> unterwegs nach Dakar.“ — Ja, genau so. Etwas teurer, etwas durstiger, dafür komplett gelagert. <b>Vorbestellungen</b> sind ab sofort unverbindlich (und folgenlos) möglich.
+  </div>
+</section>
+
+<section id="modi" class="wrap">
+  <div class="eyebrow">Zwei Modi</div>
+  <h2>Reisen in der Steinzeit — oder im <em>Gleitflug</em>.</h2>
+  <p class="section-lead">AQUAVION lässt dir die Wahl, wie viel Welt du spüren willst. Vom alten, fehlbaren Fliegen bis zum völligen Schweben.</p>
+  <div class="modes">
+    <div class="mode steinzeit glass">
+      <div class="label">Modus A · Survival</div>
+      <h3>Steinzeit</h3>
+      <p>Kabine fixiert, Wassermantel abgeschaltet. Du fühlst jedes Luftloch, jeden Stoß, jeden Schluckauf der Maschine — Fliegen wie früher.</p>
+      <ul>
+        <li>Jede Turbulenz live im Magen</li>
+        <li>Tüten-Modus, volle Wachsamkeit</li>
+        <li>Reisen auf einem Pulverfass</li>
+      </ul>
+    </div>
+    <div class="mode gleitflug glass">
+      <div class="label">Modus B · Schwerelos</div>
+      <h3>Gleitflug</h3>
+      <p>Kabine entkoppelt, voll im Wasser gelagert. Absolut gleitend, gewichtslos, von allem getrennt. Außen tobt die Physik, innen ist Ruhe.</p>
+      <ul>
+        <li>Schwerelos, immer gerade</li>
+        <li>Nichts dringt mehr durch</li>
+        <li>Wie Münchhausen auf der Kanonenkugel</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="wrap cta">
+  <div class="glass">
+    <div class="eyebrow" style="justify-self:center">Vorbestellen</div>
+    <h2>Steig ein. Leg dich ins Wasser.</h2>
+    <p>Sichere dir deinen Platz in der Blase. Wähle später deine Flüssigkeit, deine Airline-Farbe und deinen Modus. Heute kostet das nichts — und tut auch nichts.</p>
+    <a class="btn btn-fill" href="#" onclick="return false">Jetzt vorbestellen</a>
+  </div>
+</section>
+
+<footer>
+  <p class="disc">Rein fiktives, satirisches Konzept aus dem TMDA-Podcast. Kein echtes Produkt, kein echtes Flugzeug, kein echter Wassermantel — nur eine Idee, die sich zwei Hosts zwischen Lachen und Luftholen ausgedacht haben. Nicht buchbar, nicht fliegbar, nicht abnehmend.</p>
+  Fiktives Konzept · TMDA #51 · 7/24 · <a href="/folge/51">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* hero particles drifting between the walls */
+  var p = document.getElementById('parts'), html='';
+  for(var i=0;i<14;i++){
+    var trump = i%4===0;
+    var sz=(Math.random()*5+3).toFixed(1);
+    var x=(Math.random()*84+8).toFixed(0);
+    var dur=(Math.random()*8+9).toFixed(1);
+    var del=(-Math.random()*16).toFixed(1);
+    html+='<i class="'+(trump?'trump':'')+'" style="left:'+x+'%;width:'+(trump?(+sz+2):sz)+'px;height:'+(trump?(+sz+2):sz)+'px;animation-duration:'+dur+'s;animation-delay:'+del+'s"></i>';
+  }
+  if(p) p.innerHTML = html;
+
+  /* snow-globe particles */
+  var g = document.getElementById('globe');
+  if(g){
+    var gh = g.innerHTML;
+    for(var j=0;j<22;j++){
+      var t = j%5===0;
+      var s=(Math.random()*6+3).toFixed(1);
+      var gx=(Math.random()*88+6).toFixed(0);
+      var gd=(Math.random()*7+7).toFixed(1);
+      var gdl=(-Math.random()*14).toFixed(1);
+      var col = t ? 'var(--amber)' : 'rgba(234,249,248,.7)';
+      gh+='<span class="gp" style="left:'+gx+'%;width:'+s+'px;height:'+s+'px;background:'+col+';animation-duration:'+gd+'s;animation-delay:'+gdl+'s'+(t?';box-shadow:0 0 8px rgba(244,198,106,.7)':'')+'"></span>';
+    }
+    g.innerHTML = gh;
+    g.style.background = 'radial-gradient(circle at 40% 30%,rgba(126,240,228,.3),rgba(11,58,72,.5))';
+  }
+
+  /* liquid picker -> recolor globe */
+  var liqs = document.querySelectorAll('.liq');
+  liqs.forEach(function(el){
+    el.addEventListener('click', function(){
+      liqs.forEach(function(o){o.classList.remove('on')});
+      el.classList.add('on');
+      if(g) g.style.background = el.getAttribute('data-bg');
+    });
+  });
+})();
+</script>
+</body>
+</html>
