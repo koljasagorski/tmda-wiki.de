@@ -1232,6 +1232,7 @@ const EASTER_HINTS = [
   '🥚 Easter Egg: Tipp das Wort bosse auf der Seite (Folge 42).',
   '🥚 Easter Egg: Tipp das Wort lindemann, Krisen-PR-Quote.',
   '🥚 Easter Egg: Tipp das Wort aaron, Folge 3.',
+  '🥚 Easter Egg: Tipp das Wort feierabend auf der Seite (Chat zu), Folge 51.',
   '🥚 Easter Egg: 3-mal hintereinander auf eine Score-Badge klicken (z.B. „22/24").',
   '🥚 Easter Egg: 5-mal eine Stat-Zahl auf der Startseite klicken (z.B. „45 Folgen").',
   '🥚 Easter Egg: Beweg den Mauszeiger nacheinander in alle 4 Bildschirmecken.',

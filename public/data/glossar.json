@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-16T08:11:57.377Z",
-  "count": 206,
+  "updatedAt": "2026-06-16T11:44:30.635Z",
+  "count": 210,
   "items": [
     {
       "begriff": "1F1P",
@@ -83,11 +83,6 @@
       "folge": 16
     },
     {
-      "begriff": "Berufskleidung als Kultmode",
-      "bedeutung": "Startup-Idee der Folge: klassische Arbeitskleidung (Latzhosen, Westen, Boots) wird als begehrtes Streetwear-Statement neu positioniert – Handwerk meets Hype.",
-      "folge": 51
-    },
-    {
       "begriff": "BGS",
       "bedeutung": "Bundesgrenzschutz, im Kontext der Drogenhunde am Bahnhof Hamburg.",
       "folge": 44
@@ -168,8 +163,8 @@
       "folge": 5
     },
     {
-      "begriff": "Cloudflare-Lavalampen",
-      "bedeutung": "Cloudflare nutzt Kameras, die auf Lavalampen in ihrem Büro gerichtet sind, um echte Zufallszahlen für kryptografische Zwecke zu generieren – die unvorhersehbaren Wachsblasen sind physikalische Entropie.",
+      "begriff": "Conditions",
+      "bedeutung": "Synthesizer-Plugin, das den Klang nach dem echten Wetter eines eingegebenen Ortes formt (Temperatur, Wind, Bewoelkung) - 'macht glattes Haar und geile Sounds'.",
       "folge": 51
     },
     {
@@ -191,6 +186,11 @@
       "begriff": "DACH",
       "bedeutung": "Deutschland, Austria, Switzerland (CH = Schweiz, Confoederatio Helvetica).",
       "folge": 43
+    },
+    {
+      "begriff": "Das wassergelagerte Flugzeug",
+      "bedeutung": "Die Startup-Idee der Folge: ein doppelwandiges Flugzeug mit Wassermantel, in dem der Passagier schwerelos und immer gerade gelagert ist (Spitzname der Fan-Produktseite: AQUAVION).",
+      "folge": 51
     },
     {
       "begriff": "Defense",
@@ -368,6 +368,11 @@
       "folge": 10
     },
     {
+      "begriff": "Homolog",
+      "bedeutung": "Ein Wort, das exakt das beschreibt, was es ist - z. B. ist 'dreisilbig' selbst dreisilbig und '18buchstabig' hat genau 18 Buchstaben.",
+      "folge": 51
+    },
+    {
       "begriff": "Hotel Garni",
       "bedeutung": "Kleines Hotel bis 20 Zimmer ohne Restaurant - rechtlich leichter zu genehmigen als grosses Hotel",
       "folge": 36
@@ -453,11 +458,6 @@
       "folge": 18
     },
     {
-      "begriff": "Kliemannsland",
-      "bedeutung": "Fynns landwirtschaftliches Kreativprojekt in Schleswig-Holstein. In dieser Folge wird der echte Ursprung des Namens recherchiert und mit dem Zweiten Weltkrieg / der Ostfront in Verbindung gebracht.",
-      "folge": 51
-    },
-    {
       "begriff": "Kliman Backstroke",
       "bedeutung": "Selbst erfundener Schwimmstil von Finn in Rueckenlage, mit Brustschwimm-Beinen, Butterfly-Armen und Kopf-Untertauchen beim Schwungholen",
       "folge": 38
@@ -473,6 +473,11 @@
       "folge": 1
     },
     {
+      "begriff": "Klimasand / Klimansland",
+      "bedeutung": "Begriff fuer das Niemandsland zwischen den Fronten, in dem Fynns Opa im Krieg festsass; der Opa behauptet, ihn erfunden zu haben. Tatsaechlich tauchte 'Klimasand' zuerst als Folgentitel eines aelteren Podcasts auf - daraus entstand Fynns S…",
+      "folge": 51
+    },
+    {
       "begriff": "Knippe",
       "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat.",
       "folge": 43
@@ -481,6 +486,11 @@
       "begriff": "Koksrambo-Messe",
       "bedeutung": "Fynns Spitzname fuer die OMR (Online Marketing Rockstars) in Hamburg.",
       "folge": 50
+    },
+    {
+      "begriff": "Komplett Feierabend",
+      "bedeutung": "Running-Gag fuer das endgueltige Aus bzw. den Tod; negative Variante des entspannten 'Seele baumeln lassen' - laut Fynn auch eine gute Grabstein-Inschrift.",
+      "folge": 51
     },
     {
       "begriff": "Konklave",
@@ -673,6 +683,11 @@
       "folge": 26
     },
     {
+      "begriff": "Pisse auf dem Schrank",
+      "bedeutung": "Die Silvester-Tradition von Steven Joerns: jaehrlich in ein Glas pinkeln, es auf den Schrank stellen und verschimmeln lassen ('alle Versuche') - Titelgeber der Folge.",
+      "folge": 51
+    },
+    {
       "begriff": "POC",
       "bedeutung": "Person of Color",
       "folge": 36
@@ -741,6 +756,11 @@
       "begriff": "RFS / Random Anonymous Facts",
       "bedeutung": "Wiederkehrende Fakten-Rubrik, diesmal mit Kolibri, Niesen und Speichel-Produktion.",
       "folge": 48
+    },
+    {
+      "begriff": "RFS / RRFs",
+      "bedeutung": "Random Facts - die Abschlusskategorie mit zusammenhanglosem Trivia (Pinguin-Knie, Mars-Vulkan, Giraffen-Halswirbel).",
+      "folge": 51
     },
     {
       "begriff": "Rotten.com / World Star Hip Hop",
