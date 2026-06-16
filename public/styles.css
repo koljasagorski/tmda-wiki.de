@@ -311,6 +311,12 @@ tr:hover td { background: var(--bg-elev-2); }
   justify-content: space-between;
   align-items: center;
 }
+.footer-likashing {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.82rem;
+  opacity: 0.78;
+}
 .footer-repo {
   display: flex;
   align-items: center;
