@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-09T11:20:56.793Z",
-  "count": 280,
+  "updatedAt": "2026-06-16T08:11:57.377Z",
+  "count": 283,
   "items": [
     {
       "ort": "Berlin",
@@ -1764,6 +1764,24 @@
       "ort": "ISS / Erdumlaufbahn (RFS)",
       "folgen": [
         50
+      ]
+    },
+    {
+      "ort": "Kliemannsland (Entstehungsgeschichte: WWII-Ostfront)",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "ort": "Deutschland allgemein (Graffiti-Storys, Arbeitskleidung-Markt)",
+      "folgen": [
+        51
+      ]
+    },
+    {
+      "ort": "San Francisco (Cloudflare-Büro mit Lavalampen)",
+      "folgen": [
+        51
       ]
     }
   ]
