@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-06-16T11:44:30.635Z",
-  "count": 76,
+  "updatedAt": "2026-06-23T08:07:16.548Z",
+  "count": 78,
   "items": [
+    {
+      "folge": 52,
+      "name": "Romantischer Roboter",
+      "beschreibung": "Erweiterung des Looki-Wearables: ein KI-Geraet, das nicht nur Habits trackt, sondern aktiv die Beziehung steuert - sagt an, wann man netter sein sollte, schlaegt 'Mon Cherie und Ananas' vor (weil sie das mag), bestellt Blumen automatisch sobald die Mimik-Analyse eine Verletzung detektiert."
+    },
+    {
+      "folge": 52,
+      "name": "OpenClaw-Essensroutine",
+      "beschreibung": "Kumpel von Nisse laesst OpenAI (im Gespraech 'OpenClaw' genannt) jeden Tag Rezepte vorschlagen, bestellt die Zutaten automatisch bei Rewe und kocht einfach, was der Algorithmus sagt - 'bis die Hausroboter kommen und es dann fuer ihn machen'."
+    },
     {
       "folge": 51,
       "name": "Aluhuete in Fresh (MIA-Kollektion)",

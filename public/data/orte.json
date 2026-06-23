@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-16T11:44:30.635Z",
-  "count": 293,
+  "updatedAt": "2026-06-23T08:07:16.548Z",
+  "count": 298,
   "items": [
     {
       "ort": "Berlin",
@@ -1842,6 +1842,36 @@
       "ort": "Klimansland (von Fynns Opa benannte Frontzone im Krieg)",
       "folgen": [
         51
+      ]
+    },
+    {
+      "ort": "Berlin (Fynns Designer-Stuehle, Jonathan-Meese-Loft-Party, SLEEK-Magazine-Event, Matrix-Schwester-Hotelbar)",
+      "folgen": [
+        52
+      ]
+    },
+    {
+      "ort": "Hamburg, Sternschanze (OMR-Festival)",
+      "folgen": [
+        52
+      ]
+    },
+    {
+      "ort": "Wilhelmshaven / JadeWeserPort (8-Tonnen-Kokain-Fund)",
+      "folgen": [
+        52
+      ]
+    },
+    {
+      "ort": "Venus (Fun-Fact-Verwechslung - eigentlich nicht Saturn)",
+      "folgen": [
+        52
+      ]
+    },
+    {
+      "ort": "Klimansland / Fynns Hof (Rohrbedarf)",
+      "folgen": [
+        52
       ]
     }
   ]
