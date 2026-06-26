@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die AOK-Biegung – Deutschlands Pflicht-Rohrsport</title>
+  <meta name="description" content="84 Millionen Deutsche. Ein Rohr. Jeden Morgen. Die AOK-Biegung ist Gesundheitscheck, Metallrohstoff-Offensive und Planwirtschaft in einem.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/aok-biegung">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Die AOK-Biegung – Deutschlands Pflicht-Rohrsport">
+  <meta property="og:description" content="84 Millionen Deutsche. Ein Rohr. Jeden Morgen. Die AOK-Biegung ist Gesundheitscheck, Metallrohstoff-Offensive und Planwirtschaft in einem.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/aok-biegung">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Die AOK-Biegung – Deutschlands Pflicht-Rohrsport">
+  <meta name="twitter:description" content="84 Millionen Deutsche. Ein Rohr. Jeden Morgen. Die AOK-Biegung ist Gesundheitscheck, Metallrohstoff-Offensive und Planwirtschaft in einem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Die AOK-Biegung",
+    "description": "Das staatlich verordnete Pflicht-Rohrbiege-Programm für alle 84 Millionen Deutschen. Gesundheitsdaten für die AOK, Metallrohstoffe für die Industrie.",
+    "brand": {
+      "@type": "Brand",
+      "name": "AOK Biegungskommission"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "description": "Pflichtgebühr: 1 Rohr täglich, 7 Tage die Woche. Staatlich subventioniert."
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --rot: #C8102E;
+      --dunkelrot: #8B0B1F;
+      --beige: #F2E8D9;
+      --creme: #FAF5EB;
+      --sand: #D6C9A8;
+      --grau: #3A3530;
+      --hellgrau: #6B645A;
+      --stahl: #7A8080;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--beige);
+      color: var(--grau);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Constructivist diagonal stripe header */
+    .header-stripe {
+      background: var(--rot);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-stripe::before {
+      content: '';
+      position: absolute;
+      top: 0; right: -60px;
+      width: 200px; height: 100%;
+      background: var(--dunkelrot);
+      transform: skewX(-12deg);
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 32px 40px;
+      position: relative;
+    }
+
+    .stamp-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      display: inline-block;
+      border: 1.5px solid rgba(255,255,255,0.35);
+      padding: 4px 10px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      line-height: 0.95;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    h1 span.rohr {
+      display: block;
+      color: var(--sand);
+    }
+
+    .subheadline {
+      font-family: 'Source Serif 4', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 520px;
+      line-height: 1.5;
+    }
+
+    /* Graphic element: pipe bend SVG */
+    .pipe-graphic {
+      position: absolute;
+      right: 32px;
+      bottom: -20px;
+      opacity: 0.18;
+    }
+
+    /* === HERO STATS === */
+    .hero-stats {
+      background: var(--grau);
+      color: var(--creme);
+    }
+
+    .stats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .stat-block {
+      padding: 28px 24px;
+      border-right: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+    }
+
+    .stat-block:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--rot);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-top: 6px;
+      display: block;
+    }
+
+    /* === MAIN CONTENT === */
+    .content-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    @media (max-width: 640px) {
+      .content-grid { grid-template-columns: 1fr; gap: 32px; padding: 40px 20px; }
+      .stats-inner { grid-template-columns: 1fr; }
+      .stat-block { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); }
+      .stat-block:last-child { border-bottom: none; }
+    }
+
+    .section-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--rot);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .section-tag::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: var(--rot);
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      color: var(--grau);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--hellgrau);
+    }
+
+    p + p { margin-top: 12px; }
+
+    /* === PROCESS SECTION (full-width) === */
+    .process-section {
+      background: var(--rot);
+      color: #fff;
+    }
+
+    .process-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 32px;
+    }
+
+    .process-inner .section-tag {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .process-inner .section-tag::after { background: rgba(255,255,255,0.4); }
+
+    .process-inner h2 { color: #fff; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 640px) {
+      .steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    .step {
+      background: var(--dunkelrot);
+      padding: 24px 20px;
+      position: relative;
+    }
+
+    .step-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.15);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--sand);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* === PITCH SCORE === */
+    .score-section {
+      background: var(--creme);
+      border-top: 4px solid var(--sand);
+      border-bottom: 4px solid var(--sand);
+    }
+
+    .score-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 32px;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+    }
+
+    @media (max-width: 640px) {
+      .score-inner { flex-direction: column; gap: 24px; text-align: center; }
+    }
+
+    .score-circle {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border: 4px solid var(--rot);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      position: relative;
+    }
+
+    .score-number {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--rot);
+      line-height: 1;
+    }
+
+    .score-of {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      color: var(--stahl);
+      text-transform: uppercase;
+    }
+
+    .score-text h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .score-text p {
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    /* === CTA === */
+    .cta-section {
+      background: var(--grau);
+    }
+
+    .cta-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 32px;
+      text-align: center;
+    }
+
+    .cta-inner h2 { color: var(--creme); margin-bottom: 16px; }
+    .cta-inner p { color: var(--sand); margin-bottom: 32px; }
+
+    .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    .btn {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 14px 28px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.15s;
+    }
+
+    .btn-primary {
+      background: var(--rot);
+      color: #fff;
+      border: 2px solid var(--rot);
+    }
+
+    .btn-primary:hover { background: var(--dunkelrot); border-color: var(--dunkelrot); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--sand);
+      border: 2px solid var(--sand);
+    }
+
+    .btn-outline:hover { background: var(--sand); color: var(--grau); }
+
+    /* === FOOTER === */
+    footer {
+      background: var(--beige);
+      border-top: 1px solid var(--sand);
+      padding: 24px 32px;
+      text-align: center;
+    }
+
+    .footer-disclaimer {
+      font-style: italic;
+      font-size: 0.78rem;
+      color: var(--stahl);
+      margin-bottom: 8px;
+    }
+
+    .footer-meta {
+      font-size: 0.75rem;
+      color: var(--stahl);
+    }
+
+    .footer-meta a {
+      color: var(--rot);
+      text-decoration: none;
+    }
+
+    .footer-meta a:hover { text-decoration: underline; }
+
+    /* Constructivist decorative line */
+    .deco-line {
+      width: 60px;
+      height: 4px;
+      background: var(--rot);
+      margin: 0 auto 16px;
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <!-- HERO -->
+  <header class="header-stripe">
+    <div class="header-inner">
+      <div class="stamp-label">AOK Biegungskommission · Gegründet 2026</div>
+      <h1>Die AOK-<span class="rohr">Biegung</span></h1>
+      <p class="subheadline">Jeder Deutsche. Ein Rohr. Jeden Morgen um 11 Uhr abholen lassen. Deutschland steht wieder gerade.</p>
+      <svg class="pipe-graphic" width="220" height="200" viewBox="0 0 220 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="90" y="0" width="30" height="110" rx="15" fill="white"/>
+        <path d="M90 110 Q90 155 135 155" stroke="white" stroke-width="30" fill="none" stroke-linecap="round"/>
+        <rect x="135" y="140" width="85" height="30" rx="15" fill="white"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- STATS BAR -->
+  <div class="hero-stats">
+    <div class="stats-inner">
+      <div class="stat-block">
+        <span class="stat-num">84 Mio</span>
+        <span class="stat-label">Potenzielle Kunden</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num">11:00</span>
+        <span class="stat-label">Abholzeit täglich</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-num">90°</span>
+        <span class="stat-label">Mindest-Biegung</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="content-grid">
+      <div>
+        <div class="section-tag">Das Problem</div>
+        <h2>Deutschland biegt sich ab</h2>
+        <p>Der Deutsche geht körperlich am Stock. Die Rücken sind krumm, die Haltung miserabel, das Bruttoinlandsprodukt leidet. Gleichzeitig fehlt der Metallindustrie der Rohstoff. Zwei Probleme. Eine Lösung.</p>
+        <p>Die AOK hat die Daten. Die Müllabfuhr hat die Infrastruktur. Rheinmetall hat den Bedarf. Was fehlt, ist der Wille zur täglichen Biegung.</p>
+      </div>
+      <div>
+        <div class="section-tag">Die Idee</div>
+        <h2>Ein Rohr pro Haushalt</h2>
+        <p>Morgens aufstehen, Rohr biegen. Das Rohr läuft vom Schuh bis zum Kopf. Man verneigt sich. Wie weit man kommt, ist die Messung. Um 11 Uhr kommt die Abholung — kostenlos, über die bestehende Müllabfuhr-Route.</p>
+        <p>Die AOK wertet den Biegegrad aus. Wer 90° nicht erreicht, bekommt Krankengymnastik verschrieben. Wer bis 11 Uhr nicht gebogen hat, ist ein Langschläfer und fürs BIP erst einmal irrelevant.</p>
+      </div>
+    </div>
+
+    <!-- PROCESS -->
+    <div class="process-section">
+      <div class="process-inner">
+        <div class="section-tag">Der Ablauf</div>
+        <h2>Vier Schritte zur Volksgesundheit</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-title">Rohr anlegen</div>
+            <p class="step-desc">Das staatlich ausgegebene Metallrohr wird morgens am Körper befestigt — Schuh bis Kopf. Standardgröße nach Körperlänge.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-title">Biegen</div>
+            <p class="step-desc">Einmal nach vorne beugen. Wie weit man kommt, hängt vom Trainingszustand ab. Der Biegegrad ist der Score. Nicht alle schaffen 90°.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-title">Abgabe 11 Uhr</div>
+            <p class="step-desc">Die bestehende Müllabfuhr übernimmt die Logistik. Keine neue Infrastruktur nötig. Die Jungs kriegen einfach einen Zusatzjob.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-title">Auswertung</div>
+            <p class="step-desc">Die AOK analysiert Biegewinkel und Rohrmaterial. Gesundheitsdaten fließen in die Krankenakte. Metall geht an Rheinmetall — kostenfrei geliefert.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCORE -->
+    <div class="score-section">
+      <div class="score-inner">
+        <div class="score-circle">
+          <span class="score-number">3</span>
+          <span class="score-of">von 24</span>
+        </div>
+        <div class="score-text">
+          <h3>Nisse vergibt 3 / 24</h3>
+          <p>„Immer noch furchtbar — und nicht so furchtbar wie davor." Gestartet bei 1/24 nach dem initialen Rohr-Pitch. Gerettet auf 3/24 durch den Zusatzvorschlag, alte Medikamente aus Haushaltsschubladen und More-Nutrition-Pulver in die Rohre zu stampfen und als Schrott weiterzuverkaufen (1 kg = 30 Cent).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <div class="cta-inner">
+        <div class="deco-line"></div>
+        <h2>Bereit zur Biegung?</h2>
+        <p>Du hast ein Rohr. Deutschland wartet. Die AOK schaut zu. Biege dich und werde Teil der Volksgesundheitsoffensive 2026.</p>
+        <div class="btn-group">
+          <a href="/folge/52" class="btn btn-primary">Zur Folge #52</a>
+          <a href="/startup-ideen" class="btn btn-outline">Alle Startups</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-disclaimer">Rein fiktives Konzept aus dem TMDA-Podcast. Kein echtes Rohrbiegeprogramm. Die AOK ist nicht beteiligt. Rheinmetall auch nicht. Niemand muss Rohre biegen.</p>
+    <p class="footer-meta">
+      Fiktives Konzept · TMDA #52 · 3/24 · <a href="/folge/52">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+    </p>
+  </footer>
+
+</body>
+</html>

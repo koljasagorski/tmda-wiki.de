@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-06-16T11:44:30.635Z",
-  "count": 48,
+  "updatedAt": "2026-06-23T08:07:16.548Z",
+  "count": 49,
   "items": [
+    {
+      "folge": 52,
+      "datum": null,
+      "idee": "Die AOK-Biegung",
+      "beschreibung": "Jeder Deutsche bekommt morgens ein Metallrohr, das er biegen muss - als Pflicht-Gesundheitscheck und wirtschaftliche Rohstoffgewinnung in einem. Das Rohr haengt sozusagen vom Schuh bis zum Kopf; man beugt sich so weit wie moeglich nach unten. Die AOK schickt um 11 Uhr die Muellabfuhr-Infrastruktur (die sowieso schon faehrt) los und sammelt alle Rohre ein. Wer bis 11 Uhr nicht gebogen hat, ist ein…",
+      "punkte": 3,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt zunaechst 1/24 ('ich will meine Lebenszeit zurueck'), rettet Fynn dann mit dem Recycling-Zusatz auf 3/24: 'Immer noch furchtbar - und nicht so furchtbar wie davor.'"
+    },
     {
       "folge": 51,
       "datum": "2026-06-16",

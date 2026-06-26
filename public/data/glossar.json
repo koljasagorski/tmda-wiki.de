@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-16T11:44:30.635Z",
-  "count": 210,
+  "updatedAt": "2026-06-23T08:07:16.548Z",
+  "count": 216,
   "items": [
     {
       "begriff": "1F1P",
@@ -51,6 +51,11 @@
       "begriff": "Amortisieren",
       "bedeutung": "Wenn die Investition wieder eingespielt ist und der erste Euro in die Tasche geht",
       "folge": 38
+    },
+    {
+      "begriff": "AOK-Biegung",
+      "bedeutung": "Fynns Startup-Idee: ein gesetzliches Pflicht-Rohrbiege-Programm fuer alle 84 Millionen Deutschen, das gleichzeitig Gesundheitsdaten liefert und kostenlose Metallrohstoffe fuer die Industrie generiert.",
+      "folge": 52
     },
     {
       "begriff": "ARC Raiders",
@@ -193,6 +198,11 @@
       "folge": 51
     },
     {
+      "begriff": "Dead Internet Theory",
+      "bedeutung": "These, dass drei Viertel des Internets bereits von Bots bespielt werden und echte menschliche Interaktion zur Minderheit geworden ist.",
+      "folge": 52
+    },
+    {
       "begriff": "Defense",
       "bedeutung": "Das 'gute' Defense - Drohnen die Bomben entschärfen statt Angriff, in Abgrenzung zur Rüstungsindustrie",
       "folge": 8
@@ -203,9 +213,19 @@
       "folge": 39
     },
     {
+      "begriff": "Dienstagnisse",
+      "bedeutung": "Running Gag: Nisse fordert Anerkennung dafuer, den Begriff 'Dienstagnisse' fuer den TMDA-Erscheinungstag erfunden zu haben - Fynn besteht darauf, es selbst schon in Folge 3 gesagt zu haben.",
+      "folge": 52
+    },
+    {
       "begriff": "Diktator-Check",
       "bedeutung": "Satirischer Psychotest, ob man Zeug zum Diktator hat",
       "folge": 42
+    },
+    {
+      "begriff": "Discoschnee",
+      "bedeutung": "Euphemismus fuer Kokain in Nisses OMR-Rollenspiel-Anekdote ('komme gerade direkt aus Wilhelmshaven und habe so ein bisschen Discoschnee dabei').",
+      "folge": 52
     },
     {
       "begriff": "Drive-To-Survive",
@@ -551,6 +571,11 @@
       "begriff": "Locks",
       "bedeutung": "Korrekte Bezeichnung fuer 'Dreadlocks' (das 'Dread' ist abwertend)",
       "folge": 32
+    },
+    {
+      "begriff": "Looki / Ly",
+      "bedeutung": "Reales KI-Wearable (looki.ai), das man sich an die Brust klemmt - filmt den ganzen Tag, trackt Habits und Gespraeche. Im Gespraech ausgebaut zum 'romantischen Roboter', der die Beziehung steuert.",
+      "folge": 52
     },
     {
       "begriff": "Mach deine Scheiße Tag",
@@ -901,6 +926,11 @@
       "begriff": "Tamponade",
       "bedeutung": "Medizinischer Wundverband in der Nase, der nach OP gezogen wird",
       "folge": 13
+    },
+    {
+      "begriff": "Tausend Kommentare",
+      "bedeutung": "Hoerer, die fuer das Padelfreunde-Gewinnspiel bis zu 1000 Kommentare schreiben: 'Ist die erste Sache in meinem Leben, fuer die ich richtig invested bin.'",
+      "folge": 52
     },
     {
       "begriff": "Tees / Teenis / Teens / Tidies / Torpedos",
