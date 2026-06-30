@@ -212,6 +212,7 @@
     'lindemann':   () => toast('🎤 <strong>„Ich erkenne an, dass euch etwas aufgefallen ist."</strong>, der Til-Lindemann-Krisen-PR-Move (Folge 37)', 5000),
     'aaron':       () => { emojiRain('🌴', 30); toast('🌴 <strong>Aaron Carter im Tropical Island</strong> (Folge 3)', 4000); },
     'feierabend':  () => { emojiRain('🌙', 18); toast('🌙 <strong>„Das ist aber komplett Feierabend."</strong> Der Running-Gag aus Folge 51 (Pisse auf dem Schrank)', 5000); },
+    'mondsprengung': () => { emojiRain('🚀', 27); toast('🚀 <strong>15 Atomraketen</strong> für endlich Wasser vor Nordstrand. (Folge 53)', 5000); },
   };
 
   document.addEventListener('keydown', (e) => {
@@ -409,6 +410,7 @@
             <li><kbd>lindemann</kbd> → Krisen-PR-Quote</li>
             <li><kbd>aaron</kbd> → Palmen-Regen</li>
             <li><kbd>feierabend</kbd> → Komplett Feierabend (Folge 51)</li>
+            <li><kbd>mondsprengung</kbd> → Atomraketen-Regen (Folge 53)</li>
             <li><kbd>6 Seiten besucht</kbd> → Hielscher-Karte</li>
             <li><kbd>3× Klick Score-Badge</kbd> → Konfetti</li>
             <li><kbd>5× Klick Stat-Counter</kbd> → Achievement</li>

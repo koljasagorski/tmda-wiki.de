@@ -1,10 +1,19 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 49,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 50,
   "items": [
     {
+      "folge": 53,
+      "datum": "2026-06-30",
+      "idee": "Die Mondsprengung (Atompartnerpakt)",
+      "beschreibung": "Fynn hat als Ferienwohnungsbesitzer in Nordstrand an der Nordsee ein Problem: Wegen der Gezeiten ist oft kein Wasser direkt vor seinem Grundstueck - und schuld daran ist letztlich der Mond. Seine Loesung: Den Mond mit international koordinierten Atomraketen-Abschuessen zerstoeren. Nordkorea soll als erster 'Zugpferd'-Partner vorangehen (Kim Jong Un wird so lange 'geschuettelt, bis alle 27 Raketen…",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt mit 14 von 24 Punkten eine ungewoehnlich hohe Wertung fuer eine reine Schnapsidee - explizit, weil ihn der bedingungslose 'All-in'-Mut beeindruckt: 'Ich würde auch gerne selber einfach wissen, was passiert.' Er vergleicht den…"
+    },
+    {
       "folge": 52,
-      "datum": null,
+      "datum": "2026-06-23",
       "idee": "Die AOK-Biegung",
       "beschreibung": "Jeder Deutsche bekommt morgens ein Metallrohr, das er biegen muss - als Pflicht-Gesundheitscheck und wirtschaftliche Rohstoffgewinnung in einem. Das Rohr haengt sozusagen vom Schuh bis zum Kopf; man beugt sich so weit wie moeglich nach unten. Die AOK schickt um 11 Uhr die Muellabfuhr-Infrastruktur (die sowieso schon faehrt) los und sammelt alle Rohre ein. Wer bis 11 Uhr nicht gebogen hat, ist ein…",
       "punkte": 3,

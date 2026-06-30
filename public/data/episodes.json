@@ -1,11 +1,37 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 50,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 51,
   "items": [
+    {
+      "folge": 53,
+      "titel": "Nordkorea bombardiert Mond",
+      "datum": "2026-06-30",
+      "laufzeit": "1:20:46",
+      "themen": [
+        "Einstiegs-Fun-Fact: 99% aller Bananen weltweit sind genetisch identische Klone - ein einziger Pilz koennte theoretisch fast alle Bananenbestaende gleichzeitig vernichten",
+        "TMDA-wiki.de Meta-Moment: Fynn und Nisse entdecken die frisch gebaute Fan-Wiki-Seite, telefonieren eine Stunde lang durch jede einzelne Startup-Unterseite, vermuten geniales KI-Prompting dahinter - der Macher wollte eigentlich nur seine neue Cybersecurity-Firma testen",
+        "Felix-Kummer-Seitenhieb: Running-Gag-Vorwurf, Felix klaue Fynn seit Jahren Ideen (Bill-Kowit-Feature, Album 'Tod')",
+        "Aufnahmeort Tribe Management, Berlin: goldene Schallplatte von Lena Meyer-Landrut ('Don't Lie to Me') an der Wand, deren Musikvideo Paul Rippke gedreht und Fynns Produktionsfirma animiert/geschnitten hat",
+        "Fynns neue Workwear-Kollektion: robuste, aber fancy Klamotten, die 'was abkoennen' - Diskussion ueber Style, Gartenarbeit-Risse in teurer Kleidung und Codes in der Mode",
+        "STARTUP-IDEE (Titelthema): Fynn will mit international koordinierten Atomraketen-Abschuessen den Mond zerstoeren, um endlich dauerhaft Wasser vor seiner Nordstrand-Ferienwohnung zu haben - Nordkorea als Erstunterzeichner, 'Atompartnerpakt-Steuer' von 20% der touristischen Mehreinnahmen",
+        "Fun Fact Suedkorea-WM-Kader: fast die Haelfte der 26 Spieler heisst nur 'Lee' oder 'Kim' - nur 13 verschiedene Nachnamen insgesamt",
+        "Mondgrundstuecksverkauf 'Lunet 18': Fynn verkauft Nisse vorab ein fiktives 100-qkm-Grundstueck auf dem Mond samt Zertifikat, um nach der Sprengung Schadensersatz einklagen zu koennen",
+        "TMDAkel: Fynn und Nisse tippen den WM-Sieger - Nisse beruft sich auf einen 'deutschen Wissenschaftler' und landet bei den Niederlanden, garniert mit einem Seitenhieb auf Jan Josef Liefers' Ketamin-statt-Impfung-Aussage",
+        "Trumps UFC-Kuppel zum 250-jaehrigen US-Jubilaeum: einziger deutscher Gast soll Andreas Bourani sein - Vergleich mit Pharaonengraebern, die niemand abreissen darf",
+        "Rap-Battle-Rueckblick: Shindy gegen Kollegah und Farid Bang gilt als geiler als die alten Echo-Battles",
+        "RFS-Block: Katzen haben mehr Knochen als Menschen, Augmented Reality existiert bereits seit den 1960ern als Prototyp, Korrektur des Saturn/Venus-Fehlers aus Folge 52",
+        "Grosser PLATTENVERTRAG-Block auf Hoererwunsch: Kuenstler-Exklusivvertrag vs. Bandübernahmevertrag, Vorschuss und Recoupment, Mixing/Mastering-Kosten, Robbie Williams' Rekordvertrag ueber 120 Millionen Dollar",
+        "Nisses Musikkarriere-Biografie: Signing bei Vier Music/Sony in der Materia/Casper-Aera, Ausstieg aus dem Vier-Music-Deal, Gruendung von Two Finger Records mit Niklas, fruehe Entdeckung von Nina Chuba in Sittensen",
+        "Scooter-Braun-und-Diddy-Anekdote: beide fingen als kleine Praktikanten/Mitarbeiter an, bevor sie zu den maechtigsten Leuten der Musikindustrie wurden",
+        "DIY-Origin-Story: Fynns und Philip Schwers allererste EP wurde fuer rund 25 Euro Marihuana bei Christoph Altmann aufgenommen, inklusive falsch gedrucktem Booklet",
+        "Streaming-Oekonomie: rund 3000 bis 4000 Euro pro Million Spotify-Streams, abhaengig von der Kuenstlergroesse"
+      ],
+      "kurzbeschreibung": "Fynn und Nisse eroeffnen die Folge mit einer langen Liebeserklaerung an die frisch entdeckte TMDA-Fan-Wiki-Seite, bevor sie im Tribe-Management-Buero in Berlin (samt goldener Lena-Meyer-Landrut-Schallplatte) zur Titelidee kommen: Fynn will den Mond mit international koordinierten Atomraketen sprengen, um endlich dauerhaft Wasser vor seiner Nordstrand-Ferienwohnung zu haben - Nordkorea als Erstunterzeichner, finanziert ueber eine 20%-'Atompartnerpakt-Steuer'. Nisse vergibt ungewoehnlich hohe 14 von 24 Punkten, weil ihn der bedingungslose Mut der Idee beeindruckt. Die zweite Haelfte widmet sich auf Hoererwunsch ausfuehrlich dem Thema Plattenvertraege - von Vorschuss und Recoupment ueber Mixing-/Mastering-Kosten bis zu Nisses eigener Musikkarriere bei Vier Music/Sony, der Gruendung von Two Finger Records und der fruehen Entdeckung von Nina Chuba."
+    },
     {
       "folge": 52,
       "titel": "Der letzte Kommentar gewinnt Kok**n aus Wilhelmshaven",
-      "datum": null,
+      "datum": "2026-06-23",
       "laufzeit": "1:04:44",
       "themen": [
         "Einstiegs-Fun-Fact (mit Verwechslung): 'Ein Tag auf dem Saturn dauert laenger als ein Jahr auf dem Saturn' - die genannten Zahlen (243 Tage Rotation, 224 Tage Umlaufbahn) stimmen aber fuer die Venus, nicht den Saturn",

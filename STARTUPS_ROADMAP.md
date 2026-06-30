@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 49/49 LIVE ✅
+## Status — 50/50 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-52 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-53 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -69,6 +69,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 14/24
 
+- [x] **Mondsprengung (Atompartnerpakt)** · Folge 53 · NASA/Apollo Mission-Control Blueprint (Michroma + Space Mono, NASA-Blau/Signal-Rot/Blueprint-Navy, Grid-Hintergrund, Countdown-Timeline)
 - [x] **Zero You Go** · Folge 37 · bathroom-hygiene pastel (Outfit + soap-green)
 - [x] **Hör auf — Habit Detector** · Folge 3 · health-app dark green (Plus Jakarta + neon)
 

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 216,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 222,
   "items": [
     {
       "begriff": "1F1P",
@@ -61,6 +61,11 @@
       "begriff": "ARC Raiders",
       "bedeutung": "Online-Game, das Nisse mit Cliso, Thor und Sharakta spielt. In den Auto-Captions falsch als 'Arschraiders', 'Arc Riders' oder 'Raders' transkribiert.",
       "folge": 43
+    },
+    {
+      "begriff": "Atompartnerpakt-Steuer",
+      "bedeutung": "Fiktive 20%-Abgabe auf die touristischen Mehreinnahmen an der Nordsee, mit der alle am Mond-Atomraketenprogramm beteiligten Nationen jaehrlich beteiligt werden sollen.",
+      "folge": 53
     },
     {
       "begriff": "August da",
@@ -528,6 +533,11 @@
       "folge": 40
     },
     {
+      "begriff": "Künstler-Exklusivvertrag vs. Bandübernahmevertrag",
+      "bedeutung": "Die zwei im Block erklaerten Hauptvertragsarten: beim Exklusivvertrag gestaltet das Label aktiv mit, beim Bandübernahmevertrag liefert der Kuenstler ein fertiges Album ab und das Label kann nur noch zustimmen oder ablehnen.",
+      "folge": 53
+    },
+    {
       "begriff": "Kuriose Ablenkung",
       "bedeutung": "Nisses Deeskalations-Technik: in bedrohlichen Situationen plötzlich über etwas völlig Unerwartetes reden (z.B. 'Spielst du Sims?')",
       "folge": 7
@@ -576,6 +586,11 @@
       "begriff": "Looki / Ly",
       "bedeutung": "Reales KI-Wearable (looki.ai), das man sich an die Brust klemmt - filmt den ganzen Tag, trackt Habits und Gespraeche. Im Gespraech ausgebaut zum 'romantischen Roboter', der die Beziehung steuert.",
       "folge": 52
+    },
+    {
+      "begriff": "Lunet 18",
+      "bedeutung": "Fiktives 100-Quadratkilometer-Mondgrundstück, das Fynn live im Podcast an Nisse 'verkauft' - Grundlage fuer eine spaetere fiktive Schadensersatzklage nach der geplanten Mondsprengung.",
+      "folge": 53
     },
     {
       "begriff": "Mach deine Scheiße Tag",
@@ -773,6 +788,11 @@
       "folge": 14
     },
     {
+      "begriff": "Recoupment",
+      "bedeutung": "Musikindustrie-Begriff aus dem Plattenvertrag-Block: der Zeitpunkt, ab dem ein Kuenstler durch Einnahmen den erhaltenen Vorschuss vollstaendig zurueckverdient hat und ab dem er an weiteren Einnahmen beteiligt wird.",
+      "folge": 53
+    },
+    {
       "begriff": "RFs",
       "bedeutung": "Random anonymous Facts von Nisse",
       "folge": 38
@@ -956,6 +976,16 @@
       "begriff": "TMDA Wiki",
       "bedeutung": "Von Hoerern gebautes Fan-Wiki mit eigener Suchmaschine ueber alle Folgen (Startup-Ideen, Kalles Corner, RFS, Stichwortsuche) - genau diese Seite, im Podcast erwaehnt.",
       "folge": 50
+    },
+    {
+      "begriff": "TMDA-wiki.de",
+      "bedeutung": "Die von einem Hoerer gebaute Fan-Wiki-Seite des Podcasts, die Fynn und Nisse in dieser Folge ausfuehrlich entdecken und loben - inklusive aller Startup-Unterseiten, Quiz, Bingo und Statistiken.",
+      "folge": 53
+    },
+    {
+      "begriff": "TMDAkel",
+      "bedeutung": "Spontan erfundener Spitzname fuer Fynn und Nisse in ihrer Rolle als WM-Tipp-Orakel.",
+      "folge": 53
     },
     {
       "begriff": "Topline",

@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 78,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 80,
   "items": [
+    {
+      "folge": 53,
+      "name": "Lunet 18 (Mondgrundstücks-Zertifikat)",
+      "beschreibung": "Fiktives 100-Quadratkilometer-Grundstueck auf dem Mond, das Fynn live im Podcast an Nisse 'verkauft' und mit einem lamierten Zertifikat besiegelt - Plan: nach der geplanten Mondsprengung Schadensersatz vom Touristikverband einklagen, weil das 'Eigentum' zerstoert wurde."
+    },
+    {
+      "folge": 53,
+      "name": "Eckenkucker 2.0",
+      "beschreibung": "Erwaehntes Strandzubehoer-Produkt fuer Nordstrand: ein Spiegel-Periskop zum Umdie-Ecke-Gucken, im Gespraech spontan um einen Schnorchel-Aufsatz erweitert."
+    },
     {
       "folge": 52,
       "name": "Romantischer Roboter",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 1000,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 1005,
   "items": [
     {
       "name": "Bushido",
@@ -22,7 +22,8 @@
         46,
         48,
         49,
-        52
+        52,
+        53
       ]
     },
     {
@@ -44,7 +45,8 @@
         43,
         47,
         50,
-        51
+        51,
+        53
       ]
     },
     {
@@ -66,7 +68,8 @@
         42,
         49,
         50,
-        51
+        51,
+        53
       ]
     },
     {
@@ -85,20 +88,6 @@
       ]
     },
     {
-      "name": "Michael Jackson",
-      "folgen": [
-        3,
-        16,
-        24,
-        28,
-        40,
-        42,
-        47,
-        49,
-        50
-      ]
-    },
-    {
       "name": "Sido",
       "folgen": [
         17,
@@ -109,7 +98,8 @@
         37,
         43,
         46,
-        51
+        51,
+        53
       ]
     },
     {
@@ -121,6 +111,21 @@
         32,
         40,
         48,
+        49,
+        50,
+        53
+      ]
+    },
+    {
+      "name": "Michael Jackson",
+      "folgen": [
+        3,
+        16,
+        24,
+        28,
+        40,
+        42,
+        47,
         49,
         50
       ]
@@ -152,6 +157,19 @@
       ]
     },
     {
+      "name": "Casper",
+      "folgen": [
+        18,
+        28,
+        32,
+        39,
+        41,
+        42,
+        49,
+        53
+      ]
+    },
+    {
       "name": "Kanye West",
       "folgen": [
         1,
@@ -173,6 +191,18 @@
         35,
         39,
         49
+      ]
+    },
+    {
+      "name": "Helene Fischer",
+      "folgen": [
+        4,
+        5,
+        14,
+        14,
+        26,
+        27,
+        53
       ]
     },
     {
@@ -224,15 +254,15 @@
       ]
     },
     {
-      "name": "Casper",
+      "name": "Materia",
       "folgen": [
         18,
-        28,
-        32,
+        38,
         39,
         41,
-        42,
-        49
+        48,
+        49,
+        53
       ]
     },
     {
@@ -259,6 +289,17 @@
       ]
     },
     {
+      "name": "Farid Bang",
+      "folgen": [
+        3,
+        10,
+        18,
+        24,
+        41,
+        53
+      ]
+    },
+    {
       "name": "Rihanna",
       "folgen": [
         4,
@@ -267,17 +308,6 @@
         15,
         46,
         50
-      ]
-    },
-    {
-      "name": "Helene Fischer",
-      "folgen": [
-        4,
-        5,
-        14,
-        14,
-        26,
-        27
       ]
     },
     {
@@ -325,17 +355,6 @@
       ]
     },
     {
-      "name": "Materia",
-      "folgen": [
-        18,
-        38,
-        39,
-        41,
-        48,
-        49
-      ]
-    },
-    {
       "name": "Sarah Engels",
       "folgen": [
         37,
@@ -357,13 +376,23 @@
       ]
     },
     {
-      "name": "Farid Bang",
+      "name": "Shindy",
+      "folgen": [
+        2,
+        3,
+        15,
+        49,
+        53
+      ]
+    },
+    {
+      "name": "Kollegah",
       "folgen": [
         3,
         10,
         18,
-        24,
-        41
+        32,
+        53
       ]
     },
     {
@@ -374,6 +403,16 @@
         18,
         22,
         24
+      ]
+    },
+    {
+      "name": "Christoph Altmann",
+      "folgen": [
+        3,
+        5,
+        33,
+        52,
+        53
       ]
     },
     {
@@ -394,6 +433,26 @@
         11,
         34,
         38
+      ]
+    },
+    {
+      "name": "Lena Meyer-Landrut",
+      "folgen": [
+        5,
+        38,
+        40,
+        42,
+        53
+      ]
+    },
+    {
+      "name": "Mark Forster",
+      "folgen": [
+        5,
+        18,
+        20,
+        24,
+        53
       ]
     },
     {
@@ -487,24 +546,6 @@
       ]
     },
     {
-      "name": "Shindy",
-      "folgen": [
-        2,
-        3,
-        15,
-        49
-      ]
-    },
-    {
-      "name": "Kollegah",
-      "folgen": [
-        3,
-        10,
-        18,
-        32
-      ]
-    },
-    {
       "name": "Aaron Carter",
       "folgen": [
         3,
@@ -514,39 +555,12 @@
       ]
     },
     {
-      "name": "Christoph Altmann",
-      "folgen": [
-        3,
-        5,
-        33,
-        52
-      ]
-    },
-    {
       "name": "Snoop Dogg",
       "folgen": [
         4,
         6,
         21,
         35
-      ]
-    },
-    {
-      "name": "Lena Meyer-Landrut",
-      "folgen": [
-        5,
-        38,
-        40,
-        42
-      ]
-    },
-    {
-      "name": "Mark Forster",
-      "folgen": [
-        5,
-        18,
-        20,
-        24
       ]
     },
     {
@@ -792,6 +806,14 @@
       ]
     },
     {
+      "name": "Nina Chuba",
+      "folgen": [
+        10,
+        16,
+        53
+      ]
+    },
+    {
       "name": "Andy Warhol",
       "folgen": [
         11,
@@ -853,6 +875,14 @@
         18,
         36,
         47
+      ]
+    },
+    {
+      "name": "Josi Miller",
+      "folgen": [
+        20,
+        39,
+        53
       ]
     },
     {
@@ -936,6 +966,14 @@
       ]
     },
     {
+      "name": "Kim Jong Un",
+      "folgen": [
+        25,
+        45,
+        53
+      ]
+    },
+    {
       "name": "Jake Paul",
       "folgen": [
         26,
@@ -973,6 +1011,14 @@
         33,
         34,
         37
+      ]
+    },
+    {
+      "name": "Bill und Tom Kaulitz",
+      "folgen": [
+        40,
+        42,
+        53
       ]
     },
     {
@@ -1045,6 +1091,13 @@
       "folgen": [
         5,
         42
+      ]
+    },
+    {
+      "name": "Robbie Williams",
+      "folgen": [
+        5,
+        53
       ]
     },
     {
@@ -1139,13 +1192,6 @@
       ]
     },
     {
-      "name": "Nina Chuba",
-      "folgen": [
-        10,
-        16
-      ]
-    },
-    {
       "name": "Philip Westermeyer",
       "folgen": [
         10,
@@ -1185,6 +1231,13 @@
       "folgen": [
         12,
         47
+      ]
+    },
+    {
+      "name": "Andreas Bourani",
+      "folgen": [
+        12,
+        53
       ]
     },
     {
@@ -1363,13 +1416,6 @@
       ]
     },
     {
-      "name": "Josi Miller",
-      "folgen": [
-        20,
-        39
-      ]
-    },
-    {
       "name": "Lewis Hamilton",
       "folgen": [
         20,
@@ -1381,6 +1427,13 @@
       "folgen": [
         20,
         43
+      ]
+    },
+    {
+      "name": "Nico Santos",
+      "folgen": [
+        20,
+        53
       ]
     },
     {
@@ -1517,13 +1570,6 @@
       ]
     },
     {
-      "name": "Kim Jong Un",
-      "folgen": [
-        25,
-        45
-      ]
-    },
-    {
       "name": "Logan Paul",
       "folgen": [
         26,
@@ -1535,6 +1581,13 @@
       "folgen": [
         27,
         33
+      ]
+    },
+    {
+      "name": "Diddy",
+      "folgen": [
+        27,
+        53
       ]
     },
     {
@@ -1692,13 +1745,6 @@
       ]
     },
     {
-      "name": "Bill und Tom Kaulitz",
-      "folgen": [
-        40,
-        42
-      ]
-    },
-    {
       "name": "Bones",
       "folgen": [
         41,
@@ -1780,6 +1826,20 @@
       "folgen": [
         48,
         50
+      ]
+    },
+    {
+      "name": "Benny Blanco",
+      "folgen": [
+        50,
+        53
+      ]
+    },
+    {
+      "name": "Philip Schwer",
+      "folgen": [
+        52,
+        53
       ]
     },
     {
@@ -2042,12 +2102,6 @@
     },
     {
       "name": "Bruno (Intimate)",
-      "folgen": [
-        5
-      ]
-    },
-    {
-      "name": "Robbie Williams",
       "folgen": [
         5
       ]
@@ -2456,12 +2510,6 @@
     },
     {
       "name": "Markus Lanz (implizit)",
-      "folgen": [
-        12
-      ]
-    },
-    {
-      "name": "Andreas Bourani",
       "folgen": [
         12
       ]
@@ -3205,12 +3253,6 @@
       ]
     },
     {
-      "name": "Nico Santos",
-      "folgen": [
-        20
-      ]
-    },
-    {
       "name": "Doki (Produzent Nina Chuba)",
       "folgen": [
         20
@@ -3932,12 +3974,6 @@
     },
     {
       "name": "Kate Winslet",
-      "folgen": [
-        27
-      ]
-    },
-    {
-      "name": "Diddy",
       "folgen": [
         27
       ]
@@ -6259,12 +6295,6 @@
       ]
     },
     {
-      "name": "Benny Blanco",
-      "folgen": [
-        50
-      ]
-    },
-    {
       "name": "Kanye West (Ye)",
       "folgen": [
         50
@@ -6487,12 +6517,6 @@
       ]
     },
     {
-      "name": "Philip Schwer",
-      "folgen": [
-        52
-      ]
-    },
-    {
       "name": "Aaron Truschke",
       "folgen": [
         52
@@ -6502,6 +6526,36 @@
       "name": "Dieter Bohlen",
       "folgen": [
         52
+      ]
+    },
+    {
+      "name": "Felix Kummer",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Paul Rippke",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Jan Josef Liefers",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Scooter Braun",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Notorious B.I.G.",
+      "folgen": [
+        53
       ]
     }
   ]

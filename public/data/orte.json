@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 298,
+  "updatedAt": "2026-06-30T08:11:13.711Z",
+  "count": 304,
   "items": [
     {
       "ort": "Berlin",
@@ -1872,6 +1872,42 @@
       "ort": "Klimansland / Fynns Hof (Rohrbedarf)",
       "folgen": [
         52
+      ]
+    },
+    {
+      "ort": "Berlin, Tribe Management Buero (Aufnahmeort, goldene Lena-Meyer-Landrut-Schallplatte)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Nordstrand / Nordsee (Fynns Ferienwohnung, Ausgangspunkt der Startup-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Mond (Ziel der geplanten Atomsprengung und des fiktiven Grundstücksverkaufs)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Nordkorea (erster 'Atompartnerpakt'-Unterzeichner)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "USA (Trumps UFC-Kuppel zum 250-jaehrigen Jubilaeum)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Sittensen / Haus Irmgard Studio (Nina-Chuba-Entdeckung)",
+      "folgen": [
+        53
       ]
     }
   ]
