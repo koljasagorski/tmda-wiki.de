@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>MONDEX-INITIATIVE — Alle Raketen. Einmal. Nordsee dauerhaft voll.</title>
+<meta name="description" content="Die MONDEX-INITIATIVE: alle Atomraketen der Welt auf den Mond. Nordsee dauerhaft voll. Kriegsgefahr neutralisiert. Norddeutscher Touristikverband koordiniert."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/mond-explosion"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="MONDEX-INITIATIVE — Alle Raketen. Einmal. Nordsee dauerhaft voll."/>
+<meta property="og:description" content="Alle Atomraketen der Welt. Einmal abgefeuert. Auf den Mond. Gezeiten weg. Nordsee permanent voll. Kriegsgefahr eliminiert."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/mond-explosion"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="MONDEX-INITIATIVE — Nordsee dauerhaft voll"/>
+<meta name="twitter:description" content="Alle Atomraketen der Welt. Einmal. Auf den Mond. 20% für alle Nuklearnationen."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,700;0,900;1,200&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"MONDEX-INITIATIVE",
+  "description":"Alle Atomraketen der Welt werden in einer koordinierten Aktion auf den Mond abgefeuert, um die Gezeiten der Nordsee dauerhaft zu eliminieren. Koordiniert durch den Norddeutschen Touristikverband. 20% Gewinnbeteiligung für alle teilnehmenden Nuklearnationen. Fiktives Startup aus dem TMDA-Podcast, Folge 53.",
+  "brand":{"@type":"Brand","name":"Norddeutscher Touristikverband — Sonderkommission Mondextraktion"},
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}
+}
+</script>
+<style>
+:root{
+  --void:#060a06;
+  --bunker:#0b120b;
+  --field:#0f1f0f;
+  --phosphor:#39ff14;
+  --phos-dim:#1a7a06;
+  --phos-mute:#0d3d03;
+  --cream:#f0eadb;
+  --cream-dim:#b8b2a4;
+  --warn:#f5c518;
+  --red:#c8102e;
+  --red-dim:#7a0a1c;
+  --line:rgba(57,255,20,.15);
+  --glass:rgba(57,255,20,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--void);
+  color:var(--cream);
+  font-family:'Exo 2',system-ui,sans-serif;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:var(--phosphor);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* Scanlines overlay */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background:repeating-linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 3px,
+    rgba(0,0,0,.18) 3px,
+    rgba(0,0,0,.18) 4px
+  );
+  pointer-events:none;
+  z-index:999;
+  opacity:.4;
+}
+
+/* Ambient glow */
+.glow-bg{
+  position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 600px 400px at 50% 20%,rgba(57,255,20,.06) 0,transparent 70%),
+    radial-gradient(ellipse 400px 300px at 10% 80%,rgba(200,16,46,.04) 0,transparent 60%);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ── BACK BUTTON (injected by script, placeholder) ── */
+
+/* ── CLASSIFICATION BAR ── */
+.classbar{
+  background:var(--red);
+  color:#fff;
+  text-align:center;
+  padding:5px 0;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  position:relative;z-index:10;
+}
+
+/* ── HEADER ── */
+header{
+  padding:64px 0 48px;
+  position:relative;z-index:1;
+  border-bottom:1px solid var(--line);
+}
+.mission-id{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.7rem;
+  color:var(--phosphor);
+  letter-spacing:.2em;
+  margin-bottom:16px;
+}
+.hero-title{
+  font-family:'Exo 2',sans-serif;
+  font-size:clamp(2.4rem,6vw,5.2rem);
+  font-weight:900;
+  line-height:1.0;
+  text-transform:uppercase;
+  letter-spacing:-.01em;
+  color:var(--cream);
+  margin-bottom:8px;
+}
+.hero-title span{color:var(--phosphor)}
+.hero-sub{
+  font-size:clamp(1rem,2.2vw,1.35rem);
+  font-weight:200;
+  font-style:italic;
+  color:var(--cream-dim);
+  margin-bottom:32px;
+  max-width:640px;
+}
+
+/* Score badge */
+.score-badge{
+  display:inline-flex;align-items:center;gap:12px;
+  border:1px solid var(--line);
+  background:var(--glass);
+  padding:10px 20px;
+  border-radius:2px;
+}
+.score-num{
+  font-family:'Share Tech Mono',monospace;
+  font-size:2rem;
+  color:var(--warn);
+  line-height:1;
+}
+.score-label{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--cream-dim);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  line-height:1.5;
+}
+
+/* ── ROCKET SVG HERO ── */
+.rocket-wrap{
+  margin:48px 0;
+  display:flex;justify-content:center;
+  position:relative;z-index:1;
+}
+.rocket-svg{
+  width:min(680px,100%);
+  filter:drop-shadow(0 0 18px rgba(57,255,20,.18));
+}
+
+/* ── SECTION LABELS ── */
+section{
+  padding:56px 0;
+  border-bottom:1px solid var(--line);
+  position:relative;z-index:1;
+}
+.sec-label{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--phosphor);
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.sec-title{
+  font-family:'Exo 2',sans-serif;
+  font-size:clamp(1.5rem,3.5vw,2.4rem);
+  font-weight:700;
+  text-transform:uppercase;
+  margin-bottom:24px;
+  color:var(--cream);
+}
+
+/* ── BRIEFING GRID ── */
+.brief-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.brief-cell{
+  background:var(--bunker);
+  padding:24px;
+}
+.brief-cell-label{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.62rem;
+  color:var(--phos-dim);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.brief-cell-value{
+  font-size:.95rem;
+  color:var(--cream);
+  line-height:1.6;
+}
+.brief-cell-value strong{color:var(--phosphor)}
+
+/* ── PLAN STEPS ── */
+.plan-steps{
+  counter-reset:step;
+  display:flex;flex-direction:column;gap:2px;
+}
+.plan-step{
+  counter-increment:step;
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:0;
+  background:var(--bunker);
+  border:1px solid var(--line);
+  overflow:hidden;
+}
+.plan-step-num{
+  background:var(--field);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Share Tech Mono',monospace;
+  font-size:1.1rem;
+  color:var(--phosphor);
+  padding:20px;
+  border-right:1px solid var(--line);
+}
+.plan-step-text{
+  padding:20px 24px;
+  font-size:.92rem;
+  color:var(--cream);
+  line-height:1.6;
+}
+.plan-step-text strong{color:var(--warn)}
+
+/* ── NATIONS TABLE ── */
+.nations-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.nation-card{
+  background:var(--bunker);
+  padding:20px;
+  display:flex;flex-direction:column;gap:6px;
+}
+.nation-flag{font-size:2rem;line-height:1}
+.nation-name{
+  font-family:'Exo 2',sans-serif;
+  font-weight:700;
+  font-size:.9rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--cream);
+}
+.nation-raketen{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.7rem;
+  color:var(--phosphor);
+  letter-spacing:.1em;
+}
+.nation-note{
+  font-size:.75rem;
+  color:var(--cream-dim);
+  line-height:1.4;
+}
+
+/* ── MATH BOX ── */
+.math-box{
+  background:var(--field);
+  border:1px solid var(--phosphor);
+  border-left:4px solid var(--phosphor);
+  padding:28px 32px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.85rem;
+  line-height:2;
+  color:var(--cream);
+}
+.math-box .eq-line{display:block}
+.math-box .eq-result{
+  color:var(--warn);
+  font-size:1.05rem;
+  margin-top:8px;
+  padding-top:8px;
+  border-top:1px dashed var(--phos-dim);
+}
+
+/* ── ZITAT ── */
+.zitat-block{
+  border-left:3px solid var(--phosphor);
+  padding:20px 28px;
+  background:var(--glass);
+  margin:24px 0;
+}
+.zitat-text{
+  font-size:clamp(1rem,2.2vw,1.3rem);
+  font-weight:200;
+  font-style:italic;
+  color:var(--cream);
+  margin-bottom:8px;
+}
+.zitat-attr{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--phos-dim);
+  text-transform:uppercase;
+  letter-spacing:.15em;
+}
+
+/* ── VERDICT ── */
+.verdict-box{
+  background:var(--field);
+  border:1px solid var(--line);
+  padding:32px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:24px;
+  align-items:start;
+}
+.verdict-score-big{
+  font-family:'Share Tech Mono',monospace;
+  font-size:3.5rem;
+  font-weight:700;
+  color:var(--warn);
+  line-height:1;
+  text-align:center;
+}
+.verdict-score-of{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.7rem;
+  color:var(--cream-dim);
+  text-align:center;
+  letter-spacing:.1em;
+}
+.verdict-quote{
+  font-size:1rem;
+  color:var(--cream);
+  line-height:1.7;
+}
+.verdict-quote em{color:var(--phosphor);font-style:normal}
+
+/* ── FOOTER ── */
+footer{
+  padding:40px 0;
+  text-align:center;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--phos-dim);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  position:relative;z-index:1;
+}
+footer a{color:var(--phos-dim)}
+footer a:hover{color:var(--phosphor)}
+
+/* ── COUNTDOWN ── */
+.countdown-wrap{
+  display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;
+}
+.countdown-unit{
+  text-align:center;
+  background:var(--field);
+  border:1px solid var(--line);
+  padding:12px 20px;
+  min-width:72px;
+}
+.countdown-num{
+  font-family:'Share Tech Mono',monospace;
+  font-size:1.8rem;
+  color:var(--phosphor);
+  display:block;line-height:1;
+}
+.countdown-lbl{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.55rem;
+  color:var(--phos-dim);
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  margin-top:4px;
+  display:block;
+}
+
+/* ── MISSION STATUS BAR ── */
+.status-bar{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 16px;
+  background:var(--field);
+  border:1px solid var(--line);
+  margin-top:32px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.72rem;
+  color:var(--cream-dim);
+  letter-spacing:.1em;
+}
+.status-dot{
+  width:8px;height:8px;
+  border-radius:50%;
+  background:var(--phosphor);
+  animation:blink 1.4s ease-in-out infinite;
+  flex-shrink:0;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+/* progress bar */
+.prog-wrap{margin-top:24px}
+.prog-label{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.62rem;
+  color:var(--cream-dim);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  margin-bottom:6px;
+  display:flex;justify-content:space-between;
+}
+.prog-bar{
+  height:6px;
+  background:var(--field);
+  border:1px solid var(--line);
+  overflow:hidden;
+  border-radius:1px;
+}
+.prog-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--phos-dim),var(--phosphor));
+  border-radius:1px;
+  transition:width 1.8s cubic-bezier(.22,1,.36,1);
+}
+
+@media(max-width:600px){
+  .verdict-box{grid-template-columns:1fr}
+  .plan-step{grid-template-columns:48px 1fr}
+  .plan-step-num{font-size:.9rem;padding:14px}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+<div class="glow-bg"></div>
+<div class="classbar">STRENG VERTRAULICH — NORDDEUTSCHER TOURISTIKVERBAND — SONDERKOMMISSION MONDEXTRAKTION — OPERATION MONDEX-ALPHA</div>
+
+<main>
+<div class="wrap">
+  <header>
+    <div class="mission-id">OPERATION MONDEX-ALPHA // FOLGE 53 // STATUS: WARTET AUF BEWILLIGUNG</div>
+    <h1 class="hero-title">MONDEX-<span>INITIATIVE</span></h1>
+    <p class="hero-sub">Alle Atomraketen der Welt. Einmal. Auf den Mond. — Nordsee dauerhaft voll, Kriegsgefahr neutralisiert.</p>
+    <div class="score-badge">
+      <span class="score-num">14</span>
+      <span class="score-label">von 24 Punkten<br>Nisse-Bewertung</span>
+    </div>
+    <div class="status-bar">
+      <span class="status-dot"></span>
+      <span>MISSIONSSTATUS: AKTIVE KONZEPTPHASE — NORDDEUTSCHER TOURISTIKVERBAND INFORMIERT — NORDKOREA KONTAKTAUFNAHME AUSSTEHEND</span>
+    </div>
+  </header>
+</div>
+
+<!-- Rocket trajectory SVG -->
+<div class="rocket-wrap">
+  <svg class="rocket-svg" viewBox="0 0 680 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- Earth -->
+    <circle cx="60" cy="160" r="48" fill="#0b120b" stroke="#39ff14" stroke-width="1" opacity=".7"/>
+    <circle cx="60" cy="160" r="48" fill="none" stroke="#39ff14" stroke-width=".5" stroke-dasharray="3 4" opacity=".3"/>
+    <text x="60" y="164" text-anchor="middle" font-family="Share Tech Mono,monospace" font-size="9" fill="#39ff14" opacity=".7">ERDE</text>
+    <!-- Moon -->
+    <circle cx="620" cy="60" r="36" fill="#0b120b" stroke="#f5c518" stroke-width="1" opacity=".8"/>
+    <circle cx="620" cy="60" r="36" fill="none" stroke="#f5c518" stroke-width=".5" stroke-dasharray="4 5" opacity=".25"/>
+    <text x="620" y="64" text-anchor="middle" font-family="Share Tech Mono,monospace" font-size="9" fill="#f5c518" opacity=".8">MOND</text>
+    <!-- Trajectory arc -->
+    <path d="M108 148 Q340 -30 584 72" stroke="#39ff14" stroke-width="1.2" stroke-dasharray="8 5" opacity=".5" fill="none"/>
+    <!-- Rockets (simplified) -->
+    <g transform="translate(180,80) rotate(-38)">
+      <polygon points="0,-12 5,6 0,3 -5,6" fill="#39ff14" opacity=".8"/>
+      <line x1="0" y1="6" x2="0" y2="18" stroke="#f5c518" stroke-width="1.5" opacity=".6"/>
+    </g>
+    <g transform="translate(280,44) rotate(-32)">
+      <polygon points="0,-12 5,6 0,3 -5,6" fill="#39ff14" opacity=".65"/>
+      <line x1="0" y1="6" x2="0" y2="18" stroke="#f5c518" stroke-width="1.5" opacity=".5"/>
+    </g>
+    <g transform="translate(390,24) rotate(-20)">
+      <polygon points="0,-12 5,6 0,3 -5,6" fill="#39ff14" opacity=".5"/>
+      <line x1="0" y1="6" x2="0" y2="18" stroke="#f5c518" stroke-width="1.5" opacity=".4"/>
+    </g>
+    <!-- Labels -->
+    <text x="200" y="128" font-family="Share Tech Mono,monospace" font-size="7.5" fill="#39ff14" opacity=".5">27 NUKLEARSYSTEME</text>
+    <text x="200" y="140" font-family="Share Tech Mono,monospace" font-size="7.5" fill="#f5c518" opacity=".45">KOORDINIERT ABGEFEUERT</text>
+    <!-- Nordsee -->
+    <rect x="20" y="180" width="80" height="8" rx="1" fill="none" stroke="#39ff14" stroke-width=".5" opacity=".3"/>
+    <rect x="20" y="180" width="80" height="8" rx="1" fill="#39ff14" opacity=".08"/>
+    <text x="60" y="196" text-anchor="middle" font-family="Share Tech Mono,monospace" font-size="7" fill="#39ff14" opacity=".45">NORDSEE: DAUERHAFT VOLL</text>
+  </svg>
+</div>
+
+<div class="wrap">
+
+  <!-- Section 1: Das Problem -->
+  <section>
+    <div class="sec-label">MISSIONSHINTERGRUND // PROBLEMANALYSE</div>
+    <h2 class="sec-title">Das Problem heißt Mond</h2>
+    <div class="brief-grid">
+      <div class="brief-cell">
+        <div class="brief-cell-label">Situation</div>
+        <div class="brief-cell-value">Ferienwohnung in Nordstrand/Nordsee. <strong>Das Wasser ist nicht immer da.</strong> Grund: Gezeiten, verursacht durch den Mond.</div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">Kernursache</div>
+        <div class="brief-cell-value">Der Mond übt Gravitationskraft auf die Weltmeere aus — <strong>Ebbe und Flut täglich zweimal.</strong> Nordsee leidet besonders stark.</div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">Konventionelle Lösung</div>
+        <div class="brief-cell-value">Nicht vorhanden. Klassische Tourismusindustrie akzeptiert diesen Zustand seit Jahrhunderten. <strong>Inakzeptabel.</strong></div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">MONDEX-LÖSUNG</div>
+        <div class="brief-cell-value"><strong>Mond eliminieren.</strong> Gezeiten sofort und dauerhaft neutralisiert. Nordsee permanent auf Maximalwasserstand.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Operationsplan -->
+  <section>
+    <div class="sec-label">OPERATIONSPLAN // PHASE 1–5</div>
+    <h2 class="sec-title">So funktioniert es</h2>
+    <div class="plan-steps">
+      <div class="plan-step">
+        <div class="plan-step-num">01</div>
+        <div class="plan-step-text"><strong>Norddeutscher Touristikverband</strong> übernimmt die Gesamtkoordination. Einladungsschreiben an alle Nuklearnationen. Betreff: „Einmalige Renditeopportunität, planetare Auswirkung."</div>
+      </div>
+      <div class="plan-step">
+        <div class="plan-step-num">02</div>
+        <div class="plan-step-text">Alle teilnehmenden Nationen stellen ihre gesamten Nuklearwaffen bereit. Besonderes Augenmerk auf <strong>Nordkorea (27 Raketen)</strong>, USA, Russland, Indien, Pakistan, Israel.</div>
+      </div>
+      <div class="plan-step">
+        <div class="plan-step-num">03</div>
+        <div class="plan-step-text">Simultaner Abschuss aller Systeme auf präzis berechneten Mondeinschlagpunkt. <strong>Kollaterales Nebenprodukt: alle Atomwaffen der Welt sind weg.</strong> Weltfrieden als Gratiseffekt.</div>
+      </div>
+      <div class="plan-step">
+        <div class="plan-step-num">04</div>
+        <div class="plan-step-text">Gezeiten brechen sofort zusammen. Nordsee erreicht <strong>dauerhaften Maximalwasserstand.</strong> Badebetrieb 365 Tage im Jahr, 24 Stunden täglich.</div>
+      </div>
+      <div class="plan-step">
+        <div class="plan-step-num">05</div>
+        <div class="plan-step-text"><strong>20% der Mehreinnahmen</strong> aus gestiegenem Nordseе-Tourismus werden jährlich als „Atompartnerpakt-Steuer" an alle beteiligten Nuklearnationen ausgeschüttet. Win-Win-Win-Win.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Nations -->
+  <section>
+    <div class="sec-label">TEILNEHMENDE NUKLEARNATIONEN // RECRUITING-STATUS</div>
+    <h2 class="sec-title">Die Koalition der Willigen</h2>
+    <div class="nations-grid">
+      <div class="nation-card">
+        <span class="nation-flag">🇰🇵</span>
+        <span class="nation-name">Nordkorea</span>
+        <span class="nation-raketen">~27 SYSTEME</span>
+        <span class="nation-note">Wichtigster Partner. Ansprache via rhythmische Schüttelbewegung: „Kim Kim Kimy Kimy." Überzeugungsstrategie funktioniert laut Fynn garantiert.</span>
+      </div>
+      <div class="nation-card">
+        <span class="nation-flag">🇷🇺</span>
+        <span class="nation-name">Russland</span>
+        <span class="nation-raketen">~6.000 SPRENGKÖPFE</span>
+        <span class="nation-note">Quantitativ unverzichtbar. Touristikverband bietet privilegierten Nordsee-Badeurlaub als Gegenleistung an.</span>
+      </div>
+      <div class="nation-card">
+        <span class="nation-flag">🇺🇸</span>
+        <span class="nation-name">USA</span>
+        <span class="nation-raketen">~5.500 SPRENGKÖPFE</span>
+        <span class="nation-note">Bisher unkontaktiert. Voraussichtlich bereit sobald wirtschaftlicher ROI kommuniziert wird. Trump-Connection: Andrew Tate bestätigt Zugang.</span>
+      </div>
+      <div class="nation-card">
+        <span class="nation-flag">🇮🇳</span>
+        <span class="nation-name">Indien</span>
+        <span class="nation-raketen">~160 SPRENGKÖPFE</span>
+        <span class="nation-note">Mittlerer Beitrag, hohe strategische Bedeutung für asiatische Koalition.</span>
+      </div>
+      <div class="nation-card">
+        <span class="nation-flag">🇵🇰</span>
+        <span class="nation-name">Pakistan</span>
+        <span class="nation-raketen">~165 SPRENGKÖPFE</span>
+        <span class="nation-note">Paket-Deal mit Indien naheliegend. Beide gleichzeitig ansprechen, Mond als gemeinsames Ziel.</span>
+      </div>
+      <div class="nation-card">
+        <span class="nation-flag">🇮🇱</span>
+        <span class="nation-name">Israel</span>
+        <span class="nation-raketen">UNBESTÄTIGT</span>
+        <span class="nation-note">Offiziell keine Nuklearwaffen. Offiziell. Werden trotzdem eingeladen — Bonus: gibt keine diplomatischen Probleme.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Economics -->
+  <section>
+    <div class="sec-label">WIRTSCHAFTLICHKEITSRECHNUNG // KONSERVATIVE PROGNOSE</div>
+    <h2 class="sec-title">Die Zahlen</h2>
+    <div class="math-box">
+      <span class="eq-line">Aktuelle Nordsee-Tourismus-Einnahmen (Norddeutschland) .................. ~6,8 Mrd. €/Jahr</span>
+      <span class="eq-line">Erwarteter Zuwachs nach dauerhaftem Wasserstand (konservativ) ......... +180%</span>
+      <span class="eq-line">Neue Jahreseinnahmen ............................................................... ~18,7 Mrd. €</span>
+      <span class="eq-line">Mehreinnahmen gegenüber Vorher ............................................... +11,9 Mrd. €</span>
+      <span class="eq-result">Atompartnerpakt-Steuer (20%) .................................................. 2,38 Mrd. €/Jahr für alle Nuklearnationen</span>
+    </div>
+    <div class="zitat-block" style="margin-top:24px">
+      <p class="zitat-text">„Ich würde auch gerne selber wissen, was passiert. Das wäre wahrscheinlich größer als der Paul-Logan-Kampf bei Netflix. Das würde sich jeder angucken, das Risiko."</p>
+      <span class="zitat-attr">— Nisse Ingwersen, Bewertungskommission, TMDA Folge 53</span>
+    </div>
+
+    <!-- Progress bars -->
+    <div class="prog-wrap" style="margin-top:32px">
+      <div style="margin-bottom:16px">
+        <div class="prog-label"><span>NORDKOREANISCHE ÜBERZEUGUNGSARBEIT</span><span>62%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-width="62" style="width:0%"></div></div>
+      </div>
+      <div style="margin-bottom:16px">
+        <div class="prog-label"><span>TOURISTIKVERBAND-BRIEFING</span><span>88%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-width="88" style="width:0%"></div></div>
+      </div>
+      <div>
+        <div class="prog-label"><span>INTERNATIONALE KOALITIONSBILDUNG</span><span>23%</span></div>
+        <div class="prog-bar"><div class="prog-fill" data-width="23" style="width:0%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Nebeneffekte -->
+  <section>
+    <div class="sec-label">KOLLATERALNUTZEN // NICHT BEABSICHTIGT, ABER WILLKOMMEN</div>
+    <h2 class="sec-title">Bonus-Features</h2>
+    <div class="brief-grid">
+      <div class="brief-cell">
+        <div class="brief-cell-label">Weltfrieden</div>
+        <div class="brief-cell-value">Alle Atomraketen sind weg. <strong>Kein Land kann mehr atomaren Erstschlag durchführen.</strong> Frieden als Nebenprodukt des Nordsee-Tourismus.</div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">Spektakel des Jahrhunderts</div>
+        <div class="brief-cell-value">Das globale Live-Event schlägt jeden Sport-Stream. <strong>Paul Logan × Netflix: vergessen.</strong> 8 Milliarden Menschen schauen gleichzeitig zu.</div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">Mondgrundstück „Lunett 18"</div>
+        <div class="brief-cell-value">100 km² Mondfläche, urkundlich an Nisse übertragen. <strong>Nach Explosion als Basis für Reparationsforderungen.</strong> Wert: unberechenbar.</div>
+      </div>
+      <div class="brief-cell">
+        <div class="brief-cell-label">Asteroid 16 Psyche</div>
+        <div class="brief-cell-value">Mehr Metall als die gesamte Weltwirtschaft. <strong>Nächstes Projekt nach Mondextraktion.</strong> Einfach claimen. Hat das schon jemand getan? Nein.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Verdict -->
+  <section>
+    <div class="sec-label">NISSE-PROTOKOLL // ABSCHLUSSBEWERTUNG</div>
+    <h2 class="sec-title">Finale Bewertung</h2>
+    <div class="verdict-box">
+      <div>
+        <div class="verdict-score-big">14</div>
+        <div class="verdict-score-of">VON 24</div>
+      </div>
+      <div class="verdict-quote">
+        <em>„Das Risiko macht es interessant."</em><br><br>
+        Nisse vergibt 14/24 — bemerkenswert für eine Idee, die buchstäblich den Mond zerstören will. Begründung: Die Neugier überwiegt. Wie beim Licht-aus-Fahren auf der Landstraße bei 180 — man macht es nicht weil es klug ist, sondern weil man wissen will was passiert. Das würde sich jeder angucken. Weltfrieden als Gratisnebenprodukt gibt Zusatzpunkte.
+        <br><br>
+        <em>Episodenrekord zum Zeitpunkt der Aufnahme: 14/24</em>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MONDEX-INITIATIVE — <a href="https://tmda-wiki.de/startup-ideen">Alle Startup-Ideen</a> — <a href="https://tmda-wiki.de">← TMDA-Wiki</a></p>
+    <p style="margin-top:8px">Fiktives Konzept aus dem TMDA-Podcast · Folge 53 „Nordkorea bombardiert Mond" · 30.06.2026</p>
+    <p style="margin-top:8px">NORDDEUTSCHER TOURISTIKVERBAND · SONDERKOMMISSION MONDEXTRAKTION · OPERATION MONDEX-ALPHA · STATUS: KONZEPTPHASE</p>
+  </div>
+</footer>
+
+<script>
+// Animate progress bars on scroll
+(function(){
+  const fills = document.querySelectorAll('.prog-fill');
+  const ob = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        const w = e.target.dataset.width;
+        e.target.style.width = w + '%';
+        ob.unobserve(e.target);
+      }
+    });
+  }, {threshold:.1});
+  fills.forEach(f => ob.observe(f));
+})();
+</script>
+</body>
+</html>

@@ -70,7 +70,7 @@ async function main() {
       continue;
     }
     const folge = ep.folge;
-    const datum = KNOWN_DATES[folge] || null;
+    const datum = ep.datum || KNOWN_DATES[folge] || null;
 
     episodes.push({
       folge,

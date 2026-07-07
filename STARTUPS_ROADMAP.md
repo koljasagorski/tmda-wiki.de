@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 49/49 LIVE ✅
+## Status — 51/51 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-52 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-54 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -69,6 +69,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 14/24
 
+- [x] **MONDEX-INITIATIVE — Nordkorea bombardiert Mond** · Folge 53 · Cold War Space Race / Military Mission Briefing (Exo 2 + Share Tech Mono, Militär-Olivgrün/Phosphor-Grün/Warn-Gelb, Scanlines, animierte Progress-Bars)
 - [x] **Zero You Go** · Folge 37 · bathroom-hygiene pastel (Outfit + soap-green)
 - [x] **Hör auf — Habit Detector** · Folge 3 · health-app dark green (Plus Jakarta + neon)
 
@@ -91,6 +92,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### < 10 — Spaß-/Low-Score- & ungewertete Ideen (neu)
 
+- [x] **Der Glasower** · Folge 54 · 8/24 · Japanese ultra-minimalist glass architecture (Syncopate + Zen Kaku Gothic New, Weiß/Charcoal/Glass-Blau, Blueprint-Raster, animierter Fahrstuhl)
 - [x] **Die AOK-Biegung** · Folge 52 · 3/24 · DDR-Planwirtschaft Propaganda Poster / Konstruktivismus (Oswald + Source Serif 4, Rot/Beige/Stahl, Constructivist diagonal stripes)
 - [x] **AQUAVION — wassergelagertes Flugzeug** · Folge 51 · 7/24 · aqua flotation / zero-gravity wellness (Sora + Hanken Grotesk, Spa-Türkis/Glas-Doppelwand, schwebende Partikel, Schneekugel-Motiv)
 - [x] **Ad Music / Add Music** · Folge 6 · 9/24 · music-streaming neon (Equalizer/Waveform, cyan)

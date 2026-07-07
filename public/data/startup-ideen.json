@@ -1,10 +1,28 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 49,
+  "updatedAt": "2026-07-07T06:11:19.158Z",
+  "count": 51,
   "items": [
     {
+      "folge": 54,
+      "datum": "2026-07-07",
+      "idee": "Der Glasower",
+      "beschreibung": "Fynn konzipiert ein ultralanges, ultraschmales, extrem hohes Gebäude - nur 2 Meter breit, mehrere Kilometer lang, Hunderte Stockwerke hoch. Jede Einheit besteht ausschließlich aus einer bodentiefen Glasfront (kein Wohn-, kein Schlafzimmer - nur Glas). Der Fahrstuhl fährt als Art U-Bahn durch die gesamte Länge und hat auf jedem Stockwerk eine Tür, die direkt in die jeweilige Einheit führt. Toilett…",
+      "punkte": 8,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Das ist realistisch geworden. Das ist das Problem.' Vergabe unter 14/24: 'Alles unter 14 ist nichts. Da hast du wieder versagt.' - die Idee startete groß (Kontinente überspannendes Glasdreieck) und wurde durch Nissessche Realitätsc…"
+    },
+    {
+      "folge": 53,
+      "datum": "2026-06-30",
+      "idee": "Nordkorea bombardiert den Mond",
+      "beschreibung": "Fynn besitzt eine Ferienwohnung in Nordstrand an der Nordsee - das Problem: das Wasser ist wegen der Gezeiten (verursacht durch den Mond) nicht immer da. Lösung: alle Atomraketen der Welt einsammeln und auf den Mond schießen. Der norddeutsche Touristikverband organisiert die Aktion; alle teilnehmenden Nuklearnationen (Nordkorea, USA, Russland, Iran, Indien) erhalten 20 % der gestiegenen Tourismus…",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt 14/24: 'Weil ich würde auch gerne selber wissen, was passiert. Das wäre wahrscheinlich größer als der Paul-Logan-Kampf bei Netflix. Das würde sich jeder angucken, das Risiko.' Vergleich: wie mit Licht aus bei 180 km/h auf der…"
+    },
+    {
       "folge": 52,
-      "datum": null,
+      "datum": "2026-06-23",
       "idee": "Die AOK-Biegung",
       "beschreibung": "Jeder Deutsche bekommt morgens ein Metallrohr, das er biegen muss - als Pflicht-Gesundheitscheck und wirtschaftliche Rohstoffgewinnung in einem. Das Rohr haengt sozusagen vom Schuh bis zum Kopf; man beugt sich so weit wie moeglich nach unten. Die AOK schickt um 11 Uhr die Muellabfuhr-Infrastruktur (die sowieso schon faehrt) los und sammelt alle Rohre ein. Wer bis 11 Uhr nicht gebogen hat, ist ein…",
       "punkte": 3,

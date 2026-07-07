@@ -1,7 +1,47 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 234,
+  "updatedAt": "2026-07-07T06:11:19.158Z",
+  "count": 244,
   "items": [
+    {
+      "folge": 54,
+      "text": "Josef Pilates erfand Pilates im Ersten Weltkrieg im Krankenbett - er lag verletzt in einem Lazarett und entwickelte Übungen, die er dann auch seinen Bettnachbarn beibrachte."
+    },
+    {
+      "folge": 54,
+      "text": "Chamäleonzungen sind etwa doppelt so lang wie ihr Körper."
+    },
+    {
+      "folge": 54,
+      "text": "Eulen haben keine runden Augäpfel, sondern röhrenförmige Augen - sie können ihre Augen deshalb nicht bewegen und müssen den Kopf drehen."
+    },
+    {
+      "folge": 54,
+      "text": "Echte Diamanten sind auf Röntgenbildern nicht sichtbar, weil sie hauptsächlich aus Kohlenstoff bestehen, der Röntgenstrahlen kaum absorbiert."
+    },
+    {
+      "folge": 53,
+      "text": "99 % aller Bananen der Welt sind genetisch identisch - sie werden durch Klonen statt Züchten vermehrt, d.h. ein einziger Pilz könnte die gesamte Weltproduktion auslöschen."
+    },
+    {
+      "folge": 53,
+      "text": "Ein Teelöffel Neutronenstern-Material wiegt Milliarden Tonnen - es ist die dichteste bekannte Materie im Universum."
+    },
+    {
+      "folge": 53,
+      "text": "Augmented-Reality-Technologie existiert als Prototyp bereits seit den 1960er Jahren."
+    },
+    {
+      "folge": 53,
+      "text": "Katzen haben mehr Knochen als Menschen."
+    },
+    {
+      "folge": 53,
+      "text": "In Südkoreas WM-Kader (26 Spieler) gibt es nur 13 verschiedene Nachnamen - allein 6× 'Li' und 5× 'Kim'."
+    },
+    {
+      "folge": 53,
+      "text": "Der Mond entfernt sich jedes Jahr um ca. 3,8 cm von der Erde."
+    },
     {
       "folge": 52,
       "text": "Honig wird niemals schlecht, weil er antibakteriell wirkt."

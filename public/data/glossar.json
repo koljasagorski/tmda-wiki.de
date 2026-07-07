@@ -1,7 +1,12 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 216,
+  "updatedAt": "2026-07-07T06:11:19.158Z",
+  "count": 226,
   "items": [
+    {
+      "begriff": "16 Psyche",
+      "bedeutung": "Asteroid mit mehr Metall als die gesamte Weltwirtschaft - quadrillionen Dollar Wert an Edelmetallen. Fynn möchte ihn claimen.",
+      "folge": 53
+    },
     {
       "begriff": "1F1P",
       "bedeutung": "Eine Folge ein Pullover - Verlosungsaktion bei TMDA",
@@ -63,6 +68,11 @@
       "folge": 43
     },
     {
+      "begriff": "Atompartnerpakt-Steuer",
+      "bedeutung": "20 % der Nordsee-Mehreinnahmen, die jährlich an alle am Mondabschuss beteiligten Nuklearnationen ausgeschüttet werden.",
+      "folge": 53
+    },
+    {
       "begriff": "August da",
       "bedeutung": "Fynns elektronisches Musikprojekt, für das er Videografen sucht",
       "folge": 12
@@ -76,6 +86,11 @@
       "begriff": "Bananenhund",
       "bedeutung": "Form des Zero-You-Go-Geraets - 'Jeff Koons fuer Arme'",
       "folge": 37
+    },
+    {
+      "begriff": "Bandübernahmevertrag",
+      "bedeutung": "Plattenvertrag, bei dem der Künstler ein fertiges Album abliefert; das Label hat weniger Gestaltungsrechte als beim Künstler-Exklusivvertrag.",
+      "folge": 53
     },
     {
       "begriff": "Batman-Effekt",
@@ -338,6 +353,11 @@
       "folge": 7
     },
     {
+      "begriff": "Glasower",
+      "bedeutung": "Fynns Startup: ultradünnes, ultralanges, extrem hohes Gebäude, in dem jede Einheit nur eine bodentiefe Glasfront ist. Toilette befindet sich im Fahrstuhl.",
+      "folge": 54
+    },
+    {
       "begriff": "Halbwertszeit",
       "bedeutung": "Zeit, in der sich radioaktive Strahlung auf die Haelfte reduziert. Hier im Kontext von Tschernobyl thematisiert.",
       "folge": 20
@@ -563,6 +583,11 @@
       "folge": 25
     },
     {
+      "begriff": "Liegu",
+      "bedeutung": "Name für Jana Palaskes Guru-Rolle im Trio mit Blümchen und Palina - Libido-Guru ('sei im Einklang mit deinem Körper').",
+      "folge": 54
+    },
+    {
       "begriff": "Like Mike",
       "bedeutung": "Spitzname eines Typen namens Mike, der das bei sich selbst sagte, wenn er etwas in seinem eigenen Stil tat (Bier exen) - als möglicher Plattform-Name",
       "folge": 10
@@ -576,6 +601,11 @@
       "begriff": "Looki / Ly",
       "bedeutung": "Reales KI-Wearable (looki.ai), das man sich an die Brust klemmt - filmt den ganzen Tag, trackt Habits und Gespraeche. Im Gespraech ausgebaut zum 'romantischen Roboter', der die Beziehung steuert.",
       "folge": 52
+    },
+    {
+      "begriff": "Lunett 18",
+      "bedeutung": "100 Quadratkilometer Mondfläche, von Fynn als Zertifikat an Nisse übergeben - Grundlage zukünftiger Reparationszahlungen nach der Mond-Explosion.",
+      "folge": 53
     },
     {
       "begriff": "Mach deine Scheiße Tag",
@@ -631,6 +661,11 @@
       "begriff": "Murmelmann/Mummel",
       "bedeutung": "Spitzname fuer den Pfefferkoerner-Podcast-Moderator",
       "folge": 40
+    },
+    {
+      "begriff": "Mutter um die Ecke",
+      "bedeutung": "Konzept einer Berliner Bar/Kaffee, die ausschließlich Muttermilch-Produkte verkauft - Latte, Käse, Kekse - mit Spender wie bei McDonald's.",
+      "folge": 54
     },
     {
       "begriff": "N-Maedchen",
@@ -773,6 +808,11 @@
       "folge": 14
     },
     {
+      "begriff": "Recoupment",
+      "bedeutung": "Punkt in einem Plattenvertrag, ab dem alle vorgestrickten Gelder (Vorschuss + Marketingbudget) eingespielt sind - erst dann verdient der Künstler echte Prozente.",
+      "folge": 53
+    },
+    {
       "begriff": "RFs",
       "bedeutung": "Random anonymous Facts von Nisse",
       "folge": 38
@@ -791,6 +831,11 @@
       "begriff": "Rotten.com / World Star Hip Hop",
       "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor).",
       "folge": 47
+    },
+    {
+      "begriff": "RRFs (Random Anonymous Facts)",
+      "bedeutung": "Running Gag: Nisse trägt 'Random Random Facts' am Ende der Folge vor - hier: Chamäleonzunge, Eulen-Augen, Diamanten auf Röntgen.",
+      "folge": 54
     },
     {
       "begriff": "Sakofuckx",
@@ -941,6 +986,11 @@
       "begriff": "The 500",
       "bedeutung": "Finns Fitness-Programm mit 500 Kettlebell-Bewegungen pro Tag",
       "folge": 39
+    },
+    {
+      "begriff": "The Line",
+      "bedeutung": "Das (abgeblasene) Saudi-arabische Mega-Stadtprojekt als Inspiration für Fynns Glasower - Fynn schlägt vor, einfach Dubais bereits halbfertiges Material zu verwenden.",
+      "folge": 54
     },
     {
       "begriff": "Tinklies",

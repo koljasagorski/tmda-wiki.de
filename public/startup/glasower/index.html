@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DER GLASOWER — 2 m breit. Endlos lang. Nur Glasfront.</title>
+<meta name="description" content="DER GLASOWER: 2 Meter breit, mehrere Kilometer lang, hunderte Stockwerke hoch. Jede Einheit ist nur eine bodentiefe Glasfront. Klo im Fahrstuhl. 650 € Kaltmiete."/>
+<link rel="canonical" href="https://tmda-wiki.de/startup/glasower"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="DER GLASOWER — 2 m breit. Endlos lang. Nur Glasfront."/>
+<meta property="og:description" content="Das Wohnkonzept ohne Zimmer — nur Glas, Höhe, Länge. Klo im Fahrstuhl. 650 € Kaltmiete. Inspiriert von The Line in Dubai."/>
+<meta property="og:url" content="https://tmda-wiki.de/startup/glasower"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="DER GLASOWER — nur Glasfront"/>
+<meta name="twitter:description" content="2m breit. Endlos lang. Kein Zimmer. Nur Glas. Klo im Fahrstuhl."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"Der Glasower",
+  "description":"Ein ultralanges, ultraschmales, extrem hohes Glasgebäude. 2 Meter breit, mehrere Kilometer lang, hunderte Stockwerke hoch. Jede Einheit besteht aus einer einzigen bodentiefen Glasfront. Kein Wohnzimmer, kein Schlafzimmer — nur Glas. Der Fahrstuhl fährt als Querverkehr durch die gesamte Länge. Toilette befindet sich im Fahrstuhl. 650 € Kaltmiete. Fiktives Startup-Konzept aus dem TMDA-Podcast, Folge 54.",
+  "brand":{"@type":"Brand","name":"Glasower Entwicklungs GmbH"},
+  "offers":{"@type":"Offer","price":"650","priceCurrency":"EUR","availability":"https://schema.org/PreOrder"}
+}
+</script>
+<style>
+:root{
+  --white:#fcfcfc;
+  --off-white:#f7f6f4;
+  --paper:#eeece8;
+  --line-light:#e0ddd8;
+  --glass-mid:#d5d8dc;
+  --charcoal:#1c1e21;
+  --dark:#2a2d32;
+  --mid:#5a5f6a;
+  --mute:#9097a3;
+  --glass-blue:#7ab3d4;
+  --glass-blue-dim:rgba(122,179,212,.18);
+  --glass-blue-faint:rgba(122,179,212,.07);
+  --accent:#2c5f8a;
+  --line:rgba(28,30,33,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--white);
+  color:var(--charcoal);
+  font-family:'Zen Kaku Gothic New',system-ui,sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+
+/* Blueprint grid overlay */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  background-image:
+    linear-gradient(rgba(122,179,212,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122,179,212,.06) 1px, transparent 1px);
+  background-size:40px 40px;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ── HEADER BAR ── */
+.top-bar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(252,252,252,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line-light);
+  padding:10px 0;
+}
+.top-bar-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;
+}
+.top-logo{
+  font-family:'Syncopate',sans-serif;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--charcoal);
+}
+.top-meta{
+  font-size:.65rem;
+  color:var(--mute);
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+/* ── HERO ── */
+header{
+  padding:80px 0 64px;
+  position:relative;z-index:1;
+}
+.hero-eyebrow{
+  font-size:.7rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--glass-blue);
+  font-family:'Syncopate',sans-serif;
+  margin-bottom:20px;
+}
+.hero-title{
+  font-family:'Syncopate',sans-serif;
+  font-size:clamp(2.8rem,7vw,6rem);
+  font-weight:700;
+  line-height:.95;
+  letter-spacing:-.02em;
+  text-transform:uppercase;
+  color:var(--charcoal);
+  margin-bottom:20px;
+}
+.hero-title .thin{
+  font-weight:400;
+  color:var(--glass-blue);
+  display:block;
+  font-size:.65em;
+  letter-spacing:.12em;
+  margin-bottom:4px;
+}
+.hero-desc{
+  font-size:clamp(1rem,2vw,1.2rem);
+  font-weight:300;
+  color:var(--mid);
+  max-width:560px;
+  margin-bottom:36px;
+  line-height:1.8;
+}
+.hero-spec{
+  display:inline-flex;gap:0;
+  border:1px solid var(--line-light);
+  overflow:hidden;
+  margin-bottom:8px;
+}
+.hero-spec-item{
+  padding:12px 20px;
+  border-right:1px solid var(--line-light);
+  text-align:center;
+  min-width:96px;
+}
+.hero-spec-item:last-child{border-right:none}
+.hero-spec-val{
+  display:block;
+  font-family:'Syncopate',sans-serif;
+  font-size:.9rem;
+  font-weight:700;
+  color:var(--charcoal);
+  line-height:1.1;
+}
+.hero-spec-lbl{
+  display:block;
+  font-size:.58rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--mute);
+  margin-top:4px;
+}
+
+/* ── GLASS TOWER VISUALIZATION ── */
+.tower-vis{
+  margin:56px 0;
+  position:relative;z-index:1;
+  display:flex;
+  gap:32px;
+  align-items:flex-end;
+  overflow:hidden;
+}
+.tower-diagram{
+  flex-shrink:0;
+  position:relative;
+  width:min(340px,100%);
+}
+.tower-labels{
+  flex:1;
+  padding-bottom:20px;
+}
+.tower-label-item{
+  display:flex;align-items:baseline;gap:10px;
+  margin-bottom:10px;
+}
+.tower-label-line{
+  width:24px;height:1px;background:var(--glass-blue);flex-shrink:0;margin-top:2px;
+  opacity:.5;
+}
+.tower-label-text{
+  font-size:.75rem;color:var(--mid);line-height:1.5;font-weight:300;
+}
+.tower-label-text strong{color:var(--charcoal);font-weight:500}
+
+/* ── SECTION ── */
+section{
+  padding:64px 0;
+  border-top:1px solid var(--line-light);
+  position:relative;z-index:1;
+}
+.sec-eyebrow{
+  font-family:'Syncopate',sans-serif;
+  font-size:.6rem;
+  font-weight:400;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  color:var(--glass-blue);
+  margin-bottom:10px;
+}
+.sec-title{
+  font-family:'Syncopate',sans-serif;
+  font-size:clamp(1.1rem,2.8vw,1.7rem);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--charcoal);
+  margin-bottom:32px;
+  line-height:1.2;
+}
+
+/* ── SPECS TABLE ── */
+.specs-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.88rem;
+}
+.specs-table tr{border-bottom:1px solid var(--line-light)}
+.specs-table tr:first-child{border-top:1px solid var(--line-light)}
+.specs-table td{padding:14px 4px}
+.specs-table td:first-child{
+  font-family:'Syncopate',sans-serif;
+  font-size:.58rem;
+  font-weight:400;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--mute);
+  width:200px;
+  padding-right:24px;
+}
+.specs-table td:last-child{color:var(--dark);font-weight:400}
+.specs-table td:last-child strong{color:var(--charcoal);font-weight:700}
+
+/* ── FEATURE CARDS ── */
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1px;
+  background:var(--line-light);
+  border:1px solid var(--line-light);
+  margin-top:8px;
+}
+.feature-card{
+  background:var(--white);
+  padding:28px 24px;
+  position:relative;
+  overflow:hidden;
+}
+.feature-card::before{
+  content:'';
+  position:absolute;top:0;left:0;
+  width:2px;height:100%;
+  background:linear-gradient(180deg,var(--glass-blue) 0,transparent 100%);
+  opacity:.4;
+}
+.feature-num{
+  font-family:'Syncopate',sans-serif;
+  font-size:.58rem;
+  letter-spacing:.2em;
+  color:var(--glass-blue);
+  margin-bottom:12px;
+  display:block;
+}
+.feature-title{
+  font-family:'Syncopate',sans-serif;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--charcoal);
+  margin-bottom:8px;
+}
+.feature-desc{
+  font-size:.82rem;
+  font-weight:300;
+  color:var(--mid);
+  line-height:1.7;
+}
+.feature-desc strong{color:var(--dark);font-weight:500}
+
+/* ── ZITAT ── */
+.zitat-block{
+  border-left:2px solid var(--glass-blue);
+  padding:20px 28px;
+  background:var(--glass-blue-faint);
+  margin:28px 0;
+}
+.zitat-text{
+  font-size:clamp(.95rem,2vw,1.15rem);
+  font-weight:300;
+  font-style:italic;
+  color:var(--dark);
+  margin-bottom:8px;
+  line-height:1.7;
+}
+.zitat-attr{
+  font-family:'Syncopate',sans-serif;
+  font-size:.55rem;
+  color:var(--mute);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+}
+
+/* ── FLOOR PLAN SVG ── */
+.floor-plan-wrap{
+  margin:24px 0;
+  overflow-x:auto;
+}
+
+/* ── PRICING ── */
+.price-box{
+  border:1px solid var(--line-light);
+  padding:36px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:32px;
+  align-items:start;
+  background:var(--off-white);
+}
+.price-num{
+  font-family:'Syncopate',sans-serif;
+  font-size:3rem;
+  font-weight:700;
+  color:var(--charcoal);
+  line-height:1;
+}
+.price-period{
+  font-family:'Syncopate',sans-serif;
+  font-size:.58rem;
+  letter-spacing:.18em;
+  color:var(--mute);
+  text-transform:uppercase;
+  margin-top:4px;
+}
+.price-desc{
+  font-size:.88rem;
+  font-weight:300;
+  color:var(--mid);
+  line-height:1.8;
+}
+.price-desc strong{color:var(--dark);font-weight:500}
+
+/* ── VERDICT ── */
+.verdict{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:24px;
+  align-items:start;
+  padding:32px;
+  border:1px solid var(--line-light);
+  background:var(--off-white);
+}
+.verdict-score{
+  text-align:center;
+}
+.verdict-score-big{
+  font-family:'Syncopate',sans-serif;
+  font-size:3.2rem;
+  font-weight:700;
+  color:var(--charcoal);
+  line-height:1;
+  display:block;
+}
+.verdict-score-of{
+  font-family:'Syncopate',sans-serif;
+  font-size:.55rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--mute);
+  margin-top:4px;
+  display:block;
+}
+.verdict-text{
+  font-size:.9rem;
+  font-weight:300;
+  color:var(--mid);
+  line-height:1.8;
+}
+.verdict-text em{color:var(--charcoal);font-style:normal;font-weight:500}
+
+/* ── FOOTER ── */
+footer{
+  padding:40px 0;
+  border-top:1px solid var(--line-light);
+  text-align:center;
+  font-family:'Syncopate',sans-serif;
+  font-size:.55rem;
+  color:var(--mute);
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  position:relative;z-index:1;
+}
+footer a{color:var(--mute)}
+footer a:hover{color:var(--accent)}
+footer p+p{margin-top:8px}
+
+@media(max-width:640px){
+  .tower-vis{flex-direction:column}
+  .price-box{grid-template-columns:1fr}
+  .verdict{grid-template-columns:1fr}
+  .hero-spec{flex-wrap:wrap}
+  .hero-spec-item{flex:1 1 80px}
+  .specs-table td:first-child{width:130px}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="top-bar">
+  <div class="wrap">
+    <div class="top-bar-inner">
+      <span class="top-logo">Der Glasower</span>
+      <span class="top-meta">Folge 54 · 2026 · Konzept</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<div class="wrap">
+  <header>
+    <div class="hero-eyebrow">Architekturkonzept · TMDA Folge 54</div>
+    <h1 class="hero-title">
+      <span class="thin">Der</span>
+      Glasower
+    </h1>
+    <p class="hero-desc">Ein Gebäude ohne Zimmer. Nur Glas, Höhe und Länge. Jede Einheit ist eine einzige, bodentiefe Glasfront — nichts dahinter. Der Fahrstuhl fährt quer durch das gesamte Gebäude. Das Klo ist im Fahrstuhl.</p>
+    <div class="hero-spec">
+      <div class="hero-spec-item">
+        <span class="hero-spec-val">2 m</span>
+        <span class="hero-spec-lbl">Breite</span>
+      </div>
+      <div class="hero-spec-item">
+        <span class="hero-spec-val">∞</span>
+        <span class="hero-spec-lbl">Länge</span>
+      </div>
+      <div class="hero-spec-item">
+        <span class="hero-spec-val">∞</span>
+        <span class="hero-spec-lbl">Höhe</span>
+      </div>
+      <div class="hero-spec-item">
+        <span class="hero-spec-val">650 €</span>
+        <span class="hero-spec-lbl">Kaltmiete</span>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- Tower visualization -->
+<div class="wrap">
+<div class="tower-vis">
+  <div class="tower-diagram">
+    <svg viewBox="0 0 200 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:200px" aria-hidden="true">
+      <!-- Blueprint grid -->
+      <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(122,179,212,.12)" stroke-width=".5"/>
+        </pattern>
+      </defs>
+      <rect width="200" height="380" fill="url(#grid)"/>
+      <!-- Building outline -->
+      <rect x="88" y="10" width="24" height="340" fill="rgba(122,179,212,.08)" stroke="#7ab3d4" stroke-width="1"/>
+      <!-- Glass floors (horizontal dividers) -->
+      <line x1="88" y1="50" x2="112" y2="50" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="90" x2="112" y2="90" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="130" x2="112" y2="130" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="170" x2="112" y2="170" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="210" x2="112" y2="210" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="250" x2="112" y2="250" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <line x1="88" y1="290" x2="112" y2="290" stroke="rgba(122,179,212,.3)" stroke-width=".5"/>
+      <!-- Dimension arrows -->
+      <!-- Width arrow -->
+      <line x1="88" y1="365" x2="112" y2="365" stroke="#7ab3d4" stroke-width=".8" marker-start="url(#arr)" marker-end="url(#arr)"/>
+      <text x="100" y="377" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#7ab3d4">2 m</text>
+      <!-- Height arrow -->
+      <line x1="76" y1="10" x2="76" y2="350" stroke="#7ab3d4" stroke-width=".8"/>
+      <polygon points="76,10 73,22 79,22" fill="#7ab3d4"/>
+      <polygon points="76,350 73,338 79,338" fill="#7ab3d4"/>
+      <text x="66" y="185" text-anchor="middle" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#7ab3d4" transform="rotate(-90,66,185)">mehrere 100 Etagen</text>
+      <!-- Elevator shaft -->
+      <rect x="93" y="10" width="5" height="340" fill="rgba(122,179,212,.15)" stroke="rgba(122,179,212,.4)" stroke-width=".5"/>
+      <!-- Elevator car -->
+      <rect id="elev" x="93.5" y="80" width="4" height="20" fill="#7ab3d4" opacity=".7" rx=".5"/>
+      <!-- Glass reflection lines inside building -->
+      <line x1="92" y1="10" x2="92" y2="350" stroke="rgba(255,255,255,.5)" stroke-width=".5"/>
+      <line x1="98" y1="10" x2="98" y2="350" stroke="rgba(255,255,255,.2)" stroke-width=".3"/>
+      <!-- Label annotations -->
+      <line x1="112" y1="30" x2="140" y2="30" stroke="rgba(122,179,212,.35)" stroke-width=".6" stroke-dasharray="2 2"/>
+      <text x="143" y="33" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#9097a3">Glasfront</text>
+      <line x1="112" y1="95" x2="140" y2="95" stroke="rgba(122,179,212,.35)" stroke-width=".6" stroke-dasharray="2 2"/>
+      <text x="143" y="98" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#9097a3">Etage</text>
+      <line x1="88" y1="190" x2="60" y2="190" stroke="rgba(122,179,212,.35)" stroke-width=".6" stroke-dasharray="2 2"/>
+      <text x="10" y="193" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#9097a3">Fahrstuhl</text>
+      <line x1="88" y1="320" x2="60" y2="320" stroke="rgba(122,179,212,.35)" stroke-width=".6" stroke-dasharray="2 2"/>
+      <text x="5" y="323" font-family="'Zen Kaku Gothic New',sans-serif" font-size="7" fill="#9097a3">Klo (hier)</text>
+    </svg>
+  </div>
+  <div class="tower-labels">
+    <div class="tower-label-item">
+      <span class="tower-label-line"></span>
+      <span class="tower-label-text"><strong>Glasfront:</strong> Jede Einheit besteht aus einer einzigen, raumhohen Glasscheibe. Kein Wohnzimmer, kein Schlafzimmer — nur Glas und Aussicht.</span>
+    </div>
+    <div class="tower-label-item">
+      <span class="tower-label-line"></span>
+      <span class="tower-label-text"><strong>Fahrstuhl als Nahverkehr:</strong> Fährt horizontal durch die gesamte Gebäudelänge, stoppt an jeder Einheit. Reisezeit je nach Etage: bis zu 40 Minuten.</span>
+    </div>
+    <div class="tower-label-item">
+      <span class="tower-label-line"></span>
+      <span class="tower-label-text"><strong>Sanitärkonzept:</strong> Toilette befindet sich im Fahrstuhl (Loch im Boden, mittelalterliches Schaufelarbeiterprinzip unten). Vollständig in Mietpreis inkludiert.</span>
+    </div>
+    <div class="tower-label-item">
+      <span class="tower-label-line"></span>
+      <span class="tower-label-text"><strong>Inspiration:</strong> The Line (Dubai/Saudi-Arabien) — abgeblasen, Material bereits halb da. Fynn: „Nutzen wir einfach das, was die schon hingestellt haben."</span>
+    </div>
+    <div class="tower-label-item">
+      <span class="tower-label-line"></span>
+      <span class="tower-label-text"><strong>Skalierung:</strong> Ursprünglich als kontinentüberspannendes Dreieck (Tokyo bis Russland) geplant. Auf Empfehlung von Nisse auf 20m × 20m × 2m herunterskaliert.</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="wrap">
+
+  <!-- Section: Das Konzept -->
+  <section>
+    <div class="sec-eyebrow">Konzept · Beschreibung</div>
+    <h2 class="sec-title">Was ist der Glasower?</h2>
+    <p style="font-size:.95rem;font-weight:300;color:var(--mid);line-height:1.8;max-width:680px;margin-bottom:24px">Der Glasower ist ein Gebäude, das konsequent auf alles verzichtet, was ein Gebäude normalerweise ausmacht — Zimmer, Wände, Dächer — und sich stattdessen vollständig auf eine einzige architektonische Essenz konzentriert: die bodentiefe Glasfront.</p>
+    <div class="zitat-block">
+      <p class="zitat-text">„Try this angle. Try to see your life through this angle."</p>
+      <span class="zitat-attr">— Fynn Kliemann, TMDA Folge 54 (inoffizieller Glasower-Slogan)</span>
+    </div>
+    <p style="font-size:.9rem;font-weight:300;color:var(--mid);line-height:1.8;max-width:680px">Jede Einheit ist zwei Meter tief, bodenhoch verglast und öffnet sich direkt zum Fahrstuhlkorridor. Dort wartet der Fahrstuhl — ein Fahrstuhl, der die gesamte Länge des Gebäudes abfährt wie eine Magnetschwebebahn, mit Tür auf jeder Etage, auf jeder Sektion.</p>
+  </section>
+
+  <!-- Section: Technische Daten -->
+  <section>
+    <div class="sec-eyebrow">Technische Spezifikation · Planung</div>
+    <h2 class="sec-title">Kennzahlen</h2>
+    <table class="specs-table">
+      <tr><td>Gebäudebreite</td><td><strong>2 Meter</strong> (unveränderlich)</td></tr>
+      <tr><td>Gebäudelänge</td><td><strong>mehrere Kilometer</strong> (konzeptionell unbegrenzt; realistische Startgröße: 20–50 m)</td></tr>
+      <tr><td>Gebäudehöhe</td><td><strong>hunderte Stockwerke</strong> (Ziel: sichtbar von der ISS)</td></tr>
+      <tr><td>Einheitentiefe</td><td><strong>2 Meter</strong> — identisch mit Gebäudebreite</td></tr>
+      <tr><td>Glasfront</td><td><strong>bodentief, raumhoch</strong> — einzige Innenfläche der Einheit</td></tr>
+      <tr><td>Fahrstuhl</td><td><strong>Längsverkehr</strong> durch das gesamte Gebäude; Halt pro Etage und Sektion</td></tr>
+      <tr><td>Sanitäranlagen</td><td><strong>Im Fahrstuhl</strong> (Loch im Boden, Mittelalter-Schaufelarbeiter-Prinzip)</td></tr>
+      <tr><td>Küche</td><td>Nicht vorgesehen</td></tr>
+      <tr><td>Kaltmiete</td><td><strong>650 €/Monat</strong> — „muss billig sein, ist ja nur ein Zimmer"</td></tr>
+      <tr><td>Standort (Plan A)</td><td>Kontinentüberspannendes Dreieck: <strong>Tokyo – Wladiwostok – Dubai</strong></td></tr>
+      <tr><td>Standort (Plan B)</td><td><strong>Vorhandenes The-Line-Material</strong> in Saudi-Arabien/Dubai verwenden</td></tr>
+      <tr><td>Standort (Realplan)</td><td><strong>20m × 20m × 2m</strong>, Grundstück noch zu klären</td></tr>
+      <tr><td>Markenname (alternativ)</td><td>„Triangle" — „Try this angle"</td></tr>
+      <tr><td>Nisse-Bewertung</td><td><strong>8/24</strong> — „Das ist realistisch geworden. Das ist das Problem."</td></tr>
+    </table>
+  </section>
+
+  <!-- Section: Features -->
+  <section>
+    <div class="sec-eyebrow">Alleinstellungsmerkmale · USP</div>
+    <h2 class="sec-title">Was den Glasower einzigartig macht</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-num">01</span>
+        <div class="feature-title">Keine Ablenkung</div>
+        <p class="feature-desc">Keine Zimmer, keine Wände, keine Ecken. Nur <strong>Glas und Himmel</strong>. Das Wohnen auf das Wesentliche reduziert: du und deine Aussicht.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num">02</span>
+        <div class="feature-title">Vertikale Mobilität</div>
+        <p class="feature-desc">Der <strong>Fahrstuhl-als-Straßenbahn</strong> erschließt alle Etagen simultan. Nachbarschaft: vertikal statt horizontal.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num">03</span>
+        <div class="feature-title">Sanitär inklusive</div>
+        <p class="feature-desc">Die <strong>Fahrstuhl-Toilette</strong> eliminiert den teuersten Infrastrukturaufwand moderner Gebäude. Rohrleitungen: keine. Kanalisation: delegiert.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num">04</span>
+        <div class="feature-title">Weltrekordpotenzial</div>
+        <p class="feature-desc">Dünnster Wolkenkratzer der Welt. Längestes Gebäude der Welt. <strong>Höchste Glasdichte pro Quadratmeter Grundfläche</strong> weltweit. Drei Rekorde, eine Immobilie.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num">05</span>
+        <div class="feature-title">Materialrecycling</div>
+        <p class="feature-desc">The-Line-Baumaterial liegt in Dubai <strong>bereits halbfertig</strong> auf der Baustelle. Fynn: „Die haben doch schon angefangen. Wir nehmen einfach das."</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-num">06</span>
+        <div class="feature-title">Perspektivverschiebung</div>
+        <p class="feature-desc">Das Wohnen neu denken. <strong>Nicht Raum, sondern Winkel.</strong> Try this angle. Try to see your life through this angle. Triangle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Preise -->
+  <section>
+    <div class="sec-eyebrow">Preisgestaltung · Konditionen</div>
+    <h2 class="sec-title">Mietmodell</h2>
+    <div class="price-box">
+      <div>
+        <div class="price-num">650 €</div>
+        <div class="price-period">Kaltmiete / Monat</div>
+      </div>
+      <div class="price-desc">
+        Die Kaltmiete von 650 € deckt die gesamte nutzbare Einheit ab: <strong>eine bodentiefe Glasfront, zwei Meter Tiefe, eine Etage.</strong> Fahrstuhlnutzung (inkl. Toilette) ist in den Nebenkosten enthalten.<br><br>
+        Begründung der Preisgestaltung: <strong>„Muss billig sein, ist ja nur ein Zimmer."</strong> — Fynn Kliemann<br><br>
+        Heizung, Internet und Küchenanschluss entfallen vollständig — reduziert die monatliche Belastung um geschätzte 180–240 €. <em>Netto-Effektiv-Miete im Vergleich zu einer Berliner 1-Zimmer-Wohnung faktisch konkurrenzfähig.</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Zitate -->
+  <section>
+    <div class="sec-eyebrow">Zitate · Reaktionen</div>
+    <h2 class="sec-title">Was gesagt wurde</h2>
+    <div class="zitat-block">
+      <p class="zitat-text">„Das ist realistisch geworden. Das ist das Problem."</p>
+      <span class="zitat-attr">— Nisse Ingwersen zur Skalierungsgeschichte des Glasowers</span>
+    </div>
+    <div class="zitat-block">
+      <p class="zitat-text">„Alles unter 14 ist nichts. Da hast du wieder versagt."</p>
+      <span class="zitat-attr">— Nisse Ingwersen, Abschlussbewertung, TMDA Folge 54</span>
+    </div>
+    <div class="zitat-block">
+      <p class="zitat-text">„Geschissen wird trotzdem im Fahrstuhl."</p>
+      <span class="zitat-attr">— Fynn Kliemann, zur Frage der Sanitärinfrastruktur (unverhandelbar)</span>
+    </div>
+  </section>
+
+  <!-- Section: Verdict -->
+  <section>
+    <div class="sec-eyebrow">Nisse-Protokoll · Abschlussbewertung</div>
+    <h2 class="sec-title">Finale Bewertung</h2>
+    <div class="verdict">
+      <div class="verdict-score">
+        <span class="verdict-score-big">8</span>
+        <span class="verdict-score-of">von 24</span>
+      </div>
+      <div class="verdict-text">
+        <em>„Unter 14 ist nichts."</em><br><br>
+        Die Idee startete als kontinentüberspannendes Glasdreieck von Tokyo bis Russland — architektonisch unmöglich, konzeptionell spektakulär. Durch Nissessche Realitätschecks wurde sie sukzessive auf 20m × 20m × 2m herunterskaliert. Am Ende: ein Glaskasten. Realistisch, ja. Aber die Vision fehlt. 8/24.<br><br>
+        Vergleich zur Vorwoche: Folge 53 „Nordkorea bombardiert Mond" erzielte <em>14/24</em> — der Glasower verfehlt die 14-Punkte-Mindestanforderung des Nisse-Protokolls deutlich.
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Der Glasower — <a href="https://tmda-wiki.de/startup-ideen">Alle Startup-Ideen</a> — <a href="https://tmda-wiki.de">← TMDA-Wiki</a></p>
+    <p style="margin-top:6px">Fiktives Konzept aus dem TMDA-Podcast · Folge 54 „War Mama bei Osho in Hannover?" · 07.07.2026</p>
+    <p style="margin-top:6px">Glasower Entwicklungs GmbH · Standort: noch zu klären · The-Line-Material: verfügbar</p>
+  </div>
+</footer>
+
+<script>
+// Animate elevator car in SVG
+(function(){
+  const elev = document.getElementById('elev');
+  if(!elev) return;
+  let pos = 80, dir = 1;
+  function tick(){
+    pos += dir * .6;
+    if(pos > 310){ dir = -1 }
+    if(pos < 20){ dir = 1 }
+    elev.setAttribute('y', pos);
+    requestAnimationFrame(tick);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

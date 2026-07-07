@@ -1,6 +1,8 @@
 {
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
+    {"folge":54,"ideeMatch":"Glasower","slug":"glasower","domain":null,"tagline":"2 Meter breit. Endlos lang. Jede Etage nur Glasfront. Klo im Fahrstuhl.","punkte":8},
+    {"folge":53,"ideeMatch":"Mond","slug":"mond-explosion","domain":null,"tagline":"Alle Atomraketen der Welt. Einmal. Auf den Mond. Nordsee dauerhaft voll.","punkte":14},
     {"folge":52,"ideeMatch":"AOK-Biegung","slug":"aok-biegung","domain":null,"tagline":"84 Millionen Deutsche. Ein Rohr. Jeden Morgen. Gesundheitscheck und Metallversorgung in einem.","punkte":3},
     {"folge":51,"ideeMatch":"Flugzeug","slug":"aquavion","domain":null,"tagline":"Das doppelwandige Wasser-Flugzeug — schwerelos gelagert, immer gerade, Feuer beim Aufprall direkt gelöscht.","punkte":7},
     {"folge":50,"ideeMatch":"Stil-Pflanzen","slug":"stil-pflanzen","domain":"hellflowers.de","tagline":"Blüht wie eine Lilie, säuft wie ein Stein — Kaktus-Kreuzung gegen die Wasserknappheit.","punkte":16},

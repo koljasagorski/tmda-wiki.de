@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 298,
+  "updatedAt": "2026-07-07T06:11:19.158Z",
+  "count": 310,
   "items": [
     {
       "ort": "Berlin",
@@ -1872,6 +1872,78 @@
       "ort": "Klimansland / Fynns Hof (Rohrbedarf)",
       "folgen": [
         52
+      ]
+    },
+    {
+      "ort": "Berlin (Aufnahme-Ort: Tribe Management, Büro mit Goldenen Schallplatten)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Nordstrand / Nordsee (Fynns Ferienwohnung - Ausgangspunkt der Startup-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Pyongyang / Nordkorea (wichtigster Raketen-Lieferant der Startup-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Mexiko, Kanada und USA (WM-Austragungsort)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Mond (Zielobjekt der Startup-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Berlin, Französische Straße 15 (SAS Club - Aufnahme-Ort, Daniel und Max)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Hannover (Osho-Club, Nisses Mutter)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Vatikanstadt (Papst hört Alvaro Soler, Doki war vor Ort)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Russland (Andrew Tate auf Panzer)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Rumänien (Andrew Tates Haft vor Trump-Begnadigung)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Tokyo (Wunsch-Standort für den Glasower-Dreieck-Bau)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Dubai / Saudi-Arabien (The Line als Inspiration)",
+      "folgen": [
+        54
       ]
     }
   ]

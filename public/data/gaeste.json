@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 1000,
+  "updatedAt": "2026-07-07T06:11:19.158Z",
+  "count": 1037,
   "items": [
     {
       "name": "Bushido",
@@ -44,7 +44,8 @@
         43,
         47,
         50,
-        51
+        51,
+        53
       ]
     },
     {
@@ -176,6 +177,18 @@
       ]
     },
     {
+      "name": "Helene Fischer",
+      "folgen": [
+        4,
+        5,
+        14,
+        14,
+        26,
+        27,
+        54
+      ]
+    },
+    {
       "name": "Udo Lindenberg",
       "folgen": [
         5,
@@ -259,6 +272,17 @@
       ]
     },
     {
+      "name": "Farid Bang",
+      "folgen": [
+        3,
+        10,
+        18,
+        24,
+        41,
+        53
+      ]
+    },
+    {
       "name": "Rihanna",
       "folgen": [
         4,
@@ -267,17 +291,6 @@
         15,
         46,
         50
-      ]
-    },
-    {
-      "name": "Helene Fischer",
-      "folgen": [
-        4,
-        5,
-        14,
-        14,
-        26,
-        27
       ]
     },
     {
@@ -357,13 +370,13 @@
       ]
     },
     {
-      "name": "Farid Bang",
+      "name": "Shindy",
       "folgen": [
+        2,
         3,
-        10,
-        18,
-        24,
-        41
+        15,
+        49,
+        53
       ]
     },
     {
@@ -394,6 +407,16 @@
         11,
         34,
         38
+      ]
+    },
+    {
+      "name": "Mark Forster",
+      "folgen": [
+        5,
+        18,
+        20,
+        24,
+        53
       ]
     },
     {
@@ -487,15 +510,6 @@
       ]
     },
     {
-      "name": "Shindy",
-      "folgen": [
-        2,
-        3,
-        15,
-        49
-      ]
-    },
-    {
       "name": "Kollegah",
       "folgen": [
         3,
@@ -538,15 +552,6 @@
         38,
         40,
         42
-      ]
-    },
-    {
-      "name": "Mark Forster",
-      "folgen": [
-        5,
-        18,
-        20,
-        24
       ]
     },
     {
@@ -1048,6 +1053,13 @@
       ]
     },
     {
+      "name": "Robbie Williams",
+      "folgen": [
+        5,
+        53
+      ]
+    },
+    {
       "name": "Scooter",
       "folgen": [
         5,
@@ -1311,6 +1323,13 @@
       "folgen": [
         17,
         41
+      ]
+    },
+    {
+      "name": "Lea",
+      "folgen": [
+        18,
+        53
       ]
     },
     {
@@ -1713,6 +1732,13 @@
       ]
     },
     {
+      "name": "Andrew Tate",
+      "folgen": [
+        42,
+        54
+      ]
+    },
+    {
       "name": "Miley Cyrus",
       "folgen": [
         42,
@@ -1780,6 +1806,20 @@
       "folgen": [
         48,
         50
+      ]
+    },
+    {
+      "name": "Jolle",
+      "folgen": [
+        50,
+        53
+      ]
+    },
+    {
+      "name": "Trump",
+      "folgen": [
+        53,
+        54
       ]
     },
     {
@@ -2042,12 +2082,6 @@
     },
     {
       "name": "Bruno (Intimate)",
-      "folgen": [
-        5
-      ]
-    },
-    {
-      "name": "Robbie Williams",
       "folgen": [
         5
       ]
@@ -2966,12 +3000,6 @@
     },
     {
       "name": "Richard Branson",
-      "folgen": [
-        18
-      ]
-    },
-    {
-      "name": "Lea",
       "folgen": [
         18
       ]
@@ -5401,12 +5429,6 @@
       ]
     },
     {
-      "name": "Andrew Tate",
-      "folgen": [
-        42
-      ]
-    },
-    {
       "name": "Bosse / Aki Bosse",
       "folgen": [
         42
@@ -6301,12 +6323,6 @@
       ]
     },
     {
-      "name": "Jolle",
-      "folgen": [
-        50
-      ]
-    },
-    {
       "name": "Wilson Gonzales Ochsenknecht",
       "folgen": [
         50
@@ -6502,6 +6518,222 @@
       "name": "Dieter Bohlen",
       "folgen": [
         52
+      ]
+    },
+    {
+      "name": "Adam (Tribe Management / 'Don't lie to me' Musikvideo-Verbindung)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Lena (Singer, Goldene Schallplatte im Büro)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Paul Rippke (Musikvideo-Produzent, erster Hochkant-Claim)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Kim Jong-un",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Felix Kummer (Sänger, 'klaut' Fynn-Ideen)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Tabaluga (Peter Maffay Quervergleich)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Kollega",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Andreas Burani",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Scooter Brown (Manager Justin Bieber / Ariana Grande)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Diddy (als Beispiel für Label-Mitarbeiter, die zu Stars werden)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Notorious B.I.G.",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Materia (Rapper, Labelkollege bei For Music/V Music)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Casper (Rapper, Labelkollege)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Nina Chuba (Fast-Signing von twoFinger Records-Geschichte)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Niklas (Two Finger Records Mitgründer)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Josef Jan Liefers (Ketamin-Gag)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Jens-Uwe Lehmann (Wal-Aktivist, 'Feind' der Nordsee-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Blümchen (Sängerin, Atemtechnik-Guru-Rolle)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Palina Rosinski (Sternkonstellationen-Guru-Rolle)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Jana Palaske (Libido-Guru 'Liegu'-Rolle)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Peter Lustig (möglicher Vater von Nisse laut Fynn)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Osho (Sekte, Nisses Mutter war Stammgast im Osho-Club Hannover)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Daniel (SAS Club Berlin)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Max (SAS Club Berlin, Cookies-Veteran)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Doki (Produzent Nina Chuba / Alvaro Soler, war beim Papst)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Alvaro Soler (Song lief beim Papst als Einlaufmusik)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Papst (Franziskus)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Eric Trump",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Crow (Rapper)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Materia (Rapper)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Moritz Bleibtreu (Film über GFK-Quoten-System)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Helen Fares (Moderatorin für Event-Idee)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Gina-Lisa Lohfink",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Paul Rippke",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Tini (Event-Managerin bei Kliemannsland)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Adrian (Community-Mitglied, schickt Heimwerker-App-Startup-Idee)",
+      "folgen": [
+        54
       ]
     }
   ]
