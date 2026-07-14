@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Finsterlinie — Das schmalste Hochhaus der Welt · Try This Angle</title>
+<meta name="description" content="2 Meter breit, kilometerhohe Glasfront: Finsterlinie macht Premium-Ausblick für alle. Vom Berliner Kiez bis nach Tokio — mit einer Spitze in Russland." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/finsterlinie" />
+<meta property="og:title" content="Finsterlinie / Try This Angle" />
+<meta property="og:description" content="Das schmalste Hochhaus der Welt. 2 m breit. Reine Glasfront. Dreieck-stabil." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/finsterlinie" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Finsterlinie","description":"Ultradünnes Glasgebäude mit 2m Breite und maximaler Aussichtsfassade","brand":{"@type":"Organization","name":"Try This Angle GmbH"},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"650","priceSpecification":{"@type":"UnitPriceSpecification","priceType":"monthly"}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #04182A;
+  --blue: #0D3B66;
+  --cyan: #4CC9F0;
+  --cyan2: #48CAE4;
+  --red: #FF003C;
+  --white: #FFFFFF;
+  --grid: rgba(76,201,240,0.12);
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --sans: 'Syne', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--mono);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+a { color: var(--cyan); }
+
+/* Blueprint grid overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+body > * { position: relative; z-index: 1; }
+
+/* Header bar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--cyan);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: rgba(76,201,240,0.7);
+  text-transform: uppercase;
+}
+.header-logo {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+.header-logo span { color: var(--cyan); }
+
+/* Annotation labels */
+.anno {
+  font-size: 0.68rem;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.anno::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: var(--red);
+  display: inline-block;
+}
+
+/* Main blueprint section */
+.blueprint {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  min-height: 90vh;
+  border-bottom: 1px solid rgba(76,201,240,0.3);
+}
+.bp-main {
+  padding: 48px 40px;
+  border-right: 1px solid rgba(76,201,240,0.3);
+}
+.bp-main h1 {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+.bp-main h1 .accent { color: var(--cyan); }
+.bp-main h1 .slash { color: rgba(255,255,255,0.2); }
+.subtitle {
+  font-size: 0.8rem;
+  color: var(--cyan);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 4px;
+}
+.spec-block {
+  margin-bottom: 36px;
+}
+.spec-block .anno { margin-bottom: 14px; }
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.spec-table tr {
+  border-bottom: 1px solid rgba(76,201,240,0.15);
+}
+.spec-table td {
+  padding: 10px 12px;
+  font-size: 0.88rem;
+}
+.spec-table td:first-child {
+  color: rgba(255,255,255,0.5);
+  width: 45%;
+  letter-spacing: 0.05em;
+}
+.spec-table td:last-child { color: var(--white); font-weight: 700; }
+.spec-table tr.highlight td { background: rgba(76,201,240,0.08); }
+
+.desc-block {
+  margin-top: 40px;
+  max-width: 58ch;
+}
+.desc-block .anno { margin-bottom: 16px; }
+.desc-block p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 14px;
+}
+
+/* Building elevation drawing (sidebar) */
+.bp-sidebar {
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.bp-sidebar-label {
+  font-size: 0.65rem;
+  color: var(--cyan);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Section cuts */
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid rgba(76,201,240,0.3);
+}
+.section-panel {
+  padding: 36px 28px;
+  border-right: 1px solid rgba(76,201,240,0.2);
+}
+.section-panel:last-child { border-right: none; }
+.section-panel .anno { margin-bottom: 16px; }
+.section-panel h3 {
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.section-panel p {
+  font-size: 0.83rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.65);
+}
+
+/* Dimension callout */
+.dim-box {
+  border: 1px solid var(--red);
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  color: var(--red);
+  letter-spacing: 0.1em;
+  margin-top: 12px;
+}
+
+/* Rating panel */
+.rating-panel {
+  border-top: 1px solid rgba(76,201,240,0.3);
+  padding: 56px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.rating-num {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: clamp(6rem, 15vw, 11rem);
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+  color: rgba(255,255,255,0.08);
+  -webkit-text-stroke: 1px var(--cyan);
+}
+.rating-text .anno { margin-bottom: 16px; }
+.rating-text blockquote {
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.75);
+  border-left: 2px solid var(--red);
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+footer {
+  padding: 32px 40px;
+  border-top: 1px solid rgba(76,201,240,0.3);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+footer a { color: var(--cyan); }
+footer .right { text-align: right; }
+
+@media (max-width: 700px) {
+  .blueprint { grid-template-columns: 1fr; }
+  .bp-sidebar { display: none; }
+  .sections { grid-template-columns: 1fr; }
+  .section-panel { border-right: none; border-bottom: 1px solid rgba(76,201,240,0.2); }
+  .rating-panel { grid-template-columns: 1fr; gap: 24px; }
+  footer { flex-direction: column; align-items: flex-start; }
+  footer .right { text-align: left; }
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<header class="header">
+  <div class="header-logo">FINSTERLINIE<span>.</span>DE</div>
+  <div>PROJ-54 · REV. A · MASSTAB 1:∞</div>
+  <div>DRAWN: 2026-07-07 · TRY THIS ANGLE GMBH</div>
+</header>
+
+<div class="blueprint">
+  <div class="bp-main">
+    <div class="anno" style="margin-bottom: 20px;">Grundrissskizze · Ansicht von vorne</div>
+    <h1>FINSTER<span class="slash">/</span><br><span class="accent">LINIE.</span></h1>
+    <div class="subtitle">Try This Angle · Das schmälste Hochhaus der Welt</div>
+
+    <div class="spec-block">
+      <div class="anno">Technische Spezifikationen</div>
+      <table class="spec-table">
+        <tr class="highlight"><td>Breite</td><td>2,0 m (netto)</td></tr>
+        <tr><td>Höhe</td><td>200 Stockwerke / ~700 m</td></tr>
+        <tr><td>Länge</td><td>2–6 km (konfigurierbar)</td></tr>
+        <tr class="highlight"><td>Grundform</td><td>Dreieck (statisch optimal)</td></tr>
+        <tr><td>Fassade</td><td>100 % Glas, bodentief</td></tr>
+        <tr><td>Fahrstuhltyp</td><td>U-Bahn-Format (gesamte Länge)</td></tr>
+        <tr class="highlight"><td>Sanitäranlagen</td><td>Loch im Fahrstuhlboden</td></tr>
+        <tr><td>Kaltmiete</td><td>650 € / Monat</td></tr>
+        <tr><td>Standort Phase 1</td><td>Tokio (Berge = stabile Rückwand)</td></tr>
+        <tr><td>Standort Phase ∞</td><td>Tokio → Russland</td></tr>
+      </table>
+      <div class="dim-box">⬅ 2,000 m BREITE ➡ · DREIECK BESTEHT, VIERECK VERGEHT</div>
+    </div>
+
+    <div class="desc-block">
+      <div class="anno">Konzeptbeschreibung</div>
+      <p>
+        Jeder will ein Penthaus-Büro mit Glasfront und Ausblick auf den Berliner Fernsehturm.
+        Finsterlinie demokratisiert diesen Traum: Ein extrem schmales Hochhaus, das fast ausschließlich
+        aus Fensterfassade besteht. Kein Platz für Abstellkammern, Schränke oder schlechte Laune.
+      </p>
+      <p>
+        Die Dreieckskonstruktion löst das Stabilitätsproblem (Dreieck besteht, Viereck vergeht).
+        In der Tokio-Version stabilisiert ein nahe gelegener Berg die Rückseite.
+        Für die Kontinent-Variante: Die Erdkrümmung gleicht die Neigung automatisch aus, sobald
+        das Gebäude lang genug ist.
+      </p>
+      <p>
+        Das Baumaterial stammt größtenteils von The Line (Dubai) — das Projekt wurde abgeblasen,
+        das Material liegt auf halber Strecke. Logistisch ideal.
+      </p>
+    </div>
+  </div>
+
+  <div class="bp-sidebar">
+    <div class="bp-sidebar-label">Querschnitt · Stockwerk · Typisch</div>
+    <svg viewBox="0 0 240 600" xmlns="http://www.w3.org/2000/svg" width="100%" height="500">
+      <!-- Building cross section -->
+      <defs>
+        <pattern id="glass" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="0" x2="10" y2="10" stroke="rgba(76,201,240,0.3)" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <!-- Main building outline (very thin, tall) -->
+      <rect x="90" y="20" width="60" height="520" fill="url(#glass)" stroke="rgba(76,201,240,0.8)" stroke-width="1.5"/>
+      <!-- Floor lines -->
+      <g stroke="rgba(76,201,240,0.25)" stroke-width="0.5">
+        <line x1="90" y1="60" x2="150" y2="60"/>
+        <line x1="90" y1="100" x2="150" y2="100"/>
+        <line x1="90" y1="140" x2="150" y2="140"/>
+        <line x1="90" y1="180" x2="150" y2="180"/>
+        <line x1="90" y1="220" x2="150" y2="220"/>
+        <line x1="90" y1="260" x2="150" y2="260"/>
+        <line x1="90" y1="300" x2="150" y2="300"/>
+        <line x1="90" y1="340" x2="150" y2="340"/>
+        <line x1="90" y1="380" x2="150" y2="380"/>
+        <line x1="90" y1="420" x2="150" y2="420"/>
+        <line x1="90" y1="460" x2="150" y2="460"/>
+        <line x1="90" y1="500" x2="150" y2="500"/>
+      </g>
+      <!-- Elevator (center, highlighted) -->
+      <rect x="108" y="20" width="24" height="520" fill="rgba(76,201,240,0.1)" stroke="var(--red)" stroke-width="1"/>
+      <!-- Elevator label -->
+      <text x="120" y="300" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="6" fill="var(--red)" writing-mode="tb" transform="rotate(0, 120, 300)">FAHRSTUHL + WC</text>
+      <!-- Dimension arrows -->
+      <line x1="60" y1="20" x2="60" y2="540" stroke="rgba(76,201,240,0.5)" stroke-width="1" marker-end="url(#arr)"/>
+      <text x="50" y="280" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(76,201,240,0.7)" transform="rotate(-90, 50, 280)">700 m</text>
+      <!-- Width annotation -->
+      <line x1="90" y1="570" x2="150" y2="570" stroke="rgba(76,201,240,0.5)" stroke-width="1"/>
+      <text x="120" y="583" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(76,201,240,0.7)">2,0 m</text>
+      <!-- Person silhouette for scale -->
+      <ellipse cx="120" cy="520" rx="4" ry="7" fill="rgba(255,255,255,0.4)"/>
+      <line x1="120" y1="527" x2="120" y2="540" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+      <line x1="112" y1="530" x2="128" y2="530" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+      <line x1="120" y1="540" x2="114" y2="550" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+      <line x1="120" y1="540" x2="126" y2="550" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+      <!-- Scale marker -->
+      <text x="120" y="13" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="var(--cyan)">DACH</text>
+    </svg>
+    <div style="margin-top:12px; font-size:0.65rem; color:rgba(76,201,240,0.5); text-align:center; letter-spacing:0.08em;">
+      QUERSCHNITT A-A · 1:1000<br/>NOT FOR CONSTRUCTION
+    </div>
+  </div>
+</div>
+
+<div class="sections">
+  <div class="section-panel">
+    <div class="anno">Standortkonzept</div>
+    <h3>Tokio als Startpunkt</h3>
+    <p>
+      Die Berge rund um Tokio bieten eine natürliche Rückenlehne für das Gebäude.
+      Drohgangfrei. Stabilitätsrating: gut (laut Fynn). Ausblick auf Fuji optional.
+      Keine Waffenverbote zu umgehen.
+    </p>
+  </div>
+  <div class="section-panel">
+    <div class="anno">Skalierung</div>
+    <h3>Kontinent-Edition</h3>
+    <p>
+      Phase 2: Das Dreieck erstreckt sich über mehrere Kontinentalplatten. Tokio bis Russland.
+      Architekten auf Ketamin sagen, das sei kein Problem. Die Streckenplanung wird von
+      bestehenden The-Line-Unterlagen adaptiert.
+    </p>
+  </div>
+  <div class="section-panel">
+    <div class="anno">Zielgruppe</div>
+    <h3>Der moderne Workaholic</h3>
+    <p>
+      Schläft mit geschlossenen Augen. Braucht den Ausblick nur beim Arbeiten.
+      650 € Kaltmiete. Geschissen wird im Fahrstuhl. Niemand hat gesagt, es sei komfortabel —
+      nur dass der Ausblick geil ist.
+    </p>
+  </div>
+</div>
+
+<section class="rating-panel">
+  <div class="rating-num">9<br>/24</div>
+  <div class="rating-text">
+    <div class="anno">Nisse's Bewertung · TMDA #54</div>
+    <p style="font-size: 0.88rem; color: rgba(255,255,255,0.65); margin-bottom: 12px;">
+      Finsterlinie scheitert an der 14-Punkte-Hürde. Nisse sieht vielversprechendes Konzept,
+      zu viele architektonische Checkpoint-Probleme und ein WC, das Infrastruktur-Mut erfordert.
+    </p>
+    <blockquote>
+      „Alles unter 14 ist nichts. Da hast du wieder versagt."
+    </blockquote>
+    <blockquote style="margin-top: 12px;">
+      „Try this angle of life."
+      <span style="color: rgba(255,255,255,0.4); font-size: 0.78rem; font-style: normal;"> — Fynn, nach der Dreieck-Idee</span>
+    </blockquote>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <span style="font-style: italic; opacity: 0.6;">Finsterlinie ist fiktiv. Ein 2 m breites Gebäude von Tokio bis Russland würde diverse physikalische Gesetze verletzen — Fynn ist zuversichtlich, dass ein Architekt auf Ketamin das lösen kann.</span><br>
+    Fiktives Konzept · TMDA #54 · 9/24 · <a href="/folge/54">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+  </div>
+  <div class="right">
+    TRY THIS ANGLE GMBH<br>
+    Tokio · Berlin · Russland (geplant)
+  </div>
+</footer>
+
+</body>
+</html>

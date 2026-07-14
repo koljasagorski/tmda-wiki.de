@@ -1,0 +1,87 @@
+{
+  "folge": 53,
+  "titel": "Nordkorea bombardiert Mond",
+  "laufzeit": "1:20:46",
+  "datum": "2026-06-30",
+  "themen": [
+    "Korrekturnachschlag aus Folge 52: 'Ein Tag dauert laenger als ein Jahr' gilt fuer die Venus, nicht den Saturn - die Zahlen (243 Tage Rotation, 224 Tage Umlaufbahn) passen zur Venus",
+    "TMDA-Wiki-Lob: Fynn und Nisse schauen live tmda-wiki.de durch und sind begeistert - 'Das ist ganz lieb gemacht'",
+    "WM 2026 Tipp: Nisse setzt zunaechst auf Tschechien, dann auf Daenemark; Fynn zitiert einen Wissenschaftler, der die Niederlande favorisiert",
+    "Asteroid 16 Psyche: Ein metalreicher Asteroid im Asteroidenguertl dessen Rohstoffe auf Quadrillionen Dollar geschaetzt werden",
+    "STARTUP-IDEE: 'Mondsprengung durch Atomraketen' - Norddeutscher Touristikverband schiesst alle Atomraketen der Welt auf den Mond, um die Gezeiten zu eliminieren und den Nordsee-Tourismus zu boosten; Fynn hat eine Ferienwohnung auf Nordstrand, wo Ebbe und Flut ein Problem sind",
+    "Rap-Battle-Diskussion: Shindy vs. Farid Bang & Kollega - Wer gewinnt und was bedeutet das fuer die Rap-Szene",
+    "Serienempfehlung 'For All Mankind' auf Apple TV: Konkurrierende Besiedlung des Mondes durch Russland und Amerika - Verbindung zur Startup-Idee",
+    "Neutronenstern-Fun-Fact: Ein Teeloeffel wiegt Milliarden Tonnen - koennte man das mit dem Mond machen?",
+    "Nisse's Plattenvertrag und Musikindustrie: Beginn der Diskussion (fuehrt zu Folge 54) - Kuenstlerexklusivvertrag vs. Bandubernahmevertrag, Recoup-System",
+    "RFS-Abschluss: 99% aller Bananen sind genetisch identische Klone (Cavendish); Katzen haben mehr Knochen als Menschen; AR-Technologie existiert als Prototyp seit den 1960ern"
+  ],
+  "kurzbeschreibung": "Fynn entpuppt sich als Mondattentaeter: Der Norddeutsche Touristikverband soll alle Atomraketen der Welt auf den Mond schiessen, damit die Gezeiten wegfallen und Fynns Ferienwohnung auf Nordstrand endlich profitabel wird. Nisse vergibt 14 von 24 Punkten - die bisher hoechste Bewertung - weil er einfach sehen will, was passiert. Drumherum: TMDA-Wiki bekommt eine Live-Lobeshymne, WM-Tipps werden vergeben, Asteroid 16 Psyche stellt den Mondplan finanziell in den Schatten und ein langer Exkurs in Nisse's Plattenvertragshistorie (V Music, Materia, Casper, Mark Forster) beginnt und wird in Folge 54 fortgesetzt.",
+  "startup_idee": {
+    "idee": "Mondsprengung durch Atomraketen",
+    "beschreibung": "Der Norddeutsche Touristikverband koordiniert einen weltweiten Atompartnerpakt: Alle Nationen schiessen ihre Atomraketen gleichzeitig auf den Mond und sprengen ihn. Ohne Mond entfallen die Gezeiten (Ebbe und Flut), was den Nordseetourismus massiv ankurbelt - Fynn hat eine Ferienwohnung auf Nordstrand, wo Watt und Gezeiten bisher ein Problem waren. Die teilnehmenden Laender erhalten im Gegenzug 20% der Mehreinnahmen aus dem Tourismus als Atompartnerpakt-Steuer. Zusaetzlicher Benefit: Alle Nuklearwaffen sind weg - Weltfrieden. Fynn argumentiert, die Idee sei nicht groesser als Space-X- oder KI-Investments. Nisse stimmt zu, dass er gerne wissen wuerde, was passiert.",
+    "punkte": 14,
+    "max_punkte": 24,
+    "begruendung": "Also von mir bekommt das eine 14 von 24, weil ich wuerde auch gerne selber einfach wissen, was passiert.",
+    "domain": null
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": null,
+  "fun_facts": [
+    "99% aller Bananen weltweit sind genetisch identische Klone der Cavendish-Sorte - eine einzige Pilzkrankheit koennte die gesamte Ernte vernichten.",
+    "Katzen haben mehr Knochen als Menschen - ca. 244 gegenueber 206 beim Erwachsenen.",
+    "Augmented Reality existiert als funktionsfaehiger Prototyp bereits seit den 1960er Jahren.",
+    "Die Venus-Fakten aus Folge 52 waren falsch zugeordnet: '243 Tage Rotation, 224 Tage Umlaufbahn - ein Tag dauert laenger als ein Jahr' gilt fuer die Venus, nicht den Saturn.",
+    "Ein Teeloeffel Materie eines Neutronensterns kann Milliarden Tonnen wiegen - dichteste Materie des Universums."
+  ],
+  "erfindungen": [],
+  "orte": [
+    "Nordstrand / Nordsee (Fynns Ferienwohnung, Ausgangspunkt der Startup-Idee)",
+    "Der Mond (Zielobjekt der Atomraketen)",
+    "Wilhelmshaven / JadeWeserPort (Anknuepfung an Kokain-Folge 52)",
+    "Venus (korrekte Heimat des Saturn-Fakts aus Folge 52)",
+    "Asteroidenguertl zwischen Mars und Jupiter (Asteroid 16 Psyche)"
+  ],
+  "gaeste_erwaehnte": [
+    "Shindy",
+    "Farid Bang",
+    "Kollega",
+    "Kim Jong-un (implizit - Nordkorea im Titel)",
+    "Mark Forster",
+    "Casper",
+    "Materia",
+    "Nina Chuba",
+    "Helene Fischer"
+  ],
+  "zitate": [
+    {
+      "text": "Also von mir bekommt das eine 14 von 24, weil ich wuerde auch gerne selber einfach wissen, was passiert.",
+      "kontext": "Nisses Begruendung fuer die Rekordwertung der Mondsprengungsidee - Neugier schlaegt Vernunft."
+    },
+    {
+      "text": "Ihr werdet nie wieder, keiner von euch, der jetzt zuhoert, wird jemals wieder am Wattenmeer vorbeigehen koennen, ohne daran zu denken, dass der Mond verdammt noch mal in eine Explosion hinein gezwungen gehoert.",
+      "kontext": "Fynn nach der 14/24-Begruendung - Zusammenfassung des kulturellen Erbes dieser Episode."
+    },
+    {
+      "text": "Das ist ganz lieb gemacht.",
+      "kontext": "Fynn und Nisse beim Live-Durchstoebern von tmda-wiki.de - enthusiastisches Lob fuer das Fan-Wiki."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "Atompartnerpakt-Steuer",
+      "bedeutung": "Fynns Finanzierungsmodell fuer die Mondsprengung: Teilnehmende Nationen erhalten 20% der Mehreinnahmen aus dem Nordseetourismus als Entschaedigung fuer ihre Atomraketen."
+    },
+    {
+      "begriff": "Norddeutscher Touristikverband",
+      "bedeutung": "Die fiktive Institution, die Fynns Startup-Idee organisiert - zustaendig fuer die koordinierte Beschaffung und den Abschuss aller Atomraketen weltweit."
+    },
+    {
+      "begriff": "Dienstagnisse",
+      "bedeutung": "Running Gag: Der TMDA-Erscheinungstag (Dienstag) - Nisse und Fynn streiten sich weiterhin darum, wer den Begriff erfunden hat."
+    },
+    {
+      "begriff": "Recoup",
+      "bedeutung": "Plattenvertrag-Fachbegriff: Erst wenn der Kuenstler alle Vorschuss- und Marketingkosten durch Einnahmen wieder eingespielt hat, verdient er eigenes Geld."
+    }
+  ]
+}

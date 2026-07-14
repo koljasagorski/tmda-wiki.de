@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chip und Chip — Smart-Bett für Schlaf & Seelenausweich · 7/24</title>
+<meta name="description" content="Dein Xiaomi-Armband trackt deinen Schlaf. Das Bett rotiert dich sanft im Raum. Albträume? Abgefangen. Seelen auf Wasseradern? Ausgewichen. 40.000 EUR." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://tmda-wiki.de/startup/chip-und-chip" />
+<meta property="og:title" content="Chip und Chip — Das rotierende Schlaf-System" />
+<meta property="og:description" content="Xiaomi-gekoppeltes Rotationsbett. Albtraum-Interrupt. Seelenausweich-Technologie." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tmda-wiki.de/startup/chip-und-chip" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Chip und Chip","description":"Smartes Rotationsbett mit Xiaomi-Armband-Kopplung, Albtraum-Interrupt und Seelenausweich-Technologie","offers":{"@type":"Offer","priceCurrency":"EUR","price":"40000","availability":"https://schema.org/PreOrder"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #070B14;
+  --panel: #0D1628;
+  --border: rgba(0,245,255,0.18);
+  --cyan: #00F5FF;
+  --violet: #7B5EF8;
+  --green: #00FF85;
+  --warn: #FF3E5C;
+  --text: rgba(255,255,255,0.88);
+  --text-dim: rgba(255,255,255,0.45);
+  --orb: 'Orbitron', sans-serif;
+  --mono: 'Roboto Mono', 'Courier New', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--cyan); }
+
+/* Particle-like dots background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,245,255,0.06) 1px, transparent 0);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+body > * { position: relative; z-index: 1; }
+
+/* Status bar */
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 28px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  margin-right: 6px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+/* Hero */
+.hero {
+  padding: 64px 28px 48px;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.hero-brand {
+  font-family: var(--orb);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: var(--orb);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.hero h1 .amp { color: var(--violet); }
+.hero h1 .glow { color: var(--cyan); text-shadow: 0 0 30px rgba(0,245,255,0.5); }
+.hero-sub {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-dim);
+  max-width: 50ch;
+  margin-bottom: 28px;
+}
+.hero-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 4px 12px;
+}
+.tag.cyan { border-color: var(--cyan); color: var(--cyan); }
+.tag.violet { border-color: var(--violet); color: var(--violet); }
+.tag.green { border-color: var(--green); color: var(--green); }
+.tag.warn { border-color: var(--warn); color: var(--warn); }
+
+/* Dashboard visualization */
+.dashboard-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+}
+.dp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+.dp-title {
+  font-family: var(--orb);
+  font-size: 0.7rem;
+  color: var(--cyan);
+}
+.metrics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.metric {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 3px;
+}
+.metric-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.metric-value {
+  font-family: var(--orb);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+.metric-value.warn-val { color: var(--warn); }
+.metric-value.green-val { color: var(--green); }
+
+/* Sleep wave graphic */
+.sleep-wave {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.wave-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+/* Alert box */
+.alert {
+  background: rgba(255,62,92,0.12);
+  border: 1px solid rgba(255,62,92,0.4);
+  border-radius: 3px;
+  padding: 10px 14px;
+  font-size: 0.7rem;
+  color: var(--warn);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Features section */
+.features {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 28px;
+  border-bottom: 1px solid var(--border);
+}
+.section-label {
+  font-family: var(--orb);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.feature-card {
+  background: var(--panel);
+  padding: 32px 28px;
+}
+.fc-icon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  display: block;
+}
+.fc-num {
+  font-family: var(--orb);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+.fc-title {
+  font-family: var(--orb);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.fc-desc {
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+.feature-card:nth-child(1) { border-bottom: 1px solid var(--border); }
+.feature-card:nth-child(2) { border-bottom: 1px solid var(--border); }
+.feature-card:nth-child(1) .fc-title { color: var(--cyan); }
+.feature-card:nth-child(2) .fc-title { color: var(--violet); }
+.feature-card:nth-child(3) .fc-title { color: var(--green); }
+.feature-card:nth-child(4) .fc-title { color: var(--warn); }
+
+/* Pricing */
+.pricing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 28px;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.price-tier {
+  background: var(--panel);
+  padding: 36px 28px;
+}
+.price-era {
+  font-family: var(--orb);
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.price-amount {
+  font-family: var(--orb);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.price-amount .currency { font-size: 1rem; vertical-align: top; margin-top: 6px; display: inline-block; }
+.price-tier:nth-child(1) .price-amount { color: var(--warn); }
+.price-tier:nth-child(2) .price-amount { color: var(--violet); }
+.price-tier:nth-child(3) .price-amount { color: var(--green); }
+.price-note {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+/* Rating */
+.rating-block {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 28px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.rating-circle {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
+.rating-circle-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rating-circle-text .big {
+  font-family: var(--orb);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--violet);
+  line-height: 1;
+}
+.rating-circle-text .small {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+.rating-info .section-label { margin-bottom: 14px; }
+.rating-info h3 {
+  font-family: var(--orb);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.rating-info blockquote {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  font-style: italic;
+  line-height: 1.65;
+  border-left: 2px solid var(--violet);
+  padding-left: 16px;
+  margin-top: 12px;
+}
+
+footer {
+  padding: 32px 28px;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  border-top: 1px solid var(--border);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+footer a { color: var(--cyan); }
+footer .disclaimer { font-style: italic; margin-bottom: 6px; opacity: 0.7; max-width: 60ch; }
+footer .right { text-align: right; flex-shrink: 0; }
+
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; }
+  .dashboard-panel { display: none; }
+  .features-grid { grid-template-columns: 1fr; }
+  .pricing { grid-template-columns: 1fr; }
+  .rating-block { grid-template-columns: 1fr; }
+  .rating-circle { margin: 0 auto; }
+  footer { flex-direction: column; }
+  footer .right { text-align: left; }
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<div class="statusbar">
+  <div><span class="status-dot"></span>SYSTEM ONLINE · SCHLAFPHASE ERKANNT</div>
+  <div>CHIP UND CHIP™ · SEELENAUSWEICH v2.1</div>
+  <div>XIAOMI SYNC: ✓ · BED ROTATION: BEREIT</div>
+</div>
+
+<section class="hero">
+  <div>
+    <div class="hero-brand">Chip und Chip™ · Das smarte Schlaf-Rotationssystem</div>
+    <h1>DREH<span class="amp">.</span><br><span class="glow">SCHLAF.</span><br>ÜBERLEB.</h1>
+    <p class="hero-sub">
+      Dein Xiaomi-Armband trackt Herzfrequenz und Schlafphasen.
+      Das Bett rotiert dich sanft durch den Raum —
+      nicht du rollst dich um, das <em>Bett</em> dreht sich.
+      Albträume werden abgefangen, bevor sie sich entwickeln.
+      Wasseradern und Friedhöfe? Ausgewichen.
+    </p>
+    <div class="hero-tags">
+      <span class="tag cyan">Schlaf-Rotation</span>
+      <span class="tag violet">Xiaomi-Sync</span>
+      <span class="tag green">Albtraum-Interrupt</span>
+      <span class="tag warn">Seelenausweich</span>
+    </div>
+  </div>
+
+  <div class="dashboard-panel">
+    <div class="dp-header">
+      <span class="dp-title">LIVE SLEEP DASHBOARD</span>
+      <span>Session #2847</span>
+    </div>
+    <div class="metrics-row">
+      <div class="metric">
+        <div class="metric-label">Herzfrequenz</div>
+        <div class="metric-value green-val">54 bpm</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Schlafphase</div>
+        <div class="metric-value">REM-3</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Rotation</div>
+        <div class="metric-value">12° / min</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Seelen in 3m</div>
+        <div class="metric-value warn-val">2</div>
+      </div>
+    </div>
+    <div class="sleep-wave">
+      <div class="wave-label">SCHLAFKURVE · 22:00–06:00 UHR</div>
+      <svg viewBox="0 0 300 70" xmlns="http://www.w3.org/2000/svg" width="100%">
+        <path d="M0,50 Q15,48 30,45 Q45,40 60,30 Q75,18 90,22 Q105,28 120,35 Q135,15 150,10 Q165,5 180,15 Q195,30 210,38 Q225,25 240,18 Q255,12 270,20 Q285,28 300,25" fill="none" stroke="var(--violet)" stroke-width="2"/>
+        <path d="M0,55 Q20,54 40,52 Q60,50 80,48 Q100,46 120,50 Q140,55 160,52 Q180,48 200,50 Q220,52 240,50 Q260,48 280,50 Q290,51 300,50" fill="none" stroke="rgba(123,94,248,0.3)" stroke-width="1" stroke-dasharray="3,2"/>
+        <!-- Interrupt marker -->
+        <circle cx="210" cy="38" r="4" fill="var(--warn)" opacity="0.9"/>
+        <line x1="210" y1="0" x2="210" y2="38" stroke="var(--warn)" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+        <text x="213" y="12" font-family="Roboto Mono,monospace" font-size="5" fill="var(--warn)">INTERRUPT</text>
+      </svg>
+    </div>
+    <div class="alert">
+      <span>⚠</span>
+      <span>Seele aus Wasserader Typ 3 in 180° — Ausweichmanöver initiiert</span>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="section-label">// Feature-Matrix</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="fc-icon">🔄</span>
+      <div class="fc-num">FEATURE 01</div>
+      <div class="fc-title">Raum-Rotation statt Körper-Wälzen</div>
+      <p class="fc-desc">
+        Du liegst auf der linken Schulter. Das Bett dreht sich im Raum.
+        Du merkst nichts. Die Position wechselt. Kein eingeklemmter Nerv.
+        Kein Quallenmonster-Albtraum. Der Xiaomi-Sensor hat Dienst.
+      </p>
+    </div>
+    <div class="feature-card">
+      <span class="fc-icon">🧠</span>
+      <div class="fc-num">FEATURE 02</div>
+      <div class="fc-title">Albtraum-Interrupt</div>
+      <p class="fc-desc">
+        Das Armband misst Gehirnaktivität indirekt über Herzfrequenz.
+        Abweichung erkannt → das Bett schüttelt dich kurz an, bevor der Albtraum
+        sich materialisiert. Drachenlord kann das bewerben. Er weiß warum.
+      </p>
+    </div>
+    <div class="feature-card">
+      <span class="fc-icon">👻</span>
+      <div class="fc-num">FEATURE 03</div>
+      <div class="fc-title">Seelenausweich-Technologie</div>
+      <p class="fc-desc">
+        Das Bett rotiert so schnell, dass Seelen die Zielperson topologisch
+        nicht mehr treffen können. Erschließt Wasseradern, Friedhöfe und Berliner
+        Straßenzüge mit historischer Vorbelastung als Wohnlage.
+      </p>
+    </div>
+    <div class="feature-card">
+      <span class="fc-icon">🏗️</span>
+      <div class="fc-num">FEATURE 04</div>
+      <div class="fc-title">Immobilien-Erschließung</div>
+      <p class="fc-desc">
+        Jedes Grundstück in Berlin ist potenziell mit Kriegsgeschichte, Wasserader
+        oder ehemaligem Friedhof belastet. Mit Chip und Chip: egal.
+        Bauplätze, die bisher undenkbar waren, werden wirtschaftlich. Disruption.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="border-bottom: 1px solid var(--border);">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 8px 28px 28px;">
+    <div class="section-label" style="margin-top:40px;">// Preisstruktur</div>
+  </div>
+  <div class="pricing">
+    <div class="price-tier">
+      <div class="price-era">2026 · Prototyp</div>
+      <div class="price-amount"><span class="currency">€</span>40.000</div>
+      <p class="price-note">Handgefertigtes Prototyp-Gerät. Motoren teilweise aus Dönerschneidmaschinen. Riecht leicht nach Kalbsfleisch. Wir arbeiten daran.</p>
+    </div>
+    <div class="price-tier">
+      <div class="price-era">2030 · Serienmodell</div>
+      <div class="price-amount"><span class="currency">€</span>8.500</div>
+      <p class="price-note">Kooperation mit Emmer Matratzen / Bodyguard. Skalierungseffekte greifen. Ohne Dönerschneidmaschinen-Komponenten.</p>
+    </div>
+    <div class="price-tier">
+      <div class="price-era">2038 · Zielpreis</div>
+      <div class="price-amount"><span class="currency">€</span>2.500</div>
+      <p class="price-note">Massenmarkt. Jeder pennt in einem Chip und Chip. Seelenausweich als Standard. Oma Ingrid bekommt eines zu Weihnachten.</p>
+    </div>
+  </div>
+</section>
+
+<section class="rating-block">
+  <div class="rating-circle">
+    <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" width="180" height="180">
+      <!-- Background circle -->
+      <circle cx="90" cy="90" r="82" fill="none" stroke="rgba(123,94,248,0.15)" stroke-width="8"/>
+      <!-- Progress arc (7/24 = 29.2% = 105°) -->
+      <circle cx="90" cy="90" r="82" fill="none" stroke="var(--violet)" stroke-width="8"
+        stroke-dasharray="515 1000"
+        stroke-dashoffset="130"
+        stroke-linecap="round"/>
+      <!-- Outer glow ring -->
+      <circle cx="90" cy="90" r="88" fill="none" stroke="rgba(123,94,248,0.08)" stroke-width="16"/>
+    </svg>
+    <div class="rating-circle-text">
+      <div class="big">7</div>
+      <div class="small">von 24</div>
+    </div>
+  </div>
+  <div class="rating-info">
+    <div class="section-label">// Nisse's Bewertung · TMDA Folge #55</div>
+    <h3>Von 5 auf 7 — der Name rettet zwei Punkte</h3>
+    <p style="font-size:0.85rem; color:var(--text-dim); line-height:1.65; margin-bottom:8px;">
+      Das Bett startet bei 5/24 (zu teuer, Partner wackelt mit, braucht Knieschoner,
+      kein guter Name). Dann kommt „Chip und Chip" — und Nisse gibt gnädig zwei Punkte dazu.
+    </p>
+    <blockquote>
+      „Da Slow sie 7 von 24. Jawoh."
+    </blockquote>
+    <blockquote style="margin-top:10px;">
+      „Rotate 4 von 24." — nur ein Spaß. Kurz war es so.
+    </blockquote>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="disclaimer">
+      Chip und Chip ist ein fiktives Produkt. Das Rotationsbett existiert nicht.
+      Seelen lassen sich nach aktuellem wissenschaftlichem Konsens nicht ausweichen —
+      nach aktuellem Berliner Erfahrungswert auch nicht, aber versuch es ruhig trotzdem mal.
+      Xiaomi ist nicht beteiligt, aber sollte angerufen werden.
+    </div>
+    Fiktives Konzept · TMDA #55 · 7/24 · <a href="/folge/55">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+  </div>
+  <div class="right">
+    Chip und Chip GmbH<br>
+    Berlin — überall wo Seelen durch<br>
+    Version 2.1 · 2026
+  </div>
+</footer>
+
+</body>
+</html>

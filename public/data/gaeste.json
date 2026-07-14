@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 1000,
+  "updatedAt": "2026-07-14T08:18:00.040Z",
+  "count": 1021,
   "items": [
     {
       "name": "Bushido",
@@ -85,6 +85,20 @@
       ]
     },
     {
+      "name": "Drake",
+      "folgen": [
+        1,
+        7,
+        11,
+        32,
+        40,
+        48,
+        49,
+        50,
+        54
+      ]
+    },
+    {
       "name": "Michael Jackson",
       "folgen": [
         3,
@@ -113,16 +127,30 @@
       ]
     },
     {
-      "name": "Drake",
+      "name": "Casper",
       "folgen": [
-        1,
-        7,
-        11,
+        18,
+        28,
         32,
-        40,
-        48,
+        39,
+        41,
+        42,
         49,
-        50
+        53,
+        54
+      ]
+    },
+    {
+      "name": "Helene Fischer",
+      "folgen": [
+        4,
+        5,
+        14,
+        14,
+        26,
+        27,
+        53,
+        54
       ]
     },
     {
@@ -224,15 +252,15 @@
       ]
     },
     {
-      "name": "Casper",
+      "name": "Materia",
       "folgen": [
         18,
-        28,
-        32,
+        38,
         39,
         41,
-        42,
-        49
+        48,
+        49,
+        53
       ]
     },
     {
@@ -259,6 +287,17 @@
       ]
     },
     {
+      "name": "Farid Bang",
+      "folgen": [
+        3,
+        10,
+        18,
+        24,
+        41,
+        53
+      ]
+    },
+    {
       "name": "Rihanna",
       "folgen": [
         4,
@@ -270,17 +309,6 @@
       ]
     },
     {
-      "name": "Helene Fischer",
-      "folgen": [
-        4,
-        5,
-        14,
-        14,
-        26,
-        27
-      ]
-    },
-    {
       "name": "Peter Maffay",
       "folgen": [
         4,
@@ -289,6 +317,17 @@
         42,
         44,
         47
+      ]
+    },
+    {
+      "name": "Mark Forster",
+      "folgen": [
+        5,
+        18,
+        20,
+        24,
+        53,
+        54
       ]
     },
     {
@@ -325,17 +364,6 @@
       ]
     },
     {
-      "name": "Materia",
-      "folgen": [
-        18,
-        38,
-        39,
-        41,
-        48,
-        49
-      ]
-    },
-    {
       "name": "Sarah Engels",
       "folgen": [
         37,
@@ -357,13 +385,13 @@
       ]
     },
     {
-      "name": "Farid Bang",
+      "name": "Shindy",
       "folgen": [
+        2,
         3,
-        10,
-        18,
-        24,
-        41
+        15,
+        49,
+        53
       ]
     },
     {
@@ -374,6 +402,16 @@
         18,
         22,
         24
+      ]
+    },
+    {
+      "name": "Christoph Altmann",
+      "folgen": [
+        3,
+        5,
+        33,
+        52,
+        54
       ]
     },
     {
@@ -487,15 +525,6 @@
       ]
     },
     {
-      "name": "Shindy",
-      "folgen": [
-        2,
-        3,
-        15,
-        49
-      ]
-    },
-    {
       "name": "Kollegah",
       "folgen": [
         3,
@@ -514,15 +543,6 @@
       ]
     },
     {
-      "name": "Christoph Altmann",
-      "folgen": [
-        3,
-        5,
-        33,
-        52
-      ]
-    },
-    {
       "name": "Snoop Dogg",
       "folgen": [
         4,
@@ -538,15 +558,6 @@
         38,
         40,
         42
-      ]
-    },
-    {
-      "name": "Mark Forster",
-      "folgen": [
-        5,
-        18,
-        20,
-        24
       ]
     },
     {
@@ -574,6 +585,15 @@
         32,
         38,
         46
+      ]
+    },
+    {
+      "name": "Nina Chuba",
+      "folgen": [
+        10,
+        16,
+        53,
+        54
       ]
     },
     {
@@ -1006,6 +1026,20 @@
       ]
     },
     {
+      "name": "Joaquin Phoenix",
+      "folgen": [
+        1,
+        55
+      ]
+    },
+    {
+      "name": "John Bellion",
+      "folgen": [
+        3,
+        54
+      ]
+    },
+    {
       "name": "Macaulay Culkin",
       "folgen": [
         3,
@@ -1136,13 +1170,6 @@
       "folgen": [
         10,
         12
-      ]
-    },
-    {
-      "name": "Nina Chuba",
-      "folgen": [
-        10,
-        16
       ]
     },
     {
@@ -1566,6 +1593,13 @@
       ]
     },
     {
+      "name": "Palina Rojinski",
+      "folgen": [
+        29,
+        54
+      ]
+    },
+    {
       "name": "Peter Fox",
       "folgen": [
         32,
@@ -1713,6 +1747,13 @@
       ]
     },
     {
+      "name": "Andrew Tate",
+      "folgen": [
+        42,
+        54
+      ]
+    },
+    {
       "name": "Miley Cyrus",
       "folgen": [
         42,
@@ -1783,6 +1824,20 @@
       ]
     },
     {
+      "name": "Jolle",
+      "folgen": [
+        50,
+        54
+      ]
+    },
+    {
+      "name": "Philip Schwer",
+      "folgen": [
+        52,
+        54
+      ]
+    },
+    {
       "name": "Papst Franziskus",
       "folgen": [
         1
@@ -1820,12 +1875,6 @@
     },
     {
       "name": "Jeremy aus Matt",
-      "folgen": [
-        1
-      ]
-    },
-    {
-      "name": "Joaquin Phoenix",
       "folgen": [
         1
       ]
@@ -1880,12 +1929,6 @@
     },
     {
       "name": "PMA / Patrick mit Absicht",
-      "folgen": [
-        3
-      ]
-    },
-    {
-      "name": "John Bellion",
       "folgen": [
         3
       ]
@@ -4147,12 +4190,6 @@
       ]
     },
     {
-      "name": "Palina Rojinski",
-      "folgen": [
-        29
-      ]
-    },
-    {
       "name": "Fritz Meinecke",
       "folgen": [
         29
@@ -5401,12 +5438,6 @@
       ]
     },
     {
-      "name": "Andrew Tate",
-      "folgen": [
-        42
-      ]
-    },
-    {
       "name": "Bosse / Aki Bosse",
       "folgen": [
         42
@@ -6301,12 +6332,6 @@
       ]
     },
     {
-      "name": "Jolle",
-      "folgen": [
-        50
-      ]
-    },
-    {
       "name": "Wilson Gonzales Ochsenknecht",
       "folgen": [
         50
@@ -6487,12 +6512,6 @@
       ]
     },
     {
-      "name": "Philip Schwer",
-      "folgen": [
-        52
-      ]
-    },
-    {
       "name": "Aaron Truschke",
       "folgen": [
         52
@@ -6502,6 +6521,132 @@
       "name": "Dieter Bohlen",
       "folgen": [
         52
+      ]
+    },
+    {
+      "name": "Kollega",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Kim Jong-un (implizit - Nordkorea im Titel)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "name": "Jana Palaske",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Blumchen",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Cro",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Materia (Nisse's Label)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Contra K",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Andreas Burani",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Brian Eno",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Scooter Braun",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Notorious B.I.G.",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Puff Daddy / Diddy",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Niklas (Two Finger Records Co-Gruender)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Adrian (Hoerer, DIY-App-Idee)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Tini (Event Managerin Klimansland)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "name": "Robert Dah",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "name": "Bibi und Tina (Kinderbuchfiguren / Freizeitpark)",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "name": "Tony der DJ",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "name": "Tim Gio (TikToker, potenzielles Werbegesicht)",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "name": "Friedrich Merz (Witz: 'Knieschoner von Friedrich Merz')",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "name": "OMR-Speaker (namentlich nicht genannt)",
+      "folgen": [
+        55
       ]
     }
   ]

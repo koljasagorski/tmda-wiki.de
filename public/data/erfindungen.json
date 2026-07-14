@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 78,
+  "updatedAt": "2026-07-14T08:18:00.040Z",
+  "count": 81,
   "items": [
+    {
+      "folge": 55,
+      "name": "Seelenausweicher",
+      "beschreibung": "Erweiterung der 360-Grad-Wiege: Das Bett rotiert so schnell, dass durchziehende Seelen (aus Wasseradern, Friedhoefen, Kriegsschauplätzen) den Schlafer nicht treffen koennen. Erschliesst in Berlin theoretisch alle Standorte, auf denen bisher aus spirituellen Gruenden nicht geschlafen werden konnte."
+    },
+    {
+      "folge": 54,
+      "name": "Abel Tony",
+      "beschreibung": "Fynns frueherer YouTube-Kanal mit ultrakurzen Tutorial-Videos fuer Musikanwendungen (z.B. Ableton), in dem er nur die eine notige Handlung zeigt - keine Intros, kein Schnickschnack. Exakt das, was Hoerer Adrian als App-Idee vorschlaegt."
+    },
+    {
+      "folge": 54,
+      "name": "Opas-Handwerker-Kurse",
+      "beschreibung": "Tini (Event Managerin von Klimansland) schlaegt vor: Handwerks-Kurse von erfahrenen aelteren Menschen aus der Region fuer die 'Generation Mietwohnung' - vom richtigen Dubel bis zur Steckdose. Erstes Pilotprojekt soll noch in 2026 starten, bisher zu wenig Opa-Anmeldungen."
+    },
     {
       "folge": 52,
       "name": "Romantischer Roboter",

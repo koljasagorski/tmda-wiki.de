@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 49/49 LIVE ✅
+## Status — 52/52 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-52 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-55 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -69,6 +69,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 14/24
 
+- [x] **Nordsee-Mondsprengung** · Folge 53 · Atomtouristik Retro-Pamphlet (Playfair Display + IBM Plex Mono, Gefahrgelb/Orange/Seafoam, Zivilschutzbroschüre trifft Nordsee-Tourismus)
 - [x] **Zero You Go** · Folge 37 · bathroom-hygiene pastel (Outfit + soap-green)
 - [x] **Hör auf — Habit Detector** · Folge 3 · health-app dark green (Plus Jakarta + neon)
 
@@ -106,6 +107,8 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 - [x] **Blinkerhand** · Folge 42 · ungewertet · automotive aftermarket tuning (carbon, DIN-Maßzeichnung)
 - [x] **Garbage Pro 360 (G60)** · Folge 36 · ungewertet · Apple-keynote-Parodie (grau/weiß, ultradünn)
 - [x] **Jonas von Schwan — Schwan-Export** · Folge 33 · ungewertet · luxus-export Handelshaus (creme/teal/gold ornamental)
+- [x] **Finsterlinie / Try This Angle** · Folge 54 · 9/24 · parametric architecture blueprint (JetBrains Mono + Syne, Marineblau/Cyan/Rot, Blueprint-Raster, technische Annotationen)
+- [x] **360-Grad-Wiege / Chip und Chip** · Folge 55 · 7/24 · biohacker Schlaf-Dashboard (Orbitron + Roboto Mono, Dunkelblau/Cyan/Violett, Partikel-Matrix, Live-Metrik-Display)
 - [x] **Fanta GNU** · Folge 1 · ungewertet · softdrink retro-wüsten-pop (orange, Sahara, Hitzeflimmern)
 
 ## Konvention bei NEUEN Folgen

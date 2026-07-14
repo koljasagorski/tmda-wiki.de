@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 216,
+  "updatedAt": "2026-07-14T08:18:00.040Z",
+  "count": 226,
   "items": [
     {
       "begriff": "1F1P",
@@ -16,6 +16,11 @@
       "begriff": "31er",
       "bedeutung": "Person, die jemanden bei der Polizei verpfeift (von Paragraph 31 BtMG)",
       "folge": 35
+    },
+    {
+      "begriff": "360-Grad-Wiege",
+      "bedeutung": "Fynns Arbeitsname fuer das smarte Rotationsbett - das Bett dreht den Schlafer im Raum, nicht andersrum.",
+      "folge": 55
     },
     {
       "begriff": "Affenindex",
@@ -61,6 +66,11 @@
       "begriff": "ARC Raiders",
       "bedeutung": "Online-Game, das Nisse mit Cliso, Thor und Sharakta spielt. In den Auto-Captions falsch als 'Arschraiders', 'Arc Riders' oder 'Raders' transkribiert.",
       "folge": 43
+    },
+    {
+      "begriff": "Atompartnerpakt-Steuer",
+      "bedeutung": "Fynns Finanzierungsmodell fuer die Mondsprengung: Teilnehmende Nationen erhalten 20% der Mehreinnahmen aus dem Nordseetourismus als Entschaedigung fuer ihre Atomraketen.",
+      "folge": 53
     },
     {
       "begriff": "August da",
@@ -161,6 +171,11 @@
       "begriff": "ChatGPT Atlas",
       "bedeutung": "Browser von OpenAI mit integriertem ChatGPT, der saemtliche Browser-Daten speichert.",
       "folge": 19
+    },
+    {
+      "begriff": "Chip und Chip",
+      "bedeutung": "Produktname, der die Bewertung von 5 auf 7 rettet: Anspielung auf 'Chip und Chap' (Chip 'n Dale) und 'Chip' als Tech-Begriff fuer den Smartwatch-Sensor.",
+      "folge": 55
     },
     {
       "begriff": "Christoph Altmann",
@@ -281,6 +296,11 @@
       "begriff": "Findoms Come",
       "bedeutung": "Wortspiel mit Jay-Z Album 'Kingdom Come' - geplantes Trash-Projekt um Jay-Z Fans abzugreifen",
       "folge": 33
+    },
+    {
+      "begriff": "Finsterlinie",
+      "bedeutung": "Fynns Startup-Name fuer das ultradunne Glasgebaeude - eine Anspielung auf 'The Line' (Dubai) und die 'Finsterheit' des schmalen Profils von aussen.",
+      "folge": 54
     },
     {
       "begriff": "Fireflies",
@@ -563,6 +583,11 @@
       "folge": 25
     },
     {
+      "begriff": "Lieg",
+      "bedeutung": "Fynns Namensvorschlag fuer das Guru-Trio-Konzept (Jana Palaske, Palina Rojinski, Blumchen) - Zusammensetzung aus 'Libido', 'Atemtechnik' und 'Galaxie'.",
+      "folge": 54
+    },
+    {
       "begriff": "Like Mike",
       "bedeutung": "Spitzname eines Typen namens Mike, der das bei sich selbst sagte, wenn er etwas in seinem eigenen Stil tat (Bier exen) - als möglicher Plattform-Name",
       "folge": 10
@@ -656,6 +681,11 @@
       "begriff": "Nonpology",
       "bedeutung": "Eine 'Nicht-Entschuldigung', die wie eine Entschuldigung formuliert ist, aber keine echte ist",
       "folge": 29
+    },
+    {
+      "begriff": "Norddeutscher Touristikverband",
+      "bedeutung": "Die fiktive Institution, die Fynns Startup-Idee organisiert - zustaendig fuer die koordinierte Beschaffung und den Abschuss aller Atomraketen weltweit.",
+      "folge": 53
     },
     {
       "begriff": "Nutri Score",
@@ -773,6 +803,11 @@
       "folge": 14
     },
     {
+      "begriff": "Recoup",
+      "bedeutung": "Plattenvertrag-Fachbegriff: Erst wenn der Kuenstler alle Vorschuss- und Marketingkosten durch Einnahmen wieder eingespielt hat, verdient er eigenes Geld.",
+      "folge": 53
+    },
+    {
       "begriff": "RFs",
       "bedeutung": "Random anonymous Facts von Nisse",
       "folge": 38
@@ -846,6 +881,11 @@
       "begriff": "schwarzer / weisser Kight (Neid)",
       "bedeutung": "Weisser Neid: man goennt dem anderen, will es aber auch. Schwarzer Neid: egal ob man es selbst hat, der andere soll es nicht haben.",
       "folge": 18
+    },
+    {
+      "begriff": "Seelenausweicher",
+      "bedeutung": "Erweitertes Produktkonzept: Das Rotationsbett dreht so schnell, dass Seelen (von Wasseradern, Friedhoefen, Kriegsschauplätzen) den Schlafer nicht treffen koennen - erschliesst neue Berliner Bauplätze.",
+      "folge": 55
     },
     {
       "begriff": "Shability",
@@ -973,6 +1013,11 @@
       "folge": 38
     },
     {
+      "begriff": "Try This Angle",
+      "bedeutung": "Alternativer Name fuer die Dreiecks-Version des Glasgebaeudes - Wortspiel mit Dreieck (angle = Winkel) und 'see life from a new angle'.",
+      "folge": 54
+    },
+    {
       "begriff": "Tubsuit",
       "bedeutung": "Wortspiel: Wetsuit als Badewanne (Bath Tub)",
       "folge": 21
@@ -1026,6 +1071,11 @@
       "begriff": "Verdichtung",
       "bedeutung": "Bauplanungsbegriff: Wie viel Boden auf einem Gebiet verdichtet/versiegelt werden darf",
       "folge": 3
+    },
+    {
+      "begriff": "Verruckter Hollaender",
+      "bedeutung": "Fynns Spitzname fuer den niederlaendischen Fluglehrer, der ihn irrtuemlicherweise fuer den Co-Piloten hielt und Fynn so unbeabsichtigt das Steuer ueberliess.",
+      "folge": 55
     },
     {
       "begriff": "Voke Bubble",

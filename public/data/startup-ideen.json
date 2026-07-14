@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 49,
+  "updatedAt": "2026-07-14T08:18:00.040Z",
+  "count": 52,
   "items": [
+    {
+      "folge": 55,
+      "datum": null,
+      "idee": "360-Grad-Wiege / Chip und Chip",
+      "beschreibung": "Ein smartes Bett, das ueber ein gekoppeltes Xiaomi-Smartwatch-Armband Schlafphasen und Herzfrequenz trackt. Das Bett rotiert den Schlafer sanft im Raum (nicht er waelzt sich, sondern das Bett dreht sich), um Nerveneinquetschungen zu vermeiden und optimale REM-Phasen zu foerdern. Bei detektierten Albtraeumen schuettelt das Bett rechtzeitig, bevor der Traum sich entwickelt. Erweiterung 1: Als 'Pfan…",
+      "punkte": 7,
+      "max_punkte": 24,
+      "begruendung": "Gestartet bei 5 von 24 - zu teuer, zu viele Probleme (Partner wackelt mit, braucht Knieschoner, kein guter Name). Der Name 'Chip und Chip' rettet zwei Punkte. 'Da Slow sie 7 von 24. Jawoh.'"
+    },
+    {
+      "folge": 54,
+      "datum": null,
+      "idee": "Finsterlinie / Try This Angle",
+      "beschreibung": "Ein extrem schmales, hochaufragendes Glasgebaeude (inspiriert von 'The Line' in Dubai, das abgebrochen wurde) mit nur 2 Metern Breite und bodentiefen Fensterfronten auf jeder Seite. Der einzige Aufzug ist gleichzeitig die Gemeinschaftstoilette (Loch im Boden). Jede Einheit ist ein Zimmer mit maximalem Ausblick - perfekt fuer Workaholic-Geschaeftsleute, die sowieso nur schlafen und arbeiten. Fuer …",
+      "punkte": 9,
+      "max_punkte": 24,
+      "begruendung": "Alles unter 14 ist nichts. Da hast du wieder versagt. (Exakte Punktzahl nicht explizit genannt - unter 14 vergeben.)"
+    },
+    {
+      "folge": 53,
+      "datum": null,
+      "idee": "Mondsprengung durch Atomraketen",
+      "beschreibung": "Der Norddeutsche Touristikverband koordiniert einen weltweiten Atompartnerpakt: Alle Nationen schiessen ihre Atomraketen gleichzeitig auf den Mond und sprengen ihn. Ohne Mond entfallen die Gezeiten (Ebbe und Flut), was den Nordseetourismus massiv ankurbelt - Fynn hat eine Ferienwohnung auf Nordstrand, wo Watt und Gezeiten bisher ein Problem waren. Die teilnehmenden Laender erhalten im Gegenzug 20…",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Also von mir bekommt das eine 14 von 24, weil ich wuerde auch gerne selber einfach wissen, was passiert."
+    },
     {
       "folge": 52,
       "datum": null,

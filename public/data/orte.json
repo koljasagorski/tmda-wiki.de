@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 298,
+  "updatedAt": "2026-07-14T08:18:00.040Z",
+  "count": 315,
   "items": [
     {
       "ort": "Berlin",
@@ -1872,6 +1872,108 @@
       "ort": "Klimansland / Fynns Hof (Rohrbedarf)",
       "folgen": [
         52
+      ]
+    },
+    {
+      "ort": "Nordstrand / Nordsee (Fynns Ferienwohnung, Ausgangspunkt der Startup-Idee)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Der Mond (Zielobjekt der Atomraketen)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Wilhelmshaven / JadeWeserPort (Anknuepfung an Kokain-Folge 52)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Venus (korrekte Heimat des Saturn-Fakts aus Folge 52)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Asteroidenguertl zwischen Mars und Jupiter (Asteroid 16 Psyche)",
+      "folgen": [
+        53
+      ]
+    },
+    {
+      "ort": "Berlin, SAS Club (Aufnahmeort)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Berlin (Finsterlinie-Standort in Miniaturversion denkbar)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Dubai / Saudi-Arabien (The Line als Inspirationsquelle, abgebrochen)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Tokio (Favorisierter Standort des Finsterlinie-Dreiecks)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Russland (wo die Dreieck-Spitze endet)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Hannover (Osho-Anspielung im Titel)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Vatikan (Destination fuer Sektenmitglieder nach dem Scheissen-Bunker-Initiationsprogramm)",
+      "folgen": [
+        54
+      ]
+    },
+    {
+      "ort": "Berlin (Aufnahme, Bibi-und-Tina-Militaerbasis-Gelaende, Seelenausweicher-Markt)",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "ort": "Klimansland / Fynns Hof (WWII-Granate auf Baustelle gefunden)",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "ort": "Wilhelmsburg / Hamburg (Tony-der-DJ-Knarre-Geschichte)",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "ort": "Niederlande / Holland (Fynns versehentlicher Alleinflug - 'Verruckter Hollaender')",
+      "folgen": [
+        55
+      ]
+    },
+    {
+      "ort": "Belgien (Ziel von Fynns Grossvaters zwei desertierenden Freunden im WWII)",
+      "folgen": [
+        55
       ]
     }
   ]

@@ -1,0 +1,97 @@
+{
+  "folge": 55,
+  "titel": "KKK? Knarren, Kettlebell & Kampfflugzeuge!",
+  "laufzeit": "1:08:27",
+  "datum": "2026-07-14",
+  "themen": [
+    "Fun-Fact-Einstieg: Die Aorta eines Blauwals ist gross genug, um darin zu schwimmen; Menschen sind abends etwa 3 cm kleiner als morgens wegen Bandscheibenkompression",
+    "Geruecht der Woche: Eine beruehmt-beruechigte Persoenlichkeit soll regelmaessig Sexpartys in Berlin organisieren",
+    "Anger als Virality-Driver: Ein OMR-Speaker erklaert, Wut uebertreffe Sex als Sharing-Trigger um Laengen - 'Aeaerger funktioniert immer'",
+    "WWII-Granate auf Klimansland-Baustelle gefunden - Polizeiabsperrung und Sprengstoffentschaerfung direkt auf Fynns Gelaende",
+    "Robert Dah's Bibi-und-Tina-Freizeitpark: Auf einer ehemaligen Berliner Militaerbasis (mit alten Kasernen) soll ein Freizeitpark entstehen - 'Zu Besuch auf der Koppelweide'",
+    "Fynns Grossvater: 16-17 Jahre alt, Kampfpiloten-Ausbildung kurz vor WWII-Ende; zwei seiner Freunde desertierten waehrend eines Trainingsflug nach Belgien",
+    "'Verruckter Hollaender'-Geschichte: Fynn sass mit einem Fluglehrer im Cockpit, der ihn irrtuemlicherweise fuer den anderen Piloten hielt - Fynn flog versehentlich Minuten lang das Flugzeug ueber die Niederlande",
+    "Tony der DJ / Knarre im Handschuhfach: Geschichte aus Wilhelmsburg ueber einen Freund, der zufaellig eine Waffe im Leihwagen findet",
+    "STARTUP-IDEE: '360-Grad-Wiege / Chip und Chip' - smartes Rotationsbett mit Xiaomi-Armband-Kopplung fuer optimale Schlafpositionierung und Albtraum-Unterbrechung; erweiterbar zum 'Seelenausweicher' fuer Wassseradern und Friedhoefe",
+    "Jubilaeum: Folge 56 naechste Woche = 1-Jahr-TMDA-Jubilaeum",
+    "Joaquin Phoenix 'I'm Still Here' (Film) als Referenz zum Thema Undercover-Identitaeten",
+    "RFS-Abschluss: Erde als Basketball - Atmosphaere waere nur 2 Blaetter Papier dick; Bananen sind botanisch gesehen Beeren, Erdbeeren nicht; Ameisen fuehren Kriege mit Millionen Kaempfern; Mausklick-Weltrekord liegt bei ueber 20 Klicks pro Sekunde"
+  ],
+  "kurzbeschreibung": "Fynns Startup diesmal: ein smartes Rotationsbett ('360-Grad-Wiege'), das per Xiaomi-Armband Schlafphasen trackt und den Schlafer sanft im Raum rotiert - ein 'Pfannenwender fuer Menschen'. Spaeter ausgebaut zum 'Seelenausweicher' fuer Berlin-Wohnungen auf ehemaligen Kriegsschauplätzen und Friedhoefen. Nisse gibt 7 von 24, nachdem der Name 'Chip und Chip' das Ding von 5 auf 7 rettet. Drumherum: Fynn landet versehentlich ein Flugzeug in Holland, findet eine WWII-Granate auf Klimansland, erzaehlt vom Grossvater als angehenden Kampfpiloten - und naechste Woche ist Folge 56, das Einjahresgeburtstagsspecial.",
+  "startup_idee": {
+    "idee": "360-Grad-Wiege / Chip und Chip",
+    "beschreibung": "Ein smartes Bett, das ueber ein gekoppeltes Xiaomi-Smartwatch-Armband Schlafphasen und Herzfrequenz trackt. Das Bett rotiert den Schlafer sanft im Raum (nicht er waelzt sich, sondern das Bett dreht sich), um Nerveneinquetschungen zu vermeiden und optimale REM-Phasen zu foerdern. Bei detektierten Albtraeumen schuettelt das Bett rechtzeitig, bevor der Traum sich entwickelt. Erweiterung 1: Als 'Pfannenwender' schleudert das Bett den Schlafer von einer Seite auf die andere, ohne ihn aufzuwecken. Erweiterung 2: 'Seelenausweicher' - das Bett dreht so schnell, dass durchziehende Seelen (Wasserader, Friedhof, Kriegsschauplatz) nicht treffen koennen. Damit werden bisher unbebaute Berliner Lagen wirtschaftlich erschliessbar. Kooperationspartner: Emmer Matratzen oder Bodyguard. Preis Start: 40.000 EUR; Ziel 2038: ~2.500 EUR. Werbegesicht: Tim Gio (TikToker).",
+    "punkte": 7,
+    "max_punkte": 24,
+    "begruendung": "Gestartet bei 5 von 24 - zu teuer, zu viele Probleme (Partner wackelt mit, braucht Knieschoner, kein guter Name). Der Name 'Chip und Chip' rettet zwei Punkte. 'Da Slow sie 7 von 24. Jawoh.'",
+    "domain": null
+  },
+  "kalles_corner": null,
+  "gerucht_der_woche": "Eine namentlich nicht genannte prominente Persoenlichkeit soll regelmaessig exklusive Sexpartys in Berlin veranstalten.",
+  "fun_facts": [
+    "Die Aorta eines Blauwals ist so gross, dass ein Mensch darin schwimmen koennte.",
+    "Menschen sind abends ungefaehr 3 cm kleiner als morgens, weil die Bandscheiben im Laufe des Tages durch das Gewicht des Koerpers komprimiert werden.",
+    "Bananen sind botanisch gesehen Beeren; Erdbeeren hingegen sind keine echten Beeren.",
+    "Ameisen fuehren echte Kriege mit Millionen von Kaempfern auf beiden Seiten.",
+    "Der Mausklick-Weltrekord liegt bei ueber 20 Klicks pro Sekunde.",
+    "Wenn man die Erde auf die Groesse eines Basketballs verkleinern wuerde, waere die Atmosphaere nur so dick wie 2 Blaetter Papier."
+  ],
+  "erfindungen": [
+    {
+      "name": "Seelenausweicher",
+      "beschreibung": "Erweiterung der 360-Grad-Wiege: Das Bett rotiert so schnell, dass durchziehende Seelen (aus Wasseradern, Friedhoefen, Kriegsschauplätzen) den Schlafer nicht treffen koennen. Erschliesst in Berlin theoretisch alle Standorte, auf denen bisher aus spirituellen Gruenden nicht geschlafen werden konnte."
+    }
+  ],
+  "orte": [
+    "Berlin (Aufnahme, Bibi-und-Tina-Militaerbasis-Gelaende, Seelenausweicher-Markt)",
+    "Klimansland / Fynns Hof (WWII-Granate auf Baustelle gefunden)",
+    "Wilhelmsburg / Hamburg (Tony-der-DJ-Knarre-Geschichte)",
+    "Niederlande / Holland (Fynns versehentlicher Alleinflug - 'Verruckter Hollaender')",
+    "Belgien (Ziel von Fynns Grossvaters zwei desertierenden Freunden im WWII)"
+  ],
+  "gaeste_erwaehnte": [
+    "Robert Dah",
+    "Bibi und Tina (Kinderbuchfiguren / Freizeitpark)",
+    "Tony der DJ",
+    "Joaquin Phoenix",
+    "Tim Gio (TikToker, potenzielles Werbegesicht)",
+    "Friedrich Merz (Witz: 'Knieschoner von Friedrich Merz')",
+    "OMR-Speaker (namentlich nicht genannt)"
+  ],
+  "zitate": [
+    {
+      "text": "Da Slow sie 7 von 24. Jawoh.",
+      "kontext": "Nisses abschliessende Bewertung der 360-Grad-Wiege nach dem Namensboost durch 'Chip und Chip'."
+    },
+    {
+      "text": "Du brauchst eigentlich so einen generellen Seelenausweicher.",
+      "kontext": "Fynn beschreibt die Erweiterung seines Bett-Startups auf das Problem von Berliner Wohnungen auf ehemaligen Kriegsschauplätzen."
+    },
+    {
+      "text": "Aeaerger funktioniert immer.",
+      "kontext": "Zusammenfassung des OMR-Speaker-Vortrags ueber Viralitaet: Wut schlaegt Sex als Sharing-Motivation."
+    },
+    {
+      "text": "Einer von uns beiden muss diesen Tod sterben.",
+      "kontext": "Fynn beschreibt das Dilemma beim Seelenausweicher: Wenn das Bett die Seele von einer Person wegdreht, trifft sie den Partner - einer muss ins Aluminiumzug."
+    }
+  ],
+  "glossar": [
+    {
+      "begriff": "360-Grad-Wiege",
+      "bedeutung": "Fynns Arbeitsname fuer das smarte Rotationsbett - das Bett dreht den Schlafer im Raum, nicht andersrum."
+    },
+    {
+      "begriff": "Chip und Chip",
+      "bedeutung": "Produktname, der die Bewertung von 5 auf 7 rettet: Anspielung auf 'Chip und Chap' (Chip 'n Dale) und 'Chip' als Tech-Begriff fuer den Smartwatch-Sensor."
+    },
+    {
+      "begriff": "Seelenausweicher",
+      "bedeutung": "Erweitertes Produktkonzept: Das Rotationsbett dreht so schnell, dass Seelen (von Wasseradern, Friedhoefen, Kriegsschauplätzen) den Schlafer nicht treffen koennen - erschliesst neue Berliner Bauplätze."
+    },
+    {
+      "begriff": "Verruckter Hollaender",
+      "bedeutung": "Fynns Spitzname fuer den niederlaendischen Fluglehrer, der ihn irrtuemlicherweise fuer den Co-Piloten hielt und Fynn so unbeabsichtigt das Steuer ueberliess."
+    }
+  ]
+}
