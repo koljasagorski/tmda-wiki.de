@@ -1,10 +1,37 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 49,
+  "updatedAt": "2026-07-20T16:02:33.237Z",
+  "count": 52,
   "items": [
     {
+      "folge": 55,
+      "datum": "2026-07-14",
+      "idee": "Das rotierende Bett 'Chip und Chap'",
+      "beschreibung": "Fynns Loesung gegen schlechten Schlaf und Albtraeume: ein Bett, das dich die ganze Nacht ganz sanft und schleichend durch den Raum rotiert, damit du besser schlaefst und optimal 'ausgerichtet' wirst (Durchschlafen als wichtigste Essenz fuer Longevity). Zuerst soll ein Neuralink-Chip im Kopf die Schlafphasen messen, dann faellt Fynn auf, dass die Apple Watch die Tiefschlafphase schon trackt - am E…",
+      "punkte": 7,
+      "max_punkte": 24,
+      "begruendung": "Nisse bewertet extrem streng und listet Problem um Problem auf (viel zu teuer, kein Name, der schlafende Partner wird mitgeschleudert, man braeuchte zwei getrennte Betten, komplett unsexy): 'Fuenf von 24. Alter, du bist so rigos bei den Sa…"
+    },
+    {
+      "folge": 54,
+      "datum": "2026-07-07",
+      "idee": "Der Glasturm ('Try this angle')",
+      "beschreibung": "Fynns Idee, das Penthouse-Feeling zu 'demokratisieren': ein extrem schmales (nur ca. 10 m Durchmesser), sehr hohes und kilometerlanges Gebaeude im Stil von Dubais gescheitertem 'The Line'. Es besteht ausschliesslich aus winzigen Zimmern (ca. 2 x 4 m) mit kompletter bodentiefer Glasfront - gemacht fuer Geschaeftsleute, die eh nur arbeiten und schlafen und den ganzen Tag den Ausblick wollen. Durch …",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt diesmal keinen expliziten Punktwert. Sein Urteil zur Glasturm-Idee: 'Alles unter 14 ist nichts. Da hast du wieder versagt.' Die Idee sei anfangs 'ein bisschen sexy' gewesen und dann 'nur noch erbaermlich' bzw. zu gross und un…"
+    },
+    {
+      "folge": 53,
+      "datum": "2026-06-30",
+      "idee": "Nordkorea bombardiert den Mond (Atomraketen gegen den Mond)",
+      "beschreibung": "Fynn ist Ferienwohnungs-Betreiber auf Nordstrand an der Nordsee und nervt sich staendig, dass das Wattenmeer-Wasser die halbe Zeit weg ist - schuld daran ist der Mond (Gezeiten). Seine Loesung nach dem Prinzip 'zwei Fliegen mit einer Klappe': Der Mond muss weg. Der norddeutsche Touristikverband tritt an Nordkorea heran, schuettelt den kleinen Kim Jong Un so lange, bis alle 27 Atomraketen herausfa…",
+      "punkte": 14,
+      "max_punkte": 24,
+      "begruendung": "Nisse vergibt ungewoehnlich hohe 14 von 24, weil er selbst zu gern wuesste, was tatsaechlich passiert, wenn der Mond weg ist, statt die Wissenschaftler immer nur 'Weltuntergang studieren' zu lassen - Mut statt Angst. Woertlich: 'Also von m…"
+    },
+    {
       "folge": 52,
-      "datum": null,
+      "datum": "2026-06-23",
       "idee": "Die AOK-Biegung",
       "beschreibung": "Jeder Deutsche bekommt morgens ein Metallrohr, das er biegen muss - als Pflicht-Gesundheitscheck und wirtschaftliche Rohstoffgewinnung in einem. Das Rohr haengt sozusagen vom Schuh bis zum Kopf; man beugt sich so weit wie moeglich nach unten. Die AOK schickt um 11 Uhr die Muellabfuhr-Infrastruktur (die sowieso schon faehrt) los und sammelt alle Rohre ein. Wer bis 11 Uhr nicht gebogen hat, ist ein…",
       "punkte": 3,

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip und Chap – Das rotierende Bett für perfekten Schlaf</title>
+  <meta name="description" content="Das per Xiaomi-Uhr gesteuerte Bett, das dich im Schlaf sanft durch den Raum dreht, Albträume wegruckelt und den Seelen Verstorbener ausweicht. Richtig geil schlafen.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/chip-und-chap">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chip und Chap – Das rotierende Bett für perfekten Schlaf">
+  <meta property="og:description" content="Per Smartwatch gesteuert dreht dich Chip und Chap im Schlaf durch den Raum, ruckelt Albträume weg und weicht den Seelen Verstorbener aus.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/chip-und-chap">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chip und Chap – Das rotierende Bett für perfekten Schlaf">
+  <meta name="twitter:description" content="Per Smartwatch gesteuert dreht dich Chip und Chap im Schlaf durch den Raum, ruckelt Albträume weg und weicht den Seelen Verstorbener aus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Chip und Chap",
+    "description": "Das per Xiaomi-Uhr gesteuerte, rotierende Smart-Bett, das dich im Schlaf sanft durch den Raum dreht, bei erkanntem Albtraum wegruckelt und dank Seelenausweicher-Technik den Seelen Verstorbener ausweicht. Durchschlafen als wichtigste Essenz für Longevity.",
+    "category": "Sleep-Tech / Smart-Home",
+    "brand": {
+      "@type": "Brand",
+      "name": "Chip und Chap"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "2500.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/PreOrder",
+      "description": "Marktstart 40.000 €, mittelfristig runter auf 2.500 €. Aluanzug, Knieschoner und Emma-Matratze separat erhältlich."
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --nacht: #0b0920;
+      --tief: #100d2b;
+      --indigo: #191545;
+      --karte: #1c1850;
+      --karte-2: #221c5e;
+      --violet: #7c5cff;
+      --violet-hell: #a689ff;
+      --lila: #c9b3ff;
+      --cyan: #56e6df;
+      --cyan-tief: #2ba7a2;
+      --text: #ece9ff;
+      --muted: #9c96cf;
+      --muted-2: #7d77b0;
+      --linie: rgba(150,130,255,0.16);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      background: var(--nacht);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ambient star / glow field behind everything */
+    .starfield {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1.5px 1.5px at 70% 20%, rgba(201,179,255,0.8), transparent),
+        radial-gradient(1.5px 1.5px at 85% 60%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(2px 2px at 35% 75%, rgba(86,230,223,0.6), transparent),
+        radial-gradient(1.5px 1.5px at 55% 45%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1.5px 1.5px at 10% 80%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(2px 2px at 90% 88%, rgba(201,179,255,0.6), transparent);
+      opacity: 0.55;
+      animation: twinkle 7s ease-in-out infinite alternate;
+    }
+
+    @keyframes twinkle { from { opacity: 0.35; } to { opacity: 0.65; } }
+
+    .wrap { position: relative; z-index: 1; }
+
+    section, header { position: relative; z-index: 1; }
+
+    .container { max-width: 980px; margin: 0 auto; padding: 0 28px; }
+
+    h1, h2, h3, .display {
+      font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.02;
+    }
+
+    .eyebrow {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 22px; height: 2px;
+      background: linear-gradient(90deg, var(--cyan), transparent);
+      display: inline-block;
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      padding: 120px 0 90px;
+      background:
+        radial-gradient(120% 90% at 80% -10%, rgba(124,92,255,0.32), transparent 60%),
+        radial-gradient(90% 80% at 10% 110%, rgba(86,230,223,0.16), transparent 55%),
+        linear-gradient(180deg, var(--nacht) 0%, var(--tief) 100%);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 15px 7px 11px;
+      border-radius: 999px;
+      background: rgba(124,92,255,0.14);
+      border: 1px solid rgba(124,92,255,0.4);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--lila);
+      margin-bottom: 26px;
+    }
+    .badge-pill b { color: #fff; font-weight: 700; }
+    .badge-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 9vw, 5.6rem);
+      margin-bottom: 22px;
+    }
+    h1 .grad {
+      background: linear-gradient(120deg, var(--violet-hell), var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h1 .amp { color: var(--muted); font-weight: 500; }
+
+    .lede {
+      font-size: 1.18rem;
+      color: var(--muted);
+      max-width: 30ch;
+      margin-bottom: 34px;
+    }
+    .lede b { color: var(--text); font-weight: 500; }
+
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      padding: 15px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: linear-gradient(120deg, var(--violet), #6244e6);
+      color: #fff;
+      box-shadow: 0 14px 40px -12px rgba(124,92,255,0.7);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 50px -12px rgba(124,92,255,0.9); }
+    .btn-ghost {
+      background: rgba(255,255,255,0.03);
+      color: var(--lila);
+      border-color: var(--linie);
+    }
+    .btn-ghost:hover { background: rgba(124,92,255,0.12); transform: translateY(-2px); }
+
+    /* rotating bed visual */
+    .stage {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .halo {
+      position: absolute;
+      width: 92%; height: 92%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,92,255,0.35), transparent 62%);
+      filter: blur(8px);
+      animation: pulse 6s ease-in-out infinite alternate;
+    }
+    @keyframes pulse { from { transform: scale(0.94); opacity: 0.7; } to { transform: scale(1.04); opacity: 1; } }
+
+    .orbit-ring {
+      position: absolute;
+      width: 78%; height: 78%;
+      border-radius: 50%;
+      border: 1px dashed rgba(201,179,255,0.35);
+    }
+    .orbit-ring.two { width: 96%; height: 96%; border-color: rgba(86,230,223,0.22); }
+
+    .bed-rotor {
+      width: 66%;
+      animation: rotate 26s linear infinite;
+      transform-origin: 50% 50%;
+      filter: drop-shadow(0 24px 40px rgba(0,0,0,0.55));
+    }
+    @keyframes rotate { to { transform: rotate(360deg); } }
+
+    /* small orbiting "soul" markers the bed dodges */
+    .soul {
+      position: absolute;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff, var(--cyan) 55%, transparent);
+      opacity: 0.85;
+      animation: orbit 14s linear infinite;
+    }
+    .soul.b { animation-duration: 20s; animation-delay: -6s; background: radial-gradient(circle, #fff, var(--violet-hell) 55%, transparent); }
+    .soul.c { animation-duration: 17s; animation-delay: -11s; }
+    @keyframes orbit {
+      from { transform: rotate(0deg) translateX(46%) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(46%) rotate(-360deg); }
+    }
+
+    /* ============ MARQUEE / STAT STRIP ============ */
+    .stripe {
+      border-top: 1px solid var(--linie);
+      border-bottom: 1px solid var(--linie);
+      background: rgba(255,255,255,0.015);
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .stat {
+      padding: 30px 22px;
+      text-align: center;
+      border-right: 1px solid var(--linie);
+    }
+    .stat:last-child { border-right: none; }
+    .stat .num {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 2.1rem;
+      background: linear-gradient(120deg, var(--violet-hell), var(--cyan));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      display: block;
+      line-height: 1;
+    }
+    .stat .cap {
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      margin-top: 10px;
+      display: block;
+    }
+
+    /* ============ GENERIC SECTION ============ */
+    .section { padding: 96px 0; }
+    .section-head { max-width: 640px; margin-bottom: 52px; }
+    .section-head h2 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin: 18px 0 16px;
+    }
+    .section-head p { color: var(--muted); font-size: 1.08rem; }
+
+    /* two-column narrative */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .panel {
+      background: linear-gradient(160deg, var(--karte), var(--tief));
+      border: 1px solid var(--linie);
+      border-radius: 22px;
+      padding: 34px 32px;
+    }
+    .panel h3 { font-size: 1.5rem; margin: 14px 0 12px; }
+    .panel p { color: var(--muted); font-size: 1rem; }
+    .panel .kicker { color: var(--cyan); }
+
+    /* feature cards */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .feature {
+      background: linear-gradient(165deg, var(--karte-2), var(--indigo));
+      border: 1px solid var(--linie);
+      border-radius: 20px;
+      padding: 30px 28px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .feature:hover { transform: translateY(-4px); border-color: rgba(124,92,255,0.5); }
+    .f-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: grid; place-items: center;
+      background: rgba(124,92,255,0.16);
+      border: 1px solid rgba(124,92,255,0.4);
+      margin-bottom: 18px;
+    }
+    .feature h3 { font-size: 1.28rem; margin-bottom: 10px; }
+    .feature p { color: var(--muted); font-size: 0.97rem; }
+
+    /* how it works steps */
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .step {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--linie);
+      border-radius: 18px;
+      padding: 26px 22px;
+      position: relative;
+    }
+    .step .n {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      width: 38px; height: 38px;
+      border-radius: 11px;
+      display: grid; place-items: center;
+      background: linear-gradient(120deg, var(--violet), var(--cyan-tief));
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .step h4 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; }
+    .step p { font-size: 0.9rem; color: var(--muted); }
+
+    /* naming timeline */
+    .naming {
+      background: linear-gradient(160deg, var(--karte), var(--tief));
+      border: 1px solid var(--linie);
+      border-radius: 24px;
+      padding: 44px 40px;
+    }
+    .name-track {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+    .name-chip {
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px dashed rgba(201,179,255,0.4);
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-decoration: line-through;
+      text-decoration-color: rgba(201,179,255,0.5);
+    }
+    .name-chip.final {
+      border-style: solid;
+      border-color: var(--cyan);
+      background: rgba(86,230,223,0.12);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 0 24px -6px rgba(86,230,223,0.6);
+    }
+    .name-arrow { color: var(--muted-2); font-size: 1.1rem; }
+
+    /* accessories */
+    .kit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .kit-item {
+      border: 1px solid var(--linie);
+      border-radius: 16px;
+      padding: 22px 20px;
+      background: rgba(255,255,255,0.015);
+    }
+    .kit-item .tag { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); }
+    .kit-item h4 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.05rem; margin: 8px 0 6px; }
+    .kit-item p { font-size: 0.88rem; color: var(--muted); }
+
+    /* score */
+    .score-wrap {
+      background:
+        radial-gradient(90% 120% at 85% 10%, rgba(124,92,255,0.28), transparent 55%),
+        linear-gradient(160deg, var(--karte-2), var(--tief));
+      border: 1px solid rgba(124,92,255,0.35);
+      border-radius: 28px;
+      padding: 52px 46px;
+      display: flex;
+      align-items: center;
+      gap: 46px;
+    }
+    .dial {
+      flex-shrink: 0;
+      width: 168px; height: 168px;
+      display: grid; place-items: center;
+      position: relative;
+    }
+    .dial svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+    .dial .val {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 3.4rem;
+      line-height: 1;
+      background: linear-gradient(120deg, var(--violet-hell), var(--cyan));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .dial .of { font-size: 0.8rem; letter-spacing: 0.2em; color: var(--muted-2); text-transform: uppercase; margin-top: 4px; }
+    .score-text h3 { font-size: 1.7rem; margin-bottom: 14px; }
+    .score-text p { color: var(--muted); font-size: 1.02rem; }
+    .score-text p + p { margin-top: 12px; }
+    .score-text .q {
+      color: var(--lila);
+      font-style: italic;
+      border-left: 2px solid var(--violet);
+      padding-left: 16px;
+      margin-top: 16px;
+    }
+
+    /* CTA band */
+    .cta-band {
+      text-align: center;
+      background:
+        radial-gradient(80% 140% at 50% 0%, rgba(124,92,255,0.3), transparent 60%);
+      padding: 104px 0;
+    }
+    .cta-band h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 18px; }
+    .cta-band p { color: var(--muted); font-size: 1.12rem; max-width: 46ch; margin: 0 auto 34px; }
+
+    /* footer */
+    footer {
+      border-top: 1px solid var(--linie);
+      padding: 40px 0 56px;
+      text-align: center;
+      background: var(--tief);
+    }
+    .disclaimer { color: var(--muted-2); font-size: 0.82rem; max-width: 60ch; margin: 0 auto 14px; line-height: 1.6; }
+    .foot-meta { font-size: 0.82rem; color: var(--muted); }
+    .foot-meta a { color: var(--lila); text-decoration: none; }
+    .foot-meta a:hover { text-decoration: underline; }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .stage { max-width: 420px; margin: 0 auto; width: 100%; }
+      .lede { max-width: none; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat:nth-child(2) { border-right: none; }
+      .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--linie); }
+      .split { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .kit { grid-template-columns: 1fr; }
+      .score-wrap { flex-direction: column; text-align: center; gap: 30px; padding: 40px 28px; }
+      .score-text .q { border-left: none; padding-left: 0; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 96px 0 70px; }
+      .section { padding: 72px 0; }
+      .steps { grid-template-columns: 1fr; }
+      .name-chip, .name-chip.final { font-size: 0.84rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .starfield, .halo, .bed-rotor, .soul { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge-pill"><span class="badge-dot"></span> Nisse-Score <b>7 / 24</b> · der Name rettete 2 Punkte</span>
+          <h1><span class="grad">Chip</span> <span class="amp">und</span> <span class="grad">Chap</span></h1>
+          <p class="lede">Das rotierende Smart-Bett, das dich die ganze Nacht <b>ganz sanft und schleichend</b> durch den Raum dreht. Optimal ausgerichtet. Albtraumfrei. Und du schläfst richtig geil.</p>
+          <div class="cta-row">
+            <a href="#vorbestellen" class="btn btn-primary">Jetzt vorbestellen →</a>
+            <a href="#funktion" class="btn btn-ghost">So dreht es</a>
+          </div>
+        </div>
+
+        <div class="stage" aria-hidden="true">
+          <div class="halo"></div>
+          <div class="orbit-ring two"></div>
+          <div class="orbit-ring"></div>
+          <div class="soul"></div>
+          <div class="soul b"></div>
+          <div class="soul c"></div>
+          <!-- top-down rotating bed -->
+          <svg class="bed-rotor" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8f74ff"/>
+                <stop offset="1" stop-color="#5b40cf"/>
+              </linearGradient>
+              <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#efeaff"/>
+                <stop offset="1" stop-color="#cfc4ff"/>
+              </linearGradient>
+            </defs>
+            <!-- bed base -->
+            <rect x="46" y="28" width="108" height="144" rx="20" fill="url(#frame)"/>
+            <!-- mattress -->
+            <rect x="54" y="36" width="92" height="128" rx="14" fill="url(#mat)"/>
+            <!-- pillows -->
+            <rect x="62" y="44" width="34" height="26" rx="8" fill="#ffffff" opacity="0.95"/>
+            <rect x="104" y="44" width="34" height="26" rx="8" fill="#ffffff" opacity="0.95"/>
+            <!-- duvet seam -->
+            <path d="M56 92 H144" stroke="#b7a8ff" stroke-width="3" stroke-linecap="round"/>
+            <path d="M100 92 V160" stroke="#b7a8ff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+            <!-- watch sensor node -->
+            <circle cx="100" cy="128" r="9" fill="#56e6df"/>
+            <circle cx="100" cy="128" r="9" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- STAT STRIP -->
+    <section class="stripe">
+      <div class="container stat-grid">
+        <div class="stat"><span class="num">40 €</span><span class="cap">Xiaomi-Uhr statt Neuralink</span></div>
+        <div class="stat"><span class="num">REM</span><span class="cap">Phasen-Erkennung live</span></div>
+        <div class="stat"><span class="num">360°</span><span class="cap">Pfannenwender-Rotation</span></div>
+        <div class="stat"><span class="num">0</span><span class="cap">Seelen im Weg</span></div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / IDEE -->
+    <section class="section" id="funktion">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Fynns Startup-Idee · Folge 55</span>
+          <h2>Durchschlafen ist die wichtigste Essenz für Longevity.</h2>
+          <p>Schlechter Schlaf, Albträume, falsche Ausrichtung. Fynn hat die Lösung: ein Bett, das für dich denkt, dich dreht und dich am Leben ausrichtet — während du einfach schläfst.</p>
+        </div>
+        <div class="split">
+          <div class="panel">
+            <span class="eyebrow kicker">Das Problem</span>
+            <h3>Du liegst falsch. Die ganze Nacht.</h3>
+            <p>Wer sich nicht optimal ausrichtet, schläft schlecht und altert schneller. Und dann sind da noch die Albträume, die sich in der REM-Phase einnisten, sobald du still liegen bleibst. Von allein wird das nichts.</p>
+          </div>
+          <div class="panel">
+            <span class="eyebrow kicker">Die Idee</span>
+            <h3>Erst der Chip. Dann die Uhr.</h3>
+            <p>Zuerst sollte ein Neuralink-Chip im Kopf die Schlafphasen messen. Dann fiel Fynn auf: die Apple Watch trackt Tiefschlaf längst. Am Ende reicht eine 40-Euro-Xiaomi-Uhr am Handgelenk — und das Bett justiert nach.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Was das Bett kann</span>
+          <h2>Drei Funktionen. Eine ruhige Nacht.</h2>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <div class="f-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a689ff" stroke-width="2" stroke-linecap="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 3v9l6 3"/></svg>
+            </div>
+            <h3>REM-Nachjustierung</h3>
+            <p>Sobald die Uhr eine REM-Phase erkennt, dreht dich das Bett wie ein Pfannen- oder Pizzawender ganz sanft über die Schulter auf die andere Seite. Du merkst nichts. Du liegst nur plötzlich richtig.</p>
+          </div>
+          <div class="feature">
+            <div class="f-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a689ff" stroke-width="2" stroke-linecap="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            </div>
+            <h3>Albtraum-Wegruckeln</h3>
+            <p>Wird ein Albtraum erkannt, wirst du „Dennis-Rodman-mäßig" durchgeschüttelt — so kräftig, dass gar kein Albtraum erst entstehen kann. Böse Träume haben in diesem Bett keine Chance zu greifen.</p>
+          </div>
+          <div class="feature">
+            <div class="f-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56e6df" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <h3>Seelenausweicher™</h3>
+            <p>Das Bett weicht den Seelen Verstorbener aus. Endlich bauen und schlafen auf Friedhöfen, Wasseradern und in zerbombten Berliner Altbauten — dort, wo bisher niemand ein Auge zumachen konnte.</p>
+          </div>
+          <div class="feature">
+            <div class="f-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#56e6df" stroke-width="2" stroke-linecap="round"><rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Nur ein Handgelenk nötig</h3>
+            <p>Kein Loch im Kopf, kein Abo, kein Kabelsalat. Eine 40-Euro-Xiaomi-Uhr misst deine Schlafphasen und funkt sie ans Bett. Der Neuralink-Chip war gestern — die Longevity von morgen kostet weniger als ein Toaster.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">In vier Nächten zum perfekten Schlaf</span>
+          <h2>So dreht Chip und Chap.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="n">1</div>
+            <h4>Uhr anlegen</h4>
+            <p>Xiaomi-Uhr ans Handgelenk. Sie trackt Tiefschlaf, REM und Albtraum-Muster — vollautomatisch, ab der ersten Nacht.</p>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <h4>Hinlegen</h4>
+            <p>Auf die Emma- oder Bodyguard-Matratze legen, Aluanzug an, Knieschoner drauf. Augen zu. Das Bett übernimmt.</p>
+          </div>
+          <div class="step">
+            <div class="n">3</div>
+            <h4>Rotieren lassen</h4>
+            <p>Schleichend dreht dich das Bett durch den Raum, richtet dich aus und weicht dabei allem aus, was im Weg liegt.</p>
+          </div>
+          <div class="step">
+            <div class="n">4</div>
+            <h4>Richtig geil aufwachen</h4>
+            <p>Kein Albtraum, keine Seele, keine Verspannung. Nur du, optimal ausgerichtet, bereit für die nächsten 120 Jahre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEELENAUSWEICHER SPINOFF -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="split">
+          <div class="panel">
+            <span class="eyebrow kicker">Ableger der Woche</span>
+            <h3>Der Seelenausweicher-Stuhl</h3>
+            <p>Dieselbe Technik, jetzt fürs Café: ein Stuhl mit Drei-Punkt-Gurt, an dem du mit dem Cappuccino festgeschnallt den Seelen ausweichst. „Ein bisschen wie ein Messerwerfer im Zirkus — aber mit Überlebensgarantie."</p>
+          </div>
+          <div class="panel">
+            <span class="eyebrow kicker">Vom Preis her</span>
+            <h3>Von 40.000 € auf 2.500 €</h3>
+            <p>Zum Marktstart kostet ein Chip und Chap noch 40.000 Euro. Skaliert wird runter auf 2.500 Euro. Werbung machen wahlweise Tim Gio oder der Drachenlord. Wir sind da noch in Gesprächen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAMING TIMELINE -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="naming">
+          <span class="eyebrow">Die Namensrunde</span>
+          <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-top:16px;">Bis der Name saß, war es 5 von 24.</h2>
+          <p style="color:var(--muted);margin-top:14px;max-width:60ch;">Nisse fand die Idee erst „viel zu teuer und komplett unsexy". Ein guter Name könne „noch ein bis höchstens zwei Punkte retten". Also wurde gemeinsam gesucht:</p>
+          <div class="name-track">
+            <span class="name-chip">360-Grad-Wiege</span>
+            <span class="name-arrow">→</span>
+            <span class="name-chip">Rotate</span>
+            <span class="name-arrow">→</span>
+            <span class="name-chip">only show me</span>
+            <span class="name-arrow">→</span>
+            <span class="name-chip final">Chip und Chap ✦</span>
+          </div>
+          <p style="color:var(--muted-2);margin-top:22px;font-size:0.92rem;">Chip = im Kopf bzw. an der Uhr. Chap = die Einrichtung, das Bett. Und plötzlich sind es 7 von 24.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCESSORIES -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Nötiges Zubehör</span>
+          <h2>Was du zum Drehen brauchst.</h2>
+        </div>
+        <div class="kit">
+          <div class="kit-item">
+            <span class="tag">Schutz</span>
+            <h4>Aluanzug von MIA</h4>
+            <p>Damit die Rotation dich nicht durchrüttelt, sondern hält. Pflicht-Equipment für jede Nacht im Chip und Chap.</p>
+          </div>
+          <div class="kit-item">
+            <span class="tag">Gelenke</span>
+            <h4>Knieschoner „von Friedrich Merz"</h4>
+            <p>Für den Fall, dass die Schulter-über-Schulter-Drehung mal etwas rustikaler ausfällt. Sicherheit zuerst.</p>
+          </div>
+          <div class="kit-item">
+            <span class="tag">Untergrund</span>
+            <h4>Emma- / Bodyguard-Matratze</h4>
+            <p>Weil eine rotierende Longevity-Maschine eine anständige Basis verdient. Separat erhältlich, versteht sich.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCORE -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="score-wrap">
+          <div class="dial">
+            <svg viewBox="0 0 168 168" aria-hidden="true">
+              <circle cx="84" cy="84" r="76" fill="none" stroke="rgba(150,130,255,0.18)" stroke-width="10"/>
+              <circle cx="84" cy="84" r="76" fill="none" stroke="url(#dialgrad)" stroke-width="10" stroke-linecap="round"
+                       stroke-dasharray="477" stroke-dashoffset="338"/>
+              <defs>
+                <linearGradient id="dialgrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#a689ff"/>
+                  <stop offset="1" stop-color="#56e6df"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div style="text-align:center;">
+              <div class="val">7</div>
+              <div class="of">von 24</div>
+            </div>
+          </div>
+          <div class="score-text">
+            <span class="eyebrow kicker">Nisses Bewertung</span>
+            <h3>7 von 24 — und der Name hat 2 davon gerettet.</h3>
+            <p>Nisse bewertet extrem streng: viel zu teuer, der schlafende Partner wird mitgeschleudert, man bräuchte zwei getrennte Betten, komplett unsexy. Startwert: <b style="color:var(--text);">5 von 24</b>. „Alter, du bist so rigoros bei den Sachen."</p>
+            <p class="q">„Dann sieben von 24. Jawoll. Und ich habe doch mitgeholfen." — Nisse, nachdem „Chip und Chap" gefunden war.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" id="vorbestellen">
+      <div class="container">
+        <span class="eyebrow" style="justify-content:center;">Longevity beginnt heute Nacht</span>
+        <h2 style="margin-top:18px;">Dreh dich ins längere Leben.</h2>
+        <p>Reservier dir deinen Chip und Chap, bevor der Preis von 40.000 € startet. Aluanzug nicht vergessen — man schläft nämlich richtig geil.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a href="/folge/55" class="btn btn-primary">Zur Folge #55 →</a>
+          <a href="/startup-ideen" class="btn btn-ghost">Alle Startups</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p class="disclaimer">Rein fiktives Produkt aus dem TMDA-Podcast „Teenager mit deutschem Akzent". Es gibt kein rotierendes Bett, keinen Seelenausweicher und keinen Aluanzug von MIA. Niemand weicht Seelen aus. Bitte nicht auf Friedhöfen bauen.</p>
+        <p class="foot-meta">
+          Idee: Fynn · Bewertung: Nisse · TMDA #55 · 7/24 · <a href="/folge/55">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
