@@ -92,7 +92,7 @@
           <a href="https://whatwouldlikashingdo.de" target="_blank" rel="noopener" title="Ask Li Ka-shing — die Fan-Seite aus dem Podcast">🧧 Ask Li Ka-shing</a>
         </div>
       </details>
-      <a href="/transkripte-gesucht" class="nav-mini" title="Transkripte mit Sprecher-Zuordnung gesucht">🎤+</a>
+      <a href="/transkripte-gesucht" class="nav-mini" title="Transkripte mit Sprecher-Zuordnung gesucht">🎤+<span class="nav-mini-label"> Transkripte gesucht</span></a>
     </nav>
     <button class="search-trigger" id="searchTrigger" aria-label="Suche öffnen">
       <span aria-hidden="true">🔎</span>
@@ -100,7 +100,11 @@
       <kbd>⌘K</kbd>
     </button>
     <button class="theme-toggle" id="themeToggle" aria-label="Theme wechseln">◐</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-controls="primaryNav" aria-expanded="false">
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
   </header>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
   <main id="app">
     <!-- Rendered by app.js -->
