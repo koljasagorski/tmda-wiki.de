@@ -19,12 +19,15 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 49/49 LIVE ✅
+## Status — 52/52 LIVE ✅
 
 **Jede** Startup-Idee aus den Folgen 1-52 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
+- [x] **Operation Nordstrand (Mond-Abschuss)** · Folge 53 · 14/24 · staatliche Weltraum-Behörde / Space-Race-Propaganda (Kosmos-Navy, Gold/Silber, Zertifikat)
+- [x] **Der Glasturm** · Folge 54 · durchgefallen (kein expliziter Score) · NEOM „The Line"-Minimalismus (Glas-Weiß, Gletscherblau, ultradünne Grotesk)
+- [x] **Chip und Chap** · Folge 55 · 7/24 · Sleep-Tech Nacht-Look (Indigo/Cyan-Glow, Bricolage Grotesque + DM Sans)
 - [x] **HATS — Hot Air to Sock Adapter** · Folge 45 · industrial engineering
 - [x] **windradhologramm.de** · Folge 44 · eco-tech cynical
 - [x] **Das letzte was ich sehe.de** · Folge 41 · dystopian medical

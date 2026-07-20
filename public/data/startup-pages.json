@@ -49,6 +49,9 @@
     {"folge":43,"ideeMatch":"Bitter Sleeve","slug":"bitter-sleeve","domain":null,"tagline":"Schluck bittere Sachen ohne sie zu schmecken.","punkte":12},
     {"folge":20,"ideeMatch":"Drive-Through Supermarkt","slug":"drive-through-supermarkt","domain":null,"tagline":"Du fährst durch. Du kaufst ein. Du zahlst per Nummernschild.","punkte":12},
     {"folge":11,"ideeMatch":"Hundeschule","slug":"hundeschule","domain":null,"tagline":"Tachonase. Bullen-Sniff. Vegan-Test. Hundeerziehung anders.","punkte":11},
-    {"folge":9,"ideeMatch":"Uwe seine Waage","slug":"uwe-waage","domain":null,"tagline":"Jedes Haus auf einer Industrie-Waage.","punkte":11}
+    {"folge":9,"ideeMatch":"Uwe seine Waage","slug":"uwe-waage","domain":null,"tagline":"Jedes Haus auf einer Industrie-Waage.","punkte":11},
+    {"folge":53,"ideeMatch":"Nordkorea bombardiert","slug":"mond-abschuss","domain":null,"tagline":"Der Mond klaut der Nordsee zweimal täglich das Wattenmeer. Zeit, dass er verschwindet — per Atomrakete, koordiniert vom Tourismusverband.","punkte":14},
+    {"folge":54,"ideeMatch":"Glasturm","slug":"glasturm","domain":null,"tagline":"Ein Zimmer breit, einen Kilometer hoch, nur bodentiefe Fenster. Premium-Ausblick für Geschäftsleute.","punkte":null},
+    {"folge":55,"ideeMatch":"Chip und Chap","slug":"chip-und-chap","domain":null,"tagline":"Per Xiaomi-Uhr gesteuert dreht dich das Bett im Schlaf durch den Raum — Albträume weggeruckelt, Seelen ausgewichen.","punkte":7}
   ]
 }
