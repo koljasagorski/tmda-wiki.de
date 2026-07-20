@@ -45,6 +45,35 @@ _osThemeQuery?.addEventListener?.('change', (e) => {
   document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
 });
 
+// ---------- Mobile-Navi (Offcanvas-Drawer) ----------
+const navToggle = document.getElementById('navToggle');
+const navBackdrop = document.getElementById('navBackdrop');
+const mqNavMobile = window.matchMedia('(max-width: 720px)');
+
+function setNav(open) {
+  document.body.classList.toggle('nav-open', open);
+  navToggle?.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function closeNav() { setNav(false); }
+
+navToggle?.addEventListener('click', () => {
+  setNav(!document.body.classList.contains('nav-open'));
+});
+navBackdrop?.addEventListener('click', closeNav);
+// Klick auf einen Link im Drawer schließt ihn
+nav?.addEventListener('click', (e) => {
+  if (mqNavMobile.matches && e.target.closest('a')) closeNav();
+});
+
+// „Mehr"-Gruppe im Drawer flach auslegen (auf Mobile immer geöffnet);
+// das Desktop-Dropdown bleibt unverändert.
+function syncNavMore() {
+  const more = document.getElementById('navMore');
+  if (more && mqNavMobile.matches) more.open = true;
+}
+mqNavMobile.addEventListener('change', () => { closeNav(); syncNavMore(); });
+syncNavMore();
+
 // ---------- Helpers ----------
 const cache = new Map();
 async function getData(name) {
@@ -134,6 +163,7 @@ const views = {
 };
 
 function setActive(path) {
+  closeNav(); // Drawer bei jeder Navigation schließen (No-op auf Desktop)
   // Detail-Routen markieren ihre Übersicht (z.B. /erfindung/x → /erfindungen)
   let activeHref = path;
   if (path.startsWith('/erfindung/')) activeHref = '/erfindungen';
@@ -147,19 +177,22 @@ function setActive(path) {
   if (more) {
     const childActive = !!more.querySelector('.nav-more-panel a.active');
     more.classList.toggle('has-active', childActive);
-    more.open = false;
+    // Auf Mobile bleibt „Mehr" im Drawer flach ausgeklappt.
+    if (!mqNavMobile.matches) more.open = false;
   }
 }
 
-// Dropdown schließen bei Klick außerhalb oder Escape
+// Dropdown schließen bei Klick außerhalb oder Escape (nur Desktop-Dropdown)
 document.addEventListener('click', (e) => {
+  if (mqNavMobile.matches) return;
   const more = document.getElementById('navMore');
   if (more && more.open && !more.contains(e.target)) more.open = false;
 });
 document.addEventListener('keydown', (e) => {
   if (e.key !== 'Escape') return;
+  if (document.body.classList.contains('nav-open')) { closeNav(); return; }
   const more = document.getElementById('navMore');
-  if (more) more.open = false;
+  if (more && !mqNavMobile.matches) more.open = false;
 });
 
 function navigate(path) {
@@ -581,7 +614,7 @@ async function renderStartupIdeen() {
   `;
   if (items.length === 0) return;
 
-  const tbl = el(`<div class="table-wrap"><table>
+  const tbl = el(`<div class="table-wrap ideen-table"><table>
     <thead><tr><th>Folge</th><th>Idee</th><th>Beschreibung</th><th>Punkte</th></tr></thead>
     <tbody></tbody></table></div>`);
   const tb = tbl.querySelector('tbody');
