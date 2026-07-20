@@ -1,7 +1,62 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 78,
+  "updatedAt": "2026-07-20T16:02:33.237Z",
+  "count": 89,
   "items": [
+    {
+      "folge": 55,
+      "name": "Seelenausweicher (Bett / Cafe-Stuhl)",
+      "beschreibung": "Ableger des rotierenden Betts: weil die Technik den 'Seelen' Verstorbener ausweicht, kann man auf Friedhoefen, Wasseradern und in 'zerbombten' Altbauten bauen und schlafen. Als Cafe-Variante ein Stuhl mit Drei-Punkt-Gurt, an dem man mit dem Cappuccino festgeschnallt den Seelen ausweicht - 'ein biss…"
+    },
+    {
+      "folge": 55,
+      "name": "Rotierende Riesen-Sanduhr-Installation",
+      "beschreibung": "Eine ueberdimensionale Sanduhr, die so schnell rotiert, dass kein Sand mehr rieseln kann - ein Kunstwerk, das Zeitdilatation sichtbar macht: wer sich schnell genug (bis nahe Lichtgeschwindigkeit) bewegt, fuer den vergeht keine Zeit. Fynns Idee aus der Sauna im Berliner Warmbad 'The Liquid'."
+    },
+    {
+      "folge": 54,
+      "name": "Guru-Schutz-Outfit (Leinenanzug + Babyzorro-Hut)",
+      "beschreibung": "Schutzkleidung fuer die (immer angegriffene) Guru-Sekte: ein hauchduenner Leinenanzug, der bei Schweiss oder Regen alles durchscheinen laesst - so wird 'belohnt, wer sich reingehaengt hat'. Dazu ein Udo-Lindenberg-Hut in Lila/Gelb, so tief ins Gesicht gezogen, dass man zwei Guckloecher oben reinsch…"
+    },
+    {
+      "folge": 54,
+      "name": "Steuerquartett",
+      "beschreibung": "Ein Kartenquartett rund um Steuern und Behoerden (wie ein Autoquartett), angeblich mit dem TMDA-Titel zusammen mit Hasbro auf den Markt gebracht. Viele Hoerer wollen es - 'ab drei Leuten wuerde ich produzieren'."
+    },
+    {
+      "folge": 54,
+      "name": "Mutter um die Ecke (Muttermilch-Cafe)",
+      "beschreibung": "Ein Cafe/Bar mit Muttermilch-Spendern wie bei McDonald's (Becher drunterhalten). Alles gefertigt aus Muttermilch: Kaese, Kekse, Butter, Franzbroetchen - inklusive Gesichtskaese mit den Gesichtern von Palina, Jana und Bluemchen."
+    },
+    {
+      "folge": 54,
+      "name": "Papst-Kolosseum-Event",
+      "beschreibung": "TV-Grossevent, bei dem der Papst im Kolosseum ueber Andrew Tates Schicksal entscheidet - die Menge stimmt ab ('handlungsunfaehig machen' statt toeten), Tate traegt die Maerz-Pferdemaske, hat ein Spiegel-Kreuz auf der Stirn (wie Cro), und Pharrell singt mit Kirchenchor 'goodbye friend'."
+    },
+    {
+      "folge": 54,
+      "name": "Um die Wette rauchen",
+      "beschreibung": "Co-Event, bei dem Dirk Rossmann gegen den Saenger von Blumengarten antritt: Wer kann mehr Koepfe aus dem Weihrauch-Chillum ziehen, das man wie eine Bong mit Kickloch praepariert (weisser Rauch)."
+    },
+    {
+      "folge": 54,
+      "name": "'How to open'-Channel",
+      "beschreibung": "Ein YouTube-Channel, der nur eine Sache macht: Dinge oeffnen, die schwer aufgehen (z.B. die Fernbedienung des Skoda Kodiaq, die man mit dem Schraubenzieher aufhebeln muss) - 'die Buechse der Pandora, das Laptop und so weiter'."
+    },
+    {
+      "folge": 54,
+      "name": "Opa-Handwerkerkurse",
+      "beschreibung": "Idee von Event-Managerin Tini: einfache Handwerkskurse von Opas aus der Region fuer Leute ohne Handwerker-Vorbildung - Steckdose anschliessen, Lichtschalter, Bild aufhaengen, Duebel richtig benutzen ('die Schraube muss laenger sein als der Duebel')."
+    },
+    {
+      "folge": 53,
+      "name": "Eckenkokain (mit Eckenkucker)",
+      "beschreibung": "Nebenprodukt-Gag zur Mond-Idee: ein 'Eckenkucker' mit Spiegel, um die Ecke zu schauen, kombiniert mit einem Knickstrohhalm, mit dem man Kokain 'um die Ecke' ziehen kann."
+    },
+    {
+      "folge": 53,
+      "name": "Mondgrundstueck-Zertifikat mit Goldrand ('Lanet 18')",
+      "beschreibung": "Fynn verkauft claimbare Mondparzellen samt vernuenftigem Zertifikat mit Goldrand und Videobeweis. Er nimmt sich live 'Lanet 18' (100 Quadratkilometer) - 'was verkaufen, was man nicht hat' als Donald-Trump-Move, spaeter Grundlage fuer Reparationsforderungen, falls Nordkorea den Mond sprengt."
+    },
     {
       "folge": 52,
       "name": "Romantischer Roboter",

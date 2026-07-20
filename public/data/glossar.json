@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-23T08:07:16.548Z",
-  "count": 216,
+  "updatedAt": "2026-07-20T16:02:33.237Z",
+  "count": 244,
   "items": [
     {
       "begriff": "1F1P",
@@ -61,6 +61,11 @@
       "begriff": "ARC Raiders",
       "bedeutung": "Online-Game, das Nisse mit Cliso, Thor und Sharakta spielt. In den Auto-Captions falsch als 'Arschraiders', 'Arc Riders' oder 'Raders' transkribiert.",
       "folge": 43
+    },
+    {
+      "begriff": "Atompartnerpakt-Steuer",
+      "bedeutung": "Das Finanzierungsmodell der Mond-Idee: 20% der zusaetzlichen Nordsee-Tourismuseinnahmen werden jaehrlich an alle am Atomraketenprogramm zur Mondzerstoerung beteiligten Nationalstaaten ausgeschuettet.",
+      "folge": 53
     },
     {
       "begriff": "August da",
@@ -163,6 +168,11 @@
       "folge": 19
     },
     {
+      "begriff": "Chip und Chap",
+      "bedeutung": "Die Startup-Idee der Folge: das rotierende Bett, das dich per Smartwatch im Schlaf durch den Raum dreht. Der Name meint 'Chip' (im Kopf bzw. an der Uhr) und 'Chap' (die Einrichtung/das Bett) - er rettete die Bewertung von 5 auf 7 von 24.",
+      "folge": 55
+    },
+    {
       "begriff": "Christoph Altmann",
       "bedeutung": "Wiederkehrende Figur, der 'Pizzamann' der in jeder Folge vorkommen soll",
       "folge": 5
@@ -213,6 +223,16 @@
       "folge": 39
     },
     {
+      "begriff": "Der Glasturm / Try this angle",
+      "bedeutung": "Die Startup-Idee der Folge: ein extrem schmales, kilometerlanges 'The Line'-Gebaeude, das nur aus bodentiefen Fenster-Zimmern fuer Geschaeftsleute besteht - als Dreieck 'Try this angle of life'.",
+      "folge": 54
+    },
+    {
+      "begriff": "Der verrueckte Hollaender",
+      "bedeutung": "Pilotenlehrer, der Nisse bei einer Flugstunde faelschlich fuer einen Piloten hielt und ihn als kompletten Anfaenger selbst starten, fliegen und mehrfach durchstarten liess.",
+      "folge": 55
+    },
+    {
       "begriff": "Dienstagnisse",
       "bedeutung": "Running Gag: Nisse fordert Anerkennung dafuer, den Begriff 'Dienstagnisse' fuer den TMDA-Erscheinungstag erfunden zu haben - Fynn besteht darauf, es selbst schon in Folge 3 gesagt zu haben.",
       "folge": 52
@@ -241,6 +261,11 @@
       "begriff": "Eckengucker",
       "bedeutung": "Hypothetisches Hilfsmittel und gleichzeitig 'wie ein Schnapsausguss aus Kiel' klingender Begriff für jemanden mit schielenden Augen ('immer ein Auge aufs Geschäft')",
       "folge": 10
+    },
+    {
+      "begriff": "Eckenkokain / Eckenkucker",
+      "bedeutung": "Skurriles Nebenprodukt: ein Spiegel-Geraet, um die Ecke zu gucken ('Eckenkucker'), plus ein Knickstrohhalm, um Kokain um die Ecke zu ziehen.",
+      "folge": 53
     },
     {
       "begriff": "Eckenkucker",
@@ -313,6 +338,11 @@
       "folge": 44
     },
     {
+      "begriff": "Fountain of Youth",
+      "bedeutung": "Gesponsertes Getraenk des Hotels Michelberger - eine Dose mit roten Affen drauf, fuer die Fynn und Nisse 'relativ viel Geld' bekommen.",
+      "folge": 55
+    },
+    {
       "begriff": "Four Music",
       "bedeutung": "Deutsches Plattenlabel, bei dem Nisse, Casper, Materia, Mark Forster, Lea unter Vertrag waren/sind.",
       "folge": 18
@@ -338,6 +368,11 @@
       "folge": 7
     },
     {
+      "begriff": "Geruecht der Woche",
+      "bedeutung": "Wiederkehrende Kategorie fuer ungesicherte Klatsch-Infos - hier der beruehmte, gut aussehende Mensch, der angeblich Sexpartys in Berlin veranstaltet.",
+      "folge": 55
+    },
+    {
       "begriff": "Halbwertszeit",
       "bedeutung": "Zeit, in der sich radioaktive Strahlung auf die Haelfte reduziert. Hier im Kontext von Tschernobyl thematisiert.",
       "folge": 20
@@ -346,6 +381,11 @@
       "begriff": "Hammergotchi / Mama-Goci",
       "bedeutung": "Tamagotchi-Hammer fuer Zimmermaenner: Jeder Schlag haelt das virtuelle Tier am Leben, eine Kamera hinten am Hammer baut daraus einen Zeitraffer 'dein Leben als Zimmermann'.",
       "folge": 49
+    },
+    {
+      "begriff": "Handlungsunfaehig machen",
+      "bedeutung": "Running-Gag statt 'toeten': Andrew Tate soll nach dem 'Ritter der Kokosnuss'-Prinzip nur bewegungsunfaehig gemacht werden (Augen/Finger), nicht getoetet.",
+      "folge": 54
     },
     {
       "begriff": "Hartz 4 Raupe",
@@ -361,6 +401,11 @@
       "begriff": "Healcher / Hilcher",
       "bedeutung": "Joker-Karte, mit der man als Interviewer in eine defensive Rolle wechseln kann",
       "folge": 29
+    },
+    {
+      "begriff": "Herz auf Beat",
+      "bedeutung": "Nisses groesster Hit, urspruenglich als Verarschung des damaligen Deutschpop gemeint - analog zu Peter Maffays Kinderalbum 'Tabaluga', mit dem er der Plattenfirma eins auswischen wollte.",
+      "folge": 53
     },
     {
       "begriff": "Hielcher",
@@ -448,6 +493,11 @@
       "folge": 37
     },
     {
+      "begriff": "Kampfflugzeuge",
+      "bedeutung": "Drittes K des Titels: Nisses Opa als 16-jaehriger Kampfpilot und die Kumpels, die bei einem Testflug nach Belgien desertieren - plus Fynns und Nisses eigene Kleinflugzeug-Abenteuer.",
+      "folge": 55
+    },
+    {
       "begriff": "KaSim",
       "bedeutung": "Kurzform von Knarschimulator - das Hauptprodukt der Startup-Idee",
       "folge": 12
@@ -461,6 +511,11 @@
       "begriff": "Kenashi / Kinashi",
       "bedeutung": "Chinesischer Hersteller des Nasenwachs-Produkts, das live im Podcast getestet wird",
       "folge": 13
+    },
+    {
+      "begriff": "Kettlebell",
+      "bedeutung": "Zweites K des Titels: Fynns taegliches 300er-Kettlebell-Workout (heruntergeschraubt von 500, '300 macht wegen dem Film Sinn') mit einer 16-kg-Kugel.",
+      "folge": 55
     },
     {
       "begriff": "KeyBillboard / BB Keyboard / Bill Keyboard",
@@ -498,6 +553,11 @@
       "folge": 51
     },
     {
+      "begriff": "Knarren",
+      "bedeutung": "Erstes K des Titels: Nisses eskalierende Waffen-Anekdote um DJ Tony und die Knarre im Handschuhfach ('wenn ich nicht wiederkomme, kommst du mich holen').",
+      "folge": 55
+    },
+    {
       "begriff": "Knippe",
       "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat.",
       "folge": 43
@@ -528,9 +588,19 @@
       "folge": 40
     },
     {
+      "begriff": "Kuenstlerexklusiv- vs. Banduebernahmevertrag",
+      "bedeutung": "Die zwei Grundtypen von Plattenvertraegen: beim Kuenstlerexklusivvertrag gestaltet das Label alles mit ('dein Arsch gehoert uns'), beim Banduebernahmevertrag liefert der Kuenstler ein fertiges Album ab und behaelt mehr kreative Freiheit.",
+      "folge": 53
+    },
+    {
       "begriff": "Kuriose Ablenkung",
       "bedeutung": "Nisses Deeskalations-Technik: in bedrohlichen Situationen plötzlich über etwas völlig Unerwartetes reden (z.B. 'Spielst du Sims?')",
       "folge": 7
+    },
+    {
+      "begriff": "Lanet 18",
+      "bedeutung": "Fynns live geclaimtes 100-qkm-Mondgrundstueck, das er mit Zertifikat und Goldrand verkauft - Basis fuer spaetere Reparationsforderungen, falls der Mond gesprengt wird.",
+      "folge": 53
     },
     {
       "begriff": "Lazy Eye",
@@ -561,6 +631,11 @@
       "begriff": "Leidenfrost-Effekt",
       "bedeutung": "Wassertropfen auf heisser Herdplatte schwebt auf eigenem Dampffilm",
       "folge": 25
+    },
+    {
+      "begriff": "Libu / Libido",
+      "bedeutung": "Name der fiktiven Guru-Girlgroup bzw. Sekte aus Palina Rosinski (Sterne), Jana Pallaske (Libido) und Bluemchen (Atemtechnik).",
+      "folge": 54
     },
     {
       "begriff": "Like Mike",
@@ -633,6 +708,11 @@
       "folge": 40
     },
     {
+      "begriff": "Mutter um die Ecke",
+      "bedeutung": "Fynns Muttermilch-Bar mit Spendern wie bei McDonald's - Kekse, Butter und Gesichtskaese aus Muttermilch mit den Gesichtern der Guru-Girls.",
+      "folge": 54
+    },
+    {
       "begriff": "N-Maedchen",
       "bedeutung": "Wortspiel mit 'Nomadin' - jemand der viel unterwegs ist",
       "folge": 27
@@ -658,9 +738,19 @@
       "folge": 29
     },
     {
+      "begriff": "Nordkorea bombardiert Mond",
+      "bedeutung": "Titelgeber und Startup-Idee der Folge: Weil der Mond fuer das fehlende Wattenmeer-Wasser an Fynns Ferienwohnung sorgt, soll er von Nordkorea und allen anderen Atomnationen mit Raketen weggeschossen werden.",
+      "folge": 53
+    },
+    {
       "begriff": "Nutri Score",
       "bedeutung": "Freiwillige Lebensmittel-Kennzeichnung von A (beste) bis E (schlechteste)",
       "folge": 14
+    },
+    {
+      "begriff": "Opa erzaehlt Geschichten aus dem Krieg",
+      "bedeutung": "Angekuendigte neue Kategorie: Kriegsanekdoten der Grossvaeter - Fynns Opa schrieb plattdeutsche NDR-Geschichten, Nisses Opa lieferte die Deserteur-Story.",
+      "folge": 55
     },
     {
       "begriff": "Open Claw",
@@ -701,6 +791,11 @@
       "begriff": "Pepse",
       "bedeutung": "Auto-Caption-Fehler fuer 'Paepste'",
       "folge": 1
+    },
+    {
+      "begriff": "Pfannenwender / Fannenwender",
+      "bedeutung": "Nisses Bild fuer das rotierende Bett, das einen wie ein Pizza- oder Pfannenwender sanft ueber die Schulter auf die andere Seite dreht.",
+      "folge": 55
     },
     {
       "begriff": "Pink Eye",
@@ -773,6 +868,11 @@
       "folge": 14
     },
     {
+      "begriff": "Recoupment (recruped)",
+      "bedeutung": "Musikindustrie-Begriff: Der nicht rueckzahlbare Vorschuss wird so lange gegen alle Musikeinnahmen gegengerechnet, bis er wieder eingespielt ist ('recruped') - erst danach verdient der Kuenstler einen echten Euro.",
+      "folge": 53
+    },
+    {
       "begriff": "RFs",
       "bedeutung": "Random anonymous Facts von Nisse",
       "folge": 38
@@ -791,6 +891,11 @@
       "begriff": "Rotten.com / World Star Hip Hop",
       "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor).",
       "folge": 47
+    },
+    {
+      "begriff": "RRFs / RFS",
+      "bedeutung": "'Random anonymous facts' - die Trivia-Abschlusskategorie, laut den Hosts die Lieblingskategorie vieler Hoerer.",
+      "folge": 54
     },
     {
       "begriff": "Sakofuckx",
@@ -848,6 +953,11 @@
       "folge": 18
     },
     {
+      "begriff": "Seelenausweicher",
+      "bedeutung": "Zweitnutzen des rotierenden Betts (und eines Cafe-Stuhls mit Drei-Punkt-Gurt): das Moebel weicht den 'Seelen' Verstorbener aus und macht so Bauplaetze auf Friedhoefen, Wasseradern und in zerbombten Altbauten nutzbar.",
+      "folge": 55
+    },
+    {
       "begriff": "Shability",
       "bedeutung": "Startup-Idee der Folge: Matching-Plattform (Share + Ability), die Menschen mit Behinderung mit Begleitern ohne Behinderung verbindet. Die Begleitung bekommt die Privilegien (Erstboarding, beste Sitze, Rabatte), der Mensch mit Behinderung b…",
       "folge": 48
@@ -856,6 +966,11 @@
       "begriff": "Shooten",
       "bedeutung": "Im Brazilian Jiu-Jitsu: sich ducken und direkt in die Beine des Gegners gehen",
       "folge": 8
+    },
+    {
+      "begriff": "Showeinfaelle",
+      "bedeutung": "Nisses Begriff fuer die vielen Entertainment-, Sekten- und Event-Ideen der Folge, ausdruecklich abgegrenzt von der eigentlichen (bewerteten) Startup-Idee.",
+      "folge": 54
     },
     {
       "begriff": "Skits aus dem Knast",
@@ -933,6 +1048,11 @@
       "folge": 52
     },
     {
+      "begriff": "Teenzingler / Zingler",
+      "bedeutung": "Die 'krasseste Privatarmee der Welt' - die TMDA-Community/-Anhaenger, 'alle unbewaffnet, aber haben nichts zu verlieren'.",
+      "folge": 54
+    },
+    {
       "begriff": "Tees / Teenis / Teens / Tidies / Torpedos",
       "bedeutung": "Verschiedene Begriffe fuer die Hoererschaft von TMDA.",
       "folge": 19
@@ -956,6 +1076,16 @@
       "begriff": "TMDA Wiki",
       "bedeutung": "Von Hoerern gebautes Fan-Wiki mit eigener Suchmaschine ueber alle Folgen (Startup-Ideen, Kalles Corner, RFS, Stichwortsuche) - genau diese Seite, im Podcast erwaehnt.",
       "folge": 50
+    },
+    {
+      "begriff": "TMDA-wiki.de",
+      "bedeutung": "Das von einem Hoerer vibegecodete Fan-Wiki des Podcasts mit eigener Website fuer jede Startup-Idee, Quiz, Bingo, Statistiken und Easter Eggs - von Fynn zuvor mit Codex auf Sicherheitsluecken geprueft.",
+      "folge": 53
+    },
+    {
+      "begriff": "TMDakel",
+      "bedeutung": "Wortspiel aus TMDA und Orakel - der Modus, in dem Fynn und Nisse per Gefuehl den WM-Sieger tippen (Ergebnis: Niederlande).",
+      "folge": 53
     },
     {
       "begriff": "Topline",
@@ -1048,6 +1178,11 @@
       "folge": 15
     },
     {
+      "begriff": "War Mama bei Osho in Hannover? / Osho",
+      "bedeutung": "Titelgeber der Folge: Nisses Mutter feierte frueher im 'Osho Club' in Hannover (Bhagwan-/Osho-Bewegung, Anhaenger in Rot, Rolls-Royce-Fuhrpark). Fynns Pointe: 'Osho hat meine Mutter ausgezogen.'",
+      "folge": 54
+    },
+    {
       "begriff": "Warnblinker-Entschuldigung",
       "bedeutung": "Kurzes Warnblinken im Strassenverkehr, um sich nach einem Fehler zu entschuldigen",
       "folge": 26
@@ -1056,6 +1191,11 @@
       "begriff": "White Label",
       "bedeutung": "Produktionsweise, bei der ein Hersteller das gleiche Produkt unter verschiedenen Marken (Logos/Verpackungen) verkauft.",
       "folge": 17
+    },
+    {
+      "begriff": "Wood Wide Web",
+      "bedeutung": "Das Pilznetzwerk im Waldboden, ueber das sich Baeume und Pilze gegenseitig 'warnen' - Fynns Bild fuer die Verbundenheit aller Menschen (Anschluss an Josef Pilates).",
+      "folge": 54
     },
     {
       "begriff": "Wunderkinder",
