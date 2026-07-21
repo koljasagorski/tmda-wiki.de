@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-07-20T16:02:33.237Z",
-  "count": 89,
+  "updatedAt": "2026-07-21T06:42:49.942Z",
+  "count": 91,
   "items": [
+    {
+      "folge": 56,
+      "name": "Kokain-Detektor-Schluessel fuer Restaurants",
+      "beschreibung": "Der Restaurantbetreiber kodiert seine Gerichte mit einem speziellen Geruechmolekuel-'Stempel' (aehnlich wie KI-generierte Texte Wasserzeichen haben). Die Toilettentuer prueft per Nasendetektor, ob der Besucher auch wirklich im Restaurant war — nur eigene Gaeste kommen rein."
+    },
+    {
+      "folge": 56,
+      "name": "Mondbesitz-Eigentumserklaerung (Nisse Ingwersen)",
+      "beschreibung": "Nisse verfasst spontan eine burleske juristische Erklaerung, in der er 100 Quadratkilometer der Mondoberflaeche Nr. 18 fuer sich beansprucht und jede unbefugte Bombardierung oder Destabilisierung mit 'Reparationen in astronomischer Hoehe' ahndet. Hintergrund: SpaceX crasht im August eine Rakete auf…"
+    },
     {
       "folge": 55,
       "name": "Seelenausweicher (Bett / Cafe-Stuhl)",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-20T16:02:33.237Z",
-  "count": 334,
+  "updatedAt": "2026-07-21T06:42:49.942Z",
+  "count": 340,
   "items": [
     {
       "ort": "Berlin",
@@ -2088,6 +2088,42 @@
       "ort": "Mischung aus Hawaii und Kanada (Nisses Traumlandschaft)",
       "folgen": [
         55
+      ]
+    },
+    {
+      "ort": "Berlin (Aufnahme, Wohnort beider Hosts)",
+      "folgen": [
+        56
+      ]
+    },
+    {
+      "ort": "Ballermann / Mallorca (Anitas erster Schlagerauftritt)",
+      "folgen": [
+        56
+      ]
+    },
+    {
+      "ort": "Hamburg / Kiez (Nisse's Buehnenzeit, Battle-Rap-Atmosphaere)",
+      "folgen": [
+        56
+      ]
+    },
+    {
+      "ort": "Mond / Mondflaeche Nr. 18 (Nisse's Mondbesitz — 100 km²)",
+      "folgen": [
+        56
+      ]
+    },
+    {
+      "ort": "New Jersey / WM-Stadion USA (WM 2026 Spielorte)",
+      "folgen": [
+        56
+      ]
+    },
+    {
+      "ort": "Kliemannsland (Fynn's Hof, Wachstumsanalogien)",
+      "folgen": [
+        56
       ]
     }
   ]
