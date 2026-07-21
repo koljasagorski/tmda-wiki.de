@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Die Kiste von Gabba — Harm-Reduction-Zugang für Wissende</title>
+<meta name="description" content="Die Kiste von Gabba: Eine verschlossene Box mit Kokain-Nasendetektor. Öffnet sich nur für Menschen, die bereits konsumieren. Sicherer Zugang, keine Neulinge, keine Kinder.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/kiste-von-gabba">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Die Kiste von Gabba — Harm-Reduction-Zugang für Wissende">
+<meta property="og:description" content="Eine verschlossene Box mit Kokain-Nasendetektor. Öffnet sich nur für Menschen, die bereits konsumieren. Sicherer Zugang, keine Neulinge, keine Kinder.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/kiste-von-gabba">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Die Kiste von Gabba",
+  "description": "Harm-Reduction-Zugangssystem mit biometrischem Kokain-Nasendetektor. Öffnet nur für verifizierte Konsumierende.",
+  "brand": { "@type": "Brand", "name": "KvG Systems" },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "4990.00",
+    "availability": "https://schema.org/PreOrder"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080808;
+  --surface:#0f0f0f;
+  --card:#151515;
+  --green:#00ff41;
+  --green-dim:#00cc33;
+  --acid:#c8ff00;
+  --red:#ff2222;
+  --text:#e0e0e0;
+  --muted:#888;
+  --border:#1e1e1e;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:18px;
+  line-height:1.4;
+  overflow-x:hidden;
+}
+/* scanline overlay */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,65,.018) 2px,rgba(0,255,65,.018) 4px);
+  pointer-events:none;
+  z-index:900;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  padding:6rem 1.5rem 4rem;
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(0,255,65,.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-badge{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.7rem;
+  letter-spacing:.2em;
+  color:var(--green);
+  text-transform:uppercase;
+  border:1px solid var(--green);
+  padding:.3rem .8rem;
+  margin-bottom:2rem;
+  display:inline-block;
+  animation:blink 2.4s steps(1) infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{
+  font-size:clamp(3rem,10vw,8rem);
+  font-weight:900;
+  line-height:.9;
+  letter-spacing:-.02em;
+  text-transform:uppercase;
+  color:#fff;
+  text-shadow:0 0 40px rgba(0,255,65,.25);
+  margin-bottom:1.5rem;
+}
+.hero h1 span{
+  color:var(--green);
+  display:block;
+}
+.hero-sub{
+  font-family:'Share Tech Mono',monospace;
+  font-size:clamp(.85rem,2vw,1.1rem);
+  color:var(--green-dim);
+  letter-spacing:.08em;
+  max-width:600px;
+  margin-bottom:3rem;
+  line-height:1.6;
+}
+.hero-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  background:var(--green);
+  color:#000;
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:1rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:.8rem 2rem;
+  border:none;
+  cursor:pointer;
+  transition:background .15s,box-shadow .15s;
+}
+.hero-cta:hover{
+  background:var(--acid);
+  box-shadow:0 0 30px rgba(200,255,0,.3);
+}
+.ticker{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--muted);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  margin-top:4rem;
+  position:relative;
+  z-index:1;
+}
+
+/* SECTIONS */
+section{padding:5rem 1.5rem}
+.inner{max-width:1000px;margin:0 auto}
+.label{
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  letter-spacing:.25em;
+  color:var(--green);
+  text-transform:uppercase;
+  margin-bottom:.8rem;
+}
+
+/* HOW IT WORKS */
+.how-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.how-section h2{
+  font-size:clamp(2rem,5vw,3.5rem);
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:-.01em;
+  color:#fff;
+  margin-bottom:3rem;
+}
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1px;
+  background:var(--border);
+}
+.step{
+  background:var(--card);
+  padding:2rem 1.5rem;
+}
+.step-num{
+  font-family:'Share Tech Mono',monospace;
+  font-size:2.5rem;
+  color:var(--green);
+  line-height:1;
+  margin-bottom:1rem;
+}
+.step h3{
+  font-size:1.1rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#fff;
+  margin-bottom:.5rem;
+}
+.step p{
+  font-size:.9rem;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+/* FEATURES */
+.features-section h2{
+  font-size:clamp(2rem,5vw,3.5rem);
+  font-weight:900;
+  text-transform:uppercase;
+  color:#fff;
+  margin-bottom:3rem;
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1px;
+  background:var(--border);
+}
+.feature{
+  background:var(--card);
+  padding:2rem;
+  border-left:3px solid transparent;
+  transition:border-color .2s;
+}
+.feature:hover{border-color:var(--green)}
+.feature-icon{font-size:2rem;margin-bottom:1rem}
+.feature h3{
+  font-size:1.1rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:#fff;
+  margin-bottom:.6rem;
+}
+.feature p{font-size:.9rem;color:var(--muted);line-height:1.6}
+
+/* SCORE */
+.score-section{
+  background:var(--green);
+  color:#000;
+  text-align:center;
+  padding:5rem 1.5rem;
+}
+.score-section .label{color:#000;opacity:.6}
+.score-section h2{
+  font-size:clamp(3rem,12vw,9rem);
+  font-weight:900;
+  line-height:.85;
+  letter-spacing:-.03em;
+  margin-bottom:1rem;
+}
+.score-section p{
+  font-size:1.1rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  opacity:.75;
+  max-width:500px;
+  margin:0 auto;
+  font-family:'Share Tech Mono',monospace;
+}
+
+/* CTA */
+.cta-section{
+  background:var(--surface);
+  border-top:1px solid var(--border);
+  text-align:center;
+  padding:6rem 1.5rem;
+}
+.cta-section h2{
+  font-size:clamp(2rem,6vw,4rem);
+  font-weight:900;
+  text-transform:uppercase;
+  color:#fff;
+  margin-bottom:1rem;
+}
+.cta-section p{
+  font-size:1rem;
+  color:var(--muted);
+  margin-bottom:2.5rem;
+  font-family:'Share Tech Mono',monospace;
+  letter-spacing:.05em;
+}
+.cta-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  background:transparent;
+  color:var(--green);
+  font-family:'Barlow Condensed',sans-serif;
+  font-weight:900;
+  font-size:1.1rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:.9rem 2.5rem;
+  border:2px solid var(--green);
+  transition:background .15s,color .15s,box-shadow .15s;
+}
+.cta-btn:hover{
+  background:var(--green);
+  color:#000;
+  box-shadow:0 0 40px rgba(0,255,65,.25);
+}
+
+/* FOOTER */
+footer{
+  background:var(--bg);
+  border-top:1px solid var(--border);
+  padding:2rem 1.5rem;
+  text-align:center;
+  font-family:'Share Tech Mono',monospace;
+  font-size:.65rem;
+  color:var(--muted);
+  letter-spacing:.08em;
+  line-height:2;
+}
+footer em{display:block;color:#555;margin-bottom:.5rem}
+footer a{color:var(--green-dim);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+@media(max-width:600px){
+  .steps{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">KvG Systems · Harm Reduction Technology</div>
+  <h1>DIE KISTE<span>VON GABBA</span></h1>
+  <p class="hero-sub">// ZUGANG NUR FÜR WISSENDE //<br>Nasenbasierter biometrischer Kokain-Detektor.<br>Öffnet sich nur, wenn du schon dabei bist.</p>
+  <a href="#how-it-works" class="hero-cta">SYSTEM VERSTEHEN ↓</a>
+  <p class="ticker">STATUS: PROTOTYP · SCHUHGRÖSSE 30–38 ERFORDERLICH · ADDRESSABLE MARKET: GROSS</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how-it-works">
+  <div class="inner">
+    <p class="label">// Funktionsprinzip</p>
+    <h2>Wie die Kiste<br>dich erkennt</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Du näherst dich</h3>
+        <p>Die Kiste registriert deine Annäherung. Der Sensor initialisiert einen Nasen-Scan. Alle anderen warten draußen.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Atemprobe</h3>
+        <p>Ein diskreter Nasen-Detektor analysiert Rückstände in der Schleimhaut. Modernes Biometrie-Verfahren, ähnlich einem Alkoholtester.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Verifikation</h3>
+        <p>Positiver Befund: Die Kiste öffnet sich. Kein Befund: gesperrt. Kinder, Neulinge und neugierige Polizisten kommen nicht rein.*</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Sicherer Zugang</h3>
+        <p>Kontrollierter, hygienischer Zugang zum eigenen Vorrat. Keine Beschaffungskriminalität. Harm Reduction in Reinform.</p>
+      </div>
+    </div>
+    <p style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--muted);margin-top:1.5rem;letter-spacing:.08em;">* außer der Polizist konsumiert selbst — dann gilt Paragraph 3b: Kameras gehen an.</p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="inner">
+    <p class="label">// Anwendungsfälle</p>
+    <h2>Mehr als eine Kiste</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Harm Reduction</h3>
+        <p>Nur wer bereits konsumiert, bekommt Zugang. Keine Neulinge, keine Erstversuche. Das System verhindert Ausbreitung an Unerfahrene.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚨</div>
+        <h3>Korruptions-Detektor</h3>
+        <p>Wenn ein Polizist die Kiste öffnen kann, hat er sich selbst überführt. Reverse-Sting in Echtzeit. Kameras gehen automatisch an.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🍕</div>
+        <h3>Restaurant-Edition</h3>
+        <p>Gerichte mit proprietären Geruchs-Molekülen gestempelt. Nur eigene Gäste öffnen die Toilettentür. Kein Klo-Schmarotzen mehr.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌐</div>
+        <h3>Legalisierungs-Toolkit</h3>
+        <p>Ermöglicht regulierten Zugang für Abhängige ohne Kriminalisierung. Kompatibel mit progressiven Drogengesetzen weltweit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCORE -->
+<section class="score-section">
+  <div class="inner">
+    <p class="label">// Nisse's Bewertung · TMDA #56</p>
+    <h2>8<br><span style="font-size:40%">/24</span></h2>
+    <p>„Das ist so ein Grower." — Nisse Ingwersen</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="inner">
+    <p class="label">// Produkt verfügbar ab Q3 2027</p>
+    <h2>Auf der Warteliste<br>eintragen</h2>
+    <p>Schuhgröße 30–38 · Bitte nur relevante Personen · Betrieb unter Risiko</p>
+    <a href="/folge/56" class="cta-btn">ZUR FOLGE #56 →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <em>Rein fiktives Konzept aus dem Podcast „Teenager mit deutschem Akzent" (TMDA). Keinerlei Bezug zu echten Produkten oder Substanzen. Satire.</em>
+  Fiktives Konzept · TMDA #56 · 8/24 · <a href="/folge/56">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+</body>
+</html>

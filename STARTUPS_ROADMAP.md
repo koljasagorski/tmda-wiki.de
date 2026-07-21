@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 52/52 LIVE ✅
+## Status — 56/56 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-52 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-56 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 22/24 — Top-Tier
 
@@ -97,6 +97,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 - [x] **Die AOK-Biegung** · Folge 52 · 3/24 · DDR-Planwirtschaft Propaganda Poster / Konstruktivismus (Oswald + Source Serif 4, Rot/Beige/Stahl, Constructivist diagonal stripes)
 - [x] **AQUAVION — wassergelagertes Flugzeug** · Folge 51 · 7/24 · aqua flotation / zero-gravity wellness (Sora + Hanken Grotesk, Spa-Türkis/Glas-Doppelwand, schwebende Partikel, Schneekugel-Motiv)
 - [x] **Ad Music / Add Music** · Folge 6 · 9/24 · music-streaming neon (Equalizer/Waveform, cyan)
+- [x] **Die Kiste von Gabba** · Folge 56 · 8/24 · Gabba-Rave/Berlin-Club dark-techno (Share Tech Mono + Barlow Condensed, Neon-Grün/Schwarz, Scanlines)
 - [x] **Kofferreisen.de** · Folge 40 · 8/24 · billig-airline boarding-pass (navy/gelb, Perforation)
 - [x] **Was-Verdient.de** · Folge 29 · 6/24 · fintech bloomberg-terminal (mono, grüne Ziffern, Ticker)
 - [x] **Zauberinternat Live (Hogwarts Big Brother)** · Folge 17 · 6/24 · streaming OTT cinematic dark-academia (emerald/gold)

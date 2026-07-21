@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-20T16:02:33.237Z",
-  "count": 244,
+  "updatedAt": "2026-07-21T06:42:49.942Z",
+  "count": 251,
   "items": [
     {
       "begriff": "1F1P",
@@ -363,6 +363,11 @@
       "folge": 36
     },
     {
+      "begriff": "Gabba",
+      "bedeutung": "Schneller Hardcore-Techno-Stil (urspruenglich aus Rotterdam). Nisses Freund in dessen Traum hoerte immer Gabba — daher der Name der Kiste.",
+      "folge": 56
+    },
+    {
       "begriff": "Gerücht der Woche",
       "bedeutung": "Neu eingeführte Rubrik für ungefestigte Promi-Geschichten und Klatsch",
       "folge": 7
@@ -371,6 +376,11 @@
       "begriff": "Geruecht der Woche",
       "bedeutung": "Wiederkehrende Kategorie fuer ungesicherte Klatsch-Infos - hier der beruehmte, gut aussehende Mensch, der angeblich Sexpartys in Berlin veranstaltet.",
       "folge": 55
+    },
+    {
+      "begriff": "Grower",
+      "bedeutung": "Nisses Begriff fuer eine Startup-Idee, die beim ersten Eindruck maessig klingt, aber mit jeder weiteren Erweiterung oder Feature besser wird — im Gegensatz zu einem 'Shower'.",
+      "folge": 56
     },
     {
       "begriff": "Halbwertszeit",
@@ -386,6 +396,11 @@
       "begriff": "Handlungsunfaehig machen",
       "bedeutung": "Running-Gag statt 'toeten': Andrew Tate soll nach dem 'Ritter der Kokosnuss'-Prinzip nur bewegungsunfaehig gemacht werden (Augen/Finger), nicht getoetet.",
       "folge": 54
+    },
+    {
+      "begriff": "Harm Reduction",
+      "bedeutung": "Ansatz der Drogenpolitik, bei dem das Ziel nicht totale Abstinenz ist, sondern die Risiken fuer bestehende Konsumenten zu minimieren. Fynns Kiste nutzt dieses Prinzip: Nur wer schon konsumiert, bekommt sicheren Zugang.",
+      "folge": 56
     },
     {
       "begriff": "Hartz 4 Raupe",
@@ -531,6 +546,11 @@
       "begriff": "Killdozer",
       "bedeutung": "Spitzname fuer den gepanzerten Bulldozer von Marvin Heemeyer, mit dem er 2004 sein Heimatort Granby zerstoerte.",
       "folge": 18
+    },
+    {
+      "begriff": "Kiste von Gabba",
+      "bedeutung": "Die Startup-Idee der Folge und Namensteil des Titels: eine Box mit integriertem Kokain-Nasendetektor, die sich nur oeffnet wenn der Nutzer Kokain-Rueckstaende in der Nase hat. 'Gabba' ist Nisses Freund aus dem Traum, der immer Gabba-Techno…",
+      "folge": 56
     },
     {
       "begriff": "Kliman Backstroke",
@@ -696,6 +716,11 @@
       "begriff": "Mold Book",
       "bedeutung": "Soziales Netzwerk nur fuer Bots, von Peter Steinberg gebaut - Bots schreiben sich verschluesselte Nachrichten",
       "folge": 34
+    },
+    {
+      "begriff": "Mondflaeche Nr. 18",
+      "bedeutung": "Das Stueck Mond, das Nisse in seiner spontanen Eigentumserklaerung beansprucht — 100 Quadratkilometer, gefaehrdet durch SpaceX-Rakete im August 2026.",
+      "folge": 56
     },
     {
       "begriff": "Mufuti",
@@ -883,6 +908,11 @@
       "folge": 48
     },
     {
+      "begriff": "RFS / Random Facts",
+      "bedeutung": "Wiederkehrendes Abschluss-Segment mit zusammenhangslosem Trivia — diesmal: Erde-als-Basketball-Atmosphaere, Bananen-Beeren, Ameisen-Kriege.",
+      "folge": 56
+    },
+    {
       "begriff": "RFS / RRFs",
       "bedeutung": "Random Facts - die Abschlusskategorie mit zusammenhanglosem Trivia (Pinguin-Knie, Mars-Vulkan, Giraffen-Halswirbel).",
       "folge": 51
@@ -906,6 +936,11 @@
       "begriff": "Saug saug zapf zapf",
       "bedeutung": "Fynns scherzhafter Untertitel für seinen Hof/Klimansland - Beziehung zu den Kindern",
       "folge": 8
+    },
+    {
+      "begriff": "Schaumschutzhuellen / Lippenstift-Mikrofon",
+      "bedeutung": "Die grossen Mikrofon-Schaumhuelln der Magenta-TV-Kommentatoren bei der WM sahen im Sonnenlicht aus wie riesige Lippenstifte — besonders bei Kloppo und Robbie Williams. Gab der Folge indirekt ihren Titel.",
+      "folge": 56
     },
     {
       "begriff": "Schiff von Theseus",
