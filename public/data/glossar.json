@@ -1,7 +1,12 @@
 {
-  "updatedAt": "2026-07-21T06:42:49.942Z",
-  "count": 251,
+  "updatedAt": "2026-07-28T06:29:49.000Z",
+  "count": 256,
   "items": [
+    {
+      "begriff": "100-Minuten-Stunde",
+      "bedeutung": "Fynns Startup-Idee: Dezimales Zeitsystem mit 100 Sekunden pro Minute, 100 Minuten pro Stunde und 10 Stunden pro Tag. Ziel: Vereinfachung von Pace-Berechnungen beim Laufen — und von Zeitrechnung generell.",
+      "folge": 57
+    },
     {
       "begriff": "1F1P",
       "bedeutung": "Eine Folge ein Pullover - Verlosungsaktion bei TMDA",
@@ -101,6 +106,11 @@
       "begriff": "Blinkerhand",
       "bedeutung": "Finns Idee einer Metall-Hand, die aus dem Auto faehrt wenn man blinkt",
       "folge": 42
+    },
+    {
+      "begriff": "Bonnie und Grock",
+      "bedeutung": "Fynns Name für das KI-Mensch-Duo aus dem GTA-Clip: Ein Spieler überfällt virtuelle Supermärkte und nutzt Grock (KI von xAI) als Copilot, der Fluchtrouten erklärt und Tipps gibt — wie Bonnie und Clyde, nur mit KI statt Partnerin.",
+      "folge": 57
     },
     {
       "begriff": "Bowel Movements",
@@ -258,6 +268,11 @@
       "folge": 32
     },
     {
+      "begriff": "Durchschwung",
+      "bedeutung": "Strittige Padel-Schwungtechnik: Fynn besteht auf dem Durchschwung (Schläger schwingt nach dem Aufprall durch), der Verband will einen anderen Schwung. Fynns fiktive Trainerschule heißt 'Durchschwung.de'.",
+      "folge": 57
+    },
+    {
       "begriff": "Eckengucker",
       "bedeutung": "Hypothetisches Hilfsmittel und gleichzeitig 'wie ein Schnapsausguss aus Kiel' klingender Begriff für jemanden mit schielenden Augen ('immer ein Auge aufs Geschäft')",
       "folge": 10
@@ -366,6 +381,11 @@
       "begriff": "Gabba",
       "bedeutung": "Schneller Hardcore-Techno-Stil (urspruenglich aus Rotterdam). Nisses Freund in dessen Traum hoerte immer Gabba — daher der Name der Kiste.",
       "folge": 56
+    },
+    {
+      "begriff": "Gemischtes Hack",
+      "bedeutung": "Deutscher Podcast von Tommy Schmidt und Felix Lobrecht. Nisse hat als Jubiläumsgeschenk Masken beider besorgt. Fynn und Nisse nennen sich in der Folge die 'AFG — Alternative für Gemischtes Hack'.",
+      "folge": 57
     },
     {
       "begriff": "Gerücht der Woche",
@@ -781,6 +801,11 @@
       "begriff": "Open Claw",
       "bedeutung": "KI-Assistent von Peter Steinberg, der sich selbst Skills installieren kann und in WhatsApp lebt",
       "folge": 34
+    },
+    {
+      "begriff": "Pace",
+      "bedeutung": "Running-Begriff: Zeit pro Kilometer. Ein Pace von 5 bedeutet, man läuft 1 km in 5 Minuten = 12 km/h. Mit dem 60er-Zeitsystem ist die Umrechnung umständlich. Mit Fynns 100-Minuten-System wäre Pace 10 direkt = 10 km/h.",
+      "folge": 57
     },
     {
       "begriff": "Padel",
