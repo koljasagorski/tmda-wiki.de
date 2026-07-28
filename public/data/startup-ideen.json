@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-21T06:42:49.942Z",
-  "count": 53,
+  "updatedAt": "2026-07-28T06:29:49.000Z",
+  "count": 54,
   "items": [
+    {
+      "folge": 57,
+      "datum": "2026-07-28",
+      "idee": "Die 100-Minuten-Stunde — Dezimales Zeitsystem für Läufer",
+      "beschreibung": "Fynn schlägt vor, die gesamte Zeitrechnung auf ein dezimales System umzustellen: 100 Sekunden pro Minute, 100 Minuten pro Stunde, 10 Stunden pro Tag. Ausgangspunkt ist das Laufen: Der Pace-Begriff (Minuten pro Kilometer) ist mit dem 60er-System umständlich zu rechnen. Mit 100 Minuten pro Stunde wäre ein Pace von 10 direkt gleich 10 km/h — keine Umrechnung nötig. Die Umsetzung: Entweder die ganze …",
+      "punkte": 11,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'dafür gibt's elf Startup Punkte' (11 von 24). Das Zeitsystem-Problem ist real, die Lösung ist elegant, aber die globale Umsetzung scheitert an der Komplexität. Das Monetarisierungsmodell mit dem Zertifikat überzeugt zusätzlich."
+    },
     {
       "folge": 56,
       "datum": "2026-07-21",

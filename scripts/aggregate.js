@@ -18,6 +18,7 @@ const PUBLIC_TRANSCRIPTS = join(ROOT, 'public', 'transcripts');
 // Folgen-Daten aus web (Best-Effort): nur Folgen die wir wissen, der Rest bleibt null.
 // Datum: jeweils Dienstag wenn nicht anders bekannt.
 const KNOWN_DATES = {
+  57: '2026-07-28',
   56: '2026-07-21',
   55: '2026-07-14', 54: '2026-07-07', 53: '2026-06-30', 52: '2026-06-23',
   51: '2026-06-16',

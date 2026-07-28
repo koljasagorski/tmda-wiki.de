@@ -19,9 +19,13 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 56/56 LIVE ✅
+## Status — 57/57 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-56 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-57 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+
+### 11/24
+
+- [x] **ZEITSYSTEM 100 (Die 100-Minuten-Stunde)** · Folge 57 · 11/24 · Splitflap Departure Board / Dezimalzeit (IBM Plex Mono + Rajdhani, Amber/Charcoal, animierte Dezimaluhr)
 
 ### 22/24 — Top-Tier
 

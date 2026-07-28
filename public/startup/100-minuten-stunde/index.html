@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZEITSYSTEM 100 – Dezimale Zeitrechnung für Läufer</title>
+<meta name="description" content="Pace von 10 = 10 km/h. Nie wieder rechnen. Das dezimale Zeitsystem mit 100 Minuten pro Stunde macht Laufen und Zeitrechnung endlich verständlich. Revolutionäres Startup aus TMDA #57.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/100-minuten-stunde">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZEITSYSTEM 100 – Dezimale Zeitrechnung für Läufer">
+<meta property="og:description" content="Pace von 10 = 10 km/h. Nie wieder rechnen. 100 Sekunden, 100 Minuten, 10 Stunden. Das neue Zeitsystem, das die Welt braucht.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/100-minuten-stunde">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZEITSYSTEM 100 – Dezimale Zeitrechnung">
+<meta name="twitter:description" content="100 Minuten pro Stunde. 10 Stunden pro Tag. Pace 10 = 10 km/h. Revolutionäres Zeitsystem aus TMDA #57.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "ZEITSYSTEM 100",
+  "description": "Dezimales Zeitsystem: 100 Sekunden pro Minute, 100 Minuten pro Stunde, 10 Stunden pro Tag. Optimiert für Läufer und alle, die Zeitrechnung endlich verstehen wollen.",
+  "brand": {
+    "@type": "Brand",
+    "name": "ZEITSYSTEM 100"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "99.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/PreOrder",
+    "description": "Arbeitgeber-Zertifikat: Offizieller 1-Stunden-Arbeitstag im Dezimalsystem"
+  }
+}
+</script>
+<style>
+  :root {
+    --amber: #f59e0b;
+    --amber-bright: #fbbf24;
+    --amber-dim: #92400e;
+    --tile-bg: #1c1a14;
+    --tile-border: #3d3420;
+    --bg: #0a0906;
+    --bg-section: #0f0d08;
+    --text: #f0ede4;
+    --text-muted: #9b9278;
+    --white: #faf9f5;
+    --board-line: #2a2518;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── DEPARTURE BOARD GRID ── */
+  .board-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24px, 1fr));
+    gap: 2px;
+    padding: 4px 0;
+  }
+
+  .tile {
+    background: var(--tile-bg);
+    border: 1px solid var(--tile-border);
+    border-radius: 3px;
+    color: var(--amber);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 2px;
+    font-size: clamp(0.65rem, 2vw, 0.9rem);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tile::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    top: 50%;
+    height: 1px;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .tile.blank { color: transparent; }
+  .tile.dim { color: var(--amber-dim); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 4vw, 4rem);
+    position: relative;
+    border-bottom: 2px solid var(--board-line);
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 47px,
+        var(--board-line) 47px,
+        var(--board-line) 48px
+      );
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  .hero-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.55rem, 1.5vw, 0.75rem);
+    color: var(--amber-dim);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-board {
+    background: var(--tile-bg);
+    border: 1px solid var(--tile-border);
+    border-radius: 6px;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2.5rem);
+    display: inline-block;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 60px rgba(245, 158, 11, 0.08);
+    max-width: 100%;
+  }
+
+  .clock-display {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(2.5rem, 10vw, 7rem);
+    font-weight: 600;
+    color: var(--amber);
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-shadow: 0 0 30px rgba(245, 158, 11, 0.4);
+    word-break: break-all;
+  }
+
+  .clock-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.55rem, 1.8vw, 0.8rem);
+    color: var(--text-muted);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-top: 0.75rem;
+  }
+
+  .hero-headline {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 7vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+  }
+
+  .hero-headline span {
+    color: var(--amber);
+  }
+
+  .hero-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--amber);
+    color: #000;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.15s;
+  }
+
+  .hero-cta:hover { background: var(--amber-bright); }
+
+  /* ── STAT STRIP ── */
+  .stat-strip {
+    display: flex;
+    gap: 0;
+    border-top: 1px solid var(--board-line);
+    border-bottom: 1px solid var(--board-line);
+    overflow-x: auto;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 140px;
+    padding: 1.5rem 1.5rem;
+    border-right: 1px solid var(--board-line);
+    text-align: center;
+  }
+  .stat-item:last-child { border-right: none; }
+
+  .stat-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-weight: 600;
+    color: var(--amber);
+    display: block;
+  }
+
+  .stat-desc {
+    font-size: clamp(0.55rem, 1.5vw, 0.7rem);
+    color: var(--text-muted);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    display: block;
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 4vw, 4rem);
+    border-bottom: 1px solid var(--board-line);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--amber-dim);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--board-line);
+  }
+
+  .section-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .section-title span { color: var(--amber); }
+
+  /* ── PROBLEM BOARD ── */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--board-line);
+    border: 1px solid var(--board-line);
+    margin-top: 2.5rem;
+  }
+
+  .problem-cell {
+    background: var(--bg-section);
+    padding: 2rem;
+  }
+
+  .problem-cell-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .problem-cell-content {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .problem-cell-big {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 600;
+    color: var(--amber);
+    margin-top: 1rem;
+  }
+
+  /* ── SYSTEM TABLE ── */
+  .system-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .system-table th {
+    background: var(--tile-bg);
+    color: var(--amber);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    border-bottom: 2px solid var(--amber-dim);
+    white-space: nowrap;
+  }
+
+  .system-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--board-line);
+    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  .system-table tr:last-child td { border-bottom: none; }
+
+  .system-table .old { color: var(--text-muted); }
+  .system-table .new { color: var(--amber-bright); font-weight: 600; }
+  .system-table .win { color: #4ade80; }
+
+  /* ── PACE DEMO ── */
+  .pace-demo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--board-line);
+    border: 1px solid var(--board-line);
+    margin-top: 2rem;
+  }
+
+  .pace-card {
+    background: var(--bg-section);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pace-card .num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--amber);
+    line-height: 1;
+  }
+
+  .pace-card .eq {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.15em;
+  }
+
+  .pace-card .result {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--white);
+  }
+
+  /* ── TICKER ── */
+  .ticker {
+    background: var(--amber);
+    color: #000;
+    padding: 0.6rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker-scroll 30s linear infinite;
+  }
+
+  @keyframes ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    background: var(--tile-bg);
+    border-top: 2px solid var(--amber);
+    padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 4rem);
+    text-align: center;
+  }
+
+  .cta-section .cta-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: var(--white);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .cta-section .cta-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--amber);
+    color: #000;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.15s;
+    margin: 0 0.5rem 1rem;
+  }
+  .cta-btn:hover { background: var(--amber-bright); }
+
+  .cta-btn.secondary {
+    background: transparent;
+    color: var(--amber);
+    border: 1px solid var(--amber-dim);
+  }
+  .cta-btn.secondary:hover { border-color: var(--amber); background: rgba(245,158,11,0.05); }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--bg);
+    border-top: 1px solid var(--board-line);
+    padding: 2rem clamp(1rem, 4vw, 4rem);
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .footer a { color: var(--amber-dim); text-decoration: none; }
+  .footer a:hover { color: var(--amber); }
+
+  .footer em {
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes flip-in {
+    from { transform: rotateX(-90deg); opacity: 0; }
+    to   { transform: rotateX(0deg);   opacity: 1; }
+  }
+
+  .tile-anim { animation: flip-in 0.3s ease-out forwards; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .stat-strip { flex-wrap: wrap; }
+    .stat-item { min-width: calc(50% - 0px); border-bottom: 1px solid var(--board-line); }
+    .hero { min-height: auto; padding-top: 5rem; padding-bottom: 3rem; }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #1a1600;
+      --bg-section: #1f1c0d;
+      --tile-bg: #251f0a;
+      --tile-border: #3d3420;
+      --board-line: #2e2810;
+      --text: #f0ede4;
+      --text-muted: #9b9278;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">▶ ZEITSYSTEM 100 · BOARDING</div>
+
+  <div class="hero-board">
+    <div class="clock-display" id="clock">09:73:42</div>
+    <div class="clock-label">HH · MM · SS — DEZIMALZEIT</div>
+  </div>
+
+  <h1 class="hero-headline">
+    <span>100</span> MINUTEN.<br>
+    <span>10</span> STUNDEN.<br>
+    1 TAG.
+  </h1>
+
+  <p class="hero-sub">
+    Das metrische System für die Zeit.<br>
+    Pace von 10 = 10 km/h. Immer. Überall.<br>
+    Nie wieder Kopfrechnen beim Laufen.
+  </p>
+
+  <a href="#system" class="hero-cta">System verstehen ↓</a>
+</div>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <span class="ticker-inner">
+    &nbsp;· PACE 5 = 5 KM/H ·&nbsp;· PACE 10 = 10 KM/H ·&nbsp;· PACE 15 = 15 KM/H ·&nbsp;· 100 SEK/MIN ·&nbsp;· 100 MIN/STD ·&nbsp;· 10 STD/TAG ·&nbsp;· DEZIMAL SEIT 2026 ·&nbsp;· PACE 5 = 5 KM/H ·&nbsp;· PACE 10 = 10 KM/H ·&nbsp;· PACE 15 = 15 KM/H ·&nbsp;· 100 SEK/MIN ·&nbsp;· 100 MIN/STD ·&nbsp;· 10 STD/TAG ·&nbsp;· DEZIMAL SEIT 2026 ·&nbsp;
+  </span>
+</div>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-item">
+    <span class="stat-number">100</span>
+    <span class="stat-desc">Sekunden / Minute</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">100</span>
+    <span class="stat-desc">Minuten / Stunde</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">10</span>
+    <span class="stat-desc">Stunden / Tag</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">11/24</span>
+    <span class="stat-desc">Punkte (Nisse)</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section>
+  <div class="section-label">01 — DAS PROBLEM</div>
+  <h2 class="section-title">Der <span>Pace-Wahnsinn</span>.</h2>
+
+  <div class="problem-grid">
+    <div class="problem-cell">
+      <div class="problem-cell-label">Frage</div>
+      <div class="problem-cell-content">
+        Du läufst mit Pace 5:30.<br>
+        Wie schnell bist du in km/h?
+      </div>
+      <div class="problem-cell-big">?</div>
+    </div>
+    <div class="problem-cell">
+      <div class="problem-cell-label">Mit 60er-System</div>
+      <div class="problem-cell-content">
+        60 ÷ 5,5 = 10,909 km/h<br><br>
+        Oder war es 60 × 5,5?<br>
+        Warte, 5:30 sind 5,5 oder 5,3?<br>
+        Bitte nicht.
+      </div>
+      <div class="problem-cell-big" style="color: #ef4444;">≈ ??</div>
+    </div>
+    <div class="problem-cell">
+      <div class="problem-cell-label">Das eigentliche Problem</div>
+      <div class="problem-cell-content">
+        Das 60er-Zahlensystem stammt aus dem antiken Babylon. Es ist weder metrisch noch dezimal. Niemand weiß, warum wir dabei geblieben sind. Wir haben Kilometer, Kilogramm, Kilowatt — aber 60 Minuten pro Stunde.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM -->
+<section id="system">
+  <div class="section-label">02 — DIE LÖSUNG</div>
+  <h2 class="section-title"><span>ZEITSYSTEM</span> 100</h2>
+
+  <table class="system-table">
+    <thead>
+      <tr>
+        <th>Einheit</th>
+        <th>Alt (60er)</th>
+        <th>Neu (100er)</th>
+        <th>Gewinn</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Minute</td>
+        <td class="old">60 Sekunden</td>
+        <td class="new">100 Sekunden</td>
+        <td class="win">+40 Sekunden — für dich</td>
+      </tr>
+      <tr>
+        <td>Stunde</td>
+        <td class="old">60 Minuten</td>
+        <td class="new">100 Minuten</td>
+        <td class="win">Pace = direkt km/h</td>
+      </tr>
+      <tr>
+        <td>Tag</td>
+        <td class="old">24 Stunden</td>
+        <td class="new">10 Stunden</td>
+        <td class="win">5 Stunden davon schlafen</td>
+      </tr>
+      <tr>
+        <td>Arbeitstag</td>
+        <td class="old">8 Stunden</td>
+        <td class="new">1 Stunde</td>
+        <td class="win">Arbeitgeber zahlt Zertifikat</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- PACE DEMO -->
+<section>
+  <div class="section-label">03 — PACE RECHNER</div>
+  <h2 class="section-title">Pace <span>=</span> km/h.</h2>
+  <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; max-width: 580px; margin-bottom: 1rem;">
+    Mit dem Dezimalsystem ist der Pace (Minuten pro Kilometer) numerisch identisch mit deiner Geschwindigkeit in km/h.
+    Das ist keine Magie — das ist Mathematik.
+  </p>
+
+  <div class="pace-demo">
+    <div class="pace-card">
+      <div class="num">P 5</div>
+      <div class="eq">PACE 5 MIN/KM</div>
+      <div class="result">= 5 km/h</div>
+    </div>
+    <div class="pace-card">
+      <div class="num">P 10</div>
+      <div class="eq">PACE 10 MIN/KM</div>
+      <div class="result">= 10 km/h</div>
+    </div>
+    <div class="pace-card">
+      <div class="num">P 15</div>
+      <div class="eq">PACE 15 MIN/KM</div>
+      <div class="result">= 15 km/h</div>
+    </div>
+    <div class="pace-card">
+      <div class="num">P 20</div>
+      <div class="eq">PACE 20 MIN/KM</div>
+      <div class="result">= 20 km/h</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-title">Zeit für eine neue Zeit.</div>
+  <p class="cta-sub">
+    Stellen Sie Ihren Betrieb auf das 100er-Zeitsystem um.<br>
+    Bieten Sie offiziell 1-Stunden-Arbeitstage an.<br>
+    Erhalten Sie das Zertifikat. Zahlen Sie entsprechend.
+  </p>
+  <a href="#" class="cta-btn">Zertifikat sichern · 99 €</a>
+  <a href="#system" class="cta-btn secondary">System verstehen</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <em>Rein fiktives Konzept aus dem TMDA-Podcast. Bitte stellen Sie Ihren Arbeitstag nicht auf eigene Faust auf 1 Stunde um.</em><br>
+  Fiktives Konzept · TMDA #57 · 11/24 · <a href="/folge/57">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</div>
+
+<script>
+  // Animate clock display with decimalized current time
+  function decimalTime() {
+    const now = new Date();
+    const totalSeconds = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+    const dayFraction = totalSeconds / 86400;
+    const decHours = Math.floor(dayFraction * 10);
+    const remaining = (dayFraction * 10 - decHours);
+    const decMins = Math.floor(remaining * 100);
+    const remaining2 = (remaining * 100 - decMins);
+    const decSecs = Math.floor(remaining2 * 100);
+    return `${String(decHours).padStart(2,'0')}:${String(decMins).padStart(2,'0')}:${String(decSecs).padStart(2,'0')}`;
+  }
+
+  const clockEl = document.getElementById('clock');
+  if (clockEl) {
+    function updateClock() {
+      clockEl.textContent = decimalTime();
+    }
+    updateClock();
+    setInterval(updateClock, 864); // 1 decimal second = 0.864 real seconds
+  }
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-21T06:42:49.942Z",
-  "count": 340,
+  "updatedAt": "2026-07-28T06:29:49.000Z",
+  "count": 345,
   "items": [
     {
       "ort": "Berlin",
@@ -2124,6 +2124,36 @@
       "ort": "Kliemannsland (Fynn's Hof, Wachstumsanalogien)",
       "folgen": [
         56
+      ]
+    },
+    {
+      "ort": "Berlin (Aufnahmeort, Wohnort beider Hosts)",
+      "folgen": [
+        57
+      ]
+    },
+    {
+      "ort": "Straßburg / Strasbourg (Tanzkrankheit 1818, RFS)",
+      "folgen": [
+        57
+      ]
+    },
+    {
+      "ort": "USA / New Jersey (FBI-Zeitreisenden-Überprüfung, Lotto)",
+      "folgen": [
+        57
+      ]
+    },
+    {
+      "ort": "Hamburg (Padel-Trainer-Seminar, Fahrt mit Ahne)",
+      "folgen": [
+        57
+      ]
+    },
+    {
+      "ort": "Jan Delay's Geburtstag (Club-Trick-Geschichte, Ort unbekannt)",
+      "folgen": [
+        57
       ]
     }
   ]

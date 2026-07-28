@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-07-21T06:42:49.942Z",
-  "count": 91,
+  "updatedAt": "2026-07-28T06:29:49.000Z",
+  "count": 93,
   "items": [
+    {
+      "folge": 57,
+      "name": "Die 100-Minuten-Uhr (Dezimalzeit-System)",
+      "beschreibung": "Eine Uhr mit 100 Sekunden pro Minute, 100 Minuten pro Stunde und 10 Stunden pro Tag. Für Läufer bedeutet das: Pace 10 = exakt 10 km/h. Die Uhr soll als Standard-Zertifikat an Arbeitgeber vermarktet werden, die '1-Stunden-Arbeitstage' anbieten möchten."
+    },
+    {
+      "folge": 57,
+      "name": "Zeitreisenden-Detektor für Live Shows",
+      "beschreibung": "Bei Live-Podcast-Events wird eine Person aus dem Publikum mit Spezialausrüstung abgestellt: Gürtel mit Blitz-Detektor, Satellitenschlüssel an einem Blechspielzeugauto — als Überwachungsstation. Aufgabe: Sicherstellen, dass kein Zeitreisender die 50€-Verlosung gewinnt, indem er mit Wissen über den G…"
+    },
     {
       "folge": 56,
       "name": "Kokain-Detektor-Schluessel fuer Restaurants",
