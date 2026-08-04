@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glasur-Trommeldrucker — Jede Fliese ein Unikat</title>
+<meta name="description" content="Der Glasur-Trommeldrucker bedruckt Keramikfliesen mit Glasurfarbe — beliebige Motive, dann gebrannt. Ostfriesland-Qualität. Industriepreis. Fynns Startup-Idee aus TMDA #58.">
+<link rel="canonical" href="https://tmda-wiki.de/startup/glasur-trommeldrucker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Glasur-Trommeldrucker — Jede Fliese ein Unikat">
+<meta property="og:description" content="Keramikfliesen bedruckt mit Glasurfarbe, dann eingebrannt. Vom Handwerk zum Druckknopf. Fynns Startup-Idee aus TMDA #58.">
+<meta property="og:url" content="https://tmda-wiki.de/startup/glasur-trommeldrucker">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glasur-Trommeldrucker™">
+<meta name="twitter:description" content="Jedes Motiv. Jede Fliese. Einmal drucken, einmal brennen, für immer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Glasur-Trommeldrucker GTD-1",
+  "description": "Industriedrucker für Keramikfliesen: Glasurfarbe per Inkjet-Druckkopf auftragen, dann brennen. Für beliebige Motive auf Fliesen bis 60x60 cm.",
+  "brand": { "@type": "Brand", "name": "Glasur-Trommeldrucker GmbH (fiktiv)" },
+  "offers": {
+    "@type": "Offer",
+    "price": "28900",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/PreOrder"
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cobalt: #1B3A8F;
+    --cobalt-dark: #0D1F4C;
+    --cobalt-mid: #2B52C8;
+    --ivory: #F7F2EA;
+    --ivory-warm: #EDE4D4;
+    --ivory-light: #FAF7F2;
+    --terra: #B85A2E;
+    --terra-light: #D4744A;
+    --tile-shadow: 0 4px 20px rgba(27,58,143,0.18);
+    --tile-shadow-hover: 0 8px 32px rgba(27,58,143,0.28);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: var(--ivory);
+    color: var(--cobalt-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── Tile Pattern SVG backgrounds ── */
+  .tile-border-top {
+    width: 100%;
+    height: 48px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--cobalt) 0px, var(--cobalt) 2px,
+      transparent 2px, transparent 48px
+    ), repeating-linear-gradient(
+      0deg,
+      var(--cobalt) 0px, var(--cobalt) 2px,
+      transparent 2px, transparent 48px
+    );
+    opacity: 0.15;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--cobalt-dark);
+    color: var(--ivory);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.07;
+    background-image:
+      repeating-linear-gradient(45deg, var(--ivory) 0, var(--ivory) 1px, transparent 0, transparent 50%),
+      repeating-linear-gradient(-45deg, var(--ivory) 0, var(--ivory) 1px, transparent 0, transparent 50%);
+    background-size: 32px 32px;
+  }
+
+  .hero-top-band {
+    background: var(--cobalt);
+    padding: 12px 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-top-band .logo-tile {
+    width: 28px; height: 28px;
+    background: var(--terra);
+    display: inline-block;
+    position: relative;
+  }
+  .hero-top-band .logo-tile::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1.5px solid rgba(255,255,255,0.4);
+  }
+
+  .hero-top-band span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(247,242,234,0.7);
+  }
+
+  .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 24px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .hero-tile-showcase {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 56px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tile-card {
+    width: 90px; height: 90px;
+    background: var(--ivory);
+    border: 2px solid var(--cobalt);
+    position: relative;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .tile-card:hover { transform: translateY(-4px); }
+  .tile-card svg { width: 100%; height: 100%; display: block; }
+
+  .hero h1 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    margin-bottom: 8px;
+    color: var(--ivory);
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--terra-light);
+  }
+
+  .hero-sub {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-style: italic;
+    color: rgba(247,242,234,0.72);
+    max-width: 540px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
+  }
+
+  .hero-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--cobalt);
+    padding: 14px 28px;
+    border: 1px solid rgba(247,242,234,0.2);
+  }
+
+  .hero-score .score-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--terra-light);
+    line-height: 1;
+  }
+  .hero-score .score-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(247,242,234,0.6);
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.5;
+  }
+  .hero-scroll span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ivory);
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--ivory), transparent);
+  }
+
+  /* ── DIVIDER TILE ROW ── */
+  .tile-divider {
+    display: flex;
+    overflow: hidden;
+    background: var(--cobalt);
+  }
+  .tile-divider-item {
+    flex: 1;
+    min-width: 48px;
+    aspect-ratio: 1;
+    border-right: 1px solid rgba(247,242,234,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tile-divider-item svg { width: 65%; height: 65%; }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 96px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cobalt-mid);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--cobalt);
+    opacity: 0.2;
+    max-width: 120px;
+  }
+
+  h2 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: var(--cobalt-dark);
+    line-height: 1.1;
+    margin-bottom: 32px;
+  }
+  h2 em { font-style: italic; color: var(--cobalt-mid); }
+
+  /* ── HOW IT WORKS ── */
+  .how-it-works {
+    background: var(--ivory-light);
+  }
+  .how-it-works > div {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 96px 24px;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
+    margin-top: 48px;
+    background: var(--cobalt);
+  }
+
+  .step {
+    background: var(--ivory);
+    padding: 36px 28px;
+    position: relative;
+  }
+
+  .step-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--cobalt-mid);
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+
+  .step-icon {
+    width: 48px; height: 48px;
+    background: var(--cobalt-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .step-icon svg { width: 26px; height: 26px; }
+
+  .step h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--cobalt-dark);
+  }
+
+  .step p {
+    font-size: 0.95rem;
+    color: #445;
+    line-height: 1.6;
+  }
+
+  /* ── SPECS TABLE ── */
+  .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--cobalt);
+    margin-top: 40px;
+    border: 1px solid var(--cobalt);
+  }
+
+  .spec-cell {
+    background: var(--ivory-warm);
+    padding: 24px 20px;
+  }
+
+  .spec-cell dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cobalt-mid);
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
+
+  .spec-cell dd {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cobalt-dark);
+  }
+
+  /* ── USE CASES ── */
+  .usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .usecase {
+    position: relative;
+    padding: 40px 32px;
+    background: var(--ivory-warm);
+    border-left: 3px solid var(--cobalt);
+  }
+
+  .usecase-tile {
+    width: 64px; height: 64px;
+    margin-bottom: 20px;
+    border: 1.5px solid var(--cobalt);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .usecase-tile svg { width: 44px; height: 44px; }
+
+  .usecase h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--cobalt-dark);
+    margin-bottom: 10px;
+  }
+
+  .usecase p {
+    font-size: 0.95rem;
+    color: #556;
+    line-height: 1.65;
+  }
+
+  /* ── QUOTE ── */
+  .quote-section {
+    background: var(--cobalt-dark);
+    color: var(--ivory);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .quote-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .quote-mark {
+    font-family: 'Crimson Pro', serif;
+    font-size: 8rem;
+    line-height: 0.5;
+    color: var(--cobalt);
+    display: block;
+    margin-bottom: 8px;
+    opacity: 0.4;
+  }
+
+  blockquote {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--ivory);
+    margin-bottom: 24px;
+  }
+
+  .quote-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terra-light);
+    opacity: 0.8;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: var(--ivory-warm);
+    padding: 96px 24px;
+    text-align: center;
+  }
+
+  .cta-inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .cta-tiles {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+
+  .cta-tile {
+    width: 56px; height: 56px;
+    background: white;
+    border: 1.5px solid var(--cobalt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-tile svg { width: 38px; height: 38px; }
+
+  .cta-section h2 {
+    margin-bottom: 16px;
+  }
+
+  .cta-desc {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #556;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--cobalt-dark);
+    color: var(--ivory);
+    padding: 18px 48px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--cobalt-dark);
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 16px;
+  }
+  .btn-primary:hover {
+    background: var(--cobalt);
+    border-color: var(--cobalt);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--cobalt-dark);
+    padding: 14px 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1.5px solid var(--cobalt-dark);
+    margin-left: 16px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-secondary:hover {
+    background: var(--cobalt-dark);
+    color: var(--ivory);
+  }
+
+  .price-note {
+    margin-top: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: #778;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--cobalt-dark);
+    color: rgba(247,242,234,0.5);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 1.8;
+  }
+  footer em { font-style: italic; display: block; margin-bottom: 10px; font-size: 0.78rem; }
+  footer a { color: rgba(247,242,234,0.65); }
+  footer a:hover { color: var(--ivory); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .hero-top-band { padding: 10px 20px; }
+    .hero-content { padding: 56px 16px; }
+    section { padding: 64px 16px; }
+    .btn-secondary { margin-left: 0; margin-top: 12px; display: block; }
+  }
+</style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+
+  <div class="hero-top-band">
+    <div class="logo-tile"></div>
+    <span>Glasur-Trommeldrucker GmbH · Modell GTD-1</span>
+  </div>
+
+  <div class="hero-content">
+
+    <!-- Mini tile showcase -->
+    <div class="hero-tile-showcase">
+      <!-- Tile 1: Classic azulejo cross pattern -->
+      <div class="tile-card">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="90" height="90" fill="#F7F2EA"/>
+          <line x1="45" y1="0" x2="45" y2="90" stroke="#1B3A8F" stroke-width="2"/>
+          <line x1="0" y1="45" x2="90" y2="45" stroke="#1B3A8F" stroke-width="2"/>
+          <circle cx="45" cy="45" r="14" stroke="#1B3A8F" stroke-width="1.5" fill="none"/>
+          <circle cx="45" cy="45" r="6" fill="#1B3A8F"/>
+          <rect x="15" y="15" width="16" height="16" fill="none" stroke="#1B3A8F" stroke-width="1.5" transform="rotate(45 23 23)"/>
+          <rect x="51" y="15" width="16" height="16" fill="none" stroke="#1B3A8F" stroke-width="1.5" transform="rotate(45 59 23)"/>
+          <rect x="51" y="51" width="16" height="16" fill="none" stroke="#1B3A8F" stroke-width="1.5" transform="rotate(45 59 59)"/>
+          <rect x="15" y="51" width="16" height="16" fill="none" stroke="#1B3A8F" stroke-width="1.5" transform="rotate(45 23 59)"/>
+        </svg>
+      </div>
+      <!-- Tile 2: Floral motif -->
+      <div class="tile-card">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="90" height="90" fill="#F7F2EA"/>
+          <rect x="3" y="3" width="84" height="84" stroke="#1B3A8F" stroke-width="1.5" fill="none"/>
+          <circle cx="45" cy="45" r="20" fill="#1B3A8F" opacity="0.12"/>
+          <circle cx="45" cy="20" r="7" fill="#1B3A8F"/>
+          <circle cx="45" cy="70" r="7" fill="#1B3A8F"/>
+          <circle cx="20" cy="45" r="7" fill="#1B3A8F"/>
+          <circle cx="70" cy="45" r="7" fill="#1B3A8F"/>
+          <circle cx="45" cy="45" r="8" fill="#1B3A8F"/>
+          <line x1="45" y1="27" x2="45" y2="37" stroke="#1B3A8F" stroke-width="2"/>
+          <line x1="45" y1="53" x2="45" y2="63" stroke="#1B3A8F" stroke-width="2"/>
+          <line x1="27" y1="45" x2="37" y2="45" stroke="#1B3A8F" stroke-width="2"/>
+          <line x1="53" y1="45" x2="63" y2="45" stroke="#1B3A8F" stroke-width="2"/>
+        </svg>
+      </div>
+      <!-- Tile 3: Geometric star -->
+      <div class="tile-card">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="90" height="90" fill="#F7F2EA"/>
+          <polygon points="45,10 52,38 80,38 57,55 65,82 45,66 25,82 33,55 10,38 38,38" fill="#1B3A8F" opacity="0.9"/>
+          <polygon points="45,22 50,38 66,38 54,47 58,64 45,55 32,64 36,47 24,38 40,38" fill="#F7F2EA"/>
+          <circle cx="45" cy="45" r="7" fill="#B85A2E"/>
+        </svg>
+      </div>
+      <!-- Tile 4: Wave / maritime -->
+      <div class="tile-card">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="90" height="90" fill="#1B3A8F"/>
+          <path d="M0 30 Q22 10 45 30 Q67 50 90 30" stroke="#F7F2EA" stroke-width="3" fill="none"/>
+          <path d="M0 45 Q22 25 45 45 Q67 65 90 45" stroke="#F7F2EA" stroke-width="3" fill="none"/>
+          <path d="M0 60 Q22 40 45 60 Q67 80 90 60" stroke="#F7F2EA" stroke-width="3" fill="none"/>
+          <circle cx="45" cy="45" r="8" fill="#F7F2EA" opacity="0.2"/>
+        </svg>
+      </div>
+      <!-- Tile 5: Portrait placeholder -->
+      <div class="tile-card">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="90" height="90" fill="#F7F2EA"/>
+          <rect x="3" y="3" width="84" height="84" stroke="#1B3A8F" stroke-width="2" fill="none"/>
+          <ellipse cx="45" cy="35" rx="18" ry="20" fill="#1B3A8F" opacity="0.85"/>
+          <path d="M15 80 Q15 55 45 55 Q75 55 75 80" fill="#1B3A8F" opacity="0.7"/>
+          <text x="45" y="87" font-family="serif" font-size="7" fill="#1B3A8F" text-anchor="middle" opacity="0.5">MARIOS KLEINER LADEN</text>
+        </svg>
+      </div>
+    </div>
+
+    <h1>Glasur-<em>Trommel</em>drucker</h1>
+    <p class="hero-sub">Jede Fliese ein Unikat. Jedes Motiv eingebrannt. Vom Handwerk zum Druckknopf — Ostfriesland-Qualität auf Knopfdruck.</p>
+
+    <div class="hero-score">
+      <span class="score-num">18</span>
+      <span class="score-label">von 24<br>Startup-Punkte</span>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Entdecken</span>
+      <div class="scroll-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TILE DIVIDER ROW -->
+<div class="tile-divider">
+  <div class="tile-divider-item" style="max-width:12%; overflow:hidden;">
+    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="rgba(247,242,234,0.4)" stroke-width="1.5"/><line x1="24" y1="0" x2="24" y2="48" stroke="rgba(247,242,234,0.25)" stroke-width="1"/><line x1="0" y1="24" x2="48" y2="24" stroke="rgba(247,242,234,0.25)" stroke-width="1"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" stroke="rgba(247,242,234,0.4)" stroke-width="1.5" transform="rotate(45 24 24)"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><polygon points="24,6 42,18 42,30 24,42 6,30 6,18" stroke="rgba(247,242,234,0.4)" stroke-width="1.5"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="rgba(247,242,234,0.4)" stroke-width="1.5"/><line x1="24" y1="0" x2="24" y2="48" stroke="rgba(247,242,234,0.25)" stroke-width="1"/><line x1="0" y1="24" x2="48" y2="24" stroke="rgba(247,242,234,0.25)" stroke-width="1"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" stroke="rgba(247,242,234,0.4)" stroke-width="1.5" transform="rotate(45 24 24)"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><polygon points="24,6 42,18 42,30 24,42 6,30 6,18" stroke="rgba(247,242,234,0.4)" stroke-width="1.5"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="rgba(247,242,234,0.4)" stroke-width="1.5"/><line x1="24" y1="0" x2="24" y2="48" stroke="rgba(247,242,234,0.25)" stroke-width="1"/><line x1="0" y1="24" x2="48" y2="24" stroke="rgba(247,242,234,0.25)" stroke-width="1"/></svg>
+  </div>
+  <div class="tile-divider-item">
+    <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" stroke="rgba(247,242,234,0.4)" stroke-width="1.5" transform="rotate(45 24 24)"/></svg>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how-it-works">
+  <div>
+    <p class="section-label">Der Prozess</p>
+    <h2>Drucken. Brennen. <em>Fertig.</em></h2>
+    <p style="font-size:1.05rem; color:#556; max-width:600px; line-height:1.7;">
+      Handbemalte Fliesen aus Ostfriesland, Turin und Mallorca sind schön — aber teuer und langsam. Der Glasur-Trommeldrucker bringt Inkjet-Präzision in den Brennofen. Ein Drucker für Glasurfarbe, der alles kann, was die menschliche Hand kann — nur 400× schneller.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">Schritt 01</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 26 26" fill="none"><rect x="3" y="3" width="20" height="20" stroke="#F7F2EA" stroke-width="1.5"/><path d="M7 13h12M13 7v12" stroke="#F7F2EA" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Motiv wählen</h3>
+        <p>Portrait, Logo, Straßenname, Azulejo-Ornament — jede Bilddatei. Software konvertiert in Glasurfarb-Daten.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Schritt 02</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 26 26" fill="none"><rect x="2" y="6" width="22" height="14" rx="1" stroke="#F7F2EA" stroke-width="1.5"/><path d="M8 6V4M18 6V4" stroke="#F7F2EA" stroke-width="1.5"/><circle cx="7" cy="13" r="1.5" fill="#F7F2EA"/><rect x="11" y="11" width="10" height="4" rx="0.5" fill="#F7F2EA" opacity="0.3"/></svg>
+        </div>
+        <h3>Fliese einlegen</h3>
+        <p>Keramikfliesen bis 60×60 cm flach einlegen. Der Tampon-/Inkjet-Druckkopf fährt ab — Glasurfarbe wird präzise aufgetragen.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Schritt 03</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 26 26" fill="none"><path d="M5 18 L5 8 Q5 5 8 5 L18 5 Q21 5 21 8 L21 18" stroke="#F7F2EA" stroke-width="1.5" fill="none"/><path d="M3 18h20" stroke="#F7F2EA" stroke-width="1.5"/><path d="M10 12h6M13 9v6" stroke="#F7F2EA" stroke-width="1" opacity="0.6"/></svg>
+        </div>
+        <h3>Brennen</h3>
+        <p>Fliese in den Brennofen bei 1050–1250 °C. Die Glasurfarbe schmilzt ein und wird dauerhaft Teil der Keramik — wie seit Jahrhunderten.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">Schritt 04</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 26 26" fill="none"><rect x="4" y="4" width="18" height="18" stroke="#F7F2EA" stroke-width="1.5"/><path d="M9 13l3 3 5-5" stroke="#B85A2E" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Fertig</h3>
+        <p>Wasserecht. Kratzfest. 500 Jahre haltbar. Eine Ostfriesland-Fliese in Industriequalität — in unter drei Minuten.</p>
+      </div>
+    </div>
+
+    <dl class="specs-grid">
+      <div class="spec-cell">
+        <dt>Druckbereich</dt>
+        <dd>bis 60 × 60 cm</dd>
+      </div>
+      <div class="spec-cell">
+        <dt>Farbtiefe</dt>
+        <dd>CMYK + Sonderfarben</dd>
+      </div>
+      <div class="spec-cell">
+        <dt>Tinte</dt>
+        <dd>Glasurfarbe / Porzellanfarbe</dd>
+      </div>
+      <div class="spec-cell">
+        <dt>Brenntemperatur</dt>
+        <dd>1050 – 1250 °C</dd>
+      </div>
+      <div class="spec-cell">
+        <dt>Druckzeit</dt>
+        <dd>ca. 90 Sek. / Fliese</dd>
+      </div>
+      <div class="spec-cell">
+        <dt>Haltbarkeit</dt>
+        <dd>> 500 Jahre</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<!-- USE CASES -->
+<section>
+  <p class="section-label">Anwendungen</p>
+  <h2>Von Ostfriesland<br><em>bis Turin</em></h2>
+
+  <div class="usecases-grid">
+    <div class="usecase">
+      <div class="usecase-tile">
+        <svg viewBox="0 0 44 44" fill="none"><rect x="4" y="4" width="36" height="36" stroke="#1B3A8F" stroke-width="1.5"/><path d="M4 20h36M20 4v36" stroke="#1B3A8F" stroke-width="1" opacity="0.4"/><circle cx="22" cy="22" r="7" fill="#1B3A8F" opacity="0.8"/></svg>
+      </div>
+      <h3>Hausfassaden & Schilder</h3>
+      <p>
+        „Marios kleine Farm" auf blauweiße Fliese drucken — wie in Turin und Mallorca. Hausnummern, Straßenschilder, individuelle Kacheln: alles in echter Keramik, für ewig, wetterbeständig.
+      </p>
+    </div>
+
+    <div class="usecase">
+      <div class="usecase-tile">
+        <svg viewBox="0 0 44 44" fill="none"><rect x="6" y="8" width="32" height="28" rx="1" stroke="#1B3A8F" stroke-width="1.5"/><path d="M6 16h32" stroke="#1B3A8F" stroke-width="1" opacity="0.5"/><circle cx="16" cy="12" r="2" fill="#1B3A8F"/><circle cx="22" cy="12" r="2" fill="#1B3A8F"/><circle cx="28" cy="12" r="2" fill="#1B3A8F"/><path d="M12 24h20M12 30h14" stroke="#1B3A8F" stroke-width="1.5" opacity="0.5"/></svg>
+      </div>
+      <h3>Gastronomie & Hotels</h3>
+      <p>
+        Jede Restaurantküche, jede Hotellobby kann ihre eigene handbemalte Kachel haben — ohne Handmaler, ohne Warteliste. Das Motiv als Datei, die Fliese in einer Stunde fertig.
+      </p>
+    </div>
+
+    <div class="usecase">
+      <div class="usecase-tile">
+        <svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="18" rx="10" ry="12" fill="none" stroke="#1B3A8F" stroke-width="1.5"/><path d="M14 32 Q14 40 22 40 Q30 40 30 32" fill="#1B3A8F" opacity="0.7"/><ellipse cx="22" cy="18" rx="6" ry="8" fill="#1B3A8F" opacity="0.3"/></svg>
+      </div>
+      <h3>Portraits & Souvenirs</h3>
+      <p>
+        Dein Konterfei. Dein Hund. Dein Kind. Auf einer 15×15-Kachel, eingebrannt, für 500 Jahre. Das neue Familienportrait — nicht auf Leinwand, sondern auf Keramik.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section">
+  <div class="quote-inner">
+    <span class="quote-mark">"</span>
+    <blockquote>
+      Sehr knackig und realistisch tatsächlich. Ja, passt heute zur Stimmung. Das ist eine 18.
+    </blockquote>
+    <p class="quote-source">— Nisse Ingwersen · Startup-Bewertung TMDA #58 · 18/24 Punkten</p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+
+    <div class="cta-tiles">
+      <div class="cta-tile">
+        <svg viewBox="0 0 38 38" fill="none"><rect x="2" y="2" width="34" height="34" stroke="#1B3A8F" stroke-width="1.5"/><circle cx="19" cy="19" r="9" fill="#1B3A8F" opacity="0.8"/><circle cx="19" cy="19" r="5" fill="#F7F2EA"/></svg>
+      </div>
+      <div class="cta-tile">
+        <svg viewBox="0 0 38 38" fill="none"><rect x="2" y="2" width="34" height="34" stroke="#1B3A8F" stroke-width="1.5"/><polygon points="19,6 32,30 6,30" fill="#1B3A8F" opacity="0.7"/></svg>
+      </div>
+      <div class="cta-tile">
+        <svg viewBox="0 0 38 38" fill="none"><rect x="2" y="2" width="34" height="34" stroke="#1B3A8F" stroke-width="1.5"/><rect x="8" y="8" width="22" height="22" fill="#1B3A8F" opacity="0.8" transform="rotate(45 19 19)"/></svg>
+      </div>
+    </div>
+
+    <p class="section-label" style="justify-content:center">Pre-Order Phase I</p>
+    <h2>Jetzt Platz in der<br><em>ersten Brennrunde</em> sichern</h2>
+    <p class="cta-desc">
+      Der GTD-1 kommt 2027. Limitierte Vorserien für Fliesenleger, Gastronomen und hartgesottene Ostfriesland-Fans. Einmalige Anschaffung: 28.900 €. Tinte: 4,50 € / Liter.
+    </p>
+
+    <a href="#" class="btn-primary">Platz reservieren</a>
+    <a href="#" class="btn-secondary">Datenblatt (PDF)</a>
+
+    <p class="price-note">zzgl. MwSt · Lieferung D/A/CH · Brennofen nicht im Lieferumfang</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <em>Rein fiktives Konzept aus dem TMDA Podcast — keine echte Firma, keine echten Drucker, kein echter Brennofen.</em>
+  Fiktives Konzept · TMDA #58 · 18/24 · <a href="/folge/58">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+</footer>
+
+</body>
+</html>

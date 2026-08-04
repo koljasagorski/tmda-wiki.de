@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-28T06:29:49.000Z",
-  "count": 256,
+  "updatedAt": "2026-08-04T11:31:58.563Z",
+  "count": 261,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -398,9 +398,19 @@
       "folge": 55
     },
     {
+      "begriff": "Glasur-Trommeldrucker",
+      "bedeutung": "Fynns Startup-Idee: Spezialdrucker für Keramikfliesen mit Glasurfarbe (Porzellanfarbe), der beliebige Motive aufdruckt — anschließend wird die Fliese im Ofen gebrannt und das Motiv ist dauerhaft eingebrannt. Wie Handmalerei, aber industrie…",
+      "folge": 58
+    },
+    {
       "begriff": "Grower",
       "bedeutung": "Nisses Begriff fuer eine Startup-Idee, die beim ersten Eindruck maessig klingt, aber mit jeder weiteren Erweiterung oder Feature besser wird — im Gegensatz zu einem 'Shower'.",
       "folge": 56
+    },
+    {
+      "begriff": "Halbpervers / Vollpervers",
+      "bedeutung": "Fynns und Nisses Skala für Grenzüberschreitungen: Halbpervers = anschauen, Fernglas beim Konzert, abfällige Blicke. Vollpervers = Till Lindemann-Level, aktive Übergriffigkeit. Der Übergang liegt bei 51% — 'diese Grenze, da bin ich nicht da…",
+      "folge": 58
     },
     {
       "begriff": "Halbwertszeit",
@@ -486,6 +496,11 @@
       "begriff": "Improfilm",
       "bedeutung": "Improvisations-Film - bei dem Casting bei Christian Ulmen war es Improvisation, keine fest geschriebenen Dialoge",
       "folge": 11
+    },
+    {
+      "begriff": "Jackson",
+      "bedeutung": "Vielzweck-Slang-Begriff, der je nach Kontext und Betonung alles bedeuten kann — positiv oder negativ. Ähnlich wie 'Scheiße'. Beispiele: 'Rüdiger war am Jacksonen' (hat Steuern hinterzogen), 'ich bin kurz Jacksonen' (etwas im Laden zurückle…",
+      "folge": 58
     },
     {
       "begriff": "Jay Bobo",
@@ -616,6 +631,11 @@
       "begriff": "Konklave",
       "bedeutung": "Papstwahl-Film, den Nisse als Referenz fuer sein Wissen nutzt",
       "folge": 1
+    },
+    {
+      "begriff": "Krabben im heißen Topf",
+      "bedeutung": "Metapher für Menschen (oder Gruppen), die sich gegenseitig beim Aufstieg behindern — sobald einer oben rauskommt, ziehen die anderen ihn wieder rein. Im Podcast entstanden daraus Fantasien über Krabben-Kettenhemden und Krabbenkriege mit Pf…",
+      "folge": 58
     },
     {
       "begriff": "Kranzfrisur",
@@ -891,6 +911,11 @@
       "begriff": "Prepper Teens machen Sachen",
       "bedeutung": "Nisses neue Rubrik für Themen, in denen sie über Wissenschaftliches/Verschwörerisches spekulieren",
       "folge": 10
+    },
+    {
+      "begriff": "Prinz Omega",
+      "bedeutung": "Fynns spontan erfundenes Schlager-Rap-Konzept für den Mega Park / Ballermann. Kooperation mit Uhrenmarke Omega ('die Uhren drehen rückwärts'). Bisher zwei Songs skizziert. Entstanden aus der Diskussion über Anitas (Haftbefehls Frau) Schlag…",
+      "folge": 58
     },
     {
       "begriff": "Punching Bulb",
