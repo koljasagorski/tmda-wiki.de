@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-28T06:29:49.000Z",
-  "count": 54,
+  "updatedAt": "2026-08-04T11:31:58.563Z",
+  "count": 55,
   "items": [
+    {
+      "folge": 58,
+      "datum": "2026-08-04",
+      "idee": "Glasur-Trommeldrucker — Keramikfliesen-Bedruckmaschine",
+      "beschreibung": "Fynn will eine Maschine entwickeln, die Keramikfliesen mit spezieller Glasurfarbe bedruckt — ähnlich einem Inkjet-Drucker, aber mit Porzellanfarbe, die anschließend im Brennofen eingebrannt wird. Inspiration: handbemalte Fliesen aus Ostfriesland (blauweiß), Turin und Mallorca. Das Problem: Bisher ist Fliesenmalerei nur per Hand möglich ('dann mal du drauf, dann nimmst die Fliese, brennst die in s…",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Sehr knackig und realistisch tatsächlich. Ja, passt heute zur Stimmung. Das ist eine 18.' Er findet die Idee ungewöhnlich pragmatisch für Fynns Verhältnisse — normalerweise baut Fynn 'den halben Planeten um', kämpft mit Statik und …"
+    },
     {
       "folge": 57,
       "datum": "2026-07-28",
