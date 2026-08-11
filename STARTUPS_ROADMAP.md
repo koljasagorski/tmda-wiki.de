@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 59/59 LIVE ✅
+## Status — 60/60 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-58 + 60 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent). Folge 59 hat kein Transcript — kein Eintrag.
+**Jede** Startup-Idee aus den Folgen 1-60 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 18/24
 
@@ -34,6 +34,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 22/24 — Top-Tier
 
+- [x] **Corty Soul** · Folge 59 · 22/24 · biohacker dashboard / quantified-self data viz (Space Grotesk + Space Mono, #070b12 dark, neon green #00d9a3 + purple #7c5cfc, live Kortisol-SVG-Chart)
 - [x] **Operation Nordstrand (Mond-Abschuss)** · Folge 53 · 14/24 · staatliche Weltraum-Behörde / Space-Race-Propaganda (Kosmos-Navy, Gold/Silber, Zertifikat)
 - [x] **Der Glasturm** · Folge 54 · durchgefallen (kein expliziter Score) · NEOM „The Line"-Minimalismus (Glas-Weiß, Gletscherblau, ultradünne Grotesk)
 - [x] **Chip und Chap** · Folge 55 · 7/24 · Sleep-Tech Nacht-Look (Indigo/Cyan-Glow, Bricolage Grotesque + DM Sans)

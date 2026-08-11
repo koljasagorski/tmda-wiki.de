@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corty Soul — Kenn deinen Cortisol</title>
+  <meta name="description" content="Kortisol-Tracking rund um die Uhr. Subkutaner Sensor + KI-Logging identifiziert deine persönlichen Stresskiller. Lebe länger als Brian Johnson." />
+  <meta property="og:title" content="Corty Soul — Kenn deinen Cortisol" />
+  <meta property="og:description" content="Der einzige Longevity-Hack, der wirklich funktioniert: wissen, wann dein Kortisol explodiert — und es dann weglassen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tmda-wiki.de/startup/corty-soul" />
+  <link rel="canonical" href="https://tmda-wiki.de/startup/corty-soul" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Corty Soul",
+    "description": "Kortisol-Tracking-App mit subkutanem Sensor und KI-Aktivitäts-Logging für chronischen Stressabbau.",
+    "applicationCategory": "HealthApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" }
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+    :root {
+      --bg: #070b12;
+      --surface: #0d1421;
+      --border: #1a2540;
+      --accent: #00d9a3;
+      --accent2: #7c5cfc;
+      --danger: #ff4d6d;
+      --warn: #f5a623;
+      --text: #e2e8f0;
+      --muted: #4a5568;
+      --card: #0f1a2e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(7,11,18,0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+
+    .logo span { color: var(--text); opacity: 0.5; }
+
+    .nav-pill {
+      background: rgba(0, 217, 163, 0.1);
+      border: 1px solid rgba(0, 217, 163, 0.3);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .hero-eyebrow {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 .highlight {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 44ch;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #000;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    /* ─── LIVE CORTISOL CHART ─── */
+    .chart-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .chart-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .chart-value {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .chart-unit {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    .chart-status {
+      font-size: 0.65rem;
+      color: var(--accent);
+      background: rgba(0, 217, 163, 0.1);
+      border: 1px solid rgba(0, 217, 163, 0.2);
+      padding: 0.2rem 0.5rem;
+      font-family: 'Space Mono', monospace;
+    }
+
+    /* SVG Cortisol Graph */
+    .cortisol-svg {
+      width: 100%;
+      height: 120px;
+      overflow: visible;
+    }
+
+    .event-labels {
+      margin-top: 0.75rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .event-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.55rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .event-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    /* ─── METRICS STRIP ─── */
+    .metrics-strip {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+
+    @media (max-width: 600px) { .metrics-strip { grid-template-columns: repeat(2, 1fr); } }
+
+    .metric-cell {
+      background: var(--surface);
+      padding: 1.2rem 1rem;
+    }
+
+    .metric-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .metric-desc {
+      font-size: 0.7rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ─── SECTIONS ─── */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--accent2);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .section-line { flex: 1; height: 1px; background: var(--border); }
+
+    /* ─── HOW IT WORKS ─── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .step-cell {
+      background: var(--card);
+      padding: 1.5rem;
+    }
+
+    .step-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--accent2);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-body {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    /* ─── SCIENCE BLOCK ─── */
+    .science-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent2);
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 600px) { .science-card { grid-template-columns: 1fr; } }
+
+    .science-card h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .science-card p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.7;
+    }
+
+    .vs-table { width: 100%; border-collapse: collapse; }
+    .vs-table th, .vs-table td {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .vs-table th { font-family: 'Space Mono', monospace; color: var(--muted); font-size: 0.6rem; letter-spacing: 0.1em; }
+    .vs-table td.good { color: var(--accent); }
+    .vs-table td.bad { color: var(--danger); }
+
+    /* ─── INTEGRATIONS ─── */
+    .integrations {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .integration-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .integration-chip .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ─── INVESTOR BLOCK ─── */
+    .investor-card {
+      background: linear-gradient(135deg, rgba(124,92,252,0.08), rgba(0,217,163,0.05));
+      border: 1px solid var(--accent2);
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .investor-score {
+      font-family: 'Space Mono', monospace;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .investor-score small { font-size: 1rem; color: var(--muted); }
+
+    .investor-text h3 { font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .investor-text p { font-size: 0.78rem; color: #94a3b8; line-height: 1.6; font-style: italic; }
+
+    /* ─── TICKER ─── */
+    .ticker-wrap {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      padding: 0.5rem 0;
+      margin: 2rem 0;
+    }
+
+    .ticker-inner {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker 35s linear infinite;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* ─── PULSE ANIMATION ─── */
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      position: relative;
+    }
+
+    .live-dot::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse-ring 1.5s ease-out infinite;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.65rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .satire { margin-top: 0.5rem; color: #2d3748; }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- NAV -->
+<nav>
+  <div class="logo">CORTY<span>.</span>SOUL</div>
+  <div class="nav-pill"><span class="live-dot" style="vertical-align:middle;margin-right:6px"></span>BETA · SENSOR AKTIV</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">Quantified Longevity · Berlin 2026</div>
+    <h1>Kenn deinen<br><span class="highlight">Cortisol.</span></h1>
+    <p class="hero-sub">
+      Olivenöl, Sport, Supplements — alles Beiwerk. Der eigentliche Feind deiner Arterien ist Kortisol. Corty Soul misst ihn. Alle 10 Sekunden. Und dann sagst du der Quelle einfach: tschüss.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary">Beta-Zugang sichern</button>
+      <button class="btn-ghost">Wie es funktioniert →</button>
+    </div>
+  </div>
+
+  <!-- LIVE CHART -->
+  <div class="chart-card">
+    <div class="chart-header">
+      <div>
+        <div class="chart-label">Kortisol-Level · live</div>
+        <div class="chart-value">14.2<span class="chart-unit">nmol/L</span></div>
+      </div>
+      <div class="chart-status">↓ NIEDRIG</div>
+    </div>
+
+    <svg class="cortisol-svg" viewBox="0 0 400 120" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#00d9a3" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#00d9a3" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- Grid lines -->
+      <line x1="0" y1="30" x2="400" y2="30" stroke="#1a2540" stroke-width="1"/>
+      <line x1="0" y1="60" x2="400" y2="60" stroke="#1a2540" stroke-width="1"/>
+      <line x1="0" y1="90" x2="400" y2="90" stroke="#1a2540" stroke-width="1"/>
+      <!-- Danger threshold -->
+      <line x1="0" y1="28" x2="400" y2="28" stroke="#ff4d6d" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+      <text x="4" y="24" fill="#ff4d6d" font-size="8" font-family="Space Mono" opacity="0.6">HOCH</text>
+      <!-- Area fill -->
+      <path d="M0,95 C20,90 40,85 60,88 C80,91 100,60 120,40 C140,20 160,15 180,30 C200,45 220,80 240,85 C260,90 280,88 300,82 C320,76 340,70 360,72 C380,74 400,75 400,75 L400,120 L0,120 Z" fill="url(#grad)"/>
+      <!-- Line -->
+      <path d="M0,95 C20,90 40,85 60,88 C80,91 100,60 120,40 C140,20 160,15 180,30 C200,45 220,80 240,85 C260,90 280,88 300,82 C320,76 340,70 360,72 C380,74 400,75 400,75" fill="none" stroke="#00d9a3" stroke-width="2"/>
+      <!-- Peak marker (Mama-Anruf) -->
+      <circle cx="160" cy="15" r="4" fill="#ff4d6d"/>
+      <line x1="160" y1="19" x2="160" y2="120" stroke="#ff4d6d" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+      <!-- Current position -->
+      <circle cx="400" cy="75" r="4" fill="#00d9a3"/>
+      <circle cx="400" cy="75" r="8" fill="#00d9a3" opacity="0.2">
+        <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Time labels -->
+      <text x="0" y="115" fill="#4a5568" font-size="7" font-family="Space Mono">08:00</text>
+      <text x="140" y="115" fill="#4a5568" font-size="7" font-family="Space Mono">10:30</text>
+      <text x="340" y="115" fill="#4a5568" font-size="7" font-family="Space Mono">jetzt</text>
+    </svg>
+
+    <div class="event-labels">
+      <span class="event-tag"><span class="event-dot" style="background:#ff4d6d"></span>Anruf Mama — Peak +340%</span>
+      <span class="event-tag"><span class="event-dot" style="background:#f5a623"></span>A100-Stau — +120%</span>
+      <span class="event-tag"><span class="event-dot" style="background:#00d9a3"></span>Kaffee mit Freund — –18%</span>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    MAMA-ANRUF +340% &nbsp;·&nbsp; A100 STAU +120% &nbsp;·&nbsp; YOGA +12% (WEIL BEEILEN) &nbsp;·&nbsp; KAFFEE MIT FREUND –18% &nbsp;·&nbsp; SALAT SCHNEIDEN +67% &nbsp;·&nbsp; TELEFONAT CHEF +89% &nbsp;·&nbsp; SPAZIERGANG –31% &nbsp;·&nbsp; MEETING OHNE AGENDA +240% &nbsp;·&nbsp; PODCAST HÖREN –44% &nbsp;·&nbsp; SLACK-NOTIFICATION +55% &nbsp;·&nbsp;
+  </div>
+</div>
+
+<!-- METRICS -->
+<div class="metrics-strip">
+  <div class="metric-cell">
+    <span class="metric-num">10s</span>
+    <span class="metric-desc">Mess-Intervall des subkutanen Sensors</span>
+  </div>
+  <div class="metric-cell">
+    <span class="metric-num">24/7</span>
+    <span class="metric-desc">Kontinuierliches Tracking, keine Pausen</span>
+  </div>
+  <div class="metric-cell">
+    <span class="metric-num">∞</span>
+    <span class="metric-desc">Mögliche Lebensverlängerung laut Nisse</span>
+  </div>
+  <div class="metric-cell">
+    <span class="metric-num">0</span>
+    <span class="metric-desc">Supplements nötig, wenn du die Quelle eliminierst</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-tag">Protokoll</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="steps-grid">
+    <div class="step-cell">
+      <div class="step-num">SCHRITT 01</div>
+      <div class="step-title">Sensor einsetzen</div>
+      <p class="step-body">Subkutaner Mikrosensor (Blutzuckermessgerät-Prinzip) wird zwischen zwei Hautschichten platziert. Misst Kortisol direkt im Interstitium — alle 10 Sekunden, schmerzfrei.</p>
+    </div>
+    <div class="step-cell">
+      <div class="step-num">SCHRITT 02</div>
+      <div class="step-title">Tag loggen</div>
+      <p class="step-body">Tippe händisch ein, was du gerade tust — oder lass Corty Soul per Meta Ray-Ban Glasses und Apple Watch automatisch mitschreiben. KI-Analyse im Hintergrund.</p>
+    </div>
+    <div class="step-cell">
+      <div class="step-num">SCHRITT 03</div>
+      <div class="step-title">Peak verstehen</div>
+      <p class="step-body">Die App korreliert Kortisol-Spitzen mit Aktivitäten. Du siehst: nicht der Stau macht dich kaputt, sondern das Telefonat mit deiner Mutter kurz davor.</p>
+    </div>
+    <div class="step-cell">
+      <div class="step-num">SCHRITT 04</div>
+      <div class="step-title">Auslöser eliminieren</div>
+      <p class="step-body">Weglassen, was Kortisol pusht. Mehr von dem, was es senkt. Brian Johnson macht 130 Supplements — du machst drei Anpassungen. Du gewinnst.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SCIENCE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-tag">Warum Kortisol</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="science-card">
+    <div>
+      <h3>Das eigentliche Problem</h3>
+      <p>Die Longevity-Industrie redet über Olivenöl, NAD+, Intermittierendes Fasten und Kälteexposition. Dabei ist die Antwort einfacher: chronisch erhöhtes Kortisol zersetzt Arterien, strapaziert das Herz und beschleunigt Zellatom. Wer in den Blue Zones lebt, hat nicht die bessere Ernährung — der hat weniger chronischen Mikrostress.</p>
+      <br>
+      <p>Das Problem: Du merkst es oft gar nicht. Wer sagt, ihm macht die Arbeit keinen Stress, schüttet trotzdem Kortisol aus. Wer Trump-ähnlich durch die Welt geht und alle anderen für falsch hält, hat möglicherweise den niedrigsten Kortisol-Spiegel der Welt. Corty Soul misst es — unabhängig von deiner Selbstwahrnehmung.</p>
+    </div>
+    <div>
+      <h3>Longevity-Mythen vs. Realität</h3>
+      <table class="vs-table">
+        <thead>
+          <tr><th>METHODE</th><th>KORTISOL-EFFEKT</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sunday Natural Kapseln</td><td class="bad">±0%</td></tr>
+          <tr><td>Gesunder Salat (wenn stressig zubreitet)</td><td class="bad">+67%</td></tr>
+          <tr><td>Sport mit schlechtem Gewissen</td><td class="bad">+89%</td></tr>
+          <tr><td>NAD+ Injektion</td><td class="bad">Todesrisiko</td></tr>
+          <tr><td>Mama nicht anrufen</td><td class="good">–340%</td></tr>
+          <tr><td>Stau-Route wechseln</td><td class="good">–120%</td></tr>
+          <tr><td>Corty Soul</td><td class="good">Du entscheidest</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- INTEGRATIONS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-tag">Kompatibilität</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="integrations">
+    <div class="integration-chip"><span class="dot"></span>Meta Ray-Ban Glasses</div>
+    <div class="integration-chip"><span class="dot"></span>Apple Watch</div>
+    <div class="integration-chip"><span class="dot"></span>Oura Ring</div>
+    <div class="integration-chip"><span class="dot"></span>Whoop</div>
+    <div class="integration-chip"><span class="dot"></span>Garmin</div>
+    <div class="integration-chip"><span class="dot" style="background:var(--muted)"></span>OpenAI Buddy (geplant)</div>
+    <div class="integration-chip"><span class="dot" style="background:var(--muted)"></span>Manuelles Logging</div>
+  </div>
+</div>
+
+<!-- INVESTOR SCORE -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-tag">Gutachten</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="investor-card">
+    <div class="investor-score">22<small> / 24</small></div>
+    <div class="investor-text">
+      <h3>Investor N. Ingwersen — TMDA Venture Capital</h3>
+      <p>„Es ist eine 21, und wenn du mir jetzt noch einen geilen Namen gibst, ist es eine 22." Nach dem Vorschlag 'Corty Soul': sofort 22/24. — „Instant Milliardär, wenn du das machst. Vielleicht sollten wir das hier nicht ausstrahlen." Der einzige Vorbehalt: Technologie-Synchronisation aus mehreren Geräten noch in Arbeit. Fynn: „Das kann ich mit Lovable einfach prompten."</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <a href="/startup-ideen">← TMDA-Wiki</a>
+    &nbsp;·&nbsp;
+    Folge 59 · Corty Soul · 22/24 Punkte
+    &nbsp;·&nbsp;
+    Podcast: <a href="https://podcasts.apple.com/de/podcast/teenager-mit-deutschem-akzent/id1612265791" target="_blank" rel="noopener">Teenager mit deutschem Akzent</a>
+  </p>
+  <p class="satire">
+    ⚠ Satire. Diese Seite ist eine Fan-Hommage an eine Startup-Idee aus dem TMDA-Podcast (Fynn Kliemann &amp; Nisse Ingwersen). Corty Soul ist kein echtes Produkt — der Beta-Zugang führt nirgendwo hin, der Sensor existiert nicht, der Kortisol-Graph ist erfunden. OWB.
+  </p>
+</footer>
+
+</body>
+</html>

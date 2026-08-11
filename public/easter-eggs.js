@@ -213,6 +213,7 @@
     'aaron':       () => { emojiRain('🌴', 30); toast('🌴 <strong>Aaron Carter im Tropical Island</strong> (Folge 3)', 4000); },
     'feierabend':  () => { emojiRain('🌙', 18); toast('🌙 <strong>„Das ist aber komplett Feierabend."</strong> Der Running-Gag aus Folge 51 (Pisse auf dem Schrank)', 5000); },
     'todescap':    () => { emojiRain('🛸', 20); toast('🛸 <strong>„Bruder, das ist Todescap."</strong> — Padel-Parkplatz, Alien-Pyramiden-Streit (Folge 60)', 5000); },
+    'tja':         () => toast('🚲 <strong>„Tja."</strong> — Der stumme Rennradfahrer in Kreuzberg, der Fynn tief in die Augen schaute und verschwand. Bedeutung: ungeklärt. (Folge 59)', 6000),
   };
 
   document.addEventListener('keydown', (e) => {
@@ -411,6 +412,7 @@
             <li><kbd>aaron</kbd> → Palmen-Regen</li>
             <li><kbd>feierabend</kbd> → Komplett Feierabend (Folge 51)</li>
             <li><kbd>todescap</kbd> → Alien-Pyramiden-Streit (Folge 60)</li>
+            <li><kbd>tja</kbd> → Der stumme Kreuzberg-Radfahrer (Folge 59)</li>
             <li><kbd>6 Seiten besucht</kbd> → Hielscher-Karte</li>
             <li><kbd>3× Klick Score-Badge</kbd> → Konfetti</li>
             <li><kbd>5× Klick Stat-Counter</kbd> → Achievement</li>

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T07:21:37.169Z",
-  "count": 98,
+  "updatedAt": "2026-08-11T07:46:17.041Z",
+  "count": 100,
   "items": [
     {
       "folge": 60,
@@ -11,6 +11,16 @@
       "folge": 60,
       "name": "Schlotterfit",
       "beschreibung": "Gym-Konzept basierend auf der Angst-Spannungs-Theorie: gezieltes Zittern und Schütteln als Muskeltraining — inspiriert von Pferden, die nach Angstreaktionen Muskeln durch Zittern lösen"
+    },
+    {
+      "folge": 59,
+      "name": "Corty Soul",
+      "beschreibung": "Kortisol-Tracking-App mit subkutanem Sensor (Blutzuckermessgerät-Prinzip) + KI-basiertem Aktivitäts-Logging: misst alle 10 Sekunden den Kortisolspiegel und korreliert ihn mit dem Tagesablauf, um chronischen Mikrostress-Auslöser zu identifizieren und zu eliminieren"
+    },
+    {
+      "folge": 59,
+      "name": "Lebensmittel-Mikroskop-App",
+      "beschreibung": "Handykamera mit Makrolinse als Lebensmittelqualitätsprüfer: Handy auf Fleisch, Joghurt oder Medikament halten, Licht durchscheinen lassen und per App Qualität, Schimmel, Nährwert-Plausibilität anzeigen — kein Score, spontaner Einfall von Fynn"
     },
     {
       "folge": 58,
