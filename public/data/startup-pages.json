@@ -1,6 +1,7 @@
 {
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
+    {"folge":60,"ideeMatch":"ausrede","slug":"ausrede-io","domain":null,"tagline":"250+ Erste-Person-Unfallfotos sofort per WhatsApp — weil echte Ausreden zu aufwändig sind.","punkte":11},
     {"folge":58,"ideeMatch":"Glasur-Trommeldrucker","slug":"glasur-trommeldrucker","domain":null,"tagline":"Jedes Motiv auf Keramikfliesen gedruckt und eingebrannt — Ostfriesland-Qualität per Inkjet.","punkte":18},
     {"folge":57,"ideeMatch":"100-Minuten","slug":"100-minuten-stunde","domain":null,"tagline":"Pace 10 = 10 km/h. Das dezimale Zeitsystem mit 100 Sekunden, 100 Minuten und 10 Stunden pro Tag.","punkte":11},
     {"folge":52,"ideeMatch":"AOK-Biegung","slug":"aok-biegung","domain":null,"tagline":"84 Millionen Deutsche. Ein Rohr. Jeden Morgen. Gesundheitscheck und Metallversorgung in einem.","punkte":3},

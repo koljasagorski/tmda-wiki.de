@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T11:31:58.563Z",
-  "count": 261,
+  "updatedAt": "2026-08-11T07:21:37.169Z",
+  "count": 266,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -81,6 +81,11 @@
       "begriff": "Augustada",
       "bedeutung": "Finns neues Musikprojekt",
       "folge": 27
+    },
+    {
+      "begriff": "ausrede.io",
+      "bedeutung": "Startup-Idee von Fynn: App mit Erste-Person-Unfallfotos als WhatsApp-Ausreden; ausrede.de war vergeben, daher .io-Domain",
+      "folge": 60
     },
     {
       "begriff": "Bananenhund",
@@ -498,6 +503,11 @@
       "folge": 11
     },
     {
+      "begriff": "Inner Engineering",
+      "bedeutung": "Programm und Buch von Sadhguru zur persönlichen Transformation durch yogische Techniken",
+      "folge": 60
+    },
+    {
       "begriff": "Jackson",
       "bedeutung": "Vielzweck-Slang-Begriff, der je nach Kontext und Betonung alles bedeuten kann — positiv oder negativ. Ähnlich wie 'Scheiße'. Beispiele: 'Rüdiger war am Jacksonen' (hat Steuern hinterzogen), 'ich bin kurz Jacksonen' (etwas im Laden zurückle…",
       "folge": 58
@@ -823,6 +833,11 @@
       "folge": 34
     },
     {
+      "begriff": "OWB",
+      "bedeutung": "Ohne wissenschaftlichen Beleg — Disclaimer, den Fynn und Nisse bei unverifizierten Behauptungen verwenden",
+      "folge": 60
+    },
+    {
       "begriff": "Pace",
       "bedeutung": "Running-Begriff: Zeit pro Kilometer. Ein Pace von 5 bedeutet, man läuft 1 km in 5 Minuten = 12 km/h. Mit dem 60er-Zeitsystem ist die Umrechnung umständlich. Mit Fynns 100-Minuten-System wäre Pace 10 direkt = 10 km/h.",
       "folge": 57
@@ -998,6 +1013,11 @@
       "folge": 40
     },
     {
+      "begriff": "Schlotterfit",
+      "bedeutung": "Fiktives Gym-Konzept von Fynn: Training durch gezieltes Schütteln/Zittern, inspiriert von der Beobachtung, dass Pferde nach Stresssituationen Muskeln durch Zittern lösen (Angst-Spannungs-Theorie)",
+      "folge": 60
+    },
+    {
       "begriff": "Schnellfickerhose",
       "bedeutung": "Alte Adidas-Reißverschluss-Hose mit Druckknöpfen / Magneten seitlich",
       "folge": 14
@@ -1171,6 +1191,11 @@
       "begriff": "TMDakel",
       "bedeutung": "Wortspiel aus TMDA und Orakel - der Modus, in dem Fynn und Nisse per Gefuehl den WM-Sieger tippen (Ergebnis: Niederlande).",
       "folge": 53
+    },
+    {
+      "begriff": "Todescap",
+      "bedeutung": "Slang-Ausdruck für eine völlig abstruse, nicht ernst zu nehmende Behauptung oder Idee; aufgeschnappt auf einem Padel-Parkplatz beim Streit über Alien-Pyramiden-Theorien",
+      "folge": 60
     },
     {
       "begriff": "Topline",

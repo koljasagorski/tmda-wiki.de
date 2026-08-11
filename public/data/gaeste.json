@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T11:31:58.563Z",
-  "count": 1094,
+  "updatedAt": "2026-08-11T07:21:37.169Z",
+  "count": 1098,
   "items": [
     {
       "name": "Donald Trump",
@@ -7134,6 +7134,30 @@
       "name": "Herbert Grönemeyer (Musiker, 'Zeit dass sich was dreht' als Nationalhymne-Kandidat)",
       "folgen": [
         58
+      ]
+    },
+    {
+      "name": "Markus Steiger (Gründer Royal Bunker, Rapper)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "name": "Boris Brand (RTL, ähnliche Ausreden-App-Idee)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "name": "Sadhguru (indischer Yogi und Autor, Inner Engineering)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "name": "Frankie (KI-generierter Musiker, entpuppt sich vollständig als KI)",
+      "folgen": [
+        60
       ]
     }
   ]

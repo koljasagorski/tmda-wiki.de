@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-08-04T11:31:58.563Z",
-  "count": 96,
+  "updatedAt": "2026-08-11T07:21:37.169Z",
+  "count": 98,
   "items": [
+    {
+      "folge": 60,
+      "name": "ausrede.io",
+      "beschreibung": "App mit 250+ Erste-Person-Perspektive-Unfallfotos als fertige WhatsApp-Ausreden; Einmalzahlung 20 Euro für 500 Fotos; Meta Ray-Ban Integration geplant"
+    },
+    {
+      "folge": 60,
+      "name": "Schlotterfit",
+      "beschreibung": "Gym-Konzept basierend auf der Angst-Spannungs-Theorie: gezieltes Zittern und Schütteln als Muskeltraining — inspiriert von Pferden, die nach Angstreaktionen Muskeln durch Zittern lösen"
+    },
     {
       "folge": 58,
       "name": "Glasur-Trommeldrucker",
