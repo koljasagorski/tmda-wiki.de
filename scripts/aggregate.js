@@ -18,7 +18,7 @@ const PUBLIC_TRANSCRIPTS = join(ROOT, 'public', 'transcripts');
 // Folgen-Daten aus web (Best-Effort): nur Folgen die wir wissen, der Rest bleibt null.
 // Datum: jeweils Dienstag wenn nicht anders bekannt.
 const KNOWN_DATES = {
-  60: '2026-08-18',
+  60: '2026-08-11', // auf YouTube verfügbar ab 10.08.; offizielle Podcast-Release wäre 18.08. — Wiki-Datum = Verfügbarkeitsdatum
   58: '2026-08-04',
   57: '2026-07-28',
   56: '2026-07-21',
