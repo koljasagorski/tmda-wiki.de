@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ausrede.io — Tatortfotos für jeden Notfall</title>
+  <meta name="description" content="250+ Erste-Person-Unfallfotos sofort per WhatsApp versendbar. Für alle, die keine Zeit für echte Ausreden haben. 20 € einmalig." />
+  <meta property="og:title" content="ausrede.io — Tatortfotos für jeden Notfall" />
+  <meta property="og:description" content="250+ glaubwürdige Unfallfotos. Einmalig 20 €. Kein Abo. Kein Reue." />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ausrede.io",
+    "description": "App mit über 250 Erste-Person-Unfall- und Schadenfotos als fertige WhatsApp-Ausreden.",
+    "applicationCategory": "Productivity",
+    "offers": { "@type": "Offer", "price": "20.00", "priceCurrency": "EUR" }
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap');
+
+    :root {
+      --bg: #1a1a1a;
+      --paper: #f5f0e8;
+      --yellow: #f5c518;
+      --red: #cc0000;
+      --dark-red: #8b0000;
+      --ink: #1a1a1a;
+      --faded: #6b6b5e;
+      --tape-yellow: rgba(245, 197, 24, 0.85);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--paper);
+      font-family: 'Courier Prime', 'Courier New', monospace;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── CRIME SCENE TAPE HEADER ─── */
+    .tape-strip {
+      background: repeating-linear-gradient(
+        -45deg,
+        var(--yellow) 0px,
+        var(--yellow) 20px,
+        #000 20px,
+        #000 40px
+      );
+      padding: 10px 0;
+      text-align: center;
+      font-family: 'Special Elite', serif;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #000;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    /* ─── HERO / CASE FILE ─── */
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .case-stamp {
+      display: inline-block;
+      border: 3px solid var(--red);
+      color: var(--red);
+      font-family: 'Special Elite', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      padding: 0.25rem 0.75rem;
+      margin-bottom: 1.5rem;
+      transform: rotate(-1.5deg);
+      opacity: 0.9;
+    }
+
+    .hero-title {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(3rem, 10vw, 6rem);
+      color: var(--yellow);
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--paper);
+      opacity: 0.7;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ─── EVIDENCE BOARD ─── */
+    .evidence-board {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 2px;
+      padding: 2rem 1.5rem;
+      margin: 0 auto 2rem;
+      max-width: 900px;
+      position: relative;
+    }
+
+    .evidence-board::before {
+      content: '[ BEWEISMATERIAL — FALLAKTE #2024-AUSREDE ]';
+      position: absolute;
+      top: -0.7rem;
+      left: 1.5rem;
+      background: #111;
+      padding: 0 0.5rem;
+      font-size: 0.65rem;
+      color: var(--yellow);
+      letter-spacing: 0.15em;
+    }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .polaroid {
+      background: var(--paper);
+      padding: 0.6rem 0.6rem 2rem;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.6);
+      position: relative;
+      cursor: default;
+      transition: transform 0.2s ease;
+    }
+
+    .polaroid:hover { transform: scale(1.04) rotate(0deg); }
+
+    .polaroid:nth-child(1) { transform: rotate(-3deg); }
+    .polaroid:nth-child(2) { transform: rotate(1.5deg); }
+    .polaroid:nth-child(3) { transform: rotate(-1deg); }
+    .polaroid:nth-child(4) { transform: rotate(2.5deg); }
+    .polaroid:nth-child(5) { transform: rotate(-2deg); }
+    .polaroid:nth-child(6) { transform: rotate(1deg); }
+
+    .polaroid-img {
+      width: 100%;
+      aspect-ratio: 1;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Grainy film effect */
+    .polaroid-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .polaroid-label {
+      position: absolute;
+      bottom: 0.4rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Special Elite', serif;
+      font-size: 0.6rem;
+      color: var(--ink);
+      opacity: 0.8;
+      padding: 0 0.3rem;
+    }
+
+    /* Red string connecting photos (visual detail) */
+    .string-connector {
+      display: none;
+    }
+
+    /* ─── STATS ROW ─── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #333;
+      border: 1px solid #333;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+    }
+
+    .stat-cell {
+      background: #0d0d0d;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Special Elite', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      color: var(--yellow);
+      line-height: 1;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--faded);
+      margin-top: 0.3rem;
+    }
+
+    /* ─── HOW IT WORKS ─── */
+    .section {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .section-title {
+      font-family: 'Special Elite', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #333;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .step {
+      border: 1px solid #2a2a2a;
+      padding: 1.2rem;
+      position: relative;
+    }
+
+    .step-num {
+      font-family: 'Special Elite', serif;
+      font-size: 2rem;
+      color: #333;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .step h3 {
+      font-size: 0.85rem;
+      color: var(--yellow);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.05em;
+    }
+
+    .step p {
+      font-size: 0.75rem;
+      color: var(--faded);
+      line-height: 1.5;
+    }
+
+    /* ─── CASE FILE / PITCH BLOCK ─── */
+    .case-file {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .typewriter-block {
+      background: var(--paper);
+      color: var(--ink);
+      padding: 2rem;
+      position: relative;
+      font-family: 'Special Elite', serif;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      border: 1px solid #aaa;
+    }
+
+    .typewriter-block::before {
+      content: 'FALLAKTE — AKTE NR. TMDA-60 / STARTUP-IDEEN-EINHEIT';
+      display: block;
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faded);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .typewriter-block p { margin-bottom: 0.8rem; }
+
+    .typewriter-block .redacted {
+      background: var(--ink);
+      color: var(--ink);
+      user-select: none;
+      cursor: not-allowed;
+    }
+
+    .typewriter-block .highlight {
+      background: var(--yellow);
+      color: var(--ink);
+      padding: 0 0.2em;
+    }
+
+    /* Tape strips on case file */
+    .tape {
+      display: block;
+      width: 60px;
+      height: 18px;
+      background: var(--tape-yellow);
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.9;
+    }
+    .tape-br {
+      display: block;
+      width: 60px;
+      height: 18px;
+      background: var(--tape-yellow);
+      position: absolute;
+      bottom: -9px;
+      right: 20%;
+      transform: rotate(3deg);
+      opacity: 0.9;
+    }
+
+    /* ─── PRICING ─── */
+    .pricing {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .price-card {
+      border: 2px solid var(--yellow);
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      background: #0d0d0d;
+    }
+
+    .price-card::before {
+      content: '★ SONDERANGEBOT ★';
+      position: absolute;
+      top: -0.7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0d0d0d;
+      padding: 0 0.5rem;
+      font-size: 0.6rem;
+      color: var(--yellow);
+      letter-spacing: 0.2em;
+      white-space: nowrap;
+    }
+
+    .price-amount {
+      font-family: 'Special Elite', serif;
+      font-size: 4rem;
+      color: var(--yellow);
+      line-height: 1;
+    }
+
+    .price-unit {
+      font-size: 0.75rem;
+      color: var(--faded);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+
+    .price-features {
+      list-style: none;
+      text-align: left;
+      max-width: 320px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.8rem;
+      color: var(--paper);
+    }
+
+    .price-features li { padding: 0.3rem 0; }
+    .price-features li::before { content: '✓  '; color: var(--yellow); }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--yellow);
+      color: #000;
+      font-family: 'Special Elite', serif;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.75rem 2.5rem;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+
+    .cta-btn:hover { background: #f0bc00; }
+
+    /* ─── FUTURE VISION ─── */
+    .vision {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .vision-card {
+      border: 1px solid #2a2a2a;
+      padding: 1.5rem;
+      background: #0a0a0a;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .vision-icon {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .vision-card h3 {
+      font-family: 'Special Elite', serif;
+      font-size: 1rem;
+      color: var(--yellow);
+      margin-bottom: 0.4rem;
+    }
+
+    .vision-card p {
+      font-size: 0.8rem;
+      color: var(--faded);
+      line-height: 1.6;
+    }
+
+    /* ─── INVESTOR RATING ─── */
+    .rating-block {
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .rating-inner {
+      border: 1px solid #2a2a2a;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .rating-score {
+      font-family: 'Special Elite', serif;
+      font-size: 3.5rem;
+      color: var(--yellow);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .rating-score span {
+      font-size: 1.2rem;
+      color: var(--faded);
+    }
+
+    .rating-text h3 {
+      font-size: 0.85rem;
+      color: var(--paper);
+      margin-bottom: 0.4rem;
+    }
+
+    .rating-text p {
+      font-size: 0.75rem;
+      color: var(--faded);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #0a0a0a;
+      border-top: 1px solid #222;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.65rem;
+      color: var(--faded);
+      letter-spacing: 0.05em;
+    }
+
+    footer a { color: var(--yellow); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .satire { margin-top: 0.75rem; color: #444; font-size: 0.6rem; }
+
+    /* ─── TICKER ─── */
+    .ticker {
+      background: #0d0d0d;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0.4rem 0;
+    }
+
+    .ticker-inner {
+      display: inline-block;
+      animation: ticker-scroll 40s linear infinite;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      text-transform: uppercase;
+    }
+
+    @keyframes ticker-scroll {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @media (max-width: 600px) {
+      .photos-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-row { grid-template-columns: 1fr; }
+      .vision-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- CRIME SCENE TAPE -->
+<div class="tape-strip">CRIME SCENE — DO NOT CROSS — CRIME SCENE — DO NOT CROSS — CRIME SCENE — DO NOT CROSS</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="case-stamp">BEWEISSTÜCK A — FALLAKTE TMDA-60</div>
+  <h1 class="hero-title">ausrede.io</h1>
+  <p class="hero-subtitle">Tatortfotos für jeden Notfall &nbsp;·&nbsp; sofort per WhatsApp</p>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    FAHRRADUNFALL &nbsp;·&nbsp; BLUTIGE HAND &nbsp;·&nbsp; AUTOREIFEN PLATT &nbsp;·&nbsp; VOGEL GEGEN FENSTER &nbsp;·&nbsp; WASSERSCHADEN &nbsp;·&nbsp; GEFALLENE LEITER &nbsp;·&nbsp; AUFGERISSENES KNIE &nbsp;·&nbsp; VERBRANNTER TOPF &nbsp;·&nbsp; ÜBERFLUTETER KELLER &nbsp;·&nbsp; BISS IN FINGER &nbsp;·&nbsp; FAHRRADUNFALL &nbsp;·&nbsp; BLUTIGE HAND &nbsp;·&nbsp; AUTOREIFEN PLATT &nbsp;·&nbsp;
+  </div>
+</div>
+
+<!-- EVIDENCE BOARD -->
+<div class="evidence-board" style="margin-top: 2rem;">
+  <div class="photos-grid">
+    <!-- Polaroid 1 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #2a1a1a, #4a2a2a);">🚲</div>
+      <span class="polaroid-label">Fahrrad-Knippe #17</span>
+    </div>
+    <!-- Polaroid 2 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #1a2a1a, #2a3a2a);">🩸</div>
+      <span class="polaroid-label">Handverletzung #83</span>
+    </div>
+    <!-- Polaroid 3 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #1a1a2a, #2a2a4a);">🐦</div>
+      <span class="polaroid-label">Fenster-Vogel #142</span>
+    </div>
+    <!-- Polaroid 4 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #2a2a1a, #3a3a2a);">🚗</div>
+      <span class="polaroid-label">Reifenplatzer #56</span>
+    </div>
+    <!-- Polaroid 5 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #1a2a2a, #2a3a3a);">💧</div>
+      <span class="polaroid-label">Wasserschaden #211</span>
+    </div>
+    <!-- Polaroid 6 -->
+    <div class="polaroid">
+      <div class="polaroid-img" style="background: linear-gradient(135deg, #2a1a2a, #3a2a3a);">🔥</div>
+      <span class="polaroid-label">Herd-Incident #38</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-cell">
+    <span class="stat-number">250+</span>
+    <span class="stat-label">Beweisfotos</span>
+  </div>
+  <div class="stat-cell">
+    <span class="stat-number">20€</span>
+    <span class="stat-label">Einmalig</span>
+  </div>
+  <div class="stat-cell">
+    <span class="stat-number">∞</span>
+    <span class="stat-label">Ausreden</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section" style="margin-top: 2.5rem;">
+  <div class="section-title">Tatort-Protokoll — So funktioniert's</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01.</div>
+      <h3>App öffnen</h3>
+      <p>250+ kuratierte Erste-Person-Fotos. Sortiert nach Notfall-Kategorie.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02.</div>
+      <h3>Tatbild wählen</h3>
+      <p>Fahrradunfall, Wasserschaden, Stromausfall — passend zur Situation.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03.</div>
+      <h3>Direkt senden</h3>
+      <p>WhatsApp, Signal, iMessage. Ein Tap. Glaubhaft. Unanfechtbar.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04.</div>
+      <h3>Frei sein</h3>
+      <p>Das Meeting. Die Party. Der Termin. Heute: nicht dein Problem.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CASE FILE / PITCH -->
+<div class="case-file">
+  <div class="section-title">Fallbeschreibung — Offizielles Statement</div>
+  <div class="typewriter-block">
+    <span class="tape"></span>
+
+    <p>Betreff: <strong>ausrede.io</strong> — Produktkonzept, Pitch-Dokument, Fallakte Nummer TMDA-60</p>
+
+    <p>Der Verdächtige <span class="highlight">FYNN K.</span> präsentierte das Konzept im Rahmen eines OMR-Rollenspiels. Kernthese: Es gibt weltweit Millionen von Menschen, die regelmäßig professionell klingende Ausreden benötigen — und derzeit auf <span class="redacted">████████████████</span> angewiesen sind.</p>
+
+    <p>Lösung: Eine App mit über <strong>250 Erste-Person-Perspektive-Fotos</strong>. Fahrradunfall. Blutige Hand. Gefallener Vogel. Aufgerissener Autoreifen. Alles <strong>sofort per WhatsApp versendbar</strong>.</p>
+
+    <p>Preis: <span class="highlight">20 Euro</span> Einmalzahlung für 500 Fotos. Kein Abo. Kein monatliches Gewissen.</p>
+
+    <p>Anmerkung des Ermittlers: Boris Brand von RTL hatte ein ähnliches Konzept entwickelt — Ausreden-Hotline mit professionellen Schauspielern. ausrede.de war leider bereits anderweitig vergeben. Daher: <strong>ausrede.io</strong>.</p>
+
+    <span class="tape-br"></span>
+  </div>
+</div>
+
+<!-- FUTURE VISION -->
+<div class="vision" style="margin-top: 0;">
+  <div class="section-title">Zukünftige Beweislage — Roadmap</div>
+  <div class="vision-card">
+    <div class="vision-icon">🕶️</div>
+    <div>
+      <h3>Meta Ray-Ban Integration — Phase 2</h3>
+      <p>Mit der Ray-Ban Smart Glasses Integration fotografiert ausrede.io automatisch aus deiner Perspektive — live, in Echtzeit, am Tatort. Kein Griff zum Handy nötig. Du stolperst, die Brille fotografiert. Der Beweis entsteht genau dann, wenn du ihn brauchst.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="pricing">
+  <div class="section-title">Beweismittel sichern — Preisübersicht</div>
+  <div class="price-card">
+    <div class="price-amount">20 €</div>
+    <div class="price-unit">Einmalig. Kein Abo. Kein Verfallsdatum.</div>
+    <ul class="price-features">
+      <li>500 hochwertige Erste-Person-Fotos</li>
+      <li>250+ fertige Ausred-Szenarien</li>
+      <li>Direkt-Share via WhatsApp / iMessage</li>
+      <li>Neue Fotos per Update</li>
+      <li>Keine Metadaten (Tatort unbekannt)</li>
+    </ul>
+    <a class="cta-btn" href="#">Jetzt Tatortfotos sichern</a>
+  </div>
+</div>
+
+<!-- INVESTOR RATING -->
+<div class="rating-block">
+  <div class="section-title">Gutachten des unabhängigen Investors</div>
+  <div class="rating-inner">
+    <div class="rating-score">11 <span>/ 24</span></div>
+    <div class="rating-text">
+      <h3>Investorenentscheid: INVESTOR N. INGWERSEN</h3>
+      <p>„Es ist eine 11." — Zunächst verließ der Gutachter den Raum: „Ich bin raus." Kehrte jedoch nach kurzer Bedenkzeit zurück mit den Worten: „Ja, ich bin dabei. My life now." Einfaches Konzept, sofort verständlich, klare Monetarisierung, skalierbar mit Meta Ray-Ban Phase 2.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM TAPE -->
+<div class="tape-strip" style="margin-bottom: 0;">CRIME SCENE — DO NOT CROSS — CRIME SCENE — DO NOT CROSS — CRIME SCENE — DO NOT CROSS</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <a href="/">← TMDA-Wiki</a>
+    &nbsp;·&nbsp;
+    Folge 60 · ausrede.io · 11/24 Punkte
+    &nbsp;·&nbsp;
+    Podcast: <a href="https://podcasts.apple.com/de/podcast/teenager-mit-deutschem-akzent/id1612265791" target="_blank" rel="noopener">Teenager mit deutschem Akzent</a>
+  </p>
+  <p class="satire">
+    ⚠ Satire. Diese Seite ist eine Fan-Hommage an eine Startup-Idee aus dem TMDA-Podcast (Fynn Kliemann &amp; Nisse Ingwersen). ausrede.io ist kein echtes Produkt — die Fotos existieren nicht, der Kauf-Button führt nirgendwo hin. Alle Tatortfotos sind Emojis. Kein Beweiswert vor Gericht.
+  </p>
+</footer>
+
+</body>
+</html>

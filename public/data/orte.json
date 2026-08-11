@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T11:31:58.563Z",
-  "count": 352,
+  "updatedAt": "2026-08-11T07:12:02.105Z",
+  "count": 360,
   "items": [
     {
       "ort": "Berlin",
@@ -125,6 +125,13 @@
       "folgen": [
         1,
         9
+      ]
+    },
+    {
+      "ort": "Thailand",
+      "folgen": [
+        6,
+        60
       ]
     },
     {
@@ -340,12 +347,6 @@
     },
     {
       "ort": "Steinway Showroom",
-      "folgen": [
-        6
-      ]
-    },
-    {
-      "ort": "Thailand",
       "folgen": [
         6
       ]
@@ -2196,6 +2197,54 @@
       "ort": "Hawaii (Nisse's Plan nach dem Thomas-Gottschalk-Sex: therapeutische Klinik auf Kosten von Stefan Raabs Geld)",
       "folgen": [
         58
+      ]
+    },
+    {
+      "ort": "Polen",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Padel-Parkplatz (nicht näher spezifiziert)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Nazareth (Israel)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Dubai / Saudi-Arabien (im Kontext Bushido/Nahost)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Fort Pitt (USA, biologische Kriegsführung 18. Jh.)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Kaffa (Krim, 14. Jh.)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "Japan (Einheit 731)",
+      "folgen": [
+        60
+      ]
+    },
+    {
+      "ort": "OMR (Online Marketing Rockstars, Hamburg)",
+      "folgen": [
+        60
       ]
     }
   ]

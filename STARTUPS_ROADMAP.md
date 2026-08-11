@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 58/58 LIVE ✅
+## Status — 59/59 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-58 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-58 + 60 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent). Folge 59 hat kein Transcript — kein Eintrag.
 
 ### 18/24
 
@@ -29,6 +29,7 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 ### 11/24
 
+- [x] **ausrede.io** · Folge 60 · 11/24 · forensic evidence / crime scene coldcase (Special Elite + Courier Prime, Police-Tape-Yellow/Dunkelrot/Schwarz, Polaroid-Beweisfotos, Tatortband-Header)
 - [x] **ZEITSYSTEM 100 (Die 100-Minuten-Stunde)** · Folge 57 · 11/24 · Splitflap Departure Board / Dezimalzeit (IBM Plex Mono + Rajdhani, Amber/Charcoal, animierte Dezimaluhr)
 
 ### 22/24 — Top-Tier
