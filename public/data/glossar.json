@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T07:21:37.169Z",
-  "count": 266,
+  "updatedAt": "2026-08-11T07:46:17.041Z",
+  "count": 272,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -113,6 +113,11 @@
       "folge": 42
     },
     {
+      "begriff": "Blue Zones",
+      "bedeutung": "Regionen der Welt mit überdurchschnittlich vielen Menschen über 100 Jahren (z.B. Sardinien, Okinawa, Loma Linda); Forschungsobjekt für Langlebigkeitsfaktoren",
+      "folge": 59
+    },
+    {
       "begriff": "Bonnie und Grock",
       "bedeutung": "Fynns Name für das KI-Mensch-Duo aus dem GTA-Clip: Ein Spieler überfällt virtuelle Supermärkte und nutzt Grock (KI von xAI) als Copilot, der Fluchtrouten erklärt und Tipps gibt — wie Bonnie und Clyde, nur mit KI statt Partnerin.",
       "folge": 57
@@ -203,6 +208,11 @@
       "folge": 35
     },
     {
+      "begriff": "Corty Soul",
+      "bedeutung": "Startup-Idee von Fynn: App mit subkutanem Kortisol-Sensor zur Identifikation von Stressauslösern im Alltag; Name aus 'Kortisol' + 'Soul'",
+      "folge": 59
+    },
+    {
       "begriff": "Cross",
       "bedeutung": "Im Graffiti: Uebermalen einer fremden Marke - bei Heberbahnverbot und Schlaegen geahndet",
       "folge": 37
@@ -246,6 +256,11 @@
       "begriff": "Der verrueckte Hollaender",
       "bedeutung": "Pilotenlehrer, der Nisse bei einer Flugstunde faelschlich fuer einen Piloten hielt und ihn als kompletten Anfaenger selbst starten, fliegen und mehrfach durchstarten liess.",
       "folge": 55
+    },
+    {
+      "begriff": "Deutschländer",
+      "bedeutung": "Nicht-existierendes Wort, das nach der Logik 'England → Engländer' für Deutsche gelten müsste; tatsächlich heißen Deutsche einfach 'Deutsche' — das Thema endet ungelöst",
+      "folge": 59
     },
     {
       "begriff": "Dienstagnisse",
@@ -386,6 +401,11 @@
       "begriff": "Gabba",
       "bedeutung": "Schneller Hardcore-Techno-Stil (urspruenglich aus Rotterdam). Nisses Freund in dessen Traum hoerte immer Gabba — daher der Name der Kiste.",
       "folge": 56
+    },
+    {
+      "begriff": "Gader (Gay-Radar)",
+      "bedeutung": "Wortspiel aus 'Gay' und 'Radar': in der queeren Community der angebliche innere Sinn, der erkennt, ob jemand schwul ist, auch wenn er es nicht offen zeigt",
+      "folge": 59
     },
     {
       "begriff": "Gemischtes Hack",
@@ -718,6 +738,11 @@
       "folge": 32
     },
     {
+      "begriff": "Longevity",
+      "bedeutung": "Englischer Begriff für Langlebigkeitsforschung; beschreibt die Bestrebungen, das menschliche Leben durch Biohacking, Ernährung, Supplements und Technologie zu verlängern",
+      "folge": 59
+    },
+    {
       "begriff": "Looki / Ly",
       "bedeutung": "Reales KI-Wearable (looki.ai), das man sich an die Brust klemmt - filmt den ganzen Tag, trackt Habits und Gespraeche. Im Gespraech ausgebaut zum 'romantischen Roboter', der die Beziehung steuert.",
       "folge": 52
@@ -834,8 +859,8 @@
     },
     {
       "begriff": "OWB",
-      "bedeutung": "Ohne wissenschaftlichen Beleg — Disclaimer, den Fynn und Nisse bei unverifizierten Behauptungen verwenden",
-      "folge": 60
+      "bedeutung": "Ohne wissenschaftlichen Beleg — der Standard-Disclaimer von Fynn und Nisse für unverifizierten Content",
+      "folge": 59
     },
     {
       "begriff": "Pace",
@@ -891,6 +916,11 @@
       "begriff": "Pisse auf dem Schrank",
       "bedeutung": "Die Silvester-Tradition von Steven Joerns: jaehrlich in ein Glas pinkeln, es auf den Schrank stellen und verschimmeln lassen ('alle Versuche') - Titelgeber der Folge.",
       "folge": 51
+    },
+    {
+      "begriff": "Plus Quam Perfekt",
+      "bedeutung": "Grammatischer Begriff für das Vorvergangenheitstempus im Deutschen; von Fynn und Nisse als absurder Familienname für eine fiktive Blue-Zone-Familie genutzt (Kinder: Plus, Quam, Perfekt)",
+      "folge": 59
     },
     {
       "begriff": "POC",

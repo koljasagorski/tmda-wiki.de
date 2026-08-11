@@ -1,0 +1,121 @@
+{
+  "folge": 59,
+  "titel": "Der große ADHS-Test",
+  "laufzeit": "1:01:05",
+  "datum": "2026-08-11",
+  "themen": [
+    "Freundschaft braucht 200 Stunden — soziale Gesundheit im Alter (Nils Berinz)",
+    "Einsamkeit so schädlich wie 50 Zigaretten täglich",
+    "Brian Johnson und Longevity-Obsession",
+    "Rick Rubin und Palantir-Kritik",
+    "Stadyy macht Robotergeräusche für Einparken statt Songs",
+    "Baby als Nosferatu: Fynn fliegt sein Baby durch die Wohnung und spricht Vampir-Dialog",
+    "Hausboot Hamburg: Ryan Sheckler/Red Bull Skateboard nach Fyns Wegzug",
+    "TMDA als ADHS-Radar: fünf Diagnose-Fragen an Hörer",
+    "Kurzversuch Englisch für internationale Audience",
+    "Corty Soul: Kortisol-Tracking Startup-Idee",
+    "Nolan/Oppenheimer-Verschwörung: Nolans Bruder angeblich Auftragsmörder mit Codenamen Oppenheimer",
+    "Walt Disney eingefroren — daher der Film 'Frozen'",
+    "Caro Dauer investiert in Hamburger Getränkestartup",
+    "Der schweigende 'Tja'-Fahrradfahrer in Kreuzberg",
+    "Deutschländer? Sprach-Anomalie bei Nationenbezeichnungen",
+    "Plus Quam Perfekt als Familienname / Babyname-Witz"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse starten mit der Frage, wie viele Stunden echte Freundschaft braucht (200+), diskutieren Einsamkeit als Gesundheitsrisiko und zerlegen Brian Johnsons Longevity-Obsession. Stadyy produziert jetzt Robotergeräusche statt Songs. Fynn erzählt vom Baby-als-Nosferatu-Stunt. Kernstück der Folge: fünf ADHS-Diagnosefragen ans Publikum — TMDA als 'neurodivergenter Radar'. Die Startup-Idee ist Corty Soul: eine App, die Kortisol per Hautsensor misst und mit Tagesaktivitäten korreliert, um chronischen Mikrostress auszuschalten. Nisse: 21/24, nach dem Namen 'Corty Soul' sofort 22/24. Nebenbei: die Nolan/Oppenheimer-Bruder-Verschwörung, Walt Disney auf Eis, Caro Daurer investiert in Startups. Abschluss: der mysteriöse 'Tja'-Radfahrer in Kreuzberg und die Frage, warum wir Engländer nicht Englandläner nennen.",
+  "startup_idee": {
+    "idee": "Corty Soul — Kortisol-Tracking-App für stressfreies Altern",
+    "beschreibung": "App mit Hautsensor (ähnlich einem Blutzuckermessgerät) zur kontinuierlichen Kortisol-Messung alle 10 Sekunden. Kombiniert mit manuellem oder KI-basiertem Aktivitäts-Tracking (Meta Ray-Ban Glasses, Apple Watch, Oura Ring). Ziel: herausfinden, welche Alltagsmomente tatsächlich Kortisol ausschütten — unabhängig davon, ob man es subjektiv als Stress erlebt. Dann diese Momente eliminieren. Argument: nicht Olivenöl oder Sport entscheiden über Langlebigkeit, sondern chronischer Kortisol-Ausstoß. Der Name 'Corty Soul' (Kurzform: CTY Soul) wurde von Fynn vorgeschlagen und sofort mit Bonus-Punkt belohnt.",
+    "begruendung": "Nisse: zuerst 21/24 ('Es ist eine 21, und wenn du mir jetzt noch einen geilen Namen gibst, ist es eine 22'). Nach 'Corty Soul': 22/24. Sehr gute Idee laut Nisse, 'instant Milliardär' wenn man es umsetzt. Einziger Vorbehalt: braucht noch Technologie-Synchronisation aus mehreren Geräten. 'Vielleicht sollten wir das hier nicht ausstrahlen.'",
+    "punkte": 22,
+    "max_punkte": 24
+  },
+  "kalles_corner": null,
+  "geruecht_der_woche": null,
+  "fun_facts": [
+    "Ca. 200 Stunden gemeinsamer Zeit braucht es mindestens, um eine echte Freundschaft zu bilden.",
+    "Einsamkeit ist laut Studien für die Gesundheit so schädlich wie täglich 50 Zigaretten zu rauchen.",
+    "Kortisol (das Stresshormon) gilt als Haupttreiber für Gefäßschäden, Herzerkrankungen und beschleunigtes Altern — unabhängig von Ernährung oder Sport.",
+    "Walt Disney soll sich nach seinem Tod kryogenisch einfrieren lassen haben. Laut Verschwörungstheorie hatte das Unternehmen deshalb ein Interesse daran, einen Film namens 'Frozen' zu produzieren, um von der Assoziation abzulenken.",
+    "Christopher Nolans Bruder war angeblich ein Auftragsmörder mit dem Codenamen 'Oppenheimer'. Nolan soll deshalb den Oppenheimer-Film gedreht haben, damit sein eigener Name in Suchergebnissen über den seines Bruders dominiert.",
+    "Deutschsprachige Nationenbezeichnungen folgen keiner einheitlichen Regel: Engländer (nicht Englandländer), Finnen (nicht Finnländer), Holländer (nicht Hollandländer), aber Russländer existiert parallel zu Russen.",
+    "In den Blue Zones der Welt (Regionen mit überdurchschnittlicher Lebenserwartung) ist sozialer Zusammenhalt wichtiger als Ernährung — starke Freundschaften senken den chronischen Kortisolspiegel."
+  ],
+  "erfindungen": [
+    {
+      "name": "Corty Soul",
+      "beschreibung": "Kortisol-Tracking-App mit subkutanem Sensor (Blutzuckermessgerät-Prinzip) + KI-basiertem Aktivitäts-Logging: misst alle 10 Sekunden den Kortisolspiegel und korreliert ihn mit dem Tagesablauf, um chronischen Mikrostress-Auslöser zu identifizieren und zu eliminieren"
+    },
+    {
+      "name": "Lebensmittel-Mikroskop-App",
+      "beschreibung": "Handykamera mit Makrolinse als Lebensmittelqualitätsprüfer: Handy auf Fleisch, Joghurt oder Medikament halten, Licht durchscheinen lassen und per App Qualität, Schimmel, Nährwert-Plausibilität anzeigen — kein Score, spontaner Einfall von Fynn"
+    }
+  ],
+  "zitate": [
+    {
+      "text": "Tja.",
+      "kontext": "Das einzige Wort eines stummen Rennradfahrers in Kreuzberg, der Fynn tief in die Augen schaute, 'Tja' sagte und dann verschwand. Die Bedeutung bleibt ungeklärt."
+    },
+    {
+      "text": "Wenn ihr das jetzt bis zu dieser Sekunde gehört habt, dann seid ihr höchstwahrscheinlich im Spektrum.",
+      "kontext": "Fynns Abschluss-Statement — TMDA als neurodivergenter Radar für ADHS, Hochbegabung und Autismus."
+    },
+    {
+      "text": "Vielleicht sollten wir das hier nicht ausstrahlen.",
+      "kontext": "Nisse nach der Corty-Soul-Idee — das Konzept ist so gut, dass er es eigentlich geheim halten will."
+    },
+    {
+      "text": "Instant Milliardär.",
+      "kontext": "Nisse über das Potenzial von Corty Soul, falls jemand es tatsächlich umsetzt."
+    },
+    {
+      "text": "Wir sind das ADHS-Radar.",
+      "kontext": "Fynn über den Charakter des TMDA-Podcasts: Menschen mit ADHS, Hochbegabung oder Autismus können beim Hören ihrem Gehirn abschalten — der Podcast ist 'neurodivergent genug'."
+    }
+  ],
+  "orte": [
+    "Kreuzberg (Berlin), Bürgersteig mit mysteriösem Radfahrer",
+    "Sissy Force (Berliner Technoclub)",
+    "Hamburg (Fyns ehemaliges Hausboot, Ryan Sheckler/Red Bull Skateboard)",
+    "Blue Zones (Sardinien, Okinawa etc. — Longevity-Konzept)"
+  ],
+  "gaeste_erwaehnte": [
+    "Brian Johnson (US-Unternehmer, Longevity-Biohacker, Blueprint-Protokoll)",
+    "Rick Rubin (Musikproduzent/Reducer, macht Werbung für Wettplattform)",
+    "Nils Berinz (Ex-CEO Sunday Natural, schreibt Buch über soziale Gesundheit, hat Brian Johnson persönlich getroffen)",
+    "Stadyy (Musiker, Drummer bei Coof, produzierte XO XO von Kasper — macht jetzt Robotereinpark-Geräusche)",
+    "Ryan Sheckler (US-Skateboarder, Red Bull Pro, trat auf Fyns ehemaligem Hausboot auf)",
+    "Caro Dauer (Influencerin, hat erstes Investment in eine Hamburger Getränkemarke gemacht)",
+    "Walt Disney (posthum — Kryonik-Verschwörungstheorie)",
+    "Christopher Nolan (Regisseur — Bruder-Auftragsmörder-Verschwörung)"
+  ],
+  "glossar": [
+    {
+      "begriff": "Gader (Gay-Radar)",
+      "bedeutung": "Wortspiel aus 'Gay' und 'Radar': in der queeren Community der angebliche innere Sinn, der erkennt, ob jemand schwul ist, auch wenn er es nicht offen zeigt"
+    },
+    {
+      "begriff": "OWB",
+      "bedeutung": "Ohne wissenschaftlichen Beleg — der Standard-Disclaimer von Fynn und Nisse für unverifizierten Content"
+    },
+    {
+      "begriff": "Longevity",
+      "bedeutung": "Englischer Begriff für Langlebigkeitsforschung; beschreibt die Bestrebungen, das menschliche Leben durch Biohacking, Ernährung, Supplements und Technologie zu verlängern"
+    },
+    {
+      "begriff": "Blue Zones",
+      "bedeutung": "Regionen der Welt mit überdurchschnittlich vielen Menschen über 100 Jahren (z.B. Sardinien, Okinawa, Loma Linda); Forschungsobjekt für Langlebigkeitsfaktoren"
+    },
+    {
+      "begriff": "Corty Soul",
+      "bedeutung": "Startup-Idee von Fynn: App mit subkutanem Kortisol-Sensor zur Identifikation von Stressauslösern im Alltag; Name aus 'Kortisol' + 'Soul'"
+    },
+    {
+      "begriff": "Plus Quam Perfekt",
+      "bedeutung": "Grammatischer Begriff für das Vorvergangenheitstempus im Deutschen; von Fynn und Nisse als absurder Familienname für eine fiktive Blue-Zone-Familie genutzt (Kinder: Plus, Quam, Perfekt)"
+    },
+    {
+      "begriff": "Deutschländer",
+      "bedeutung": "Nicht-existierendes Wort, das nach der Logik 'England → Engländer' für Deutsche gelten müsste; tatsächlich heißen Deutsche einfach 'Deutsche' — das Thema endet ungelöst"
+    }
+  ]
+}
