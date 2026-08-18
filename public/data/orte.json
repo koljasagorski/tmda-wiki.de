@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T07:46:17.041Z",
-  "count": 364,
+  "updatedAt": "2026-08-18T08:20:44.039Z",
+  "count": 368,
   "items": [
     {
       "ort": "Berlin",
@@ -2269,6 +2269,30 @@
       "ort": "OMR (Online Marketing Rockstars, Hamburg)",
       "folgen": [
         60
+      ]
+    },
+    {
+      "ort": "Ostsee (Andrej Wirsings Schwimmrekord)",
+      "folgen": [
+        61
+      ]
+    },
+    {
+      "ort": "Berlin (im Park, Hundekot-Beobachtung; BSR als Reinigungsfirma)",
+      "folgen": [
+        61
+      ]
+    },
+    {
+      "ort": "Hamburg (OMR, Carsten-Referenz aus letzter Woche)",
+      "folgen": [
+        61
+      ]
+    },
+    {
+      "ort": "USA (FIFA-Weltmeisterschaft-Finale, Rasenverkauf)",
+      "folgen": [
+        61
       ]
     }
   ]

@@ -1,6 +1,7 @@
 {
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
+    {"folge":61,"ideeMatch":"Dog-Kot-Catcher","slug":"dkc","domain":null,"tagline":"Automatischer Kotbeutel-Mechanismus am Hundeschwanz — Bewegungssensor, Tannenbaum-Einpackprinzip, App. Kein Bücken mehr.","punkte":7},
     {"folge":60,"ideeMatch":"ausrede","slug":"ausrede-io","domain":null,"tagline":"250+ Erste-Person-Unfallfotos sofort per WhatsApp — weil echte Ausreden zu aufwändig sind.","punkte":11},
     {"folge":59,"ideeMatch":"Corty Soul","slug":"corty-soul","domain":null,"tagline":"Kortisol-Tracking per Hautsensor — identifizier deine Stresskiller bevor sie dich töten. Instant Milliardär.","punkte":22},
     {"folge":58,"ideeMatch":"Glasur-Trommeldrucker","slug":"glasur-trommeldrucker","domain":null,"tagline":"Jedes Motiv auf Keramikfliesen gedruckt und eingebrannt — Ostfriesland-Qualität per Inkjet.","punkte":18},

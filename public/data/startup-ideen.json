@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-11T07:46:17.041Z",
-  "count": 57,
+  "updatedAt": "2026-08-18T08:20:44.039Z",
+  "count": 58,
   "items": [
+    {
+      "folge": 61,
+      "datum": null,
+      "idee": "DKC — Dog-Kot-Catcher: Automatischer Kotbeutel-Mechanismus am Hundeschwanz",
+      "beschreibung": "Ein verstellbarer Ring wird über den Schwanz des Hundes geschoben und direkt am Ende positioniert, wo er mit einem Bewegungssensor ausgestattet ist. Sobald die Wurst kommt, öffnet ein Tannenbaum-Einpackmechanismus (inspiriert vom Weihnachtsbaum-Netz) automatisch eine kleine Tüte, verpackt den Kot und knotet sie zu. Die Tüte fällt auf den Boden — kann von der Stadtreinigung (z.B. BSR) eingesammelt…",
+      "punkte": 7,
+      "max_punkte": 24,
+      "begruendung": "Nisse gibt 7 von 24 — 'sieben von 24 Startup Punkten'. Im Verlaffelland (der magischen Welt, wo alles funktioniert) wären es 13. In der Realität scheitert die Idee vor allem an der praktischen Umsetzung: Hunde würden das Gerät hinten zerka…"
+    },
     {
       "folge": 60,
       "datum": "2026-08-11",
