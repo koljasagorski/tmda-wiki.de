@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T07:46:17.041Z",
-  "count": 272,
+  "updatedAt": "2026-08-18T08:20:44.039Z",
+  "count": 277,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -118,9 +118,19 @@
       "folge": 59
     },
     {
+      "begriff": "BMW",
+      "bedeutung": "Neu in Folge 61: Beleg Mit Wissenschaft — eine Aussage, die durch Fakten und Belege abgesichert ist. Der Podcast selbst beansprucht, BMWs zu liefern.",
+      "folge": 61
+    },
+    {
       "begriff": "Bonnie und Grock",
       "bedeutung": "Fynns Name für das KI-Mensch-Duo aus dem GTA-Clip: Ein Spieler überfällt virtuelle Supermärkte und nutzt Grock (KI von xAI) als Copilot, der Fluchtrouten erklärt und Tipps gibt — wie Bonnie und Clyde, nur mit KI statt Partnerin.",
       "folge": 57
+    },
+    {
+      "begriff": "BOW",
+      "bedeutung": "Neu in Folge 61: Beleg Ohne Wissenschaft — eine Aussage mit einer Zahl oder Angabe, die kein echter wissenschaftlicher Nachweis ist (z.B. Laborbonszahl bei Lab Coffee)",
+      "folge": 61
     },
     {
       "begriff": "Bowel Movements",
@@ -181,6 +191,11 @@
       "begriff": "CG / Hilcher",
       "bedeutung": "Selbst gezogener Hilcher als Markierung wenn etwas problematisch ist",
       "folge": 38
+    },
+    {
+      "begriff": "CG Hilscher",
+      "bedeutung": "Rückzug/Entschuldigung im TMDA-Stil: Fynn nimmt eine frühere Aussage über Andrew Tate teilweise zurück (er wünsche niemandem explizit den Tod), hält aber an seiner Kernkritik fest. Referenz auf CG Hielscher aus Folge 36.",
+      "folge": 61
     },
     {
       "begriff": "ChatGPT Atlas",
@@ -276,6 +291,11 @@
       "begriff": "Discoschnee",
       "bedeutung": "Euphemismus fuer Kokain in Nisses OMR-Rollenspiel-Anekdote ('komme gerade direkt aus Wilhelmshaven und habe so ein bisschen Discoschnee dabei').",
       "folge": 52
+    },
+    {
+      "begriff": "DKC",
+      "bedeutung": "Dog-Kot-Catcher — die Startup-Idee von Fynn: automatischer Kotbeutel-Mechanismus am Hundeschwanz. D = Dog, K = Kot (wird mit C geschrieben), C = Catcher. Auch Assonanz zu KFC gewünscht.",
+      "folge": 61
     },
     {
       "begriff": "Drive-To-Survive",
@@ -1296,6 +1316,11 @@
       "begriff": "Verdichtung",
       "bedeutung": "Bauplanungsbegriff: Wie viel Boden auf einem Gebiet verdichtet/versiegelt werden darf",
       "folge": 3
+    },
+    {
+      "begriff": "Verlaffelland",
+      "bedeutung": "Neues Bewertungskonzept aus Folge 61: das magische Schlaraffenland, in dem Startup-Ideen problemlos funktionieren würden. Im Verlaffelland bekommt eine Idee ihren Wunsch-Score — der DKC z.B. 13 statt 7/24.",
+      "folge": 61
     },
     {
       "begriff": "Voke Bubble",

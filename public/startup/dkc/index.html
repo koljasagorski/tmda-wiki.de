@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DKC — Dog-Kot-Catcher | Kein Bücken mehr</title>
+  <meta name="description" content="Der smarte Kotbeutel-Automatismus für Hunde: Bewegungssensor, Tannenbaum-Einpackmechanismus und Statistik-App. 36 € einmalig. Kein Bücken. Kein Drama. Made in Germany.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/dkc">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="DKC — Dog-Kot-Catcher | Deutsche Ingenieurskunst gegen das Bücken">
+  <meta property="og:description" content="Automatischer Kotbeutel-Mechanismus am Hundeschwanz. Bewegungssensor erkennt den Vorgang, Tannenbaum-Netz verpackt, Tüte fällt. 36 € einmalig. Kein Bücken mehr.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/dkc">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "DKC — Dog-Kot-Catcher",
+    "description": "Automatischer Kotbeutel-Mechanismus für Hunde. Bewegungssensor + Tannenbaum-Einpackprinzip. App inklusive.",
+    "brand": { "@type": "Brand", "name": "DKC GmbH & Co. KG" },
+    "offers": {
+      "@type": "Offer",
+      "price": "36.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/PreOrder"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F0F0EE;
+      --bg-dark: #1C1C1C;
+      --bg-panel: #E4E4E1;
+      --red: #CC1011;
+      --red-dark: #A50D0E;
+      --anthracite: #2E2E2E;
+      --mid-gray: #5A5A5A;
+      --light-gray: #9A9A9A;
+      --rule: #CACAC7;
+      --white: #FAFAF8;
+      --text: #1C1C1C;
+    }
+
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* ── HEADER / HERO ── */
+    .hero {
+      background: var(--bg-dark);
+      color: var(--white);
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 0;
+      min-height: 520px;
+    }
+
+    .hero-text {
+      padding: 60px 40px 60px 40px;
+    }
+
+    .hero-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .hero-title .sub {
+      display: block;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #AAAAAA;
+      margin-top: 4px;
+    }
+
+    .hero-tagline {
+      margin-top: 28px;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #CCCCCC;
+      max-width: 380px;
+      line-height: 1.5;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 32px;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+    }
+
+    /* Hero SVG side */
+    .hero-diagram {
+      background: #141414;
+      height: 100%;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      border-left: 3px solid var(--red);
+    }
+
+    /* ── SECTION BASICS ── */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 40px;
+    }
+
+    .section-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--light-gray);
+      border-left: 3px solid var(--red);
+      padding-left: 10px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      line-height: 1.05;
+      margin-bottom: 32px;
+    }
+
+    hr.rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 0;
+    }
+
+    /* ── PROBLEM SECTION ── */
+    .problem-section {
+      background: var(--white);
+    }
+
+    .problem-section section {
+      padding: 70px 40px;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+      margin-top: 20px;
+    }
+
+    .problem-card {
+      background: var(--bg-panel);
+      padding: 28px 24px;
+    }
+
+    .problem-card .num {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--red);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .problem-card h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .problem-card p {
+      font-size: 0.93rem;
+      color: var(--mid-gray);
+      line-height: 1.5;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 20px;
+    }
+
+    .step {
+      background: var(--bg-dark);
+      color: var(--white);
+      padding: 28px 22px;
+      position: relative;
+    }
+
+    .step-num {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--red);
+      letter-spacing: 0.2em;
+      margin-bottom: 14px;
+    }
+
+    .step h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 0.9rem;
+      color: #AAAAAA;
+      line-height: 1.5;
+    }
+
+    .step-connector {
+      position: absolute;
+      top: 28px;
+      right: -1px;
+      width: 2px;
+      height: 24px;
+      background: var(--red);
+    }
+
+    /* ── SPECS ── */
+    .specs-section {
+      background: var(--bg-panel);
+    }
+
+    .specs-section section {
+      padding: 70px 40px;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      font-family: 'Source Sans 3', sans-serif;
+    }
+
+    .specs-table tr {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .specs-table td {
+      padding: 14px 0;
+      font-size: 1rem;
+    }
+
+    .specs-table td:first-child {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+      width: 42%;
+    }
+
+    .specs-table td:last-child {
+      font-weight: 600;
+      color: var(--anthracite);
+    }
+
+    /* ── APP / FEATURES SECTION ── */
+    .features-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 24px;
+    }
+
+    .feature-item {
+      border-left: 3px solid var(--red);
+      padding-left: 18px;
+    }
+
+    .feature-item h4 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .feature-item p {
+      font-size: 0.95rem;
+      color: var(--mid-gray);
+      line-height: 1.5;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--red);
+    }
+
+    .cta-section section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .cta-section .section-label {
+      color: rgba(255,255,255,0.7);
+      border-color: rgba(255,255,255,0.5);
+    }
+
+    .cta-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .cta-price {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 1.5rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 32px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--bg-dark);
+      color: #fff;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 16px 42px;
+      text-decoration: none;
+      border: 2px solid transparent;
+      transition: background 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover {
+      background: #000;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--anthracite);
+      color: #888;
+      font-size: 0.82rem;
+      text-align: center;
+      padding: 22px 20px;
+      line-height: 1.6;
+    }
+
+    footer a { color: #AAA; text-decoration: underline; }
+    footer em { font-style: italic; }
+
+    /* ── SVG DIAGRAM ── */
+    .dog-svg {
+      width: 100%;
+      max-width: 380px;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 800px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+      .hero-diagram {
+        min-height: 260px;
+        border-left: none;
+        border-top: 3px solid var(--red);
+      }
+      .problem-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .features-row { grid-template-columns: 1fr; }
+      section { padding: 50px 20px; }
+    }
+
+    @media (max-width: 500px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .step-connector { display: none; }
+      .hero-text { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-label">DKC SYSTEMS · BERLIN · SEIT 2026</div>
+        <h1 class="hero-title">
+          DKC
+          <span class="sub">Dog-Kot-Catcher™</span>
+        </h1>
+        <p class="hero-tagline">
+          Deutsche Ingenieurskunst gegen das tägliche Bücken.
+          Automatischer Kotbeutel-Mechanismus mit Bewegungssensor,
+          Tannenbaum-Einpackprinzip und App-Anbindung.
+          Kein Handkontakt. Kein Drama.
+        </p>
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="white" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Ab 36 € — App inklusive
+        </div>
+      </div>
+      <div class="hero-diagram">
+        <!-- Dog diagram SVG -->
+        <svg class="dog-svg" viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Technisches Schema DKC am Hund">
+          <!-- Dog body (side profile, schematic) -->
+          <rect x="80" y="130" width="200" height="90" rx="40" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <!-- Head -->
+          <ellipse cx="300" cy="150" rx="52" ry="44" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <!-- Snout -->
+          <rect x="338" y="160" width="30" height="20" rx="8" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <!-- Eye -->
+          <circle cx="316" cy="140" r="5" fill="#CC1011"/>
+          <!-- Ear -->
+          <ellipse cx="294" cy="110" rx="16" ry="24" fill="#222" stroke="#444" stroke-width="1.5"/>
+          <!-- Legs -->
+          <rect x="108" y="218" width="18" height="50" rx="8" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <rect x="148" y="218" width="18" height="50" rx="8" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <rect x="218" y="218" width="18" height="50" rx="8" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <rect x="258" y="218" width="18" height="50" rx="8" fill="#2A2A2A" stroke="#444" stroke-width="1.5"/>
+          <!-- Tail -->
+          <path d="M80 165 Q40 140 30 110 Q22 82 50 75" stroke="#444" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+          <!-- DKC DEVICE (at tail base) -->
+          <!-- Ring on tail -->
+          <ellipse cx="80" cy="165" rx="14" ry="10" fill="none" stroke="#CC1011" stroke-width="3"/>
+          <!-- Sensor box -->
+          <rect x="52" y="172" width="30" height="20" rx="3" fill="#CC1011"/>
+          <text x="67" y="186" text-anchor="middle" font-family="monospace" font-size="7" fill="white">SENS</text>
+          <!-- Bag hanging down -->
+          <path d="M57 192 Q52 215 55 240 Q58 260 67 260 Q76 260 79 240 Q82 215 77 192 Z" fill="#CC1011" fill-opacity="0.35" stroke="#CC1011" stroke-width="1.5"/>
+          <!-- Tüte tie -->
+          <line x1="57" y1="192" x2="77" y2="192" stroke="#CC1011" stroke-width="2"/>
+
+          <!-- Callout lines & labels -->
+          <!-- Ring callout -->
+          <line x1="80" y1="155" x2="20" y2="90" stroke="#CC1011" stroke-width="0.8" stroke-dasharray="3,3"/>
+          <text x="10" y="86" font-family="'Share Tech Mono',monospace" font-size="9" fill="#CC1011">RING</text>
+          <text x="10" y="97" font-family="'Share Tech Mono',monospace" font-size="7" fill="#777">adjustable</text>
+
+          <!-- Sensor callout -->
+          <line x1="82" y1="182" x2="22" y2="210" stroke="#CC1011" stroke-width="0.8" stroke-dasharray="3,3"/>
+          <text x="2" y="207" font-family="'Share Tech Mono',monospace" font-size="9" fill="#CC1011">SENSOR</text>
+          <text x="2" y="218" font-family="'Share Tech Mono',monospace" font-size="7" fill="#777">motion detect</text>
+
+          <!-- Bag callout -->
+          <line x1="79" y1="240" x2="130" y2="280" stroke="#CC1011" stroke-width="0.8" stroke-dasharray="3,3"/>
+          <text x="132" y="278" font-family="'Share Tech Mono',monospace" font-size="9" fill="#CC1011">TÜTE</text>
+          <text x="132" y="289" font-family="'Share Tech Mono',monospace" font-size="7" fill="#777">auto-seal</text>
+
+          <!-- MODEL label -->
+          <text x="190" y="320" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="10" fill="#555">DKC-1 SCHEMAZEICHNUNG · OHN. M. · 2026</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <hr class="rule">
+
+  <!-- PROBLEM -->
+  <div class="problem-section">
+    <section>
+      <div class="section-label">Problemanalyse</div>
+      <h2 class="section-title">Das tägliche Bücken<br>muss aufhören</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="num">27s</div>
+          <h3>Zeitverlust</h3>
+          <p>Pro Bückaktion: suchen, bücken, greifen, verknoten, entsorgen. 365 Tage im Jahr. Nie wieder.</p>
+        </div>
+        <div class="problem-card">
+          <div class="num">∞</div>
+          <h3>Würdeverlust</h3>
+          <p>Mit der Hand in einer labrigen, weichen Masse. Vor Fremden. Im Park. Im Regen. Kein Kommentar.</p>
+        </div>
+        <div class="problem-card">
+          <div class="num">0€</div>
+          <h3>BSR-Integration</h3>
+          <p>Die Tüte fällt auf den Boden, fertig verpackt. Die Stadtreinigung kümmert sich. Du gehst weiter.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <hr class="rule">
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="section-label">Funktionsprinzip</div>
+    <h2 class="section-title">Vier Schritte.<br>Null Handkontakt.</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">SCHRITT 01</div>
+        <h3>Montage</h3>
+        <p>Verstellbarer Ring über Schwanzansatz. Sitzt direkt vor dem Arschloch. Passt von Dackel bis Sennhund.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">SCHRITT 02</div>
+        <h3>Sensor erkennt</h3>
+        <p>Bewegungssensor (Typ: McDonald's-Wasserhahn) registriert die Abgangs-Peristaltik. Genauigkeit: &gt;94%.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">SCHRITT 03</div>
+        <h3>Tannenbaum-Prinzip</h3>
+        <p>Das Tannenbaum-Einpacknetz öffnet, empfängt, schließt, knotet. Inspiriert von Weihnachtsmarkt-Logistik.</p>
+        <div class="step-connector"></div>
+      </div>
+      <div class="step">
+        <div class="step-num">SCHRITT 04</div>
+        <h3>Tüte fällt</h3>
+        <p>Perfekt verpackt, auf dem Boden. Hund läuft frei weiter. Du hast nichts angefasst. Ende.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- SPECS -->
+  <div class="specs-section">
+    <section>
+      <div class="section-label">Technische Spezifikation</div>
+      <h2 class="section-title">DKC-1<br>Datenblatt</h2>
+      <table class="specs-table">
+        <tr><td>Modell</td><td>DKC-1 (Dog-Kot-Catcher, Generation 1)</td></tr>
+        <tr><td>Preis</td><td>36,00 € einmalig (Akku inklusive)</td></tr>
+        <tr><td>App</td><td>DKC Analytics — kostenlos, iOS &amp; Android</td></tr>
+        <tr><td>Größen</td><td>XS / S / M / L / XL (verstellbar, ∅ 3–18 cm)</td></tr>
+        <tr><td>Sensor</td><td>Piezoresistiver Bewegungssensor, Latenz &lt;50 ms</td></tr>
+        <tr><td>Mechanismus</td><td>Tannenbaum-Einpackprinzip (DE Pat. ausstehend)</td></tr>
+        <tr><td>Tütenkapazität</td><td>3 × BIO-Abbaubar-Tüten vorgeladen</td></tr>
+        <tr><td>Akku</td><td>CR2032-kompatibel · Laufzeit ~90 Tage</td></tr>
+        <tr><td>Datenanalyse</td><td>Probenentnahme via Mikro-Swab, App-Bericht &lt;24h</td></tr>
+        <tr><td>Abo (ab Monat 13)</td><td>2,99 € / Monat (Premium Statistiken + Tütenlieferung)</td></tr>
+        <tr><td>TMDA Score</td><td>7 / 24 (13 / 24 im Verlaffelland)</td></tr>
+      </table>
+    </section>
+  </div>
+
+  <hr class="rule">
+
+  <!-- FEATURES -->
+  <section>
+    <div class="section-label">App &amp; Erweiterungen</div>
+    <h2 class="section-title">Mehr als ein<br>Kotfänger</h2>
+    <div class="features-row">
+      <div class="feature-item">
+        <h4>Statistik-Dashboard</h4>
+        <p>Wie oft hat er geschissen? Konsistenz? Ernährungshinweise? Alles in der App. Hundehalter lieben Zahlen.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Merci-Produktlinie</h4>
+        <p>Nicht nur Hunde. DKC Merci gibt es für Elefanten, Giraffen, Hamster, Oma — und ja, auch für den Menschen (Adapter extra).</p>
+      </div>
+      <div class="feature-item">
+        <h4>Sponsor-Integration</h4>
+        <p>Nike, Adidas, alle Schuhmarken: niemand will Hundekot am Schuh. Sponsoring-Anfragen willkommen.</p>
+      </div>
+      <div class="feature-item">
+        <h4>Accessoire-Kollektion</h4>
+        <p>Strass-Besatz, matte Schwarzvariante, reflektierende Nacht-Edition. Der Kot-Catcher als Fashion Statement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <section>
+      <div class="section-label" style="display:inline-block">Jetzt Vorbestellen</div>
+      <h2 class="cta-title">Kein Bücken.<br>Kein Kontakt.<br>Nur 36 €.</h2>
+      <p class="cta-price">Einmalig · App inklusive · Tüten inklusive</p>
+      <a href="#" class="cta-btn">DKC vorbestellen</a>
+    </section>
+  </div>
+
+  <footer>
+    <em>Rein fiktives Startup-Konzept. Kein echtes Produkt. Der DKC existiert ausschließlich im TMDA-Podcast und im Verlaffelland.</em><br>
+    Fiktives Konzept · TMDA #61 · 7/24 · <a href="/folge/61">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
+  </footer>
+
+</body>
+</html>

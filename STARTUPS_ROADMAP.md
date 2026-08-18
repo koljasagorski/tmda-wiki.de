@@ -19,9 +19,9 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 60/60 LIVE ✅
+## Status — 61/61 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-60 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-61 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 ### 18/24
 
@@ -101,6 +101,10 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 - [x] **Reroute Your Praise — Kaba-Spiegel-Satellit-Abo** · Folge 49 · celestial astro-spiritual SaaS (Amiri + Space Grotesk, midnight/gold/beam)
 - [x] **Hundeschule der anderen Art** · Folge 11 · xerox flyer (Special Elite + Patrick Hand)
 - [x] **WHAT LIFE WEIGHTS** · Folge 9 · contemplative magazine (Cardo + olive/cream)
+
+### 7/24
+
+- [x] **DKC — Dog-Kot-Catcher** · Folge 61 · 7/24 · German Engineering / Maschinenbau (Rajdhani + Source Sans 3 + Share Tech Mono, Anthrazit/Rot/Hellgrau, technische Schemazeichnung, DIN-Tabellenlayout)
 
 ### < 10 — Spaß-/Low-Score- & ungewertete Ideen (neu)
 
