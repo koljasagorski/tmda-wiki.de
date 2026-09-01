@@ -1,7 +1,27 @@
 {
-  "updatedAt": "2026-08-18T08:20:44.039Z",
-  "count": 102,
+  "updatedAt": "2026-09-01T08:47:22.144Z",
+  "count": 106,
   "items": [
+    {
+      "folge": 62,
+      "name": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",
+      "beschreibung": "Angeschrägte Scheibchen an der Kugel des Fernsehturms zeigen je nach Standpunkt in der Stadt den jeweiligen Berliner Bezirk an. Nano-Chip-Erweiterung: sogar Straßenname + Hausnummer ablesbar. Zeiss-Linsen auf Zwischendächern projizieren den Turm optisch in entferntere Stadtteile."
+    },
+    {
+      "folge": 62,
+      "name": "Vinyl aus der Asche",
+      "beschreibung": "Asche des Verstorbenen wird in die Vinylmasse eingearbeitet. Das Ergebnis: 20 personalisierte Schallplatten mit den Lieblingssongs des Verstorbenen, als Alternative zur Urne — man kann sie aufstellen, einrahmen oder sogar abspielen."
+    },
+    {
+      "folge": 62,
+      "name": "Asche-Diamant als Erinnerungsschmuck",
+      "beschreibung": "Reale Technologie: Menschenasche (oder Tierasche) wird unter Druck und Hitze zu einem echten Diamanten gepresst. Kann von der Lieblingsperson als Ring getragen werden."
+    },
+    {
+      "folge": 62,
+      "name": "Fahrbares Klo",
+      "beschreibung": "Ein autonomes Toiletten-Gerät, das dem Nutzer hinterherfolgt, trackt wo er ist, und bei Bedarf direkt neben ihm ankommt. Spart den Gang zur Toilette. Primäre Zielgruppe laut Nisse: Donald Trump, Andrej Herb (Effekt Energy), Knossi."
+    },
     {
       "folge": 61,
       "name": "DKC — Dog-Kot-Catcher",

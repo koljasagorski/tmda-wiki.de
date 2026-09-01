@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-18T08:20:44.039Z",
-  "count": 58,
+  "updatedAt": "2026-09-01T08:47:22.144Z",
+  "count": 59,
   "items": [
+    {
+      "folge": 62,
+      "datum": null,
+      "idee": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",
+      "beschreibung": "Kleine angeschrägte Scheibchen werden perspektivisch so an der Kugel des Berliner Fernsehturms angebracht, dass ein Betrachter je nach Standpunkt in der Stadt ein anderes Wort (z.B. 'Berlin Mitte', 'Kreuzberg', 'Neukölln') liest. Prinzip: Schräge Flächen mit unterschiedlichen 35°/40°-Winkeln zeigen aus jeder Himmelsrichtung individuell, wo man sich befindet. Erweiterung 1: Nano-Chip-Technologie (…",
+      "punkte": 5,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Im Flaffelland wäre das auch eine 20, aber in der echten Welt ist es eine fünf.' Hauptkritik: physikalische Realität. Aus Neukölln (11 km Entfernung) ist der Fernsehturm so klein wie ein Satellitenschüssel-Ball im 20 m langen Raum …"
+    },
     {
       "folge": 61,
       "datum": null,

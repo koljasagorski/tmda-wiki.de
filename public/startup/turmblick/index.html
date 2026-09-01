@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TURMBLICK — Berliner Fernsehturm als Stadtnavigator</title>
+  <meta name="description" content="TURMBLICK: Angeschrägte Nano-Scheibchen am Berliner Fernsehturm zeigen dir aus jeder Himmelsrichtung deinen aktuellen Berliner Bezirk. Kein Internet. Kein Strom. Nur hochgucken.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/turmblick">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TURMBLICK — Berliner Fernsehturm als Stadtnavigator">
+  <meta property="og:description" content="TURMBLICK: Angeschrägte Nano-Scheibchen am Berliner Fernsehturm zeigen dir aus jeder Himmelsrichtung deinen aktuellen Berliner Bezirk. Kein Internet. Kein Strom. Nur hochgucken.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/turmblick">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TURMBLICK — Berliner Fernsehturm als Stadtnavigator">
+  <meta name="twitter:description" content="Kein Internet. Kein GPS. Kein Strom. Nur der Turm.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,700;0,900;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "TURMBLICK",
+    "description": "Angeschrägte Nano-Scheibchen am Berliner Fernsehturm. Aus jeder Himmelsrichtung siehst du deinen Bezirk — kein Internet, kein Strom.",
+    "brand": { "@type": "Brand", "name": "TURMBLICK GmbH" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "0.00",
+      "availability": "https://schema.org/PreOrder",
+      "description": "Einmalgebühr Stadtumbau Berlin: 3,4 Mrd. EUR (Senat-Zuschuss beantragt)"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bvg-yellow:  #f0d722;
+      --berlin-navy: #0d1b2a;
+      --signal-red:  #e8000d;
+      --concrete:    #c4c4c4;
+      --pale-map:    #f5f0e8;
+      --text-dark:   #0d1b2a;
+      --text-light:  #f5f0e8;
+      color-scheme: light dark;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Exo 2', sans-serif;
+      background: var(--berlin-navy);
+      color: var(--text-light);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ───────────────────────────────────────────────── */
+    .hero {
+      background: var(--berlin-navy);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100svh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 59px,
+        rgba(240,215,34,0.06) 59px,
+        rgba(240,215,34,0.06) 60px
+      );
+      pointer-events: none;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 3rem 4rem 5vw;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--signal-red);
+      color: #fff;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.75rem;
+      margin-bottom: 2.5rem;
+      width: fit-content;
+    }
+
+    .brand {
+      font-weight: 900;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 0.9;
+      color: var(--bvg-yellow);
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .tagline {
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(1rem, 1.8vw, 1.4rem);
+      color: var(--concrete);
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+      max-width: 34ch;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--bvg-yellow);
+      color: var(--berlin-navy);
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #fde82b; }
+
+    .btn-secondary {
+      border: 2px solid var(--bvg-yellow);
+      color: var(--bvg-yellow);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.85rem 1.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.15s;
+    }
+    .btn-secondary:hover { background: var(--bvg-yellow); color: var(--berlin-navy); }
+
+    /* TV Tower SVG side */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .tower-svg-wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Horizon glow behind tower */
+    .hero-visual::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200%;
+      height: 40%;
+      background: radial-gradient(ellipse at center bottom, rgba(240,215,34,0.15) 0%, transparent 70%);
+    }
+
+    /* ── WAYFINDING SECTION ─────────────────────────────────── */
+    .section-wayfinding {
+      background: var(--bvg-yellow);
+      color: var(--berlin-navy);
+      padding: 5rem 5vw;
+    }
+
+    .section-wayfinding h2 {
+      font-weight: 900;
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+    }
+
+    .feature-card {
+      background: var(--berlin-navy);
+      color: var(--text-light);
+      padding: 2.5rem 2rem;
+      position: relative;
+    }
+
+    .feature-number {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--bvg-yellow);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+
+    .feature-card p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--concrete);
+    }
+
+    /* ── HOW IT WORKS ───────────────────────────────────────── */
+    .section-how {
+      background: var(--pale-map);
+      color: var(--text-dark);
+      padding: 5rem 5vw;
+    }
+
+    .section-how h2 {
+      font-weight: 900;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-how .subtitle {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: #666;
+      letter-spacing: 0.08em;
+      margin-bottom: 3.5rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      border: 2px solid var(--berlin-navy);
+    }
+
+    .step {
+      padding: 2.5rem 2rem;
+      border-right: 2px solid var(--berlin-navy);
+      position: relative;
+    }
+    .step:last-child { border-right: none; }
+
+    .step-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .step-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--signal-red);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .step h3 {
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.6rem;
+    }
+
+    .step p {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    /* Direktional-Wegweiser SVG */
+    .wegweiser-wrap {
+      margin: 3.5rem 0 0;
+      overflow-x: auto;
+    }
+
+    /* ── TECH SPECS ─────────────────────────────────────────── */
+    .section-specs {
+      background: var(--berlin-navy);
+      color: var(--text-light);
+      padding: 5rem 5vw;
+    }
+
+    .section-specs h2 {
+      font-weight: 900;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      text-transform: uppercase;
+      color: var(--bvg-yellow);
+      margin-bottom: 3rem;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+      overflow-x: auto;
+      display: block;
+    }
+
+    .specs-table th {
+      background: var(--bvg-yellow);
+      color: var(--berlin-navy);
+      text-align: left;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .specs-table td {
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid rgba(240,215,34,0.12);
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .specs-table tr:last-child td { border-bottom: none; }
+    .specs-table td:first-child { color: var(--concrete); }
+    .specs-table td:last-child { color: #fff; }
+
+    /* ── CTA ────────────────────────────────────────────────── */
+    .section-cta {
+      background: var(--signal-red);
+      color: #fff;
+      padding: 5rem 5vw;
+      text-align: center;
+    }
+
+    .section-cta h2 {
+      font-weight: 900;
+      font-size: clamp(2rem, 5vw, 4rem);
+      text-transform: uppercase;
+      line-height: 0.9;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-cta p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 52ch;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+
+    .cta-input-group {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      max-width: 480px;
+      margin: 0 auto 3rem;
+    }
+
+    .cta-input-group input {
+      flex: 1;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid #fff;
+      border-right: none;
+      color: #fff;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      padding: 0.85rem 1rem;
+      outline: none;
+    }
+    .cta-input-group input::placeholder { color: rgba(255,255,255,0.6); }
+
+    .cta-input-group button {
+      background: #fff;
+      color: var(--signal-red);
+      border: 2px solid #fff;
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.85rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .cta-input-group button:hover { background: var(--bvg-yellow); border-color: var(--bvg-yellow); color: var(--berlin-navy); }
+
+    /* ── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      background: #060f18;
+      color: rgba(255,255,255,0.45);
+      padding: 2rem 5vw;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    footer a { color: var(--bvg-yellow); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .footer-disclaimer { font-style: italic; opacity: 0.6; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .hero-text { padding: 3rem 1.5rem 2rem; }
+      .hero-visual { padding: 1rem; min-height: 320px; }
+      .step { border-right: none; border-bottom: 2px solid var(--berlin-navy); }
+      .step:last-child { border-bottom: none; }
+      .cta-input-group { flex-direction: column; }
+      .cta-input-group input { border-right: 2px solid #fff; border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">🗼 Berlin Mitte · TMDA Startup #62</span>
+    <h1 class="brand">TURM<br>BLICK</h1>
+    <p class="tagline">Der Berliner Fernsehturm zeigt dir, wo du bist.<br>
+    Kein Internet. Kein GPS. Kein Strom.<br>Nur hochgucken.</p>
+    <div class="hero-cta-group">
+      <a href="#mitmachen" class="btn-primary">Petition unterschreiben</a>
+      <a href="#wie-es-funktioniert" class="btn-secondary">Technologie →</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <!-- Berlin TV Tower SVG -->
+    <div class="tower-svg-wrap">
+      <svg viewBox="0 0 240 520" width="240" height="520" aria-label="Berliner Fernsehturm Illustration" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stars/city lights -->
+        <circle cx="30" cy="40" r="1.2" fill="rgba(240,215,34,0.4)"/>
+        <circle cx="195" cy="80" r="1" fill="rgba(240,215,34,0.3)"/>
+        <circle cx="50" cy="120" r="0.8" fill="rgba(240,215,34,0.5)"/>
+        <circle cx="210" cy="55" r="1.4" fill="rgba(240,215,34,0.35)"/>
+        <circle cx="15" cy="200" r="0.9" fill="rgba(240,215,34,0.25)"/>
+        <circle cx="225" cy="160" r="1.1" fill="rgba(240,215,34,0.4)"/>
+
+        <!-- Tower base/pedestal -->
+        <rect x="100" y="440" width="40" height="75" fill="#1e3048"/>
+        <rect x="90" y="510" width="60" height="10" fill="#1e3048"/>
+        <!-- Base platform -->
+        <rect x="80" y="435" width="80" height="10" rx="2" fill="#2a4060"/>
+
+        <!-- Shaft lower -->
+        <path d="M112 440 L120 200 L128 440 Z" fill="#1e3048"/>
+        <!-- Shaft taper -->
+        <path d="M116 200 L120 160 L124 200 Z" fill="#253850"/>
+
+        <!-- Observation deck / Kugel (sphere) -->
+        <ellipse cx="120" cy="155" rx="38" ry="36" fill="#1a3050"/>
+        <ellipse cx="120" cy="149" rx="37" ry="32" fill="#1e3860"/>
+        <!-- Kugel windows/lights -->
+        <ellipse cx="120" cy="149" rx="32" ry="27" fill="none" stroke="rgba(240,215,34,0.15)" stroke-width="1"/>
+        <!-- Lit windows -->
+        <rect x="105" y="140" width="8" height="5" rx="1" fill="rgba(240,215,34,0.6)"/>
+        <rect x="127" y="140" width="8" height="5" rx="1" fill="rgba(240,215,34,0.6)"/>
+        <rect x="113" y="153" width="14" height="5" rx="1" fill="rgba(240,215,34,0.4)"/>
+
+        <!-- TURMBLICK Disc Indicators (the startup idea!) -->
+        <!-- These are the angled discs that show Berlin districts -->
+        <g transform="translate(120,149)">
+          <!-- Disc N: Berlin Mitte -->
+          <g transform="rotate(0)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.9" transform="rotate(-15,0,-30)"/>
+            <text x="0" y="-27" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="5" font-weight="900" fill="#0d1b2a" transform="rotate(-15,0,-30)">MITTE</text>
+          </g>
+          <!-- Disc NE: Prenzlauer Berg -->
+          <g transform="rotate(60)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.75" transform="rotate(-15,0,-30)"/>
+            <text x="0" y="-27" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="3.8" font-weight="900" fill="#0d1b2a" transform="rotate(-15,0,-30)">PBERG</text>
+          </g>
+          <!-- Disc E: Friedrichshain -->
+          <g transform="rotate(120)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.6" transform="rotate(-15,0,-30)"/>
+            <text x="0" y="-27" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="3.8" font-weight="900" fill="#0d1b2a" transform="rotate(-15,0,-30)">FHAIN</text>
+          </g>
+          <!-- Disc SE: Kreuzberg -->
+          <g transform="rotate(180)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.5" transform="rotate(-15,0,-30)"/>
+            <text x="0" y="-27" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="3.8" font-weight="900" fill="#0d1b2a" transform="rotate(-15,0,-30)">KREUZ</text>
+          </g>
+          <!-- Disc W: Charlottenburg -->
+          <g transform="rotate(240)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.4" transform="rotate(-15,0,-30)"/>
+          </g>
+          <!-- Disc NW: Wedding -->
+          <g transform="rotate(300)">
+            <ellipse cx="0" cy="-30" rx="22" ry="5" fill="#f0d722" opacity="0.35" transform="rotate(-15,0,-30)"/>
+          </g>
+        </g>
+
+        <!-- Antenna -->
+        <line x1="120" y1="113" x2="120" y2="10" stroke="#2a4a60" stroke-width="3"/>
+        <line x1="120" y1="113" x2="120" y2="10" stroke="#3d6080" stroke-width="1.5"/>
+        <!-- Antenna segments -->
+        <rect x="118" y="35" width="4" height="2" fill="#4a7090" rx="1"/>
+        <rect x="118" y="55" width="4" height="2" fill="#4a7090" rx="1"/>
+        <rect x="118" y="75" width="4" height="2" fill="#4a7090" rx="1"/>
+        <!-- Blinking red light -->
+        <circle cx="120" cy="12" r="3" fill="#e8000d" opacity="0.9">
+          <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- WAYFINDING FEATURES -->
+<section class="section-wayfinding" id="wie-es-funktioniert">
+  <h2>Navigation ohne Strom —<br>Physik ist das Produkt</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="feature-number">01 — PRINZIP</span>
+      <h3>Winkel statt Watts</h3>
+      <p>Angeschrägte Scheibchen an der Turmkugel sind so kalibriert, dass aus jedem Standpunkt in Berlin ein anderer Bezirksname sichtbar ist. 35° Südost = Kreuzberg. 42° Nordwest = Wedding. Reine Optik, kein Server.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-number">02 — NANO-AUSBAU</span>
+      <h3>Straße & Hausnummer</h3>
+      <p>Phase 2: Mikroprozessoren kleiner als ein Reiskorn erlauben es, die Scheibchen so fein zu kalibrieren, dass der Betrachter sogar Straßenname und Hausnummer ablesen kann. Nur hochgucken.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-number">03 — LINSEN-NETZ</span>
+      <h3>Zeiss-Projektion</h3>
+      <p>Für entfernte Stadtteile wie Neukölln (11 km): Riesige Zeiss-Linsen auf Zwischendächern projizieren das Turmkugel-Bild bis in jeden Kiez. Das gesamte Berliner Straßenschildnetz wird dadurch überflüssig.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-number">04 — SKALIERBAR</span>
+      <h3>Die Welt wartet</h3>
+      <p>Shenzhen. Dubai. The Line. Jede futuristische Metropole mit einem zentralen Turm kann TURMBLICK implementieren. Nur für Berlin haben wir bereits den Prototyp-Standort reserviert.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-how">
+  <h2>In drei Schritten wissen,<br>wo du bist</h2>
+  <p class="subtitle">TURMBLICK BEDIENUNGSANLEITUNG · VERSION 1.0</p>
+
+  <div class="steps">
+    <div class="step">
+      <span class="step-icon">🗼</span>
+      <span class="step-num">Schritt 01</span>
+      <h3>Hochgucken</h3>
+      <p>Orientiere dich in Richtung des Berliner Fernsehturms. Er ist 368 m hoch. Du siehst ihn. (Aus Neukölln: fast. Fast reicht uns.)</p>
+    </div>
+    <div class="step">
+      <span class="step-icon">👁️</span>
+      <span class="step-num">Schritt 02</span>
+      <h3>Lesen</h3>
+      <p>Die angeschrägten Scheibchen an der Kugel zeigen dir deinen Bezirk. Mitte. Kreuzberg. Prenzlauer Berg. Alles drin.</p>
+    </div>
+    <div class="step">
+      <span class="step-icon">🧭</span>
+      <span class="step-num">Schritt 03</span>
+      <h3>Ankommen</h3>
+      <p>Jetzt weißt du, wo du bist. Gehe deiner Wege. Kein Datenroaming. Keine Akku-Angst. Nur du und der Turm.</p>
+    </div>
+    <div class="step">
+      <span class="step-icon">📡</span>
+      <span class="step-num">OPTIONAL</span>
+      <h3>Nano-Phase</h3>
+      <p>Wenn Phase 2 live geht: Siehst du sogar die Straße und Hausnummer. Oma Irmgard muss dann aber noch ein bisschen besser hochgucken können.</p>
+    </div>
+  </div>
+
+  <!-- Wegweiser SVG -->
+  <div class="wegweiser-wrap">
+    <svg viewBox="0 0 700 120" width="700" height="120" aria-label="Richtungsanzeiger" xmlns="http://www.w3.org/2000/svg" style="max-width:100%">
+      <rect width="700" height="120" fill="#0d1b2a" rx="4"/>
+      <!-- Pole -->
+      <rect x="349" y="0" width="2" height="120" fill="#4a6a88"/>
+      <!-- Left arrow board -->
+      <polygon points="60,20 20,60 60,100 320,100 320,20" fill="#f0d722"/>
+      <text x="175" y="67" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="26" font-weight="900" fill="#0d1b2a">KREUZBERG</text>
+      <!-- Right arrow board -->
+      <polygon points="640,20 680,60 640,100 380,100 380,20" fill="#f0d722"/>
+      <text x="527" y="67" text-anchor="middle" font-family="'Exo 2',sans-serif" font-size="26" font-weight="900" fill="#0d1b2a">MITTE</text>
+    </svg>
+  </div>
+</section>
+
+<!-- TECH SPECS -->
+<section class="section-specs">
+  <h2>Technische Spezifikation</h2>
+  <div style="overflow-x:auto">
+    <table class="specs-table">
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>Wert</th>
+          <th>Anmerkung</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Turmhöhe</td>
+          <td>368 m</td>
+          <td>Fernsehturm Berlin, Alex</td>
+        </tr>
+        <tr>
+          <td>Sichtbarkeitsradius</td>
+          <td>~8 km (Phase 1)</td>
+          <td>In Neukölln leicht schwierig</td>
+        </tr>
+        <tr>
+          <td>Kalibrierwinkel</td>
+          <td>35° – 52°</td>
+          <td>Pro Bezirk individuell</td>
+        </tr>
+        <tr>
+          <td>Scheibchen-Anzahl (Phase 1)</td>
+          <td>12 Stück</td>
+          <td>12 Berliner Bezirke</td>
+        </tr>
+        <tr>
+          <td>Scheibchen-Größe (Phase 2)</td>
+          <td>Nano / < 1 Reiskorn</td>
+          <td>Chip-Technologie 2026</td>
+        </tr>
+        <tr>
+          <td>Stromverbrauch</td>
+          <td>0 Watt</td>
+          <td>Passiv-optisch</td>
+        </tr>
+        <tr>
+          <td>Benötigte App</td>
+          <td>Keine</td>
+          <td>Augen sind die App</td>
+        </tr>
+        <tr>
+          <td>Straßenschilder danach nötig</td>
+          <td>Keine</td>
+          <td>Berlin spart ~38 Mio. € / Jahr</td>
+        </tr>
+        <tr>
+          <td>Nisse-Rating</td>
+          <td>5 / 24</td>
+          <td>Im Verlaffelland: 20 / 24</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-cta" id="mitmachen">
+  <h2>Berlin braucht<br>keine Maps App.</h2>
+  <p>Unterschreibe jetzt die Petition an den Berliner Senat für die Genehmigung der TURMBLICK-Pilotscheibchen-Montage an der Fernsehturm-Kugel. Wir brauchen 50.000 Unterschriften oder Nisse vergibt einen Punkt mehr.</p>
+
+  <div class="cta-input-group">
+    <input type="email" placeholder="deine@email.berlin" aria-label="E-Mail-Adresse">
+    <button type="button" onclick="this.textContent='✓ Du bist dabei!'">Petition unterschreiben</button>
+  </div>
+
+  <p style="font-size:0.8rem;opacity:0.7">
+    Bereits unterschrieben: <strong>0 von 50.000</strong> · Fortschritt: ███░░░░░░░░░ 0,004%
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-disclaimer"><em>Rein fiktives Startup-Konzept aus dem TMDA-Podcast. Der Berliner Senat wurde bisher weder informiert noch gefragt. Oma Irmgard ist fiktiv und in guter Gesundheit.</em></p>
+  <p>Fiktives Konzept · TMDA #62 · 5/24 · <a href="/folge/62">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+</footer>
+
+</body>
+</html>
