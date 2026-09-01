@@ -1,0 +1,128 @@
+{
+  "folge": 62,
+  "titel": "Ich will: Elton Johns Kniescheiben u. Vinyl aus meiner Asche",
+  "laufzeit": "1:02:10",
+  "datum": "2026-08-26",
+  "themen": [
+    "Elton Johns Kniescheiben als Anhänger — Fynns Sterbewunsch und philosophische Todesgespräche",
+    "Asche zu Diamant: echte Technologie, Asche von Mensch (oder Hund) zu Schmuck verarbeiten",
+    "Vinyl aus der Asche: 20 Exemplare pressen mit Lieblingssongs + Asche eingemischt",
+    "Nimi: KI-Künstler ohne echte Existenz, vermutlich aus Kassel, GPT bezeichnet ihn als …",
+    "Tim Curry gestorben (Pennywise/IT-Clown, Kevin allein in New York) — rote Luftballons an Gullys als Gedenkritual in den USA",
+    "Sponsor First Lauer Wasser + Running-Gag Grabstein-Sponsoring",
+    "OM-Podcast: Wasser-Schluck-Sounds wurden aufgezeichnet und in Folgen eingespielt als Schleichwerbung",
+    "Podcast-Kartenspiel 'The Game' von Talia: Fragen wie 'Hitler auf einsamer Insel oder in einer TV-Show?'",
+    "Kalle's Corner: Müllmann klettert in laufenden Müllwagen — ist das zulässig?",
+    "Startup-Idee: Berliner Fernsehturm als Stadtnavigator (TURMBLICK) — angeschrägte Nano-Scheibchen zeigen Bezirk an",
+    "Nisse plant Gartenhaus/Schuppen (25–30 m², gedämmt, nahe Tesla Giga Factory) — sucht Handwerker-Hilfe",
+    "VectorBoy: Fynns echtes Tool zum Vektorisieren von Bildern (PNG→SVG), 10€ = 100 Credits",
+    "Simon Schirmer: Typograf, lebt vom Verkauf seiner Handschriften-Schriftarten",
+    "Werwolf-Fan-Fact: TMDA-Team-Mitglied hat Vorfahren, der wegen Werwolftums im 16. Jahrhundert hingerichtet wurde",
+    "Musikempfehlungen: Carli und YAEGER — 'BW' feat. Stockholm Studio Orchester"
+  ],
+  "kurzbeschreibung": "Die Folge startet mit einer absurden Frage: Was würde man sich nach dem Tod wünschen? Fynn will Elton Johns Kniescheiben als Anhänger — Nisse verspricht, sie zu besorgen (Reiseplan: Buckingham Palace, Katakomben). Daraus entsteht ein langes Todesgespräch: Asche zu Diamant (gibt es wirklich), Asche in Vinyl gepresst (20 Exemplare mit Lieblingssongs), Feinde mit der Asche bestreuen. Nisse möchte beerdigt werden und als Nährboden für einen Baum dienen. Zwischendurch: Nimi, der KI-Künstler aus mutmaßlich Kassel, der keinerlei echte Existenz hat. Tim Curry ist gestorben — in den USA hängen Fans rote Luftballons an Gullys als Pennywise-Gedenken. Wassermarke: First Lauer Sponsor, inklusive Running-Gag, dass auf Nissens Grabstein 'Presented by First Lauer' stehen wird. Beim OM-Podcast wurden Wasser-Trinkgeräusche aufgenommen und nachträglich in Folgen eingespielt. Das Kartenspiel 'Podcast the Game' (gekauft bei Talia) bringt die Frage: Lieber eine Woche mit Adolf Hitler auf einer einsamen Insel oder in einer TV-Show? Fynn würde ihn drei Monate als Besten Freund gewinnen — um dann zu offenbaren, er sei zu einem Achtel jüdisch. Kalle's Corner: Fynn sah einen Müllmann in einen laufenden Müllwagen klettern. Nisse (früher Müllabfuhr) klärt auf: Bei Sperrmüll gibt es eine echte Presse, bei normaler Müllabfuhr oft nur Schieber, den man abschalten kann. Die Startup-Idee: Angeschrägte Nano-Scheibchen am Berliner Fernsehturm — aus jeder Himmelsrichtung sieht man einen anderen Berliner Bezirksnamen. Erweiterung: Riesige Zeiss-Linsen auf Zwischendächern. Nisse urteilt: fünf von 24 Punkten ('Im Flaffelland wäre das eine 20'). Danach: Nisse sucht öffentlich Handwerker für ein 25–30-m²-Gartenhaus nahe der Tesla Giga Factory. Fynn stellt sein Tool VectorBoy vor: PNG-zu-SVG-Vektorisierung, 10€ für 100 Credits, kein Abo. Simon Schirmer besitzt Fynns Original-Handschriften-Font und verkauft diesen exklusiv. Den Abschluss bildet ein Random Fan Fact (Vorfahre wegen Werwolftum hingerichtet) sowie zwei Musikempfehlungen: Carli und YAEGER.",
+  "startup_idee": {
+    "idee": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",
+    "beschreibung": "Kleine angeschrägte Scheibchen werden perspektivisch so an der Kugel des Berliner Fernsehturms angebracht, dass ein Betrachter je nach Standpunkt in der Stadt ein anderes Wort (z.B. 'Berlin Mitte', 'Kreuzberg', 'Neukölln') liest. Prinzip: Schräge Flächen mit unterschiedlichen 35°/40°-Winkeln zeigen aus jeder Himmelsrichtung individuell, wo man sich befindet. Erweiterung 1: Nano-Chip-Technologie (kleiner als ein Reiskorn) ermöglicht Straßenname und Hausnummer abzulesen. Erweiterung 2: Riesige Zeiss-Linsen auf Zwischendächern (z.B. in Kreuzberg) projizieren den Fernsehturm optisch in entferntere Stadtteile wie Neukölln. Kein Strom, keine App, kein Internet — einfach hochgucken.",
+    "begruendung": "Nisse: 'Im Flaffelland wäre das auch eine 20, aber in der echten Welt ist es eine fünf.' Hauptkritik: physikalische Realität. Aus Neukölln (11 km Entfernung) ist der Fernsehturm so klein wie ein Satellitenschüssel-Ball im 20 m langen Raum — man kann keine Aufschrift erkennen. Außerdem macht Google Maps das Konzept redundant. Die Idee sei 'süß' und gut für Verlaffelland, aber in der echten Welt nicht umsetzbar.",
+    "punkte": 5,
+    "max_punkte": 24
+  },
+  "kalles_corner": {
+    "titel": "Ist es zulässig, in einen laufenden Müllwagen zu klettern?",
+    "inhalt": "Fynn hat auf dem Weg zum Podcast einen Mann beobachtet, der in einen laufenden Müllwagen geklettert ist — über die Absperrung, direkt in den Pressenbereich. Er fragt Nisse, der früher bei der Müllabfuhr gearbeitet hat. Nisse erklärt: Bei Sperrmüll gibt es eine richtige Presse, die alles zermalmt (Holz, Metall, Stein) — da darf man auf keinen Fall rein. Bei normaler Müllabfuhr gibt es meist nur einen Schieber, keinen echten Pressmechanismus, und den kann man auch abschalten. Grundsätzlich ist es möglich, aber absolut nicht erlaubt. Fynn hat den Mann fotografiert und überlegt, ob man ihn beim Arbeitgeber anschwärzen sollte ('zu doll') — aber im Podcast zeigen ist OK als 'Straßenjustiz'."
+  },
+  "geruecht_der_woche": null,
+  "fun_facts": [
+    "Tim Curry (bekannt als Pennywise in Stephen Kings 'Es' sowie als Hotelmanager in 'Kevin allein in New York') ist gestorben. Als Gedenkritual hängen Fans in den USA überall an Gullydeckeln rote Luftballons mit Helium — eine Anspielung auf Pennywises berühmten roten Ballon.",
+    "In Amerika wurden Menschen im Mittelalter tatsächlich zu Tode gekitzelt: Salz wurde an die Füße gestrichen und Ziegen lecken sie ab — nach Stunden ohne Pause sterben Menschen an Erschöpfung und Atemversagen.",
+    "Ein TMDA-Teammitglied hat einen Vorfahren, der im 16. Jahrhundert wegen 'Werwolftums' hingerichtet wurde.",
+    "VectorBoy (Fynns echtes Produkt): PNG-zu-SVG-Vektorisierung in 2 Sekunden. Adobe Illustrator schafft das nicht richtig bei feinen Zeichnungen (sogenannte Artefakte). 10€ = 100 Credits (kein Abo), 1 Credit = 1 Datei.",
+    "Das erste tragbare Feuerzeug wurde erfunden, bevor Streichhölzer existierten — Streichhölzer benötigten eine bestimmte chemische Reibungsmasse, deren Entwicklung länger dauerte.",
+    "Asche kann zu einem Diamanten gepresst werden — sowohl von Menschen als auch von Haustieren. Die Asche wird dabei unter extremem Druck und Hitze in kristallines Kohlenstoff-Gitter umgewandelt."
+  ],
+  "erfindungen": [
+    {
+      "name": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",
+      "beschreibung": "Angeschrägte Scheibchen an der Kugel des Fernsehturms zeigen je nach Standpunkt in der Stadt den jeweiligen Berliner Bezirk an. Nano-Chip-Erweiterung: sogar Straßenname + Hausnummer ablesbar. Zeiss-Linsen auf Zwischendächern projizieren den Turm optisch in entferntere Stadtteile."
+    },
+    {
+      "name": "Vinyl aus der Asche",
+      "beschreibung": "Asche des Verstorbenen wird in die Vinylmasse eingearbeitet. Das Ergebnis: 20 personalisierte Schallplatten mit den Lieblingssongs des Verstorbenen, als Alternative zur Urne — man kann sie aufstellen, einrahmen oder sogar abspielen."
+    },
+    {
+      "name": "Asche-Diamant als Erinnerungsschmuck",
+      "beschreibung": "Reale Technologie: Menschenasche (oder Tierasche) wird unter Druck und Hitze zu einem echten Diamanten gepresst. Kann von der Lieblingsperson als Ring getragen werden."
+    },
+    {
+      "name": "Fahrbares Klo",
+      "beschreibung": "Ein autonomes Toiletten-Gerät, das dem Nutzer hinterherfolgt, trackt wo er ist, und bei Bedarf direkt neben ihm ankommt. Spart den Gang zur Toilette. Primäre Zielgruppe laut Nisse: Donald Trump, Andrej Herb (Effekt Energy), Knossi."
+    }
+  ],
+  "zitate": [
+    {
+      "text": "Im Flaffelland wäre das auch eine 20, aber in der echten Welt ist es eine fünf.",
+      "kontext": "Nisse bewertet den TURMBLICK (Fernsehturm als Stadtnavigator) mit 5 von 24 Punkten und erklärt dabei das Verlaffelland-Konzept."
+    },
+    {
+      "text": "Und dann würde ich ihm sagen, du, ich bin übrigens Einachtel Jude — und dann wäre das Herz gebrochen.",
+      "kontext": "Fynn erklärt seine Strategie, Hitler auf der einsamen Insel: drei Monate Freundschaft aufbauen, dann die Offenbarung als ultimative Strafe."
+    },
+    {
+      "text": "Presented by First Lauer — da steht auch First Lauer noch drauf.",
+      "kontext": "Fynn erklärt, dass sein Grabstein offiziell 'Presented by First Lauer' beschriftet wird — denn der Wasser-Sponsor hat das Marketing-Arrangement bereits abgesegnet."
+    },
+    {
+      "text": "Weil ich ein sehr guter Nährboden wahrscheinlich wäre.",
+      "kontext": "Nisse begründet, warum er beerdigt statt verbrannt werden möchte — er will der Umwelt und den Würmern nützen."
+    },
+    {
+      "text": "Du bist der Bus für diesen Podcast.",
+      "kontext": "Nisse zu Fynn, nachdem sie Fynns Sterbewünsche (Kniescheiben von Elton John, Asche als Vinyl) diskutiert haben — und Nisse verspricht, nach Fynns Tod einfach weiterzumachen."
+    }
+  ],
+  "personen": [
+    "Elton John (Sänger, Kniescheiben als Sterbewunsch-Anhänger; gerettet hat er Robbie Williams und Mac Miller; schrieb 'Candle in the Wind' für Lady Di)",
+    "Nimi (mutmaßlicher KI-Künstler aus Kassel, ohne echte Existenz — nur Prompt einer Person, die sich als Black-Looking Artist inszeniert; laut GPT ein '…')",
+    "Tim Curry (Schauspieler, gestorben; Pennywise in Stephen Kings 'Es', Hotelmanager in 'Kevin allein in New York'; Red-Balloon-Memorial an Gullys)",
+    "Adolf Hitler (Einsame-Insel-Diskussion: Fynn würde ihn monatelang als Freund gewinnen, dann offenbaren er sei 1/8 jüdisch)",
+    "Donald Trump (Zielgruppe für das fahrende Klo)",
+    "Andrej Herb (Effekt Energy, reist mit kleinem Koffer durch Flughäfen, weitere Zielgruppe fürs fahrende Klo)",
+    "Knossi (YouTuber, reist auch mit kleinem Koffer, dritte Zielgruppe fürs fahrende Klo)",
+    "Mac Miller (Rapper, von Elton John gerettet laut Fynn)",
+    "Robbie Williams (Sänger, von Elton John gerettet)",
+    "Simon Schirmer (Typograf, besitzt exklusiv Fynns Handschriften-Schriftart und verkauft sie einzeln)",
+    "Steady (Drummer bei CEO und Abo Blocks, nutzt VectorBoy und empfiehlt es)",
+    "Jara (Fynns Partnerin, musste zum Hamburger Hauptbahnhof, Fynn fuhr falsch)",
+    "Toja Diebel (frühere Bekannte von Fynn, arbeitet bei Dojo-Agentur in der Kreuzberger Kirche)"
+  ],
+  "orte": [
+    "Berlin (Podcast-Ort, Dojo Agency in Kreuzberger Kirche, Fernsehturm Berlin Mitte)",
+    "Kreuzberg (Erweiterungsidee für Turmblick-Linsen, Dojo Agency)",
+    "Neukölln (11 km vom Fernsehturm entfernt — Beispiel für Sichtbarkeits-Problem der Startup-Idee)",
+    "London / Buckingham Palace (geplante Reiseroute für Kniescheiben-Beschaffung bei Elton John)",
+    "England (Elton John, Sir-Titel)",
+    "Königswusterhausen (Nassies Wohnort, nahe Tesla Giga Factory und BR)",
+    "Tesla Giga Factory Berlin (Landmark für Nissens Wohnort)",
+    "Hamburg Hauptbahnhof (Fynn fuhr versehentlich dorthin statt zum Podcast)",
+    "Talia (Berliner Buchhandlung mit Spieleabteilung, Sponsor)"
+  ],
+  "glossar": [
+    {
+      "begriff": "Verlaffelland",
+      "bedeutung": "Das magische TMDA-Bewertungskonzept: die ideale Welt, in der Startup-Ideen problemlos funktionieren würden. Etabliert in Folge 61. TURMBLICK würde dort 20/24 statt 5/24 bekommen."
+    },
+    {
+      "begriff": "VectorBoy",
+      "bedeutung": "Fynns echtes Webtool: konvertiert Bilder (PNG, JPG) zu Vektordaten (SVG). Kein Abo, Credits-Modell: 10€ = 100 Credits = 100 Bilder. Löst das Problem von Adobe Illustrators fehlerhafter Vektorisierung bei feinen Zeichnungen."
+    },
+    {
+      "begriff": "TURMBLICK",
+      "bedeutung": "Startup-Idee aus Folge 62: Berliner Fernsehturm als passiver Stadtnavigator durch angeschrägte Scheibchen. 5/24 Punkte, im Verlaffelland 20/24."
+    },
+    {
+      "begriff": "Kalle's Corner",
+      "bedeutung": "Wiederkehrendes Segment, in dem Nisse aus seiner Zeit bei der Müllabfuhr oder anderen Handwerks-/Straßenjobs berichtet. Diesmal: Ist es erlaubt, in einen laufenden Müllwagen zu klettern?"
+    }
+  ]
+}

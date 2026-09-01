@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T08:20:44.039Z",
-  "count": 277,
+  "updatedAt": "2026-09-01T08:47:22.144Z",
+  "count": 280,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -586,6 +586,11 @@
       "begriff": "Kaimarane",
       "bedeutung": "Kleine Krokodile, mit denen Nisse in Sri Lanka konfrontiert war (Caymane).",
       "folge": 44
+    },
+    {
+      "begriff": "Kalle's Corner",
+      "bedeutung": "Wiederkehrendes Segment, in dem Nisse aus seiner Zeit bei der Müllabfuhr oder anderen Handwerks-/Straßenjobs berichtet. Diesmal: Ist es erlaubt, in einen laufenden Müllwagen zu klettern?",
+      "folge": 62
     },
     {
       "begriff": "Kalles Corner",
@@ -1273,6 +1278,11 @@
       "folge": 3
     },
     {
+      "begriff": "TURMBLICK",
+      "bedeutung": "Startup-Idee aus Folge 62: Berliner Fernsehturm als passiver Stadtnavigator durch angeschrägte Scheibchen. 5/24 Punkte, im Verlaffelland 20/24.",
+      "folge": 62
+    },
+    {
       "begriff": "Two Angels",
       "bedeutung": "Warhol-Zeichnung, die 30.000 EUR gekostet hat und in einer 1000er-Auflage als Print verkauft wurde, mit dem Original irgendwo darin versteckt",
       "folge": 11
@@ -1306,6 +1316,11 @@
       "begriff": "Upgrade der Woche",
       "bedeutung": "Neue Rubrik: ein bestehendes Produkt/System verbessern statt etwas Neues erfinden",
       "folge": 34
+    },
+    {
+      "begriff": "VectorBoy",
+      "bedeutung": "Fynns echtes Webtool: konvertiert Bilder (PNG, JPG) zu Vektordaten (SVG). Kein Abo, Credits-Modell: 10€ = 100 Credits = 100 Bilder. Löst das Problem von Adobe Illustrators fehlerhafter Vektorisierung bei feinen Zeichnungen.",
+      "folge": 62
     },
     {
       "begriff": "Veneers",

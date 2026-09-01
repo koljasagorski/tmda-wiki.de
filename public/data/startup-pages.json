@@ -58,6 +58,7 @@
     {"folge":53,"ideeMatch":"Nordkorea bombardiert","slug":"mond-abschuss","domain":null,"tagline":"Der Mond klaut der Nordsee zweimal täglich das Wattenmeer. Zeit, dass er verschwindet — per Atomrakete, koordiniert vom Tourismusverband.","punkte":14},
     {"folge":54,"ideeMatch":"Glasturm","slug":"glasturm","domain":null,"tagline":"Ein Zimmer breit, einen Kilometer hoch, nur bodentiefe Fenster. Premium-Ausblick für Geschäftsleute.","punkte":null},
     {"folge":55,"ideeMatch":"Chip und Chap","slug":"chip-und-chap","domain":null,"tagline":"Per Xiaomi-Uhr gesteuert dreht dich das Bett im Schlaf durch den Raum — Albträume weggeruckelt, Seelen ausgewichen.","punkte":7},
-    {"folge":56,"ideeMatch":"Kiste von Gabba","slug":"kiste-von-gabba","domain":null,"tagline":"Eine Box mit Kokain-Nasendetektor — öffnet sich nur für Wissende. Harm Reduction für die Clubszene.","punkte":8}
+    {"folge":56,"ideeMatch":"Kiste von Gabba","slug":"kiste-von-gabba","domain":null,"tagline":"Eine Box mit Kokain-Nasendetektor — öffnet sich nur für Wissende. Harm Reduction für die Clubszene.","punkte":8},
+    {"folge":62,"ideeMatch":"Berliner Fernsehturm","slug":"turmblick","domain":null,"tagline":"Hochgucken statt Google Maps: Der Berliner Fernsehturm zeigt dir aus jeder Richtung deinen Bezirk.","punkte":5}
   ]
 }

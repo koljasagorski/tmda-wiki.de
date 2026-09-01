@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T08:20:44.039Z",
-  "count": 368,
+  "updatedAt": "2026-09-01T08:47:22.144Z",
+  "count": 377,
   "items": [
     {
       "ort": "Berlin",
@@ -2293,6 +2293,60 @@
       "ort": "USA (FIFA-Weltmeisterschaft-Finale, Rasenverkauf)",
       "folgen": [
         61
+      ]
+    },
+    {
+      "ort": "Berlin (Podcast-Ort, Dojo Agency in Kreuzberger Kirche, Fernsehturm Berlin Mitte)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Kreuzberg (Erweiterungsidee für Turmblick-Linsen, Dojo Agency)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Neukölln (11 km vom Fernsehturm entfernt — Beispiel für Sichtbarkeits-Problem der Startup-Idee)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "London / Buckingham Palace (geplante Reiseroute für Kniescheiben-Beschaffung bei Elton John)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "England (Elton John, Sir-Titel)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Königswusterhausen (Nassies Wohnort, nahe Tesla Giga Factory und BR)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Tesla Giga Factory Berlin (Landmark für Nissens Wohnort)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Hamburg Hauptbahnhof (Fynn fuhr versehentlich dorthin statt zum Podcast)",
+      "folgen": [
+        62
+      ]
+    },
+    {
+      "ort": "Talia (Berliner Buchhandlung mit Spieleabteilung, Sponsor)",
+      "folgen": [
+        62
       ]
     }
   ]
