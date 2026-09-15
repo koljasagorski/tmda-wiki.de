@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 59,
+  "updatedAt": "2026-09-15T06:11:48.651Z",
+  "count": 60,
   "items": [
+    {
+      "folge": 63,
+      "datum": null,
+      "idee": "Ich bin kein Fan von — Interessen-T-Shirt-Linie",
+      "beschreibung": "Gestartet als Idee für ein T-Shirt mit flexiblem E-Ink/Huawei-Display, das die Interessen des Trägers anzeigt und sich an das Gegenüber anpasst (Kamera an Kette liest den anderen, T-Shirt spiegelt dessen Stil). In der Praxis-Evolution: einfache, hochqualitative Print-Shirts mit dem Aufdruck 'Ich bin kein Fan von [X]' — wobei X kuratierte, polarisierende Begriffe sind (Bands, Personen, Konzepte). …",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Ich bin kein Fan von ist eine 20.' Hochste Wertung im laufenden Jahr. Hauptgrund: Das Colonel-Parker-Prinzip funktioniert — beide Seiten (Fans und Nicht-Fans) kaufen das Shirt. Die Idee ist unmittelbar umsetzbar, keine Technologieb…"
+    },
     {
       "folge": 62,
       "datum": null,

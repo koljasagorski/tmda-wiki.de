@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 377,
+  "updatedAt": "2026-09-15T06:11:48.651Z",
+  "count": 382,
   "items": [
     {
       "ort": "Berlin",
@@ -2347,6 +2347,36 @@
       "ort": "Talia (Berliner Buchhandlung mit Spieleabteilung, Sponsor)",
       "folgen": [
         62
+      ]
+    },
+    {
+      "ort": "Berlin / Kreuzberg (Podcast-Standort: Kirche in Kreuzberg, Klimasand)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Tötensen (Wohnort Dieter Bohlens, Nisse hat Verbindung über Onkel und Freund)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Padell Arena Berlin (Nisse ist hier Padel-Trainer)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Altschauerberg (Heimat Drachenlord)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Amerika (Colonel Parker / Elvis, Jake & Logan Paul)",
+      "folgen": [
+        63
       ]
     }
   ]

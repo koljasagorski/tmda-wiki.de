@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 280,
+  "updatedAt": "2026-09-15T06:11:48.651Z",
+  "count": 283,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -211,6 +211,11 @@
       "begriff": "Christoph Altmann",
       "bedeutung": "Wiederkehrende Figur, der 'Pizzamann' der in jeder Folge vorkommen soll",
       "folge": 5
+    },
+    {
+      "begriff": "Colonel-Parker-Prinzip",
+      "bedeutung": "Marketing-Strategie: Beide Seiten eines Themas monetarisieren. Benannt nach Elvis' Manager Tom Parker, der gleichzeitig 'I Love Elvis' und 'I Hate Elvis' Merchandise verkaufte. Im Kontext Folge 63: Basis für die 'Ich bin kein Fan von' Star…",
+      "folge": 63
     },
     {
       "begriff": "Conditions",
@@ -898,6 +903,11 @@
       "folge": 27
     },
     {
+      "begriff": "Padel (anarchistisch)",
+      "bedeutung": "Nisse's Vision von Padel ohne Regelzwang: kein Verband, keine offizielle Zertifizierung nötig, einfach spielen und Spaß haben. Klimasand-Prinzip angewandt auf Sport.",
+      "folge": 63
+    },
+    {
       "begriff": "Padel / Padell",
       "bedeutung": "Tennis-aehnliche Sportart mexikanischen Ursprungs. Fynn behauptet, die korrekte Aussprache sei 'Padell', nicht 'Paddle'.",
       "folge": 45
@@ -1016,6 +1026,11 @@
       "begriff": "Recoupment (recruped)",
       "bedeutung": "Musikindustrie-Begriff: Der nicht rueckzahlbare Vorschuss wird so lange gegen alle Musikeinnahmen gegengerechnet, bis er wieder eingespielt ist ('recruped') - erst danach verdient der Kuenstler einen echten Euro.",
       "folge": 53
+    },
+    {
+      "begriff": "Redoor / Dollar",
+      "bedeutung": "Diskutierte Eigenwährung für Redo's Hof oder das Klimasand. Wechselkurs: 1€ = 1$. Symbol-Kandidaten: $, Welle (Wave), 'oben'. 114$ als Einheit für komplexe Produkte (analog zum mathematischen i).",
+      "folge": 63
     },
     {
       "begriff": "RFs",

@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 106,
+  "updatedAt": "2026-09-15T06:11:48.651Z",
+  "count": 109,
   "items": [
+    {
+      "folge": 63,
+      "name": "Ich bin kein Fan von — T-Shirt-Linie",
+      "beschreibung": "Kuratierte Merch-Linie mit Shirts wie 'Ich bin kein Fan von [X]' und 'Ich bin Fan von [X]'. Kleines Dezent-Logo, hohe Qualität, schwarze Schrift auf weißem Shirt. Colonel-Parker-Prinzip: beide Seiten kaufen. Eigener Webshop, kein Spreadshirt."
+    },
+    {
+      "folge": 63,
+      "name": "Sympathie-Spiegel-Shirt (flexibles Display-T-Shirt)",
+      "beschreibung": "T-Shirt mit flexiblem Huawei-Display, das via kleiner Kamera (an Kette) die Interessen und den Stil des Gegenübers erkennt und anzeigt — dadurch wirkt man sofort sympathisch. Vorher-Version: Fühls-Ringe (Matchbox-artige Farb-Ring die Stimmung anzeigen)."
+    },
+    {
+      "folge": 63,
+      "name": "Redoor / Dollar — Eigenwährung für den Hof",
+      "beschreibung": "Eigene Währung für Redo's Hof oder das Klimasand: 1€ = 1 Dollar. Symbol-Diskussion: $, Welle, 'oben'. Eine 114$ würde für komplexe Produkte stehen (114 = komplexe Zahl i+1+4)."
+    },
     {
       "folge": 62,
       "name": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",
