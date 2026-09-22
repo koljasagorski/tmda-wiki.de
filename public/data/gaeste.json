@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 1106,
+  "updatedAt": "2026-09-15T06:21:43.236Z",
+  "count": 1112,
   "items": [
     {
       "name": "Donald Trump",
@@ -748,6 +748,15 @@
       ]
     },
     {
+      "name": "Jake Paul",
+      "folgen": [
+        26,
+        27,
+        36,
+        63
+      ]
+    },
+    {
       "name": "Paul McCartney",
       "folgen": [
         33,
@@ -1024,11 +1033,11 @@
       ]
     },
     {
-      "name": "Jake Paul",
+      "name": "Logan Paul",
       "folgen": [
         26,
-        27,
-        36
+        36,
+        63
       ]
     },
     {
@@ -1641,13 +1650,6 @@
       ]
     },
     {
-      "name": "Logan Paul",
-      "folgen": [
-        26,
-        36
-      ]
-    },
-    {
       "name": "Barbara Schoeneberger",
       "folgen": [
         27,
@@ -1701,6 +1703,13 @@
       "folgen": [
         32,
         36
+      ]
+    },
+    {
+      "name": "Toja Diebel",
+      "folgen": [
+        32,
+        63
       ]
     },
     {
@@ -1914,6 +1923,13 @@
       ]
     },
     {
+      "name": "Elvis Presley",
+      "folgen": [
+        47,
+        63
+      ]
+    },
+    {
       "name": "Jonathan Meese",
       "folgen": [
         47,
@@ -1974,6 +1990,13 @@
       "folgen": [
         52,
         53
+      ]
+    },
+    {
+      "name": "Dieter Bohlen",
+      "folgen": [
+        52,
+        63
       ]
     },
     {
@@ -4521,12 +4544,6 @@
       ]
     },
     {
-      "name": "Toja Diebel",
-      "folgen": [
-        32
-      ]
-    },
-    {
       "name": "Naomi / Ruben",
       "folgen": [
         32
@@ -6129,12 +6146,6 @@
       ]
     },
     {
-      "name": "Elvis Presley",
-      "folgen": [
-        47
-      ]
-    },
-    {
       "name": "Led Zeppelin",
       "folgen": [
         47
@@ -6562,12 +6573,6 @@
     },
     {
       "name": "Aaron Truschke",
-      "folgen": [
-        52
-      ]
-    },
-    {
-      "name": "Dieter Bohlen",
       "folgen": [
         52
       ]
@@ -7206,6 +7211,42 @@
       "name": "Frankie (KI-generierter Musiker, entpuppt sich vollständig als KI)",
       "folgen": [
         60
+      ]
+    },
+    {
+      "name": "Redo",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Drachenlord",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Colonel Tom Parker",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Prinz von Anhalt",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Robert Geiss",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Mauri Andrini",
+      "folgen": [
+        63
       ]
     }
   ]
