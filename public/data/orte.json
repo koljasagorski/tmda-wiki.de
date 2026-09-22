@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 377,
+  "updatedAt": "2026-09-22T06:27:51.017Z",
+  "count": 386,
   "items": [
     {
       "ort": "Berlin",
@@ -223,6 +223,13 @@
       "folgen": [
         48,
         49
+      ]
+    },
+    {
+      "ort": "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
+      "folgen": [
+        63,
+        64
       ]
     },
     {
@@ -2347,6 +2354,54 @@
       "ort": "Talia (Berliner Buchhandlung mit Spieleabteilung, Sponsor)",
       "folgen": [
         62
+      ]
+    },
+    {
+      "ort": "Kliemannsland (Fynns Eventgelände, neues Motto 'This is not a Behörde' am Eingang)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Padell Arena Berlin (Größter Padel-Club Berlins — Nisse Head Coach)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "oderso.cool (Plattform für den 'Ich bin kein Fan von'-Shirt-Launch)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Süddeutschland (Nisses Herkunftsort, Baumschule neben Dieter Bohlens Grundstück)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Reeperbahn Festival Hamburg (Nisse bei KI-und-Musik-Panel am 17.09.)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "Berlin Nova Studio (ESC Writing Camp, 8 Räume, internationale Songwriter)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "Kliemannsland (Fynns Eventgelände, Standort der geplanten Roboter-Olympiade)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "oderso.cool (Plattform, auf der die 'Ich bin kein Fan von' Shirts live sind)",
+      "folgen": [
+        64
       ]
     }
   ]

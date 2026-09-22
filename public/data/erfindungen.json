@@ -1,7 +1,42 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 106,
+  "updatedAt": "2026-09-22T06:27:51.017Z",
+  "count": 113,
   "items": [
+    {
+      "folge": 64,
+      "name": "'Cooler' Decke (Eiskonfekt-Prinzip)",
+      "beschreibung": "Bettdecke aus einem Material mit extrem hoher Molekular-Oberfläche (wie Eiskonfekt): leitet Körperwärme schnell ab und fühlt sich immer kühl an — wie Fliesen vs. Teppich. Kein Strom, keine Pumpe, kein Kabel. Name: 'Cooler' (mit vielen O's). Im Winter umkehrbar als Wärmedecke."
+    },
+    {
+      "folge": 64,
+      "name": "KI-Musik mit 3 Ankerpunkten",
+      "beschreibung": "Feature-Idee für Suno & Co: Statt generischer Prompts gibt man drei spezifische Welten als Ankerpunkte ein (z.B. 'Stammestrommeln + Bach + Eminem-Battle-Beat'), und die KI kombiniert daraus einen überraschenden, neuen Sound. Gesprächspartner gibt eigene Kindheitserinnerungen (TKKG, Bibi Blocksberg,…"
+    },
+    {
+      "folge": 64,
+      "name": "Roboter-Olympiade Kliemannsland (Showcase)",
+      "beschreibung": "Echte Kampf- und Showcase-Roboter (terraähnlich, ~80.000€) treten gegeneinander an: Padel spielen, Schaukelfetzen, Kinder piercen (Bazooka disabled ab 18 Uhr). Ziel: Besuchermagnet, Angst vor Robotern abbauen, günstige Arbeitskräfte für Zukunft testen. Microsoft als potenzieller Sponsor angedacht."
+    },
+    {
+      "folge": 64,
+      "name": "TMDA bei Hochzeiten",
+      "beschreibung": "10–15 Minuten Podcast-Schnelldurchlauf bei Hochzeiten: Insider-Infos über Brautpaar eingesammelt (z.B. Torsten glaubt nicht an die Atmosphäre der Erde), Verschwörungstheorien-Format, Random Fun Facts über Bräutigam, Roboterhund bringt den Ring. Preis: 5.000€. Nisse: absolutes No-Go für ihn; Fynn si…"
+    },
+    {
+      "folge": 63,
+      "name": "LED-T-Shirt mit Personenscan",
+      "beschreibung": "Ein flexibles LED-Display-Shirt kombiniert mit einer kleinen Kamera, die das Gegenüber scannt, dessen Aussehen und Interessen erkennt und auf dem eigenen Shirt widerspiegelt. Vorläufer-Konzept: Man ist dem Gegenüber sofort sympathisch, weil man spiegelbildlich gleich aussieht. Mood-Variante: Das Ge…"
+    },
+    {
+      "folge": 63,
+      "name": "'Ich bin kein Fan von...' Anti-Fan-Shirts",
+      "beschreibung": "Schlicht bedruckte T-Shirts mit 'Ich bin kein Fan von [XYZ]' — beliebig wählbar. Von SDP über Jesus bis Friedrich Merz und TMDA selbst. Positivvariante 'Ich bin Fan von...' ebenfalls möglich. Launch auf oderso.cool. Entstanden aus der Colonel-Tom-Parker-Anekdote: Man verdient an beiden Seiten der M…"
+    },
+    {
+      "folge": 63,
+      "name": "Kliemannsland-Währung (Doller / Wave)",
+      "beschreibung": "Internes Währungskonzept für Kliemannsland, angelehnt an Redos 'Redoor'. Brainstorming über Namen: 'Dollar' (klarer Bezug), 'Doller' (phonetische Steigerung), 'Wave' (Metapher für KI-Revolution, die nicht mehr aufzuhalten ist). Ikonvorschlag: Wellenzeichen."
+    },
     {
       "folge": 62,
       "name": "TURMBLICK — Berliner Fernsehturm als Stadtnavigator",

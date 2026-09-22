@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 280,
+  "updatedAt": "2026-09-22T06:27:51.017Z",
+  "count": 286,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -56,6 +56,11 @@
       "begriff": "Amortisieren",
       "bedeutung": "Wenn die Investition wieder eingespielt ist und der erste Euro in die Tasche geht",
       "folge": 38
+    },
+    {
+      "begriff": "Anti-Fan-Shirt",
+      "bedeutung": "T-Shirt mit dem Aufdruck 'Ich bin kein Fan von [XYZ]' — Konzept aus Folge 63, inspiriert von Colonel Tom Parker. Gestartet auf oderso.cool/shirts. In Folge 64 offiziell mit 17/24 bewertet.",
+      "folge": 63
     },
     {
       "begriff": "AOK-Biegung",
@@ -213,6 +218,11 @@
       "folge": 5
     },
     {
+      "begriff": "Colonel Tom Parker Prinzip",
+      "bedeutung": "Marketing-Strategie: Beide Seiten einer Meinungsspaltung bedienen. Elvis' Manager verkaufte simultaan 'I Love Elvis' und 'I Hate Elvis' Buttons — Vorbild für das 'Ich bin kein Fan von...'-Shirt-Konzept aus Folge 63.",
+      "folge": 63
+    },
+    {
       "begriff": "Conditions",
       "bedeutung": "Synthesizer-Plugin, das den Klang nach dem echten Wetter eines eingegebenen Ortes formt (Temperatur, Wind, Bewoelkung) - 'macht glattes Haar und geile Sounds'.",
       "folge": 51
@@ -221,6 +231,11 @@
       "begriff": "Contergan",
       "bedeutung": "Medikament, das Geburtsschaeden verursacht hat ('Contergan-Kinder')",
       "folge": 35
+    },
+    {
+      "begriff": "Cooler",
+      "bedeutung": "Startup aus Folge 64: Bettdecke nach Eiskonfekt-Prinzip — kühlt sich durch hohe Molekular-Oberfläche selbst, kein Strom, kein Kabel. Name mit mehreren O's (Cool / Cooool).",
+      "folge": 64
     },
     {
       "begriff": "Corty Soul",
@@ -326,6 +341,11 @@
       "begriff": "Eckenkucker",
       "bedeutung": "Ein starker nordischer Kuemmelschnaps, von dem man schielt (Eigenkreation von Finn und Nisse)",
       "folge": 29
+    },
+    {
+      "begriff": "Eiskonfekt-Prinzip",
+      "bedeutung": "Physikalisches Phänomen: Ein Material mit extrem hoher molekularer Oberfläche leitet Wärme schneller ab, sodass es sich kühler anfühlt als es ist — analog zu Fliesen vs. Teppich oder Eiskonfekt vs. normale Schokolade. Basis der 'Cooler'-De…",
+      "folge": 64
     },
     {
       "begriff": "Enhanced Games",
@@ -1038,6 +1058,11 @@
       "folge": 51
     },
     {
+      "begriff": "Roboter-Olympiade",
+      "bedeutung": "Kliemannsland-Konzept aus Folge 64: Echte Showcaseroboter treten gegeneinander und mit Menschen an. Inspiriert von chinesischen Robot Games. Ziel: Angst vor Robotern abbauen, Vergnügungspark-Attraktion. Titelgebend: 'Bazooka-Roboter pierce…",
+      "folge": 64
+    },
+    {
       "begriff": "Rotten.com / World Star Hip Hop",
       "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor).",
       "folge": 47
@@ -1221,6 +1246,11 @@
       "begriff": "The 500",
       "bedeutung": "Finns Fitness-Programm mit 500 Kettlebell-Bewegungen pro Tag",
       "folge": 39
+    },
+    {
+      "begriff": "This is not a Behörde",
+      "bedeutung": "Kliemannsland-Motto, geprägt von Jara: Keine Bürokratie, keine Formulare, keine Kästchen — alles ist möglich, jetzt und sofort. 8 Meter breiter Schriftzug am Eingang. Manifestiert das Kliemannsland-Prinzip.",
+      "folge": 63
     },
     {
       "begriff": "Tinklies",

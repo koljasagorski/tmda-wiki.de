@@ -1,0 +1,102 @@
+{
+  "folge": 63,
+  "titel": "Ich bin kein Fan von TMDA",
+  "laufzeit": "1:06:28",
+  "datum": "2026-09-08",
+  "themen": [
+    "Redo und Drachenlord: Lamborghini (600K + 200K Lackkosten) als Unternehmer-Parabel — Drachenlord hätte aus seinem Hate-Hype Geld machen können",
+    "Colonel Tom Parker (Elvis' Manager): verkaufte parallel 'I Love Elvis' und 'I Hate Elvis' Buttons — erstes großes Anti-Fan-Marketing der Popgeschichte",
+    "Jake Paul und Logan Paul: Hass/Liebe-Marketing-Strategie als modernes Äquivalent",
+    "Saxophon-Klappen-Erfindung: Freund von Nisses Bekanntschaft erfand das hohe-C-Ventil, konnte Patent nicht halten — Yamaha übernahm es",
+    "Dieter Bohlen als Nachbar in Nisses Heimatort (Baumschule dazwischen), Tonsatz-Anekdote aus Musikerkreisen",
+    "Kliemannsland-Währungsbrainstorm: Dollar, Doller, Wave — ähnlich wie Redo seinen 'Redoor' eingeführt hat",
+    "Pierre Calvini: Fynns Unterwäschemarke als Knockoff von Calvin Klein und Bruno Banani",
+    "Spinal Tap Filmempfehlung: 'Mine goes to Eleven', Stonehenge zu klein gebaut",
+    "LED-T-Shirt-Konzept: Kamera scannt Gegenüber, Shirt spiegelt deren Stil und Interessen wider — evoluiert zu Startup",
+    "STARTUP: 'Ich bin kein Fan von...' Anti-Fan-Shirts — gestartet auf oderso.cool",
+    "'This is not a Behörde': Kliemannsland-Motto von Jara, 8 Meter breit am Eingang",
+    "DIY WHY Vorträge: Kreatives Denken als Training für das KI-Zeitalter, TMDA als Übungsfeld",
+    "Nisse vs. Deutschen Padel-Verband: Trainerschein abgelehnt, obwohl Referenztrainer Mauri Andrini dieselbe Technik zeigt",
+    "Nisse als Head Coach bei Padell Arena Berlin — kein offizieller Schein, anarchistischer Ansatz"
+  ],
+  "kurzbeschreibung": "Die Folge startet mit Redo und seiner 800.000€-Lamborghini-Geschichte: Drachenlord hätte aus seinem Hate-Hype Geld machen können — wie Colonel Tom Parker, Elvis' Manager, der parallel 'I Love Elvis' und 'I Hate Elvis' Buttons verkaufte und an beiden Seiten verdiente. Das ist der Zündfunke für das Startup: Aus dem LED-T-Shirt-Konzept (Shirt scannt Gegenüber, spiegelt dessen Stil) wird schnell eine einfachere Idee: 'Ich bin kein Fan von...' Shirts auf gutem Schnitt, Siebdruck, oderso.cool als Plattform. Die Designs sind endlos: 'von SDP', 'von Jesus', 'von Friedrich Merz', 'von TMDA'. Nisse gibt 20/24. Zwischendurch: Kliemannsland bekommt ein Motto — 'This is not a Behörde', von Fynns Freundin Jara geprägt, riesengroß am Eingang. Nisse kämpft mit dem Deutschen Padel-Verband, der seinen Trainerschein ablehnte, obwohl sein eigener Referenztrainer Mauri Andrini genau die gleichen Bewegungen macht. Nisse ist trotzdem Head Coach bei der Padell Arena Berlin. Fun Facts zum Schluss: Ein Australier wurde 2006 verhaftet, weil er ein 'Ich bin kein Fan von Neuseeland'-Shirt auf eBay verkaufte. Das Quaken von Enten erzeugt tatsächlich ein Echo.",
+  "startup_idee": {
+    "idee": "'Ich bin kein Fan von...' Anti-Fan-Shirts",
+    "beschreibung": "Schlicht gedruckte T-Shirts in guter Qualität mit dem einzigen Aufdruck: 'Ich bin kein Fan von [XYZ]'. Kein Logo außer dem kleinen TMDA-Label. Inspiriert von Colonel Tom Parkers Marketing-Genie — er verkaufte für Elvis gleichzeitig 'I Love Elvis' und 'I Hate Elvis' Buttons. Das Sortiment ist endlos: 'von SDP', 'von Friedrich Merz', 'von TMDA', 'von Jesus', 'von Neuseeland'. Positivvariante 'Ich bin Fan von...' ebenfalls erhältlich. Auch Personalisierung mit Gesicht oder Schriftzug möglich. Plattform: oderso.cool/shirts. Schwarz auf Weiß, Siebdruck, keine überhöhten Merch-Preise.",
+    "begruendung": "Nisse: 'Bin kein Fan von ist eine 20.' Das Konzept funktioniert ohne Strom, ohne App, ohne komplexe Lieferkette. Die Inspiration von Colonel Tom Parker ist wasserdicht: Beide Seiten kaufen, weil jeder irgendwo eine Haltung hat. Die Shirts sind Gesprächsstarter und Identitätsmarker. Fynn will als Erstes ein 'Ich bin kein Fan von TMDA'-Shirt — das Antiheld-Merch ist die stärkste Werbung.",
+    "punkte": 20,
+    "max_punkte": 24
+  },
+  "kalles_corner": null,
+  "geruecht_der_woche": null,
+  "fun_facts": [
+    "2006 wurde ein Australier verhaftet, weil er auf eBay ein Shirt mit dem Aufdruck 'Ich bin kein Fan von Neuseeland' angeboten hatte. Das Gebot stand bereits bei mehreren Tausend Dollar, bevor eBay die Auktion löschte.",
+    "Das Quaken von Enten erzeugt tatsächlich ein Echo — der weit verbreitete Mythos, Entenquaken erzeuge kein Echo, wurde von Wissenschaftlern widerlegt.",
+    "Das erste tragbare Feuerzeug wurde erfunden, bevor Streichhölzer existierten — Streichhölzer benötigten eine spezifische chemische Reibungsmasse, deren Entwicklung länger dauerte."
+  ],
+  "erfindungen": [
+    {
+      "name": "LED-T-Shirt mit Personenscan",
+      "beschreibung": "Ein flexibles LED-Display-Shirt kombiniert mit einer kleinen Kamera, die das Gegenüber scannt, dessen Aussehen und Interessen erkennt und auf dem eigenen Shirt widerspiegelt. Vorläufer-Konzept: Man ist dem Gegenüber sofort sympathisch, weil man spiegelbildlich gleich aussieht. Mood-Variante: Das Gesicht des Gegenübers beeinflusst das Shirt-Design in Echtzeit."
+    },
+    {
+      "name": "'Ich bin kein Fan von...' Anti-Fan-Shirts",
+      "beschreibung": "Schlicht bedruckte T-Shirts mit 'Ich bin kein Fan von [XYZ]' — beliebig wählbar. Von SDP über Jesus bis Friedrich Merz und TMDA selbst. Positivvariante 'Ich bin Fan von...' ebenfalls möglich. Launch auf oderso.cool. Entstanden aus der Colonel-Tom-Parker-Anekdote: Man verdient an beiden Seiten der Meinungsscheide."
+    },
+    {
+      "name": "Kliemannsland-Währung (Doller / Wave)",
+      "beschreibung": "Internes Währungskonzept für Kliemannsland, angelehnt an Redos 'Redoor'. Brainstorming über Namen: 'Dollar' (klarer Bezug), 'Doller' (phonetische Steigerung), 'Wave' (Metapher für KI-Revolution, die nicht mehr aufzuhalten ist). Ikonvorschlag: Wellenzeichen."
+    }
+  ],
+  "zitate": [
+    {
+      "text": "Bin kein Fan von ist eine 20.",
+      "kontext": "Nisse bewertet die 'Ich bin kein Fan von...'-Shirt-Idee mit 20 von 24 Punkten."
+    },
+    {
+      "text": "This is not a Behörde.",
+      "kontext": "Kliemannsland-Motto von Fynns Freundin Jara, 8 Meter breit am Eingang. Bedeutet: keine Bürokratie, keine Kästchen, alles kann sofort passieren."
+    },
+    {
+      "text": "Das ist das erste große Marketing der Popmusikgeschichte gewesen.",
+      "kontext": "Fynn über Colonel Tom Parker, Elvis' Manager, der gleichzeitig 'I Love Elvis' und 'I Hate Elvis' Buttons verkaufte."
+    },
+    {
+      "text": "Ich darf trainieren. Und da kann mich auch niemand von aufhalten. Das machen wir auf anarchistische Art.",
+      "kontext": "Nisse über sein Padel-Coaching ohne offiziellen Trainerschein — trotz der absurden Ablehnung durch den deutschen Padel-Verband."
+    }
+  ],
+  "personen": [
+    "Redo (YouTuber, Lamborghini 600K + 200K Lackkosten, Unternehmer-Persönlichkeit als Diskussionsaufhänger)",
+    "Drachenlord (YouTuber, verpasste Vermarktungschance des Hate-Hypes)",
+    "Colonel Tom Parker (Elvis' Manager, Pionier des Anti-Fan-Marketings, erhielt 50% aller Elvis-Einnahmen)",
+    "Elvis Presley (Popikone, vermarktet von Colonel Tom Parker — 'I Love/Hate Elvis' Buttons)",
+    "Jake Paul und Logan Paul (Hass-/Liebes-Marketing-Strategen; Jake verkauft Fights mit Feinden gewinnbringend)",
+    "Dieter Bohlen (Kindheitsnachbar Nisses, Baumschule-Anekdote, Saxophon-Tonsatz-Geschichte)",
+    "Pierre Calvini (Fynns Unterwäschemarke: Knockoff von Calvin Klein + Bruno Banani)",
+    "Jara (Fynns Freundin, erfand das Kliemannsland-Motto 'This is not a Behörde')",
+    "Robert Dahl (Karls Erdbeerhof-Gründer, Besuch bei Kliemannsland, 'Ei einpacken'-Geschichte über Servicementali­tät)",
+    "Mauri Andrini (argentinischer Padel-Top-Trainer — Referenztrainer des deutschen Verbands, macht dieselben Bewegungen wie Nisse)"
+  ],
+  "orte": [
+    "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
+    "Kliemannsland (Fynns Eventgelände, neues Motto 'This is not a Behörde' am Eingang)",
+    "Padell Arena Berlin (Größter Padel-Club Berlins — Nisse Head Coach)",
+    "oderso.cool (Plattform für den 'Ich bin kein Fan von'-Shirt-Launch)",
+    "Süddeutschland (Nisses Herkunftsort, Baumschule neben Dieter Bohlens Grundstück)"
+  ],
+  "glossar": [
+    {
+      "begriff": "Colonel Tom Parker Prinzip",
+      "bedeutung": "Marketing-Strategie: Beide Seiten einer Meinungsspaltung bedienen. Elvis' Manager verkaufte simultaan 'I Love Elvis' und 'I Hate Elvis' Buttons — Vorbild für das 'Ich bin kein Fan von...'-Shirt-Konzept aus Folge 63."
+    },
+    {
+      "begriff": "Anti-Fan-Shirt",
+      "bedeutung": "T-Shirt mit dem Aufdruck 'Ich bin kein Fan von [XYZ]' — Konzept aus Folge 63, inspiriert von Colonel Tom Parker. Gestartet auf oderso.cool/shirts. In Folge 64 offiziell mit 17/24 bewertet."
+    },
+    {
+      "begriff": "This is not a Behörde",
+      "bedeutung": "Kliemannsland-Motto, geprägt von Jara: Keine Bürokratie, keine Formulare, keine Kästchen — alles ist möglich, jetzt und sofort. 8 Meter breiter Schriftzug am Eingang. Manifestiert das Kliemannsland-Prinzip."
+    }
+  ]
+}

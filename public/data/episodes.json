@@ -1,7 +1,54 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 60,
+  "updatedAt": "2026-09-22T06:27:51.017Z",
+  "count": 62,
   "items": [
+    {
+      "folge": 64,
+      "titel": "Bazooka-Roboter piercen jetzt Kinder!",
+      "datum": "2026-09-15",
+      "laufzeit": "1:15:58",
+      "themen": [
+        "Erste Webcam der Welt (Cambridge 1993): nur installiert, um zu sehen ob die Kaffeemaschine noch voll ist",
+        "Facebook/Meta $17B US-Settlement: Instagram für Unter-18 auf 2h/Tag begrenzt, kein Endless Scroll, ab Mitternacht gesperrt",
+        "TikTok-Sprach-Challenge: angeblich von einer Teafirma initiiert, um KI mit emotionalen Sprachdaten zu trainieren",
+        "Palantir KI-Targeting (ARD Podcast 'Palantir'): Zielpersonen-Scores sinken von 99% auf 60% — dadurch steigt die Zahl der Drohnenangriffe",
+        "Nisse beim Reeperbahn Festival Panel 'KI und Musik' (17.09.)",
+        "ESC Writing Camp Berlin mit Produzent Pele (zweifacher ESC-Sieger) — Nisse schrieb Songs auf Deutsch und Englisch für mehrere Länder",
+        "Sarah Engels Wette: Nisse verlor Wette über ESC-Platzierung, musste für 100€ bei Sarah Engels Merch-Shop einkaufen — trägt 'Sarah Powerfrau' Shirt",
+        "KI-Musik Feature-Idee: drei statt generischen Prompts (z.B. Stammestrommeln + Bach + Eminem-Battle-Beat) für unerwarteten, neuen Sound",
+        "'Ich bin kein Fan von' Shirts bereits auf oderso.cool gelauncht — Nisse bewertet 17/24 rückwirkend",
+        "Roboter-Olympiade für Kliemannsland: Chinesische Roboter-Games als Vorbild, Showcase von Kampfrobotern — 'Bazooka-Roboter piercen Kinder' als Highlight-Idee",
+        "TMDA bei Hochzeiten: 10–15 Min Schnelldurchlauf für 5.000€, Roboterhund bringt Ring, Insider-Wissen über Brautpaar",
+        "Nils Geschichte: vermeintliche Zwillingsbruder-Story enthüllt, dass sein Onkel wahrscheinlich auch sein Vater ist",
+        "STARTUP: 'Cooler' — temperaturregulierte Decke nach Eiskonfekt-Prinzip, kein Strom nötig",
+        "TMDA Mitgliedschaftsmodell: 6€/Monat für 5. Folge, werbefrei und 1 Tag früher Zugang",
+        "Katja Krasavice 30. Geburtstag: 500 Promigäste, nur 173€ Spendenerlös via QR-Code"
+      ],
+      "kurzbeschreibung": "Die Folge startet mit dem Facebook-$17B-Settlement (Instagram für Unter-18 auf 2h/Tag begrenzt) und dem Palantir-KI-Targeting-ARD-Podcast. Nisse enthüllt: Er war im Geheimen beim ESC Writing Camp Berlin — mit Produzent Pele (zweifacher ESC-Sieger), Songs auf Deutsch und Englisch für mehrere Länder geschrieben. Sein Sarah-Engels-Shirt trägt er wegen einer verlorenen ESC-Wette. Zwischendurch: Die 'Ich bin kein Fan von' Shirts sind bereits auf oderso.cool live — Nisse gibt offiziell 17/24. Hauptthema: Roboter-Olympiade für Kliemannsland, inspiriert von Chinas Roboter-Games. Was sollen Roboter können? Kämpfen, Padel spielen, Kinder piercen mit Bazooka — daher der Episodentitel. Das Startup der Woche: die 'Cooler'-Decke. Problem: Decken wärmen sich durch Körperwärme auf. Lösung nach Eiskonfekt-Prinzip: eine Molekularstruktur mit extrem hoher Oberfläche leitet Wärme schneller ab, sodass es sich immer kühl anfühlt — ohne Strom, ohne Pumpe, kein Kabel. Name: 'Cooler'. Nisse: 'Vielen Dank für diese wundervolle Startup-Idee.' Kein expliziter Punktestand. Zum Schluss: TMDA-Membership 6€/Monat und Katja Krasavices Geburtstagsfeier mit 500 Promis und nur 173€ Spendenerlös."
+    },
+    {
+      "folge": 63,
+      "titel": "Ich bin kein Fan von TMDA",
+      "datum": "2026-09-08",
+      "laufzeit": "1:06:28",
+      "themen": [
+        "Redo und Drachenlord: Lamborghini (600K + 200K Lackkosten) als Unternehmer-Parabel — Drachenlord hätte aus seinem Hate-Hype Geld machen können",
+        "Colonel Tom Parker (Elvis' Manager): verkaufte parallel 'I Love Elvis' und 'I Hate Elvis' Buttons — erstes großes Anti-Fan-Marketing der Popgeschichte",
+        "Jake Paul und Logan Paul: Hass/Liebe-Marketing-Strategie als modernes Äquivalent",
+        "Saxophon-Klappen-Erfindung: Freund von Nisses Bekanntschaft erfand das hohe-C-Ventil, konnte Patent nicht halten — Yamaha übernahm es",
+        "Dieter Bohlen als Nachbar in Nisses Heimatort (Baumschule dazwischen), Tonsatz-Anekdote aus Musikerkreisen",
+        "Kliemannsland-Währungsbrainstorm: Dollar, Doller, Wave — ähnlich wie Redo seinen 'Redoor' eingeführt hat",
+        "Pierre Calvini: Fynns Unterwäschemarke als Knockoff von Calvin Klein und Bruno Banani",
+        "Spinal Tap Filmempfehlung: 'Mine goes to Eleven', Stonehenge zu klein gebaut",
+        "LED-T-Shirt-Konzept: Kamera scannt Gegenüber, Shirt spiegelt deren Stil und Interessen wider — evoluiert zu Startup",
+        "STARTUP: 'Ich bin kein Fan von...' Anti-Fan-Shirts — gestartet auf oderso.cool",
+        "'This is not a Behörde': Kliemannsland-Motto von Jara, 8 Meter breit am Eingang",
+        "DIY WHY Vorträge: Kreatives Denken als Training für das KI-Zeitalter, TMDA als Übungsfeld",
+        "Nisse vs. Deutschen Padel-Verband: Trainerschein abgelehnt, obwohl Referenztrainer Mauri Andrini dieselbe Technik zeigt",
+        "Nisse als Head Coach bei Padell Arena Berlin — kein offizieller Schein, anarchistischer Ansatz"
+      ],
+      "kurzbeschreibung": "Die Folge startet mit Redo und seiner 800.000€-Lamborghini-Geschichte: Drachenlord hätte aus seinem Hate-Hype Geld machen können — wie Colonel Tom Parker, Elvis' Manager, der parallel 'I Love Elvis' und 'I Hate Elvis' Buttons verkaufte und an beiden Seiten verdiente. Das ist der Zündfunke für das Startup: Aus dem LED-T-Shirt-Konzept (Shirt scannt Gegenüber, spiegelt dessen Stil) wird schnell eine einfachere Idee: 'Ich bin kein Fan von...' Shirts auf gutem Schnitt, Siebdruck, oderso.cool als Plattform. Die Designs sind endlos: 'von SDP', 'von Jesus', 'von Friedrich Merz', 'von TMDA'. Nisse gibt 20/24. Zwischendurch: Kliemannsland bekommt ein Motto — 'This is not a Behörde', von Fynns Freundin Jara geprägt, riesengroß am Eingang. Nisse kämpft mit dem Deutschen Padel-Verband, der seinen Trainerschein ablehnte, obwohl sein eigener Referenztrainer Mauri Andrini genau die gleichen Bewegungen macht. Nisse ist trotzdem Head Coach bei der Padell Arena Berlin. Fun Facts zum Schluss: Ein Australier wurde 2006 verhaftet, weil er ein 'Ich bin kein Fan von Neuseeland'-Shirt auf eBay verkaufte. Das Quaken von Enten erzeugt tatsächlich ein Echo."
+    },
     {
       "folge": 62,
       "titel": "Ich will: Elton Johns Kniescheiben u. Vinyl aus meiner Asche",

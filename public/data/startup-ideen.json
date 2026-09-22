@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-01T08:47:22.144Z",
-  "count": 59,
+  "updatedAt": "2026-09-22T06:27:51.017Z",
+  "count": 61,
   "items": [
+    {
+      "folge": 64,
+      "datum": "2026-09-15",
+      "idee": "'Cooler' — temperaturregulierte Decke nach Eiskonfekt-Prinzip",
+      "beschreibung": "Problem: Bettdecken wärmen sich durch Körperwärme auf und bleiben nie kalt. Fynns Lösung: Eine Decke aus einem Material, das wie Eiskonfekt funktioniert. Das Eiskonfekt-Prinzip: Eiskonfekt (die Schokolade) schmilzt nicht im Mund, weil die molekulare Struktur mit extrem hoher Oberfläche Wärme von der Zunge schneller ableitet als sie sich aufbauen kann — wie Fliesen, die sich kälter anfühlen als ei…",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Ich verstehe, woher du kommst. Du hast mich mal wieder ans Ziel geführt.' Sowie: 'Ey, vielen Dank für diese wundervolle Startup-Idee.' Kein expliziter Punktestand nach dem Eiskonfekt-Refinement. Die Pumpenversion (mit Kabelanschlus…"
+    },
+    {
+      "folge": 63,
+      "datum": "2026-09-08",
+      "idee": "'Ich bin kein Fan von...' Anti-Fan-Shirts",
+      "beschreibung": "Schlicht gedruckte T-Shirts in guter Qualität mit dem einzigen Aufdruck: 'Ich bin kein Fan von [XYZ]'. Kein Logo außer dem kleinen TMDA-Label. Inspiriert von Colonel Tom Parkers Marketing-Genie — er verkaufte für Elvis gleichzeitig 'I Love Elvis' und 'I Hate Elvis' Buttons. Das Sortiment ist endlos: 'von SDP', 'von Friedrich Merz', 'von TMDA', 'von Jesus', 'von Neuseeland'. Positivvariante 'Ich b…",
+      "punkte": 20,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Bin kein Fan von ist eine 20.' Das Konzept funktioniert ohne Strom, ohne App, ohne komplexe Lieferkette. Die Inspiration von Colonel Tom Parker ist wasserdicht: Beide Seiten kaufen, weil jeder irgendwo eine Haltung hat. Die Shirts …"
+    },
     {
       "folge": 62,
       "datum": null,

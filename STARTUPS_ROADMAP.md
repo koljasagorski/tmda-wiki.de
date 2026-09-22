@@ -19,9 +19,17 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 62/62 LIVE ✅
+## Status — 64/64 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-62 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-64 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+
+### 20/24 (neue Folgen)
+
+- [x] **Ich bin kein Fan von...** · Folge 63 · 20/24 · Punk-Fanzine / Xerox Cut-and-Paste (Anton + Space Mono, Schwarz/Weiß/Rot, Rotations-Animation, Siebdruck-T-Shirt-SVG)
+
+### unbewertet (neue Folgen)
+
+- [x] **COOOLER — die Eiskonfekt-Decke** · Folge 64 · unbewertet · Premium Bedding × Molecular Science (Comfortaa + DM Mono, Eisblau/Minze/Schokolade, Hex-Muster-SVG, Dark-Mode)
 
 ### 5/24
 
