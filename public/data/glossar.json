@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T06:37:57.121Z",
+  "updatedAt": "2026-09-22T08:21:12.864Z",
   "count": 286,
   "items": [
     {
@@ -56,11 +56,6 @@
       "begriff": "Amortisieren",
       "bedeutung": "Wenn die Investition wieder eingespielt ist und der erste Euro in die Tasche geht",
       "folge": 38
-    },
-    {
-      "begriff": "Anti-Fan-Shirt",
-      "bedeutung": "T-Shirt mit dem Aufdruck 'Ich bin kein Fan von [XYZ]' — Konzept aus Folge 63, inspiriert von Colonel Tom Parker. Gestartet auf oderso.cool/shirts. In Folge 64 offiziell mit 17/24 bewertet.",
-      "folge": 63
     },
     {
       "begriff": "AOK-Biegung",
@@ -218,8 +213,8 @@
       "folge": 5
     },
     {
-      "begriff": "Colonel Tom Parker Prinzip",
-      "bedeutung": "Marketing-Strategie: Beide Seiten einer Meinungsspaltung bedienen. Elvis' Manager verkaufte simultaan 'I Love Elvis' und 'I Hate Elvis' Buttons — Vorbild für das 'Ich bin kein Fan von...'-Shirt-Konzept aus Folge 63.",
+      "begriff": "Colonel-Parker-Prinzip",
+      "bedeutung": "Marketing-Strategie: Beide Seiten eines Themas monetarisieren. Benannt nach Elvis' Manager Tom Parker, der gleichzeitig 'I Love Elvis' und 'I Hate Elvis' Merchandise verkaufte. Im Kontext Folge 63: Basis für die 'Ich bin kein Fan von' Star…",
       "folge": 63
     },
     {
@@ -918,6 +913,11 @@
       "folge": 27
     },
     {
+      "begriff": "Padel (anarchistisch)",
+      "bedeutung": "Nisse's Vision von Padel ohne Regelzwang: kein Verband, keine offizielle Zertifizierung nötig, einfach spielen und Spaß haben. Klimasand-Prinzip angewandt auf Sport.",
+      "folge": 63
+    },
+    {
       "begriff": "Padel / Padell",
       "bedeutung": "Tennis-aehnliche Sportart mexikanischen Ursprungs. Fynn behauptet, die korrekte Aussprache sei 'Padell', nicht 'Paddle'.",
       "folge": 45
@@ -1036,6 +1036,11 @@
       "begriff": "Recoupment (recruped)",
       "bedeutung": "Musikindustrie-Begriff: Der nicht rueckzahlbare Vorschuss wird so lange gegen alle Musikeinnahmen gegengerechnet, bis er wieder eingespielt ist ('recruped') - erst danach verdient der Kuenstler einen echten Euro.",
       "folge": 53
+    },
+    {
+      "begriff": "Redoor / Dollar",
+      "bedeutung": "Diskutierte Eigenwährung für Redo's Hof oder das Klimasand. Wechselkurs: 1€ = 1$. Symbol-Kandidaten: $, Welle (Wave), 'oben'. 114$ als Einheit für komplexe Produkte (analog zum mathematischen i).",
+      "folge": 63
     },
     {
       "begriff": "RFs",
@@ -1246,11 +1251,6 @@
       "begriff": "The 500",
       "bedeutung": "Finns Fitness-Programm mit 500 Kettlebell-Bewegungen pro Tag",
       "folge": 39
-    },
-    {
-      "begriff": "This is not a Behörde",
-      "bedeutung": "Kliemannsland-Motto, geprägt von Jara: Keine Bürokratie, keine Formulare, keine Kästchen — alles ist möglich, jetzt und sofort. 8 Meter breiter Schriftzug am Eingang. Manifestiert das Kliemannsland-Prinzip.",
-      "folge": 63
     },
     {
       "begriff": "Tinklies",

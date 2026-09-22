@@ -1,290 +1,426 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ich bin kein Fan von — TMDA Startup #63</title>
-  <meta name="description" content="Schlicht. Statement. Kein Logo. Das Anti-Fan-Shirt für jeden Standpunkt. Colonel Tom Parker wusste es: Beide Seiten kaufen. TMDA Folge 63, 20/24 Punkte." />
-  <meta property="og:title" content="Ich bin kein Fan von..." />
-  <meta property="og:description" content="Das Shirt, das alles sagt. Von SDP bis Jesus bis TMDA. 20/24 Punkte." />
-  <meta property="og:type" content="website" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ich bin kein Fan von — Ehrliches Merch</title>
+  <meta name="description" content="Das T-Shirt das sagt was du wirklich denkst. Ich bin kein Fan von — kuratierte Merch-Linie für alle, die beide Seiten kennen. 20/24 Punkte bei TMDA.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/kein-fan-von">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ich bin kein Fan von — Ehrliches Merch">
+  <meta property="og:description" content="Das T-Shirt das sagt was du wirklich denkst. Ich bin kein Fan von — kuratierte Merch-Linie für alle, die beide Seiten kennen. 20/24 Punkte bei TMDA.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/kein-fan-von">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Ich bin kein Fan von... Anti-Fan-Shirts",
-    "description": "Schlicht bedruckte T-Shirts: Ich bin kein Fan von [XYZ]. Inspiriert von Colonel Tom Parkers Elvis-Marketing-Genie.",
-    "brand": { "@type": "Brand", "name": "TMDA x oderso.cool" },
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "EUR" }
+    "name": "Ich bin kein Fan von — T-Shirt",
+    "description": "Kuratierte Merch-Linie mit ehrlichem Print. Ich bin kein Fan von — und das steht drauf.",
+    "brand": { "@type": "Brand", "name": "KEIN FAN VON" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "34.00",
+      "availability": "https://schema.org/InStock"
+    }
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0a0a0a;
-      --fg: #f0ece0;
-      --red: #e8001a;
-      --dim: #777;
-      --border: #333;
+      --black: #0a0a0a;
+      --white: #f5f5f0;
+      --red: #d62828;
+      --grey: #888;
+      --light-grey: #ddd;
+      color-scheme: light dark;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { font-size: 16px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      background: var(--bg);
-      color: var(--fg);
+      background: var(--white);
+      color: var(--black);
       font-family: 'Space Mono', monospace;
-      min-height: 100vh;
-      overflow-x: hidden;
+      font-size: 14px;
+      line-height: 1.5;
+      padding-inline: 16px;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
     }
 
-    /* grain overlay */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 1000;
-      opacity: 0.4;
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --black: #f5f5f0;
+        --white: #0a0a0a;
+        --red: #ff4444;
+        --light-grey: #333;
+      }
+    }
+    [data-theme="dark"] {
+      --black: #f5f5f0;
+      --white: #0a0a0a;
+      --red: #ff4444;
+      --light-grey: #333;
     }
 
-    /* diagonal stripe accent */
-    .stripe-top {
-      width: 100%;
-      height: 6px;
-      background: repeating-linear-gradient(
-        90deg,
-        var(--red) 0px, var(--red) 32px,
-        var(--bg)  32px, var(--bg)  40px
-      );
+    /* ─── HEADER ─── */
+    .header {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-block: 64px 32px;
     }
 
-    /* nav bar */
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 20px;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.7rem;
+    .stamp {
+      display: inline-block;
+      font-family: 'Special Elite', cursive;
+      font-size: 11px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--dim);
-    }
-    .topbar-issue { color: var(--red); font-weight: 700; }
-
-    /* HERO */
-    .hero {
-      padding: 48px 20px 40px;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .hero-label {
-      font-size: 0.65rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--dim);
+      border: 2px solid var(--red);
+      color: var(--red);
+      padding: 4px 10px;
+      transform: rotate(-2deg);
       margin-bottom: 24px;
+      opacity: 0.85;
     }
 
-    .main-statement {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(2.6rem, 10vw, 6.5rem);
+    h1 {
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(2.8rem, 10vw, 7rem);
       line-height: 0.95;
+      letter-spacing: -0.02em;
       text-transform: uppercase;
-      letter-spacing: -0.01em;
-      margin-bottom: 0;
+      max-width: 700px;
     }
-    .main-statement .kein { color: var(--fg); }
-    .main-statement .von  { color: var(--dim); }
 
-    /* rotating subject */
-    .subject-wrap {
+    h1 .highlight {
+      color: var(--white);
+      background: var(--black);
+      padding: 0 10px;
+      display: inline-block;
+      line-height: 1.05;
+    }
+
+    .tagline {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-top: 20px;
+    }
+
+    /* ─── SHIRT PREVIEW ─── */
+    .shirt-zone {
+      max-width: 900px;
+      margin: 0 auto 48px;
+    }
+
+    .shirt-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 2px;
+    }
+
+    .shirt-card {
+      background: var(--black);
+      color: var(--white);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 150px;
+      position: relative;
       overflow: hidden;
-      height: clamp(3.5rem, 12vw, 8rem);
+      transition: transform 0.15s ease;
+    }
+
+    .shirt-card:hover { transform: scale(1.02); z-index: 2; }
+
+    .shirt-card.inv {
+      background: var(--white);
+      color: var(--black);
+      border: 2px solid var(--black);
+    }
+
+    .shirt-card.accent { background: var(--red); }
+
+    .shirt-prefix {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+
+    .shirt-text {
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      line-height: 1.2;
+    }
+
+    .corner {
+      position: absolute;
+      bottom: 10px;
+      right: 12px;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.3;
+    }
+
+    /* ─── DIVIDER ─── */
+    .rule {
+      border: none;
+      border-top: 2px solid var(--black);
+      margin-block: 48px;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    .rule.thin { border-top-width: 1px; border-color: var(--light-grey); }
+
+    /* ─── SECTION ─── */
+    .section {
+      max-width: 900px;
+      margin: 0 auto 56px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    p.body-text {
+      max-width: 65ch;
+      color: var(--black);
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+
+    /* ─── QUOTE BOX ─── */
+    .quote-box {
+      border: 2px solid var(--black);
+      padding: 28px 24px 24px;
+      max-width: 520px;
+      background: var(--black);
+      color: var(--white);
+      margin-block: 24px;
+      position: relative;
+    }
+
+    .quote-box::before {
+      content: '"';
+      font-family: 'Special Elite', cursive;
+      font-size: 80px;
+      position: absolute;
+      top: -18px;
+      left: 16px;
+      opacity: 0.12;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .quote-box blockquote {
+      font-family: 'Special Elite', cursive;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .quote-box cite {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 10px;
+      opacity: 0.55;
+      font-style: normal;
+    }
+
+    /* ─── TWO COL ─── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-block: 24px;
+    }
+
+    @media (max-width: 540px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    .col-block {
+      padding: 24px;
+      border: 1px solid var(--light-grey);
+    }
+
+    .col-block h3 {
+      font-family: 'Special Elite', cursive;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .col-block ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .col-block li {
+      padding-block: 6px;
+      border-bottom: 1px solid var(--light-grey);
+      font-size: 12px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .col-block li::before {
+      content: '—';
+      color: var(--red);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ─── SCORE ─── */
+    .score-band {
+      max-width: 900px;
+      margin: 0 auto 48px;
+      background: var(--black);
+      color: var(--white);
+      padding: 40px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .score-num {
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(4rem, 15vw, 8rem);
+      line-height: 1;
+    }
+
+    .score-meta .label {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 8px;
+    }
+
+    .score-meta .verdict {
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      text-transform: uppercase;
+      color: var(--red);
+      line-height: 1.2;
+    }
+
+    .score-meta .sub {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 10px;
+      max-width: 42ch;
+    }
+
+    /* ─── HATCH DECO ─── */
+    .hatch {
+      width: 60px;
+      height: 60px;
+      background-image:
+        repeating-linear-gradient(45deg, var(--white) 0, var(--white) 1px, transparent 0, transparent 50%),
+        repeating-linear-gradient(-45deg, var(--white) 0, var(--white) 1px, transparent 0, transparent 50%);
+      background-size: 8px 8px;
+      opacity: 0.12;
+      flex-shrink: 0;
+    }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      max-width: 900px;
+      margin: 0 auto 48px;
+      text-align: center;
+      padding: 56px 24px;
+      border: 2px solid var(--black);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 4px 0 12px;
-    }
-    .subject {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(2.6rem, 10vw, 6.5rem);
-      line-height: 0.95;
+      font-family: 'Special Elite', cursive;
+      font-size: clamp(3rem, 18vw, 10rem);
       text-transform: uppercase;
-      color: var(--red);
+      opacity: 0.04;
+      pointer-events: none;
       white-space: nowrap;
-      animation: ticker 18s steps(1) infinite;
-    }
-    @keyframes ticker {
-      0%   { content: ''; } /* placeholder, handled via JS */
+      letter-spacing: -0.02em;
+      user-select: none;
     }
 
-    .period { color: var(--fg); font-family: 'Anton', sans-serif; font-size: clamp(2.6rem, 10vw, 6.5rem); line-height: 0.95; }
-
-    .hero-sub {
-      margin-top: 28px;
-      font-size: 0.78rem;
-      line-height: 1.7;
-      color: var(--dim);
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .hero-sub strong { color: var(--fg); }
-
-    /* shirt SVG */
-    .shirt-container {
-      margin: 48px auto 0;
-      max-width: 340px;
+    .cta-section h2 {
+      font-size: clamp(1.5rem, 5vw, 3rem);
+      margin-bottom: 16px;
       position: relative;
     }
-    .shirt-container svg { width: 100%; height: auto; }
 
-    .shirt-text {
-      font-family: 'Anton', sans-serif;
-      font-size: 13px;
-      fill: #0a0a0a;
-      text-anchor: middle;
-      letter-spacing: 0.04em;
+    .cta-section p.body-text {
+      margin-inline: auto;
+      margin-bottom: 32px;
+      position: relative;
     }
-    .shirt-sub-text {
+
+    .btn {
+      display: inline-block;
       font-family: 'Space Mono', monospace;
-      font-size: 8.5px;
-      fill: #444;
-      text-anchor: middle;
-    }
-
-    /* section divider */
-    .divider {
-      width: 100%;
-      height: 1px;
-      background: var(--border);
-      margin: 48px 0;
-    }
-
-    /* content sections */
-    .section {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .section-tag {
-      font-size: 0.6rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 12px;
-      display: block;
-    }
-    .section-title {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(1.6rem, 5vw, 2.8rem);
-      text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    .section-body {
-      font-size: 0.85rem;
-      line-height: 1.8;
-      color: #c8c4b8;
-    }
-    .section-body strong { color: var(--fg); }
-
-    /* parker quote */
-    .parker-quote {
-      border-left: 3px solid var(--red);
-      padding: 16px 20px;
-      margin: 32px 0;
-      background: #111;
-    }
-    .parker-quote p {
-      font-style: italic;
-      font-size: 0.9rem;
-      line-height: 1.7;
-      color: var(--fg);
-    }
-    .parker-quote cite {
-      display: block;
-      margin-top: 8px;
-      font-size: 0.7rem;
+      font-size: 12px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--dim);
+      text-decoration: none;
+      padding: 14px 28px;
+      background: var(--black);
+      color: var(--white);
+      border: 2px solid var(--black);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      position: relative;
     }
 
-    /* examples grid */
-    .examples {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 2px;
-      margin: 32px 0;
-    }
-    .example-card {
-      background: #111;
-      border: 1px solid var(--border);
-      padding: 16px 18px;
-      font-family: 'Anton', sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-    .example-card .prefix { color: var(--dim); font-size: 0.7rem; letter-spacing: 0.1em; display: block; margin-bottom: 4px; }
-    .example-card .subject-ex { color: var(--fg); }
-    .example-card.red .subject-ex { color: var(--red); }
-
-    /* score band */
-    .score-band {
-      background: var(--red);
-      color: #fff;
-      padding: 28px 20px;
-      text-align: center;
-      margin: 48px 0;
-    }
-    .score-band .score-num {
-      font-family: 'Anton', sans-serif;
-      font-size: clamp(3rem, 10vw, 5rem);
-      line-height: 1;
-      display: block;
-    }
-    .score-band .score-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      opacity: 0.85;
-      margin-top: 6px;
-    }
-    .score-band .score-quote {
-      font-size: 0.8rem;
-      margin-top: 12px;
-      font-style: italic;
-      opacity: 0.9;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
+    .btn:hover {
+      background: transparent;
+      color: var(--black);
     }
 
-    /* footer */
-    .footer {
-      border-top: 1px solid var(--border);
-      padding: 24px 20px;
-      text-align: center;
-      font-size: 0.68rem;
-      color: var(--dim);
-      letter-spacing: 0.05em;
-      margin-top: 64px;
+    /* ─── FOOTER ─── */
+    footer {
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding-block: 24px;
+      border-top: 1px solid var(--light-grey);
+      font-size: 11px;
+      color: var(--grey);
     }
-    .footer a { color: var(--dim); text-decoration: underline; text-underline-offset: 3px; }
-    .footer a:hover { color: var(--fg); }
 
-    @media (max-width: 480px) {
-      .examples { grid-template-columns: 1fr 1fr; }
-    }
+    footer i { display: block; margin-bottom: 4px; }
+    footer a { color: var(--grey); text-decoration: underline; }
+    footer a:hover { color: var(--black); }
   </style>
 </head>
 <body>
@@ -297,156 +433,123 @@
 </style>
 <a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
 
-  <div class="stripe-top"></div>
 
-  <nav class="topbar">
-    <span>TMDA WIKI</span>
-    <span class="topbar-issue">Startup #63</span>
-    <span>oderso.cool</span>
-  </nav>
+  <!-- HERO -->
+  <header class="header">
+    <div class="stamp">Fiktives Startup · TMDA Folge 63 · 20/24</div>
+    <h1>
+      Ich bin<br>
+      <span class="highlight">kein Fan von</span>
+    </h1>
+    <p class="tagline">Das T-Shirt, das ehrlich ist. Weil du es auch bist.</p>
+  </header>
 
-  <main>
-    <section class="hero">
-      <p class="hero-label">— TMDA Startup-Idee der Woche —</p>
-
-      <div class="main-statement">
-        <span class="kein">ICH BIN</span><br>
-        <span class="kein">KEIN FAN</span><br>
-        <span class="von">VON</span>
+  <!-- SHIRT PREVIEWS -->
+  <section class="shirt-zone">
+    <div class="shirt-grid">
+      <div class="shirt-card">
+        <span class="shirt-prefix">ich bin kein fan von</span>
+        <span class="shirt-text">Dienst­ag­morgens</span>
+        <span class="corner">klassiker</span>
       </div>
-
-      <div class="subject-wrap">
-        <span class="subject" id="rotator">TMDA</span>
+      <div class="shirt-card">
+        <span class="shirt-prefix">ich bin kein fan von</span>
+        <span class="shirt-text">Small Talk</span>
+        <span class="corner">büro-edition</span>
       </div>
-
-      <div class="period">.</div>
-
-      <p class="hero-sub">
-        Schlicht. Statement. Kein Logo.<br>
-        <strong>Beide Seiten kaufen.</strong> Das wusste Colonel Tom Parker schon 1956.
-      </p>
-
-      <div class="shirt-container">
-        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-label="T-Shirt mit Anti-Fan-Aufdruck">
-          <!-- shirt shape -->
-          <path d="M60,50 L20,100 L60,110 L60,250 L240,250 L240,110 L280,100 L240,50 L210,70 C200,90 180,100 150,100 C120,100 100,90 90,70 Z"
-                fill="#f0ece0" stroke="#ccc" stroke-width="1.5"/>
-          <!-- collar -->
-          <path d="M120,70 Q150,100 180,70" fill="none" stroke="#bbb" stroke-width="1.5"/>
-          <!-- print area -->
-          <rect x="90" y="120" width="120" height="80" rx="2" fill="none" stroke="#ccc" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.5"/>
-          <!-- text -->
-          <text x="150" y="147" class="shirt-text" font-size="10">ICH BIN KEIN FAN VON</text>
-          <text x="150" y="164" class="shirt-text" font-size="18" fill="#cc0016" id="shirtText">TMDA</text>
-          <text x="150" y="182" class="shirt-sub-text">– 20/24 –</text>
-        </svg>
+      <div class="shirt-card inv">
+        <span class="shirt-prefix" style="opacity:0.4">ich bin fan von</span>
+        <span class="shirt-text">Freitag­nachmittag</span>
+        <span class="corner">fan-edition</span>
       </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="section">
-      <span class="section-tag">Die Idee</span>
-      <h2 class="section-title">Beide Seiten<br>verdienen.</h2>
-      <div class="section-body">
-        <p>Colonel Tom Parker war Elvis' Manager. Er erkannte früh: Wenn 20 Millionen Amerika Elvis lieben — und 20 Millionen ihn hassen — dann kann man <strong>an beiden Seiten Geld verdienen</strong>. Er ließ parallel "I Love Elvis" und "I Hate Elvis" Buttons produzieren. Beide verkauften sich gleich gut.</p>
+      <div class="shirt-card">
+        <span class="shirt-prefix">ich bin kein fan von</span>
+        <span class="shirt-text">Wecker­tönen</span>
+        <span class="corner">morgen-edition</span>
       </div>
-
-      <div class="parker-quote">
-        <p>"Das ist das erste große Marketing der Popmusikgeschichte gewesen."</p>
-        <cite>— Fynn Kliemann, TMDA Folge 63</cite>
+      <div class="shirt-card inv">
+        <span class="shirt-prefix" style="opacity:0.4">ich bin fan von</span>
+        <span class="shirt-text">Letzte U-Bahn</span>
+        <span class="corner">nacht-edition</span>
       </div>
-
-      <div class="section-body">
-        <p>Aus dieser Geschichte entstand die Idee: <strong>Einfache T-Shirts</strong> mit nur einem Statement. Kein Logo, kein überdesigntes Merch. Nur die Aussage — und der Rest ist endlos.</p>
+      <div class="shirt-card accent">
+        <span class="shirt-prefix">ich bin kein fan von</span>
+        <span class="shirt-text">Erklärungen warum das nicht geht</span>
+        <span class="corner">sonder-edition</span>
       </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="section">
-      <span class="section-tag">Das Sortiment</span>
-      <h2 class="section-title">Endlose<br>Varianten.</h2>
-      <div class="examples">
-        <div class="example-card red">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">TMDA</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">SDP</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">JESUS</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">FR. MERZ</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">NEUSEELAND</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">IQ-TESTS</span>
-        </div>
-        <div class="example-card red">
-          <span class="prefix">ICH BIN</span>
-          <span class="subject-ex">FAN VON DIR.</span>
-        </div>
-        <div class="example-card">
-          <span class="prefix">ICH BIN KEIN FAN VON</span>
-          <span class="subject-ex">PADEL</span>
-        </div>
-      </div>
-      <p class="section-body">Plattform: <strong>oderso.cool</strong> — Launch in einer Woche nach der Folge.</p>
-    </section>
-
-    <div class="score-band">
-      <span class="score-num">20/24</span>
-      <div class="score-label">Nisse-Score · TMDA Folge 63</div>
-      <p class="score-quote">"Bin kein Fan von ist eine 20."</p>
     </div>
+  </section>
 
-    <section class="section">
-      <span class="section-tag">Fun Fact</span>
-      <h2 class="section-title">Verhaftet wegen<br>eines Shirts.</h2>
-      <div class="section-body">
-        <p>2006 wurde ein Australier verhaftet, weil er auf eBay ein Shirt mit dem Aufdruck <strong>"Ich bin kein Fan von Neuseeland"</strong> angeboten hatte. Das Gebot stand bei mehreren Tausend Dollar, bevor eBay die Auktion löschte. Er wurde verhaftet. Wegen eines T-Shirts.</p>
-        <p style="margin-top: 16px;">Das Konzept funktioniert. Das hat die Geschichte bewiesen.</p>
+  <hr class="rule">
+
+  <!-- DAS KONZEPT -->
+  <section class="section">
+    <p class="section-label">// Das Konzept</p>
+    <h2>Beide Seiten kaufen.</h2>
+    <p class="body-text">Colonel Tom Parker — Elvis' Manager — hat nicht nur „I Love Elvis"-Buttons verkauft. Er hat auch „I Hate Elvis"-Buttons verkauft. Beide Seiten. Beide kaufen. Das ist Genialität.</p>
+    <p class="body-text">„Ich bin kein Fan von" ist das zeitgemäße Gegenstück: ein T-Shirt-Label das sagt was du wirklich denkst. Kein Fan? Shirt. Fan? Auch ein Shirt. Kuratiert. Ehrlich. Ohne Logo-Overload.</p>
+
+    <div class="quote-box">
+      <blockquote>„Find mich ruhig scheiße — aber gib einen Zehner rüber, wenn du mich schon scheiße findest."</blockquote>
+      <cite>— Fynn Kliemann, TMDA #63, über das Colonel-Parker-Prinzip</cite>
+    </div>
+  </section>
+
+  <hr class="rule thin">
+
+  <!-- FEATURES -->
+  <section class="section">
+    <p class="section-label">// Was macht es anders</p>
+    <h2>Shirt. Schrift. Fertig.</h2>
+
+    <div class="two-col">
+      <div class="col-block">
+        <h3>Das Shirt</h3>
+        <ul>
+          <li>Schwere 220g Baumwolle, eigener Schnitt</li>
+          <li>Schwarze Schrift auf weißem Stoff</li>
+          <li>Weiße Schrift auf schwarzem Stoff</li>
+          <li>Kein Spreadshirt. Kein Abo. Kein Blödsinn.</li>
+          <li>34 €. Einmal kaufen. Für immer tragen.</li>
+        </ul>
       </div>
-    </section>
-  </main>
+      <div class="col-block">
+        <h3>Die Kuratierung</h3>
+        <ul>
+          <li>Nicht jeder Satz kommt drauf — wir entscheiden</li>
+          <li>Keine Beleidigungen. Kein Hate. Nur Meinungen.</li>
+          <li>Zu jedem „Kein Fan von" gibt es ein „Fan von"</li>
+          <li>Eigene Edition jede Saison, Community-Votes</li>
+          <li>Juristisch unbedenklich: eine Meinung ist erlaubt</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer">
-    Fiktives Konzept &middot; <a href="/folge/63">TMDA #63</a> &middot; 20/24 &middot; <a href="/startup-ideen">alle Startups</a>
+  <!-- SCORE BAND -->
+  <div class="score-band">
+    <div class="hatch"></div>
+    <div class="score-num">20</div>
+    <div class="score-meta">
+      <p class="label">Nisses Bewertung bei TMDA #63</p>
+      <p class="verdict">von 24 Punkten —<br>„Legendäre Folge"</p>
+      <p class="sub">„Ich bin kein Fan von ist eine 20." — Nisse Ingwersen. 20 von 24 Punkten. Das Colonel-Parker-Prinzip ist unschlagbar.</p>
+    </div>
+    <div class="hatch"></div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg">KEIN FAN</div>
+    <h2>Sag es auf Stoff.</h2>
+    <p class="body-text">Drück deine Meinung aus — auf einem Shirt das nicht aussieht wie ein Spreadshirt-Produkt. Kein Logo. Keine Firma. Nur du und dein ehrlichster Satz.</p>
+    <a href="#" class="btn">Jetzt Meinung vorschlagen</a>
+  </section>
+
+  <footer>
+    <i>Rein fiktives Konzept, entstanden im TMDA-Podcast. Kein echtes Produkt, kein echter Shop.</i>
+    Fiktives Konzept · TMDA #63 · 20/24 · <a href="/folge/63">zur Folge</a> · <a href="/startup-ideen">alle Startups</a>
   </footer>
 
-  <script>
-    const subjects = [
-      'TMDA','SDP','JESUS','FR. MERZ','PADEL',
-      'NEUSEELAND','IQ-TESTS','GOOGLE','ENDLESS SCROLL',
-      'DEN DEUTSCHEN PADEL-VERBAND','HAUSTIERE','MONTAGE',
-      'STEUERN','DIENSTAGE'
-    ];
-    let idx = 0;
-    const el = document.getElementById('rotator');
-    const shirtEl = document.getElementById('shirtText');
-    function rotate() {
-      idx = (idx + 1) % subjects.length;
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(-10px)';
-      el.style.transition = 'opacity 0.2s, transform 0.2s';
-      setTimeout(() => {
-        el.textContent = subjects[idx];
-        if (shirtEl) shirtEl.textContent = subjects[idx].length > 12 ? subjects[idx].slice(0,12)+'...' : subjects[idx];
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      }, 220);
-    }
-    setInterval(rotate, 2200);
-  </script>
 </body>
 </html>

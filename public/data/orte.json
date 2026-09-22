@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T06:37:57.121Z",
-  "count": 386,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 387,
   "items": [
     {
       "ort": "Berlin",
@@ -223,13 +223,6 @@
       "folgen": [
         48,
         49
-      ]
-    },
-    {
-      "ort": "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
-      "folgen": [
-        63,
-        64
       ]
     },
     {
@@ -2357,27 +2350,39 @@
       ]
     },
     {
-      "ort": "Kliemannsland (Fynns Eventgelände, neues Motto 'This is not a Behörde' am Eingang)",
+      "ort": "Berlin / Kreuzberg (Podcast-Standort: Kirche in Kreuzberg, Klimasand)",
       "folgen": [
         63
       ]
     },
     {
-      "ort": "Padell Arena Berlin (Größter Padel-Club Berlins — Nisse Head Coach)",
+      "ort": "Tötensen (Wohnort Dieter Bohlens, Nisse hat Verbindung über Onkel und Freund)",
       "folgen": [
         63
       ]
     },
     {
-      "ort": "oderso.cool (Plattform für den 'Ich bin kein Fan von'-Shirt-Launch)",
+      "ort": "Padell Arena Berlin (Nisse ist hier Padel-Trainer)",
       "folgen": [
         63
       ]
     },
     {
-      "ort": "Süddeutschland (Nisses Herkunftsort, Baumschule neben Dieter Bohlens Grundstück)",
+      "ort": "Altschauerberg (Heimat Drachenlord)",
       "folgen": [
         63
+      ]
+    },
+    {
+      "ort": "Amerika (Colonel Parker / Elvis, Jake & Logan Paul)",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "ort": "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
+      "folgen": [
+        64
       ]
     },
     {

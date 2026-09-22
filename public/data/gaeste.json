@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T06:37:57.121Z",
-  "count": 1113,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 1115,
   "items": [
     {
       "name": "Donald Trump",
@@ -1701,17 +1701,17 @@
       ]
     },
     {
-      "name": "Jara",
-      "folgen": [
-        32,
-        63
-      ]
-    },
-    {
       "name": "Peter Fox",
       "folgen": [
         32,
         36
+      ]
+    },
+    {
+      "name": "Toja Diebel",
+      "folgen": [
+        32,
+        63
       ]
     },
     {
@@ -2005,13 +2005,6 @@
       "name": "Dieter Bohlen",
       "folgen": [
         52,
-        63
-      ]
-    },
-    {
-      "name": "Robert Dahl",
-      "folgen": [
-        55,
         63
       ]
     },
@@ -4512,6 +4505,12 @@
       ]
     },
     {
+      "name": "Jara",
+      "folgen": [
+        32
+      ]
+    },
+    {
       "name": "Jon Sander (KI-Videoproduzent)",
       "folgen": [
         32
@@ -4549,12 +4548,6 @@
     },
     {
       "name": "Maximus Echoesh (?)",
-      "folgen": [
-        32
-      ]
-    },
-    {
-      "name": "Toja Diebel",
       "folgen": [
         32
       ]
@@ -6768,6 +6761,12 @@
       ]
     },
     {
+      "name": "Robert Dahl",
+      "folgen": [
+        55
+      ]
+    },
+    {
       "name": "Erik (Fallschirm-Vizemeister)",
       "folgen": [
         55
@@ -7231,6 +7230,18 @@
     },
     {
       "name": "Colonel Tom Parker",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Prinz von Anhalt",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Robert Geiss",
       "folgen": [
         63
       ]
