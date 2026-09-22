@@ -75,14 +75,13 @@
       "kontext": "Katja Krasavices 30. Geburtstag: trotz Leinwand-QR-Code für 'Ein Herz für Kinder' kamen von 500 Promis nur 173€ Spendenerlös zusammen."
     }
   ],
-  "personen": [
-    "Mark Zuckerberg / Meta (Facebook-$17B-Settlement, Instagram-Nutzungsbeschränkungen für Unter-18)",
-    "Gwyneth Paltrow (Wellness-Esoterik-Unternehmerin, Verbindung zu Drohnen-/Rüstungs-Startup)",
-    "Herbert Grönemeyer (Erwähnt als bekanntester deutscher ESC-Verweigerer)",
-    "Pele (ESC-Songwriter, zweifacher ESC-Sieger, Leiter des Berliner Writing Camps)",
-    "Sarah Engels (Sängerin, ESC-Wette-Thema; Nisse kaufte für 100€ bei ihr, trägt 'Sarah Powerfrau' Shirt)",
-    "Nils (Kindheitsfreund Nisses, 'Zwillingsbruder'-Geschichte — Onkel möglicherweise Vater)",
-    "Katja Krasavice (Influencerin; 30. Geburtstag mit 500 Promis, nur 173€ Spendenerlös via QR-Code)"
+  "gaeste_erwaehnte": [
+    "Mark Zuckerberg",
+    "Gwyneth Paltrow",
+    "Herbert Grönemeyer",
+    "Pele",
+    "Sarah Engels",
+    "Katja Krasavice"
   ],
   "orte": [
     "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T06:27:51.017Z",
-  "count": 1106,
+  "updatedAt": "2026-09-22T06:37:57.121Z",
+  "count": 1113,
   "items": [
     {
       "name": "Donald Trump",
@@ -229,6 +229,19 @@
       ]
     },
     {
+      "name": "Mark Zuckerberg",
+      "folgen": [
+        13,
+        34,
+        35,
+        36,
+        42,
+        42,
+        43,
+        64
+      ]
+    },
+    {
       "name": "Friedrich Merz",
       "folgen": [
         19,
@@ -242,6 +255,19 @@
       ]
     },
     {
+      "name": "Sarah Engels",
+      "folgen": [
+        37,
+        38,
+        42,
+        48,
+        49,
+        52,
+        53,
+        64
+      ]
+    },
+    {
       "name": "Eminem",
       "folgen": [
         3,
@@ -251,18 +277,6 @@
         35,
         39,
         49
-      ]
-    },
-    {
-      "name": "Mark Zuckerberg",
-      "folgen": [
-        13,
-        34,
-        35,
-        36,
-        42,
-        42,
-        43
       ]
     },
     {
@@ -298,18 +312,6 @@
         41,
         48,
         49,
-        53
-      ]
-    },
-    {
-      "name": "Sarah Engels",
-      "folgen": [
-        37,
-        38,
-        42,
-        48,
-        49,
-        52,
         53
       ]
     },
@@ -748,6 +750,15 @@
       ]
     },
     {
+      "name": "Jake Paul",
+      "folgen": [
+        26,
+        27,
+        36,
+        63
+      ]
+    },
+    {
       "name": "Paul McCartney",
       "folgen": [
         33,
@@ -1024,11 +1035,11 @@
       ]
     },
     {
-      "name": "Jake Paul",
+      "name": "Logan Paul",
       "folgen": [
         26,
-        27,
-        36
+        36,
+        63
       ]
     },
     {
@@ -1641,13 +1652,6 @@
       ]
     },
     {
-      "name": "Logan Paul",
-      "folgen": [
-        26,
-        36
-      ]
-    },
-    {
       "name": "Barbara Schoeneberger",
       "folgen": [
         27,
@@ -1694,6 +1698,13 @@
       "folgen": [
         28,
         54
+      ]
+    },
+    {
+      "name": "Jara",
+      "folgen": [
+        32,
+        63
       ]
     },
     {
@@ -1792,6 +1803,13 @@
       "folgen": [
         37,
         51
+      ]
+    },
+    {
+      "name": "Pele",
+      "folgen": [
+        37,
+        64
       ]
     },
     {
@@ -1914,6 +1932,13 @@
       ]
     },
     {
+      "name": "Elvis Presley",
+      "folgen": [
+        47,
+        63
+      ]
+    },
+    {
       "name": "Jonathan Meese",
       "folgen": [
         47,
@@ -1974,6 +1999,20 @@
       "folgen": [
         52,
         53
+      ]
+    },
+    {
+      "name": "Dieter Bohlen",
+      "folgen": [
+        52,
+        63
+      ]
+    },
+    {
+      "name": "Robert Dahl",
+      "folgen": [
+        55,
+        63
       ]
     },
     {
@@ -4473,12 +4512,6 @@
       ]
     },
     {
-      "name": "Jara",
-      "folgen": [
-        32
-      ]
-    },
-    {
       "name": "Jon Sander (KI-Videoproduzent)",
       "folgen": [
         32
@@ -4948,12 +4981,6 @@
     },
     {
       "name": "Franz Beckenbauer",
-      "folgen": [
-        37
-      ]
-    },
-    {
-      "name": "Pele",
       "folgen": [
         37
       ]
@@ -6129,12 +6156,6 @@
       ]
     },
     {
-      "name": "Elvis Presley",
-      "folgen": [
-        47
-      ]
-    },
-    {
       "name": "Led Zeppelin",
       "folgen": [
         47
@@ -6567,12 +6588,6 @@
       ]
     },
     {
-      "name": "Dieter Bohlen",
-      "folgen": [
-        52
-      ]
-    },
-    {
       "name": "Adam (Inhaber des Aufnahme-Bueros)",
       "folgen": [
         53
@@ -6748,12 +6763,6 @@
     },
     {
       "name": "Anne (Personal Trainerin)",
-      "folgen": [
-        55
-      ]
-    },
-    {
-      "name": "Robert Dahl",
       "folgen": [
         55
       ]
@@ -7206,6 +7215,48 @@
       "name": "Frankie (KI-generierter Musiker, entpuppt sich vollständig als KI)",
       "folgen": [
         60
+      ]
+    },
+    {
+      "name": "Redo",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Drachenlord",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Colonel Tom Parker",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Mauri Andrini",
+      "folgen": [
+        63
+      ]
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "name": "Herbert Grönemeyer",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "name": "Katja Krasavice",
+      "folgen": [
+        64
       ]
     }
   ]

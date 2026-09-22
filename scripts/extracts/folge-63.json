@@ -66,17 +66,17 @@
       "kontext": "Nisse über sein Padel-Coaching ohne offiziellen Trainerschein — trotz der absurden Ablehnung durch den deutschen Padel-Verband."
     }
   ],
-  "personen": [
-    "Redo (YouTuber, Lamborghini 600K + 200K Lackkosten, Unternehmer-Persönlichkeit als Diskussionsaufhänger)",
-    "Drachenlord (YouTuber, verpasste Vermarktungschance des Hate-Hypes)",
-    "Colonel Tom Parker (Elvis' Manager, Pionier des Anti-Fan-Marketings, erhielt 50% aller Elvis-Einnahmen)",
-    "Elvis Presley (Popikone, vermarktet von Colonel Tom Parker — 'I Love/Hate Elvis' Buttons)",
-    "Jake Paul und Logan Paul (Hass-/Liebes-Marketing-Strategen; Jake verkauft Fights mit Feinden gewinnbringend)",
-    "Dieter Bohlen (Kindheitsnachbar Nisses, Baumschule-Anekdote, Saxophon-Tonsatz-Geschichte)",
-    "Pierre Calvini (Fynns Unterwäschemarke: Knockoff von Calvin Klein + Bruno Banani)",
-    "Jara (Fynns Freundin, erfand das Kliemannsland-Motto 'This is not a Behörde')",
-    "Robert Dahl (Karls Erdbeerhof-Gründer, Besuch bei Kliemannsland, 'Ei einpacken'-Geschichte über Servicementali­tät)",
-    "Mauri Andrini (argentinischer Padel-Top-Trainer — Referenztrainer des deutschen Verbands, macht dieselben Bewegungen wie Nisse)"
+  "gaeste_erwaehnte": [
+    "Redo",
+    "Drachenlord",
+    "Colonel Tom Parker",
+    "Elvis Presley",
+    "Jake Paul",
+    "Logan Paul",
+    "Dieter Bohlen",
+    "Jara",
+    "Robert Dahl",
+    "Mauri Andrini"
   ],
   "orte": [
     "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
