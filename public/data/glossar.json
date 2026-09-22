@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T06:21:43.236Z",
-  "count": 283,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 286,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -228,6 +228,11 @@
       "folge": 35
     },
     {
+      "begriff": "Cooler",
+      "bedeutung": "Startup aus Folge 64: Bettdecke nach Eiskonfekt-Prinzip — kühlt sich durch hohe Molekular-Oberfläche selbst, kein Strom, kein Kabel. Name mit mehreren O's (Cool / Cooool).",
+      "folge": 64
+    },
+    {
       "begriff": "Corty Soul",
       "bedeutung": "Startup-Idee von Fynn: App mit subkutanem Kortisol-Sensor zur Identifikation von Stressauslösern im Alltag; Name aus 'Kortisol' + 'Soul'",
       "folge": 59
@@ -331,6 +336,11 @@
       "begriff": "Eckenkucker",
       "bedeutung": "Ein starker nordischer Kuemmelschnaps, von dem man schielt (Eigenkreation von Finn und Nisse)",
       "folge": 29
+    },
+    {
+      "begriff": "Eiskonfekt-Prinzip",
+      "bedeutung": "Physikalisches Phänomen: Ein Material mit extrem hoher molekularer Oberfläche leitet Wärme schneller ab, sodass es sich kühler anfühlt als es ist — analog zu Fliesen vs. Teppich oder Eiskonfekt vs. normale Schokolade. Basis der 'Cooler'-De…",
+      "folge": 64
     },
     {
       "begriff": "Enhanced Games",
@@ -1051,6 +1061,11 @@
       "begriff": "RFS / RRFs",
       "bedeutung": "Random Facts - die Abschlusskategorie mit zusammenhanglosem Trivia (Pinguin-Knie, Mars-Vulkan, Giraffen-Halswirbel).",
       "folge": 51
+    },
+    {
+      "begriff": "Roboter-Olympiade",
+      "bedeutung": "Kliemannsland-Konzept aus Folge 64: Echte Showcaseroboter treten gegeneinander und mit Menschen an. Inspiriert von chinesischen Robot Games. Ziel: Angst vor Robotern abbauen, Vergnügungspark-Attraktion. Titelgebend: 'Bazooka-Roboter pierce…",
+      "folge": 64
     },
     {
       "begriff": "Rotten.com / World Star Hip Hop",

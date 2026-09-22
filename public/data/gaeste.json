@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T06:21:43.236Z",
-  "count": 1112,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 1115,
   "items": [
     {
       "name": "Donald Trump",
@@ -229,6 +229,19 @@
       ]
     },
     {
+      "name": "Mark Zuckerberg",
+      "folgen": [
+        13,
+        34,
+        35,
+        36,
+        42,
+        42,
+        43,
+        64
+      ]
+    },
+    {
       "name": "Friedrich Merz",
       "folgen": [
         19,
@@ -242,6 +255,19 @@
       ]
     },
     {
+      "name": "Sarah Engels",
+      "folgen": [
+        37,
+        38,
+        42,
+        48,
+        49,
+        52,
+        53,
+        64
+      ]
+    },
+    {
       "name": "Eminem",
       "folgen": [
         3,
@@ -251,18 +277,6 @@
         35,
         39,
         49
-      ]
-    },
-    {
-      "name": "Mark Zuckerberg",
-      "folgen": [
-        13,
-        34,
-        35,
-        36,
-        42,
-        42,
-        43
       ]
     },
     {
@@ -298,18 +312,6 @@
         41,
         48,
         49,
-        53
-      ]
-    },
-    {
-      "name": "Sarah Engels",
-      "folgen": [
-        37,
-        38,
-        42,
-        48,
-        49,
-        52,
         53
       ]
     },
@@ -1801,6 +1803,13 @@
       "folgen": [
         37,
         51
+      ]
+    },
+    {
+      "name": "Pele",
+      "folgen": [
+        37,
+        64
       ]
     },
     {
@@ -4970,12 +4979,6 @@
       ]
     },
     {
-      "name": "Pele",
-      "folgen": [
-        37
-      ]
-    },
-    {
       "name": "Jeffrey Epstein (in Klammern)",
       "folgen": [
         37
@@ -7247,6 +7250,24 @@
       "name": "Mauri Andrini",
       "folgen": [
         63
+      ]
+    },
+    {
+      "name": "Gwyneth Paltrow",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "name": "Herbert Grönemeyer",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "name": "Katja Krasavice",
+      "folgen": [
+        64
       ]
     }
   ]

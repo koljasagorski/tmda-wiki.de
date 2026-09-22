@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T06:21:43.236Z",
-  "count": 382,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 387,
   "items": [
     {
       "ort": "Berlin",
@@ -2377,6 +2377,36 @@
       "ort": "Amerika (Colonel Parker / Elvis, Jake & Logan Paul)",
       "folgen": [
         63
+      ]
+    },
+    {
+      "ort": "Kreuzberg (Dojo Agency in der Kreuzberger Kirche — TMDA Aufnahmeort)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "Reeperbahn Festival Hamburg (Nisse bei KI-und-Musik-Panel am 17.09.)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "Berlin Nova Studio (ESC Writing Camp, 8 Räume, internationale Songwriter)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "Kliemannsland (Fynns Eventgelände, Standort der geplanten Roboter-Olympiade)",
+      "folgen": [
+        64
+      ]
+    },
+    {
+      "ort": "oderso.cool (Plattform, auf der die 'Ich bin kein Fan von' Shirts live sind)",
+      "folgen": [
+        64
       ]
     }
   ]

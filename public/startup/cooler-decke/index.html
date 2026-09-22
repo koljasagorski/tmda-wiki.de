@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cooler — Die Temperaturregulierte Decke · TMDA #64</title>
+  <meta name="description" content="Eine Decke, die sich immer kalt anfühlt — ohne Strom, ohne Pumpe. Das Eiskonfekt-Prinzip in Textilform. TMDA Folge 64." />
+  <meta property="og:title" content="COOOLER — Die Decke, die sich immer kalt anfühlt" />
+  <meta property="og:description" content="Molekularstruktur trifft Bettwäsche. Kein Kabel. Kein Anschluss. Nur Physik." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Cooler — Temperaturregulierte Decke",
+    "description": "Bettdecke nach Eiskonfekt-Prinzip: Molekularstruktur mit extrem hoher Oberfläche leitet Körperwärme schnell ab — fühlt sich immer kühl an.",
+    "brand": { "@type": "Brand", "name": "COOLER" },
+    "category": "Bettwaren"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f8fb;
+      --bg2: #eaf3f9;
+      --ice: #b8ddf0;
+      --ice-deep: #5badd4;
+      --mint: #9fe0c8;
+      --choc: #3d2414;
+      --text: #1a2c3a;
+      --muted: #6a8fa8;
+      --white: #ffffff;
+      --hex: #cde9f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0d1e2a;
+        --bg2: #102232;
+        --ice: #1e4a6a;
+        --ice-deep: #3d8fc0;
+        --mint: #1e5e48;
+        --choc: #d4aa80;
+        --text: #d8eaf5;
+        --muted: #6a9ab8;
+        --white: #152535;
+        --hex: #1a3a52;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0d1e2a; --bg2: #102232; --ice: #1e4a6a;
+      --ice-deep: #3d8fc0; --mint: #1e5e48; --choc: #d4aa80;
+      --text: #d8eaf5; --muted: #6a9ab8; --white: #152535; --hex: #1a3a52;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Comfortaa', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* nav */
+    .nav {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--ice);
+      background: var(--white);
+    }
+    .nav-logo {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--ice-deep);
+      letter-spacing: 0.08em;
+    }
+    .nav-logo .o-extra { color: var(--mint); }
+    .nav-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+    }
+
+    /* hero */
+    .hero {
+      position: relative;
+      padding: 56px 20px 48px;
+      text-align: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, var(--bg) 0%, var(--bg2) 100%);
+    }
+
+    /* hex grid background */
+    .hex-grid {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.55;
+    }
+
+    .hero-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: clamp(3.2rem, 12vw, 7rem);
+      line-height: 1;
+      color: var(--ice-deep);
+      letter-spacing: -0.02em;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-title .o-cool { color: var(--mint); }
+
+    .hero-sub {
+      margin: 20px auto 0;
+      max-width: 500px;
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-temp {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      background: var(--white);
+      border: 1.5px solid var(--ice);
+      border-radius: 40px;
+      padding: 10px 22px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--ice-deep);
+      position: relative;
+      z-index: 1;
+    }
+    .temp-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* blanket visual */
+    .blanket-visual {
+      margin: 40px auto 0;
+      max-width: 360px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* section base */
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 52px 20px;
+    }
+    .section-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--ice-deep);
+      margin-bottom: 12px;
+      display: block;
+    }
+    h2 {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+    .body-text {
+      font-size: 0.92rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--muted);
+    }
+    .body-text strong { color: var(--text); font-weight: 600; }
+
+    /* physics block */
+    .physics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .phys-card {
+      background: var(--white);
+      border: 1px solid var(--ice);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .phys-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .phys-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .phys-desc {
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* principle visual */
+    .principle-row {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 32px 0;
+      flex-wrap: wrap;
+    }
+    .principle-item {
+      flex: 1;
+      min-width: 140px;
+      text-align: center;
+    }
+    .principle-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 10px;
+    }
+    .principle-name {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .principle-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+    }
+    .principle-arrow {
+      font-size: 1.5rem;
+      color: var(--ice);
+      flex: 0;
+      margin-top: -20px;
+    }
+
+    /* score */
+    .score-section {
+      background: var(--white);
+      border: 1px solid var(--ice);
+      border-radius: 24px;
+      padding: 36px 24px;
+      text-align: center;
+      margin: 0 20px;
+    }
+    .score-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .score-num {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: clamp(3rem, 10vw, 5rem);
+      color: var(--text);
+      line-height: 1;
+    }
+    .score-num .no-score { font-size: 0.4em; color: var(--muted); }
+    .score-quote {
+      margin-top: 16px;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--muted);
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    .score-nisse {
+      margin-top: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+    }
+
+    /* name section */
+    .name-section {
+      background: var(--ice-deep);
+      color: var(--white);
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .name-section .big-name {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 700;
+      font-size: clamp(3rem, 14vw, 8rem);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: #ffffff;
+    }
+    .name-section .big-name .o-var { color: var(--mint); }
+    .name-section .name-sub {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.15em;
+    }
+
+    /* footer */
+    .footer {
+      border-top: 1px solid var(--ice);
+      padding: 24px 20px;
+      text-align: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+    .footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+    .footer a:hover { color: var(--text); }
+
+    @media (max-width: 540px) {
+      .physics-grid { grid-template-columns: 1fr; }
+      .principle-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <nav class="nav">
+    <span class="nav-logo">C<span class="o-extra">OOO</span>LER</span>
+    <span class="nav-badge">TMDA #64</span>
+  </nav>
+
+  <header class="hero">
+    <!-- hex background SVG -->
+    <svg class="hex-grid" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" aria-hidden="true">
+      <defs>
+        <pattern id="hexPat" x="0" y="0" width="52" height="60" patternUnits="userSpaceOnUse">
+          <polygon points="26,2 50,15 50,45 26,58 2,45 2,15"
+                   fill="none" stroke="var(--hex)" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#hexPat)"/>
+    </svg>
+
+    <p class="hero-tag">Startup-Idee der Woche · TMDA Folge 64</p>
+
+    <h1 class="hero-title">
+      CO<span class="o-cool">OOO</span>LER
+    </h1>
+
+    <p class="hero-sub">
+      Eine Decke, die sich <strong>immer kalt anfühlt</strong> — ohne Strom, ohne Pumpe, ohne Kabel.<br>
+      Nur Physik. Das Eiskonfekt-Prinzip.
+    </p>
+
+    <div class="hero-temp">
+      <span class="temp-dot"></span>
+      Immer auf Wohlfühltemperatur
+    </div>
+
+    <!-- blanket SVG -->
+    <div class="blanket-visual">
+      <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" aria-label="Cooler Decke mit Hexagon-Muster">
+        <!-- blanket body -->
+        <rect x="10" y="30" width="340" height="160" rx="18" fill="var(--white)" stroke="var(--ice)" stroke-width="2"/>
+        <!-- hex cell grid on blanket -->
+        <defs>
+          <clipPath id="blClip">
+            <rect x="10" y="30" width="340" height="160" rx="18"/>
+          </clipPath>
+          <pattern id="hexSmall" x="0" y="0" width="30" height="34.6" patternUnits="userSpaceOnUse">
+            <polygon points="15,1.5 28.5,8.8 28.5,25.8 15,33.1 1.5,25.8 1.5,8.8"
+                     fill="var(--hex)" stroke="var(--ice)" stroke-width="0.8"/>
+          </pattern>
+        </defs>
+        <rect x="10" y="30" width="340" height="160" rx="18" fill="url(#hexSmall)" clip-path="url(#blClip)" opacity="0.9"/>
+        <!-- label -->
+        <text x="180" y="120" text-anchor="middle" font-family="Comfortaa, sans-serif" font-weight="700" font-size="22" fill="var(--ice-deep)" opacity="0.9">COOOLER</text>
+        <!-- corner fold -->
+        <path d="M330,30 L350,30 L350,50 Z" fill="var(--ice)" opacity="0.5"/>
+      </svg>
+    </div>
+  </header>
+
+  <section class="section">
+    <span class="section-tag">Das Problem</span>
+    <h2>Deine Decke<br>wärmt sich auf.</h2>
+    <p class="body-text">
+      Jede Decke kennt das Phänomen: Du legst dich ins Bett, die Decke ist kühl.
+      Zehn Minuten später ist sie <strong>warm</strong>. Deine Körperwärme hat sie aufgeheizt.
+      Der einzige Ausweg: umdrehen, kurz warten, wieder umdrehen.
+    </p>
+    <p class="body-text" style="margin-top: 14px;">
+      Erste Idee: eine Wasserpumpe in der Decke. Wasser zirkuliert, Fernbedienung regelt Temperatur.
+      Nisse-Urteil: <strong>"Mit dem Anschluss wär es neun."</strong> Zu viel Kabel. Zu viel Anschluss.
+    </p>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <span class="section-tag">Das Prinzip</span>
+    <h2>Eiskonfekt<br>erklärt alles.</h2>
+
+    <div class="principle-row">
+      <div class="principle-item">
+        <svg class="principle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" fill="var(--ice)" opacity="0.3"/>
+          <text x="32" y="38" text-anchor="middle" font-size="22" font-family="serif">🍫</text>
+        </svg>
+        <div class="principle-name">Eiskonfekt</div>
+        <div class="principle-note">hohe Oberfläche</div>
+      </div>
+      <div class="principle-arrow">→</div>
+      <div class="principle-item">
+        <svg class="principle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="32,4 60,19 60,45 32,60 4,45 4,19" fill="var(--mint)" opacity="0.4"/>
+          <polygon points="32,12 54,23 54,41 32,52 10,41 10,23" fill="var(--mint)" opacity="0.4"/>
+          <circle cx="32" cy="32" r="5" fill="var(--mint)"/>
+        </svg>
+        <div class="principle-name">Mol. Struktur</div>
+        <div class="principle-note">schnelle Ableitung</div>
+      </div>
+      <div class="principle-arrow">→</div>
+      <div class="principle-item">
+        <svg class="principle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" fill="var(--ice)" opacity="0.3"/>
+          <text x="32" y="38" text-anchor="middle" font-size="22">❄️</text>
+        </svg>
+        <div class="principle-name">Immer kühl</div>
+        <div class="principle-note">kein Strom nötig</div>
+      </div>
+    </div>
+
+    <div class="physics-grid">
+      <div class="phys-card">
+        <div class="phys-label">Phänomen A</div>
+        <div class="phys-title">Fliese vs. Teppich</div>
+        <div class="phys-desc">Gleichtemperiert im Zimmer — aber die Fliese fühlt sich kalt an. Warum? Glatte Fliese = maximale Kontaktfläche = schnelle Wärmeableitung aus dem Fuß.</div>
+      </div>
+      <div class="phys-card">
+        <div class="phys-label">Phänomen B</div>
+        <div class="phys-title">Eiskonfekt-Effekt</div>
+        <div class="phys-desc">Die Schokolade schmilzt nicht im Mund, weil ihre molekulare Struktur Wärme von der Zunge schneller ableitet als sie sich aufbaut. Es fühlt sich kalt an — ist es aber nicht.</div>
+      </div>
+    </div>
+
+    <p class="body-text">
+      <strong>Die Idee:</strong> Ein Decken-Material mit derselben hohen Molekular-Oberfläche.
+      Körperwärme wird ständig und schnell abgeleitet — die Decke fühlt sich immer frisch an,
+      ohne jemals aktiv gekühlt zu werden. <strong>Kein Kabel. Kein Anschluss. Nur das Material.</strong>
+    </p>
+  </section>
+
+  <div class="name-section">
+    <div class="big-name">C<span class="o-var">OOO</span>LER</div>
+    <div class="name-sub">COOL EFFECT · KONFEKT BLANKET · COOOLER™</div>
+  </div>
+
+  <section class="section">
+    <span class="section-tag">Features</span>
+    <h2>Was die Decke<br>können soll.</h2>
+    <div class="physics-grid">
+      <div class="phys-card">
+        <div class="phys-label">Kabellos</div>
+        <div class="phys-title">Kein Anschluss</div>
+        <div class="phys-desc">Schütteln, werfen, Hund ans Fußende — keine Kabel, keine Pumpe, kein Gerät, das kaputt gehen kann.</div>
+      </div>
+      <div class="phys-card">
+        <div class="phys-label">Bidirektional</div>
+        <div class="phys-title">Sommer &amp; Winter</div>
+        <div class="phys-desc">Im Winter wärmt dieselbe Molekularstruktur effizienter — weniger Wärmeverlust nach außen. Eine Decke für alle Jahreszeiten.</div>
+      </div>
+      <div class="phys-card">
+        <div class="phys-label">Gewicht</div>
+        <div class="phys-title">Optional beschwert</div>
+        <div class="phys-desc">Kombinierbar mit Gewichtsdecken-Effekt für besseren Schlaf — ohne dass das Gewicht thermisch isoliert.</div>
+      </div>
+      <div class="phys-card">
+        <div class="phys-label">Preis</div>
+        <div class="phys-title">Premium-Segment</div>
+        <div class="phys-desc">Eine Gewichtsdecke kostet 500€+. Für Material-Innovation ist der Markt vorhanden.</div>
+      </div>
+    </div>
+  </section>
+
+  <div style="padding: 0 16px 40px;">
+    <div class="score-section">
+      <div class="score-label">Nisse-Score · TMDA Folge 64</div>
+      <div class="score-num"><span class="no-score">unbewertet</span></div>
+      <p class="score-quote">"Ich verstehe, woher du kommst. Du hast mich mal wieder ans Ziel geführt, an der Hand, in diese Wanne mit meinen kleinen Eiskonfekt-Decken. Ey — vielen Dank für diese wundervolle Startup-Idee."</p>
+      <div class="score-nisse">— Nisse, nach dem Eiskonfekt-Refinement</div>
+      <p class="score-quote" style="margin-top: 12px; font-size: 0.75rem;">Pumpen-Version: 9/24. Kabellose Eiskonfekt-Version: kein expliziter Score — aber deutlich besser.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Fiktives Konzept &middot; <a href="/folge/64">TMDA #64</a> &middot; unbewertet &middot; <a href="/startup-ideen">alle Startups</a>
+  </footer>
+
+</body>
+</html>

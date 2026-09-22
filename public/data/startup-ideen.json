@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-15T06:21:43.236Z",
-  "count": 60,
+  "updatedAt": "2026-09-22T08:21:12.864Z",
+  "count": 61,
   "items": [
+    {
+      "folge": 64,
+      "datum": "2026-09-15",
+      "idee": "'Cooler' — temperaturregulierte Decke nach Eiskonfekt-Prinzip",
+      "beschreibung": "Problem: Bettdecken wärmen sich durch Körperwärme auf und bleiben nie kalt. Fynns Lösung: Eine Decke aus einem Material, das wie Eiskonfekt funktioniert. Das Eiskonfekt-Prinzip: Eiskonfekt (die Schokolade) schmilzt nicht im Mund, weil die molekulare Struktur mit extrem hoher Oberfläche Wärme von der Zunge schneller ableitet als sie sich aufbauen kann — wie Fliesen, die sich kälter anfühlen als ei…",
+      "punkte": null,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Ich verstehe, woher du kommst. Du hast mich mal wieder ans Ziel geführt.' Sowie: 'Ey, vielen Dank für diese wundervolle Startup-Idee.' Kein expliziter Punktestand nach dem Eiskonfekt-Refinement. Die Pumpenversion (mit Kabelanschlus…"
+    },
     {
       "folge": 63,
       "datum": "2026-09-08",
