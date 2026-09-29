@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T08:21:12.864Z",
-  "count": 387,
+  "updatedAt": "2026-09-29T08:25:24.097Z",
+  "count": 392,
   "items": [
     {
       "ort": "Berlin",
@@ -2407,6 +2407,36 @@
       "ort": "oderso.cool (Plattform, auf der die 'Ich bin kein Fan von' Shirts live sind)",
       "folgen": [
         64
+      ]
+    },
+    {
+      "ort": "Dojo Agency, Kreuzberger Kirche (TMDA-Aufnahmeort)",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "ort": "Grill Royal Berlin (Pressteller-Anwendungsfall)",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "ort": "München (Sony-Fußballturnier)",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "ort": "Portugal (Fynns Wanderung mit Mutter)",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "ort": "oderso.cool (TMDA-Merch-Shop, 'Ich bin kein Fan von'-Shirts)",
+      "folgen": [
+        65
       ]
     }
   ]

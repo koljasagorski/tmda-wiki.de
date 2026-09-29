@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presseller – Kein Rest bleibt zurück | Tellerpress</title>
+  <meta name="description" content="Der Presseller presst Essensreste hydraulisch zusammen – kein Lecken mehr im Grill Royal. Die revolutionäre Küchentechnik aus dem TMDA-Podcast. 5/24 Punkte.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/presseller">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Presseller – Kein Rest bleibt zurück">
+  <meta property="og:description" content="Der Presseller presst Essensreste hydraulisch zusammen – kein Lecken mehr im Grill Royal. Die revolutionäre Küchentechnik aus dem TMDA-Podcast.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/presseller">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Presseller – Kein Rest bleibt zurück">
+  <meta name="twitter:description" content="Der Presseller presst Essensreste hydraulisch zusammen. 5/24 Punkte. TMDA #65.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Presseller",
+    "description": "Hydraulisch faltbarer Teller, der Essensreste nach dem Essen zusammenpresst – kein Lecken, kein Wegwerfen.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Fressform Systems"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "11999.00",
+      "availability": "https://schema.org/PreOrder",
+      "seller": {
+        "@type": "Organization",
+        "name": "Presseller GmbH (fiktiv)"
+      }
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #C8102E;
+      --yellow: #E8C200;
+      --black: #111111;
+      --cream: #F2EDE3;
+      --mid: #D4C9B7;
+      --blue: #1A2A6C;
+      --white: #FAFAFA;
+      --mono: 'Josefin Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--mono);
+      background: var(--cream);
+      color: var(--black);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100svh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+    }
+
+    .hero-left {
+      background: var(--black);
+      padding: 60px 48px 60px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-left::before {
+      content: '';
+      position: absolute;
+      top: 0; right: -60px;
+      width: 120px; height: 100%;
+      background: var(--red);
+      transform: skewX(-6deg);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-size: clamp(52px, 8vw, 96px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .hero-title .accent {
+      color: var(--yellow);
+    }
+
+    .hero-sub {
+      margin-top: 28px;
+      font-size: 13px;
+      font-weight: 300;
+      color: #888;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.8;
+    }
+
+    .hero-score {
+      margin-top: 40px;
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+    }
+
+    .hero-right {
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 32px;
+      position: relative;
+    }
+
+    /* Plate mechanism SVG */
+    .plate-diagram {
+      width: 100%;
+      max-width: 380px;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: 80px 0;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+    }
+
+    /* ─── PROBLEM BAND ─── */
+    .problem-band {
+      background: var(--black);
+      color: var(--white);
+      padding: 64px 0;
+    }
+
+    .problem-band .section-label {
+      color: var(--yellow);
+    }
+
+    .problem-band .section-title {
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+
+    .problem-text {
+      font-size: 15px;
+      font-weight: 300;
+      color: #BBBBBB;
+      max-width: 640px;
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+    }
+
+    .problem-text strong {
+      color: var(--yellow);
+      font-weight: 600;
+    }
+
+    .stats-row {
+      display: flex;
+      gap: 48px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      border-left: 3px solid var(--red);
+      padding-left: 20px;
+    }
+
+    .stat-num {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    /* ─── MECHANISM ─── */
+    .mechanism {
+      background: var(--cream);
+    }
+
+    .mech-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      margin-top: 56px;
+      border: 2px solid var(--black);
+    }
+
+    .mech-step {
+      padding: 40px 32px;
+      border-right: 2px solid var(--black);
+      position: relative;
+    }
+
+    .mech-step:last-child {
+      border-right: none;
+    }
+
+    .step-num {
+      font-size: 64px;
+      font-weight: 700;
+      color: var(--mid);
+      line-height: 1;
+      position: absolute;
+      top: 16px;
+      right: 20px;
+    }
+
+    .step-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 20px;
+    }
+
+    .step-title {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .step-text {
+      font-size: 13px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* ─── SPECS ─── */
+    .specs-section {
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .specs-section .section-label {
+      color: var(--yellow);
+    }
+
+    .specs-section .section-title {
+      color: var(--white);
+      margin-bottom: 48px;
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .specs-table tr {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .specs-table td {
+      padding: 16px 8px;
+      vertical-align: top;
+    }
+
+    .specs-table td:first-child {
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+      width: 220px;
+    }
+
+    .specs-table td:last-child {
+      font-weight: 300;
+      color: var(--white);
+    }
+
+    .spec-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 2px 8px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-right: 4px;
+    }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      background: var(--yellow);
+      padding: 80px 0;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .cta-copy .section-title {
+      font-size: clamp(24px, 3.5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .cta-copy p {
+      font-size: 14px;
+      font-weight: 300;
+      color: #333;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+
+    .cta-price-box {
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .cta-price {
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 700;
+      color: var(--black);
+      line-height: 1;
+    }
+
+    .cta-price-note {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .cta-btn {
+      display: block;
+      margin-top: 20px;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover {
+      background: var(--red);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--black);
+      color: #666;
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+
+    footer .disclaimer {
+      font-style: italic;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--yellow);
+    }
+
+    footer .episode-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    footer .episode-bar span::before {
+      content: '·';
+      margin-right: 16px;
+    }
+
+    footer .episode-bar span:first-child::before {
+      content: none;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-left {
+        padding: 80px 24px 80px;
+      }
+
+      .hero-left::before {
+        display: none;
+      }
+
+      .hero-right {
+        padding: 48px 24px;
+        min-height: 300px;
+      }
+
+      .mech-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mech-step {
+        border-right: none;
+        border-bottom: 2px solid var(--black);
+      }
+
+      .mech-step:last-child {
+        border-bottom: none;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .specs-table td:first-child {
+        width: 130px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --cream: #1A1714;
+        --mid: #3A3530;
+        --white: #FAFAFA;
+      }
+      .hero-right {
+        background: var(--cream);
+      }
+      .mechanism {
+        background: var(--cream);
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --cream: #1A1714;
+      --mid: #3A3530;
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="eyebrow">FRESSFORM SYSTEMS — MODELL P-1</div>
+      <h1 class="hero-title">PRESS<br><span class="accent">ELLER</span></h1>
+      <p class="hero-sub">
+        HYDRAULISCHE TELLER-PRESSE<br>
+        KEIN LÖFFEL. KEIN LECKEN. KEIN REST.
+      </p>
+      <div class="hero-score">5 / 24 — NISSE-APPROVAL RATING</div>
+    </div>
+    <div class="hero-right">
+      <!-- Plate folding mechanism diagram -->
+      <svg class="plate-diagram" viewBox="0 0 380 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Presseller Funktionsdiagramm">
+        <!-- Grid background -->
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D4C9B7" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="380" height="320" fill="url(#grid)"/>
+
+        <!-- Label top -->
+        <text x="190" y="20" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="3" fill="#C8102E" text-transform="uppercase">MODELL P-1 — TECHNISCHE ANSICHT</text>
+
+        <!-- CLOSED state (left) -->
+        <g transform="translate(30, 50)">
+          <!-- Plate base (closed) -->
+          <ellipse cx="75" cy="115" rx="70" ry="18" fill="none" stroke="#111" stroke-width="2"/>
+          <!-- Left wall closed -->
+          <line x1="5" y1="60" x2="5" y2="115" stroke="#C8102E" stroke-width="3"/>
+          <!-- Right wall closed -->
+          <line x1="145" y1="60" x2="145" y2="115" stroke="#C8102E" stroke-width="3"/>
+          <!-- Walls coming in -->
+          <line x1="5" y1="60" x2="45" y2="80" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="145" y1="60" x2="105" y2="80" stroke="#111" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <!-- Food compressed center -->
+          <ellipse cx="75" cy="80" rx="22" ry="10" fill="#E8C200" stroke="#111" stroke-width="1.5"/>
+          <!-- Food pile dots -->
+          <circle cx="75" cy="80" r="4" fill="#C8102E"/>
+          <circle cx="65" cy="77" r="3" fill="#C8102E"/>
+          <circle cx="85" cy="82" r="2.5" fill="#C8102E"/>
+          <!-- Arrows showing compression -->
+          <path d="M 30 70 L 48 78" stroke="#C8102E" stroke-width="2" marker-end="url(#arr)"/>
+          <path d="M 120 70 L 102 78" stroke="#C8102E" stroke-width="2" marker-end="url(#arr)"/>
+          <!-- Label -->
+          <text x="75" y="145" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="9" letter-spacing="2" fill="#555">PRESSE AKTIV</text>
+        </g>
+
+        <!-- Arrow between states -->
+        <defs>
+          <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#C8102E"/>
+          </marker>
+          <marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#111"/>
+          </marker>
+        </defs>
+        <path d="M 185 100 L 215 100" stroke="#111" stroke-width="2" marker-end="url(#arr2)"/>
+        <text x="200" y="94" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="8" fill="#888">PHASE 2</text>
+
+        <!-- OPEN state (right) -->
+        <g transform="translate(220, 50)">
+          <!-- Plate base (open) -->
+          <ellipse cx="75" cy="115" rx="70" ry="18" fill="none" stroke="#111" stroke-width="2"/>
+          <!-- Left wall open (spread) -->
+          <line x1="5" y1="40" x2="5" y2="115" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Right wall open (spread) -->
+          <line x1="145" y1="40" x2="145" y2="115" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Food distributed on plate -->
+          <ellipse cx="75" cy="90" rx="55" ry="14" fill="none" stroke="#E8C200" stroke-width="1"/>
+          <circle cx="50" cy="88" r="5" fill="rgba(200,16,46,0.2)" stroke="#C8102E" stroke-width="1"/>
+          <circle cx="75" cy="85" r="7" fill="rgba(200,16,46,0.2)" stroke="#C8102E" stroke-width="1"/>
+          <circle cx="100" cy="90" r="4" fill="rgba(200,16,46,0.2)" stroke="#C8102E" stroke-width="1"/>
+          <circle cx="62" cy="95" r="3" fill="rgba(200,16,46,0.2)" stroke="#C8102E" stroke-width="1"/>
+          <circle cx="88" cy="93" r="3.5" fill="rgba(200,16,46,0.2)" stroke="#C8102E" stroke-width="1"/>
+          <!-- Label -->
+          <text x="75" y="145" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="9" letter-spacing="2" fill="#555">NORMAL BETRIEB</text>
+        </g>
+
+        <!-- Dimension lines bottom -->
+        <line x1="30" y1="230" x2="180" y2="230" stroke="#888" stroke-width="1"/>
+        <text x="105" y="245" text-anchor="middle" font-family="Josefin Sans, sans-serif" font-size="9" fill="#888">⌀ 28 cm</text>
+
+        <!-- Specs bottom bar -->
+        <rect x="0" y="270" width="380" height="50" fill="#111"/>
+        <text x="20" y="291" font-family="Josefin Sans, sans-serif" font-size="8" letter-spacing="2" fill="#C8102E">DRUCK</text>
+        <text x="20" y="305" font-family="Josefin Sans, sans-serif" font-size="10" font-weight="700" fill="#FFF">340 bar</text>
+        <text x="120" y="291" font-family="Josefin Sans, sans-serif" font-size="8" letter-spacing="2" fill="#C8102E">MATERIAL</text>
+        <text x="120" y="305" font-family="Josefin Sans, sans-serif" font-size="10" font-weight="700" fill="#FFF">Titan IV</text>
+        <text x="220" y="291" font-family="Josefin Sans, sans-serif" font-size="8" letter-spacing="2" fill="#C8102E">SPANNUNG</text>
+        <text x="220" y="305" font-family="Josefin Sans, sans-serif" font-size="10" font-weight="700" fill="#FFF">230 V / 16 A</text>
+        <text x="305" y="291" font-family="Josefin Sans, sans-serif" font-size="8" letter-spacing="2" fill="#E8C200">KLASSE</text>
+        <text x="305" y="305" font-family="Josefin Sans, sans-serif" font-size="10" font-weight="700" fill="#FFF">P-I</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem-band">
+    <div class="container">
+      <div class="section-label">Das Problem — Identifiziert im Grill Royal, Berlin</div>
+      <h2 class="section-title">Essensreste.<br>Ungegessen.</h2>
+      <p class="problem-text">
+        Du sitzt im besten Restaurant der Stadt. Das Essen war <strong>phänomenal</strong>. Die Gabel versagt. Mit der Querseite kommt man nicht ran. Lecken ist <strong>gesellschaftlich verboten</strong> — zumindest seit Klaus Kinski aufgehört hat, Restaurants zu terrorisieren. Die Reste bleiben zurück. Das Lecken bleibt aus. Der Teller geht gewaschen in die Küche zurück. <strong>Das ist die Tragödie unserer Zeit.</strong>
+      </p>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Verlorene Gramm pro Abend</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Gesellschaftlich akzeptable Leckvorgänge</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">12K€</div>
+          <div class="stat-label">Prototyp-Investition (ohne Baugenehmigung)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MECHANISM -->
+  <section class="mechanism">
+    <div class="container">
+      <div class="section-label">Funktionsweise — Patentiertes Fressform-Prinzip</div>
+      <h2 class="section-title">Drei Phasen.<br>Ein Ergebnis.</h2>
+      <div class="mech-grid">
+        <div class="mech-step">
+          <div class="step-num">01</div>
+          <svg class="step-icon" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="20" stroke="#C8102E" stroke-width="2"/>
+            <ellipse cx="24" cy="32" rx="16" ry="5" stroke="#111" stroke-width="1.5"/>
+            <circle cx="18" cy="24" r="3" fill="#E8C200"/>
+            <circle cx="28" cy="22" r="2" fill="#E8C200"/>
+            <circle cx="24" cy="26" r="2.5" fill="#C8102E"/>
+          </svg>
+          <div class="step-title">Essen</div>
+          <p class="step-text">
+            Sie speisen ganz normal. Der Presseller funktioniert wie jeder gewöhnliche Teller. Keine sichtbaren hydraulischen Bauteile. Keine Kabeln. Kein Kompressor im Sichtfeld des Gastes.
+          </p>
+        </div>
+        <div class="mech-step">
+          <div class="step-num">02</div>
+          <svg class="step-icon" viewBox="0 0 48 48" fill="none">
+            <rect x="4" y="20" width="40" height="8" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+            <line x1="24" y1="4" x2="24" y2="20" stroke="#C8102E" stroke-width="2"/>
+            <path d="M 18 14 L 24 20 L 30 14" fill="none" stroke="#C8102E" stroke-width="2"/>
+            <rect x="10" y="28" width="10" height="14" rx="1" fill="#E8C200"/>
+            <rect x="28" y="28" width="10" height="14" rx="1" fill="#E8C200"/>
+            <path d="M 20 35 L 28 35" stroke="#111" stroke-width="1.5" stroke-dasharray="3 2"/>
+          </svg>
+          <div class="step-title">Aktivierung</div>
+          <p class="step-text">
+            Auf Knopfdruck (oder Sprachbefehl: <em>„Finish"</em>) aktiviert sich die hydraulische Unterkonstruktion. Die Seitenwände fahren zusammen — exakt wie die Schrottpresse in Star Wars. Sauber. Präzise. Dramatisch.
+          </p>
+        </div>
+        <div class="mech-step">
+          <div class="step-num">03</div>
+          <svg class="step-icon" viewBox="0 0 48 48" fill="none">
+            <ellipse cx="24" cy="32" rx="18" ry="5" fill="none" stroke="#111" stroke-width="1.5"/>
+            <ellipse cx="24" cy="22" rx="10" ry="8" fill="#E8C200" opacity="0.6"/>
+            <ellipse cx="24" cy="22" rx="10" ry="8" fill="none" stroke="#C8102E" stroke-width="2"/>
+            <path d="M 24 14 C 24 14 28 10 32 12" stroke="#111" stroke-width="1.5" fill="none"/>
+            <circle cx="34" cy="11" r="2" fill="#C8102E"/>
+          </svg>
+          <div class="step-title">Aufnahme</div>
+          <p class="step-text">
+            Die Reste quillen in die Tellerrandung. Mit dem mitgelieferten <strong>Schnorchelhalm</strong> oder dem <strong>Miniatur-Besen-Schippe-Set</strong> nehmen Sie das komprimierte Essen sauber auf. Ein letzter Move. Zwei Sekunden. Würdevoll.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs-section">
+    <div class="container">
+      <div class="section-label">Technische Daten — Modell P-1 (Vorserienprototyp)</div>
+      <h2 class="section-title">Spezifikationen.</h2>
+      <table class="specs-table">
+        <tr>
+          <td>Durchmesser</td>
+          <td>28 cm (klassische Tellerform, Restauranttauglich)</td>
+        </tr>
+        <tr>
+          <td>Kompressionsdruck</td>
+          <td>340 bar (entspricht ca. 3 Elefanten auf einer Münze)</td>
+        </tr>
+        <tr>
+          <td>Antrieb</td>
+          <td>Hydraulisch · 230 V / 16 A <span class="spec-tag">Baugenehmigung erforderlich</span></td>
+        </tr>
+        <tr>
+          <td>Material</td>
+          <td>Titan IV · matt-gebürstet · spülmaschinengeeignet (nach Demontage)</td>
+        </tr>
+        <tr>
+          <td>Zubehör</td>
+          <td>1× Schnorchelhalm · 1× Miniatur-Besen-Schippe-Set · 1× Esspapier-Serviette (Ersatzpack 50 Stück)</td>
+        </tr>
+        <tr>
+          <td>Kompressionszeit</td>
+          <td>0,8 Sekunden (optional: Zeitlupe-Modus 4 Sek. für maximalen Effekt)</td>
+        </tr>
+        <tr>
+          <td>Lautstärke</td>
+          <td>62 dB(A) — vergleichbar mit lautem Gespräch im Grill Royal</td>
+        </tr>
+        <tr>
+          <td>Preis (UVP)</td>
+          <td>11.999 € (exkl. Baugenehmigung, Kompressor und Fundamente)</td>
+        </tr>
+        <tr>
+          <td>NISSE-Bewertung</td>
+          <td>5 / 24 — <em>„Das Problem ist real. Die Lösung … weniger."</em></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-copy">
+          <div class="section-label">Vorbestellung offen</div>
+          <h2 class="section-title">Kein Rest.<br>Kein Kompromiss.</h2>
+          <p>
+            Bestellen Sie jetzt den Presseller Modell P-1 und treten Sie dem exklusiven Kreis der Restaurantgäste bei, die ihren Teller <em>wirklich</em> leer bekommen. Lieferzeit: sobald die Baugenehmigung erteilt wird.
+          </p>
+        </div>
+        <div class="cta-price-box">
+          <div class="cta-price">11.999 €</div>
+          <div class="cta-price-note">Zzgl. Baugenehmigung &amp; Fundamente</div>
+          <a class="cta-btn" href="#">Vorbestellen →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="disclaimer"><em>Rein fiktives Konzept aus dem Satirepodcast TMDA. Der Presseller existiert nicht. Alle Spezifikationen sind erfunden. Bitte stellen Sie keinen Bauantrag.</em></p>
+    <div class="episode-bar">
+      <span>Fiktives Konzept</span>
+      <span>TMDA #65</span>
+      <span>5/24</span>
+      <span><a href="/folge/65">zur Folge</a></span>
+      <span><a href="/startup-ideen">alle Startups</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>

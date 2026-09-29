@@ -19,9 +19,13 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 64/64 LIVE ✅
+## Status — 65/65 LIVE ✅
 
-**Jede** Startup-Idee aus den Folgen 1-64 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+**Jede** Startup-Idee aus den Folgen 1-65 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
+
+### 5/24 (neue Folgen)
+
+- [x] **Presseller** · Folge 65 · 5/24 · Bauhaus/Werkzeugkatalog × Küchentechnik (Josefin Sans, Bauhaus-Rot/Gelb/Schwarz/Creme, hydraulisches Teller-Mechanismus-SVG, Technische-Zeichnung-Ästhetik)
 
 ### 20/24 (neue Folgen)
 
