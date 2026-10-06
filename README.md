@@ -94,7 +94,7 @@ Pure Witz-Compliance — wir setzen keine Tracking-Cookies, nur funktionale loca
 - **Runtime:** Cloudflare Workers
 - **Framework:** [Hono](https://hono.dev/) — leichtgewichtig, perfekt für Workers
 - **Frontend:** Vanilla HTML/CSS/JS — kein Build-Step, Hash-Routing, Dark/Light-Mode
-- **AI Chat:** Cloudflare Workers AI (`@cf/meta/llama-3.1-8b-instruct`) mit dem Wiki-Kontext + Transkripten
+- **AI Chat:** Cloudflare Workers AI (`@cf/meta/llama-3.1-8b-instruct-fp8`) mit dem Wiki-Kontext + Transkripten
 - **Static Assets:** Workers Assets (via `wrangler.jsonc`)
 - **Datenpipeline:** Python (Cleanup) + Node (Aggregation) + AI (Extraktion)
 

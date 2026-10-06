@@ -1,7 +1,27 @@
 {
-  "updatedAt": "2026-10-06T08:38:39.901Z",
-  "count": 113,
+  "updatedAt": "2026-10-06T08:43:01.535Z",
+  "count": 117,
   "items": [
+    {
+      "folge": 65,
+      "name": "Presseller / Fressform",
+      "beschreibung": "Hydraulischer Faltteller, der sich nach dem Essen zusammenfaltet (Foldable-Phone-Prinzip) und Reste zusammenpresst — sodass man mit Gabel oder Schnorchelhalm alles aufnehmen kann. Varianten: Seitenplatten (Star-Wars-Schrottpresse), Esspapier-Serviette (abwischen und aufessen), Miniatur-Besen + Schi…"
+    },
+    {
+      "folge": 65,
+      "name": "Schnorchelhalm",
+      "beschreibung": "Portmanteau aus Schnorchel + Strohhalm: ein Strohhalm mit Schnorchel-Klappe oben, der verhindert dass Flüssigkeit reinfließt — für den Pressteller-Einsatz auf flachen Tellern konzipiert."
+    },
+    {
+      "folge": 65,
+      "name": "Mundservierer (Futter-Kellner der Zukunft)",
+      "beschreibung": "Zukunftsszenario: Da Roboter alle Jobs übernehmen, bekäme jeder Restaurantgast einen echten Menschen (ehemaliger Anwalt, Steuerberater), der direkt in den Mund füttert — wie im Altersheim, aber gesellschaftlich rehabilitiert als Beruf namens 'Mundservierer', analog zu 'Arzt'."
+    },
+    {
+      "folge": 65,
+      "name": "Plattenkritik-Runde mit Kontrastgästen",
+      "beschreibung": "Format: Fünf Musiker oder kontrastreiche Persönlichkeiten (z.B. Loredana, Alice Weidel, Farid Bang, Jonathan Meese) hören gemeinsam ein neues Album (z.B. SDP), machen während des Hörens Notizen, bewerten dann mit z.B. 7,3/10 und diskutieren."
+    },
     {
       "folge": 64,
       "name": "'Cooler' Decke (Eiskonfekt-Prinzip)",

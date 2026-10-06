@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-06T08:38:39.901Z",
-  "count": 1121,
+  "updatedAt": "2026-10-06T08:43:01.535Z",
+  "count": 1127,
   "items": [
     {
       "name": "Donald Trump",
@@ -91,6 +91,21 @@
       ]
     },
     {
+      "name": "Michael Jackson",
+      "folgen": [
+        3,
+        16,
+        24,
+        28,
+        40,
+        42,
+        47,
+        49,
+        50,
+        65
+      ]
+    },
+    {
       "name": "Felix Lobrecht",
       "folgen": [
         9,
@@ -121,17 +136,32 @@
       ]
     },
     {
-      "name": "Michael Jackson",
+      "name": "Casper",
       "folgen": [
-        3,
-        16,
-        24,
+        18,
         28,
-        40,
+        32,
+        39,
+        41,
         42,
-        47,
         49,
-        50
+        53,
+        54,
+        65
+      ]
+    },
+    {
+      "name": "Kanye West",
+      "folgen": [
+        1,
+        6,
+        26,
+        32,
+        34,
+        40,
+        47,
+        55,
+        65
       ]
     },
     {
@@ -160,33 +190,6 @@
         49,
         53,
         54
-      ]
-    },
-    {
-      "name": "Casper",
-      "folgen": [
-        18,
-        28,
-        32,
-        39,
-        41,
-        42,
-        49,
-        53,
-        54
-      ]
-    },
-    {
-      "name": "Kanye West",
-      "folgen": [
-        1,
-        6,
-        26,
-        32,
-        34,
-        40,
-        47,
-        55
       ]
     },
     {
@@ -242,6 +245,19 @@
       ]
     },
     {
+      "name": "Materia",
+      "folgen": [
+        18,
+        38,
+        39,
+        41,
+        48,
+        49,
+        53,
+        65
+      ]
+    },
+    {
       "name": "Friedrich Merz",
       "folgen": [
         19,
@@ -280,6 +296,18 @@
       ]
     },
     {
+      "name": "Farid Bang",
+      "folgen": [
+        3,
+        10,
+        18,
+        24,
+        41,
+        53,
+        65
+      ]
+    },
+    {
       "name": "Peter Thiel",
       "folgen": [
         13,
@@ -304,18 +332,6 @@
       ]
     },
     {
-      "name": "Materia",
-      "folgen": [
-        18,
-        38,
-        39,
-        41,
-        48,
-        49,
-        53
-      ]
-    },
-    {
       "name": "Jay-Z",
       "folgen": [
         3,
@@ -324,17 +340,6 @@
         33,
         35,
         46
-      ]
-    },
-    {
-      "name": "Farid Bang",
-      "folgen": [
-        3,
-        10,
-        18,
-        24,
-        41,
-        53
       ]
     },
     {
@@ -507,6 +512,16 @@
       ]
     },
     {
+      "name": "Nina Chuba",
+      "folgen": [
+        10,
+        16,
+        53,
+        54,
+        65
+      ]
+    },
+    {
       "name": "Xavier Naidoo",
       "folgen": [
         13,
@@ -640,15 +655,6 @@
         32,
         38,
         46
-      ]
-    },
-    {
-      "name": "Nina Chuba",
-      "folgen": [
-        10,
-        16,
-        53,
-        54
       ]
     },
     {
@@ -1084,11 +1090,27 @@
       ]
     },
     {
+      "name": "Tim Bendzko",
+      "folgen": [
+        42,
+        53,
+        65
+      ]
+    },
+    {
       "name": "Paula Hartmann",
       "folgen": [
         42,
         44,
         45
+      ]
+    },
+    {
+      "name": "Jonathan Meese",
+      "folgen": [
+        47,
+        52,
+        65
       ]
     },
     {
@@ -1870,13 +1892,6 @@
       ]
     },
     {
-      "name": "Tim Bendzko",
-      "folgen": [
-        42,
-        53
-      ]
-    },
-    {
       "name": "Miley Cyrus",
       "folgen": [
         42,
@@ -1895,6 +1910,13 @@
       "folgen": [
         43,
         44
+      ]
+    },
+    {
+      "name": "Alice Weidel",
+      "folgen": [
+        44,
+        65
       ]
     },
     {
@@ -1940,13 +1962,6 @@
       ]
     },
     {
-      "name": "Jonathan Meese",
-      "folgen": [
-        47,
-        52
-      ]
-    },
-    {
       "name": "Serena Williams",
       "folgen": [
         48,
@@ -1958,6 +1973,13 @@
       "folgen": [
         48,
         50
+      ]
+    },
+    {
+      "name": "Loredana",
+      "folgen": [
+        49,
+        65
       ]
     },
     {
@@ -5868,12 +5890,6 @@
       ]
     },
     {
-      "name": "Alice Weidel",
-      "folgen": [
-        44
-      ]
-    },
-    {
       "name": "MC Bastel",
       "folgen": [
         45
@@ -6301,12 +6317,6 @@
     },
     {
       "name": "Alessio (Sarah Engels' Sohn)",
-      "folgen": [
-        49
-      ]
-    },
-    {
-      "name": "Loredana",
       "folgen": [
         49
       ]
@@ -7269,6 +7279,42 @@
       "name": "Katja Krasavice",
       "folgen": [
         64
+      ]
+    },
+    {
+      "name": "Werner Herzog",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "name": "Klaus Kinski",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "name": "Kevin James",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "name": "Marina Abramović",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "name": "Joris",
+      "folgen": [
+        65
+      ]
+    },
+    {
+      "name": "Advanced Chemistry (Torch, Linguist, Tony L)",
+      "folgen": [
+        65
       ]
     },
     {

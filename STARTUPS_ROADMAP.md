@@ -25,6 +25,10 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 
 **Folge 66** („Was macht Xaviers Bentley auf dem Schuldach?!", 2026-09-29, 0:39:10): kein Startup in dieser Folge. Erste Video-Podcast-Folge, thematisch Cancel Culture / Schulgeschichten / Xavier Naidoo. Extrakt und Transkript vorhanden, keine Startup-Page nötig.
 
+### 5/24 (neue Folgen)
+
+- [x] **Presseller** · Folge 65 · 5/24 · Bauhaus/Werkzeugkatalog × Küchentechnik (Josefin Sans, Bauhaus-Rot/Gelb/Schwarz/Creme, hydraulisches Teller-Mechanismus-SVG, Technische-Zeichnung-Ästhetik)
+
 ### 20/24 (neue Folgen)
 
 - [x] **Ich bin kein Fan von...** · Folge 63 · 20/24 · Punk-Fanzine / Xerox Cut-and-Paste (Anton + Space Mono, Schwarz/Weiß/Rot, Rotations-Animation, Siebdruck-T-Shirt-SVG)

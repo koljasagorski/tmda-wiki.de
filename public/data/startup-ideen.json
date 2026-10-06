@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-06T08:38:39.901Z",
-  "count": 61,
+  "updatedAt": "2026-10-06T08:43:01.535Z",
+  "count": 62,
   "items": [
+    {
+      "folge": 65,
+      "datum": "2026-09-22",
+      "idee": "'Presseller' — Teller der Essensreste zusammenpresst",
+      "beschreibung": "Fynn stellt das Problem: Im Grill Royal (und anderswo) bleiben immer Reste auf dem Teller, die man nicht runterkratzen kann — lecken ist gesellschaftlich verboten. Lösung: der 'Presseller' (Presse + Teller). Version 1: Foldable Phone-artige Faltteller-Hydraulik — Teller klappt zusammen wie ein Samsung Fold und quetscht Reste in eine Rundung (12.000€, braucht Baugenehmigung). Nisse bremst: 'alle K…",
+      "punkte": 5,
+      "max_punkte": 24,
+      "begruendung": "Nisse: 'Das Problem ist real und wir arbeiten jetzt zusammen eine Lösung.' Nach vielen Iterationen: 'Fünf Punkte. Du denkst es ein Erfolg, aber wie wir gesagt haben, alles unter 13 ist kriegst du die Kohle einfach nicht. Fünf ist ein Erfol…"
+    },
     {
       "folge": 64,
       "datum": "2026-09-15",
