@@ -18,6 +18,8 @@ const PUBLIC_TRANSCRIPTS = join(ROOT, 'public', 'transcripts');
 // Folgen-Daten aus web (Best-Effort): nur Folgen die wir wissen, der Rest bleibt null.
 // Datum: jeweils Dienstag wenn nicht anders bekannt.
 const KNOWN_DATES = {
+  66: '2026-09-29',
+  65: '2026-09-22',
   64: '2026-09-15',
   63: '2026-09-08',
   60: '2026-08-11', // auf YouTube verfügbar ab 10.08.; offizielle Podcast-Release wäre 18.08. — Wiki-Datum = Verfügbarkeitsdatum
@@ -78,7 +80,7 @@ async function main() {
       continue;
     }
     const folge = ep.folge;
-    const datum = KNOWN_DATES[folge] || null;
+    const datum = KNOWN_DATES[folge] || ep.datum || null;
 
     episodes.push({
       folge,

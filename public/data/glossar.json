@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T08:21:12.864Z",
-  "count": 286,
+  "updatedAt": "2026-10-06T08:38:39.901Z",
+  "count": 289,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -21,6 +21,16 @@
       "begriff": "31er",
       "bedeutung": "Person, die jemanden bei der Polizei verpfeift (von Paragraph 31 BtMG)",
       "folge": 35
+    },
+    {
+      "begriff": "335-jähriger Krieg",
+      "bedeutung": "Formeller Kriegszustand zwischen den Niederlanden und den Scilly-Inseln (1651–1986), der im Laufe der Jahrhunderte vergessen wurde. Keine Schüsse, keine Todesopfer. Erst 1986 offiziell durch einen Friedensvertrag beendet.",
+      "folge": 66
+    },
+    {
+      "begriff": "Acoustic Kitty",
+      "bedeutung": "CIA-Geheimprojekt der 1960er Jahre: einer lebenden Katze wurden Mikrofone und Antenne implantiert, um sowjetische Diplomaten auszuspionieren. Beim ersten Einsatz wurde die Katze sofort von einem Taxi überfahren.",
+      "folge": 66
     },
     {
       "begriff": "Affenindex",
@@ -686,6 +696,11 @@
       "begriff": "Knippe",
       "bedeutung": "Wort fuer Knarre/Waffe, das Nisse von seinem Freund Jan Woehlmoeller hat.",
       "folge": 43
+    },
+    {
+      "begriff": "Knochenödem",
+      "bedeutung": "Flüssigkeitsansammlung (Schwellung) im Knochen selbst. Kein chirurgischer Eingriff möglich — heilt von selbst, erfordert aber mehrwöchige Pause (hier: 3 Monate für Joris).",
+      "folge": 66
     },
     {
       "begriff": "Koksrambo-Messe",

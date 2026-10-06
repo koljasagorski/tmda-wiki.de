@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T08:21:12.864Z",
-  "count": 387,
+  "updatedAt": "2026-10-06T08:38:39.901Z",
+  "count": 392,
   "items": [
     {
       "ort": "Berlin",
@@ -2407,6 +2407,36 @@
       "ort": "oderso.cool (Plattform, auf der die 'Ich bin kein Fan von' Shirts live sind)",
       "folgen": [
         64
+      ]
+    },
+    {
+      "ort": "Hamburg (Ronald Schill, Graffiti-Kumpel-Geschichten)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Iran (Lehrer-Knarre-Geschichte von Nisse's Mutter's Freund)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Scilly-Inseln / Niederlande (Fun Fact: 335-jähriger Krieg)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Hiroshima / Nagasaki (Fun Fact: Tsutomu Yamaguchi)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "New York (Fun Fact: 9/11-First-Responder-Asbest-Spätfolgen)",
+      "folgen": [
+        66
       ]
     }
   ]

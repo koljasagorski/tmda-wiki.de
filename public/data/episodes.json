@@ -1,7 +1,32 @@
 {
-  "updatedAt": "2026-09-22T08:21:12.864Z",
-  "count": 62,
+  "updatedAt": "2026-10-06T08:38:39.901Z",
+  "count": 63,
   "items": [
+    {
+      "folge": 66,
+      "titel": "Was macht Xaviers Bentley auf dem Schuldach?!",
+      "datum": "2026-09-29",
+      "laufzeit": "0:39:10",
+      "themen": [
+        "Schule als öffentlicher Raum: Ronald Schill (Richter Gnadenlos) und Hamburger Wahlkampf — darf man in eine Schulaula zur Wahlkampfparty?",
+        "Blaulicht-Klassikmusik in U-Bahn-Stationen gegen Drogenkonsum: bestimmte Frequenzen in Streichinstrumenten (Paganini) wirken für Drogenabhängige wie eine Störfrequenz",
+        "PA Sports vs. Cynic Battle-Rap (vollständiges Battle gesehen): PA Sports als seltener etablierter Rapper, der sich in die Battle-Szene wagt — Risiko der Verbrennungsgefahr",
+        "Video-Podcast-Debüt: erste Folge im Videoformat — Blickkontakt, Nähe, Knie- und Kopfschmerzen durch ungewohnte Sitzposition",
+        "Graffiti-Kumpel (Hamburg, 1997) mit gestohlener Polizeijacke: trickste Security in Bahnhöfen aus — malte sich auch eine Waffe auf Zettel am Halfter",
+        "Lehrer mit Knarre im Iran (Nisse's Mutter's Freund aus dem Studium): Klasse wurde ruhig — Reaktion: alle Schüler brachten eigene Waffen mit",
+        "Fynn schoss als 14-Jähriger echte Pistole auf Bäume — Mutter des Iran-Bekannten ließ es einfach zu",
+        "Fynns Vater legte VW Käfer zum Abiabschluss aufs Schuldach (angeblich mit 20 Schülern über die Feuertreppe — Geschichte mit Skepsis erzählt)",
+        "Henning pinkelte in Super-Soaker und schoss auf Schulleiterin — danach Super-Soaker-Verbot an der Schule",
+        "Stevens Vater schoss betrunkenen Böller auf vorbeifahrenden Krankenwagen — alle liefen weg",
+        "SWR '1+1 Freund auf Zeit' Format mit Fynn und Livin (Kömediantin, Köln): SWR postete nichts aus Angst vor Schitstorm wegen Fynn — Cancel-Culture-Diskussion",
+        "Xavier Naidoo ESC-Kontroverse: beide waren früher Xavier-Naidoo-Fans — Metapher für Entwicklungen, die man nicht mehr unterstützen kann",
+        "Therapie-Anekdoten: Fynns Therapeut war Autist (erzählte mehr über sich als über Fynn), Nisse's Therapeutin war professionell verschlossen (parasoziale Dynamik)",
+        "Besteck-Skandal-Abschluss (Nisse): zufällige Begegnung mit der Person aus dem alten Job — kurzer Blickkontakt, dann weg",
+        "Joris Schulter-Update: Knochenödem (Schwellung im Knochen), keine OP, 3 Monate Pause — passiert beim Sony-Fußballturnier",
+        "Fun Facts: 335-jähriger Krieg (Scilly Islands vs. Niederlande, 0 Tote), CIA Acoustic Kitty (Katze mit implantiertem Mikrofon, von Taxi überfahren), Tsutomu Yamaguchi (überlebte beide Atombombenwürfe 1945)"
+      ],
+      "kurzbeschreibung": "Die erste Video-Podcast-Folge von TMDA beginnt mit einer Diskussion über Schulen als öffentlichen Raum und Ronald Schill / Richter Gnadenlos. Dann: Blaulicht-Klassikmusik in U-Bahn-Stationen gegen Drogenkonsum, und PA Sports vs. Cynic Battle-Rap. Das neue Videoformat bringt ungewohnte körperliche Nähe — Knie- und Kopfschmerzen. Die meiste Folge besteht aus persönlichen Anekdoten rund um Schulstreiche und Waffen: Nisse über einen Graffiti-Kumpel, der eine gestohlene Polizeijacke und eine gemalte Waffe auf einem Zettel nutzte; über einen Freund der Mutter aus dem Iran, dessen Lehrer eine Pistole auf den Tisch legte (bis die ganze Klasse eigene Waffen mitbrachte); Fynn, der als 14-Jähriger mit einer echten Pistole auf Bäume schoss; Fynns Vater, der angeblich einen VW Käfer zum Abiabschluss aufs Schuldach trug. Der Episodentitel bezieht sich auf diese Käfer-Geschichte (aber als Auto heißt es 'Bentley' im Titel — Cancel-Culture-Anspielung auf Xavier Naidoo). Hauptthema: Fynn war als Gast im SWR-Format '1+1 Freund auf Zeit' mit Kömediantin Livin — der SWR hat bisher nichts davon gepostet aus Angst vor Schitstorm. Lange Diskussion über Cancel Culture, Plattformverantwortung und den Unterschied zwischen Dialog und Internet-Kommentaren. Xavier Naidoo als Beispiel: beide waren früher Fans. Abschluss: Erkenntnismarathon mit Joris-Schulter-Update (Knochenödem, 3 Monate Pause) und drei Fun Facts. Kein Startup in dieser Folge."
+    },
     {
       "folge": 64,
       "titel": "Bazooka-Roboter piercen jetzt Kinder!",
@@ -50,7 +75,7 @@
     {
       "folge": 62,
       "titel": "Ich will: Elton Johns Kniescheiben u. Vinyl aus meiner Asche",
-      "datum": null,
+      "datum": "2026-08-26",
       "laufzeit": "1:02:10",
       "themen": [
         "Elton Johns Kniescheiben als Anhänger — Fynns Sterbewunsch und philosophische Todesgespräche",
@@ -74,7 +99,7 @@
     {
       "folge": 61,
       "titel": "Verlaffelland",
-      "datum": null,
+      "datum": "2026-08-18",
       "laufzeit": "1:08:51",
       "themen": [
         "Andrej Wirsing: 18h Ostsee-Schwimmen, 11 kg Gewichtszunahme durch Wassereinlagerung",
