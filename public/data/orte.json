@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-29T08:35:17.665Z",
-  "count": 392,
+  "updatedAt": "2026-10-06T08:43:01.535Z",
+  "count": 397,
   "items": [
     {
       "ort": "Berlin",
@@ -2437,6 +2437,36 @@
       "ort": "oderso.cool (TMDA-Merch-Shop, 'Ich bin kein Fan von'-Shirts)",
       "folgen": [
         65
+      ]
+    },
+    {
+      "ort": "Hamburg (Ronald Schill, Graffiti-Kumpel-Geschichten)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Iran (Lehrer-Knarre-Geschichte von Nisse's Mutter's Freund)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Scilly-Inseln / Niederlande (Fun Fact: 335-jähriger Krieg)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "Hiroshima / Nagasaki (Fun Fact: Tsutomu Yamaguchi)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "ort": "New York (Fun Fact: 9/11-First-Responder-Asbest-Spätfolgen)",
+      "folgen": [
+        66
       ]
     }
   ]

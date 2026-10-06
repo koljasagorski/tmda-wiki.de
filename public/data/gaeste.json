@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-29T08:35:17.665Z",
-  "count": 1121,
+  "updatedAt": "2026-10-06T08:43:01.535Z",
+  "count": 1127,
   "items": [
     {
       "name": "Donald Trump",
@@ -522,6 +522,16 @@
       ]
     },
     {
+      "name": "Xavier Naidoo",
+      "folgen": [
+        13,
+        17,
+        20,
+        51,
+        66
+      ]
+    },
+    {
       "name": "Olli Pocher",
       "folgen": [
         14,
@@ -699,15 +709,6 @@
         25,
         35,
         50
-      ]
-    },
-    {
-      "name": "Xavier Naidoo",
-      "folgen": [
-        13,
-        17,
-        20,
-        51
       ]
     },
     {
@@ -7314,6 +7315,42 @@
       "name": "Advanced Chemistry (Torch, Linguist, Tony L)",
       "folgen": [
         65
+      ]
+    },
+    {
+      "name": "Ronald Schill (Richter Gnadenlos)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "name": "PA Sports",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "name": "Cynic",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "name": "Livin (Kömediantin, Köln)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "name": "Joris (Schulterprobleme)",
+      "folgen": [
+        66
+      ]
+    },
+    {
+      "name": "Rudy Giuliani",
+      "folgen": [
+        66
       ]
     }
   ]
