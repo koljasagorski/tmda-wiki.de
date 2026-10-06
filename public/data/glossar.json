@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-22T08:21:12.864Z",
-  "count": 286,
+  "updatedAt": "2026-09-29T08:35:17.665Z",
+  "count": 291,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -256,6 +256,11 @@
       "begriff": "Das wassergelagerte Flugzeug",
       "bedeutung": "Die Startup-Idee der Folge: ein doppelwandiges Flugzeug mit Wassermantel, in dem der Passagier schwerelos und immer gerade gelagert ist (Spitzname der Fan-Produktseite: AQUAVION).",
       "folge": 51
+    },
+    {
+      "begriff": "David Pain for the Brain",
+      "bedeutung": "Nisses Selbstbeschreibung aus Folge 65: Er hat keine Fakten vorbereitet, sondern will Fynns Wissen durch Fehlinformationen 'löschen' — nach Werner-Herzog-Methode. Anspielung auf David Blaine.",
+      "folge": 65
     },
     {
       "begriff": "Dead Internet Theory",
@@ -843,6 +848,11 @@
       "folge": 35
     },
     {
+      "begriff": "Mundservierer",
+      "bedeutung": "Zukunftskonzept aus Folge 65: Professioneller Futter-Kellner, der Gäste direkt in den Mund füttert (ehemalige Anwälte/Steuerberater umgeschult). Nisse korrigiert Fynns Begriff: 'heißt Mundservierer, nicht Mundservierer'.",
+      "folge": 65
+    },
+    {
       "begriff": "Murmelmann/Mummel",
       "bedeutung": "Spitzname fuer den Pfefferkoerner-Podcast-Moderator",
       "folge": 40
@@ -1003,6 +1013,11 @@
       "folge": 10
     },
     {
+      "begriff": "Presseller / Fressform",
+      "bedeutung": "Startup aus Folge 65: Hydraulischer Faltteller, der Essensreste zusammenpresst. 'Presseller' = Presse+Teller, 'Fressform' = Fressen+Pressform. Bewertet mit 5/24.",
+      "folge": 65
+    },
+    {
       "begriff": "Prinz Omega",
       "bedeutung": "Fynns spontan erfundenes Schlager-Rap-Konzept für den Mega Park / Ballermann. Kooperation mit Uhrenmarke Omega ('die Uhren drehen rückwärts'). Bisher zwei Songs skizziert. Entstanden aus der Diskussion über Anitas (Haftbefehls Frau) Schlag…",
       "folge": 58
@@ -1108,6 +1123,11 @@
       "folge": 14
     },
     {
+      "begriff": "Schnorchelhalm",
+      "bedeutung": "Portmanteau aus Schnorchel + Strohhalm. Aus Folge 65: Nisse's Lösungsvorschlag für den Pressteller — Strohhalm mit Schnorchel-Klappe, um gepresste Essensreste aufzunehmen ohne Rückfluss.",
+      "folge": 65
+    },
+    {
       "begriff": "Schroedingers Katze",
       "bedeutung": "Gedankenexperiment: Katze in einer Box mit Giftampulle ist gleichzeitig tot und lebendig, solange die Box nicht geoeffnet wird.",
       "folge": 20
@@ -1176,6 +1196,11 @@
       "begriff": "Smart Cap",
       "bedeutung": "Small Capital - Finanzbegriff fuer wenig Geld (Marktkapitalisierung)",
       "folge": 28
+    },
+    {
+      "begriff": "Spadel",
+      "bedeutung": "Portmanteau aus Spatel + Padel (oder einfach Spatel). Aus Folge 65: Nisses Vorschlag für ein gummiertes Backspatel-artiges Besteck-Teil für den Pressteller.",
+      "folge": 65
     },
     {
       "begriff": "Spiessrutenlauf",
