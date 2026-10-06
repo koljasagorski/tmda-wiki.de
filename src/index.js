@@ -201,6 +201,12 @@ async function verifyTurnstile(secret, token, ip) {
 }
 
 // ---------- AI Chat ----------
+// Nur Modelle ohne Abkündigung aus dem Katalog nehmen:
+// https://developers.cloudflare.com/workers-ai/models/
+// `@cf/meta/llama-3.1-8b-instruct` liefert seit 2026-05-30 AiError 5028
+// ("infire-llama-3.1-8b-instruct was deprecated").
+const CHAT_MODEL = '@cf/meta/llama-3.1-8b-instruct-fp8';
+
 app.post('/api/chat', async (c) => {
   const body = await c.req.json().catch(() => ({}));
   const { messages = [], folge, turnstileToken, userQuestionCount } = body;
@@ -251,12 +257,13 @@ ${folgeContext ? `\nTRANSKRIPT-AUSSCHNITT FOLGE #${folge}:\n${folgeContext}` : '
   ];
 
   try {
-    const result = await c.env.AI.run('@cf/meta/llama-3.1-8b-instruct', {
+    const result = await c.env.AI.run(CHAT_MODEL, {
       messages: aiMessages,
       max_tokens: 512,
     });
-    return c.json({ reply: result.response ?? '', model: 'llama-3.1-8b-instruct' });
+    return c.json({ reply: result.response ?? '', model: CHAT_MODEL.split('/').pop() });
   } catch (err) {
+    console.error('[chat] Workers AI fehlgeschlagen:', err);
     return c.json({ error: 'AI nicht verfügbar', detail: String(err) }, 503);
   }
 });
