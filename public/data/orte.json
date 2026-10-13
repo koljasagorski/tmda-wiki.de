@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-06T08:43:01.535Z",
-  "count": 397,
+  "updatedAt": "2026-10-13T06:23:36.433Z",
+  "count": 402,
   "items": [
     {
       "ort": "Berlin",
@@ -2467,6 +2467,36 @@
       "ort": "New York (Fun Fact: 9/11-First-Responder-Asbest-Spätfolgen)",
       "folgen": [
         66
+      ]
+    },
+    {
+      "ort": "München (KI-Panel: Wem gehört die Stimme? — Fynn als Speaker)",
+      "folgen": [
+        67
+      ]
+    },
+    {
+      "ort": "Berlin Grenzallee (Padel-Arena, Nisse's Trainerstätte dienstags 10–16 Uhr)",
+      "folgen": [
+        67
+      ]
+    },
+    {
+      "ort": "CERN / Genf (Teilchenbeschleuniger, Nisse träumt von Führung)",
+      "folgen": [
+        67
+      ]
+    },
+    {
+      "ort": "Bulgarien/Griechenland (Hunde-Grenz-Krieg 1925)",
+      "folgen": [
+        67
+      ]
+    },
+    {
+      "ort": "Liechtenstein/Italien (Armee-Freundschafts-Anekdote 1866)",
+      "folgen": [
+        67
       ]
     }
   ]

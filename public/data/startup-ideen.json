@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-06T08:43:01.535Z",
-  "count": 62,
+  "updatedAt": "2026-10-13T06:23:36.433Z",
+  "count": 63,
   "items": [
+    {
+      "folge": 67,
+      "datum": "2026-10-06",
+      "idee": "nippelheilung.org — Schwangere als biologische Diagnose-Server",
+      "beschreibung": "Fynn pitcht eine Plattform namens nippelheilung.org, basierend auf dem realen biologischen Phänomen, dass der weibliche Nippel auf infizierten Speichel des Säuglings reagiert und die Muttermilch verändert (spezifische Antikörper produziert). Geschäftsmodell: Stillende Frauen registrieren sich, Kranke schicken Speichelproben per Sprinter/Drohne ('Lick and Go') ein, die Frauen halten die Probe an d…",
+      "punkte": 1,
+      "max_punkte": 24,
+      "begruendung": "Nisse findet die Grundidee wissenschaftlich interessant, aber das Geschäftsmodell grottesk: MadMax-Vergleich (Frauen angekettet, Milch abgezapft), albanische Menschenhandel-Metapher. Er vergibt 1 Punkt für den 'puffigen Spruch' — 'ist die …"
+    },
     {
       "folge": 65,
       "datum": "2026-09-22",

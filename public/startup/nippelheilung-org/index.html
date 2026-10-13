@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nippelheilung.org – Kollektive Heilung, natürlich</title>
+  <meta name="description" content="nippelheilung.org verbindet Kranke mit registrierten Stillenden: eine Speichelprobe, ein Nippel-Check, eine individuell angepasste Muttermilch. Hast ein Juckeln, einmal nuckeln.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/nippelheilung-org">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="nippelheilung.org – Kollektive Heilung, natürlich">
+  <meta property="og:description" content="nippelheilung.org verbindet Kranke mit registrierten Stillenden: eine Speichelprobe, ein Nippel-Check, eine individuell angepasste Muttermilch. Hast ein Juckeln, einmal nuckeln.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/nippelheilung-org">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="nippelheilung.org – Kollektive Heilung, natürlich">
+  <meta name="twitter:description" content="nippelheilung.org verbindet Kranke mit registrierten Stillenden: eine Speichelprobe, ein Nippel-Check, eine individuell angepasste Muttermilch. Hast ein Juckeln, einmal nuckeln.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "nippelheilung.org Basis-Diagnose",
+    "description": "Speichelprobe einsenden, individuell angepasste Muttermilch-Antwort erhalten. Die Brust weiß, was dir fehlt.",
+    "brand": { "@type": "Brand", "name": "nippelheilung.org" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "30.00",
+      "availability": "https://schema.org/InStock",
+      "description": "Standard-Nippelcheck inkl. Speichelprobe-Analyse und Milch-Rückmeldung innerhalb von 12 Stunden"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --cream:    #FFF8EE;
+      --parchment:#F2E4CC;
+      --navy:     #1B2A4A;
+      --navy-mid: #2E4472;
+      --red:      #B82A1E;
+      --amber:    #D4860A;
+      --warm-gray:#8A7F6E;
+      --text:     #2A1F14;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── HEADER BANNER ── */
+    .site-banner {
+      background: var(--navy);
+      color: var(--amber);
+      text-align: center;
+      padding: 6px 16px;
+      font-size: 0.78rem;
+      font-family: 'Source Sans 3', sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 0 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      padding: 56px 0 48px;
+      position: relative;
+      z-index: 2;
+    }
+    .logo-emblem {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 24px;
+    }
+    .hero-eyebrow {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.1;
+      color: var(--cream);
+      margin-bottom: 20px;
+    }
+    .hero-title span { color: var(--amber); }
+    .hero-sub {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      text-align: center;
+      color: #C9D6EB;
+      max-width: 560px;
+      margin-bottom: 36px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #8e1e14; }
+
+    .hero-ruling {
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red) 0%, var(--amber) 50%, var(--red) 100%);
+      margin-top: 0;
+    }
+
+    /* ── DIVIDER RIBBON ── */
+    .ribbon {
+      background: var(--parchment);
+      border-top: 2px solid var(--amber);
+      border-bottom: 2px solid var(--amber);
+      text-align: center;
+      padding: 10px 16px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ── HOW IT WORKS ── */
+    .section {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 64px 16px;
+    }
+    .section-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .section-intro {
+      font-size: 1.05rem;
+      color: var(--warm-gray);
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2px;
+      background: var(--navy);
+    }
+    .step {
+      background: var(--cream);
+      padding: 32px 24px;
+    }
+    .step-num {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--parchment);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .step-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .step-body {
+      font-size: 0.9rem;
+      color: var(--warm-gray);
+      line-height: 1.5;
+    }
+
+    /* ── SCIENCE ── */
+    .science-bg {
+      background: var(--parchment);
+      border-top: 1px solid #D9C9A8;
+      border-bottom: 1px solid #D9C9A8;
+    }
+    .science-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 64px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    @media (max-width: 640px) { .science-inner { grid-template-columns: 1fr; } }
+
+    .science-illustration {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      display: block;
+    }
+    .science-copy h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .science-copy p {
+      font-size: 0.97rem;
+      color: #4A3A28;
+      margin-bottom: 16px;
+      line-height: 1.65;
+    }
+    .science-copy blockquote {
+      border-left: 3px solid var(--amber);
+      padding-left: 16px;
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin: 24px 0;
+    }
+
+    /* ── PRICING ── */
+    .pricing-section {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 64px 16px;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2px;
+      background: var(--navy);
+      margin-top: 40px;
+    }
+    .plan {
+      background: var(--cream);
+      padding: 32px 24px;
+    }
+    .plan.featured {
+      background: var(--navy);
+      color: var(--cream);
+    }
+    .plan-name {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 8px;
+    }
+    .plan-price {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: inherit;
+      line-height: 1;
+    }
+    .plan-price sub {
+      font-size: 1rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      vertical-align: baseline;
+    }
+    .plan.featured .plan-price { color: #fff; }
+    .plan-desc {
+      font-size: 0.88rem;
+      color: var(--warm-gray);
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+    .plan.featured .plan-desc { color: #9AAAC4; }
+    .plan-feature {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: inherit;
+      line-height: 1.7;
+    }
+    .plan.featured .plan-feature { color: #C9D6EB; }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 72px 16px;
+    }
+    .cta-section h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.8rem, 4.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .cta-section p {
+      font-size: 1.05rem;
+      opacity: 0.88;
+      max-width: 480px;
+      margin: 0 auto 36px;
+    }
+    .btn-light {
+      display: inline-block;
+      background: #fff;
+      color: var(--red);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-light:hover { opacity: 0.88; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: #7A8FAE;
+      text-align: center;
+      padding: 32px 16px;
+      font-size: 0.82rem;
+    }
+    footer .disclaimer {
+      font-style: italic;
+      margin-bottom: 10px;
+      color: #5A6F8A;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer .meta a {
+      color: var(--amber);
+      text-decoration: none;
+    }
+    footer .meta a:hover { text-decoration: underline; }
+
+    /* ── ORNAMENT ── */
+    .ornament {
+      text-align: center;
+      color: var(--amber);
+      font-size: 1.4rem;
+      letter-spacing: 0.4em;
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <div class="site-banner">Europäischer Immunverbund für kollektive Naturheilung · Gegründet aus reiner Nächstenliebe</div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <!-- SVG Emblem -->
+      <svg class="logo-emblem" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="60" cy="60" r="58" stroke="#D4860A" stroke-width="2.5" fill="none"/>
+        <circle cx="60" cy="60" r="50" stroke="#D4860A" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+        <!-- Droplet shape -->
+        <path d="M60 25 C60 25 38 52 38 65 C38 77.7 48 86 60 86 C72 86 82 77.7 82 65 C82 52 60 25 60 25Z" fill="#D4860A" opacity="0.18"/>
+        <path d="M60 30 C60 30 42 54 42 66 C42 76.5 50 84 60 84 C70 84 78 76.5 78 66 C78 54 60 30 60 30Z" stroke="#D4860A" stroke-width="2" fill="none"/>
+        <!-- Butterfly left wing -->
+        <path d="M38 55 C28 42 22 58 30 64 C36 68 42 62 42 62" stroke="#C9D6EB" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <path d="M38 70 C26 72 26 86 36 82 C42 79 42 72 42 72" stroke="#C9D6EB" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <!-- Butterfly right wing -->
+        <path d="M82 55 C92 42 98 58 90 64 C84 68 78 62 78 62" stroke="#C9D6EB" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <path d="M82 70 C94 72 94 86 84 82 C78 79 78 72 78 72" stroke="#C9D6EB" stroke-width="1.5" fill="none" opacity="0.7"/>
+        <!-- center dot butterfly body -->
+        <line x1="60" y1="62" x2="60" y2="72" stroke="#C9D6EB" stroke-width="1.5" opacity="0.7"/>
+        <!-- Stars top -->
+        <text x="38" y="30" font-size="7" fill="#D4860A" text-anchor="middle">✦</text>
+        <text x="82" y="30" font-size="7" fill="#D4860A" text-anchor="middle">✦</text>
+        <text x="60" y="18" font-size="7" fill="#D4860A" text-anchor="middle">✦</text>
+      </svg>
+
+      <p class="hero-eyebrow">Gegründet · Nippelheilung GmbH · Röbel/Müritz</p>
+      <h1 class="hero-title">nippel<span>heilung</span>.org</h1>
+      <p class="hero-sub">Die Brust weiß, was dir fehlt.<br>Kollektive Heilung. Natürlich. Europaweit.</p>
+      <a href="#registrieren" class="btn-primary">Jetzt registrieren</a>
+    </div>
+    <div class="hero-ruling"></div>
+  </section>
+
+  <div class="ribbon">✦ &nbsp; Hast ein Juckeln, einmal nuckeln &nbsp; ✦ &nbsp; 80 % Umsatz für die Mutter &nbsp; ✦ &nbsp; Express-Diagnose ab 30 € &nbsp; ✦</div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <p class="section-label">Das Prinzip</p>
+    <h2 class="section-title">So funktioniert kollektive Heilung</h2>
+    <p class="section-intro">Vier Schritte trennen dich vom immungesunden Morgen — und eine Frau aus Düsseldorf, Karlsruhe oder Röbel verdient dabei gutes Geld.</p>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Speichelprobe einsenden</div>
+        <div class="step-body">Du fühlst, dass etwas nicht stimmt. Du leckelst kurz auf den mitgelieferten Träger und schickst ihn per Express-Kurier oder Drohne ('Lick and Go') an die zentrale Verteiler-Scheune.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Nippel-Match</div>
+        <div class="step-body">Unsere registrierten Stillenden erhalten die Probe. Der Nippel nimmt Kontakt auf — die Brust weiß. Innerhalb von Sekunden beginnt die Milch, sich anzupassen und spezifische Abwehrstoffe zu produzieren.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Immunologische Rückmeldung</div>
+        <div class="step-body">Die angepasste Milchprobe wird analysiert und als Diagnose-Appell (kurz: »der Nippel-Appell«) übermittelt. Du erfährst, was mit dir nicht stimmt — und wie du es lösen kannst.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Zahlung & Dank</div>
+        <div class="step-body">80 % des Honorars gehen direkt an die stillende Frau. 20 % bleiben bei nippelheilung.org für Server, Lagerlogistik und die Sprinter-Flotte. Du schuldest der Welt noch einen Dank.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCIENCE SECTION -->
+  <div class="science-bg">
+    <div class="science-inner">
+
+      <!-- Botanical SVG illustration -->
+      <svg class="science-illustration" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Milk bottle outline -->
+        <rect x="105" y="160" width="90" height="130" rx="6" fill="#FFF8EE" stroke="#1B2A4A" stroke-width="2"/>
+        <rect x="118" y="140" width="64" height="28" rx="4" fill="#FFF8EE" stroke="#1B2A4A" stroke-width="2"/>
+        <rect x="128" y="128" width="44" height="18" rx="3" fill="#D4860A" stroke="#1B2A4A" stroke-width="1.5"/>
+        <!-- label -->
+        <rect x="113" y="175" width="74" height="80" rx="2" fill="#F2E4CC" stroke="#D4860A" stroke-width="1.5"/>
+        <text x="150" y="198" font-size="8" fill="#1B2A4A" text-anchor="middle" font-family="serif" font-weight="bold">nippelheilung</text>
+        <text x="150" y="210" font-size="6" fill="#B82A1E" text-anchor="middle" font-family="serif">.org</text>
+        <line x1="120" y1="217" x2="180" y2="217" stroke="#D4860A" stroke-width="0.8"/>
+        <text x="150" y="227" font-size="5.5" fill="#4A3A28" text-anchor="middle">Immun-Spezialvollmilch</text>
+        <text x="150" y="237" font-size="5" fill="#8A7F6E" text-anchor="middle">individuell angepasst</text>
+        <text x="150" y="247" font-size="5" fill="#8A7F6E" text-anchor="middle">Charge EU-2024-110c</text>
+        <!-- butterfly left -->
+        <path d="M72 100 C55 80 48 105 62 112 C70 116 80 108 80 108" stroke="#D4860A" stroke-width="1.5" fill="#D4860A" fill-opacity="0.12"/>
+        <path d="M72 125 C52 130 55 150 68 144 C76 140 78 128 78 128" stroke="#D4860A" stroke-width="1.5" fill="#D4860A" fill-opacity="0.12"/>
+        <!-- butterfly right -->
+        <path d="M228 100 C245 80 252 105 238 112 C230 116 220 108 220 108" stroke="#D4860A" stroke-width="1.5" fill="#D4860A" fill-opacity="0.12"/>
+        <path d="M228 125 C248 130 245 150 232 144 C224 140 222 128 222 128" stroke="#D4860A" stroke-width="1.5" fill="#D4860A" fill-opacity="0.12"/>
+        <line x1="150" y1="108" x2="150" y2="122" stroke="#D4860A" stroke-width="1.5"/>
+        <!-- decorative botanical sprigs -->
+        <path d="M50 220 C60 200 70 180 80 170" stroke="#2E4472" stroke-width="1.5" fill="none"/>
+        <ellipse cx="80" cy="170" rx="10" ry="6" fill="#2E4472" fill-opacity="0.2" transform="rotate(-30 80 170)"/>
+        <ellipse cx="70" cy="185" rx="8" ry="5" fill="#2E4472" fill-opacity="0.2" transform="rotate(-45 70 185)"/>
+        <path d="M250 220 C240 200 230 180 220 170" stroke="#2E4472" stroke-width="1.5" fill="none"/>
+        <ellipse cx="220" cy="170" rx="10" ry="6" fill="#2E4472" fill-opacity="0.2" transform="rotate(30 220 170)"/>
+        <ellipse cx="230" cy="185" rx="8" ry="5" fill="#2E4472" fill-opacity="0.2" transform="rotate(45 230 185)"/>
+        <!-- stars -->
+        <text x="150" y="60" font-size="22" fill="#D4860A" text-anchor="middle" opacity="0.6">✦</text>
+        <text x="90" y="80" font-size="12" fill="#D4860A" text-anchor="middle" opacity="0.4">✦</text>
+        <text x="210" y="80" font-size="12" fill="#D4860A" text-anchor="middle" opacity="0.4">✦</text>
+        <!-- cap ornament -->
+        <text x="150" y="137" font-size="7" fill="#FFF8EE" text-anchor="middle" font-family="serif">NH</text>
+      </svg>
+
+      <div class="science-copy">
+        <h2>Die Wissenschaft hinter dem Nippel</h2>
+        <p>Der weibliche Nippel ist ein biologisches Wunderwerk. Wenn ein Säugling mit infiziertem Speichel saugt, erkennt das mütterliche Immunsystem die Pathogene — und verändert die Muttermilch innerhalb von Stunden so, dass sie genau die richtigen Antikörper enthält.</p>
+        <p>Was bisher nur Mütter und ihre Babys genießen durften, öffnet nippelheilung.org für die Allgemeinheit. Deine Speichelprobe. Eine registrierte Stillende. Ein intelligenter Nippel. Das Ergebnis: individuell angepasste Immununstützung.</p>
+        <blockquote>»Die weibliche Brust ist ein absolutes fucking Wunderwerk. Ich will das doch einfach nur der Welt zur Verfügung stellen.«<br><em style="font-size:0.85rem; color: var(--warm-gray);">— Fynn Kliemann, Gründervision</em></blockquote>
+        <p>Klinische Studien laufen. Die Brust wartet nicht.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="registrieren">
+    <p class="section-label">Transparente Preise</p>
+    <h2 class="section-title">Wähle deinen Nippelcheck</h2>
+    <p class="section-intro">Alle Preise verstehen sich zzgl. Speichelproben-Versandlogistik und Sprinter-Kraftstoff.</p>
+
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">Standard</div>
+        <div class="plan-price">30<sub> €</sub></div>
+        <div class="plan-desc">Innerhalb von 12 Stunden. Klassischer Nippelcheck per Kurier.</div>
+        <div class="plan-feature">
+          ✓ Speichelproben-Träger<br>
+          ✓ Nippel-Match aus Deiner Region<br>
+          ✓ Digitaler Nippel-Appell<br>
+          ✗ Kein Expresse
+        </div>
+      </div>
+
+      <div class="plan featured">
+        <div class="plan-name">Express · Beliebt</div>
+        <div class="plan-price">99<sub> €</sub></div>
+        <div class="plan-desc">Innerhalb 1 Stunde. Touch-Lick-and-Go per Drohne oder Sprinter.</div>
+        <div class="plan-feature">
+          ✓ Prioritäts-Nippel-Match<br>
+          ✓ Drohnen-Direktlieferung<br>
+          ✓ Live-Status im nippel-dashboard<br>
+          ✓ Zertifizierter Nippel-Appell
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Premium VIP</div>
+        <div class="plan-price">179<sub> €</sub></div>
+        <div class="plan-desc">Für Matthias Schweighöfer, Brian Johnson & andere mit Gesundheitsangst.</div>
+        <div class="plan-feature">
+          ✓ Alles aus Express<br>
+          ✓ Persönliche Scheune-Inspektion<br>
+          ✓ Nippel-Concierge<br>
+          ✓ Discretion-Garantie
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Für Stillende</div>
+        <div class="plan-price">80<sub> %</sub></div>
+        <div class="plan-desc">Du bist die Infrastruktur. Registriere dich, bestimme dein Volumen.</div>
+        <div class="plan-feature">
+          ✓ 80 % jeder Diagnose direkt auf dein Konto<br>
+          ✓ Flexible Verfügbarkeit<br>
+          ✓ Nippel-Versicherungspaket (in Entwicklung)<br>
+          ✓ Community-Forum: „Muttermilch & Mehr"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="ornament">✦ ✦ ✦</div>
+    <h2>Dein Juckeln wartet nicht.</h2>
+    <p>Registriere dich jetzt und werde Teil der kollektiven Heilungsbewegung. Europaweit. Natürlich. Nippelbasiert.</p>
+    <a href="#" class="btn-light">Jetzt Probe einsenden</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="disclaimer">Rein fiktives Konzept aus dem TMDA-Podcast. Keine medizinische Dienstleistung. Keine echten Nippel involviert. Die beschriebene biologische Reaktion ist real — der Rest ist Satire.</p>
+    <p class="meta">Fiktives Konzept · <a href="/folge/67">TMDA #67</a> · 1/24 · <a href="/folge/67">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </footer>
+
+</body>
+</html>
