@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-06T08:43:01.535Z",
-  "count": 294,
+  "updatedAt": "2026-10-13T06:23:36.433Z",
+  "count": 298,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -278,6 +278,11 @@
       "folge": 52
     },
     {
+      "begriff": "Deepfake Porn",
+      "bedeutung": "KI-generierte sexuelle Inhalte, bei denen das Gesicht einer realen Person ohne Einwilligung auf einen anderen Körper montiert wird. Betrifft zunehmend Personen des öffentlichen Lebens und Privatpersonen; strafrechtlich in vielen Ländern nu…",
+      "folge": 67
+    },
+    {
       "begriff": "Defense",
       "bedeutung": "Das 'gute' Defense - Drohnen die Bomben entschärfen statt Angriff, in Abgrenzung zur Rüstungsindustrie",
       "folge": 8
@@ -476,6 +481,11 @@
       "begriff": "Glasur-Trommeldrucker",
       "bedeutung": "Fynns Startup-Idee: Spezialdrucker für Keramikfliesen mit Glasurfarbe (Porzellanfarbe), der beliebige Motive aufdruckt — anschließend wird die Fliese im Ofen gebrannt und das Motiv ist dauerhaft eingebrannt. Wie Handmalerei, aber industrie…",
       "folge": 58
+    },
+    {
+      "begriff": "Greyhat-SEO",
+      "bedeutung": "Suchmaschinenoptimierung im moralischen Graubereich — nicht illegal wie Blackhat (gekaufte Links, Cloaking), aber nicht nach den offiziellen Google-Richtlinien. Fynn und Freunde nutzten in den frühen 2000ern Methoden wie gefakte Verzeichni…",
+      "folge": 67
     },
     {
       "begriff": "Grower",
@@ -788,6 +798,11 @@
       "folge": 54
     },
     {
+      "begriff": "Lick and Go",
+      "bedeutung": "Fynns erfundenes Servicemodell für nippelheilung.org — Analogie zum 'Park and Fly': Probe anlecken (Diagnose), weitergehen.",
+      "folge": 67
+    },
+    {
       "begriff": "Like Mike",
       "bedeutung": "Spitzname eines Typen namens Mike, der das bei sich selbst sagte, wenn er etwas in seinem eigenen Stil tat (Bier exen) - als möglicher Plattform-Name",
       "folge": 10
@@ -876,6 +891,11 @@
       "begriff": "Mutter um die Ecke",
       "bedeutung": "Fynns Muttermilch-Bar mit Spendern wie bei McDonald's - Kekse, Butter und Gesichtskaese aus Muttermilch mit den Gesichtern der Guru-Girls.",
       "folge": 54
+    },
+    {
+      "begriff": "Myzelnetzwerk",
+      "bedeutung": "Das unterirdische Pilz-Geflecht (Myzel), durch das Pilze miteinander verbunden sind und Signale austauschen können — auch 'Wood Wide Web' genannt.",
+      "folge": 67
     },
     {
       "begriff": "N-Maedchen",
