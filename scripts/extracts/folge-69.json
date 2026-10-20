@@ -28,12 +28,27 @@
     "max_punkte": 24
   },
   "kalles_corner": null,
-  "geruecht_der_woche": "Schokolade wird knapp wegen Asteroidenbergbau: Große Süßwarenkonzerne belügen die Öffentlichkeit, wenn sie Klimawandel als Grund für steigende Kakaopreise nennen. In Wahrheit besitzen sie riesige Raumschiffe und finanzieren mit den Schokoladenprofiten illegalen Bergbau auf Asteroiden. Joko Winterscheidt hat ein Raumschiff und treibt Raubbau im Weltall — 'Duell um die Welt' war von Anfang an der Kampf ums All. (Teamkommentar von Jens Blattner, von Fynn & Nisse enthusiastisch weiterentwickelt.)",
+  "gerucht_der_woche": {
+    "ueber": "Joko Winterscheidt / Süßwarenkonzerne",
+    "inhalt": "Schokolade wird nicht wegen Klimawandel teurer, sondern weil große Süßwarenkonzerne riesige Raumschiffe besitzen und Kakaopreise künstlich hochhalten, um illegalen Asteroidenbergbau zu finanzieren. Joko Winterscheidt hat ein Raumschiff — 'Duell um die Welt' war schon immer Duell ums Weltall. (Teamkommentar von Jens Blattner, von Fynn & Nisse enthusiastisch weiterentwickelt.)"
+  },
   "erfindungen": [
-    "Einlenkrolle.de: Mechanische Umlenkrolle (2,50 €, kein Strom), die falsch aufgehängtes Klopapier automatisch richtig ausrichtet — mit Premium-Extensions (Feuchttuch-Modus, Einzelblatt-Spender, Gewichtssensor-Automatik).",
-    "Klopapier-Rutsche: Klo ganz oben in die Zimmerecke an die Decke, Klopapier auf einer Rutsche darunter — nackt runterrutschen und dabei automatisch abwischen. Nisse: '15 Punkte für die Idee.'",
-    "Entscheidungs-Würfel (für die TMDApokalypse-Goodie-Bag): Würfel mit 'töten / nicht töten' bzw. 'essen / nicht essen' auf den Seiten — für alle, die keine Entscheidungen mehr selbst treffen können (weil ChatGPT das übernommen hat).",
-    "Alufolie-Hut / Drohniden-Tarnung: 20×20 cm Alufolie als Badekappe gegen Drohnen-Identifikation — Roboter erkennen zu viel Metall als 'Freund' und greifen nicht an. Teil der TMDApokalypse-Goodie-Bags."
+    {
+      "name": "Einlenkrolle.de",
+      "beschreibung": "Mechanische Umlenkrolle (2,50 €, kein Strom), die falsch aufgehängtes Klopapier automatisch richtig ausrichtet — mit Premium-Extensions (Feuchttuch-Modus, Einzelblatt-Spender, Gewichtssensor-Automatik)."
+    },
+    {
+      "name": "Klopapier-Rutsche",
+      "beschreibung": "Klo ganz oben in die Zimmerecke an die Decke, Klopapier auf einer Rutsche darunter — nackt runterrutschen und dabei automatisch abwischen. Nisse: '15 Punkte für die Idee.'"
+    },
+    {
+      "name": "Entscheidungs-Würfel (TMDApokalypse-Goodie-Bag)",
+      "beschreibung": "Würfel mit 'töten / nicht töten' bzw. 'essen / nicht essen' auf den Seiten — für alle, die keine Entscheidungen mehr selbst treffen können (weil ChatGPT das übernommen hat)."
+    },
+    {
+      "name": "Alufolie-Hut / Drohniden-Tarnung",
+      "beschreibung": "20×20 cm Alufolie als Badekappe gegen Drohnen-Identifikation — Roboter erkennen zu viel Metall als 'Freund' und greifen nicht an. Teil der TMDApokalypse-Goodie-Bags."
+    }
   ],
   "zitate": [
     {
