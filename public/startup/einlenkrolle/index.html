@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einlenkrolle.de – Beziehungsretter für Klopapier-Kriege</title>
+  <meta name="description" content="Die mechanische Umlenkrolle für falsch aufgehängtes Klopapier. Für 2,50 Euro rettet Einlenkrolle.de Ihre Beziehung — kein Strom, kein Drama, kein Nachgeben.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/einlenkrolle">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Einlenkrolle.de – Beziehungsretter für Klopapier-Kriege">
+  <meta property="og:description" content="Die mechanische Umlenkrolle für falsch aufgehängtes Klopapier. Für 2,50 Euro rettet Einlenkrolle.de Ihre Beziehung — kein Strom, kein Drama, kein Nachgeben.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/einlenkrolle">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Einlenkrolle.de – Beziehungsretter für Klopapier-Kriege">
+  <meta name="twitter:description" content="Die mechanische Umlenkrolle für falsch aufgehängtes Klopapier. Für 2,50 Euro rettet Einlenkrolle.de Ihre Beziehung — kein Strom, kein Drama, kein Nachgeben.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Einlenkrolle.de — Mechanische Klopapier-Umlenkvorrichtung",
+    "description": "Patentiertes Umlenkprinzip: Klopapier kommt immer von vorne — egal wie falsch jemand die Rolle aufgehängt hat. Kein Strom, kein Kompressor, keine Paartherapie.",
+    "brand": { "@type": "Brand", "name": "Einlenkrolle.de" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "2.50",
+      "availability": "https://schema.org/InStock",
+      "description": "Mechanische Einlenkrolle inkl. zwei Umlenkwalzen und Befestigungsadapter für alle Standardhalter"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --parchment:  #f4ead8;
+      --parchment2: #ede0c4;
+      --ink:        #1e140a;
+      --ink-mid:    #3b2710;
+      --ink-light:  #6b4e2e;
+      --seal-red:   #8b1c1c;
+      --gold:       #b5820e;
+      --gold-light: #d4a72a;
+      --prussian:   #2a3d5a;
+      --rule:       rgba(30,20,10,0.25);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--parchment);
+      color: var(--ink);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Aged-paper texture overlay ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(30,20,10,0.04) 31px, rgba(30,20,10,0.04) 32px),
+        repeating-linear-gradient(90deg, transparent, transparent 47px, rgba(30,20,10,0.02) 47px, rgba(30,20,10,0.02) 48px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout ── */
+    .page { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+
+    /* ── HEADER BAND ── */
+    .patent-header {
+      border-top: 4px double var(--ink);
+      border-bottom: 4px double var(--ink);
+      text-align: center;
+      padding: 14px 20px 12px;
+      margin: 0 0 0;
+      background: var(--parchment2);
+      position: relative;
+    }
+    .patent-header .klass {
+      font-family: 'Cinzel', serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      color: var(--ink-light);
+      text-transform: uppercase;
+    }
+    .patent-header .nr {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--seal-red);
+      margin-top: 2px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      border: 2px solid var(--ink);
+      border-top: none;
+      padding: 40px 24px 36px;
+      text-align: center;
+      background: var(--parchment);
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 1px solid var(--rule);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.4em;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .hero h1 span {
+      display: block;
+      font-size: 0.38em;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      color: var(--ink-light);
+      margin-top: 8px;
+    }
+
+    .hero-seal {
+      display: inline-block;
+      margin: 28px auto 0;
+      width: 84px;
+      height: 84px;
+    }
+
+    .hero-tagline {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--ink-mid);
+      max-width: 480px;
+      margin: 22px auto 0;
+      line-height: 1.65;
+    }
+
+    .hero-score {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 28px;
+      border: 1px solid var(--gold);
+      padding: 8px 20px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+    }
+    .hero-score strong { font-size: 1.3rem; font-weight: 700; }
+
+    /* ── RULE DIVIDER ── */
+    .rule {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+    }
+    .rule::before, .rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--ink);
+    }
+    .rule-ornament { font-size: 1rem; color: var(--ink); }
+
+    /* ── SECTIONS ── */
+    section {
+      border: 2px solid var(--ink);
+      border-top: none;
+      padding: 36px 28px 32px;
+      background: var(--parchment);
+    }
+
+    section + section { border-top: none; }
+
+    .section-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.5em;
+      color: var(--ink-light);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    section h2 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 20px;
+      line-height: 1.25;
+    }
+
+    section p {
+      font-size: 0.98rem;
+      line-height: 1.85;
+      color: var(--ink-mid);
+      margin-bottom: 14px;
+      max-width: 660px;
+    }
+    section p:last-child { margin-bottom: 0; }
+
+    /* ── TECHNICAL DRAWING ── */
+    .technical {
+      background: var(--parchment2);
+    }
+
+    .drawing-wrap {
+      margin: 0 0 28px;
+      border: 1px solid var(--rule);
+      padding: 20px;
+      background: #fdf7ec;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* ── SPEC TABLE ── */
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    .spec-table caption {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.35em;
+      color: var(--ink-light);
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .spec-table th {
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      color: var(--prussian);
+      border-bottom: 2px solid var(--ink);
+      padding: 8px 12px 8px 0;
+      text-align: left;
+    }
+    .spec-table td {
+      padding: 8px 12px 8px 0;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink-mid);
+      line-height: 1.5;
+    }
+    .spec-table tr:last-child td { border-bottom: none; }
+    .spec-table td:first-child {
+      font-weight: 500;
+      color: var(--ink);
+      width: 40%;
+    }
+
+    /* ── PROBLEM SECTION ── */
+    .problem-stat {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 20px 0;
+      padding: 14px 18px;
+      border-left: 4px solid var(--seal-red);
+      background: rgba(139,28,28,0.05);
+    }
+    .stat-num {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--seal-red);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--ink-mid);
+      line-height: 1.4;
+      max-width: 360px;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      text-align: center;
+      background: var(--parchment2);
+    }
+
+    .cta-section h2 {
+      max-width: 100%;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 36px;
+      background: var(--ink);
+      color: var(--parchment);
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      cursor: default;
+    }
+    .cta-btn:hover { background: var(--ink-mid); border-color: var(--ink-mid); }
+
+    .cta-note {
+      margin-top: 16px;
+      font-size: 0.82rem;
+      color: var(--ink-light);
+      font-style: italic;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border: 2px solid var(--ink);
+      border-top: 2px solid var(--ink);
+      padding: 20px 24px;
+      text-align: center;
+      background: var(--parchment2);
+      margin-top: 0;
+    }
+
+    footer .disclaimer {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    footer .ref {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+    }
+    footer .ref a {
+      color: var(--prussian);
+      text-decoration: none;
+    }
+    footer .ref a:hover { text-decoration: underline; }
+
+    /* ── ORNAMENTS ── */
+    .ornament-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 20px 0 0;
+      color: var(--gold);
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      section { padding: 24px 16px 22px; }
+      .hero { padding: 30px 16px 28px; }
+      .patent-header { padding: 12px 16px 10px; }
+      .spec-table td:first-child { width: 45%; }
+      .problem-stat { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+<div class="page">
+
+  <!-- ── PATENT HEADER ── -->
+  <header class="patent-header">
+    <div class="klass">Deutsches Reich &thinsp;·&thinsp; Kaiserliches Patentamt &thinsp;·&thinsp; Klasse 85c — Sanitäre Einrichtungen</div>
+    <div class="nr">Gebrauchsmuster-Eintragung Nr. DE 000 001 961 E &thinsp;·&thinsp; Anmeldedatum: 20. October 2026</div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <p class="hero-eyebrow">Geprüfte Erfindung &thinsp;·&thinsp; Klasse I — Beziehungsmechanik</p>
+    <h1>
+      Einlenkrolle.de
+      <span>Mechanische Umlenkvorrichtung für Klopapier-Halterungen</span>
+    </h1>
+
+    <!-- Seal SVG -->
+    <svg class="hero-seal" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="42" cy="42" r="39" fill="none" stroke="#8b1c1c" stroke-width="2"/>
+      <circle cx="42" cy="42" r="34" fill="none" stroke="#8b1c1c" stroke-width="0.8"/>
+      <!-- gear teeth -->
+      <g fill="#8b1c1c" opacity="0.6">
+        <rect x="40" y="3" width="4" height="8" rx="1"/>
+        <rect x="40" y="73" width="4" height="8" rx="1"/>
+        <rect x="3" y="40" width="8" height="4" rx="1"/>
+        <rect x="73" y="40" width="8" height="4" rx="1"/>
+        <rect x="17.5" y="9" width="4" height="8" rx="1" transform="rotate(-45 19.5 13)"/>
+        <rect x="55.5" y="9" width="4" height="8" rx="1" transform="rotate(45 57.5 13)"/>
+        <rect x="9" y="55" width="8" height="4" rx="1" transform="rotate(-45 13 57)"/>
+        <rect x="67" y="55" width="8" height="4" rx="1" transform="rotate(45 71 57)"/>
+      </g>
+      <text x="42" y="36" text-anchor="middle" font-family="Cinzel, serif" font-size="7.5" fill="#8b1c1c" font-weight="700" letter-spacing="0.5">EINLENK</text>
+      <!-- toilet roll icon -->
+      <rect x="32" y="38" width="20" height="16" rx="3" fill="none" stroke="#8b1c1c" stroke-width="1.5"/>
+      <circle cx="42" cy="46" r="4" fill="none" stroke="#8b1c1c" stroke-width="1.2"/>
+      <path d="M42 38 L42 30 Q54 30 54 40" fill="none" stroke="#8b1c1c" stroke-width="1.5"/>
+      <circle cx="54" cy="40" r="2.5" fill="none" stroke="#8b1c1c" stroke-width="1.2"/>
+      <text x="42" y="64" text-anchor="middle" font-family="Cinzel, serif" font-size="5.5" fill="#8b1c1c" letter-spacing="0.3">PATENT. 2026</text>
+    </svg>
+
+    <p class="hero-tagline">
+      Die erste mechanische Lösung für den Nummer-1-Beziehungsstreit Deutschlands —<br>
+      <em>Einlenken, ohne nachzugeben.</em>
+    </p>
+
+    <div class="hero-score">
+      <strong>8</strong> / 24 Punkten — Nisse I. · TMDA-Bewertungskommission
+    </div>
+  </div>
+
+  <!-- ── §1 DAS PROBLEM ── -->
+  <section>
+    <p class="section-label">§ 1 &thinsp;·&thinsp; Problemdarlegung</p>
+    <h2>Der Klopapier-Streit: Geißel unserer Zeit</h2>
+
+    <div class="problem-stat">
+      <div class="stat-num">Nr. 1</div>
+      <div class="stat-label">
+        Laut einer Befragung unter der gesamten deutschen Bevölkerung ist das
+        <strong>verkehrt aufgehängte Klopapier</strong> der häufigste Beziehungsstreit —
+        weit vor Geld, Kindern und Fremdgehen.
+      </div>
+    </div>
+
+    <p>
+      Das Problem ist bekannt. Die Lösung schien simpel: einfach die Rolle umdrehen.
+      Doch wer das je versucht hat, weiß: Es gibt Menschen, deren motorische Bahnung
+      für das Aufhängen von Klopapier unumkehrbar falsch kalibriert ist.
+      Die Rolle zeigt zur Wand. Immer. Trotz Ermahnung. Trotz Therapie.
+    </p>
+    <p>
+      Kein Streit, kein Kompromiss, keine Paartherapie hat dieses Problem je gelöst.
+      Denn das Problem liegt nicht im Willen — es liegt in der Mechanik.
+    </p>
+
+    <div class="ornament-row" aria-hidden="true">⚙ ✦ ⚙</div>
+  </section>
+
+  <!-- ── §2 DIE ERFINDUNG ── -->
+  <section class="technical">
+    <p class="section-label">§ 2 &thinsp;·&thinsp; Beschreibung der Erfindung</p>
+    <h2>Das Prinzip der Einlenkrolle</h2>
+
+    <!-- Technical schematic SVG -->
+    <div class="drawing-wrap">
+      <svg viewBox="0 0 460 220" width="100%" max-width="440" xmlns="http://www.w3.org/2000/svg" style="max-width:440px" aria-label="Technische Zeichnung der Einlenkrolle">
+        <!-- Grid lines (blueprint style) -->
+        <defs>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(42,61,90,0.12)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="460" height="220" fill="url(#grid)"/>
+
+        <!-- Title block -->
+        <rect x="300" y="160" width="150" height="50" fill="none" stroke="#2a3d5a" stroke-width="1"/>
+        <line x1="300" y1="175" x2="450" y2="175" stroke="#2a3d5a" stroke-width="0.7"/>
+        <text x="375" y="172" text-anchor="middle" font-family="Lora, serif" font-size="7" fill="#2a3d5a" font-style="italic">Einlenkrolle DE 001 E</text>
+        <text x="375" y="185" text-anchor="middle" font-family="Lora, serif" font-size="6" fill="#3b2710">Maßstab 1:1 · Blatt 1/1</text>
+        <text x="375" y="195" text-anchor="middle" font-family="Lora, serif" font-size="6" fill="#3b2710">K. Ing. F. Kliemann, 2026</text>
+        <text x="375" y="206" text-anchor="middle" font-family="Lora, serif" font-size="6" fill="#3b2710">Mat.: Kunststoff · 2,50 EUR</text>
+
+        <!-- WALL -->
+        <rect x="30" y="30" width="12" height="160" fill="#c4b89a" stroke="#1e140a" stroke-width="1.5"/>
+        <!-- hatch pattern for wall -->
+        <line x1="30" y1="40" x2="42" y2="50" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="55" x2="42" y2="65" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="70" x2="42" y2="80" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="85" x2="42" y2="95" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="100" x2="42" y2="110" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="115" x2="42" y2="125" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="130" x2="42" y2="140" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="145" x2="42" y2="155" stroke="#1e140a" stroke-width="0.5"/>
+        <line x1="30" y1="160" x2="42" y2="170" stroke="#1e140a" stroke-width="0.5"/>
+        <text x="36" y="200" text-anchor="middle" font-family="Lora, serif" font-size="7" fill="#3b2710" font-style="italic">Wand</text>
+
+        <!-- HOLDER BRACKET -->
+        <rect x="42" y="85" width="30" height="14" fill="#8a7050" stroke="#1e140a" stroke-width="1.2"/>
+        <text x="57" y="110" text-anchor="middle" font-family="Lora, serif" font-size="6.5" fill="#3b2710" font-style="italic">Halter</text>
+
+        <!-- TOILET ROLL (main) -->
+        <ellipse cx="105" cy="92" rx="28" ry="28" fill="#f7f0e3" stroke="#1e140a" stroke-width="1.5"/>
+        <ellipse cx="105" cy="92" rx="8" ry="8" fill="#ede0c4" stroke="#1e140a" stroke-width="1"/>
+        <!-- roll perforations -->
+        <circle cx="105" cy="64" r="2" fill="none" stroke="#1e140a" stroke-width="0.8"/>
+        <circle cx="105" cy="120" r="2" fill="none" stroke="#1e140a" stroke-width="0.8"/>
+        <circle cx="77" cy="92" r="2" fill="none" stroke="#1e140a" stroke-width="0.8"/>
+        <circle cx="133" cy="92" r="2" fill="none" stroke="#1e140a" stroke-width="0.8"/>
+        <text x="105" y="150" text-anchor="middle" font-family="Lora, serif" font-size="7" fill="#3b2710" font-style="italic">Klopapierrolle</text>
+        <text x="105" y="159" text-anchor="middle" font-family="Lora, serif" font-size="6.5" fill="#8b1c1c">(falsch aufgehängt)</text>
+
+        <!-- PAPER PATH (wrong) — dashed, going toward wall first -->
+        <path d="M133 82 Q155 72 155 72" stroke="#8b1c1c" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+        <text x="158" y="68" font-family="Lora, serif" font-size="6" fill="#8b1c1c" font-style="italic">← falsch</text>
+
+        <!-- EINLENKROLLE top -->
+        <circle cx="155" cy="58" r="9" fill="#f4ead8" stroke="#2a3d5a" stroke-width="1.5"/>
+        <circle cx="155" cy="58" r="4" fill="#2a3d5a"/>
+        <text x="155" y="44" text-anchor="middle" font-family="Lora, serif" font-size="6.5" fill="#2a3d5a" font-weight="bold">Walze A</text>
+
+        <!-- EINLENKROLLE bottom -->
+        <circle cx="155" cy="92" r="9" fill="#f4ead8" stroke="#2a3d5a" stroke-width="1.5"/>
+        <circle cx="155" cy="92" r="4" fill="#2a3d5a"/>
+        <text x="155" y="114" text-anchor="middle" font-family="Lora, serif" font-size="6.5" fill="#2a3d5a" font-weight="bold">Walze B</text>
+
+        <!-- PAPER PATH CORRECTED — solid, coming out front -->
+        <path d="M133 82 Q142 72 155 67" stroke="#2a3d5a" stroke-width="1.5" fill="none"/>
+        <path d="M155 67 Q155 80 155 83" stroke="#2a3d5a" stroke-width="1.5" fill="none"/>
+        <path d="M155 83 Q155 96 146 106 Q135 118 140 130" stroke="#2a3d5a" stroke-width="1.5" fill="none"/>
+        <path d="M140 130 L210 130" stroke="#2a3d5a" stroke-width="1.5" fill="none"/>
+        <!-- arrow -->
+        <polygon points="210,127 218,130 210,133" fill="#2a3d5a"/>
+        <text x="222" y="134" font-family="Lora, serif" font-size="6" fill="#2a3d5a" font-style="italic">korrekt →</text>
+
+        <!-- EINLENKROLLE box annotation -->
+        <rect x="138" y="45" width="36" height="58" fill="none" stroke="#b5820e" stroke-width="1.2" stroke-dasharray="4,2"/>
+        <text x="156" y="173" text-anchor="middle" font-family="Cinzel, serif" font-size="7.5" fill="#b5820e" font-weight="600">EINLENKROLLE</text>
+        <text x="156" y="182" text-anchor="middle" font-family="Lora, serif" font-size="6" fill="#b5820e" font-style="italic">Gebrauchsmuster 001 E</text>
+
+        <!-- dimension lines -->
+        <line x1="42" y1="25" x2="174" y2="25" stroke="#3b2710" stroke-width="0.7"/>
+        <polygon points="42,22 42,28 37,25" fill="#3b2710"/>
+        <polygon points="174,22 174,28 179,25" fill="#3b2710"/>
+        <text x="108" y="21" text-anchor="middle" font-family="Lora, serif" font-size="6" fill="#3b2710">≈ 130 mm</text>
+      </svg>
+    </div>
+
+    <p>
+      Die <strong>Einlenkrolle</strong> sitzt als kompakter Aufsatz oberhalb des bestehenden Klopapierhalters.
+      Zwei miniaturisierte Walzen (A und B) leiten das Papier um:
+      unabhängig von der Aufhängerichtung der Rolle kommt das Papier stets von vorne heraus —
+      sauber, griffbereit, beziehungsschonend.
+    </p>
+    <p>
+      <strong>Keine Elektronik. Kein Strom. Kein Kompressor.</strong>
+      Rein mechanisch, für 2,50 Euro. Passt auf alle Standardhalter.
+      Idempotent: Egal wie oft jemand die Rolle falsch aufhängt — die Einlenkrolle korrigiert es still.
+    </p>
+  </section>
+
+  <!-- ── §3 TECHNISCHE SPEZIFIKATION ── -->
+  <section>
+    <p class="section-label">§ 3 &thinsp;·&thinsp; Technische Specification</p>
+    <h2>Patentierte Kenndaten</h2>
+
+    <table class="spec-table">
+      <caption>Tab. I — Technische Merkmale der Einlenkrolle (Ausführung Standard)</caption>
+      <thead>
+        <tr><th>Merkmal</th><th>Spezifikation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Wirkprinzip</td><td>Zweifache Walzenumlenkung, rein mechanisch</td></tr>
+        <tr><td>Antrieb</td><td>Keiner — Reibungskraft beim Abziehen genügt</td></tr>
+        <tr><td>Material</td><td>Polypropylen (lebensmittelecht, spülmaschinengeeignet)</td></tr>
+        <tr><td>Befestigung</td><td>Klemmadapter für ø 25–32 mm Standardhalter</td></tr>
+        <tr><td>Preis (UVP)</td><td><strong>2,50 EUR</strong> inkl. Adapter-Set</td></tr>
+        <tr><td>Strom / Akku</td><td>Nicht erforderlich</td></tr>
+        <tr><td>Ergebnis</td><td>Klopapier kommt immer vorne heraus</td></tr>
+        <tr><td>TMDA-Bewertung</td><td>8 / 24 Punkten (Nisse I., TMDA #69)</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 20px;">
+      <em>Optional erhältliche Erweiterungsmodule (separat zuzuerwerben):</em>
+      Feuchttuch-Modus (Befeuchterwalze C), Einzelblatt-Spendeautomatik,
+      Gewichtssensor-Drehautomat für Multi-Personen-Haushalte.
+    </p>
+  </section>
+
+  <!-- ── §4 CTA ── -->
+  <section class="cta-section">
+    <p class="section-label">§ 4 &thinsp;·&thinsp; Erwerbsmöglichkeit</p>
+    <h2>Beziehung retten. Klopapier nicht umdrehen.</h2>
+    <p style="max-width: 520px; margin: 0 auto;">
+      Einlenkrolle.de ist das erste Produkt, das den Klopapier-Streit
+      nicht durch Kommunikation, sondern durch Ingenieurskunst löst.
+      Für 2,50 Euro. Ohne dass jemand nachgeben muss.
+    </p>
+    <a href="#" class="cta-btn">Jetzt vormerken — 2,50 EUR</a>
+    <p class="cta-note">
+      * Produkt noch nicht im Handel. Bitte Geduld — und im Zweifel einfach die Rolle umdrehen.
+    </p>
+    <div class="ornament-row" aria-hidden="true">✦ ⚙ ✦</div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="disclaimer">
+      Rein fiktives Konzept aus dem Podcast „Teenager mit deutschem Akzent".
+      Jede Ähnlichkeit mit existierenden Klopapier-Umlenkprodukten ist zufällig und juristisch irrelevant.
+    </p>
+    <p class="ref">
+      Fiktives Konzept · TMDA #69 · 8/24 ·
+      <a href="/folge/69">zur Folge</a> ·
+      <a href="/startup-ideen">alle Startups</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -2,6 +2,14 @@
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
     {
+      "folge": 69,
+      "ideeMatch": "Einlenkrolle",
+      "slug": "einlenkrolle",
+      "domain": "einlenkrolle.de",
+      "tagline": "Klopapier kommt immer von vorne — mechanisch, für 2,50 Euro, ohne dass jemand nachgeben muss.",
+      "punkte": 8
+    },
+    {
       "folge": 67,
       "ideeMatch": "nippelheilung",
       "slug": "nippelheilung-org",

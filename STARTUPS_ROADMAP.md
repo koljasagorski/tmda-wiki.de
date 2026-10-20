@@ -19,11 +19,15 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 66/66 LIVE ✅ (Folge 66: kein Startup)
+## Status — 67/67 LIVE ✅ (Folge 66: kein Startup)
 
 **Jede** Startup-Idee aus den Folgen 1-67 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 **Folge 66** („Was macht Xaviers Bentley auf dem Schuldach?!", 2026-09-29, 0:39:10): kein Startup in dieser Folge. Erste Video-Podcast-Folge, thematisch Cancel Culture / Schulgeschichten / Xavier Naidoo. Extrakt und Transkript vorhanden, keine Startup-Page nötig.
+
+### 8/24 (neue Folgen)
+
+- [x] **Einlenkrolle.de** · Folge 69 · 8/24 · Kaiserliches Patent-Dokument / Wilhelminische Patentschrift (Cinzel + Lora, Pergament/Tintenschwarz/Siegel-Rot/Gold, technische Schnittzeichnung SVG, Gebrauchsmuster-Rahmen, aged-paper Textur)
 
 ### 1/24 (neue Folgen)
 
