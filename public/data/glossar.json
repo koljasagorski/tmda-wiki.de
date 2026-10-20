@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T06:23:36.433Z",
-  "count": 298,
+  "updatedAt": "2026-10-20T08:17:05.554Z",
+  "count": 303,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -333,6 +333,11 @@
       "folge": 20
     },
     {
+      "begriff": "Drohnide",
+      "bedeutung": "Von Nisse erfundenes Wort: Drohne + Humanoid — eine Drohne oder ein Roboter, der sich als Mensch verkleidet (Trenchcoat, Hut, zwei rote Punkte als Augen). Drohniden erkennen Aluminiumhüte als 'Freund' und greifen nicht an.",
+      "folge": 69
+    },
+    {
       "begriff": "Dukatenscheisser",
       "bedeutung": "Person, die viel Geld macht / Reichtum produziert - hier auf Uwe von der Eisfabrik bezogen",
       "folge": 32
@@ -356,6 +361,11 @@
       "begriff": "Eckenkucker",
       "bedeutung": "Ein starker nordischer Kuemmelschnaps, von dem man schielt (Eigenkreation von Finn und Nisse)",
       "folge": 29
+    },
+    {
+      "begriff": "Einlenkrolle",
+      "bedeutung": "Fynns Erfindung: mechanische Umlenkrolle für den Klopapierhalter. 'Einlenken' im Doppelsinn: das Klopapier wird mechanisch umgelenkt, und wer das Klopapier falsch aufhängt, muss nicht mehr 'einlenken' (nachgeben). Preis: 2,50 Euro.",
+      "folge": 69
     },
     {
       "begriff": "Eiskonfekt-Prinzip",
@@ -411,6 +421,11 @@
       "begriff": "FKK Twix",
       "bedeutung": "Scherzhafter Avatarname von Fynn: FKK steht zudem fuer 'Finn Kliemann Kampf' gegen Kalorien.",
       "folge": 16
+    },
+    {
+      "begriff": "Fleischlemming",
+      "bedeutung": "Nisse über sich und Fynn in der KI-Apokalypse: Menschen als willenlose Untergebene der KI — wie Lemminge aus Fleisch, die der übergeordneten Intelligenz (dem Papagei) folgen.",
+      "folge": 69
     },
     {
       "begriff": "Flow the Realty",
@@ -933,6 +948,11 @@
       "folge": 14
     },
     {
+      "begriff": "Öf Öf",
+      "bedeutung": "TV-Total-Bekanntheit, der seinen Pass durchschnitt, sich einen Zeitungs-Hut faltete und in den Wald zog, um der Gesellschaft abzuschwören. Lebt laut Fynn jetzt trotzdem mit einer KI-Frau zusammen — Kommentar: 'Konsequenz fehlt.'",
+      "folge": 69
+    },
+    {
       "begriff": "Opa erzaehlt Geschichten aus dem Krieg",
       "bedeutung": "Angekuendigte neue Kategorie: Kriegsanekdoten der Grossvaeter - Fynns Opa schrieb plattdeutsche NDR-Geschichten, Nisses Opa lieferte die Deserteur-Story.",
       "folge": 55
@@ -1336,6 +1356,11 @@
       "begriff": "TMDakel",
       "bedeutung": "Wortspiel aus TMDA und Orakel - der Modus, in dem Fynn und Nisse per Gefuehl den WM-Sieger tippen (Ergebnis: Niederlande).",
       "folge": 53
+    },
+    {
+      "begriff": "TMDApokalypse",
+      "bedeutung": "Kombination aus 'TMDA' (Teenager mit deutschem Akzent) und 'Apokalypse'. Fynns & Nisses Konzept für ihre erste Live-Show (28.11. Berlin) und eine mögliche Welttournee: Prepper-Tutorial, Roboter-Nahkampf, Goodie Bags gegen die KI-Apokalypse.",
+      "folge": 69
     },
     {
       "begriff": "Todescap",
