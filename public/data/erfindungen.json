@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-20T08:23:59.781Z",
-  "count": 123,
+  "updatedAt": "2026-10-27T06:27:14.268Z",
+  "count": 126,
   "items": [
+    {
+      "folge": 70,
+      "name": "CapSoul",
+      "beschreibung": "Schluckbare 360°-Kapselkamera für die Heimdarmspiegelung. Kamera per Post zurückschicken, KI wertet aus. Waschbar (60° Spülmaschine). Ca. 80 Euro."
+    },
+    {
+      "folge": 70,
+      "name": "Mobile Darmspiegelungs-Van",
+      "beschreibung": "Eiswagen-Konzept: Arzt oder ausgebildeter Techniker fährt mit einem Van durch Städte und bietet mobile Kapsel-Darmspiegelung an. In Deutschland wegen Medizinpflicht nicht umsetzbar ohne Studium."
+    },
+    {
+      "folge": 70,
+      "name": "Botox-Steuer für Long-Covid-Forschung",
+      "beschreibung": "Fynn schlägt vor: Von jedem Botox-Euro 10 Cent in die MEFS/Long-Covid-Forschung umleiten. 'Wer die Haut hat, ist der Haut verpflichtet.' Auch: Alkohol-Steuer für den gleichen Zweck."
+    },
     {
       "folge": 69,
       "name": "Einlenkrolle.de",

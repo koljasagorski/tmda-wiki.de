@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T08:23:59.781Z",
-  "count": 303,
+  "updatedAt": "2026-10-27T06:27:14.268Z",
+  "count": 309,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -178,6 +178,11 @@
       "folge": 21
     },
     {
+      "begriff": "CapSoul",
+      "bedeutung": "Fynns Startup-Name für die schluckbare Kapselkamera. 'Cap' = Kapsel/Kamera-Kapsel, 'Soul' = Seele (Bezug: 'Der Darm ist deine Seele' + Bauchgefühl). Alternative: 'Soul.com' mit Hauptsitz in São Paulo (auf Deutsch: 'Schul Paulo').",
+      "folge": 70
+    },
+    {
       "begriff": "Catalyst (Ketterlist)",
       "bedeutung": "Musikschule im Berliner Funkhaus fuer wohlhabende suedeuropaeische Studierende",
       "folge": 35
@@ -306,6 +311,11 @@
       "begriff": "Deutschländer",
       "bedeutung": "Nicht-existierendes Wort, das nach der Logik 'England → Engländer' für Deutsche gelten müsste; tatsächlich heißen Deutsche einfach 'Deutsche' — das Thema endet ungelöst",
       "folge": 59
+    },
+    {
+      "begriff": "Deutschlandtour in Amerika",
+      "bedeutung": "Fynns Idee für die TMDApokalypse-Weltournee: In den USA gibt es Städte mit deutschen Namen (New Berlin, Hamburg NY, Hannover IN, Stuttgart KS, Bremen GA) — dort machen sie eine 'Deutschlandtour', ohne nach Deutschland zu kommen.",
+      "folge": 70
     },
     {
       "begriff": "Dienstagnisse",
@@ -478,6 +488,11 @@
       "folge": 59
     },
     {
+      "begriff": "Gastroenthropologe",
+      "bedeutung": "Fynns charmante Fehlaussprache von 'Gastroenterologe' — der Spezialist für den Magen-Darm-Trakt. Fynn: 'Der kann alles mögliche spiegeln. Dein Damen und deine Ja. Alle Dame Därme. Du gehst für 8k in den Lanzerhof.'",
+      "folge": 70
+    },
+    {
       "begriff": "Gemischtes Hack",
       "bedeutung": "Deutscher Podcast von Tommy Schmidt und Felix Lobrecht. Nisse hat als Jubiläumsgeschenk Masken beider besorgt. Fynn und Nisse nennen sich in der Folge die 'AFG — Alternative für Gemischtes Hack'.",
       "folge": 57
@@ -496,6 +511,11 @@
       "begriff": "Glasur-Trommeldrucker",
       "bedeutung": "Fynns Startup-Idee: Spezialdrucker für Keramikfliesen mit Glasurfarbe (Porzellanfarbe), der beliebige Motive aufdruckt — anschließend wird die Fliese im Ofen gebrannt und das Motiv ist dauerhaft eingebrannt. Wie Handmalerei, aber industrie…",
       "folge": 58
+    },
+    {
+      "begriff": "Grand a Human",
+      "bedeutung": "Reales australisches Startup: KI-Dienst, bei dem KI-Systeme Menschen für Realwelt-Aufgaben 'ausleihen' können — bezahlt in Kryptowährung. Fynn vergleicht es mit einem frühen Matrix-Szenario, bei dem Menschen für KI-Roboter Türen aufmachen.",
+      "folge": 70
     },
     {
       "begriff": "Greyhat-SEO",
@@ -581,6 +601,11 @@
       "begriff": "Homolog",
       "bedeutung": "Ein Wort, das exakt das beschreibt, was es ist - z. B. ist 'dreisilbig' selbst dreisilbig und '18buchstabig' hat genau 18 Buchstaben.",
       "folge": 51
+    },
+    {
+      "begriff": "Hot Take der Woche",
+      "bedeutung": "Von Fynn vorgeschlagenes neues Podcast-Segment: Beide bringen ihren heißesten, polarisierendsten Meinungs-Einwurf der Woche. Nisse's erster: Die Miniatursäge zur Geburtshilfe wieder einführen.",
+      "folge": 70
     },
     {
       "begriff": "Hotel Garni",
@@ -776,6 +801,11 @@
       "begriff": "Lanet 18",
       "bedeutung": "Fynns live geclaimtes 100-qkm-Mondgrundstueck, das er mit Zertifikat und Goldrand verkauft - Basis fuer spaetere Reparationsforderungen, falls der Mond gesprengt wird.",
       "folge": 53
+    },
+    {
+      "begriff": "Lasagnenflotte",
+      "bedeutung": "Fynns sofort angenommener Versprecher für 'Essen auf Rädern' (Mahlzeitenlieferdienst für Senioren). Er beschreibt, dass er sich Kapsel-Kapseln hypothetisch aus einem Altersheim liefern lassen hat — 'war ein ganzer Karton mit dabei mit der …",
+      "folge": 70
     },
     {
       "begriff": "Lazy Eye",
