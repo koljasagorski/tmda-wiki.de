@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CapSoul – Schluck es. Wiss es. Heil es.</title>
+  <meta name="description" content="CapSoul: Die schluckbare 360°-Kapselkamera für die Heimdarmspiegelung. Einfach schlucken, einsenden, KI-Auswertung erhalten. Dein Darm. Deine Seele.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/capsoul">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CapSoul – Schluck es. Wiss es. Heil es.">
+  <meta property="og:description" content="CapSoul: Die schluckbare 360°-Kapselkamera für die Heimdarmspiegelung. Einfach schlucken, einsenden, KI-Auswertung erhalten. Dein Darm. Deine Seele.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/capsoul">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CapSoul – Schluck es. Wiss es. Heil es.">
+  <meta name="twitter:description" content="CapSoul: Die schluckbare 360°-Kapselkamera für die Heimdarmspiegelung. Einfach schlucken, einsenden, KI-Auswertung erhalten. Dein Darm. Deine Seele.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "CapSoul",
+    "description": "Schluckbare 360°-Kapselkamera für die Heimdarmspiegelung mit KI-Auswertung",
+    "url": "https://tmda-wiki.de/startup/capsoul",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "79.90",
+      "availability": "https://schema.org/PreOrder"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --mint: #00b288;
+      --mint-light: #e6f7f3;
+      --mint-dark: #007a5e;
+      --amber: #f49c3a;
+      --amber-light: #fff5e6;
+      --amber-dark: #c47a1e;
+      --ink: #12201c;
+      --ink-soft: #3a4e47;
+      --mist: #f7faf9;
+      --white: #ffffff;
+      --border: #d0e8e1;
+      --pill-split: 50%;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', system-ui, sans-serif;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--mist);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HERO ──────────────────────────────── */
+    .hero {
+      min-height: 100svh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 0;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      padding: 5rem 3rem 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mint-dark);
+    }
+
+    .logo-pill {
+      width: 28px;
+      height: 14px;
+      border-radius: 7px;
+      background: linear-gradient(90deg, var(--mint) var(--pill-split), var(--amber) var(--pill-split));
+      display: inline-block;
+    }
+
+    .hero-tagline {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.05;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-tagline span {
+      color: var(--mint);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--ink-soft);
+      max-width: 42ch;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--mint-dark); }
+
+    .btn-secondary {
+      display: inline-block;
+      border: 1.5px solid var(--border);
+      color: var(--ink-soft);
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--mint); color: var(--mint-dark); }
+
+    .hero-score {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .score-badge {
+      background: var(--amber);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 2px;
+    }
+
+    .hero-right {
+      height: 100svh;
+      background: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated capsule SVG */
+    .capsule-wrap {
+      position: relative;
+      width: 260px;
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .capsule-glow {
+      position: absolute;
+      inset: -40px;
+      background: radial-gradient(ellipse at center, rgba(0,178,136,0.18) 0%, transparent 70%);
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,178,136,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,178,136,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .hero-bg-rings {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(0,178,136,0.12);
+      animation: ring-expand 6s ease-in-out infinite;
+    }
+    .ring:nth-child(1) { width: 320px; height: 320px; animation-delay: 0s; }
+    .ring:nth-child(2) { width: 460px; height: 460px; animation-delay: 1.5s; }
+    .ring:nth-child(3) { width: 600px; height: 600px; animation-delay: 3s; }
+
+    @keyframes ring-expand {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+
+    /* ── PRODUCT SECTION ───────────────────── */
+    .section {
+      padding: 6rem 4rem;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mint);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-lead {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--ink-soft);
+      max-width: 56ch;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    /* How it works */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      counter-reset: step;
+    }
+
+    .step {
+      counter-increment: step;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem 1.5rem;
+      position: relative;
+    }
+
+    .step::before {
+      content: counter(step, decimal-leading-zero);
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: var(--mint-light);
+      display: block;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+
+    .step-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-text {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .step-icon {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    /* Dark section */
+    .section-dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .section-dark .section-title { color: var(--white); }
+    .section-dark .section-lead { color: rgba(255,255,255,0.65); }
+    .section-dark .section-label { color: var(--mint); }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .spec-item {
+      background: var(--ink);
+      padding: 2rem 1.5rem;
+      transition: background 0.2s;
+    }
+    .spec-item:hover { background: rgba(0,178,136,0.08); }
+
+    .spec-num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 2.2rem;
+      color: var(--mint);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .spec-label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.05em;
+    }
+
+    .spec-desc {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    /* Quote */
+    .quote-block {
+      background: var(--amber-light);
+      border-left: 4px solid var(--amber);
+      border-radius: 0 4px 4px 0;
+      padding: 2.5rem 3rem;
+      margin: 4rem 0;
+    }
+
+    .quote-text {
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      line-height: 1.35;
+      color: var(--ink);
+    }
+
+    .quote-source {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      margin-top: 1rem;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, var(--mint-dark) 0%, var(--mint) 50%, #00d4a8 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 7rem 2rem;
+    }
+
+    .cta-section .section-label { color: rgba(255,255,255,0.7); }
+    .cta-section .section-title { color: var(--white); margin-bottom: 1rem; }
+    .cta-section .section-lead { color: rgba(255,255,255,0.8); margin: 0 auto 2.5rem; }
+
+    .price-tag {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 1.5rem 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .price-amount {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    .price-sub {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      margin-top: 0.3rem;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--white);
+      color: var(--mint-dark);
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 1.1rem 2.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+    /* Footer */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    footer a:hover { color: var(--mint); }
+
+    footer .disclaimer { font-style: italic; margin-bottom: 0.5rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero-left {
+        padding: 3rem 1.5rem 3rem;
+        order: 2;
+      }
+
+      .hero-right {
+        height: 50svh;
+        order: 1;
+      }
+
+      .section { padding: 4rem 1.5rem; }
+
+      .quote-block { padding: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-left { padding: 2.5rem 1rem; }
+      .hero-cta { flex-direction: column; }
+      .btn-primary, .btn-secondary { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="logo-mark">
+      <span class="logo-pill"></span>
+      CapSoul
+    </div>
+
+    <h1 class="hero-tagline">
+      Dein Darm.<br>
+      <span>Deine</span> Seele.
+    </h1>
+
+    <p class="hero-sub">
+      Schluck die Kapsel. Schick sie zurück.
+      Lass die KI reinschauen, was dein Arzt dir erst im März erklären würde.
+      Für 80 Euro — und mit Gefühl.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#konzept" class="btn-primary">Schluck es.</a>
+      <a href="#specs" class="btn-secondary">Technische Details</a>
+    </div>
+
+    <div class="hero-score">
+      <span class="score-badge">22/24</span>
+      Nisse Ingwersen, TMDA #70
+    </div>
+  </div>
+
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-rings">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+    </div>
+    <div class="capsule-wrap">
+      <div class="capsule-glow"></div>
+      <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Capsule body -->
+        <ellipse cx="100" cy="100" rx="38" ry="80" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <!-- Left half - Mint -->
+        <path d="M100 20 A38 80 0 0 0 100 180" fill="url(#grad-mint)" opacity="0.9"/>
+        <!-- Right half - Amber -->
+        <path d="M100 20 A38 80 0 0 1 100 180" fill="url(#grad-amber)" opacity="0.9"/>
+        <!-- Split line glow -->
+        <line x1="100" y1="20" x2="100" y2="180" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+        <!-- Camera lens -->
+        <circle cx="100" cy="75" r="12" fill="rgba(0,0,0,0.5)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <circle cx="100" cy="75" r="7" fill="rgba(0,178,136,0.3)" stroke="rgba(0,178,136,0.6)" stroke-width="1"/>
+        <circle cx="100" cy="75" r="3" fill="rgba(0,178,136,0.9)"/>
+        <!-- Lens reflection -->
+        <circle cx="97" cy="72" r="1.5" fill="rgba(255,255,255,0.6)"/>
+        <!-- Circuit detail -->
+        <circle cx="100" cy="125" r="4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <line x1="96" y1="125" x2="88" y2="125" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+        <line x1="104" y1="125" x2="112" y2="125" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+        <line x1="100" y1="121" x2="100" y2="113" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+        <!-- WiFi arcs -->
+        <path d="M87 100 Q100 93 113 100" stroke="rgba(0,178,136,0.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M91 105 Q100 99 109 105" stroke="rgba(0,178,136,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <circle cx="100" cy="109" r="2" fill="rgba(0,178,136,0.9)"/>
+        <defs>
+          <linearGradient id="grad-mint" x1="62" y1="100" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#00b288"/>
+            <stop offset="100%" stop-color="#007a5e"/>
+          </linearGradient>
+          <linearGradient id="grad-amber" x1="100" y1="100" x2="138" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f49c3a"/>
+            <stop offset="100%" stop-color="#c47a1e"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── KONZEPT ───────────────────────────────────────────── -->
+<section class="section" id="konzept">
+  <div class="section-inner">
+    <p class="section-label">Das Konzept</p>
+    <h2 class="section-title">Warum erst im Januar warten?</h2>
+    <p class="section-lead">
+      Du weißt seit fünf Tagen, dass etwas nicht stimmt. Der Gastroentrologe hat erst im März Zeit.
+      CapSoul ist die schluckbare 360°-Kamera, die dir heute sagt, was morgen wichtig ist.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-icon">💊</span>
+        <div class="step-title">Schlucken</div>
+        <div class="step-text">Wie einen Ibuprofen — nur mit Linse und WLAN. Die Kapsel überträgt Live-Bilder auf dein Handy, während sie die gesamte Strecke durchläuft.</div>
+      </div>
+      <div class="step">
+        <span class="step-icon">📦</span>
+        <div class="step-title">Einsenden</div>
+        <div class="step-text">Nach dem natürlichen Durchgang (abgewaschen, Spülmaschine 60 °) schickst du die Kapsel per Freiumschlag zurück. Kapseln sind wiederverwendbar.</div>
+      </div>
+      <div class="step">
+        <span class="step-icon">🤖</span>
+        <div class="step-title">KI-Auswertung</div>
+        <div class="step-text">Unser Modell analysiert 360°-Footage deines Darms und gibt Empfehlung: „Alles okay — nur Luft" oder „Da solltest du wirklich mal hin."</div>
+      </div>
+      <div class="step">
+        <span class="step-icon">📊</span>
+        <div class="step-title">Bericht</div>
+        <div class="step-text">Übersichtlicher PDF-Report in deiner App — mit Zeitstempel, Auffälligkeiten und optionalem Versand direkt an deinen Gastroentrologen.</div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <p class="quote-text">„Die find ich mega. Die ist eigentlich kapselspiegelung.de. Oder international: Capso — einfach nur Capso, geil. Cap Soul. Ich hab dich schon mal gekriegt! Das sind 22, Alter."</p>
+      <p class="quote-source">— Nisse Ingwersen, TMDA Podcast #70</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPECS ─────────────────────────────────────────────── -->
+<section class="section section-dark" id="specs">
+  <div class="section-inner">
+    <p class="section-label">Technische Daten</p>
+    <h2 class="section-title">Die Kapsel. In Zahlen.</h2>
+    <p class="section-lead">
+      Entwickelt für alle, die nicht bis März warten wollen. Und für alle, die ein bisschen zu viel Luft schlucken.
+    </p>
+
+    <div class="specs-grid">
+      <div class="spec-item">
+        <div class="spec-num">360°</div>
+        <div class="spec-label">Sichtfeld</div>
+        <div class="spec-desc">Kein blinder Fleck. Die Kamera sieht, was kein Mensch sehen will — aber jeder sehen sollte.</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-num">60°C</div>
+        <div class="spec-label">Spülmaschinengang</div>
+        <div class="spec-desc">Kapseln sind wiederverwendbar. Zwischen den Schüsseln und dem Geschirr. Alles gut.</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-num">79,90 €</div>
+        <div class="spec-label">Pro Untersuchung</div>
+        <div class="spec-desc">Inkl. KI-Auswertung, PDF-Report und frankiertem Rückumschlag. Gerahmte Darmposter optional.</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-num">~24h</div>
+        <div class="spec-label">Gesamtreise</div>
+        <div class="spec-desc">Von Schlucken bis Ergebnis. Kürzer als ein Gastroentrologen-Termin. Deutlich kürzer als März.</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-num">WLAN</div>
+        <div class="spec-label">Live-Übertragung</div>
+        <div class="spec-desc">Die App zeigt in Echtzeit, wo die Kapsel gerade ist. Ideal für unruhige Naturen.</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-num">São Paulo</div>
+        <div class="spec-label">Hauptsitz</div>
+        <div class="spec-desc">Weil dort Soul drinsteckt. Schul Paulo wie wir sagen. Büro noch nicht eröffnet.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WARUM ──────────────────────────────────────────────── -->
+<section class="section" id="warum">
+  <div class="section-inner">
+    <p class="section-label">Der Bauch</p>
+    <h2 class="section-title">Dein zweites Gehirn weiß Bescheid.</h2>
+    <p class="section-lead">
+      Es gibt einen Grund, warum man „Bauchgefühl" sagt. Der Darm ist mit über 100 Millionen Nervenzellen
+      quasi ein zweites Gehirn — und er redet mit dem ersten, bevor der Arzttermin da ist.
+      CapSoul übersetzt.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-icon">🦠</span>
+        <div class="step-title">650.000 Betroffene</div>
+        <div class="step-text">So viele Menschen in Deutschland leiden unter ME/CFS und ähnlichen schwer diagnostizierbaren Erkrankungen. CapSoul ist der erste Schritt zur Erkenntnis.</div>
+      </div>
+      <div class="step">
+        <span class="step-icon">⏳</span>
+        <div class="step-title">4 Monate Wartezeit</div>
+        <div class="step-text">Durchschnittliche Wartezeit auf einen Gastroentrologen-Termin. Mit CapSoul weißt du in 24 Stunden mehr als vorher.</div>
+      </div>
+      <div class="step">
+        <span class="step-icon">🧠</span>
+        <div class="step-title">KI statt Ratespiel</div>
+        <div class="step-text">Unser Modell wurde auf tausenden von Kapselendoskopie-Aufnahmen trainiert. Es erkennt, was das Auge übersieht — und was nur Luft ist.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────────── -->
+<section class="cta-section">
+  <p class="section-label">Jetzt handeln</p>
+  <h2 class="section-title">Warte nicht auf den März.</h2>
+  <p class="section-lead">
+    Vorbestellungen für das Early-Adopter-Kit jetzt offen.
+    Inklusive Kapsel, Rückumschlag und einem Poster deiner ersten Aufnahme — auf Wunsch gerahmt.
+  </p>
+  <div class="price-tag">
+    <span class="price-amount">79,90 €</span>
+    <span class="price-sub">Pro Untersuchung inkl. KI-Auswertung</span>
+  </div>
+  <br>
+  <a href="#" class="btn-cta">Frühjetzt bestellen</a>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer>
+  <p class="disclaimer">CapSoul ist ein rein fiktives Konzept aus dem Podcast „Teenager mit deutschem Akzent". Keine echte Kapsel. Kein echter Darm (der gehört dir). Kein echtes Unternehmen in São Paulo.</p>
+  <p>Fiktives Konzept · TMDA #70 · 22/24 · <a href="/folge/70">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+</footer>
+
+</body>
+</html>

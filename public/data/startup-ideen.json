@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-20T08:23:59.781Z",
-  "count": 64,
+  "updatedAt": "2026-10-27T06:27:14.268Z",
+  "count": 65,
   "items": [
+    {
+      "folge": 70,
+      "datum": "2026-10-27",
+      "idee": "CapSoul — Schluckbare Kapselkamera für die Heimdarmspiegelung",
+      "beschreibung": "Fynn pitcht CapSoul als Reaktion auf seinen Magenspiegelungs-Termin erst im Januar: Eine schluckbare 360°-Kapselkamera, die man schluckt, die den gesamten Magen-Darm-Trakt per WLAN überträgt und von innen beleuchtet. Man schickt die Kamera nach dem Durchgang (abgewaschen, Spülmaschine 60°) per Post an CapSoul, die KI wertet sie aus und sagt: 'Du solltest mal zum Gastroenthropologen' oder 'Alles o…",
+      "punkte": 22,
+      "max_punkte": 24,
+      "begruendung": "Nisse gibt 22 von 24 Punkten. Enthusiastisch: 'Die find ich mega. Die ist auch eigentlich kapselspiegelung.de oder international Capso — einfach nur Capso, geil. Cap Soul — ich habe dich schon mal gekriegt! Cap Soul einfach in alles jetzt …"
+    },
     {
       "folge": 69,
       "datum": "2026-10-20",

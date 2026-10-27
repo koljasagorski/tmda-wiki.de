@@ -2,6 +2,14 @@
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
     {
+      "folge": 70,
+      "ideeMatch": "CapSoul",
+      "slug": "capsoul",
+      "domain": null,
+      "tagline": "Schluckbare 360°-Kapselkamera für die Heimdarmspiegelung — schicke sie ein, die KI sagt dir, ob du bis März warten kannst.",
+      "punkte": 22
+    },
+    {
       "folge": 69,
       "ideeMatch": "Einlenkrolle",
       "slug": "einlenkrolle",
@@ -513,5 +521,7 @@
       "tagline": "Molekularstruktur trifft Bettwäsche — fühlt sich immer kalt an, kein Strom, kein Kabel.",
       "punkte": null
     }
-  ]
+  ],
+  "count": 65,
+  "updatedAt": "2026-10-27T06:29:40.724Z"
 }
