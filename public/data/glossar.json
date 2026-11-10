@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T06:27:14.268Z",
-  "count": 309,
+  "updatedAt": "2026-11-10T06:10:13.385Z",
+  "count": 315,
   "items": [
     {
       "begriff": "100-Minuten-Stunde",
@@ -388,6 +388,11 @@
       "folge": 50
     },
     {
+      "begriff": "Entweder du gehst mit der Zeit oder du gehst mit der Zeit",
+      "bedeutung": "Nisses Lieblingsspruch, den er laut Fynn alle drei Monate bringt — in dieser Folge über die Entwicklung bei Videopodcasts und Werbung.",
+      "folge": 71
+    },
+    {
       "begriff": "Epidermis",
       "bedeutung": "Hautschicht; im Podcast scherzhaft mit Bratwurstpelle verwechselt",
       "folge": 21
@@ -568,6 +573,11 @@
       "folge": 29
     },
     {
+      "begriff": "Hello Flowers",
+      "bedeutung": "Fynns neue Plastikblumen-Firma ('Alles Fake') mit 300 Produkten und ca. 9000 benötigten Produktfotos. Fynn nutzte KI zur Bildgenerierung, was einen Instagram-Shitstorm von Fotografen auslöste.",
+      "folge": 71
+    },
+    {
       "begriff": "Herz auf Beat",
       "bedeutung": "Nisses groesster Hit, urspruenglich als Verarschung des damaligen Deutschpop gemeint - analog zu Peter Maffays Kinderalbum 'Tabaluga', mit dem er der Plattenfirma eins auswischen wollte.",
       "folge": 53
@@ -616,6 +626,11 @@
       "begriff": "Human in the Loop",
       "bedeutung": "Tech-Buzzword, das meint, dass Menschen die Kontrolle behalten ueber KI-Ergebnisse. Im Podcast humorvoll als Strategie 'Menschen wieder zur Batterie machen' uminterpretiert.",
       "folge": 46
+    },
+    {
+      "begriff": "I Know Someone",
+      "bedeutung": "Berliner Netzwerk-Event-Format: Menschen laden gegenseitig Freunde ein und bringen interessante Leute zusammen. Fynn war dabei zweimal und traf dort auch Amazon-Filmmusik-Menschen.",
+      "folge": 71
     },
     {
       "begriff": "Improfilm",
@@ -918,6 +933,11 @@
       "folge": 56
     },
     {
+      "begriff": "Monoblockstuhl",
+      "bedeutung": "Der ikonische weiße Plastik-Stuhl, der überall auf der Welt anzutreffen ist — von Klöstern bis Bahnhöfen. Meistverkauftes Möbelstück der Welt ohne eingetragenes Patent. Fynn hat ihn zweimal gemalt.",
+      "folge": 71
+    },
+    {
       "begriff": "Mufuti",
       "bedeutung": "Multifunktionstisch aus der DDR - klappbar, vielseitig nutzbar",
       "folge": 35
@@ -1196,6 +1216,11 @@
       "begriff": "Schiff von Theseus",
       "bedeutung": "Philosophische Frage: Wenn man jedes Brett eines Schiffes austauscht, ist es noch das gleiche Schiff?",
       "folge": 40
+    },
+    {
+      "begriff": "Schlag den Aaron",
+      "bedeutung": "TV-Format bei ProSieben als Nachfolger von Schlag den Raab/Star, in dem Aaron Troschke als der zu Schlagende antritt. Aaron Troschke ist nach einem viralen Hänge-Duell zur Kultfigur geworden.",
+      "folge": 71
     },
     {
       "begriff": "Schlotterfit",
@@ -1516,6 +1541,11 @@
       "begriff": "White Label",
       "bedeutung": "Produktionsweise, bei der ein Hersteller das gleiche Produkt unter verschiedenen Marken (Logos/Verpackungen) verkauft.",
       "folge": 17
+    },
+    {
+      "begriff": "Wissen macht Klick",
+      "bedeutung": "Fynns Startup-Idee aus Folge 71: Metallkäfig mit iPad vorne, in dem begehrte Objekte (Fernbedienung, Autoschlüssel) eingeschlossen werden. Öffnet sich nur nach korrekter Beantwortung von IQ-einstellbaren Wissensfragen.",
+      "folge": 71
     },
     {
       "begriff": "Wood Wide Web",

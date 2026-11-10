@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T06:27:14.268Z",
-  "count": 414,
+  "updatedAt": "2026-11-10T06:10:13.385Z",
+  "count": 419,
   "items": [
     {
       "ort": "Berlin",
@@ -2569,6 +2569,36 @@
       "ort": "Amerika / German America (Weltournee-Plan: New Berlin, Hamburg NY, Hannover IN, Stuttgart KS, Bremen GA)",
       "folgen": [
         70
+      ]
+    },
+    {
+      "ort": "Artloft Hamburg-Wandsbek (Aufnahme-Ort, Vernissage am 13.11. von zwei Hamburger Künstlerinnen, kostenloser Eintritt)",
+      "folgen": [
+        71
+      ]
+    },
+    {
+      "ort": "Hamburg, Reeperbahn-Clubs (Beatles spielten hier jahrelang 8 Stunden täglich als unbekannte Band)",
+      "folgen": [
+        71
+      ]
+    },
+    {
+      "ort": "Berlin Prenzlauer Berg (Jon's Schlägerei am Wochenende)",
+      "folgen": [
+        71
+      ]
+    },
+    {
+      "ort": "Bits & Pretzels in München (Konferenz, bei der Fynn den Hello-Flowers-KI-Shitstorm auslöste)",
+      "folgen": [
+        71
+      ]
+    },
+    {
+      "ort": "Vietnam (Nisse plant Reise im Januar 2027: Flussboote, Hüte, günstige Schneider)",
+      "folgen": [
+        71
       ]
     }
   ]

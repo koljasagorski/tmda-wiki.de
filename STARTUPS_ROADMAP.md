@@ -19,11 +19,15 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 68/68 LIVE ✅ (Folge 66: kein Startup)
+## Status — 69/69 LIVE ✅ (Folge 66: kein Startup)
 
 **Jede** Startup-Idee aus den Folgen 1-70 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 **Folge 66** („Was macht Xaviers Bentley auf dem Schuldach?!", 2026-09-29, 0:39:10): kein Startup in dieser Folge. Erste Video-Podcast-Folge, thematisch Cancel Culture / Schulgeschichten / Xavier Naidoo. Extrakt und Transkript vorhanden, keine Startup-Page nötig.
+
+### 17/24 (neue Folgen)
+
+- [x] **Wissen macht Klick** · Folge 71 · 17/24 · Retro-Bildungsfernsehen / ARD-Schulfernsehen Pastiche (Montserrat + Quicksand, Navy #0D3B66 / Amber #F4C842 / LCD-Grün #39FF14, Retro-TV-Monitor-SVG mit Lern-Quiz-Screen, Scanlines, Kindercomputer-Ästhetik)
 
 ### 22/24 (neue Folgen)
 
