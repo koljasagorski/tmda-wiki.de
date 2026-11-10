@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wissen macht Klick – Lern dich frei!</title>
+  <meta name="description" content="Wissen macht Klick: Der intelligente Lern-Käfig, der Fernbedienung und Autoschlüssel hinter Wissensfragen sperrt. Erst denken, dann klicken. Für Kinder und Erwachsene.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/wissen-macht-klick">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wissen macht Klick – Lern dich frei!">
+  <meta property="og:description" content="Wissen macht Klick: Der intelligente Lern-Käfig, der Fernbedienung und Autoschlüssel hinter Wissensfragen sperrt. Erst denken, dann klicken.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/wissen-macht-klick">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wissen macht Klick – Lern dich frei!">
+  <meta name="twitter:description" content="Der Lern-Käfig, der Fernbedienungen und Autoschlüssel hinter Wissensfragen sperrt. Erst denken, dann klicken.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Wissen macht Klick",
+    "description": "Intelligenter Lern-Käfig mit iPad-Display, der Fernbedienungen und Autoschlüssel hinter IQ-einstellbaren Wissensfragen sperrt",
+    "url": "https://tmda-wiki.de/startup/wissen-macht-klick",
+    "brand": { "@type": "Brand", "name": "Wissen macht Klick GmbH" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "149.00",
+      "availability": "https://schema.org/PreOrder",
+      "priceValidUntil": "2027-12-31"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --blue-deep: #0D3B66;
+      --blue-mid: #1565A8;
+      --blue-light: #D6EAF8;
+      --amber: #F4C842;
+      --amber-dark: #E0A800;
+      --green: #27AE60;
+      --green-light: #EAFAF1;
+      --red: #C0392B;
+      --cream: #FEFDF6;
+      --text: #1A252F;
+      --text-light: #566573;
+      --white: #FFFFFF;
+      --border: #BDC3C7;
+      --scan-line: rgba(0,0,0,0.04);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ───── HERO ───── */
+    .hero {
+      background: var(--blue-deep);
+      background-image:
+        repeating-linear-gradient(0deg, var(--scan-line) 0px, var(--scan-line) 1px, transparent 1px, transparent 4px);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(21,101,168,0.4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .sendung-badge {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amber);
+      border: 1.5px solid var(--amber);
+      padding: 5px 14px;
+      border-radius: 3px;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(42px, 10vw, 86px);
+      line-height: 1;
+      text-align: center;
+      color: var(--white);
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero-title span {
+      color: var(--amber);
+    }
+
+    .hero-tagline {
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 500;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      margin-top: 16px;
+      position: relative;
+      z-index: 1;
+      max-width: 500px;
+    }
+
+    /* TV / Monitor SVG */
+    .tv-frame {
+      position: relative;
+      z-index: 1;
+      margin: 40px 0 20px;
+      width: min(420px, 92vw);
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+    }
+
+    .tv-frame svg { width: 100%; height: auto; display: block; }
+
+    /* Score badge */
+    .score-ring {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 24px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 60px;
+      padding: 10px 22px 10px 10px;
+    }
+
+    .score-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--amber);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 15px;
+      color: var(--blue-deep);
+      flex-shrink: 0;
+    }
+
+    .score-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.3;
+    }
+
+    .score-label strong {
+      color: var(--white);
+      display: block;
+      font-size: 14px;
+    }
+
+    /* ───── PROBLEM SECTION ───── */
+    .section-problem {
+      background: var(--white);
+      padding: 72px 20px;
+    }
+
+    .section-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 24px;
+    }
+
+    .section-heading em {
+      font-style: normal;
+      color: var(--blue-mid);
+    }
+
+    .section-text {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    /* Scene box */
+    .scene-box {
+      background: var(--blue-light);
+      border-left: 5px solid var(--blue-mid);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 32px 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .scene-box strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 8px;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .stat-card {
+      background: var(--blue-deep);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+      color: var(--amber);
+      line-height: 1;
+    }
+
+    .stat-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    /* ───── HOW IT WORKS ───── */
+    .section-how {
+      background: var(--blue-deep);
+      background-image: repeating-linear-gradient(0deg, var(--scan-line) 0px, var(--scan-line) 1px, transparent 1px, transparent 4px);
+      padding: 72px 20px;
+    }
+
+    .section-how .section-eyebrow { color: var(--amber); }
+    .section-how .section-heading { color: var(--white); }
+    .section-how .section-heading em { color: var(--amber); }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .step-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      padding: 28px 22px;
+      position: relative;
+    }
+
+    .step-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 1;
+      color: var(--amber);
+      opacity: 0.3;
+      position: absolute;
+      top: 16px;
+      right: 18px;
+    }
+
+    .step-icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .step-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* Quiz demo */
+    .quiz-demo {
+      margin-top: 48px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 32px 24px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .quiz-demo-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .quiz-screen {
+      background: #001F3F;
+      border-radius: 12px;
+      padding: 20px 20px 16px;
+      font-family: 'Courier New', monospace;
+      border: 2px solid #0A5080;
+      box-shadow: inset 0 0 20px rgba(0,100,160,0.3), 0 0 0 1px rgba(255,255,255,0.05);
+    }
+
+    .quiz-screen-header {
+      font-size: 10px;
+      color: rgba(57,255,20,0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .quiz-question {
+      font-size: 15px;
+      color: #39FF14;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .quiz-iq-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .quiz-iq-label {
+      font-size: 10px;
+      color: rgba(57,255,20,0.6);
+      white-space: nowrap;
+      letter-spacing: 1px;
+    }
+
+    .quiz-iq-track {
+      flex: 1;
+      height: 6px;
+      background: rgba(57,255,20,0.15);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .quiz-iq-fill {
+      height: 100%;
+      width: 60%;
+      background: #39FF14;
+      border-radius: 3px;
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .quiz-option {
+      background: rgba(57,255,20,0.08);
+      border: 1px solid rgba(57,255,20,0.3);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: rgba(57,255,20,0.8);
+      cursor: default;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .quiz-option.correct {
+      background: rgba(57,255,20,0.2);
+      border-color: #39FF14;
+      color: #39FF14;
+    }
+
+    .quiz-counter {
+      font-size: 10px;
+      color: rgba(57,255,20,0.4);
+      text-align: right;
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* ───── FEATURES ───── */
+    .section-features {
+      padding: 72px 20px;
+      background: var(--cream);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      border-color: var(--blue-mid);
+      box-shadow: 0 4px 20px rgba(21,101,168,0.12);
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .feature-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-light);
+    }
+
+    /* ───── CTA ───── */
+    .section-cta {
+      background: var(--amber);
+      background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 60%);
+      padding: 72px 20px;
+      text-align: center;
+    }
+
+    .cta-starburst {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      color: var(--blue-deep);
+      background: var(--white);
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      line-height: 1.2;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      animation: spin-slow 20s linear infinite;
+    }
+
+    @keyframes spin-slow {
+      to { transform: rotate(360deg); }
+    }
+
+    .cta-starburst span {
+      font-size: 22px;
+      display: block;
+      animation: spin-slow-reverse 20s linear infinite;
+    }
+
+    @keyframes spin-slow-reverse {
+      to { transform: rotate(-360deg); }
+    }
+
+    .cta-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(28px, 6vw, 48px);
+      color: var(--blue-deep);
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .cta-sub {
+      font-size: 17px;
+      color: rgba(13,59,102,0.75);
+      margin-bottom: 36px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--white);
+      background: var(--blue-deep);
+      border: none;
+      border-radius: 60px;
+      padding: 16px 36px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 6px 20px rgba(13,59,102,0.35);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(13,59,102,0.45);
+    }
+
+    .cta-price {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(13,59,102,0.6);
+      font-weight: 500;
+    }
+
+    /* ───── FOOTER ───── */
+    footer {
+      background: var(--blue-deep);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--amber); }
+
+    footer .disclaimer {
+      font-style: italic;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ───── RESPONSIVE ───── */
+    @media (max-width: 600px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .quiz-options { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="sendung-badge">Lernprogramm Nr. 71 · Hamburg-Wandsbek</div>
+
+    <h1 class="hero-title">Wissen <span>macht</span> Klick</h1>
+    <p class="hero-tagline">Erst denken. Dann klicken. Der Lern-Käfig für ein ruhiges Sonntagmorgen.</p>
+
+    <!-- TV Frame SVG -->
+    <div class="tv-frame">
+      <svg viewBox="0 0 420 310" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- TV body -->
+        <rect x="10" y="10" width="400" height="260" rx="22" fill="#1565A8" stroke="#0D3B66" stroke-width="3"/>
+        <rect x="30" y="28" width="360" height="224" rx="8" fill="#001F3F"/>
+        <!-- Scanlines -->
+        <rect x="30" y="28" width="360" height="224" rx="8" fill="url(#scan)" opacity="0.4"/>
+        <!-- Screen content (quiz) -->
+        <text x="210" y="68" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="rgba(57,255,20,0.5)" letter-spacing="2">WISSEN-MACHT-KLICK v1.0</text>
+        <text x="60" y="96" font-family="'Courier New', monospace" font-size="12" fill="#39FF14">Frage 2 von 3:</text>
+        <text x="60" y="116" font-family="'Courier New', monospace" font-size="11" fill="#39FF14">Wo liegt Schloss</text>
+        <text x="60" y="130" font-family="'Courier New', monospace" font-size="11" fill="#39FF14">Neuschwanstein?</text>
+        <!-- Options -->
+        <rect x="58" y="148" width="140" height="30" rx="4" fill="rgba(57,255,20,0.08)" stroke="rgba(57,255,20,0.3)" stroke-width="1"/>
+        <text x="128" y="168" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="rgba(57,255,20,0.75)">A) Bayern</text>
+        <rect x="208" y="148" width="140" height="30" rx="4" fill="rgba(57,255,20,0.08)" stroke="rgba(57,255,20,0.3)" stroke-width="1"/>
+        <text x="278" y="168" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="rgba(57,255,20,0.75)">B) Thüringen</text>
+        <rect x="58" y="192" width="140" height="30" rx="4" fill="rgba(57,255,20,0.08)" stroke="rgba(57,255,20,0.3)" stroke-width="1"/>
+        <text x="128" y="212" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="rgba(57,255,20,0.75)">C) Sachsen</text>
+        <rect x="208" y="192" width="140" height="30" rx="4" fill="rgba(57,255,20,0.08)" stroke="rgba(57,255,20,0.3)" stroke-width="1"/>
+        <text x="278" y="212" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="rgba(57,255,20,0.75)">D) Baden</text>
+        <text x="210" y="244" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="rgba(57,255,20,0.35)">▓▓▓▓▓▓▓░░░░░░  IQ: MITTEL</text>
+        <!-- Scanlines pattern def -->
+        <defs>
+          <pattern id="scan" x="0" y="0" width="2" height="4" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="2" height="1" fill="black" opacity="0.2"/>
+          </pattern>
+        </defs>
+        <!-- TV stand -->
+        <rect x="175" y="270" width="70" height="12" rx="4" fill="#1565A8" stroke="#0D3B66" stroke-width="2"/>
+        <rect x="155" y="282" width="110" height="10" rx="3" fill="#0D3B66"/>
+        <!-- Knobs -->
+        <circle cx="385" cy="80" r="10" fill="#0D3B66" stroke="#2D7AC8" stroke-width="1.5"/>
+        <circle cx="385" cy="110" r="10" fill="#0D3B66" stroke="#2D7AC8" stroke-width="1.5"/>
+        <circle cx="385" cy="140" r="8" fill="#E0A800" stroke="#F4C842" stroke-width="1.5"/>
+        <text x="385" y="175" text-anchor="middle" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,0.3)">🔒</text>
+      </svg>
+    </div>
+
+    <!-- Score -->
+    <div class="score-ring">
+      <div class="score-circle">17/24</div>
+      <div class="score-label">
+        <strong>TMDA-Rating</strong>
+        Nisse Ingwersen, Folge 71
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section-problem">
+    <div class="section-inner">
+      <div class="section-eyebrow">Das Problem</div>
+      <h2 class="section-heading">6 Uhr morgens.<br><em>Dein Kind steht an deinem Bett.</em></h2>
+
+      <p class="section-text">
+        Es ist Sonntag. Du willst ausschlafen. Dein Kind möchte die Fernbedienung. Jetzt. Sofort.
+        Du hast drei Möglichkeiten: Aufstehen, verhandeln oder&nbsp;— <strong>nachdenken lassen.</strong>
+      </p>
+
+      <div class="scene-box">
+        <strong>Die Situation</strong>
+        „Ich habe einen Kasten ausgedacht. Das ist ein Metallkäfig. Da ist die Fernbedienung drin.
+        Da ist ein iPad vorne dran. Jetzt muss das Kind bestimmte Aufgaben lösen — z.&nbsp;B. wissen,
+        wo ist das Schloss Neuschwanstein? Oder wie viel Einwohner hat Karlsruhe?"
+        <br><br>
+        <em>— Fynn Kliemann, TMDA #71, Artloft Hamburg-Wandsbek</em>
+      </div>
+
+      <p class="section-text">
+        Dasselbe gilt für Teenager. Autoschlüssel. iPad. Spielekonsole. Was auch immer hinter
+        Wissen freigeschaltet werden soll — <strong>Wissen macht Klick</strong> macht es möglich.
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-desc">Fragen pro Freischaltung</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">IQ</div>
+          <div class="stat-desc">Schwierigkeit einstellbar</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-desc">Themen-Kategorien</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">150K</div>
+          <div class="stat-desc">Euro Investment gesucht</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section-how">
+    <div class="section-inner">
+      <div class="section-eyebrow">So funktioniert's</div>
+      <h2 class="section-heading">Drei Schritte.<br><em>Alles Wissen.</em></h2>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">1</span>
+          <span class="step-icon">🔒</span>
+          <div class="step-title">Objekt einschließen</div>
+          <p class="step-desc">Fernbedienung, Autoschlüssel, iPad — rein in den Wissen-macht-Klick-Käfig und schließen.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">2</span>
+          <span class="step-icon">🧠</span>
+          <div class="step-title">Fragen beantworten</div>
+          <p class="step-desc">3 IQ-einstellbare Wissensfragen erscheinen auf dem iPad. Von Erdkunde bis Knigge.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">3</span>
+          <span class="step-icon">✅</span>
+          <div class="step-title">Frei geklickt</div>
+          <p class="step-desc">Alle 3 Fragen richtig? Klack. Käfig öffnet sich. Du hast ausgeschlafen.</p>
+        </div>
+      </div>
+
+      <!-- Quiz Demo -->
+      <div class="quiz-demo">
+        <div class="quiz-demo-label">Live-Demo · Frage 1 von 3</div>
+        <div class="quiz-screen">
+          <div class="quiz-screen-header">WISSEN-MACHT-KLICK › FERNBEDIENUNG GESPERRT</div>
+          <div class="quiz-iq-bar">
+            <span class="quiz-iq-label">IQ-LEVEL</span>
+            <div class="quiz-iq-track"><div class="quiz-iq-fill"></div></div>
+            <span class="quiz-iq-label">MITTEL</span>
+          </div>
+          <div class="quiz-question">Wie viele Einwohner hat<br>Karlsruhe ungefähr?</div>
+          <div class="quiz-options">
+            <div class="quiz-option">A) ~120.000</div>
+            <div class="quiz-option correct">B) ~310.000 ✓</div>
+            <div class="quiz-option">C) ~80.000</div>
+            <div class="quiz-option">D) ~500.000</div>
+          </div>
+          <div class="quiz-counter">FRAGE 1/3 · RICHTIG · WEITER ▶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section-features">
+    <div class="section-inner">
+      <div class="section-eyebrow">Das Produkt</div>
+      <h2 class="section-heading">Einmal kaufen.<br><em>Jahrelang profitieren.</em></h2>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏗️</div>
+          <div class="feature-title">Stabiler Metallkäfig</div>
+          <p class="feature-desc">Solides Gehäuse — kein Kind schafft das ohne Wissen. Versprochen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <div class="feature-title">iPad-Display</div>
+          <p class="feature-desc">Integriertes Tablet zeigt Fragen, Fortschritt und Fehlversuche an.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎚️</div>
+          <div class="feature-title">IQ-Einstellung</div>
+          <p class="feature-desc">Von „Wie heißt die Hauptstadt von Deutschland?" bis Abiturwissen. Dynamisch angepasst.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📂</div>
+          <div class="feature-title">Unbegrenzte Kategorien</div>
+          <p class="feature-desc">Erdkunde, Knigge, Fahrschule, Mathe. Oder eigene Fragen einprogrammieren.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗝️</div>
+          <div class="feature-title">Alles einschließbar</div>
+          <p class="feature-desc">Fernbedienung, Autoschlüssel, Kreditkarte, Süßigkeiten. Was du willst.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">😴</div>
+          <div class="feature-title">Eltern schlafen aus</div>
+          <p class="feature-desc">Der einzige Erziehungsratschlag, der wirklich funktioniert. Seit Folge 71.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-cta">
+    <div class="cta-starburst">
+      <span>17</span>
+      <span style="font-size:10px">/ 24</span>
+    </div>
+    <h2 class="cta-heading">150.000 Euro.<br>Du bist dabei?</h2>
+    <p class="cta-sub">
+      Wissen macht Klick sucht Investoren, die verstehen: Bildung ist kein Luxus —
+      sie ist das Passwort zur Fernbedienung.
+    </p>
+    <a href="https://tmda-wiki.de/folge/71" class="cta-button">Zur Folge #71</a>
+    <p class="cta-price">Einzelgerät ab 149 € · inkl. erstem Jahres-Fragenabo</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="disclaimer"><em>Rein fiktives Konzept aus dem TMDA-Podcast. Kein echtes Produkt, keine echte Firma, kein echter Metallkäfig für Fernbedienungen — leider.</em></p>
+    <p>Fiktives Konzept · <a href="/folge/71">TMDA #71</a> · 17/24 · <a href="/folge/71">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </footer>
+
+</body>
+</html>

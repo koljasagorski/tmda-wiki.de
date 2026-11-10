@@ -2,6 +2,14 @@
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
     {
+      "folge": 71,
+      "ideeMatch": "Wissen macht Klick",
+      "slug": "wissen-macht-klick",
+      "domain": null,
+      "tagline": "Der Lern-Käfig, der Fernbedienungen und Autoschlüssel hinter IQ-einstellbaren Wissensfragen sperrt — erst denken, dann klicken.",
+      "punkte": 17
+    },
+    {
       "folge": 70,
       "ideeMatch": "CapSoul",
       "slug": "capsoul",
