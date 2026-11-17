@@ -1,7 +1,12 @@
 {
-  "updatedAt": "2026-11-10T06:10:13.385Z",
-  "count": 315,
+  "updatedAt": "2026-11-17T06:21:53.108Z",
+  "count": 321,
   "items": [
+    {
+      "begriff": "1-Prozent-Regel",
+      "bedeutung": "Faustregel aus dem Internet: Nur ca. 1 % der Besucher einer Plattform oder Attraktion kaufen das Angebot tatsächlich.",
+      "folge": 72
+    },
     {
       "begriff": "100-Minuten-Stunde",
       "bedeutung": "Fynns Startup-Idee: Dezimales Zeitsystem mit 100 Sekunden pro Minute, 100 Minuten pro Stunde und 10 Stunden pro Tag. Ziel: Vereinfachung von Pace-Berechnungen beim Laufen — und von Zeitrechnung generell.",
@@ -253,6 +258,11 @@
       "folge": 59
     },
     {
+      "begriff": "Creative Director (CD)",
+      "bedeutung": "Fynns Idee: ein nationaler Creative Director für Deutschland, der alle vier Jahre Flagge, Hymne und nationales Design neu gestaltet.",
+      "folge": 72
+    },
+    {
       "begriff": "Cross",
       "bedeutung": "Im Graffiti: Uebermalen einer fremden Marke - bei Heberbahnverbot und Schlaegen geahndet",
       "folge": 37
@@ -318,6 +328,11 @@
       "folge": 70
     },
     {
+      "begriff": "Die Sieben Faulen",
+      "bedeutung": "Bremer Sage: Sieben faule Söhne erfanden aus Unlust auf nasse Stiefel einen Entwässerungsgraben — Symbol dafür, dass Faulheit Innovation erzeugt.",
+      "folge": 72
+    },
+    {
       "begriff": "Dienstagnisse",
       "bedeutung": "Running Gag: Nisse fordert Anerkennung dafuer, den Begriff 'Dienstagnisse' fuer den TMDA-Erscheinungstag erfunden zu haben - Fynn besteht darauf, es selbst schon in Folge 3 gesagt zu haben.",
       "folge": 52
@@ -346,6 +361,11 @@
       "begriff": "Drohnide",
       "bedeutung": "Von Nisse erfundenes Wort: Drohne + Humanoid — eine Drohne oder ein Roboter, der sich als Mensch verkleidet (Trenchcoat, Hut, zwei rote Punkte als Augen). Drohniden erkennen Aluminiumhüte als 'Freund' und greifen nicht an.",
       "folge": 69
+    },
+    {
+      "begriff": "Dröpel / Dröppel",
+      "bedeutung": "Bremer Dialektwort für einen kleinen Schluck oder Shot; Fynn nutzt es für das Getränk im Glasstiefel.",
+      "folge": 72
     },
     {
       "begriff": "Dukatenscheisser",
@@ -968,6 +988,11 @@
       "folge": 27
     },
     {
+      "begriff": "Nasser Stiefel",
+      "bedeutung": "Glasstiefel mit Alkohol in Fynns Startup-Konzept (4 cl); Kontrast zum 'trockenen Stiefel' (alkoholfrei).",
+      "folge": 72
+    },
+    {
       "begriff": "Native Instruments",
       "bedeutung": "Deutscher Weltmarktfuehrer bei Synthesizer-Plugins und Music-Software (Kontakt etc.), gerade insolvent gemeldet",
       "folge": 32
@@ -1421,6 +1446,11 @@
       "begriff": "Todescap",
       "bedeutung": "Slang-Ausdruck für eine völlig abstruse, nicht ernst zu nehmende Behauptung oder Idee; aufgeschnappt auf einem Padel-Parkplatz beim Streit über Alien-Pyramiden-Theorien",
       "folge": 60
+    },
+    {
+      "begriff": "Todeszone",
+      "bedeutung": "Bereich am Mount Everest ab ca. 8.000 m Höhe, wo der Sauerstoffgehalt zu gering ist, um dauerhaft zu überleben.",
+      "folge": 72
     },
     {
       "begriff": "Topline",

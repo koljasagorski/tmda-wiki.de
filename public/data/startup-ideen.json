@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-10T06:10:13.385Z",
-  "count": 66,
+  "updatedAt": "2026-11-17T06:21:53.108Z",
+  "count": 67,
   "items": [
+    {
+      "folge": 72,
+      "datum": "2026-11-10",
+      "idee": "Zum nassen Stiefel — Minikneipe im kleinsten Haus Deutschlands",
+      "beschreibung": "Fynn baut sein 4-Quadratmeter-Haus in Bremen (kleinstes Haus Deutschlands) von einer Ferienwohnung zu einer Minikneipe um: eine Mini-Zapfanlage, ein kleiner Glasstiefel à 4 cl für ca. 4 Euro, Bremer Bier (Beck's oder Hemelinger). Name: 'Zum nassen Stiefel', inspiriert von der Bremer Sage der Sieben Faulen. Nasser Stiefel = mit Alkohol, trockener Stiefel = alkoholfrei. Der Glasstiefel ist gleichze…",
+      "punkte": 18,
+      "max_punkte": 24,
+      "begruendung": "Das Haus zieht durch Medienberichterstattung Hunderte Touristen täglich an, die Feriengäste stören. Statt Ruhe → Potential als Minikneipe nutzen. Geschichte der Sieben Faulen (Innovation aus Faulheit) liefert authentische Bremer Story. Tou…"
+    },
     {
       "folge": 71,
       "datum": "2026-11-03",
