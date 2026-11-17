@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zum nassen Stiefel – Das kleinste Gasthaus Deutschlands</title>
+  <meta name="description" content="Zum nassen Stiefel: Im kleinsten Haus Deutschlands (4 m²) in Bremen zapfst du einen Mini-Glasstiefel Bremer Bier — inspiriert von der Sage der Sieben Faulen. Souvenirschuh inklusive.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/nasser-stiefel">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zum nassen Stiefel – Das kleinste Gasthaus Deutschlands">
+  <meta property="og:description" content="4 m², 4 cl, eine Sage: Im kleinsten Haus Deutschlands in Bremen zapfst du einen Ministiefel Bier und nimmst den Glasschuh als Souvenir mit.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/nasser-stiefel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zum nassen Stiefel – Das kleinste Gasthaus Deutschlands">
+  <meta name="twitter:description" content="4 m², 4 cl, eine Sage: Bremer Minikneipe im kleinsten Haus Deutschlands. Glasstiefel, Bremer Bier, Souvenirschuh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400;0,600;1,400&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Zum nassen Stiefel",
+    "description": "Minikneipe im kleinsten Haus Deutschlands (4 m²) in Bremen — Glasstiefel-Shots à 4 cl, Mini-Zapfanlage, Bremer Sage der Sieben Faulen",
+    "url": "https://tmda-wiki.de/startup/nasser-stiefel",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bremen", "addressCountry": "DE" },
+    "servesCuisine": "German",
+    "priceRange": "€"
+  }
+  </script>
+  <style>
+    :root {
+      --parchment:  #F5E6C3;
+      --parchment2: #EDD9A3;
+      --cream:      #FDF8EE;
+      --chestnut:   #5C2E0E;
+      --chestnut2:  #3A1A07;
+      --amber:      #B8740A;
+      --amber-light:#E09A30;
+      --forest:     #2A4219;
+      --forest-light:#3D6128;
+      --ink:        #1A0D05;
+      --gold:       #C89A28;
+      --gold-light: #E8C258;
+      --rust:       #8B3A1A;
+      --mist:       #CDBF9A;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--parchment);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ───── DECORATIVE BORDER HELPER ───── */
+    .ornament {
+      text-align: center;
+      color: var(--amber);
+      font-size: 1.4rem;
+      letter-spacing: 0.5em;
+      margin: 0.75rem 0;
+      opacity: 0.75;
+    }
+
+    /* ───── HERO ───── */
+    .hero {
+      background: var(--chestnut2);
+      background-image:
+        radial-gradient(ellipse at 50% 0%, #6B3A18 0%, var(--chestnut2) 65%),
+        repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px 50px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Woodgrain texture overlay */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          175deg,
+          transparent 0px, transparent 18px,
+          rgba(255,255,255,0.012) 18px, rgba(255,255,255,0.012) 19px
+        );
+      pointer-events: none;
+    }
+
+    /* Stained-glass border glow */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--amber-light), var(--gold-light), var(--amber-light));
+    }
+
+    .hero-shield {
+      width: 120px;
+      height: 140px;
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    .hero-shield svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 4px 20px rgba(184,116,10,0.5));
+    }
+
+    .hero-pretitle {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      color: var(--parchment2);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: 0.85;
+    }
+
+    .hero-title {
+      font-family: 'Uncial Antiqua', 'IM Fell English', Georgia, serif;
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      color: var(--gold-light);
+      line-height: 1.0;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 0 40px rgba(200,154,40,0.3);
+      margin-bottom: 6px;
+    }
+
+    .hero-title-sub {
+      font-family: 'Uncial Antiqua', 'IM Fell English', Georgia, serif;
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      color: var(--amber-light);
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+    }
+
+    .hero-tagline {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--parchment);
+      max-width: 520px;
+      line-height: 1.7;
+      margin: 0 auto 32px;
+    }
+
+    .hero-score {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      background: rgba(184,116,10,0.2);
+      border: 1px solid var(--amber);
+      border-radius: 4px;
+      padding: 10px 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero-score-num {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 2.4rem;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .hero-score-denom {
+      font-size: 1rem;
+      color: var(--mist);
+    }
+
+    .hero-scroll-hint {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 0.8rem;
+      color: var(--mist);
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+
+    /* ───── SECTION BASE ───── */
+    .section {
+      padding: 64px 16px;
+      position: relative;
+    }
+
+    .section-inner {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      font-family: 'Uncial Antiqua', 'IM Fell English', Georgia, serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: var(--chestnut);
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .section-sub {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      text-align: center;
+      color: var(--amber);
+      font-size: 1rem;
+      margin-bottom: 36px;
+    }
+
+    /* ───── LEGEND SECTION ───── */
+    .section-legend {
+      background: var(--cream);
+      border-top: 3px double var(--amber);
+      border-bottom: 3px double var(--amber);
+    }
+
+    .legend-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .legend-columns { grid-template-columns: 1fr; }
+    }
+
+    .legend-block {
+      background: var(--parchment);
+      border: 1px solid var(--parchment2);
+      border-radius: 2px;
+      padding: 28px 24px;
+      position: relative;
+    }
+
+    .legend-block::before {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border: 1px solid var(--mist);
+      border-radius: 2px;
+      pointer-events: none;
+    }
+
+    .legend-block-icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      display: block;
+      text-align: center;
+    }
+
+    .legend-block-title {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 1.15rem;
+      color: var(--chestnut);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .legend-block p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+
+    /* ───── PRODUCT SECTION ───── */
+    .section-product {
+      background: var(--parchment2);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: var(--cream);
+      border: 2px solid var(--chestnut);
+      border-radius: 2px;
+      padding: 28px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .product-card::after {
+      content: '';
+      position: absolute;
+      bottom: -6px; right: -6px;
+      inset-inline-start: 6px; inset-block-start: 6px;
+      background: var(--chestnut);
+      z-index: -1;
+    }
+
+    .product-card-icon {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .product-card-title {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 1.1rem;
+      color: var(--chestnut);
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    .price-tag {
+      display: inline-block;
+      background: var(--chestnut);
+      color: var(--gold-light);
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 1.5rem;
+      padding: 10px 28px;
+      border-radius: 2px;
+      text-align: center;
+      margin: 0 auto 8px;
+      display: block;
+      width: fit-content;
+    }
+
+    .price-note {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--rust);
+      text-align: center;
+    }
+
+    /* ───── CELEBRITIES ───── */
+    .celeb-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    .celeb-chip {
+      background: var(--chestnut);
+      color: var(--parchment);
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 0.9rem;
+      padding: 8px 18px;
+      border-radius: 2px;
+      border: 1px solid var(--amber);
+    }
+
+    .celeb-chip.dream {
+      background: var(--forest);
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    /* ───── CTA ───── */
+    .section-cta {
+      background: var(--chestnut2);
+      background-image: radial-gradient(ellipse at 50% 100%, #6B3A18 0%, var(--chestnut2) 70%);
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .section-cta::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--amber-light), var(--gold-light), var(--amber-light));
+    }
+
+    .cta-score-ring {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      background: rgba(184,116,10,0.15);
+    }
+
+    .cta-score-big {
+      font-family: 'Uncial Antiqua', 'IM Fell English', Georgia, serif;
+      font-size: 2.4rem;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .cta-score-small {
+      font-size: 0.75rem;
+      color: var(--mist);
+    }
+
+    .cta-heading {
+      font-family: 'Uncial Antiqua', 'IM Fell English', Georgia, serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .cta-sub {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--parchment);
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--amber);
+      color: var(--cream);
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 1.1rem;
+      padding: 14px 36px;
+      text-decoration: none;
+      border: 2px solid var(--gold-light);
+      transition: background 0.2s, color 0.2s;
+      letter-spacing: 0.05em;
+    }
+
+    .cta-button:hover {
+      background: var(--gold);
+      color: var(--chestnut2);
+    }
+
+    .cta-price {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--mist);
+      margin-top: 16px;
+    }
+
+    /* ───── FOOTER ───── */
+    footer {
+      background: var(--chestnut2);
+      border-top: 2px solid var(--amber);
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    footer .disclaimer {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 0.8rem;
+      color: var(--mist);
+      margin-bottom: 10px;
+      max-width: 600px;
+      margin-inline: auto;
+      opacity: 0.75;
+    }
+
+    footer p:last-child {
+      font-size: 0.8rem;
+      color: var(--parchment2);
+    }
+
+    footer a {
+      color: var(--amber-light);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* ───── DIVIDER ───── */
+    .woodcut-divider {
+      text-align: center;
+      color: var(--amber);
+      font-size: 1.1rem;
+      letter-spacing: 0.8em;
+      padding: 20px 0 0;
+      opacity: 0.6;
+    }
+
+    /* ───── QUOTE ───── */
+    .pull-quote {
+      border-left: 4px solid var(--amber);
+      padding: 16px 24px;
+      background: rgba(255,255,255,0.4);
+      margin: 32px 0;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .pull-quote p {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--chestnut);
+    }
+
+    .pull-quote cite {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--rust);
+      font-style: normal;
+    }
+
+    /* ───── RESPONSIVE ───── */
+    @media (max-width: 480px) {
+      .hero { padding: 50px 16px 40px; }
+      .product-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero">
+    <!-- Heraldic shield SVG -->
+    <div class="hero-shield">
+      <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Shield outline -->
+        <path d="M10,10 L110,10 L110,90 Q60,140 60,140 Q60,140 10,90 Z"
+              fill="#3A1A07" stroke="#C89A28" stroke-width="3"/>
+        <!-- Inner border -->
+        <path d="M18,18 L102,18 L102,86 Q60,130 60,130 Q60,130 18,86 Z"
+              fill="none" stroke="#E8C258" stroke-width="1" opacity="0.5"/>
+        <!-- Boot silhouette -->
+        <text x="60" y="78" text-anchor="middle" font-size="52" fill="#E8C258">🥾</text>
+        <!-- Top banner -->
+        <rect x="8" y="6" width="104" height="20" fill="#5C2E0E" stroke="#C89A28" stroke-width="1.5"/>
+        <text x="60" y="20" text-anchor="middle" font-family="Georgia,serif" font-size="9"
+              fill="#E8C258" letter-spacing="2">BREMENSIS</text>
+      </svg>
+    </div>
+
+    <p class="hero-pretitle">Gasthaus · Bremen · Gegründet 2027</p>
+
+    <h1 class="hero-title">Zum</h1>
+    <h1 class="hero-title-sub">nassen Stiefel</h1>
+
+    <div class="ornament">— ✦ ✦ ✦ —</div>
+
+    <p class="hero-tagline">
+      Das kleinste Gasthaus Deutschlands. 4 Quadratmeter,
+      eine Mini-Zapfanlage und ein Glasstiefel voller Bremer Geschichte.
+    </p>
+
+    <div class="hero-score">
+      <span class="hero-score-num">18</span>
+      <span class="hero-score-denom">&nbsp;/ 24 Punkte · TMDA #72</span>
+    </div>
+
+    <p class="hero-scroll-hint">↓ &nbsp; Erfahre die Legende &nbsp; ↓</p>
+  </section>
+
+
+  <!-- ═══════════════ LEGEND ═══════════════ -->
+  <section class="section section-legend">
+    <div class="section-inner">
+      <div class="ornament">❧ ❧ ❧</div>
+      <h2 class="section-heading">Die Sage der Sieben Faulen</h2>
+      <p class="section-sub">Wie Faulheit die Welt verbesserte — und wie ein Stiefel dabei nass wurde</p>
+
+      <div class="legend-columns">
+        <div class="legend-block">
+          <span class="legend-block-icon">📜</span>
+          <p class="legend-block-title">Anno dazumal in Bremen</p>
+          <p>
+            Ein alter Bremer Bauer hatte sieben Söhne — allesamt von bewundernswerter Faulheit.
+            Statt auf dem Acker zu schuften, erfanden sie einen Entwässerungsgraben,
+            damit ihre Stiefel trocken blieben. Das Dorf lachte. Die Geschichte nannte
+            sie die Sieben Faulen.
+          </p>
+        </div>
+        <div class="legend-block">
+          <span class="legend-block-icon">💡</span>
+          <p class="legend-block-title">Innovation aus Unlust</p>
+          <p>
+            Was als Faulheit galt, war in Wahrheit Erfindergeist.
+            Der nasse Stiefel wurde zum Symbol: Wer keine Lust auf das Naheliegende hat,
+            erfindet das Bessere. Und wer doch mal nasse Stiefel braucht —
+            der kommt hierher.
+          </p>
+        </div>
+      </div>
+
+      <div class="pull-quote" style="margin-top:40px;">
+        <p>„Das, was als Faulheit deklariert wurde, ist eigentlich Innovation."</p>
+        <cite>— Fynn Kliemann, TMDA Folge #72, ca. Minute 37</cite>
+      </div>
+
+      <div class="woodcut-divider">· · · ✦ · · ·</div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════ PRODUCT ═══════════════ -->
+  <section class="section section-product">
+    <div class="section-inner">
+      <div class="ornament">❦ ❦ ❦</div>
+      <h2 class="section-heading">Was bekommst du?</h2>
+      <p class="section-sub">Alles, was ein Gasthaus braucht — nur kleiner.</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <span class="product-card-icon">🥂</span>
+          <p class="product-card-title">Der Glasstiefel</p>
+          <p>Ein kleiner Glasschuh — 4 cl — gefüllt mit frisch gezapftem Bremer Bier.
+             Trinken, anstoßen, mitnehmen.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-card-icon">🍺</span>
+          <p class="product-card-title">Nass oder trocken?</p>
+          <p><strong>Nasser Stiefel:</strong> mit Bier.<br>
+             <strong>Trockener Stiefel:</strong> alkoholfrei. Die Innovationskraft wirkt trotzdem.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-card-icon">⚙️</span>
+          <p class="product-card-title">Mini-Zapfanlage</p>
+          <p>Die einzige ihrer Art in dieser Größe — gemeinsam mit einem Bremer Bierpartner
+             entwickelt. Beck's oder Hemelinger. Oder Eckengucker.</p>
+        </div>
+        <div class="product-card">
+          <span class="product-card-icon">🎁</span>
+          <p class="product-card-title">Souvenir inklusive</p>
+          <p>Der Glasstiefel gehört dir. Mit Tragehalterung, damit er auf dem Weg
+             zum nächsten Reiseziel nicht umfällt.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:36px;">
+        <span class="price-tag">ab 4 Euro der Dröpel</span>
+        <p class="price-note">40 Cent gehen an gemeinnützige Zwecke. Weil Innovation auch teilen heißt.</p>
+      </div>
+
+      <div style="margin-top:48px;">
+        <h3 style="font-family:'IM Fell English',Georgia,serif; font-size:1.2rem; color:var(--chestnut); text-align:center; margin-bottom:16px;">
+          Wer zapft heute?
+        </h3>
+        <div class="celeb-row">
+          <span class="celeb-chip">Niklas Füllkrug (Werder Bremen)</span>
+          <span class="celeb-chip">Janni Serra</span>
+          <span class="celeb-chip">Bremer Basketballer</span>
+          <span class="celeb-chip dream">✦ Billie Eilish (Traumgast)</span>
+          <span class="celeb-chip dream">✦ Kelly Slater (nasse Füße)</span>
+        </div>
+        <p style="text-align:center; font-family:'IM Fell English',Georgia,serif; font-style:italic; font-size:0.85rem; color:var(--rust); margin-top:12px;">
+          Jeden zweiten Sonntag ein neues Gesicht hinter der kleinsten Zapfanlage Bremens.
+        </p>
+      </div>
+
+      <div class="woodcut-divider" style="margin-top:40px;">· · · ✦ · · ·</div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="section-cta">
+    <div class="cta-score-ring">
+      <span class="cta-score-big">18</span>
+      <span class="cta-score-small">von 24</span>
+    </div>
+
+    <h2 class="cta-heading">Das kleinste<br>Gasthaus ruft.</h2>
+
+    <p class="cta-sub">
+      150 Stiefel am Tag. 100 Touristen, die jetzt wissen, warum Bremen die Welt
+      verändert hat. Ein Glasschuh als Beweisstück. Fynn braucht einen Bierpartner
+      und das Wohlwollen der Stadt Bremen.
+    </p>
+
+    <a href="https://tmda-wiki.de/folge/72" class="cta-button">Zur ganzen Folge #72 →</a>
+
+    <p class="cta-price">
+      Eröffnung geplant März 2027 · 4 m² · Bremen Altstadt · Täglich 11–18 Uhr
+    </p>
+  </section>
+
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <p class="disclaimer">
+      <em>Rein fiktives Konzept aus dem TMDA-Podcast von Fynn Kliemann &amp; Nisse Ingwersen.
+      Kein echtes Gasthaus, keine echte Zapfanlage, keine echte Mini-Brauerei —
+      zumindest noch nicht.</em>
+    </p>
+    <p>Fiktives Konzept · TMDA #72 · 18/24 · <a href="/folge/72">zur Folge</a> · <a href="/startup-ideen">alle Startups</a></p>
+  </footer>
+
+</body>
+</html>

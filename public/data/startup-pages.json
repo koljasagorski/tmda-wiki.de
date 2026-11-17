@@ -2,6 +2,14 @@
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
     {
+      "folge": 72,
+      "ideeMatch": "nassen Stiefel",
+      "slug": "nasser-stiefel",
+      "domain": null,
+      "tagline": "4 m², 4 cl, eine Sage: Im kleinsten Haus Deutschlands in Bremen zapfst du einen Ministiefel Bremer Bier — Glasschuh als Souvenir inklusive.",
+      "punkte": 18
+    },
+    {
       "folge": 71,
       "ideeMatch": "Wissen macht Klick",
       "slug": "wissen-macht-klick",
@@ -530,6 +538,6 @@
       "punkte": null
     }
   ],
-  "count": 65,
-  "updatedAt": "2026-10-27T06:29:40.724Z"
+  "count": 67,
+  "updatedAt": "2026-11-17T06:24:39.622Z"
 }

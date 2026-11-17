@@ -1,7 +1,12 @@
 {
-  "updatedAt": "2026-11-10T06:10:13.385Z",
-  "count": 127,
+  "updatedAt": "2026-11-17T06:21:53.108Z",
+  "count": 128,
   "items": [
+    {
+      "folge": 72,
+      "name": "Bremer Drainage der Sieben Faulen",
+      "beschreibung": "Die sieben faulen Söhne eines Bremer Bauern erfanden aus Faulheit (um keine nassen Stiefel auf dem Acker zu bekommen) einen Entwässerungsgraben — Beweis dafür, dass Faulheit Innovation erzeugt."
+    },
     {
       "folge": 71,
       "name": "Wissen macht Klick",
