@@ -1,0 +1,128 @@
+{
+  "folge": 73,
+  "titel": "Die Scheinwurst: Astronautennahrung der Zukunft",
+  "laufzeit": "1:11:03",
+  "datum": "2026-11-17",
+  "themen": [
+    "Fakten-Battle Auftakt: Jack Blacks Mutter arbeitete als Mathematikerin bei der NASA und löste hochschwanger ein Apollo-13-Problem",
+    "Brokkoli hat 50.000 Gene, der Mensch nur 20.000 — was bedeutet das für die Brokkoli-Intelligenz?",
+    "Skoda-Rückruf: Fynns Modell hat einen Lenkstangenschaden, Werkstatttermin erst in sechs Monaten",
+    "Fiona Erdmann in Dubai — was macht sie heute?",
+    "TMDA Live-Programm Ankündigung: TMDApokalypse, 16./17. Dezember im Klimasatz (limitiert)",
+    "Startup: Tamagot-me → Scheinwurst als Astronautennahrung (8/24)",
+    "Fabian Römer Mini-Podcast (Fynn): zwei Stunden Interview + geführte Meditation",
+    "Fynn kündigt Retreat-Erlebnis mit Mönch an — Thema der nächsten Folge",
+    "Mrs. 3 / RF: Papst Gregor XI. und schwarze Katzen, Urin als Mundspülung im alten Rom, Diamantenregen auf Saturn",
+    "Nvidia CEO Jensen Huang: chinesische Spionin vernichtet 1,4 Billionen Dollar Marktwert",
+    "Jennifer Lawrence Schönheits-OP: Fynn und Nisse diskutieren Authentizität vs. Veränderung",
+    "Kylie Jenner sperrt Assistentin 24 Stunden in Kleiderschrank ein",
+    "Adidas Sponsor-Kritik: Handball Special hat schlechtes neues Fußbett",
+    "Aleo Aloe Vera Drink als Sponsor",
+    "Serienempfehlung: Four Elements mit Brian Jakubowski (Joyn, kostenlos) — vier Survival-Protagonisten mit je einem Element",
+    "Serienempfehlung: Mobland (Tom Hardy, Pierce Brosnan, Helen Mirren — Guy Ritchie)",
+    "Seven vs. Wild Diskussion: Rick Zabel, Survival Mattin, Kontra K",
+    "Mike Singer und andere im Dschungelcamp",
+    "Tommy-Charakter für Klimaland-Hörspiel — Sprechproben",
+    "Demo gegen Gewalt an Frauen, 25.11., Berlin"
+  ],
+  "kurzbeschreibung": "Fynn und Nisse starten mit einem Fakten-Duell: Jack Blacks Mutter war NASA-Mathematikerin, Brokkoli hat 50.000 Gene. Fynn berichtet von seinem Skoda-Rückruf (Werkstatttermin: in sechs Monaten). Es folgt die Ankündigung des Live-Programms TMDApokalypse am 16./17. Dezember. Der Startup-Block beginnt mit Fynns Pitch für 'Tamagot-me' — eine Pokémon-Go-artige App, bei der ein Spieler als lebendes Tamagotchi lebt (Jäger bezahlt Verpflegung, Tamagotchi versteckt sich). Nisse gibt 8/24 Punkte. Aus einem Nebengespräch über Astronautennahrung entsteht die 'Scheinwurst': minimal-massen Lebensmittel in Wurstform, die sich im Magen entfaltet. Fynn erzählt von einem Mini-Podcast mit Fabian Römer und kündigt an, nächste Folge von seinem Retreat-Erlebnis mit einem Mönch zu berichten. Die 'Mrs. 3'-Kategorie liefert drei historische Fakten. Es folgen Discussionen über Nvidia-Spionage-Affäre, Jennifer Lawrence, Kylie Jenner, die Adidas Handball Special Sohlen-Degradierung und zwei Serienempfehlungen.",
+  "startup_idee": {
+    "idee": "Tamagot-me → Scheinwurst – Lebend-Tamagotchi-App und Astronautennahrung",
+    "beschreibung": "Fynn pitcht 'Tamagot-me': eine App à la Pokémon Go, bei der sich Spieler als Jäger oder lebendes Tamagotchi anmelden. Der Jäger überweist dem Tamagotchi täglich drei Mahlzeiten-Pauschal-Budgets per App; das Tamagotchi versteckt sich und gibt täglich kleine Standorthinweise (z.B. Kreditkarten-Abbuchungsort). Ziel: Deutschland durchqueren, ohne gefunden zu werden. Aus einer Randnotiz über 6.000 Beef Jerky im Kofferraum als Astronautennahrung entwickelt sich die 'Scheinwurst': ein minimal-masses Lebensmittel, das wie eine Wurst aussieht, aber im Magen expandiert und volles Sättigungsgefühl erzeugt — konzipiert für Weltraummissionen (SpaceX-Kooperation angedacht). Jonas von Schwan als weiterer Investor genannt.",
+    "begruendung": "Tamagot-me: Idee ist witzig, aber auf 'ganz vielen Ebenen problematisch' — erzeugt mit der Aura eines Kinderspiels eine Plattform für Fiding. Erste Bewertung 4 Punkte, durch Preissenkung von 200.000 auf 6.000 Euro ironisch auf 8 verdoppelt. Nisse nimmt die 8 Punkte und beansprucht Tamagot-me als seine eigene Startup-Idee. Scheinwurst erhält keine separate formale Bewertung.",
+    "punkte": 8,
+    "max_punkte": 24
+  },
+  "kalles_corner": null,
+  "geruecht_der_woche": "Mrs. 3 / RF (drei historische Fakten): (1) Papst Gregor XI. erklärte im 13. Jahrhundert schwarzen Katzen den Krieg, was die Rattenpopulation beförerte und die Pest begünstigte. (2) Im alten Rom nutzten Menschen menschlichen Urin als Mundspülung wegen des darin enthaltenen Ammoniaks. (3) Auf Saturn und Jupiter regnet es echte Diamanten, da extremer Druck Kohlenstoff in der Atmosphäre kristallisieren lässt.",
+  "erfindungen": [
+    {
+      "name": "Tamagot-me",
+      "beschreibung": "Pokémon-Go-artige App: Ein Spieler ist 'Jäger', ein anderer 'Tamagotchi'. Der Jäger überweist täglich Verpflegungsbudgets per App; das Tamagotchi lebt auf der Flucht und hinterlässt kleine Hinweise. Je länger das Tamagotchi nicht gefunden wird, desto besser."
+    },
+    {
+      "name": "Scheinwurst",
+      "beschreibung": "Minimal-massen Lebensmittel für Astronauten: Außen wie eine Wurst geformt, innen Luft/expandierende Substanz. Entfaltet sich im Magen wie ein Tuch und erzeugt vollständiges Sättigungsgefühl trotz minimaler Masse. SpaceX-Kollaboration angedacht."
+    }
+  ],
+  "zitate": [
+    {
+      "text": "Die Hülle sozusagen wirkt wie eine Wurst, ist eine Scheinwurst. Und drin ist aber nichts.",
+      "kontext": "Fynn beschreibt die Scheinwurst als Astronautennahrung, ca. Minute 16"
+    },
+    {
+      "text": "Ein ehrenhaftes Spiel.",
+      "kontext": "Running Gag rund um Tamagot-me — taucht mehrfach auf, z.B. ca. Minute 13 und 14"
+    },
+    {
+      "text": "Also Adidas, ich weiß, dass ihr uns 15.000 Euro für die Folge hier gegeben habt, trotzdem muss ich euch auflaufen lassen.",
+      "kontext": "Fynn zu Adidas wegen des schlechten Fußbetts beim Handball Special, ca. Minute 51"
+    },
+    {
+      "text": "Ich war bei einem Retreat mit einem Mönch und ganz vielen interessanten Unternehmerinnen, die mir wirklich viel beigebracht haben. Erzähle ich nächste Folge.",
+      "kontext": "Fynn kündigt Thema für Folge 74 an, ca. Minute 24"
+    }
+  ],
+  "fun_facts": [
+    "Jack Blacks Mutter war Mathematikerin bei der NASA und löste hochschwanger im Krankenhaus noch ein Apollo-13-Problem.",
+    "Brokkoli hat 50.000 Gene — mehr als doppelt so viele wie der Mensch (ca. 20.000).",
+    "Papst Gregor XI. erklärte schwarzen Katzen im 13. Jahrhundert den Krieg, was indirekt die Pest begünstigte.",
+    "Im alten Rom nutzten Menschen menschlichen Urin als Mundspülung, da Ammoniak die Zähne bleicht.",
+    "Auf Saturn und Jupiter regnet es echte Diamanten durch extremen atmosphärischen Druck.",
+    "9 % des S&P 500 (der 500 größten US-Unternehmen) sind Nvidia — das Rückgrat der KI-Revolution.",
+    "Die chinesische Spionin im Nvidia-CEO-Scandal vernichtete innerhalb von 24 Stunden 1,4 Billionen Dollar Marktwert."
+  ],
+  "gaeste_erwaehnte": [
+    "Fiona Erdmann (Ex-GNTM, Influencerin in Dubai)",
+    "Fabian Römer alias FR (Rapper, Fynn macht zwei-Stunden Mini-Podcast mit ihm)",
+    "Jensen Huang (Nvidia CEO, in Spionage-Affäre verwickelt)",
+    "Jennifer Lawrence (Schönheits-OP Diskussion)",
+    "Kylie Jenner (sperrt Assistentin 24h ein)",
+    "Jonas von Schwan (von Fynn als potentieller Scheinwurst-Investor genannt)",
+    "Brian Jakubowski (Four Elements, Joyn-Serie)",
+    "Tom Hardy, Pierce Brosnan, Helen Mirren (Mobland-Serie)",
+    "Rick Zabel (Rennfahrer, bei Seven vs. Wild)",
+    "Mike Singer (Dschungelcamp-Kurzaufenthalt)",
+    "Survival Mattin (Seven vs. Wild)",
+    "Philipp Schwehr (Freund, Bunte-Abonnent)",
+    "Simeon (Fynns Kumpel, erster Schulverweigerer in Deutschland, Vater heißt X)"
+  ],
+  "orte": [
+    "Berlin (Demo 25.11., Prenzlauer Berg, Fabian Römer Podcast)",
+    "Hamburg (Bundesland-Referenz für Tamagot-me)",
+    "Klimaland Hamburg (Live-Programm 16./17. Dezember)",
+    "Dubai (Fiona Erdmann)",
+    "Saturn und Jupiter (Diamantenregen)",
+    "Apollo-13-Raumschiff (Referenz Jack Blacks Mutter)"
+  ],
+  "glossar": [
+    {
+      "begriff": "Tamagot-me",
+      "bedeutung": "Fynns Spielkonzept: Ein Mensch agiert als lebendes Tamagotchi, ein anderer als Jäger. Der Jäger bezahlt Verpflegung per App, das Tamagotchi flieht und gibt Hinweise."
+    },
+    {
+      "begriff": "Scheinwurst",
+      "bedeutung": "Fynns Idee für Astronautennahrung: Wurst-förmige Hülle, die kaum Masse hat, sich aber im Magen entfaltet und Sättigungsgefühl erzeugt."
+    },
+    {
+      "begriff": "Fiding",
+      "bedeutung": "Nisse's Begriff für das Tamagot-me-Spiel — impliziert eine fragwürdige Nutzung der App-Mechanik (Analogie zu 'Fieder'-Verhalten)."
+    },
+    {
+      "begriff": "Honey Trap",
+      "bedeutung": "Spionagemethode: Attraktiver Agent baut romantische Beziehung zur Zielperson auf, um Informationen zu gewinnen. Im Kontext: angebliche chinesische Spionin und Nvidia-CEO."
+    },
+    {
+      "begriff": "Romeo-Agenten",
+      "bedeutung": "Im Kalten Krieg von UdSSR und DDR in den Westen entsandte Agenten, die romantische Beziehungen nutzten, um Informationen zu sammeln."
+    },
+    {
+      "begriff": "Mrs. 3 / RF",
+      "bedeutung": "Wiederkehrendes Segment: drei historische oder wissenschaftliche Fun-Facts/Gerüchte am Stück ('Drei Fakten')."
+    },
+    {
+      "begriff": "TMDApokalypse",
+      "bedeutung": "Name des ersten TMDA Live-Programms (16./17. Dezember im Klimaland), thematisch: Verteidigung gegen Roboter-Übernahme."
+    }
+  ]
+}

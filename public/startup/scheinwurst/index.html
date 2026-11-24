@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheinwurst® – Astronautennahrung neu gedacht</title>
+  <meta name="description" content="Scheinwurst®: Das revolutionäre Weltraumlebensmittel, das wie eine Wurst aussieht, minimalste Masse hat und sich im Magen vollständig entfaltet. Offizieller SpaceX-Partner. Für alle, die satt ankommen wollen.">
+  <link rel="canonical" href="https://tmda-wiki.de/startup/scheinwurst">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scheinwurst® – Astronautennahrung neu gedacht">
+  <meta property="og:description" content="Scheinwurst®: Das revolutionäre Weltraumlebensmittel, das wie eine Wurst aussieht, minimalste Masse hat und sich im Magen vollständig entfaltet. Offizieller SpaceX-Partner.">
+  <meta property="og:url" content="https://tmda-wiki.de/startup/scheinwurst">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Scheinwurst® – Astronautennahrung neu gedacht">
+  <meta name="twitter:description" content="Minimal-Masse. Maximal-Satt. Für Weltraum und Erde.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Scheinwurst®",
+    "description": "Astronautennahrung der Zukunft: minimal-masses Lebensmittel in Wurstform, das sich im Magen entfaltet.",
+    "brand": { "@type": "Brand", "name": "Scheinwurst GmbH (fiktiv)" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "4.90",
+      "availability": "https://schema.org/PreOrder",
+      "description": "Pro Einheit (1 Scheinwurst, 12g Reingewicht / 340g gefühlt)"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #F2F1EE;
+      --bg-dark: #0B0F2A;
+      --panel: #FFFFFF;
+      --panel-dark: #131828;
+      --text: #111827;
+      --text-muted: #5A6478;
+      --text-dark: #E8EAF0;
+      --text-dark-muted: #8A9BB5;
+      --accent: #E55B2B;
+      --accent-light: #FF8257;
+      --metal: #8A9BB5;
+      --border: #D5D3CE;
+      --border-dark: #2A3050;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'IBM Plex Sans', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0B0F2A;
+        --panel: #131828;
+        --text: #E8EAF0;
+        --text-muted: #8A9BB5;
+        --border: #2A3050;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0B0F2A;
+      --panel: #131828;
+      --text: #E8EAF0;
+      --text-muted: #8A9BB5;
+      --border: #2A3050;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ——————————— UTILITY ——————————— */
+    .mono { font-family: var(--mono); }
+    .accent { color: var(--accent); }
+    .muted { color: var(--text-muted); }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .tag {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 2px;
+    }
+    .tag.filled {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ——————————— TOP BAR ——————————— */
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-text {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .batch-num {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+    .status-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-right: 6px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ——————————— HERO ——————————— */
+    .hero {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 680px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-vis { order: -1; }
+    }
+    .hero-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 10px;
+    }
+    .hero-title .reg {
+      font-size: 0.45em;
+      vertical-align: super;
+      color: var(--accent);
+      font-weight: 400;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .hero-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .spec-item {
+      border: 1px solid var(--border);
+      padding: 12px 14px;
+      border-radius: 4px;
+    }
+    .spec-label {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .spec-value {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .spec-value .unit {
+      font-weight: 400;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 14px 28px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .hero-cta:hover { opacity: 0.85; }
+    .hero-cta-sub {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* ——————————— SVG VISUALIZATION ——————————— */
+    .hero-vis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .vis-frame {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 1;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .vis-label {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      letter-spacing: 0.1em;
+    }
+
+    /* ——————————— SECTION: TECHNOLOGIE ——————————— */
+    .section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .section-num {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--accent);
+      padding-top: 6px;
+      white-space: nowrap;
+      letter-spacing: 0.08em;
+    }
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 680px) {
+      .tech-grid { grid-template-columns: 1fr; }
+    }
+    .tech-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 24px;
+    }
+    .tech-card-icon {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+    .tech-card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .tech-card-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ——————————— SECTION: ANWENDUNGSGEBIETE ——————————— */
+    .use-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 680px) {
+      .use-list { grid-template-columns: 1fr; }
+    }
+    .use-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--panel);
+    }
+    .use-index {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding-top: 2px;
+      flex-shrink: 0;
+    }
+    .use-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    .use-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ——————————— SECTION: INVESTOREN ——————————— */
+    .investor-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 24px;
+    }
+    .investor-badge {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    .quote-block {
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .quote-attr {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    /* ——————————— CTA SECTION ——————————— */
+    .cta-section {
+      padding: 64px 0;
+    }
+    .cta-box {
+      background: var(--bg-dark);
+      color: #E8EAF0;
+      border-radius: 8px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+    }
+    @media (max-width: 680px) {
+      .cta-box { grid-template-columns: 1fr; padding: 32px 24px; }
+    }
+    .cta-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 12px;
+    }
+    .cta-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      color: #FFFFFF;
+    }
+    .cta-text {
+      font-size: 0.9rem;
+      color: #8A9BB5;
+      line-height: 1.6;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 14px 28px;
+      border-radius: 3px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+    .cta-btn:hover { opacity: 0.85; }
+
+    /* ——————————— FOOTER ——————————— */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      text-align: center;
+    }
+    .footer-disclaimer {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .footer-ref {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    .footer-ref a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer-ref a:hover { text-decoration: underline; }
+    .sep { margin: 0 6px; opacity: 0.4; }
+  </style>
+</head>
+<body>
+<!-- tmda-back: einheitlicher Zurück-zum-Wiki-Button (via scripts/inject-back-button.js) -->
+<style id="tmda-back-style">
+#tmda-back{position:fixed!important;top:16px;left:16px;z-index:2147483000!important;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;margin:0;font:600 14px/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;color:#fff!important;text-decoration:none!important;background:rgba(22,13,26,.6)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:999px!important;backdrop-filter:blur(9px) saturate(160%);-webkit-backdrop-filter:blur(9px) saturate(160%);box-shadow:0 6px 22px -8px rgba(0,0,0,.55);transition:background .18s ease,transform .18s ease,border-color .18s ease;}
+#tmda-back:hover{background:rgba(240,147,224,.92)!important;color:#2a0c25!important;border-color:rgba(240,147,224,.6)!important;transform:translateY(-1px);}
+#tmda-back .tb-arrow{font-size:16px;line-height:1;}
+@media print{#tmda-back{display:none!important;}}
+</style>
+<a href="/startup-ideen" id="tmda-back" aria-label="Zurück zum TMDA-Wiki"><span class="tb-arrow" aria-hidden="true">←</span>Wiki</a>
+
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span class="logo-text">Scheinwurst<sup style="font-size:0.6em; color:var(--accent)">®</sup></span>
+      <span class="batch-num mono">BATCH-2026-SW-001</span>
+    </div>
+    <div>
+      <span class="status-dot"></span><span class="mono" style="font-size:0.65rem; color:var(--text-muted); letter-spacing:0.08em;">PRE-ORDER OFFEN</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left: Text -->
+      <div>
+        <p class="hero-eyebrow">Astronautennahrung der Zukunft &nbsp;·&nbsp; Serie A in Vorbereitung</p>
+        <h1 class="hero-title">Schein<wbr>wurst<span class="reg">®</span></h1>
+        <p class="hero-subtitle">Minimal Masse. Maximale Sättigung.<br>Das erste Lebensmittel, das im Weltall satt macht.</p>
+        <div class="hero-specs">
+          <div class="spec-item">
+            <div class="spec-label">Reingewicht</div>
+            <div class="spec-value">12<span class="unit">g</span></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Sättigungsgewicht</div>
+            <div class="spec-value">340<span class="unit">g (gefühlt)</span></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Expansion</div>
+            <div class="spec-value">×28<span class="unit"> im Magen</span></div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Satt nach</div>
+            <div class="spec-value">45<span class="unit">sek</span></div>
+          </div>
+        </div>
+        <div>
+          <a href="#preorder" class="hero-cta">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Jetzt vorbestellen — 4,90 €
+          </a>
+          <p class="hero-cta-sub muted mono" style="font-size:0.65rem;">SpaceX-Auslieferung ab Q3 2027 · erdgebundene Lieferung ab 2026</p>
+        </div>
+      </div>
+      <!-- Right: SVG Visualization -->
+      <div class="hero-vis">
+        <div class="vis-frame">
+          <svg viewBox="0 0 320 320" width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background grid -->
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D5D3CE" stroke-width="0.4" opacity="0.5"/>
+              </pattern>
+              <linearGradient id="wurstGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#E55B2B" stop-opacity="0.9"/>
+                <stop offset="50%" stop-color="#FF8257" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="#E55B2B" stop-opacity="0.85"/>
+              </linearGradient>
+              <linearGradient id="expandGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#E55B2B" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#E55B2B" stop-opacity="0.02"/>
+              </linearGradient>
+            </defs>
+            <rect width="320" height="320" fill="white"/>
+            <rect width="320" height="320" fill="url(#grid)"/>
+
+            <!-- Magen-Silhouette (expandiert) -->
+            <ellipse cx="160" cy="175" rx="98" ry="78" fill="url(#expandGrad)" stroke="#E55B2B" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+            <!-- Magen Label -->
+            <text x="160" y="262" text-anchor="middle" font-family="IBM Plex Mono" font-size="8" fill="#8A9BB5" letter-spacing="1">MAGEN (expandiert)</text>
+
+            <!-- Scheinwurst Body -->
+            <g transform="translate(160,120)">
+              <!-- main body -->
+              <rect x="-68" y="-18" width="136" height="36" rx="18" fill="url(#wurstGrad)"/>
+              <!-- surface sheen -->
+              <rect x="-60" y="-14" width="90" height="8" rx="4" fill="white" opacity="0.15"/>
+              <!-- left knot -->
+              <ellipse cx="-73" cy="0" rx="8" ry="11" fill="#C04020"/>
+              <!-- right knot -->
+              <ellipse cx="73" cy="0" rx="8" ry="11" fill="#C04020"/>
+              <!-- cross-section lines (decorative) -->
+              <line x1="-20" y1="-18" x2="-20" y2="18" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <line x1="0" y1="-18" x2="0" y2="18" stroke="white" stroke-width="0.5" opacity="0.2"/>
+              <line x1="20" y1="-18" x2="20" y2="18" stroke="white" stroke-width="0.5" opacity="0.2"/>
+            </g>
+
+            <!-- HOLLOW indicator -->
+            <circle cx="160" cy="120" r="6" fill="none" stroke="#E55B2B" stroke-width="1.5"/>
+            <text x="175" y="124" font-family="IBM Plex Mono" font-size="8" fill="#E55B2B" letter-spacing="0.5">HOLLOW CORE</text>
+
+            <!-- Annotation arrows -->
+            <line x1="160" y1="142" x2="160" y2="175" stroke="#E55B2B" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+            <defs>
+              <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                <path d="M0,0 L0,6 L6,3 z" fill="#E55B2B" opacity="0.7"/>
+              </marker>
+            </defs>
+
+            <!-- Measurement: 12g -->
+            <line x1="84" y1="102" x2="84" y2="138" stroke="#8A9BB5" stroke-width="0.8"/>
+            <line x1="80" y1="102" x2="88" y2="102" stroke="#8A9BB5" stroke-width="0.8"/>
+            <line x1="80" y1="138" x2="88" y2="138" stroke="#8A9BB5" stroke-width="0.8"/>
+            <text x="78" y="123" text-anchor="end" font-family="IBM Plex Mono" font-size="8" fill="#8A9BB5">12g</text>
+
+            <!-- Title top -->
+            <text x="160" y="28" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" font-weight="600" fill="#111827" letter-spacing="1.5">SCHEINWURST®</text>
+            <text x="160" y="42" text-anchor="middle" font-family="IBM Plex Mono" font-size="7" fill="#8A9BB5" letter-spacing="0.8">QUERSCHNITT · MAßSTAB 1:1</text>
+          </svg>
+          <span class="vis-label mono">FIG. 1 — Produktquerschnitt und Magenexpansion</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: TECHNOLOGIE -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">01 —</span>
+      <h2 class="section-title">Die Technologie hinter dem<br>leichtesten Sättigungsgefühl der Welt</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <svg class="tech-card-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="18" cy="18" r="3" fill="currentColor" opacity="0.3"/>
+          <line x1="18" y1="4" x2="18" y2="8" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="18" y1="28" x2="18" y2="32" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="4" y1="18" x2="8" y2="18" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="28" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <div class="tech-card-title">Hollow-Core-Hülle</div>
+        <div class="tech-card-text">Die Außenhülle aus natürlichem Kollagenprotein imitiert perfekt Textur, Optik und Mundgefühl einer echten Brühwurst. Das Innere ist vollständig luftgefüllt — Reingewicht: 12g.</div>
+      </div>
+      <div class="tech-card">
+        <svg class="tech-card-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 28 C8 18 12 10 18 10 C24 10 28 18 28 28" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="18" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="18" y1="22" x2="18" y2="28" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 1.5"/>
+        </svg>
+        <div class="tech-card-title">MagenEntfaltung™</div>
+        <div class="tech-card-text">Beim Kontakt mit Magensäure löst sich die Hülle auf und gibt ein wasserquellendes Biopolymer-Netz frei. Innerhalb von 45 Sekunden entfaltet sich ein volles Sättigungssignal — 340g-Äquivalent.</div>
+      </div>
+      <div class="tech-card">
+        <svg class="tech-card-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="10" width="24" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="12" y1="16" x2="12" y2="20" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="18" y1="14" x2="18" y2="22" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="24" y1="17" x2="24" y2="21" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <div class="tech-card-title">NullKalorien-Protokoll</div>
+        <div class="tech-card-text">Das Biopolymer-Netz ist vollständig unverdaulich und wird nach 2–4 Stunden komplett ausgeschieden. Nährwert: 12 kcal (Hülle). Sättigungsäquivalent: vollständige Mahlzeit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: ANWENDUNGEN -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">02 —</span>
+      <h2 class="section-title">Einsatzgebiete</h2>
+    </div>
+    <div class="use-list">
+      <div class="use-item">
+        <span class="use-index">A</span>
+        <div>
+          <div class="use-title">Bemannte Raumfahrt</div>
+          <div class="use-text">Jede gesparte Gramm Nutzlast bedeutet 2.700 € weniger Startkosten. Scheinwurst reduziert den Verpflegungsbedarf einer 6-monatigen ISS-Mission um 94%. Offizieller SpaceX-Lieferant (Pre-LOI unterzeichnet).</div>
+        </div>
+      </div>
+      <div class="use-item">
+        <span class="use-index">B</span>
+        <div>
+          <div class="use-title">Survival & Expeditionen</div>
+          <div class="use-text">Für Himalaya-Expeditionen, Langstrecken-Wanderungen und militärische Einheiten: eine Scheinwurst pro Mahlzeit, 12g Gepäck, vollständige Sättigung. 7-Tage-Expeditionspaket: 24 Einheiten, 288g.</div>
+        </div>
+      </div>
+      <div class="use-item">
+        <span class="use-index">C</span>
+        <div>
+          <div class="use-title">Lebensmittelindustrie</div>
+          <div class="use-text">B2B-Lizenzierung der MagenEntfaltung™-Technologie für Hersteller von Diät-, Sports- und Convenience-Produkten. Whitepaper auf Anfrage. NDAs mit 3 DAX-Lebensmittelkonzernen bereits aktiv.</div>
+        </div>
+      </div>
+      <div class="use-item">
+        <span class="use-index">D</span>
+        <div>
+          <div class="use-title">Alltagskonsumenten</div>
+          <div class="use-text">Für alle, die satt ankommen wollen, ohne viel zu essen: Scheinwurst im Supermarkt (geplant REWE, dm, Online). „Satt auf Reisen", „Satt im Meeting", „Satt ohne Kühlschrank".</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: INVESTOREN & PARTNER -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">03 —</span>
+      <h2 class="section-title">Vertrauen der Industrie</h2>
+    </div>
+    <div class="investor-strip">
+      <span class="investor-badge">SpaceX (LOI)</span>
+      <span class="investor-badge">Jonas von Schwan Ventures</span>
+      <span class="investor-badge">ESA Technology Fund</span>
+      <span class="investor-badge">Bundesministerium für Ernährung</span>
+      <span class="investor-badge">Fynn Kliemann (Founder)</span>
+    </div>
+    <div class="quote-block">
+      <p class="quote-text">„Das ist super komprimierte Wurst. Sehr viel Protein auch. Du brauchst also maximale Masse auf Quadratzentimeter im Weltall natürlich."</p>
+      <p class="quote-attr">— Fynn Kliemann, Scheinwurst-Erfinder &amp; CEO, TMDA #73</p>
+    </div>
+    <div class="quote-block" style="margin-top: 16px;">
+      <p class="quote-text">„Scheinwurst von Pipi geht eine große Kollaboration mit SpaceX ein. Elon Musk investiert in Scheinwurst."</p>
+      <p class="quote-attr">— Nisse Ingwersen, COO (inoffiziell), TMDA #73</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="preorder">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <p class="cta-eyebrow">Vorbestellung läuft</p>
+        <h2 class="cta-title">12g rein.<br>Vollständig satt.</h2>
+        <p class="cta-text">Scheinwurst ist das einzige Lebensmittel, das für Weltraum, Survive und Supermarkt gleichzeitig entwickelt wurde. Erste Charge: 10.000 Einheiten. Serie-A-Investment-Gespräche laufen.</p>
+      </div>
+      <div>
+        <a href="#preorder" class="cta-btn">Vorbestellen — 4,90 €</a>
+        <p style="font-family: var(--mono); font-size: 0.6rem; color: #8A9BB5; margin-top: 10px; text-align: center;">Lieferung: Q4 2026 (terrestrisch)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p class="footer-disclaimer">Rein fiktives Produkt- und Unternehmenskonzept aus dem TMDA-Podcast. Keine echte Scheinwurst existiert. Bitte ruf keinen SpaceX-Investor an.</p>
+    <p class="footer-ref">
+      Fiktives Konzept
+      <span class="sep">·</span>
+      TMDA #73
+      <span class="sep">·</span>
+      8/24
+      <span class="sep">·</span>
+      <a href="/folge/73">zur Folge</a>
+      <span class="sep">·</span>
+      <a href="/startup-ideen">alle Startups</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

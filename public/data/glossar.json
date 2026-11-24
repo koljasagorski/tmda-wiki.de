@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T06:21:53.108Z",
-  "count": 321,
+  "updatedAt": "2026-11-24T08:22:38.890Z",
+  "count": 327,
   "items": [
     {
       "begriff": "1-Prozent-Regel",
@@ -433,6 +433,11 @@
       "folge": 39
     },
     {
+      "begriff": "Fiding",
+      "bedeutung": "Nisse's Begriff für das Tamagot-me-Spiel — impliziert eine fragwürdige Nutzung der App-Mechanik (Analogie zu 'Fieder'-Verhalten).",
+      "folge": 73
+    },
+    {
       "begriff": "Fight or Flight",
       "bedeutung": "Steinzeit-Reaktion, die bei Angststoerung dauerhaft aktiv ist",
       "folge": 39
@@ -631,6 +636,11 @@
       "begriff": "Homolog",
       "bedeutung": "Ein Wort, das exakt das beschreibt, was es ist - z. B. ist 'dreisilbig' selbst dreisilbig und '18buchstabig' hat genau 18 Buchstaben.",
       "folge": 51
+    },
+    {
+      "begriff": "Honey Trap",
+      "bedeutung": "Spionagemethode: Attraktiver Agent baut romantische Beziehung zur Zielperson auf, um Informationen zu gewinnen. Im Kontext: angebliche chinesische Spionin und Nvidia-CEO.",
+      "folge": 73
     },
     {
       "begriff": "Hot Take der Woche",
@@ -958,6 +968,11 @@
       "folge": 71
     },
     {
+      "begriff": "Mrs. 3 / RF",
+      "bedeutung": "Wiederkehrendes Segment: drei historische oder wissenschaftliche Fun-Facts/Gerüchte am Stück ('Drei Fakten').",
+      "folge": 73
+    },
+    {
       "begriff": "Mufuti",
       "bedeutung": "Multifunktionstisch aus der DDR - klappbar, vielseitig nutzbar",
       "folge": 35
@@ -1213,6 +1228,11 @@
       "folge": 64
     },
     {
+      "begriff": "Romeo-Agenten",
+      "bedeutung": "Im Kalten Krieg von UdSSR und DDR in den Westen entsandte Agenten, die romantische Beziehungen nutzten, um Informationen zu sammeln.",
+      "folge": 73
+    },
+    {
       "begriff": "Rotten.com / World Star Hip Hop",
       "bedeutung": "Schock-Video-Websites, auf denen rohe Gewaltvideos hochgeladen wurden (Bungee Jump fail, Dubai Drifting Unfall, Helikopter-Rotor).",
       "folge": 47
@@ -1236,6 +1256,11 @@
       "begriff": "Schaumschutzhuellen / Lippenstift-Mikrofon",
       "bedeutung": "Die grossen Mikrofon-Schaumhuelln der Magenta-TV-Kommentatoren bei der WM sahen im Sonnenlicht aus wie riesige Lippenstifte — besonders bei Kloppo und Robbie Williams. Gab der Folge indirekt ihren Titel.",
       "folge": 56
+    },
+    {
+      "begriff": "Scheinwurst",
+      "bedeutung": "Fynns Idee für Astronautennahrung: Wurst-förmige Hülle, die kaum Masse hat, sich aber im Magen entfaltet und Sättigungsgefühl erzeugt.",
+      "folge": 73
     },
     {
       "begriff": "Schiff von Theseus",
@@ -1386,6 +1411,11 @@
       "begriff": "Talahons im Weltall",
       "bedeutung": "Im Podcast nicht direkt erklaert, aber der Folgentitel bezieht sich auf den Schluss-Gedankenexperiment, wo Talahons (jugendliche Subkultur in Deutschland) ins Weltall expandieren, an intergalaktischen Bushaltestellen schwarze Weltkleider t…",
       "folge": 47
+    },
+    {
+      "begriff": "Tamagot-me",
+      "bedeutung": "Fynns Spielkonzept: Ein Mensch agiert als lebendes Tamagotchi, ein anderer als Jäger. Der Jäger bezahlt Verpflegung per App, das Tamagotchi flieht und gibt Hinweise.",
+      "folge": 73
     },
     {
       "begriff": "Tamponade",

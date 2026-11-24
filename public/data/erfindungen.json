@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-11-17T06:21:53.108Z",
-  "count": 128,
+  "updatedAt": "2026-11-24T08:22:38.890Z",
+  "count": 130,
   "items": [
+    {
+      "folge": 73,
+      "name": "Tamagot-me",
+      "beschreibung": "Pokémon-Go-artige App: Ein Spieler ist 'Jäger', ein anderer 'Tamagotchi'. Der Jäger überweist täglich Verpflegungsbudgets per App; das Tamagotchi lebt auf der Flucht und hinterlässt kleine Hinweise. Je länger das Tamagotchi nicht gefunden wird, desto besser."
+    },
+    {
+      "folge": 73,
+      "name": "Scheinwurst",
+      "beschreibung": "Minimal-massen Lebensmittel für Astronauten: Außen wie eine Wurst geformt, innen Luft/expandierende Substanz. Entfaltet sich im Magen wie ein Tuch und erzeugt vollständiges Sättigungsgefühl trotz minimaler Masse. SpaceX-Kollaboration angedacht."
+    },
     {
       "folge": 72,
       "name": "Bremer Drainage der Sieben Faulen",

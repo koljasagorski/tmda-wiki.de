@@ -2,6 +2,14 @@
   "note": "Mapping zwischen Startup-Ideen und ihren eigenen One-Pager-Seiten. Frontend matcht via 'folge' UND 'ideeMatch' (Substring im idee-Feld).",
   "items": [
     {
+      "folge": 73,
+      "ideeMatch": "Scheinwurst",
+      "slug": "scheinwurst",
+      "domain": null,
+      "tagline": "12g rein, 340g gefühlt: das Weltraumlebensmittel, das sich im Magen entfaltet — offizieller SpaceX-Lieferant (Pre-LOI).",
+      "punkte": 8
+    },
+    {
       "folge": 72,
       "ideeMatch": "nassen Stiefel",
       "slug": "nasser-stiefel",
