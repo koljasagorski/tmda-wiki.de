@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-17T06:21:53.108Z",
-  "count": 67,
+  "updatedAt": "2026-11-24T08:12:14.432Z",
+  "count": 68,
   "items": [
+    {
+      "folge": 73,
+      "datum": "2026-11-17",
+      "idee": "Tamagot-me → Scheinwurst – Lebend-Tamagotchi-App und Astronautennahrung",
+      "beschreibung": "Fynn pitcht 'Tamagot-me': eine App à la Pokémon Go, bei der sich Spieler als Jäger oder lebendes Tamagotchi anmelden. Der Jäger überweist dem Tamagotchi täglich drei Mahlzeiten-Pauschal-Budgets per App; das Tamagotchi versteckt sich und gibt täglich kleine Standorthinweise (z.B. Kreditkarten-Abbuchungsort). Ziel: Deutschland durchqueren, ohne gefunden zu werden. Aus einer Randnotiz über 6.000 Bee…",
+      "punkte": 8,
+      "max_punkte": 24,
+      "begruendung": "Tamagot-me: Idee ist witzig, aber auf 'ganz vielen Ebenen problematisch' — erzeugt mit der Aura eines Kinderspiels eine Plattform für Fiding. Erste Bewertung 4 Punkte, durch Preissenkung von 200.000 auf 6.000 Euro ironisch auf 8 verdoppelt…"
+    },
     {
       "folge": 72,
       "datum": "2026-11-10",

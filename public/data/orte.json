@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T06:21:53.108Z",
-  "count": 424,
+  "updatedAt": "2026-11-24T08:12:14.432Z",
+  "count": 430,
   "items": [
     {
       "ort": "Berlin",
@@ -2629,6 +2629,42 @@
       "ort": "Portugal / Jakobsweg (Vergleich Massentourismus)",
       "folgen": [
         72
+      ]
+    },
+    {
+      "ort": "Berlin (Demo 25.11., Prenzlauer Berg, Fabian Römer Podcast)",
+      "folgen": [
+        73
+      ]
+    },
+    {
+      "ort": "Hamburg (Bundesland-Referenz für Tamagot-me)",
+      "folgen": [
+        73
+      ]
+    },
+    {
+      "ort": "Klimaland Hamburg (Live-Programm 16./17. Dezember)",
+      "folgen": [
+        73
+      ]
+    },
+    {
+      "ort": "Dubai (Fiona Erdmann)",
+      "folgen": [
+        73
+      ]
+    },
+    {
+      "ort": "Saturn und Jupiter (Diamantenregen)",
+      "folgen": [
+        73
+      ]
+    },
+    {
+      "ort": "Apollo-13-Raumschiff (Referenz Jack Blacks Mutter)",
+      "folgen": [
+        73
       ]
     }
   ]

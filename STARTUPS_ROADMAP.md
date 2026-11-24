@@ -19,11 +19,15 @@ Jede Startup-Idee der Woche aus dem TMDA Podcast bekommt eine eigene **One-Pager
 4. **SEO**: title 50-65 Zeichen, description 140-160, OG-Image
 5. **Linken**: `/startup-ideen` Übersicht erkennt slug-Match automatisch → Link erscheint
 
-## Status — 70/70 LIVE ✅ (Folge 66: kein Startup)
+## Status — 71/71 LIVE ✅ (Folge 66: kein Startup)
 
 **Jede** Startup-Idee aus den Folgen 1-70 hat jetzt eine eigene Page — auch die Spaß-/Low-Score- und ungewerteten Ideen. Jede mit komplett individuellem Design-Stil (kein Stil doppelt). Alle Pages haben oben links einen einheitlichen „← Wiki"-Zurück-Button (injiziert via `scripts/inject-back-button.js`, idempotent).
 
 **Folge 66** („Was macht Xaviers Bentley auf dem Schuldach?!", 2026-09-29, 0:39:10): kein Startup in dieser Folge. Erste Video-Podcast-Folge, thematisch Cancel Culture / Schulgeschichten / Xavier Naidoo. Extrakt und Transkript vorhanden, keine Startup-Page nötig.
+
+### 8/24 (Folge 73)
+
+- [x] **Scheinwurst** · Folge 73 · 8/24 · Future-Food Industriedesign / Ernährungswissenschaftliche Studie (IBM Plex Sans + IBM Plex Mono, Off-white #F2F1EE / Deep Space Blue #0B0F2A / Accent Orange #E55B2B / Metal Blue #8A9BB5, SVG Produktquerschnitt-Diagramm mit Magenexpansions-Visualisierung, klinische Spezifikationsraster-Ästhetik, Charge-Nummer TopBar, Dot-Status-Indikator)
 
 ### 18/24 (neue Folgen)
 
